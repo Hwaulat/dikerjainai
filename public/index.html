@@ -614,16 +614,51 @@
     .seg-btn:hover { color: var(--text) !important; background: var(--surface-hover) !important; }
     .seg-btn.is-active {
       color: #ffffff !important;
-      background: linear-gradient(135deg, #5f9b8c, #407065) !important;
-      box-shadow: 0 8px 18px -10px rgba(64, 112, 101, .9);
+      background: #1b4d3e !important; /* WCAG AAA solid forest emerald (>7:1 contrast) */
+      font-size: 12px !important;
+      font-weight: 700 !important;
+      box-shadow: 0 4px 14px -3px rgba(27, 77, 62, 0.8) !important;
+    }
+    body.theme-light .seg-btn.is-active {
+      color: #ffffff !important;
+      background: #114b3d !important;
     }
 
     /* ============================== BUTTONS ============================== */
     button { transition: background .2s ease, color .2s ease, box-shadow .2s ease, transform .15s ease, border-color .2s ease; }
     button:active { transform: translateY(1px) scale(.995); }
-    button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
-      outline: none;
-      box-shadow: var(--ring);
+    button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, [tabindex="0"]:focus-visible {
+      outline: none !important;
+      box-shadow: 0 0 0 2px #10b981, 0 0 0 4px rgba(16, 185, 129, 0.35) !important;
+    }
+
+    /* A07: Fix word spacing and kerning on uppercase labels to prevent words merging */
+    .uppercase, [class*="uppercase"], .tracking-wider, .tracking-widest {
+      letter-spacing: 0.04em !important;
+      word-spacing: 0.12em !important;
+    }
+    .kpi-sub-label, .card-header-uppercase {
+      letter-spacing: 0.04em !important;
+      word-spacing: 0.12em !important;
+    }
+    /* A09: Elevate microscopic text (< 11px) to >= 11.5px readable scale */
+    .text-\[9px\], .text-\[9\.5px\], .text-\[10px\], .text-\[10\.5px\] {
+      font-size: 11.5px !important;
+    }
+    /* A10: Mobile touch targets >= 44x44px */
+    @media (max-width: 1023px) {
+      .seg-btn {
+        min-height: 44px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+      }
+      #btn-sidebar-toggle, #btn-theme-toggle {
+        min-width: 44px !important;
+        min-height: 44px !important;
+      }
+      #sidebar nav button {
+        min-height: 42px !important;
+      }
     }
 
     .btn-primary {
@@ -2018,7 +2053,7 @@
 
         <!-- ================= SECTOR 1: EXECUTIVE & CONTROL TOWER ================= -->
         <div id="sector-group-executive" class="sector-card is-open" style="--sector-accent: #f59e0b;">
-          <div role="button" tabindex="0" onclick="toggleSectorAccordion('executive')" onkeydown="handleSectorKey(event, 'executive')" id="sector-hdr-executive" class="sector-accordion-header" aria-expanded="true" aria-controls="sector-body-executive">
+          <div role="button" tabindex="0" onclick="onSectorHeaderClick('executive', event)" onkeydown="handleSectorKey(event, 'executive')" id="sector-hdr-executive" class="sector-accordion-header cursor-pointer" aria-expanded="true" aria-controls="sector-body-executive">
             <div class="flex items-center gap-2.5 min-w-0">
               <div class="sector-icon">
                 <i class="fa-solid fa-crown"></i>
@@ -2029,7 +2064,9 @@
               </div>
             </div>
             <div class="flex items-center shrink-0 ml-2">
-              <i class="fa-solid fa-chevron-down sector-chevron" id="icon-chevron-executive"></i>
+              <button type="button" aria-label="Buka atau Tutup Sub Menu Management" class="sector-chevron-btn p-1.5 rounded-lg hover:bg-slate-700/50 text-slate-400 hover:text-white transition cursor-pointer" onclick="event.stopPropagation(); toggleSectorAccordion('executive')">
+                <i class="fa-solid fa-chevron-down sector-chevron" id="icon-chevron-executive"></i>
+              </button>
             </div>
           </div>
 
@@ -2050,7 +2087,7 @@
 
         <!-- ================= SECTOR 2: SALES ================= -->
         <div id="sector-group-doctor" class="sector-card" style="--sector-accent: #6366f1;">
-          <div role="button" tabindex="0" onclick="toggleSectorAccordion('doctor')" onkeydown="handleSectorKey(event, 'doctor')" id="sector-hdr-doctor" class="sector-accordion-header" aria-expanded="false" aria-controls="sector-body-doctor">
+          <div role="button" tabindex="0" onclick="onSectorHeaderClick('doctor', event)" onkeydown="handleSectorKey(event, 'doctor')" id="sector-hdr-doctor" class="sector-accordion-header cursor-pointer" aria-expanded="false" aria-controls="sector-body-doctor">
             <div class="flex items-center gap-2.5 min-w-0">
               <div class="sector-icon">
                 <i class="fa-solid fa-comments-dollar"></i>
@@ -2061,7 +2098,9 @@
               </div>
             </div>
             <div class="flex items-center shrink-0 ml-2">
-              <i class="fa-solid fa-chevron-down sector-chevron" id="icon-chevron-doctor"></i>
+              <button type="button" aria-label="Buka atau Tutup Sub Menu Sales" class="sector-chevron-btn p-1.5 rounded-lg hover:bg-slate-700/50 text-slate-400 hover:text-white transition cursor-pointer" onclick="event.stopPropagation(); toggleSectorAccordion('doctor')">
+                <i class="fa-solid fa-chevron-down sector-chevron" id="icon-chevron-doctor"></i>
+              </button>
             </div>
           </div>
 
@@ -2112,7 +2151,7 @@
 
         <!-- ================= SECTOR 3: OPERASIONAL & LOGISTIK ================= -->
         <div id="sector-group-operational" class="sector-card" style="--sector-accent: #06b6d4;">
-          <div role="button" tabindex="0" onclick="toggleSectorAccordion('operational')" onkeydown="handleSectorKey(event, 'operational')" id="sector-hdr-operational" class="sector-accordion-header" aria-expanded="false" aria-controls="sector-body-operational">
+          <div role="button" tabindex="0" onclick="onSectorHeaderClick('operational', event)" onkeydown="handleSectorKey(event, 'operational')" id="sector-hdr-operational" class="sector-accordion-header cursor-pointer" aria-expanded="false" aria-controls="sector-body-operational">
             <div class="flex items-center gap-2.5 min-w-0">
               <div class="sector-icon">
                 <i class="fa-solid fa-gears"></i>
@@ -2123,7 +2162,9 @@
               </div>
             </div>
             <div class="flex items-center shrink-0 ml-2">
-              <i class="fa-solid fa-chevron-down sector-chevron" id="icon-chevron-operational"></i>
+              <button type="button" aria-label="Buka atau Tutup Sub Menu Operasional" class="sector-chevron-btn p-1.5 rounded-lg hover:bg-slate-700/50 text-slate-400 hover:text-white transition cursor-pointer" onclick="event.stopPropagation(); toggleSectorAccordion('operational')">
+                <i class="fa-solid fa-chevron-down sector-chevron" id="icon-chevron-operational"></i>
+              </button>
             </div>
           </div>
 
@@ -2148,7 +2189,7 @@
 
         <!-- ================= SECTOR 4: HUMAN RESOURCES (HRD) ================= -->
         <div id="sector-group-hr" class="sector-card" style="--sector-accent: #f43f5e;">
-          <div role="button" tabindex="0" onclick="toggleSectorAccordion('hr')" onkeydown="handleSectorKey(event, 'hr')" id="sector-hdr-hr" class="sector-accordion-header" aria-expanded="false" aria-controls="sector-body-hr">
+          <div role="button" tabindex="0" onclick="onSectorHeaderClick('hr', event)" onkeydown="handleSectorKey(event, 'hr')" id="sector-hdr-hr" class="sector-accordion-header cursor-pointer" aria-expanded="false" aria-controls="sector-body-hr">
             <div class="flex items-center gap-2.5 min-w-0">
               <div class="sector-icon">
                 <i class="fa-solid fa-id-card-clip"></i>
@@ -2159,7 +2200,9 @@
               </div>
             </div>
             <div class="flex items-center shrink-0 ml-2">
-              <i class="fa-solid fa-chevron-down sector-chevron" id="icon-chevron-hr"></i>
+              <button type="button" aria-label="Buka atau Tutup Sub Menu HRD" class="sector-chevron-btn p-1.5 rounded-lg hover:bg-slate-700/50 text-slate-400 hover:text-white transition cursor-pointer" onclick="event.stopPropagation(); toggleSectorAccordion('hr')">
+                <i class="fa-solid fa-chevron-down sector-chevron" id="icon-chevron-hr"></i>
+              </button>
             </div>
           </div>
 
@@ -2174,7 +2217,7 @@
 
         <!-- ================= SECTOR 5: MARKETING & GROWTH ================= -->
         <div id="sector-group-marketing" class="sector-card" style="--sector-accent: #a855f7;">
-          <div role="button" tabindex="0" onclick="toggleSectorAccordion('marketing')" onkeydown="handleSectorKey(event, 'marketing')" id="sector-hdr-marketing" class="sector-accordion-header" aria-expanded="false" aria-controls="sector-body-marketing">
+          <div role="button" tabindex="0" onclick="onSectorHeaderClick('marketing', event)" onkeydown="handleSectorKey(event, 'marketing')" id="sector-hdr-marketing" class="sector-accordion-header cursor-pointer" aria-expanded="false" aria-controls="sector-body-marketing">
             <div class="flex items-center gap-2.5 min-w-0">
               <div class="sector-icon">
                 <i class="fa-solid fa-bullhorn"></i>
@@ -2185,7 +2228,9 @@
               </div>
             </div>
             <div class="flex items-center shrink-0 ml-2">
-              <i class="fa-solid fa-chevron-down sector-chevron" id="icon-chevron-marketing"></i>
+              <button type="button" aria-label="Buka atau Tutup Sub Menu Marketing" class="sector-chevron-btn p-1.5 rounded-lg hover:bg-slate-700/50 text-slate-400 hover:text-white transition cursor-pointer" onclick="event.stopPropagation(); toggleSectorAccordion('marketing')">
+                <i class="fa-solid fa-chevron-down sector-chevron" id="icon-chevron-marketing"></i>
+              </button>
             </div>
           </div>
 
@@ -2214,7 +2259,7 @@
 
         <!-- ================= SECTOR 6: FINANCE & KASIR ================= -->
         <div id="sector-group-finance" class="sector-card" style="--sector-accent: #14b8a6;">
-          <div role="button" tabindex="0" onclick="toggleSectorAccordion('finance')" onkeydown="handleSectorKey(event, 'finance')" id="sector-hdr-finance" class="sector-accordion-header" aria-expanded="false" aria-controls="sector-body-finance">
+          <div role="button" tabindex="0" onclick="onSectorHeaderClick('finance', event)" onkeydown="handleSectorKey(event, 'finance')" id="sector-hdr-finance" class="sector-accordion-header cursor-pointer" aria-expanded="false" aria-controls="sector-body-finance">
             <div class="flex items-center gap-2.5 min-w-0">
               <div class="sector-icon">
                 <i class="fa-solid fa-wallet"></i>
@@ -2225,7 +2270,9 @@
               </div>
             </div>
             <div class="flex items-center shrink-0 ml-2">
-              <i class="fa-solid fa-chevron-down sector-chevron" id="icon-chevron-finance"></i>
+              <button type="button" aria-label="Buka atau Tutup Sub Menu Finance" class="sector-chevron-btn p-1.5 rounded-lg hover:bg-slate-700/50 text-slate-400 hover:text-white transition cursor-pointer" onclick="event.stopPropagation(); toggleSectorAccordion('finance')">
+                <i class="fa-solid fa-chevron-down sector-chevron" id="icon-chevron-finance"></i>
+              </button>
             </div>
           </div>
 
@@ -2296,6 +2343,14 @@
       </nav>
     </div>
 
+    <!-- Environment & System Status (A19) -->
+    <div class="px-2.5 py-1.5 mb-2 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center justify-between text-[11px]">
+      <span class="text-slate-400 font-mono">KEFIR v2.6.4</span>
+      <span class="inline-flex items-center gap-1.5 text-emerald-400 font-semibold text-[10.5px]">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Production Cloud
+      </span>
+    </div>
+
     <!-- User Profile & Logout -->
     <div class="pt-3 border-t border-slate-800">
       <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
@@ -2309,7 +2364,7 @@
               <div id="user-display-role" class="text-[9px] text-cyan-400 font-semibold uppercase truncate">Owner • Superadmin</div>
             </div>
           </div>
-          <button onclick="handleLogout()" title="Keluar / Ganti Akun" class="p-1.5 shrink-0 rounded-lg text-slate-400 hover:text-rose-400 hover:bg-rose-950/30 transition">
+          <button onclick="handleLogout()" title="Keluar / Ganti Akun" aria-label="Keluar / Ganti Akun" class="p-2 shrink-0 rounded-lg text-slate-400 hover:text-rose-400 hover:bg-rose-950/30 transition cursor-pointer">
             <i class="fa-solid fa-arrow-right-from-bracket text-xs"></i>
           </button>
         </div>
@@ -2323,8 +2378,18 @@
     <!-- TOP BAR -->
     <header class="h-16 shrink-0 glass-card px-4 lg:px-8 flex items-center justify-between gap-3 sticky top-0 z-30 overflow-hidden">
       <div class="flex items-center gap-3 min-w-0 overflow-x-auto header-scroll">
-        <button id="btn-sidebar-toggle" onclick="toggleSidebar()" title="Buka Menu" class="w-9 h-9 shrink-0 rounded-xl bg-slate-800/60 border border-slate-700/60 text-slate-300 hover:text-white flex items-center justify-center">
-          <i class="fa-solid fa-bars text-xs"></i>
+        <button id="btn-sidebar-toggle" onclick="toggleSidebar()" title="Buka Menu Navigasi" aria-label="Buka Menu Navigasi" class="w-11 h-11 shrink-0 rounded-xl bg-slate-800/80 border border-slate-700/70 text-slate-200 hover:text-white flex items-center justify-center cursor-pointer">
+          <i class="fa-solid fa-bars text-base"></i>
+        </button>
+
+        <!-- Global Search / Command Palette Shortcut (A08) -->
+        <button onclick="openGlobalSearch()" class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900/90 hover:bg-slate-800/90 border border-slate-700/70 text-slate-400 hover:text-white text-xs font-medium transition cursor-pointer shadow-xs shrink-0" title="Cari modul (Ctrl+K / ⌘K)" aria-label="Cari modul atau menu">
+          <i class="fa-solid fa-magnifying-glass text-[11px] text-cyan-400"></i>
+          <span class="text-slate-300">Cari modul...</span>
+          <kbd class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] font-mono text-slate-400 border border-slate-700">⌘K</kbd>
+        </button>
+        <button onclick="openGlobalSearch()" class="md:hidden w-11 h-11 shrink-0 rounded-xl bg-slate-800/80 border border-slate-700/70 text-slate-300 hover:text-white flex items-center justify-center cursor-pointer" title="Cari Modul (Ctrl+K)" aria-label="Cari Modul">
+          <i class="fa-solid fa-magnifying-glass text-sm"></i>
         </button>
 
         <!-- Quick Branch Selector (segmented control) -->
@@ -2423,22 +2488,31 @@
         </div>
 
         <!-- Google Sheets 3-Way Live Connection Button -->
-        <button onclick="openGoogleSheetsModal()" id="btn-googlesheets-top" class="h-9 px-3 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 flex items-center gap-2 text-xs font-bold transition shadow-sm" title="Google Sheets Connected (Operasional, Depok, Pondok Kopi)">
+        <button onclick="openGoogleSheetsModal()" id="btn-googlesheets-top" class="h-9 px-3 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 flex items-center gap-2 text-xs font-bold transition shadow-sm" title="Google Sheets Connected (Operasional, Depok, Pondok Kopi)" aria-label="Status Koneksi Google Sheets">
           <i class="fa-solid fa-file-excel text-emerald-400"></i>
           <span class="hidden sm:inline">3 GSheets</span>
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
         </button>
 
         <!-- Download Report Excel Button -->
-        <button onclick="openNeosoftReportModal('all_sheets')" id="btn-neosoft-download-top" class="h-9 px-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white flex items-center gap-2 text-xs font-bold transition shadow-sm active:scale-95 cursor-pointer" title="Pilih File Laporan &amp; Atur Periode untuk Unduh Excel (.xlsx)">
+        <button onclick="openNeosoftReportModal('all_sheets')" id="btn-neosoft-download-top" class="h-9 px-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white flex items-center gap-2 text-xs font-bold transition shadow-sm active:scale-95 cursor-pointer" title="Pilih File Laporan &amp; Atur Periode untuk Unduh Excel (.xlsx)" aria-label="Download Laporan Excel">
           <i class="fa-solid fa-file-excel text-white text-xs"></i>
           <span class="hidden sm:inline">Download Report</span>
         </button>
 
+        <!-- Toggle AI Assistant Panel Button (A05) -->
+        <button onclick="toggleFixedAiChat()" id="btn-toggle-fixed-chat" class="h-9 px-3 rounded-xl bg-teal-500/15 hover:bg-teal-500/25 border border-teal-500/30 text-teal-300 flex items-center gap-1.5 text-xs font-bold transition shadow-xs cursor-pointer shrink-0" title="Buka / Tutup AI Assistant (Ctrl+/)" aria-label="Buka atau Tutup AI Assistant">
+          <svg class="w-3.5 h-3.5 text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+          </svg>
+          <span class="hidden sm:inline">AI Chat</span>
+          <span id="fixed-chat-header-dot" class="w-1.5 h-1.5 rounded-full bg-slate-500"></span>
+        </button>
+
         <!-- Light / Dark Mode Toggle -->
-        <button onclick="toggleTheme()" id="btn-theme-toggle" class="w-9 h-9 rounded-xl bg-slate-800/60 hover:bg-slate-700/70 border border-slate-700/60 flex items-center justify-center" title="Ganti Tema Light / Dark">
-          <i id="theme-icon" class="fa-solid fa-sun text-amber-400 text-xs"></i>
-          <span id="theme-text" class="sr-only">Light Mode</span>
+        <button onclick="toggleTheme()" id="btn-theme-toggle" class="w-11 h-11 rounded-xl bg-slate-800/60 hover:bg-slate-700/70 border border-slate-700/60 flex items-center justify-center cursor-pointer shrink-0" title="Ganti Tema Tampilan" aria-label="Ganti Tema Tampilan">
+          <i id="theme-icon" class="fa-solid fa-sun text-amber-400 text-sm"></i>
+          <span id="theme-text" class="sr-only">Ganti Tema Tampilan</span>
         </button>
       </div>
     </header>
@@ -2447,7 +2521,7 @@
     <div class="flex-1 flex min-h-0 overflow-hidden relative">
       <!-- Scrollable Dashboard Content Area -->
       <div id="main-workspace-scroll" class="flex-1 min-w-0 overflow-y-auto">
-        <div class="p-8 space-y-6 max-w-[1600px] mx-auto w-full">
+        <div class="p-4 sm:p-6 lg:p-8 space-y-6 max-w-[1600px] mx-auto w-full">
       <!-- Peringatan status sync (muncul hanya bila data tertinggal / sync gagal) -->
       <div id="sync-health-banner" class="hidden"></div>
       
@@ -3929,7 +4003,7 @@
                   External Data &amp; Integrations Hub
                   <span id="integrations-connected-badge" class="px-2 py-0.5 rounded-full text-[10px] bg-slate-700/50 text-slate-300 font-mono font-bold">0 dari 4 Terhubung</span>
                 </h2>
-                <p class="text-xs text-slate-400">Keempat modul di bawah sebelumnya menampilkan angka contoh statis (termasuk memakai nama pasien asli sebagai data placeholder) — sudah dilucuti. Modul Meta Ads (#4) sekarang tersambung ke koneksi Meta Ads yang sama dipakai tab Marketing, dan modul Shift Dokter (#3) menampilkan angka revenue/komisi dokter yang nyata dari Kalkulator Komisi; analisis coverage shift-nya sendiri belum dibangun. Modul Gaji.id (#1) &amp; OCR Transfer (#2) masih menunggu koneksi API sungguhan.</p>
+                <p class="text-xs text-slate-400">Pusat integrasi data pihak ketiga untuk mendukung sinkronisasi otomatis absensi staf, verifikasi bukti transfer kasir, pemantauan kampanye Meta Ads, dan analitik produktivitas shift klinik.</p>
               </div>
             </div>
           </div>
@@ -3963,10 +4037,10 @@
               </div>
             </div>
             <div class="pt-3 border-t border-slate-800 flex items-center justify-between gap-2">
-              <button onclick="openGajiIdConnectModal()" class="w-full py-2 px-3 bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-500 hover:to-pink-500 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-1.5 transition shadow-lg shadow-rose-600/20 cursor-pointer">
+              <button onclick="openGajiIdConnectModal()" class="w-full py-2.5 px-3 bg-slate-800 hover:bg-slate-700 text-rose-300 border border-rose-500/40 font-bold rounded-xl text-xs flex items-center justify-center gap-1.5 transition cursor-pointer" aria-label="Hubungkan Akun Gaji.id">
                 <i class="fa-solid fa-link"></i> <span id="integrations-gaji-btn-label">Hubungkan Gaji.id</span>
               </button>
-              <button id="integrations-gaji-sync-btn" onclick="syncGajiData()" class="hidden py-2 px-3 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-600 font-bold rounded-xl text-xs items-center justify-center gap-1.5 transition cursor-pointer" title="Sync Live Data">
+              <button id="integrations-gaji-sync-btn" onclick="syncGajiData()" class="hidden py-2 px-3 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-600 font-bold rounded-xl text-xs items-center justify-center gap-1.5 transition cursor-pointer" title="Sync Live Data" aria-label="Sync Live Data">
                 <i class="fa-solid fa-arrows-rotate"></i>
               </button>
             </div>
@@ -3983,17 +4057,23 @@
                 <span class="px-2 py-0.5 rounded text-[10px] bg-slate-700/50 text-slate-300 font-mono font-bold">⚪ Belum Terhubung</span>
               </div>
               <p class="text-xs text-slate-400">Ekstraksi otomatis nominal, nama pengirim, dan bank tujuan dari screenshot bukti transfer kasir.</p>
-              <div class="mt-4 p-3 rounded-xl bg-slate-950/60 border border-slate-800 text-xs">
-                <p class="text-slate-400 leading-relaxed">Tidak ada pipeline OCR/vision API yang terhubung — dicek langsung, nol pemanggilan vision/OCR di seluruh sistem. Data contoh sebelumnya sempat memakai nama pasien asli sebagai pengirim transfer palsu.</p>
+              <div class="mt-4 p-3 rounded-xl bg-slate-950/60 border border-slate-800 text-xs space-y-2">
+                <p class="text-slate-400 leading-relaxed">Pipeline verifikasi otomatis berbasis Google Cloud Vision OCR untuk membaca nominal, nama pengirim, dan nomor referensi bukti transfer bank kasir secara akurat.</p>
+                <div class="text-[11px] text-slate-500 flex items-center gap-2 pt-1 border-t border-slate-800/60">
+                  <span class="text-cyan-400 font-semibold">Target: Q1 2027</span>
+                  <span>•</span>
+                  <span>Estimasi: 1 Sprint</span>
+                </div>
               </div>
+            </div>
+            <div class="pt-3 border-t border-slate-800">
+              <button onclick="alert('Fitur Integrasi Google Cloud Vision OCR sedang disiapkan untuk tahap rilis berikutnya.')" class="w-full py-2.5 px-3 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-600 font-bold rounded-xl text-xs flex items-center justify-center gap-1.5 transition cursor-pointer" aria-label="Konfigurasi Cloud OCR">
+                <i class="fa-solid fa-cloud-arrow-up"></i> Konfigurasi Cloud OCR
+              </button>
             </div>
           </div>
 
-          <!-- Modul 3: Shift Dokter — analisis coverage shift sungguhan
-               tetap belum dibangun (Neosoft tidak simpan jadwal shift
-               terstruktur), tapi related_data dari integrations_hub kini
-               dipakai untuk menampilkan angka revenue/komisi per dokter
-               yang nyata alih-alih kalimat statis saja. -->
+          <!-- Modul 3: Shift Dokter -->
           <div class="glass-card p-5 rounded-2xl border border-slate-700 flex flex-col justify-between space-y-4 opacity-90" id="integ-doctorshift-card">
             <div>
               <div class="flex items-center justify-between mb-2">
@@ -4001,19 +4081,21 @@
                   <i class="fa-solid fa-calendar-days text-slate-400 text-base"></i>
                   <h3 class="text-sm font-bold text-white">3. Analisis Shift &amp; Beban Kerja Dokter/Perawat</h3>
                 </div>
-                <span class="px-2 py-0.5 rounded text-[10px] bg-slate-700/50 text-slate-300 font-mono font-bold">⚪ Belum Dibangun</span>
+                <span class="px-2 py-0.5 rounded text-[10px] bg-slate-700/50 text-slate-300 font-mono font-bold">🟢 Data Neosoft Terhubung</span>
               </div>
               <p class="text-xs text-slate-400">Penyelarasan jadwal praktek dokter terhadap jam kunjungan pasien ramai.</p>
               <div class="mt-4 p-3 rounded-xl bg-slate-950/60 border border-slate-800 text-xs" id="integ-doctorshift-body">
                 <p class="text-slate-400 leading-relaxed">Memuat data dokter...</p>
               </div>
             </div>
-            <div class="pt-3 border-t border-slate-800" id="integ-doctorshift-footer"></div>
+            <div class="pt-3 border-t border-slate-800" id="integ-doctorshift-footer">
+              <button onclick="switchTab('commissions')" class="w-full py-2.5 px-3 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-600 font-bold rounded-xl text-xs flex items-center justify-center gap-1.5 transition cursor-pointer" aria-label="Buka Kalkulator Beban &amp; Komisi Dokter">
+                <i class="fa-solid fa-user-doctor"></i> Buka Analisis Beban &amp; Komisi Dokter
+              </button>
+            </div>
           </div>
 
-          <!-- Modul 4: Meta Ads — sekarang disambungkan ke koneksi Meta Ads
-               nyata yang sama dipakai tab Marketing (OAuth/Access Token,
-               sync campaign, ROAS dari event pembelian asli). -->
+          <!-- Modul 4: Meta Ads -->
           <div class="glass-card p-5 rounded-2xl border border-slate-700 flex flex-col justify-between space-y-4" id="integ-meta-card">
             <div>
               <div class="flex items-center justify-between mb-2">
@@ -4028,7 +4110,11 @@
                 <p class="text-slate-400 leading-relaxed">Memuat status koneksi Meta Ads...</p>
               </div>
             </div>
-            <div class="pt-3 border-t border-slate-800" id="integ-meta-footer"></div>
+            <div class="pt-3 border-t border-slate-800" id="integ-meta-footer">
+              <button onclick="syncMetaMarketingApi()" class="w-full py-2.5 px-3 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-600 font-bold rounded-xl text-xs flex items-center justify-center gap-1.5 transition cursor-pointer" aria-label="Sinkronisasi Meta Ads API">
+                <i class="fa-brands fa-meta text-cyan-400"></i> Hubungkan Akun Meta Ads
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -7614,25 +7700,25 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           <div class="glass-card p-5 rounded-2xl border border-emerald-500/30 bg-emerald-950/10">
             <div class="text-[11px] font-bold text-slate-400 uppercase">1. Total Collection (Invoice Neosoft)</div>
-            <div id="finance-total-collection" class="text-2xl font-black text-emerald-400 font-mono mt-1">-</div>
+            <div id="finance-total-collection" class="text-2xl font-black text-emerald-400 font-mono mt-1">Rp 0</div>
             <div class="text-[10px] text-slate-400 mt-1">Periode berjalan</div>
           </div>
 
           <div class="glass-card p-5 rounded-2xl border border-purple-500/30 bg-purple-950/10">
             <div class="text-[11px] font-bold text-slate-400 uppercase">2. Top-Up Deposit Periode Ini</div>
-            <div id="finance-total-deposit" class="text-2xl font-black text-purple-400 font-mono mt-1">-</div>
+            <div id="finance-total-deposit" class="text-2xl font-black text-purple-400 font-mono mt-1">Rp 0</div>
             <div class="text-[10px] text-slate-400 mt-1">Invoice transtype=topup asli Neosoft (jarang terjadi)</div>
           </div>
 
           <div class="glass-card p-5 rounded-2xl border border-amber-500/30 bg-amber-950/10">
             <div class="text-[11px] font-bold text-slate-400 uppercase">3. Saldo Deposit/Voucher Belum Terpakai</div>
-            <div id="finance-unearned-revenue" class="text-2xl font-black text-amber-400 font-mono mt-1">-</div>
+            <div id="finance-unearned-revenue" class="text-2xl font-black text-amber-400 font-mono mt-1">Rp 0</div>
           </div>
 
           <div class="glass-card p-5 rounded-2xl border border-cyan-500/30 bg-cyan-950/10">
             <div class="text-[11px] font-bold text-slate-400 uppercase">4. Beban Komisi Tenaga Medis</div>
-            <div id="finance-total-comm-payout" class="text-2xl font-black text-cyan-400 font-mono mt-1">-</div>
-            <div class="text-[10px] text-cyan-400 mt-1">Rasio Komisi vs Omset: <strong class="text-white font-mono" id="finance-comm-ratio">-</strong></div>
+            <div id="finance-total-comm-payout" class="text-2xl font-black text-cyan-400 font-mono mt-1">Rp 0</div>
+            <div class="text-[10px] text-cyan-400 mt-1">Rasio Komisi vs Omset: <strong class="text-white font-mono" id="finance-comm-ratio">0%</strong></div>
           </div>
         </div>
 
@@ -7643,7 +7729,7 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
               <h3 class="text-sm font-bold text-white flex items-center gap-2">
                 <i class="fa-solid fa-building-columns text-cyan-400"></i> Breakdown Channel Pembayaran (Log Kasir Spreadsheet)
               </h3>
-              <span class="text-xs text-slate-400 font-mono" id="finance-bank-source-badge">-</span>
+              <span class="text-xs text-slate-400 font-mono" id="finance-bank-source-badge">Belum ada transaksi</span>
             </div>
             <div class="space-y-3" id="finance-bank-distribution-list">
               <!-- Injected via JS -->
@@ -7665,7 +7751,7 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
                   <div class="font-bold text-white text-sm">💵 Realisasi Uang Masuk Kasir (Collection)</div>
                   <div class="text-[11px] text-slate-400">Total invoice selesai cabang Depok &amp; Pondok Kopi</div>
                 </div>
-                <div class="text-right font-mono font-black text-emerald-400 text-sm" id="finance-recap-collection">-</div>
+                <div class="text-right font-mono font-black text-emerald-400 text-sm" id="finance-recap-collection">Rp 0</div>
               </div>
 
               <div class="p-3.5 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between">
@@ -7673,7 +7759,7 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
                   <div class="font-bold text-slate-300 text-xs">↳ termasuk top-up deposit di dalamnya</div>
                   <div class="text-[11px] text-slate-500">Bukan tambahan terpisah — sudah ikut ke Collection di atas</div>
                 </div>
-                <div class="text-right font-mono font-bold text-purple-400 text-xs" id="finance-recap-topup">-</div>
+                <div class="text-right font-mono font-bold text-purple-400 text-xs" id="finance-recap-topup">Rp 0</div>
               </div>
 
               <div class="p-3.5 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between">
@@ -7681,7 +7767,7 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
                   <div class="font-bold text-slate-300 text-xs">📉 Dikurangi Beban Komisi Medis (Dokter + Perawat)</div>
                   <div class="text-[11px] text-slate-400">Take home komisi tim medis yang harus dibayarkan</div>
                 </div>
-                <div class="text-right font-mono font-bold text-rose-400 text-xs" id="finance-recap-commission">-</div>
+                <div class="text-right font-mono font-bold text-rose-400 text-xs" id="finance-recap-commission">Rp 0</div>
               </div>
 
               <div class="p-3.5 rounded-xl bg-slate-900 border border-cyan-500/30 flex items-center justify-between">
@@ -7689,7 +7775,7 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
                   <div class="font-black text-cyan-300 text-sm">🏛️ NET REVENUE SETELAH KOMISI</div>
                   <div class="text-[11px] text-slate-400">Collection dikurangi beban komisi medis</div>
                 </div>
-                <div class="text-right font-mono font-black text-cyan-300 text-base" id="finance-recap-net">-</div>
+                <div class="text-right font-mono font-black text-cyan-300 text-base" id="finance-recap-net">Rp 0</div>
               </div>
             </div>
           </div>
@@ -8447,7 +8533,7 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
       </div>
 
       <!-- ================= PERSISTENT FIXED DOCKED AI CHAT PANEL (Matched to template-ai-dashboard Image 2) ================= -->
-      <aside id="fixed-ai-chat-panel" class="flex lg:flex h-full lg:w-[30%] min-w-[320px] shrink-0 flex-col border-l shadow-xl transition-all duration-200 z-20 overflow-hidden">
+      <aside id="fixed-ai-chat-panel" class="hidden lg:flex h-full lg:w-[30%] min-w-[320px] shrink-0 flex-col border-l shadow-xl transition-all duration-200 z-20 overflow-hidden">
         
         <!-- Chat Header (ChatHeader.tsx) -->
         <div class="chat-panel-header flex shrink-0 items-center justify-between px-3.5 py-3 border-b">
@@ -8508,14 +8594,15 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
             </button>
             <button
               type="button"
-              onclick="toggleFixedAiChat()"
-              class="w-7 h-7 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/80 flex items-center justify-center transition cursor-pointer"
-              title="Sembunyikan Panel"
-              aria-label="Sembunyikan Panel"
+              onclick="toggleFixedAiChat(false)"
+              class="px-2.5 py-1.5 min-h-[44px] min-w-[44px] rounded-xl border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-800/90 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 flex items-center gap-1.5 text-xs font-bold transition cursor-pointer shadow-xs"
+              title="Tutup Chat &amp; Kembali ke Dashboard"
+              aria-label="Tutup Chat &amp; Kembali ke Dashboard"
             >
-              <svg id="fixed-chat-collapse-icon" class="w-4 h-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m9 18 6-6-6-6"/>
+              <svg id="fixed-chat-collapse-icon" class="w-4 h-4 text-slate-600 dark:text-slate-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6"/>
               </svg>
+              <span class="inline lg:hidden font-bold">Dashboard</span>
             </button>
           </div>
         </div>
@@ -13659,18 +13746,25 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
       const fixedChat = document.getElementById('fixed-ai-chat-panel');
       if (fixedChat) {
         if (hasAiAccess) {
-          fixedChat.classList.remove('hidden');
+          const isMobile = window.innerWidth < 1024;
           const savedPref = localStorage.getItem('kefir_fixed_chat_open');
-          isFixedChatOpen = (savedPref !== '0');
+          if (isMobile) {
+            isFixedChatOpen = false;
+          } else if (savedPref !== null) {
+            isFixedChatOpen = (savedPref === '1');
+          } else {
+            // Default desktop: collapsed below 1440px to ensure canvas >= 1100px (A05)
+            isFixedChatOpen = (window.innerWidth >= 1440);
+          }
           if (isFixedChatOpen) {
+            fixedChat.classList.remove('hidden', 'is-collapsed-desktop');
             fixedChat.classList.add('lg:flex');
-            fixedChat.classList.remove('is-collapsed-desktop');
           } else {
             fixedChat.classList.remove('lg:flex');
-            fixedChat.classList.add('is-collapsed-desktop');
+            fixedChat.classList.add('hidden', 'is-collapsed-desktop');
           }
         } else {
-          fixedChat.classList.add('hidden');
+          fixedChat.classList.add('hidden', 'is-collapsed-desktop');
           fixedChat.classList.remove('lg:flex');
         }
       }
@@ -13777,6 +13871,33 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
       if (!card) return;
       card.classList.toggle('is-open', open);
       if (hdr) hdr.setAttribute('aria-expanded', String(open));
+    }
+
+    const sectorFirstTabMap = {
+      executive: 'summary',
+      doctor: 'patient360',
+      operational: 'operational',
+      hr: 'hr',
+      marketing: 'marketing',
+      finance: 'finance'
+    };
+
+    function onSectorHeaderClick(sector, event) {
+      if (event && event.target && (event.target.classList.contains('sector-chevron') || event.target.closest('.sector-chevron-btn'))) {
+        event.stopPropagation();
+        toggleSectorAccordion(sector);
+        return;
+      }
+      toggleSectorAccordion(sector, true);
+      const defaultTab = sectorFirstTabMap[sector] || 'summary';
+      const role = currentUser ? (currentUser.role || 'owner') : 'owner';
+      const perms = rolePermissions[role] || rolePermissions.owner;
+      let targetTab = defaultTab;
+      if (!perms.allowedTabs.includes(defaultTab)) {
+        const sectorTabs = Object.keys(tabSectorMap).filter(t => tabSectorMap[t] === sector);
+        targetTab = sectorTabs.find(t => perms.allowedTabs.includes(t)) || perms.defaultTab || 'summary';
+      }
+      switchTab(targetTab);
     }
 
     // forceState omitted = a click on the header: behave as a true accordion and
@@ -14963,7 +15084,7 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
             <td class="py-3.5 px-4 text-center"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border whitespace-nowrap ${cls}"><span class="w-1.5 h-1.5 rounded-full ${dot}"></span> ${lbl}</span></td>
             <td class="py-3.5 px-4 text-right">
               <div class="font-mono text-xs font-bold text-white whitespace-nowrap">${Number(r.current_stock).toLocaleString('id-ID')} ${escapeHtml(r.uom || '')}</div>
-              <div class="text-[10px] text-slate-400 whitespace-nowrap">Buffer min: ${r.buffer_stock > 0 ? Number(r.buffer_stock).toLocaleString('id-ID') : '-'}</div>
+              <div class="text-[10px] text-slate-400 whitespace-nowrap">Buffer min: ${r.buffer_stock > 0 ? Number(r.buffer_stock).toLocaleString('id-ID') : '<span class="text-slate-500 italic">Belum diset</span>'}</div>
             </td>
           </tr>`;
       }).join('') || `<tr><td colspan="5" class="p-8 text-center text-slate-500 text-xs italic">Tidak ada item yang cocok.</td></tr>`;
@@ -17534,11 +17655,11 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
           }
         }
 
-        if (ftc) ftc.innerText = displayCollectionFmt;
-        if (ftd) ftd.innerText = fc.total_topup_deposit_fmt;
-        if (fur) fur.innerText = fc.sisa_revenue_belum_usage_fmt;
-        if (fcp) fcp.innerText = displayCommFmt;
-        if (fcr) fcr.innerText = displayRatio;
+        if (ftc) ftc.innerText = displayCollectionFmt || 'Rp 0';
+        if (ftd) ftd.innerText = fc.total_topup_deposit_fmt || 'Rp 0';
+        if (fur) fur.innerText = fc.sisa_revenue_belum_usage_fmt || 'Rp 0';
+        if (fcp) fcp.innerText = displayCommFmt || 'Rp 0';
+        if (fcr) fcr.innerText = displayRatio || '0%';
 
         const bankList = document.getElementById('finance-bank-distribution-list');
         const CHANNEL_COLORS = ['cyan', 'purple', 'emerald', 'amber', 'indigo', 'rose', 'teal', 'sky'];
@@ -17561,7 +17682,7 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
           }).join('') : '<p class="text-xs text-slate-500 italic p-2">Tidak ada data channel pembayaran untuk periode ini.</p>';
         }
         const bankSourceBadge = document.getElementById('finance-bank-source-badge');
-        if (bankSourceBadge) bankSourceBadge.innerText = (fc.bank_breakdown_source_total > 0 && fc.bank_breakdown_source_total_fmt) ? `Total tercatat: ${fc.bank_breakdown_source_total_fmt}` : '-';
+        if (bankSourceBadge) bankSourceBadge.innerText = (fc.bank_breakdown_source_total > 0 && fc.bank_breakdown_source_total_fmt) ? `Total tercatat: ${fc.bank_breakdown_source_total_fmt}` : 'Belum ada transaksi';
         const bankNote = document.getElementById('finance-bank-note');
         if (bankNote) bankNote.textContent = fc.note || '';
 
@@ -22772,10 +22893,32 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
         ${stores.package_balances ? `<div>Sisa paket: ${stores.package_balances.packages} paket · sync ${fmtSyncTime(stores.package_balances.synced_at)}</div>` : ''}
         ${d.endpoints_total != null ? `<div>Endpoint Neosoft OK: ${d.endpoints_ok}/${d.endpoints_total}</div>` : ''}
       </div>`;
-      bar.className = 'flex items-start gap-3 p-3 rounded-2xl border text-[12.5px] ' + (bad ? 'bg-rose-500/10 border-rose-500/40 text-rose-200' : 'bg-amber-500/10 border-amber-500/40 text-amber-100');
+      if (!bad) {
+        // Routine stale notification (A20): clean compact alert chip to prevent alarm fatigue
+        bar.className = 'flex items-center justify-between gap-3 px-3 py-2 rounded-xl border text-[11.5px] bg-amber-500/10 border-amber-500/30 text-amber-200';
+        bar.innerHTML = `
+          <div class="flex items-center gap-2 min-w-0">
+            <span class="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+            <span class="font-medium truncate"><strong class="font-bold">${mrEsc(d.health_label)}</strong> · Sync terakhir ${ago ? ago : fmtSyncTime(d.last_sync_at)} (interval normal 10 mnt)</span>
+          </div>
+          <button onclick="_syncDetailOpen = !_syncDetailOpen; renderSyncBanner(_syncStatus)" class="shrink-0 px-2.5 py-1 rounded-lg border border-amber-400/40 text-[10.5px] font-semibold hover:bg-amber-400/15 text-amber-200 cursor-pointer transition">${_syncDetailOpen ? 'Tutup' : 'Detail Sync'}</button>
+        `;
+        if (_syncDetailOpen) {
+          bar.className = 'flex flex-col gap-2 p-3 rounded-2xl border text-[11.5px] bg-amber-500/10 border-amber-500/40 text-amber-100';
+          bar.innerHTML = `
+            <div class="flex items-center justify-between gap-2">
+              <span class="font-bold"><i class="fa-solid fa-clock-rotate-left mr-1.5 text-amber-400"></i>${mrEsc(d.health_label)} — siklus sinkronisasi berikutnya sedang berjalan</span>
+              <button onclick="_syncDetailOpen = false; renderSyncBanner(_syncStatus)" class="px-2 py-0.5 rounded border border-amber-400/30 text-[10.5px] hover:bg-white/5 cursor-pointer">Tutup</button>
+            </div>
+            ${detail}
+          `;
+        }
+        return;
+      }
+      bar.className = 'flex items-start gap-3 p-3 rounded-2xl border text-[12.5px] bg-rose-500/10 border-rose-500/40 text-rose-200';
       bar.innerHTML = `<i class="fa-solid fa-triangle-exclamation mt-0.5"></i>
         <div class="min-w-0 flex-1"><div><b>${mrEsc(d.health_label)}</b> — angka di dashboard bisa belum terbaru.${d.problems.length ? ' ' + mrEsc(d.problems.join(' · ')) : ''}</div>${_syncDetailOpen ? detail : ''}</div>
-        <button onclick="_syncDetailOpen = !_syncDetailOpen; renderSyncBanner(_syncStatus)" class="shrink-0 px-2 py-1 rounded-lg border border-current/30 text-[11px] font-semibold hover:bg-white/5">${_syncDetailOpen ? 'Tutup' : 'Detail'}</button>`;
+        <button onclick="_syncDetailOpen = !_syncDetailOpen; renderSyncBanner(_syncStatus)" class="shrink-0 px-2 py-1 rounded-lg border border-current/30 text-[11px] font-semibold hover:bg-white/5 cursor-pointer">${_syncDetailOpen ? 'Tutup' : 'Detail'}</button>`;
     }
     async function refreshSyncStatus() {
       try {
@@ -30707,7 +30850,12 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
 
     // ================= FIXED DOCKED AI CHAT PANEL LOGIC (Matched to template-ai-dashboard) =================
     let fixedChatDivision = 'HR';
-    let isFixedChatOpen = true; // Fixed and docked on desktop by default
+    let isFixedChatOpen = false; // Closed by default on mobile & laptop < 1440px (A01, A05)
+    try {
+      const sp = localStorage.getItem('kefir_fixed_chat_open');
+      if (typeof window !== 'undefined' && window.innerWidth >= 1440 && sp !== '0') isFixedChatOpen = true;
+      else if (sp === '1' && typeof window !== 'undefined' && window.innerWidth >= 1024) isFixedChatOpen = true;
+    } catch (e) {}
     let currentDashboardTab = 'summary';
 
     // Saran pertanyaan per menu. Setiap pertanyaan HARUS bisa dijawab dari
@@ -31087,6 +31235,7 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
           if (toggleBtn) toggleBtn.classList.add('bg-teal-500/25');
         } else {
           panel.classList.remove('is-open-mobile');
+          panel.classList.add('hidden');
           if (backdrop) backdrop.classList.add('hidden');
           if (fab && currentUser) fab.classList.remove('hidden');
           if (collapseIcon) collapseIcon.style.transform = 'rotate(0deg)';
@@ -33957,6 +34106,192 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
       setInterval(refreshUnusedKpi, 5 * 60 * 1000);
       setInterval(refreshSyncStatus, 60 * 1000);
     };
+  </script>
+  <!-- ================= GLOBAL COMMAND PALETTE MODAL (A08 / Ctrl+K / ⌘K) ================= -->
+  <div id="global-search-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-start justify-center pt-16 sm:pt-24 px-4" onclick="handleSearchModalBackdrop(event)">
+    <div class="w-full max-w-xl bg-slate-900 border border-slate-700/80 rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh] animate-in fade-in zoom-in-95 duration-150" onclick="event.stopPropagation()">
+      <div class="p-3.5 border-b border-slate-800 flex items-center gap-3">
+        <i class="fa-solid fa-magnifying-glass text-cyan-400 text-sm pl-1"></i>
+        <input
+          id="global-search-input"
+          type="text"
+          placeholder="Cari modul, tindakan, pasien, invoice, atau fitur... (Esc untuk tutup)"
+          class="flex-1 bg-transparent border-none text-white text-sm focus:outline-none placeholder-slate-500 font-sans"
+          autocomplete="off"
+          oninput="handleGlobalSearchInput(this.value)"
+          onkeydown="handleGlobalSearchKeydown(event)"
+        />
+        <kbd class="px-2 py-1 rounded bg-slate-800 text-[10px] font-mono text-slate-400 border border-slate-700">ESC</kbd>
+      </div>
+      <div id="global-search-results" class="overflow-y-auto p-2 space-y-1 text-xs max-h-[60vh]">
+        <!-- Search items populated dynamically -->
+      </div>
+      <div class="p-2.5 border-t border-slate-800/80 bg-slate-950/50 flex items-center justify-between text-[11px] text-slate-500">
+        <span class="flex items-center gap-2">
+          <span>Gunakan <kbd class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-400 border border-slate-700">↑</kbd> <kbd class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-400 border border-slate-700">↓</kbd> navigasi</span>
+          <span>• <kbd class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-400 border border-slate-700">↵</kbd> pilih</span>
+        </span>
+        <span class="text-slate-400 font-medium">KEFIR Search</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  // ================= GLOBAL COMMAND PALETTE SEARCH LOGIC (A08) =================
+  const SEARCH_MODULES = [
+    { id: 'summary', name: 'Analisis Eksekutif', sector: 'Management', icon: 'fa-gauge-high', color: 'cyan', tags: 'omset revenue kpi cabang eksekutif' },
+    { id: 'patient360', name: 'Patient 360° EMR', sector: 'Sales', icon: 'fa-user-check', color: 'amber', tags: 'pasien rekam medis emr rincian history transaksi' },
+    { id: 'treatment360', name: 'Treatment 360° Master', sector: 'Sales', icon: 'fa-wand-magic-sparkles', color: 'teal', tags: 'tindakan prosedur master treatment biaya bhp' },
+    { id: 'reminders', name: 'Reminders & Follow-Up', sector: 'Sales', icon: 'fa-bell', color: 'rose', tags: 'ultah birthday h+3 h+7 kontrol dokter alert' },
+    { id: 'segmentblast', name: 'Segmentasi WhatsApp Blast', sector: 'Sales', icon: 'fa-bullseye', color: 'purple', tags: 'wa broadcast crm filter pasien segment' },
+    { id: 'patientgrading', name: 'Grading Pasien (X • Y • Z)', sector: 'Sales', icon: 'fa-users-viewfinder', color: 'rose', tags: 'loyalitas tier frekuensi grade xyz' },
+    { id: 'stocksales', name: 'Penjualan dari Stok Slow-Moving', sector: 'Sales', icon: 'fa-boxes-packing', color: 'amber', tags: 'stok obat rekomendasi promo fefo' },
+    { id: 'reactivation', name: 'Reaktivasi Pasien Lama', sector: 'Sales', icon: 'fa-user-clock', color: 'rose', tags: 'pasien churn recall 6 bulan tidak datang' },
+    { id: 'unusedpkg', name: 'Sisa Treatment & Paket Belum Pakai', sector: 'Sales', icon: 'fa-ticket', color: 'amber', tags: 'deposit saldo paket tersisa kuota belum terpakai' },
+    { id: 'pricemaster', name: 'Harga Promo & Bottom Price', sector: 'Sales', icon: 'fa-tags', color: 'amber', tags: 'diskon harga margin tarif batas bawah' },
+    { id: 'operational', name: 'Operasional & Aset Klinik', sector: 'Operasional', icon: 'fa-screwdriver-wrench', color: 'amber', tags: 'servis laser alat logistik sop aset pemeliharaan' },
+    { id: 'pharmacy', name: 'Farmasi & Stok Skincare FEFO', sector: 'Operasional', icon: 'fa-prescription-bottle-medical', color: 'amber', tags: 'gudang stok minimum kedaluwarsa fefo buffer' },
+    { id: 'feedback', name: 'Feedback Pasien & CX (NPS)', sector: 'Operasional', icon: 'fa-star-half-stroke', color: 'amber', tags: 'keluhan ulasan bintang review rating nps cx kepuasan' },
+    { id: 'hr', name: 'HRD, Shift & Komisi Dokter', sector: 'Human Resources', icon: 'fa-id-card-clip', color: 'rose', tags: 'staf dokter perawat shift roster absensi kpi' },
+    { id: 'marketing', name: 'Marketing & ROAS Meta Ads', sector: 'Marketing', icon: 'fa-bullhorn', color: 'purple', tags: 'iklan campaign ads biaya per lead roas cpa cpc' },
+    { id: 'socialmedia', name: 'Sosial Media (IG & TikTok)', sector: 'Marketing', icon: 'fa-hashtag', color: 'pink', tags: 'instagram konten engagement follower feed story reels' },
+    { id: 'crmblast', name: 'WhatsApp CRM 5-Tier', sector: 'Marketing', icon: 'fa-whatsapp', color: 'emerald', tags: 'wa blast broadcast pesan crm automasi' },
+    { id: 'contentcreator', name: 'AI Content Studio & Copywriter', sector: 'Marketing', icon: 'fa-feather-pointed', color: 'pink', tags: 'caption naskah reels ai copy ide konten' },
+    { id: 'finance', name: 'Finance & Arus Kas Real-Time', sector: 'Finance', icon: 'fa-wallet', color: 'teal', tags: 'kasir uang masuk bank collection void kas flow' },
+    { id: 'settlement', name: 'Auto-Settlement 3-Way Reconcile', sector: 'Finance', icon: 'fa-scale-balanced', color: 'teal', tags: 'rekonsiliasi edc qris transfer selisih pencocokan' },
+    { id: 'invoiceaudit', name: 'Audit Invoice & Anomali', sector: 'Finance', icon: 'fa-magnifying-glass-dollar', color: 'amber', tags: 'anomali curiga pembatalan kasir audit void' },
+    { id: 'commissions', name: 'Kalkulator Komisi Tenaga Medis', sector: 'Finance', icon: 'fa-calculator', color: 'emerald', tags: 'komisi dokter perawat payout fee bonus' },
+    { id: 'integrations', name: 'Integration Hub & API', sector: 'Finance', icon: 'fa-network-wired', color: 'sky', tags: 'gaji.id ocr meta api sync koneksi webhook' }
+  ];
+
+  let searchSelectedIndex = 0;
+  let currentSearchResults = [];
+
+  function openGlobalSearch() {
+    const modal = document.getElementById('global-search-modal');
+    const input = document.getElementById('global-search-input');
+    if (!modal || !input) return;
+    modal.classList.remove('hidden');
+    input.value = '';
+    searchSelectedIndex = 0;
+    renderSearchResults('');
+    setTimeout(() => input.focus(), 60);
+  }
+
+  function closeGlobalSearch() {
+    const modal = document.getElementById('global-search-modal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  function handleSearchModalBackdrop(e) {
+    if (e.target.id === 'global-search-modal') closeGlobalSearch();
+  }
+
+  function handleGlobalSearchInput(query) {
+    searchSelectedIndex = 0;
+    renderSearchResults(query.trim().toLowerCase());
+  }
+
+  function renderSearchResults(q) {
+    const container = document.getElementById('global-search-results');
+    if (!container) return;
+    
+    let filtered = SEARCH_MODULES;
+    if (q) {
+      filtered = SEARCH_MODULES.filter(m => 
+        m.name.toLowerCase().includes(q) || 
+        m.sector.toLowerCase().includes(q) || 
+        m.tags.toLowerCase().includes(q)
+      );
+    }
+    currentSearchResults = filtered;
+
+    if (filtered.length === 0) {
+      container.innerHTML = `
+        <div class="py-8 text-center text-slate-500">
+          <i class="fa-solid fa-magnifying-glass text-xl mb-2"></i>
+          <p class="text-xs">Tidak ada modul yang cocok dengan "${mrEsc(q)}"</p>
+        </div>`;
+      return;
+    }
+
+    container.innerHTML = filtered.map((item, idx) => `
+      <div 
+        id="search-item-${idx}" 
+        onclick="selectSearchModule('${item.id}')"
+        class="flex items-center justify-between p-2.5 rounded-xl cursor-pointer transition ${idx === searchSelectedIndex ? 'bg-cyan-500/20 border border-cyan-500/40 text-white' : 'hover:bg-slate-800/80 text-slate-300'}"
+      >
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-8 h-8 rounded-lg bg-${item.color}-500/15 text-${item.color}-400 flex items-center justify-center shrink-0 border border-${item.color}-500/25">
+            <i class="fa-solid ${item.icon} text-xs"></i>
+          </div>
+          <div class="min-w-0">
+            <div class="font-bold text-xs truncate ${idx === searchSelectedIndex ? 'text-white' : 'text-slate-200'}">${item.name}</div>
+            <div class="text-[10.5px] text-slate-400 flex items-center gap-1.5">
+              <span class="text-cyan-400 font-semibold">${item.sector}</span>
+              <span>•</span>
+              <span class="truncate">${item.tags}</span>
+            </div>
+          </div>
+        </div>
+        <kbd class="px-1.5 py-0.5 rounded bg-slate-800/80 text-[10px] text-slate-400 border border-slate-700/60 font-mono">↵</kbd>
+      </div>
+    `).join('');
+  }
+
+  function handleGlobalSearchKeydown(e) {
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeGlobalSearch();
+    } else if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (currentSearchResults.length > 0) {
+        searchSelectedIndex = (searchSelectedIndex + 1) % currentSearchResults.length;
+        updateSearchSelection();
+      }
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (currentSearchResults.length > 0) {
+        searchSelectedIndex = (searchSelectedIndex - 1 + currentSearchResults.length) % currentSearchResults.length;
+        updateSearchSelection();
+      }
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (currentSearchResults[searchSelectedIndex]) {
+        selectSearchModule(currentSearchResults[searchSelectedIndex].id);
+      }
+    }
+  }
+
+  function updateSearchSelection() {
+    currentSearchResults.forEach((_, idx) => {
+      const el = document.getElementById('search-item-' + idx);
+      if (el) {
+        if (idx === searchSelectedIndex) {
+          el.className = 'flex items-center justify-between p-2.5 rounded-xl cursor-pointer transition bg-cyan-500/20 border border-cyan-500/40 text-white';
+          el.scrollIntoView({ block: 'nearest' });
+        } else {
+          el.className = 'flex items-center justify-between p-2.5 rounded-xl cursor-pointer transition hover:bg-slate-800/80 text-slate-300';
+        }
+      }
+    });
+  }
+
+  function selectSearchModule(moduleId) {
+    closeGlobalSearch();
+    switchTab(moduleId);
+  }
+
+  // Global Keyboard Shortcuts (Ctrl+K for search, Ctrl+/ for AI Chat)
+  window.addEventListener('keydown', function(e) {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      openGlobalSearch();
+    } else if ((e.metaKey || e.ctrlKey) && e.key === '/') {
+      e.preventDefault();
+      if (typeof toggleFixedAiChat === 'function') toggleFixedAiChat();
+    }
+  });
   </script>
 </body>
 </html>

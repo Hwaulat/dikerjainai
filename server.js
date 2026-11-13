@@ -670,11 +670,8 @@ const server = http.createServer(async (req, res) => {
 
   // --- AUTH & LOGIN ENDPOINT ---
   if (pathname === '/api/auth/login' && req.method === 'POST') {
-    let body = '';
-    req.on('data', chunk => { body += chunk; });
-    req.on('end', () => {
+    const processLogin = (payload) => {
       try {
-        const payload = JSON.parse(body || '{}');
         const usernameInput = (payload.username || '').trim().toLowerCase();
         const passInput = (payload.pin || payload.password || '').trim();
 
@@ -700,6 +697,24 @@ const server = http.createServer(async (req, res) => {
           res.writeHead(401, { 'Content-Type': 'application/json' });
           res.end(JSON.stringify({ success: false, error: 'Username/Email atau Password Neosoft salah.' }));
         }
+      } catch (err) {
+        res.writeHead(400, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: err.message }));
+      }
+    };
+
+    if (req.body && typeof req.body === 'object') {
+      return processLogin(req.body);
+    }
+    if (typeof req.body === 'string' && req.body.length > 0) {
+      try { return processLogin(JSON.parse(req.body)); } catch (e) {}
+    }
+
+    let body = '';
+    req.on('data', chunk => { body += chunk; });
+    req.on('end', () => {
+      try {
+        processLogin(JSON.parse(body || '{}'));
       } catch (err) {
         res.writeHead(400, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));

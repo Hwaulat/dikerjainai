@@ -1,0 +1,1442 @@
+[
+  {
+    "id": 1,
+    "code": "EM-260500001",
+    "name": {
+      "first_name": "Anisa",
+      "middle_name": "",
+      "last_name": "Paramita"
+    },
+    "phone": "6281290011111",
+    "gender": "Female",
+    "birth_date": "1986-02-02",
+    "origin_outlet_id": 1,
+    "join_date": "2025-02-10 09:30:00",
+    "first_visit_date": "2025-02-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 2,
+    "code": "EM-260500002",
+    "name": {
+      "first_name": "Siti",
+      "middle_name": "",
+      "last_name": "Salsabila"
+    },
+    "phone": "6281290022222",
+    "gender": "Female",
+    "birth_date": "1987-03-03",
+    "origin_outlet_id": 2,
+    "join_date": "2025-03-10 09:30:00",
+    "first_visit_date": "2025-03-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 3,
+    "code": "EM-260500003",
+    "name": {
+      "first_name": "Rina",
+      "middle_name": "",
+      "last_name": "Wulandari"
+    },
+    "phone": "6281290033333",
+    "gender": "Female",
+    "birth_date": "1988-04-04",
+    "origin_outlet_id": 1,
+    "join_date": "2025-04-10 09:30:00",
+    "first_visit_date": "2025-04-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 4,
+    "code": "EM-260500004",
+    "name": {
+      "first_name": "Dian",
+      "middle_name": "",
+      "last_name": "Pratama"
+    },
+    "phone": "6281290044444",
+    "gender": "Female",
+    "birth_date": "1989-05-05",
+    "origin_outlet_id": 2,
+    "join_date": "2025-05-10 09:30:00",
+    "first_visit_date": "2025-05-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 5,
+    "code": "EM-260500005",
+    "name": {
+      "first_name": "Bunga",
+      "middle_name": "",
+      "last_name": "Wijaya"
+    },
+    "phone": "6281290055555",
+    "gender": "Female",
+    "birth_date": "1990-06-06",
+    "origin_outlet_id": 1,
+    "join_date": "2025-06-10 09:30:00",
+    "first_visit_date": "2025-06-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 6,
+    "code": "EM-260500006",
+    "name": {
+      "first_name": "Maya",
+      "middle_name": "",
+      "last_name": "Hidayat"
+    },
+    "phone": "6281290066666",
+    "gender": "Female",
+    "birth_date": "1991-07-07",
+    "origin_outlet_id": 2,
+    "join_date": "2025-07-10 09:30:00",
+    "first_visit_date": "2025-07-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 7,
+    "code": "EM-260500007",
+    "name": {
+      "first_name": "Nadia",
+      "middle_name": "",
+      "last_name": "Utami"
+    },
+    "phone": "6281290077777",
+    "gender": "Male",
+    "birth_date": "1992-08-08",
+    "origin_outlet_id": 1,
+    "join_date": "2025-08-10 09:30:00",
+    "first_visit_date": "2025-08-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 8,
+    "code": "EM-260500008",
+    "name": {
+      "first_name": "Clarissa",
+      "middle_name": "",
+      "last_name": "Mulyani"
+    },
+    "phone": "6281290088888",
+    "gender": "Female",
+    "birth_date": "1993-09-09",
+    "origin_outlet_id": 2,
+    "join_date": "2025-09-10 09:30:00",
+    "first_visit_date": "2025-09-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 9,
+    "code": "EM-260500009",
+    "name": {
+      "first_name": "Aurelia",
+      "middle_name": "",
+      "last_name": "Nuraini"
+    },
+    "phone": "6281290099999",
+    "gender": "Female",
+    "birth_date": "1994-10-10",
+    "origin_outlet_id": 1,
+    "join_date": "2025-01-10 09:30:00",
+    "first_visit_date": "2025-01-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 10,
+    "code": "EM-260500010",
+    "name": {
+      "first_name": "Putri",
+      "middle_name": "",
+      "last_name": "Kartika"
+    },
+    "phone": "6281290111110",
+    "gender": "Female",
+    "birth_date": "1995-11-11",
+    "origin_outlet_id": 2,
+    "join_date": "2025-02-10 09:30:00",
+    "first_visit_date": "2025-02-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 11,
+    "code": "EM-260500011",
+    "name": {
+      "first_name": "Jessica",
+      "middle_name": "",
+      "last_name": "Natasha"
+    },
+    "phone": "6281290122221",
+    "gender": "Female",
+    "birth_date": "1996-12-12",
+    "origin_outlet_id": 1,
+    "join_date": "2025-03-10 09:30:00",
+    "first_visit_date": "2025-03-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 12,
+    "code": "EM-260500012",
+    "name": {
+      "first_name": "Fitri",
+      "middle_name": "",
+      "last_name": "Handayani"
+    },
+    "phone": "6281290133332",
+    "gender": "Female",
+    "birth_date": "1997-01-13",
+    "origin_outlet_id": 2,
+    "join_date": "2025-04-10 09:30:00",
+    "first_visit_date": "2025-04-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 13,
+    "code": "EM-260500013",
+    "name": {
+      "first_name": "Desi",
+      "middle_name": "",
+      "last_name": "Anggraini"
+    },
+    "phone": "6281290144443",
+    "gender": "Female",
+    "birth_date": "1998-02-14",
+    "origin_outlet_id": 1,
+    "join_date": "2025-05-10 09:30:00",
+    "first_visit_date": "2025-05-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 14,
+    "code": "EM-260500014",
+    "name": {
+      "first_name": "Wulan",
+      "middle_name": "",
+      "last_name": "Lubis"
+    },
+    "phone": "6281290155554",
+    "gender": "Male",
+    "birth_date": "1999-03-15",
+    "origin_outlet_id": 2,
+    "join_date": "2025-06-10 09:30:00",
+    "first_visit_date": "2025-06-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 15,
+    "code": "EM-260500015",
+    "name": {
+      "first_name": "Tania",
+      "middle_name": "",
+      "last_name": "Saputra"
+    },
+    "phone": "6281290166665",
+    "gender": "Female",
+    "birth_date": "2000-04-16",
+    "origin_outlet_id": 1,
+    "join_date": "2025-07-10 09:30:00",
+    "first_visit_date": "2025-07-10",
+    "membership_status": "Platinum VIP"
+  },
+  {
+    "id": 16,
+    "code": "EM-260500016",
+    "name": {
+      "first_name": "Melati",
+      "middle_name": "",
+      "last_name": "Pratiwi"
+    },
+    "phone": "6281290177776",
+    "gender": "Female",
+    "birth_date": "2001-05-17",
+    "origin_outlet_id": 2,
+    "join_date": "2025-08-10 09:30:00",
+    "first_visit_date": "2025-08-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 17,
+    "code": "EM-260500017",
+    "name": {
+      "first_name": "Ratna",
+      "middle_name": "",
+      "last_name": "Rahmawati"
+    },
+    "phone": "6281290188887",
+    "gender": "Female",
+    "birth_date": "2002-06-18",
+    "origin_outlet_id": 1,
+    "join_date": "2025-09-10 09:30:00",
+    "first_visit_date": "2025-09-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 18,
+    "code": "EM-260500018",
+    "name": {
+      "first_name": "Indah",
+      "middle_name": "",
+      "last_name": "Citra"
+    },
+    "phone": "6281290199998",
+    "gender": "Female",
+    "birth_date": "2003-07-19",
+    "origin_outlet_id": 2,
+    "join_date": "2025-01-10 09:30:00",
+    "first_visit_date": "2025-01-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 19,
+    "code": "EM-260500019",
+    "name": {
+      "first_name": "Shinta",
+      "middle_name": "",
+      "last_name": "Valerie"
+    },
+    "phone": "6281290211109",
+    "gender": "Female",
+    "birth_date": "2004-08-20",
+    "origin_outlet_id": 1,
+    "join_date": "2025-02-10 09:30:00",
+    "first_visit_date": "2025-02-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 20,
+    "code": "EM-260500020",
+    "name": {
+      "first_name": "Gita",
+      "middle_name": "",
+      "last_name": "Tan"
+    },
+    "phone": "6281290222220",
+    "gender": "Female",
+    "birth_date": "1985-09-21",
+    "origin_outlet_id": 2,
+    "join_date": "2025-03-10 09:30:00",
+    "first_visit_date": "2025-03-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 21,
+    "code": "EM-260500021",
+    "name": {
+      "first_name": "Tiara",
+      "middle_name": "",
+      "last_name": "Kusuma"
+    },
+    "phone": "6281290233331",
+    "gender": "Male",
+    "birth_date": "1986-10-22",
+    "origin_outlet_id": 1,
+    "join_date": "2025-04-10 09:30:00",
+    "first_visit_date": "2025-04-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 22,
+    "code": "EM-260500022",
+    "name": {
+      "first_name": "Lestari",
+      "middle_name": "",
+      "last_name": "Siregar"
+    },
+    "phone": "6281290244442",
+    "gender": "Female",
+    "birth_date": "1987-11-23",
+    "origin_outlet_id": 2,
+    "join_date": "2025-05-10 09:30:00",
+    "first_visit_date": "2025-05-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 23,
+    "code": "EM-260500023",
+    "name": {
+      "first_name": "Kiki",
+      "middle_name": "",
+      "last_name": "Santoso"
+    },
+    "phone": "6281290255553",
+    "gender": "Female",
+    "birth_date": "1988-12-24",
+    "origin_outlet_id": 1,
+    "join_date": "2025-06-10 09:30:00",
+    "first_visit_date": "2025-06-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 24,
+    "code": "EM-260500024",
+    "name": {
+      "first_name": "Natasya",
+      "middle_name": "",
+      "last_name": "Dewi"
+    },
+    "phone": "6281290266664",
+    "gender": "Female",
+    "birth_date": "1989-01-25",
+    "origin_outlet_id": 2,
+    "join_date": "2025-07-10 09:30:00",
+    "first_visit_date": "2025-07-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 25,
+    "code": "EM-260500025",
+    "name": {
+      "first_name": "Rizky",
+      "middle_name": "",
+      "last_name": "Safitri"
+    },
+    "phone": "6281290277775",
+    "gender": "Female",
+    "birth_date": "1990-02-26",
+    "origin_outlet_id": 1,
+    "join_date": "2025-08-10 09:30:00",
+    "first_visit_date": "2025-08-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 26,
+    "code": "EM-260500026",
+    "name": {
+      "first_name": "Kevin",
+      "middle_name": "",
+      "last_name": "Paramita"
+    },
+    "phone": "6281290288886",
+    "gender": "Female",
+    "birth_date": "1991-03-27",
+    "origin_outlet_id": 2,
+    "join_date": "2025-09-10 09:30:00",
+    "first_visit_date": "2025-09-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 27,
+    "code": "EM-260500027",
+    "name": {
+      "first_name": "Dimas",
+      "middle_name": "",
+      "last_name": "Salsabila"
+    },
+    "phone": "6281290299997",
+    "gender": "Female",
+    "birth_date": "1992-04-28",
+    "origin_outlet_id": 1,
+    "join_date": "2025-01-10 09:30:00",
+    "first_visit_date": "2025-01-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 28,
+    "code": "EM-260500028",
+    "name": {
+      "first_name": "Bagas",
+      "middle_name": "",
+      "last_name": "Wulandari"
+    },
+    "phone": "6281290311108",
+    "gender": "Male",
+    "birth_date": "1993-05-01",
+    "origin_outlet_id": 2,
+    "join_date": "2025-02-10 09:30:00",
+    "first_visit_date": "2025-02-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 29,
+    "code": "EM-260500029",
+    "name": {
+      "first_name": "Aldo",
+      "middle_name": "",
+      "last_name": "Pratama"
+    },
+    "phone": "6281290322219",
+    "gender": "Female",
+    "birth_date": "1994-06-02",
+    "origin_outlet_id": 1,
+    "join_date": "2025-03-10 09:30:00",
+    "first_visit_date": "2025-03-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 30,
+    "code": "EM-260500030",
+    "name": {
+      "first_name": "Reza",
+      "middle_name": "",
+      "last_name": "Wijaya"
+    },
+    "phone": "6281290333330",
+    "gender": "Female",
+    "birth_date": "1995-07-03",
+    "origin_outlet_id": 2,
+    "join_date": "2025-04-10 09:30:00",
+    "first_visit_date": "2025-04-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 31,
+    "code": "EM-260500031",
+    "name": {
+      "first_name": "Anisa",
+      "middle_name": "",
+      "last_name": "Hidayat"
+    },
+    "phone": "6281290344441",
+    "gender": "Female",
+    "birth_date": "1996-08-04",
+    "origin_outlet_id": 1,
+    "join_date": "2025-05-10 09:30:00",
+    "first_visit_date": "2025-05-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 32,
+    "code": "EM-260500032",
+    "name": {
+      "first_name": "Siti",
+      "middle_name": "",
+      "last_name": "Utami"
+    },
+    "phone": "6281290355552",
+    "gender": "Female",
+    "birth_date": "1997-09-05",
+    "origin_outlet_id": 2,
+    "join_date": "2025-06-10 09:30:00",
+    "first_visit_date": "2025-06-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 33,
+    "code": "EM-260500033",
+    "name": {
+      "first_name": "Rina",
+      "middle_name": "",
+      "last_name": "Mulyani"
+    },
+    "phone": "6281290366663",
+    "gender": "Female",
+    "birth_date": "1998-10-06",
+    "origin_outlet_id": 1,
+    "join_date": "2025-07-10 09:30:00",
+    "first_visit_date": "2025-07-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 34,
+    "code": "EM-260500034",
+    "name": {
+      "first_name": "Dian",
+      "middle_name": "",
+      "last_name": "Nuraini"
+    },
+    "phone": "6281290377774",
+    "gender": "Female",
+    "birth_date": "1999-11-07",
+    "origin_outlet_id": 2,
+    "join_date": "2025-08-10 09:30:00",
+    "first_visit_date": "2025-08-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 35,
+    "code": "EM-260500035",
+    "name": {
+      "first_name": "Bunga",
+      "middle_name": "",
+      "last_name": "Kartika"
+    },
+    "phone": "6281290388885",
+    "gender": "Male",
+    "birth_date": "2000-12-08",
+    "origin_outlet_id": 1,
+    "join_date": "2025-09-10 09:30:00",
+    "first_visit_date": "2025-09-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 36,
+    "code": "EM-260500036",
+    "name": {
+      "first_name": "Maya",
+      "middle_name": "",
+      "last_name": "Natasha"
+    },
+    "phone": "6281290399996",
+    "gender": "Female",
+    "birth_date": "2001-01-09",
+    "origin_outlet_id": 2,
+    "join_date": "2025-01-10 09:30:00",
+    "first_visit_date": "2025-01-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 37,
+    "code": "EM-260500037",
+    "name": {
+      "first_name": "Nadia",
+      "middle_name": "",
+      "last_name": "Handayani"
+    },
+    "phone": "6281290411107",
+    "gender": "Female",
+    "birth_date": "2002-02-10",
+    "origin_outlet_id": 1,
+    "join_date": "2025-02-10 09:30:00",
+    "first_visit_date": "2025-02-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 38,
+    "code": "EM-260500038",
+    "name": {
+      "first_name": "Clarissa",
+      "middle_name": "",
+      "last_name": "Anggraini"
+    },
+    "phone": "6281290422218",
+    "gender": "Female",
+    "birth_date": "2003-03-11",
+    "origin_outlet_id": 2,
+    "join_date": "2025-03-10 09:30:00",
+    "first_visit_date": "2025-03-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 39,
+    "code": "EM-260500039",
+    "name": {
+      "first_name": "Aurelia",
+      "middle_name": "",
+      "last_name": "Lubis"
+    },
+    "phone": "6281290433329",
+    "gender": "Female",
+    "birth_date": "2004-04-12",
+    "origin_outlet_id": 1,
+    "join_date": "2025-04-10 09:30:00",
+    "first_visit_date": "2025-04-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 40,
+    "code": "EM-260500040",
+    "name": {
+      "first_name": "Putri",
+      "middle_name": "",
+      "last_name": "Saputra"
+    },
+    "phone": "6281290444440",
+    "gender": "Female",
+    "birth_date": "1985-05-13",
+    "origin_outlet_id": 2,
+    "join_date": "2025-05-10 09:30:00",
+    "first_visit_date": "2025-05-10",
+    "membership_status": "Gold Member"
+  },
+  {
+    "id": 41,
+    "code": "EM-260500041",
+    "name": {
+      "first_name": "Jessica",
+      "middle_name": "",
+      "last_name": "Pratiwi"
+    },
+    "phone": "6281290455551",
+    "gender": "Female",
+    "birth_date": "1986-06-14",
+    "origin_outlet_id": 1,
+    "join_date": "2025-06-10 09:30:00",
+    "first_visit_date": "2025-06-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 42,
+    "code": "EM-260500042",
+    "name": {
+      "first_name": "Fitri",
+      "middle_name": "",
+      "last_name": "Rahmawati"
+    },
+    "phone": "6281290466662",
+    "gender": "Male",
+    "birth_date": "1987-07-15",
+    "origin_outlet_id": 2,
+    "join_date": "2025-07-10 09:30:00",
+    "first_visit_date": "2025-07-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 43,
+    "code": "EM-260500043",
+    "name": {
+      "first_name": "Desi",
+      "middle_name": "",
+      "last_name": "Citra"
+    },
+    "phone": "6281290477773",
+    "gender": "Female",
+    "birth_date": "1988-08-16",
+    "origin_outlet_id": 1,
+    "join_date": "2025-08-10 09:30:00",
+    "first_visit_date": "2025-08-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 44,
+    "code": "EM-260500044",
+    "name": {
+      "first_name": "Wulan",
+      "middle_name": "",
+      "last_name": "Valerie"
+    },
+    "phone": "6281290488884",
+    "gender": "Female",
+    "birth_date": "1989-09-17",
+    "origin_outlet_id": 2,
+    "join_date": "2025-09-10 09:30:00",
+    "first_visit_date": "2025-09-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 45,
+    "code": "EM-260500045",
+    "name": {
+      "first_name": "Tania",
+      "middle_name": "",
+      "last_name": "Tan"
+    },
+    "phone": "6281290499995",
+    "gender": "Female",
+    "birth_date": "1990-10-18",
+    "origin_outlet_id": 1,
+    "join_date": "2025-01-10 09:30:00",
+    "first_visit_date": "2025-01-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 46,
+    "code": "EM-260500046",
+    "name": {
+      "first_name": "Melati",
+      "middle_name": "",
+      "last_name": "Kusuma"
+    },
+    "phone": "6281290511106",
+    "gender": "Female",
+    "birth_date": "1991-11-19",
+    "origin_outlet_id": 2,
+    "join_date": "2025-02-10 09:30:00",
+    "first_visit_date": "2025-02-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 47,
+    "code": "EM-260500047",
+    "name": {
+      "first_name": "Ratna",
+      "middle_name": "",
+      "last_name": "Siregar"
+    },
+    "phone": "6281290522217",
+    "gender": "Female",
+    "birth_date": "1992-12-20",
+    "origin_outlet_id": 1,
+    "join_date": "2025-03-10 09:30:00",
+    "first_visit_date": "2025-03-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 48,
+    "code": "EM-260500048",
+    "name": {
+      "first_name": "Indah",
+      "middle_name": "",
+      "last_name": "Santoso"
+    },
+    "phone": "6281290533328",
+    "gender": "Female",
+    "birth_date": "1993-01-21",
+    "origin_outlet_id": 2,
+    "join_date": "2025-04-10 09:30:00",
+    "first_visit_date": "2025-04-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 49,
+    "code": "EM-260500049",
+    "name": {
+      "first_name": "Shinta",
+      "middle_name": "",
+      "last_name": "Dewi"
+    },
+    "phone": "6281290544439",
+    "gender": "Male",
+    "birth_date": "1994-02-22",
+    "origin_outlet_id": 1,
+    "join_date": "2025-05-10 09:30:00",
+    "first_visit_date": "2025-05-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 50,
+    "code": "EM-260500050",
+    "name": {
+      "first_name": "Gita",
+      "middle_name": "",
+      "last_name": "Safitri"
+    },
+    "phone": "6281290555550",
+    "gender": "Female",
+    "birth_date": "1995-03-23",
+    "origin_outlet_id": 2,
+    "join_date": "2025-06-10 09:30:00",
+    "first_visit_date": "2025-06-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 51,
+    "code": "EM-260500051",
+    "name": {
+      "first_name": "Tiara",
+      "middle_name": "",
+      "last_name": "Paramita"
+    },
+    "phone": "6281290566661",
+    "gender": "Female",
+    "birth_date": "1996-04-24",
+    "origin_outlet_id": 1,
+    "join_date": "2025-07-10 09:30:00",
+    "first_visit_date": "2025-07-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 52,
+    "code": "EM-260500052",
+    "name": {
+      "first_name": "Lestari",
+      "middle_name": "",
+      "last_name": "Salsabila"
+    },
+    "phone": "6281290577772",
+    "gender": "Female",
+    "birth_date": "1997-05-25",
+    "origin_outlet_id": 2,
+    "join_date": "2025-08-10 09:30:00",
+    "first_visit_date": "2025-08-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 53,
+    "code": "EM-260500053",
+    "name": {
+      "first_name": "Kiki",
+      "middle_name": "",
+      "last_name": "Wulandari"
+    },
+    "phone": "6281290588883",
+    "gender": "Female",
+    "birth_date": "1998-06-26",
+    "origin_outlet_id": 1,
+    "join_date": "2025-09-10 09:30:00",
+    "first_visit_date": "2025-09-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 54,
+    "code": "EM-260500054",
+    "name": {
+      "first_name": "Natasya",
+      "middle_name": "",
+      "last_name": "Pratama"
+    },
+    "phone": "6281290599994",
+    "gender": "Female",
+    "birth_date": "1999-07-27",
+    "origin_outlet_id": 2,
+    "join_date": "2025-01-10 09:30:00",
+    "first_visit_date": "2025-01-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 55,
+    "code": "EM-260500055",
+    "name": {
+      "first_name": "Rizky",
+      "middle_name": "",
+      "last_name": "Wijaya"
+    },
+    "phone": "6281290611105",
+    "gender": "Female",
+    "birth_date": "2000-08-28",
+    "origin_outlet_id": 1,
+    "join_date": "2025-02-10 09:30:00",
+    "first_visit_date": "2025-02-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 56,
+    "code": "EM-260500056",
+    "name": {
+      "first_name": "Kevin",
+      "middle_name": "",
+      "last_name": "Hidayat"
+    },
+    "phone": "6281290622216",
+    "gender": "Male",
+    "birth_date": "2001-09-01",
+    "origin_outlet_id": 2,
+    "join_date": "2025-03-10 09:30:00",
+    "first_visit_date": "2025-03-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 57,
+    "code": "EM-260500057",
+    "name": {
+      "first_name": "Dimas",
+      "middle_name": "",
+      "last_name": "Utami"
+    },
+    "phone": "6281290633327",
+    "gender": "Female",
+    "birth_date": "2002-10-02",
+    "origin_outlet_id": 1,
+    "join_date": "2025-04-10 09:30:00",
+    "first_visit_date": "2025-04-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 58,
+    "code": "EM-260500058",
+    "name": {
+      "first_name": "Bagas",
+      "middle_name": "",
+      "last_name": "Mulyani"
+    },
+    "phone": "6281290644438",
+    "gender": "Female",
+    "birth_date": "2003-11-03",
+    "origin_outlet_id": 2,
+    "join_date": "2025-05-10 09:30:00",
+    "first_visit_date": "2025-05-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 59,
+    "code": "EM-260500059",
+    "name": {
+      "first_name": "Aldo",
+      "middle_name": "",
+      "last_name": "Nuraini"
+    },
+    "phone": "6281290655549",
+    "gender": "Female",
+    "birth_date": "2004-12-04",
+    "origin_outlet_id": 1,
+    "join_date": "2025-06-10 09:30:00",
+    "first_visit_date": "2025-06-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 60,
+    "code": "EM-260500060",
+    "name": {
+      "first_name": "Reza",
+      "middle_name": "",
+      "last_name": "Kartika"
+    },
+    "phone": "6281290666660",
+    "gender": "Female",
+    "birth_date": "1985-01-05",
+    "origin_outlet_id": 2,
+    "join_date": "2025-07-10 09:30:00",
+    "first_visit_date": "2025-07-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 61,
+    "code": "EM-260500061",
+    "name": {
+      "first_name": "Anisa",
+      "middle_name": "",
+      "last_name": "Natasha"
+    },
+    "phone": "6281290677771",
+    "gender": "Female",
+    "birth_date": "1986-02-06",
+    "origin_outlet_id": 1,
+    "join_date": "2025-08-10 09:30:00",
+    "first_visit_date": "2025-08-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 62,
+    "code": "EM-260500062",
+    "name": {
+      "first_name": "Siti",
+      "middle_name": "",
+      "last_name": "Handayani"
+    },
+    "phone": "6281290688882",
+    "gender": "Female",
+    "birth_date": "1987-03-07",
+    "origin_outlet_id": 2,
+    "join_date": "2025-09-10 09:30:00",
+    "first_visit_date": "2025-09-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 63,
+    "code": "EM-260500063",
+    "name": {
+      "first_name": "Rina",
+      "middle_name": "",
+      "last_name": "Anggraini"
+    },
+    "phone": "6281290699993",
+    "gender": "Male",
+    "birth_date": "1988-04-08",
+    "origin_outlet_id": 1,
+    "join_date": "2025-01-10 09:30:00",
+    "first_visit_date": "2025-01-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 64,
+    "code": "EM-260500064",
+    "name": {
+      "first_name": "Dian",
+      "middle_name": "",
+      "last_name": "Lubis"
+    },
+    "phone": "6281290711104",
+    "gender": "Female",
+    "birth_date": "1989-05-09",
+    "origin_outlet_id": 2,
+    "join_date": "2025-02-10 09:30:00",
+    "first_visit_date": "2025-02-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 65,
+    "code": "EM-260500065",
+    "name": {
+      "first_name": "Bunga",
+      "middle_name": "",
+      "last_name": "Saputra"
+    },
+    "phone": "6281290722215",
+    "gender": "Female",
+    "birth_date": "1990-06-10",
+    "origin_outlet_id": 1,
+    "join_date": "2025-03-10 09:30:00",
+    "first_visit_date": "2025-03-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 66,
+    "code": "EM-260500066",
+    "name": {
+      "first_name": "Maya",
+      "middle_name": "",
+      "last_name": "Pratiwi"
+    },
+    "phone": "6281290733326",
+    "gender": "Female",
+    "birth_date": "1991-07-11",
+    "origin_outlet_id": 2,
+    "join_date": "2025-04-10 09:30:00",
+    "first_visit_date": "2025-04-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 67,
+    "code": "EM-260500067",
+    "name": {
+      "first_name": "Nadia",
+      "middle_name": "",
+      "last_name": "Rahmawati"
+    },
+    "phone": "6281290744437",
+    "gender": "Female",
+    "birth_date": "1992-08-12",
+    "origin_outlet_id": 1,
+    "join_date": "2025-05-10 09:30:00",
+    "first_visit_date": "2025-05-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 68,
+    "code": "EM-260500068",
+    "name": {
+      "first_name": "Clarissa",
+      "middle_name": "",
+      "last_name": "Citra"
+    },
+    "phone": "6281290755548",
+    "gender": "Female",
+    "birth_date": "1993-09-13",
+    "origin_outlet_id": 2,
+    "join_date": "2025-06-10 09:30:00",
+    "first_visit_date": "2025-06-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 69,
+    "code": "EM-260500069",
+    "name": {
+      "first_name": "Aurelia",
+      "middle_name": "",
+      "last_name": "Valerie"
+    },
+    "phone": "6281290766659",
+    "gender": "Female",
+    "birth_date": "1994-10-14",
+    "origin_outlet_id": 1,
+    "join_date": "2025-07-10 09:30:00",
+    "first_visit_date": "2025-07-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 70,
+    "code": "EM-260500070",
+    "name": {
+      "first_name": "Putri",
+      "middle_name": "",
+      "last_name": "Tan"
+    },
+    "phone": "6281290777770",
+    "gender": "Male",
+    "birth_date": "1995-11-15",
+    "origin_outlet_id": 2,
+    "join_date": "2025-08-10 09:30:00",
+    "first_visit_date": "2025-08-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 71,
+    "code": "EM-260500071",
+    "name": {
+      "first_name": "Jessica",
+      "middle_name": "",
+      "last_name": "Kusuma"
+    },
+    "phone": "6281290788881",
+    "gender": "Female",
+    "birth_date": "1996-12-16",
+    "origin_outlet_id": 1,
+    "join_date": "2025-09-10 09:30:00",
+    "first_visit_date": "2025-09-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 72,
+    "code": "EM-260500072",
+    "name": {
+      "first_name": "Fitri",
+      "middle_name": "",
+      "last_name": "Siregar"
+    },
+    "phone": "6281290799992",
+    "gender": "Female",
+    "birth_date": "1997-01-17",
+    "origin_outlet_id": 2,
+    "join_date": "2025-01-10 09:30:00",
+    "first_visit_date": "2025-01-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 73,
+    "code": "EM-260500073",
+    "name": {
+      "first_name": "Desi",
+      "middle_name": "",
+      "last_name": "Santoso"
+    },
+    "phone": "6281290811103",
+    "gender": "Female",
+    "birth_date": "1998-02-18",
+    "origin_outlet_id": 1,
+    "join_date": "2025-02-10 09:30:00",
+    "first_visit_date": "2025-02-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 74,
+    "code": "EM-260500074",
+    "name": {
+      "first_name": "Wulan",
+      "middle_name": "",
+      "last_name": "Dewi"
+    },
+    "phone": "6281290822214",
+    "gender": "Female",
+    "birth_date": "1999-03-19",
+    "origin_outlet_id": 2,
+    "join_date": "2025-03-10 09:30:00",
+    "first_visit_date": "2025-03-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 75,
+    "code": "EM-260500075",
+    "name": {
+      "first_name": "Tania",
+      "middle_name": "",
+      "last_name": "Safitri"
+    },
+    "phone": "6281290833325",
+    "gender": "Female",
+    "birth_date": "2000-04-20",
+    "origin_outlet_id": 1,
+    "join_date": "2025-04-10 09:30:00",
+    "first_visit_date": "2025-04-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 76,
+    "code": "EM-260500076",
+    "name": {
+      "first_name": "Melati",
+      "middle_name": "",
+      "last_name": "Paramita"
+    },
+    "phone": "6281290844436",
+    "gender": "Female",
+    "birth_date": "2001-05-21",
+    "origin_outlet_id": 2,
+    "join_date": "2025-05-10 09:30:00",
+    "first_visit_date": "2025-05-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 77,
+    "code": "EM-260500077",
+    "name": {
+      "first_name": "Ratna",
+      "middle_name": "",
+      "last_name": "Salsabila"
+    },
+    "phone": "6281290855547",
+    "gender": "Male",
+    "birth_date": "2002-06-22",
+    "origin_outlet_id": 1,
+    "join_date": "2025-06-10 09:30:00",
+    "first_visit_date": "2025-06-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 78,
+    "code": "EM-260500078",
+    "name": {
+      "first_name": "Indah",
+      "middle_name": "",
+      "last_name": "Wulandari"
+    },
+    "phone": "6281290866658",
+    "gender": "Female",
+    "birth_date": "2003-07-23",
+    "origin_outlet_id": 2,
+    "join_date": "2025-07-10 09:30:00",
+    "first_visit_date": "2025-07-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 79,
+    "code": "EM-260500079",
+    "name": {
+      "first_name": "Shinta",
+      "middle_name": "",
+      "last_name": "Pratama"
+    },
+    "phone": "6281290877769",
+    "gender": "Female",
+    "birth_date": "2004-08-24",
+    "origin_outlet_id": 1,
+    "join_date": "2025-08-10 09:30:00",
+    "first_visit_date": "2025-08-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 80,
+    "code": "EM-260500080",
+    "name": {
+      "first_name": "Gita",
+      "middle_name": "",
+      "last_name": "Wijaya"
+    },
+    "phone": "6281290888880",
+    "gender": "Female",
+    "birth_date": "1985-09-25",
+    "origin_outlet_id": 2,
+    "join_date": "2025-09-10 09:30:00",
+    "first_visit_date": "2025-09-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 81,
+    "code": "EM-260500081",
+    "name": {
+      "first_name": "Tiara",
+      "middle_name": "",
+      "last_name": "Hidayat"
+    },
+    "phone": "6281290899991",
+    "gender": "Female",
+    "birth_date": "1986-10-26",
+    "origin_outlet_id": 1,
+    "join_date": "2025-01-10 09:30:00",
+    "first_visit_date": "2025-01-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 82,
+    "code": "EM-260500082",
+    "name": {
+      "first_name": "Lestari",
+      "middle_name": "",
+      "last_name": "Utami"
+    },
+    "phone": "6281290911102",
+    "gender": "Female",
+    "birth_date": "1987-11-27",
+    "origin_outlet_id": 2,
+    "join_date": "2025-02-10 09:30:00",
+    "first_visit_date": "2025-02-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 83,
+    "code": "EM-260500083",
+    "name": {
+      "first_name": "Kiki",
+      "middle_name": "",
+      "last_name": "Mulyani"
+    },
+    "phone": "6281290922213",
+    "gender": "Female",
+    "birth_date": "1988-12-28",
+    "origin_outlet_id": 1,
+    "join_date": "2025-03-10 09:30:00",
+    "first_visit_date": "2025-03-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 84,
+    "code": "EM-260500084",
+    "name": {
+      "first_name": "Natasya",
+      "middle_name": "",
+      "last_name": "Nuraini"
+    },
+    "phone": "6281290933324",
+    "gender": "Male",
+    "birth_date": "1989-01-01",
+    "origin_outlet_id": 2,
+    "join_date": "2025-04-10 09:30:00",
+    "first_visit_date": "2025-04-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 85,
+    "code": "EM-260500085",
+    "name": {
+      "first_name": "Rizky",
+      "middle_name": "",
+      "last_name": "Kartika"
+    },
+    "phone": "6281290944435",
+    "gender": "Female",
+    "birth_date": "1990-02-02",
+    "origin_outlet_id": 1,
+    "join_date": "2025-05-10 09:30:00",
+    "first_visit_date": "2025-05-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 86,
+    "code": "EM-260500086",
+    "name": {
+      "first_name": "Kevin",
+      "middle_name": "",
+      "last_name": "Natasha"
+    },
+    "phone": "6281290955546",
+    "gender": "Female",
+    "birth_date": "1991-03-03",
+    "origin_outlet_id": 2,
+    "join_date": "2025-06-10 09:30:00",
+    "first_visit_date": "2025-06-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 87,
+    "code": "EM-260500087",
+    "name": {
+      "first_name": "Dimas",
+      "middle_name": "",
+      "last_name": "Handayani"
+    },
+    "phone": "6281290966657",
+    "gender": "Female",
+    "birth_date": "1992-04-04",
+    "origin_outlet_id": 1,
+    "join_date": "2025-07-10 09:30:00",
+    "first_visit_date": "2025-07-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 88,
+    "code": "EM-260500088",
+    "name": {
+      "first_name": "Bagas",
+      "middle_name": "",
+      "last_name": "Anggraini"
+    },
+    "phone": "6281290977768",
+    "gender": "Female",
+    "birth_date": "1993-05-05",
+    "origin_outlet_id": 2,
+    "join_date": "2025-08-10 09:30:00",
+    "first_visit_date": "2025-08-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 89,
+    "code": "EM-260500089",
+    "name": {
+      "first_name": "Aldo",
+      "middle_name": "",
+      "last_name": "Lubis"
+    },
+    "phone": "6281290988879",
+    "gender": "Female",
+    "birth_date": "1994-06-06",
+    "origin_outlet_id": 1,
+    "join_date": "2025-09-10 09:30:00",
+    "first_visit_date": "2025-09-10",
+    "membership_status": "Silver Member"
+  },
+  {
+    "id": 90,
+    "code": "EM-260500090",
+    "name": {
+      "first_name": "Reza",
+      "middle_name": "",
+      "last_name": "Saputra"
+    },
+    "phone": "6281290999990",
+    "gender": "Female",
+    "birth_date": "1995-07-07",
+    "origin_outlet_id": 2,
+    "join_date": "2025-01-10 09:30:00",
+    "first_visit_date": "2025-01-10",
+    "membership_status": "Silver Member"
+  }
+]

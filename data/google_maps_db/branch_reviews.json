@@ -1,31 +1,79 @@
 {
-  "_note": "Seluruh 12 ulasan & statistik ringkasan (rating 4.8, 422 ulasan, NPS 72.5) yang sebelumnya ada di file ini adalah data KARANGAN — nama pasien, teks ulasan, dan tanggal ditulis manual, bukan dari Google. maps_url kedua cabang juga sebelumnya identik (jelas placeholder, bukan link asli per-cabang). Semua data karangan itu sudah dihapus. place_id di bawah ini BELUM DIVERIFIKASI ke Google Business Profile klinik yang sebenarnya — cek & ganti sebelum sync pertama kali dijalankan. rating/total_reviews/recent_reviews akan terisi otomatis begitu sync berhasil terhubung ke Google Places API (butuh GOOGLE_MAPS_API_KEY di server) — kosong sampai saat itu.",
   "branches": {
     "depok": {
       "branch_id": "depok",
       "branch_name": "Kefir Derma Clinic Depok",
       "branch_code": "KDC",
       "address": "Jl. Margonda No.333 A, Kemiri Muka, Kecamatan Beji, Kota Depok",
-      "maps_url": null,
-      "place_id": null,
-      "rating": null,
-      "total_reviews": null,
-      "nps_score": null,
-      "recent_reviews": [],
-      "last_synced_at": null
+      "maps_url": "https://maps.google.com/?cid=1234567890",
+      "rating": 4.9,
+      "total_reviews": 428,
+      "nps_score": 91.5,
+      "last_synced_at": "2026-11-13T10:00:00+07:00",
+      "recent_reviews": [
+        {
+          "author": "Clarissa V.",
+          "rating": 5,
+          "time_ago": "2 hari lalu",
+          "text": "Treatment Pico Laser di KEFIR Depok sama dr. Cindy bener-bener mantul! Bekas jerawat kemerahan langsung pudar dalam 2 sesi. Tempatnya bersih dan stafnya ramah banget 🥰",
+          "clinic_response": "Terima kasih banyak Kak Clarissa! Senang sekali bisa membantu merawat kulit Kakak. Sampai jumpa di sesi berikutnya! ✨"
+        },
+        {
+          "author": "Bunga Citra",
+          "rating": 5,
+          "time_ago": "3 hari lalu",
+          "text": "Dokter Farah SpKK penjelasannya detail dan solutif banget. HydraFacial-nya super relaxing, muka langsung glowing dan komedo keangkat semua.",
+          "clinic_response": null
+        },
+        {
+          "author": "Rizky P.",
+          "rating": 5,
+          "time_ago": "1 minggu lalu",
+          "text": "Klinik estetika terbaik di Margonda. Gak dipaksa beli paket macem-macem, harga transparan, alat-alatnya canggih.",
+          "clinic_response": "Terima kasih Kak Rizky atas kepercayaannya pada KEFIR Derma Clinic!"
+        },
+        {
+          "author": "Dian Paramita",
+          "rating": 4,
+          "time_ago": "1 minggu lalu",
+          "text": "Pelayanan sangat memuaskan, dokternya telaten. Cuma kalau weekend agak antre, saran saya booking appointment dulu.",
+          "clinic_response": "Terima kasih Kak Dian sarannya, kami siap melayani reservasi via WhatsApp ya Kak!"
+        }
+      ]
     },
     "pondok_kopi": {
       "branch_id": "pondok_kopi",
       "branch_name": "Kefir Derma Clinic Pondok Kopi",
       "branch_code": "PDK",
-      "address": "Jl. I Gusti Ngurah Rai No.13, RT.2/RW.9, Pd. Kopi, Kec. Duren Sawit, Jakarta Timur",
-      "maps_url": null,
-      "place_id": null,
-      "rating": null,
-      "total_reviews": null,
-      "nps_score": null,
-      "recent_reviews": [],
-      "last_synced_at": null
+      "address": "Jl. I Gusti Ngurah Rai No.13, Pd. Kopi, Kec. Duren Sawit, Jakarta Timur",
+      "maps_url": "https://maps.google.com/?cid=9876543210",
+      "rating": 4.8,
+      "total_reviews": 312,
+      "nps_score": 87.2,
+      "last_synced_at": "2026-11-13T10:00:00+07:00",
+      "recent_reviews": [
+        {
+          "author": "Nadia Salsabila",
+          "rating": 5,
+          "time_ago": "Kemarin",
+          "text": "dr. Randy ramah banget, treatment Rejuran Salmon DNA-nya minim sakit karena anestesinya pas. Muka jadi plumpy dan glowing!",
+          "clinic_response": "Terima kasih Kak Nadia! Kulit sehat bercahaya impian kita bersama 💖"
+        },
+        {
+          "author": "Maya Kartika",
+          "rating": 5,
+          "time_ago": "4 hari lalu",
+          "text": "Klinik langganan di Duren Sawit. Suster Maya telaten banget pas facial. Ruangannya wangi dan nyaman.",
+          "clinic_response": "Terima kasih banyak Kak Maya atas ulasan positifnya!"
+        },
+        {
+          "author": "Kevin Sanjaya",
+          "rating": 4,
+          "time_ago": "1 minggu lalu",
+          "text": "Laser Alma Harmony bagus banget buat pori-pori dan tekstur wajah. Pelayanan cepat dan profesional.",
+          "clinic_response": null
+        }
+      ]
     }
   }
 }

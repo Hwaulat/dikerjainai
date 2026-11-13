@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "id": "REC-001",
+    "patient_id": 8,
+    "patient_name": "Clarissa Valerie",
+    "doctor_name": "dr. Cindy Novita",
+    "treatment_code": "T-001",
+    "treatment_name": "Pico Glow Laser (Sesi 2)",
+    "recommended_date": "2026-11-28",
+    "status": "Pending Booking",
+    "notes": "Lanjutkan sesi 2 untuk optimalisasi pembersihan flek melanin."
+  },
+  {
+    "id": "REC-002",
+    "patient_id": 22,
+    "patient_name": "Nadia Salsabila",
+    "doctor_name": "dr. Randy Wijaya",
+    "treatment_code": "T-003",
+    "treatment_name": "Rejuran Salmon DNA Booster",
+    "recommended_date": "2026-12-05",
+    "status": "Contacted",
+    "notes": "Kombinasikan dengan Cica Barrier Soothing Toner di rumah."
+  }
+]

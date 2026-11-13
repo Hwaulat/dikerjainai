@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": 1,
+    "date": "2026-11-12",
+    "patient_name": "Clarissa Valerie",
+    "branch": "Depok",
+    "rating_doctor": 5,
+    "rating_service": 5,
+    "doctor_name": "dr. Cindy Novita",
+    "treatment_name": "Pico Glow Laser",
+    "comment": "Sangat puas! dr. Cindy komunikatif dan menjelaskan aftercare dengan jelas.",
+    "nps": 10
+  },
+  {
+    "id": 2,
+    "date": "2026-11-12",
+    "patient_name": "Bunga Citra",
+    "branch": "Depok",
+    "rating_doctor": 5,
+    "rating_service": 5,
+    "doctor_name": "dr. Farah Diba Sp.D.V.E",
+    "treatment_name": "HydraFacial Deep Cleansing",
+    "comment": "Pelayanan ramah, terapisnya lembut dan tidak sakit sama sekali.",
+    "nps": 10
+  },
+  {
+    "id": 3,
+    "date": "2026-11-11",
+    "patient_name": "Nadia Salsabila",
+    "branch": "Pondok Kopi",
+    "rating_doctor": 5,
+    "rating_service": 4,
+    "doctor_name": "dr. Randy Wijaya",
+    "treatment_name": "Rejuran Healer Salmon DNA",
+    "comment": "Hasil treatment langsung kelihatan segar. Ruang tunggu nyaman.",
+    "nps": 9
+  },
+  {
+    "id": 4,
+    "date": "2026-11-10",
+    "patient_name": "Rizky Pratama",
+    "branch": "Depok",
+    "rating_doctor": 5,
+    "rating_service": 5,
+    "doctor_name": "dr. Cindy Novita",
+    "treatment_name": "Acne Clear Peeling",
+    "comment": "Jerawat langsung kempes dalam 2 hari. Recommended!",
+    "nps": 10
+  },
+  {
+    "id": 5,
+    "date": "2026-11-09",
+    "patient_name": "Maya Kartika",
+    "branch": "Pondok Kopi",
+    "rating_doctor": 4,
+    "rating_service": 5,
+    "doctor_name": "dr. Amanda Putri",
+    "treatment_name": "Kefir Phyto Derma Facial",
+    "comment": "Sangat menenangkan, kulit halus dan lembap.",
+    "nps": 9
+  }
+]

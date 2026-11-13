@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "item_code": "BHP-001",
+    "name": "Kasa Steril 7.5 x 7.5cm (Kotak)",
+    "stock": 48,
+    "min_stock": 20,
+    "uom": "Box",
+    "cogs": 25000,
+    "supplier": "PT Kimia Farma Medika"
+  },
+  {
+    "id": 2,
+    "item_code": "BHP-002",
+    "name": "Jarum BD PrecisionGlide 30G x 1/2",
+    "stock": 8,
+    "min_stock": 25,
+    "uom": "Box",
+    "cogs": 85000,
+    "supplier": "PT IDS Medical Systems"
+  },
+  {
+    "id": 3,
+    "item_code": "BHP-003",
+    "name": "Spuit Syringe 1cc Terumo Ultra",
+    "stock": 120,
+    "min_stock": 50,
+    "uom": "Pcs",
+    "cogs": 4500,
+    "supplier": "PT IDS Medical Systems"
+  },
+  {
+    "id": 4,
+    "item_code": "BHP-004",
+    "name": "Krim Anestesi Topikal Lidocaine 10.56% 500g",
+    "stock": 3,
+    "min_stock": 2,
+    "uom": "Pot",
+    "cogs": 650000,
+    "supplier": "PT Harsen Laboratories"
+  },
+  {
+    "id": 5,
+    "item_code": "BHP-005",
+    "name": "Serum PDRN Salmon DNA Rejuran Healer 2ml",
+    "stock": 6,
+    "min_stock": 10,
+    "uom": "Ampul",
+    "cogs": 1200000,
+    "supplier": "PT Regen Prime Aesthetics"
+  },
+  {
+    "id": 6,
+    "item_code": "BHP-006",
+    "name": "Handscoon Nitrile Non-Powder M (Sens)",
+    "stock": 35,
+    "min_stock": 15,
+    "uom": "Box",
+    "cogs": 48000,
+    "supplier": "PT Kimia Farma Medika"
+  },
+  {
+    "id": 7,
+    "item_code": "BHP-007",
+    "name": "Alcohol Swabs 70% BD",
+    "stock": 18,
+    "min_stock": 10,
+    "uom": "Box",
+    "cogs": 18000,
+    "supplier": "PT Kimia Farma Medika"
+  },
+  {
+    "id": 8,
+    "item_code": "BHP-008",
+    "name": "Tip Laser Pico Toning Disposible",
+    "stock": 14,
+    "min_stock": 10,
+    "uom": "Pcs",
+    "cogs": 175000,
+    "supplier": "PT IDS Medical Systems"
+  }
+]

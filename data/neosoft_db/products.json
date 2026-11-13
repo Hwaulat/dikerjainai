@@ -1,0 +1,1262 @@
+[
+  {
+    "id": 82,
+    "product_treatment_code": "T-26050081",
+    "product_treatment_name": "Kefir Skin Analyzer Pro",
+    "product_treatment_category_name": "Add On",
+    "price": 50000,
+    "cogs": 12500,
+    "status": 1
+  },
+  {
+    "id": 20,
+    "product_treatment_code": "T-26050019",
+    "product_treatment_name": "Kefir Phyto Derma",
+    "product_treatment_category_name": "Facial",
+    "price": 195000,
+    "cogs": 48750,
+    "status": 1
+  },
+  {
+    "id": 21,
+    "product_treatment_code": "T-26050020",
+    "product_treatment_name": "Kefir Microdermabrasion",
+    "product_treatment_category_name": "Facial",
+    "price": 165000,
+    "cogs": 41250,
+    "status": 1
+  },
+  {
+    "id": 18,
+    "product_treatment_code": "T-26050017",
+    "product_treatment_name": "Kefir 14 in 1 Crystal Dew",
+    "product_treatment_category_name": "Facial",
+    "price": 300000,
+    "cogs": 75000,
+    "status": 1
+  },
+  {
+    "id": 17,
+    "product_treatment_code": "T-26050016",
+    "product_treatment_name": "Kefir 14 in 1 Acne Renewal",
+    "product_treatment_category_name": "Facial",
+    "price": 325000,
+    "cogs": 81250,
+    "status": 1
+  },
+  {
+    "id": 16,
+    "product_treatment_code": "T-26050015",
+    "product_treatment_name": "Kefir DNA Salmon Facial",
+    "product_treatment_category_name": "Facial",
+    "price": 380000,
+    "cogs": 95000,
+    "status": 1
+  },
+  {
+    "id": 15,
+    "product_treatment_code": "T-26050014",
+    "product_treatment_name": "Instant Hollywood Glow",
+    "product_treatment_category_name": "Facial",
+    "price": 550000,
+    "cogs": 137500,
+    "status": 1
+  },
+  {
+    "id": 87,
+    "product_treatment_code": "T-26050086",
+    "product_treatment_name": "Luxury Yoga Face",
+    "product_treatment_category_name": "Add On",
+    "price": 39000,
+    "cogs": 9750,
+    "status": 1
+  },
+  {
+    "id": 457,
+    "product_treatment_code": "T-26090007",
+    "product_treatment_name": "Gua Sha Glow Lift",
+    "product_treatment_category_name": "Add On",
+    "price": 50000,
+    "cogs": 12500,
+    "status": 1
+  },
+  {
+    "id": 85,
+    "product_treatment_code": "T-26050084",
+    "product_treatment_name": "Acne Injection / Spot",
+    "product_treatment_category_name": "Injection",
+    "price": 60000,
+    "cogs": 15000,
+    "status": 1
+  },
+  {
+    "id": 84,
+    "product_treatment_code": "T-26050083",
+    "product_treatment_name": "PDT Face",
+    "product_treatment_category_name": "Add On",
+    "price": 60000,
+    "cogs": 15000,
+    "status": 1
+  },
+  {
+    "id": 24,
+    "product_treatment_code": "T-26050023",
+    "product_treatment_name": "Pico Face Laser",
+    "product_treatment_category_name": "Laser",
+    "price": 400000,
+    "cogs": 100000,
+    "status": 1
+  },
+  {
+    "id": 162,
+    "product_treatment_code": "T-26050161",
+    "product_treatment_name": "Pico Black Doll",
+    "product_treatment_category_name": "Laser",
+    "price": 445000,
+    "cogs": 111250,
+    "status": 1
+  },
+  {
+    "id": 25,
+    "product_treatment_code": "T-26050024",
+    "product_treatment_name": "Pico Neck Laser",
+    "product_treatment_category_name": "Laser",
+    "price": 400000,
+    "cogs": 100000,
+    "status": 1
+  },
+  {
+    "id": 26,
+    "product_treatment_code": "T-26050025",
+    "product_treatment_name": "Pico Lip Laser",
+    "product_treatment_category_name": "Laser",
+    "price": 250000,
+    "cogs": 62500,
+    "status": 1
+  },
+  {
+    "id": 164,
+    "product_treatment_code": "T-26050163",
+    "product_treatment_name": "ND-YAG Laser",
+    "product_treatment_category_name": "Laser",
+    "price": 385000,
+    "cogs": 96250,
+    "status": 1
+  },
+  {
+    "id": 22,
+    "product_treatment_code": "T-26050021",
+    "product_treatment_name": "CO2 Laser",
+    "product_treatment_category_name": "Laser",
+    "price": 480000,
+    "cogs": 120000,
+    "status": 1
+  },
+  {
+    "id": 113,
+    "product_treatment_code": "T-26050112",
+    "product_treatment_name": "DNA Salmon Glowbooster (2cc)",
+    "product_treatment_category_name": "Skinbooster Signature",
+    "price": 1045000,
+    "cogs": 261250,
+    "status": 1
+  },
+  {
+    "id": 111,
+    "product_treatment_code": "T-26050110",
+    "product_treatment_name": "White Mochi (2cc)",
+    "product_treatment_category_name": "Skinbooster Signature",
+    "price": 1575000,
+    "cogs": 393750,
+    "status": 1
+  },
+  {
+    "id": 114,
+    "product_treatment_code": "T-26050113",
+    "product_treatment_name": "Exosome (2cc)",
+    "product_treatment_category_name": "Skinbooster Signature",
+    "price": 1575000,
+    "cogs": 393750,
+    "status": 1
+  },
+  {
+    "id": 58,
+    "product_treatment_code": "T-26050057",
+    "product_treatment_name": "Hair Growth Booster (2cc)",
+    "product_treatment_category_name": "Skinbooster Signature",
+    "price": 1035000,
+    "cogs": 258750,
+    "status": 1
+  },
+  {
+    "id": 112,
+    "product_treatment_code": "T-26050111",
+    "product_treatment_name": "Acne Clarity Booster (2cc)",
+    "product_treatment_category_name": "Skinbooster Signature",
+    "price": 1129000,
+    "cogs": 282250,
+    "status": 1
+  },
+  {
+    "id": 23,
+    "product_treatment_code": "T-26050022",
+    "product_treatment_name": "Micro Glowtox Booster (2cc)",
+    "product_treatment_category_name": "Skinbooster Signature",
+    "price": 1649000,
+    "cogs": 412250,
+    "status": 1
+  },
+  {
+    "id": 103,
+    "product_treatment_code": "T-26050102",
+    "product_treatment_name": "NCTF Full Face (2cc)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 2499000,
+    "cogs": 624750,
+    "status": 1
+  },
+  {
+    "id": 105,
+    "product_treatment_code": "T-26050104",
+    "product_treatment_name": "NCTF - Pink Lips (1 cc)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 1418000,
+    "cogs": 354500,
+    "status": 1
+  },
+  {
+    "id": 104,
+    "product_treatment_code": "T-26050103",
+    "product_treatment_name": "NCTF - Bright Undereye (2cc)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 1433000,
+    "cogs": 358250,
+    "status": 1
+  },
+  {
+    "id": 109,
+    "product_treatment_code": "T-26050108",
+    "product_treatment_name": "Add on NCTF / cc",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 1229000,
+    "cogs": 307250,
+    "status": 1
+  },
+  {
+    "id": 108,
+    "product_treatment_code": "T-26050107",
+    "product_treatment_name": "Pluryal Shine (2cc)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 1418000,
+    "cogs": 354500,
+    "status": 1
+  },
+  {
+    "id": 106,
+    "product_treatment_code": "T-26050105",
+    "product_treatment_name": "Pluryal Radiance (2cc)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 1418000,
+    "cogs": 354500,
+    "status": 1
+  },
+  {
+    "id": 107,
+    "product_treatment_code": "T-26050106",
+    "product_treatment_name": "Pluryal Acne (2cc)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 1444000,
+    "cogs": 361000,
+    "status": 1
+  },
+  {
+    "id": 100,
+    "product_treatment_code": "T-26050099",
+    "product_treatment_name": "Evehilo Skin Booster Half Face (1/2 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 2730000,
+    "cogs": 682500,
+    "status": 1
+  },
+  {
+    "id": 94,
+    "product_treatment_code": "T-26050093",
+    "product_treatment_name": "Evehilo Skin Booster Full Face (1 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 4368000,
+    "cogs": 1092000,
+    "status": 1
+  },
+  {
+    "id": 102,
+    "product_treatment_code": "T-26050101",
+    "product_treatment_name": "Vitaran Polybooster Half Face (1/2 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 3023000,
+    "cogs": 755750,
+    "status": 1
+  },
+  {
+    "id": 96,
+    "product_treatment_code": "T-26050095",
+    "product_treatment_name": "Vitaran Polybooster Full Face (1 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 4778000,
+    "cogs": 1194500,
+    "status": 1
+  },
+  {
+    "id": 101,
+    "product_treatment_code": "T-26050100",
+    "product_treatment_name": "Vitaran PN Half Face (1/2 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 2793000,
+    "cogs": 698250,
+    "status": 1
+  },
+  {
+    "id": 95,
+    "product_treatment_code": "T-26050094",
+    "product_treatment_name": "Vitaran PN Full Face (1 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 4838000,
+    "cogs": 1209500,
+    "status": 1
+  },
+  {
+    "id": 98,
+    "product_treatment_code": "T-26050097",
+    "product_treatment_name": "Rejuran Healer Half Face (1/2 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 3959000,
+    "cogs": 989750,
+    "status": 1
+  },
+  {
+    "id": 90,
+    "product_treatment_code": "T-26050089",
+    "product_treatment_name": "Rejuran Healer Full Face (1 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 6011000,
+    "cogs": 1502750,
+    "status": 1
+  },
+  {
+    "id": 99,
+    "product_treatment_code": "T-26050098",
+    "product_treatment_name": "Rejuran HB Half Face (1/2 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 3549000,
+    "cogs": 887250,
+    "status": 1
+  },
+  {
+    "id": 93,
+    "product_treatment_code": "T-26050092",
+    "product_treatment_name": "Rejuran HB Full Face (1 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 5324000,
+    "cogs": 1331000,
+    "status": 1
+  },
+  {
+    "id": 117,
+    "product_treatment_code": "T-26050116",
+    "product_treatment_name": "Luwen CollStim / cc",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 3770000,
+    "cogs": 942500,
+    "status": 1
+  },
+  {
+    "id": 118,
+    "product_treatment_code": "T-26050117",
+    "product_treatment_name": "Juvelook / cc",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 1775000,
+    "cogs": 443750,
+    "status": 1
+  },
+  {
+    "id": 116,
+    "product_treatment_code": "T-26050115",
+    "product_treatment_name": "Juvelook Half Face (3cc)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 4838000,
+    "cogs": 1209500,
+    "status": 1
+  },
+  {
+    "id": 115,
+    "product_treatment_code": "T-26050114",
+    "product_treatment_name": "Juvelook Full Face (6cc)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 7235000,
+    "cogs": 1808750,
+    "status": 1
+  },
+  {
+    "id": 97,
+    "product_treatment_code": "T-26050096",
+    "product_treatment_name": "Nucleofill Half Face (1/2 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 3822000,
+    "cogs": 955500,
+    "status": 1
+  },
+  {
+    "id": 91,
+    "product_treatment_code": "T-26050090",
+    "product_treatment_name": "Nucleofill Full Face (1 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 5733000,
+    "cogs": 1433250,
+    "status": 1
+  },
+  {
+    "id": 92,
+    "product_treatment_code": "T-26050091",
+    "product_treatment_name": "Profhilo Half Face (1/2 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 5187000,
+    "cogs": 1296750,
+    "status": 1
+  },
+  {
+    "id": 89,
+    "product_treatment_code": "T-26050088",
+    "product_treatment_name": "Profhilo Full Face (1 syringe)",
+    "product_treatment_category_name": "Skinbooster Premium",
+    "price": 8600000,
+    "cogs": 2150000,
+    "status": 1
+  },
+  {
+    "id": 129,
+    "product_treatment_code": "T-26050128",
+    "product_treatment_name": "Meso Intralipo V-Line (2cc)",
+    "product_treatment_category_name": "Meso",
+    "price": 585000,
+    "cogs": 146250,
+    "status": 1
+  },
+  {
+    "id": 128,
+    "product_treatment_code": "T-26050127",
+    "product_treatment_name": "Meso Intralipo Pipi (3cc)",
+    "product_treatment_category_name": "Meso",
+    "price": 790000,
+    "cogs": 197500,
+    "status": 1
+  },
+  {
+    "id": 51,
+    "product_treatment_code": "T-26050050",
+    "product_treatment_name": "Add on Meso Intralipo / cc",
+    "product_treatment_category_name": "Meso",
+    "price": 240000,
+    "cogs": 60000,
+    "status": 1
+  },
+  {
+    "id": 132,
+    "product_treatment_code": "T-26050131",
+    "product_treatment_name": "Meso Lipo Perut/ Bra Line / Pinggang (10 cc)",
+    "product_treatment_category_name": "Meso",
+    "price": 755000,
+    "cogs": 188750,
+    "status": 1
+  },
+  {
+    "id": 447,
+    "product_treatment_code": "T-26070004",
+    "product_treatment_name": "Meso Lipo Perut / Paha (20cc)",
+    "product_treatment_category_name": "Meso",
+    "price": 1340000,
+    "cogs": 335000,
+    "status": 1
+  },
+  {
+    "id": 54,
+    "product_treatment_code": "T-26050053",
+    "product_treatment_name": "Add on Meso Lipo / cc",
+    "product_treatment_category_name": "Meso",
+    "price": 65000,
+    "cogs": 16250,
+    "status": 1
+  },
+  {
+    "id": 125,
+    "product_treatment_code": "T-26050124",
+    "product_treatment_name": "Fat Apaptosis V-Line (5 cc)",
+    "product_treatment_category_name": "Meso",
+    "price": 1995000,
+    "cogs": 498750,
+    "status": 1
+  },
+  {
+    "id": 126,
+    "product_treatment_code": "T-26050125",
+    "product_treatment_name": "Fat Apaptosis Pipi (10cc)",
+    "product_treatment_category_name": "Meso",
+    "price": 3955000,
+    "cogs": 988750,
+    "status": 1
+  },
+  {
+    "id": 443,
+    "product_treatment_code": "T-26070001",
+    "product_treatment_name": "Add on Fat Apaptosis Wajah / cc",
+    "product_treatment_category_name": "Meso",
+    "price": 365000,
+    "cogs": 91250,
+    "status": 1
+  },
+  {
+    "id": 58,
+    "product_treatment_code": "T-26050057",
+    "product_treatment_name": "Fat Apaptosis Bra Line / Pinggang (10 cc)",
+    "product_treatment_category_name": "Meso",
+    "price": 3920000,
+    "cogs": 980000,
+    "status": 1
+  },
+  {
+    "id": 127,
+    "product_treatment_code": "T-26050126",
+    "product_treatment_name": "Fat Apaptosis Paha / Perut (20 cc)",
+    "product_treatment_category_name": "Meso",
+    "price": 7180000,
+    "cogs": 1795000,
+    "status": 1
+  },
+  {
+    "id": 60,
+    "product_treatment_code": "T-26050059",
+    "product_treatment_name": "Add On Fat Apaptosis Tubuh / cc",
+    "product_treatment_category_name": "Meso",
+    "price": 345000,
+    "cogs": 86250,
+    "status": 1
+  },
+  {
+    "id": 122,
+    "product_treatment_code": "T-26050121",
+    "product_treatment_name": "Korean Botox / 50 ui",
+    "product_treatment_category_name": "Botox",
+    "price": 2100000,
+    "cogs": 525000,
+    "status": 1
+  },
+  {
+    "id": 121,
+    "product_treatment_code": "T-26050120",
+    "product_treatment_name": "Korean Botox / 100 ui",
+    "product_treatment_category_name": "Botox",
+    "price": 3600000,
+    "cogs": 900000,
+    "status": 1
+  },
+  {
+    "id": 63,
+    "product_treatment_code": "T-26050062",
+    "product_treatment_name": "Korean Botox Ketiak",
+    "product_treatment_category_name": "Botox",
+    "price": 2655000,
+    "cogs": 663750,
+    "status": 1
+  },
+  {
+    "id": 157,
+    "product_treatment_code": "T-26050156",
+    "product_treatment_name": "Add on Botox / ui",
+    "product_treatment_category_name": "Botox",
+    "price": 44500,
+    "cogs": 11125,
+    "status": 1
+  },
+  {
+    "id": 120,
+    "product_treatment_code": "T-26050119",
+    "product_treatment_name": "Allergan Botox / 50 ui",
+    "product_treatment_category_name": "Botox",
+    "price": 4000000,
+    "cogs": 1000000,
+    "status": 1
+  },
+  {
+    "id": 119,
+    "product_treatment_code": "T-26050118",
+    "product_treatment_name": "Allergan Botox/ 100 ui",
+    "product_treatment_category_name": "Botox",
+    "price": 7500000,
+    "cogs": 1875000,
+    "status": 1
+  },
+  {
+    "id": 67,
+    "product_treatment_code": "T-26050066",
+    "product_treatment_name": "Allergan Botox Ketiak",
+    "product_treatment_category_name": "Botox",
+    "price": 7300000,
+    "cogs": 1825000,
+    "status": 1
+  },
+  {
+    "id": 158,
+    "product_treatment_code": "T-26050157",
+    "product_treatment_name": "Allergan Botox / ui",
+    "product_treatment_category_name": "Botox",
+    "price": 85000,
+    "cogs": 21250,
+    "status": 1
+  },
+  {
+    "id": 79,
+    "product_treatment_code": "T-26050078",
+    "product_treatment_name": "Miss V Glow Peel",
+    "product_treatment_category_name": "Intimate",
+    "price": 325000,
+    "cogs": 81250,
+    "status": 1
+  },
+  {
+    "id": 74,
+    "product_treatment_code": "T-26050073",
+    "product_treatment_name": "Glow Peel Bokong",
+    "product_treatment_category_name": "Peeling",
+    "price": 350000,
+    "cogs": 87500,
+    "status": 1
+  },
+  {
+    "id": 139,
+    "product_treatment_code": "T-26050138",
+    "product_treatment_name": "Pink Secret Nipple",
+    "product_treatment_category_name": "Intimate",
+    "price": 6000000,
+    "cogs": 1500000,
+    "status": 1
+  },
+  {
+    "id": 137,
+    "product_treatment_code": "T-26050136",
+    "product_treatment_name": "Pink Secret Miss V",
+    "product_treatment_category_name": "Intimate",
+    "price": 6500000,
+    "cogs": 1625000,
+    "status": 1
+  },
+  {
+    "id": 138,
+    "product_treatment_code": "T-26050137",
+    "product_treatment_name": "Pink Secret Lips",
+    "product_treatment_category_name": "Intimate",
+    "price": 5500000,
+    "cogs": 1375000,
+    "status": 1
+  },
+  {
+    "id": 74,
+    "product_treatment_code": "T-26050073",
+    "product_treatment_name": "HPV Vaksin 9",
+    "product_treatment_category_name": "Intimate",
+    "price": 3500000,
+    "cogs": 875000,
+    "status": 1
+  },
+  {
+    "id": 136,
+    "product_treatment_code": "T-26050135",
+    "product_treatment_name": "Bright Secret Lutut",
+    "product_treatment_category_name": "Intimate",
+    "price": 5250000,
+    "cogs": 1312500,
+    "status": 1
+  },
+  {
+    "id": 135,
+    "product_treatment_code": "T-26050134",
+    "product_treatment_name": "Bright Secret Siku",
+    "product_treatment_category_name": "Intimate",
+    "price": 5250000,
+    "cogs": 1312500,
+    "status": 1
+  },
+  {
+    "id": 69,
+    "product_treatment_code": "T-26050068",
+    "product_treatment_name": "Hormon Therapy Injection",
+    "product_treatment_category_name": "Injection",
+    "price": 450000,
+    "cogs": 112500,
+    "status": 1
+  },
+  {
+    "id": 78,
+    "product_treatment_code": "T-26050077",
+    "product_treatment_name": "Filler Undereye",
+    "product_treatment_category_name": "Filler",
+    "price": 2200000,
+    "cogs": 550000,
+    "status": 1
+  },
+  {
+    "id": 79,
+    "product_treatment_code": "T-26050078",
+    "product_treatment_name": "Filler Pelipis / Pipi",
+    "product_treatment_category_name": "Filler",
+    "price": 2450000,
+    "cogs": 612500,
+    "status": 1
+  },
+  {
+    "id": 80,
+    "product_treatment_code": "T-26050079",
+    "product_treatment_name": "Filler Bibir",
+    "product_treatment_category_name": "Filler",
+    "price": 2200000,
+    "cogs": 550000,
+    "status": 1
+  },
+  {
+    "id": 448,
+    "product_treatment_code": "T-26070005",
+    "product_treatment_name": "Filler Dagu / Hidung",
+    "product_treatment_category_name": "Filler",
+    "price": 2200000,
+    "cogs": 550000,
+    "status": 1
+  },
+  {
+    "id": 124,
+    "product_treatment_code": "T-26050123",
+    "product_treatment_name": "Anti Filler",
+    "product_treatment_category_name": "Filler",
+    "price": 650000,
+    "cogs": 162500,
+    "status": 1
+  },
+  {
+    "id": 141,
+    "product_treatment_code": "T-26050140",
+    "product_treatment_name": "Threadlift Hidung (6 benang)",
+    "product_treatment_category_name": "Threadlift",
+    "price": 3600000,
+    "cogs": 900000,
+    "status": 1
+  },
+  {
+    "id": 140,
+    "product_treatment_code": "T-26050139",
+    "product_treatment_name": "Threadllift Pipi (10 benang)",
+    "product_treatment_category_name": "Threadlift",
+    "price": 5500000,
+    "cogs": 1375000,
+    "status": 1
+  },
+  {
+    "id": 142,
+    "product_treatment_code": "T-26050141",
+    "product_treatment_name": "Threadlift V-Line (4 benang)",
+    "product_treatment_category_name": "Threadlift",
+    "price": 3300000,
+    "cogs": 825000,
+    "status": 1
+  },
+  {
+    "id": 145,
+    "product_treatment_code": "T-26050144",
+    "product_treatment_name": "Mono Undereye Threadlift",
+    "product_treatment_category_name": "Threadlift",
+    "price": 1800000,
+    "cogs": 450000,
+    "status": 1
+  },
+  {
+    "id": 147,
+    "product_treatment_code": "T-26050146",
+    "product_treatment_name": "Mono / thread",
+    "product_treatment_category_name": "Threadlift",
+    "price": 500000,
+    "cogs": 125000,
+    "status": 1
+  },
+  {
+    "id": 143,
+    "product_treatment_code": "T-26050142",
+    "product_treatment_name": "Foxy Eyes Threadlift (4 benang)",
+    "product_treatment_category_name": "Threadlift",
+    "price": 3300000,
+    "cogs": 825000,
+    "status": 1
+  },
+  {
+    "id": 144,
+    "product_treatment_code": "T-26050143",
+    "product_treatment_name": "Cat Eyes Threadlift (2 benang)",
+    "product_treatment_category_name": "Threadlift",
+    "price": 2550000,
+    "cogs": 637500,
+    "status": 1
+  },
+  {
+    "id": 146,
+    "product_treatment_code": "T-26050145",
+    "product_treatment_name": "And on COG Threadlift / Benang",
+    "product_treatment_category_name": "Threadlift",
+    "price": 675000,
+    "cogs": 168750,
+    "status": 1
+  },
+  {
+    "id": 83,
+    "product_treatment_code": "T-26050082",
+    "product_treatment_name": "Add on Anastesi Cream / Pot",
+    "product_treatment_category_name": "Add On",
+    "price": 75000,
+    "cogs": 18750,
+    "status": 1
+  },
+  {
+    "id": 86,
+    "product_treatment_code": "T-26050085",
+    "product_treatment_name": "Add on Anastesi Inject / Ampul",
+    "product_treatment_category_name": "Add On",
+    "price": 50000,
+    "cogs": 12500,
+    "status": 1
+  },
+  {
+    "id": 28,
+    "product_treatment_code": "T-26050027",
+    "product_treatment_name": "HIFU Face",
+    "product_treatment_category_name": "HIFU",
+    "price": 699000,
+    "cogs": 174750,
+    "status": 1
+  },
+  {
+    "id": 445,
+    "product_treatment_code": "T-26070003",
+    "product_treatment_name": "HIFU V-Line",
+    "product_treatment_category_name": "HIFU",
+    "price": 649000,
+    "cogs": 162250,
+    "status": 1
+  },
+  {
+    "id": 56,
+    "product_treatment_code": "T-26050055",
+    "product_treatment_name": "Cool Plus Lite 1 Handle",
+    "product_treatment_category_name": "Cryo",
+    "price": 749000,
+    "cogs": 187250,
+    "status": 1
+  },
+  {
+    "id": 55,
+    "product_treatment_code": "T-26050054",
+    "product_treatment_name": "Cool Plus Complete 1 Handle",
+    "product_treatment_category_name": "Cryo",
+    "price": 1800000,
+    "cogs": 450000,
+    "status": 1
+  },
+  {
+    "id": 97,
+    "product_treatment_code": "T-26050096",
+    "product_treatment_name": "Add on 1 Handle",
+    "product_treatment_category_name": "Cryo",
+    "price": 500000,
+    "cogs": 125000,
+    "status": 1
+  },
+  {
+    "id": 52,
+    "product_treatment_code": "T-26050051",
+    "product_treatment_name": "Subcission",
+    "product_treatment_category_name": "Subcission",
+    "price": 650000,
+    "cogs": 162500,
+    "status": 1
+  },
+  {
+    "id": 50,
+    "product_treatment_code": "T-26050049",
+    "product_treatment_name": "PRP Face",
+    "product_treatment_category_name": "PRP",
+    "price": 750000,
+    "cogs": 187500,
+    "status": 1
+  },
+  {
+    "id": 110,
+    "product_treatment_code": "T-26050109",
+    "product_treatment_name": "DNA Salmon Cell Activator",
+    "product_treatment_category_name": "Skinbooster Signature",
+    "price": 1550000,
+    "cogs": 387500,
+    "status": 1
+  },
+  {
+    "id": 57,
+    "product_treatment_code": "T-26050056",
+    "product_treatment_name": "PRP Hair",
+    "product_treatment_category_name": "PRP",
+    "price": 850000,
+    "cogs": 212500,
+    "status": 1
+  },
+  {
+    "id": 59,
+    "product_treatment_code": "T-26050058",
+    "product_treatment_name": "PDT Hair",
+    "product_treatment_category_name": "Add On",
+    "price": 75000,
+    "cogs": 18750,
+    "status": 1
+  },
+  {
+    "id": 46,
+    "product_treatment_code": "T-26050045",
+    "product_treatment_name": "IPL Hair Removal Bokong",
+    "product_treatment_category_name": "IPL",
+    "price": 400000,
+    "cogs": 100000,
+    "status": 1
+  },
+  {
+    "id": 44,
+    "product_treatment_code": "T-26050043",
+    "product_treatment_name": "IPL Hair Removal Brazilian",
+    "product_treatment_category_name": "IPL",
+    "price": 500000,
+    "cogs": 125000,
+    "status": 1
+  },
+  {
+    "id": 42,
+    "product_treatment_code": "T-26050041",
+    "product_treatment_name": "IPL Hair Removal Ketiak",
+    "product_treatment_category_name": "IPL",
+    "price": 400000,
+    "cogs": 100000,
+    "status": 1
+  },
+  {
+    "id": 106,
+    "product_treatment_code": "T-26050105",
+    "product_treatment_name": "IPL Hair Removal Tangan / Kaki",
+    "product_treatment_category_name": "IPL",
+    "price": 750000,
+    "cogs": 187500,
+    "status": 1
+  },
+  {
+    "id": 45,
+    "product_treatment_code": "T-26050044",
+    "product_treatment_name": "IPL Bright and Rejuve Bokong",
+    "product_treatment_category_name": "IPL",
+    "price": 400000,
+    "cogs": 100000,
+    "status": 1
+  },
+  {
+    "id": 43,
+    "product_treatment_code": "T-26050042",
+    "product_treatment_name": "IPL Bright & Rejuve Brazilian",
+    "product_treatment_category_name": "IPL",
+    "price": 500000,
+    "cogs": 125000,
+    "status": 1
+  },
+  {
+    "id": 39,
+    "product_treatment_code": "T-26050038",
+    "product_treatment_name": "IPL Bright and Rejuve Ketiak",
+    "product_treatment_category_name": "IPL",
+    "price": 400000,
+    "cogs": 100000,
+    "status": 1
+  },
+  {
+    "id": 110,
+    "product_treatment_code": "T-26050109",
+    "product_treatment_name": "IPL Bright And Rejuve Tangan / Kaki",
+    "product_treatment_category_name": "IPL",
+    "price": 750000,
+    "cogs": 187500,
+    "status": 1
+  },
+  {
+    "id": 35,
+    "product_treatment_code": "T-26050034",
+    "product_treatment_name": "IPL Anti Jerawat Punggung",
+    "product_treatment_category_name": "IPL",
+    "price": 750000,
+    "cogs": 187500,
+    "status": 1
+  },
+  {
+    "id": 38,
+    "product_treatment_code": "T-26050037",
+    "product_treatment_name": "IPL Bright & Rejuve Wajah",
+    "product_treatment_category_name": "IPL",
+    "price": 450000,
+    "cogs": 112500,
+    "status": 1
+  },
+  {
+    "id": 37,
+    "product_treatment_code": "T-26050036",
+    "product_treatment_name": "IPL Anti Acne Wajah",
+    "product_treatment_category_name": "IPL",
+    "price": 450000,
+    "cogs": 112500,
+    "status": 1
+  },
+  {
+    "id": 88,
+    "product_treatment_code": "T-26050087",
+    "product_treatment_name": "Body Shave",
+    "product_treatment_category_name": "Add On",
+    "price": 35000,
+    "cogs": 8750,
+    "status": 1
+  },
+  {
+    "id": 78,
+    "product_treatment_code": "T-26050077",
+    "product_treatment_name": "Kefir Retinol Peel",
+    "product_treatment_category_name": "Peeling",
+    "price": 325000,
+    "cogs": 81250,
+    "status": 1
+  },
+  {
+    "id": 77,
+    "product_treatment_code": "T-26050076",
+    "product_treatment_name": "Kefir Melasma Peel",
+    "product_treatment_category_name": "Peeling",
+    "price": 349000,
+    "cogs": 87250,
+    "status": 1
+  },
+  {
+    "id": 76,
+    "product_treatment_code": "T-26050075",
+    "product_treatment_name": "Kefir Glow Peel",
+    "product_treatment_category_name": "Peeling",
+    "price": 295000,
+    "cogs": 73750,
+    "status": 1
+  },
+  {
+    "id": 75,
+    "product_treatment_code": "T-26050074",
+    "product_treatment_name": "Kefir Acne Clear Peel",
+    "product_treatment_category_name": "Peeling",
+    "price": 299000,
+    "cogs": 74750,
+    "status": 1
+  },
+  {
+    "id": 73,
+    "product_treatment_code": "T-26050072",
+    "product_treatment_name": "Body Glow Peel Tangan",
+    "product_treatment_category_name": "Peeling",
+    "price": 550000,
+    "cogs": 137500,
+    "status": 1
+  },
+  {
+    "id": 81,
+    "product_treatment_code": "T-26050080",
+    "product_treatment_name": "Glow Peel Ketiak",
+    "product_treatment_category_name": "Peeling",
+    "price": 300000,
+    "cogs": 75000,
+    "status": 1
+  },
+  {
+    "id": 80,
+    "product_treatment_code": "T-26050079",
+    "product_treatment_name": "Glow Peel Leher",
+    "product_treatment_category_name": "Peeling",
+    "price": 295000,
+    "cogs": 73750,
+    "status": 1
+  },
+  {
+    "id": 71,
+    "product_treatment_code": "T-26050070",
+    "product_treatment_name": "Glow Peel Kaki",
+    "product_treatment_category_name": "Peeling",
+    "price": 650000,
+    "cogs": 162500,
+    "status": 1
+  },
+  {
+    "id": 72,
+    "product_treatment_code": "T-26050071",
+    "product_treatment_name": "Acne Back Peel",
+    "product_treatment_category_name": "Peeling",
+    "price": 625000,
+    "cogs": 156250,
+    "status": 1
+  },
+  {
+    "id": 67,
+    "product_treatment_code": "T-26050066",
+    "product_treatment_name": "Keloid Injection / cc",
+    "product_treatment_category_name": "Injection",
+    "price": 250000,
+    "cogs": 62500,
+    "status": 1
+  },
+  {
+    "id": 154,
+    "product_treatment_code": "T-26050153",
+    "product_treatment_name": "Vit C Injection",
+    "product_treatment_category_name": "Injection",
+    "price": 350000,
+    "cogs": 87500,
+    "status": 1
+  },
+  {
+    "id": 160,
+    "product_treatment_code": "T-26050159",
+    "product_treatment_name": "Vita C Glow Infusion",
+    "product_treatment_category_name": "Infuse",
+    "price": 600000,
+    "cogs": 150000,
+    "status": 1
+  },
+  {
+    "id": 33,
+    "product_treatment_code": "T-26050032",
+    "product_treatment_name": "RF Undereye",
+    "product_treatment_category_name": "RF",
+    "price": 199000,
+    "cogs": 49750,
+    "status": 1
+  },
+  {
+    "id": 30,
+    "product_treatment_code": "T-26050029",
+    "product_treatment_name": "RF V-Line",
+    "product_treatment_category_name": "RF",
+    "price": 245000,
+    "cogs": 61250,
+    "status": 1
+  },
+  {
+    "id": 31,
+    "product_treatment_code": "T-26050030",
+    "product_treatment_name": "RF Pipi",
+    "product_treatment_category_name": "RF",
+    "price": 245000,
+    "cogs": 61250,
+    "status": 1
+  },
+  {
+    "id": 32,
+    "product_treatment_code": "T-26050031",
+    "product_treatment_name": "RF Perut / Paha / Lengan",
+    "product_treatment_category_name": "RF",
+    "price": 399000,
+    "cogs": 99750,
+    "status": 1
+  },
+  {
+    "id": 53,
+    "product_treatment_code": "T-26050052",
+    "product_treatment_name": "Cauter Small",
+    "product_treatment_category_name": "Cauter",
+    "price": 550000,
+    "cogs": 137500,
+    "status": 1
+  },
+  {
+    "id": 51,
+    "product_treatment_code": "T-26050050",
+    "product_treatment_name": "Cauter Medium",
+    "product_treatment_category_name": "Cauter",
+    "price": 600000,
+    "cogs": 150000,
+    "status": 1
+  },
+  {
+    "id": 49,
+    "product_treatment_code": "T-26050048",
+    "product_treatment_name": "Cauter Large",
+    "product_treatment_category_name": "Cauter",
+    "price": 750000,
+    "cogs": 187500,
+    "status": 1
+  },
+  {
+    "id": 901,
+    "product_treatment_code": "P-101",
+    "product_treatment_name": "Kefir Daily UV Sunscreen SPF 50+ 30ml",
+    "product_treatment_category_name": "Homecare Skincare",
+    "price": 165000,
+    "cogs": 55000,
+    "status": 1
+  },
+  {
+    "id": 902,
+    "product_treatment_code": "P-102",
+    "product_treatment_name": "Kefir Brightening Night Cream 15g",
+    "product_treatment_category_name": "Homecare Skincare",
+    "price": 185000,
+    "cogs": 62000,
+    "status": 1
+  },
+  {
+    "id": 903,
+    "product_treatment_code": "P-103",
+    "product_treatment_name": "Kefir Gentle Hydrating Facial Wash 100ml",
+    "product_treatment_category_name": "Homecare Skincare",
+    "price": 125000,
+    "cogs": 38000,
+    "status": 1
+  },
+  {
+    "id": 904,
+    "product_treatment_code": "P-104",
+    "product_treatment_name": "Kefir Cica Barrier Soothing Toner 100ml",
+    "product_treatment_category_name": "Homecare Skincare",
+    "price": 145000,
+    "cogs": 44000,
+    "status": 1
+  },
+  {
+    "id": 905,
+    "product_treatment_code": "P-105",
+    "product_treatment_name": "Kefir Advanced Glow Serum Salmon DNA 20ml",
+    "product_treatment_category_name": "Homecare Skincare",
+    "price": 285000,
+    "cogs": 88000,
+    "status": 1
+  },
+  {
+    "id": 906,
+    "product_treatment_code": "P-106",
+    "product_treatment_name": "Kefir Acne Clarifying BHA Serum 20ml",
+    "product_treatment_category_name": "Homecare Skincare",
+    "price": 225000,
+    "cogs": 68000,
+    "status": 1
+  },
+  {
+    "id": 907,
+    "product_treatment_code": "P-107",
+    "product_treatment_name": "Kefir Ceramide Deep Moisture Cream 30g",
+    "product_treatment_category_name": "Homecare Skincare",
+    "price": 195000,
+    "cogs": 58000,
+    "status": 1
+  }
+]

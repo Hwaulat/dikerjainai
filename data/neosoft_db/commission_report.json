@@ -1,0 +1,174 @@
+{
+  "treatment": {
+    "2026-11": [
+      {
+        "therapist_id": 1,
+        "therapist_name": "dr. Cindy Novita",
+        "date": "2026-11-12",
+        "total_commission": 14500000,
+        "is_doctor": true
+      },
+      {
+        "therapist_id": 2,
+        "therapist_name": "dr. Farah Diba Sp.D.V.E",
+        "date": "2026-11-12",
+        "total_commission": 16800000,
+        "is_doctor": true
+      },
+      {
+        "therapist_id": 3,
+        "therapist_name": "dr. Randy Wijaya",
+        "date": "2026-11-12",
+        "total_commission": 13200000,
+        "is_doctor": true
+      },
+      {
+        "therapist_id": 4,
+        "therapist_name": "dr. Amanda Putri",
+        "date": "2026-11-12",
+        "total_commission": 11900000,
+        "is_doctor": true
+      },
+      {
+        "therapist_id": 5,
+        "therapist_name": "Suster Maya Kusuma",
+        "date": "2026-11-12",
+        "total_commission": 3400000,
+        "therapist_type": 5
+      },
+      {
+        "therapist_id": 6,
+        "therapist_name": "Suster Rina Anggraini",
+        "date": "2026-11-12",
+        "total_commission": 3100000,
+        "therapist_type": 5
+      },
+      {
+        "therapist_id": 7,
+        "therapist_name": "Terapis Dewi Lestari",
+        "date": "2026-11-12",
+        "total_commission": 3250000,
+        "therapist_type": 5
+      },
+      {
+        "therapist_id": 8,
+        "therapist_name": "Terapis Salsa Nabila",
+        "date": "2026-11-12",
+        "total_commission": 2950000,
+        "therapist_type": 5
+      }
+    ],
+    "2026-10": [
+      {
+        "therapist_id": 1,
+        "therapist_name": "dr. Cindy Novita",
+        "date": "2026-10-25",
+        "total_commission": 18500000,
+        "is_doctor": true
+      },
+      {
+        "therapist_id": 2,
+        "therapist_name": "dr. Farah Diba Sp.D.V.E",
+        "date": "2026-10-25",
+        "total_commission": 21200000,
+        "is_doctor": true
+      },
+      {
+        "therapist_id": 3,
+        "therapist_name": "dr. Randy Wijaya",
+        "date": "2026-10-25",
+        "total_commission": 16800000,
+        "is_doctor": true
+      },
+      {
+        "therapist_id": 4,
+        "therapist_name": "dr. Amanda Putri",
+        "date": "2026-10-25",
+        "total_commission": 15400000,
+        "is_doctor": true
+      },
+      {
+        "therapist_id": 5,
+        "therapist_name": "Suster Maya Kusuma",
+        "date": "2026-10-25",
+        "total_commission": 4200000,
+        "therapist_type": 5
+      },
+      {
+        "therapist_id": 6,
+        "therapist_name": "Suster Rina Anggraini",
+        "date": "2026-10-25",
+        "total_commission": 3900000,
+        "therapist_type": 5
+      },
+      {
+        "therapist_id": 7,
+        "therapist_name": "Terapis Dewi Lestari",
+        "date": "2026-10-25",
+        "total_commission": 4100000,
+        "therapist_type": 5
+      },
+      {
+        "therapist_id": 8,
+        "therapist_name": "Terapis Salsa Nabila",
+        "date": "2026-10-25",
+        "total_commission": 3800000,
+        "therapist_type": 5
+      }
+    ]
+  },
+  "sales": {
+    "2026-11": [
+      {
+        "therapist_id": 1,
+        "therapist_type": 2,
+        "date": "2026-11-12",
+        "total_commission": 2250000
+      },
+      {
+        "therapist_id": 2,
+        "therapist_type": 2,
+        "date": "2026-11-12",
+        "total_commission": 2600000
+      },
+      {
+        "therapist_id": 3,
+        "therapist_type": 2,
+        "date": "2026-11-12",
+        "total_commission": 1950000
+      },
+      {
+        "therapist_id": 4,
+        "therapist_type": 2,
+        "date": "2026-11-12",
+        "total_commission": 1850000
+      }
+    ],
+    "2026-10": [
+      {
+        "therapist_id": 1,
+        "therapist_type": 2,
+        "date": "2026-10-25",
+        "total_commission": 2850000
+      },
+      {
+        "therapist_id": 2,
+        "therapist_type": 2,
+        "date": "2026-10-25",
+        "total_commission": 3100000
+      },
+      {
+        "therapist_id": 3,
+        "therapist_type": 2,
+        "date": "2026-10-25",
+        "total_commission": 2450000
+      },
+      {
+        "therapist_id": 4,
+        "therapist_type": 2,
+        "date": "2026-10-25",
+        "total_commission": 2350000
+      }
+    ]
+  }
+}

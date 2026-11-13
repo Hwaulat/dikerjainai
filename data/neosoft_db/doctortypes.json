@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Dokter Penanggung Jawab"
+  },
+  {
+    "id": 2,
+    "name": "Dokter Estetika"
+  },
+  {
+    "id": 3,
+    "name": "Dokter Sp.D.V.E"
+  },
+  {
+    "id": 4,
+    "name": "Dokter Umum"
+  },
+  {
+    "id": 5,
+    "name": "Perawat / Nurse"
+  },
+  {
+    "id": 6,
+    "name": "Terapis Medis"
+  }
+]

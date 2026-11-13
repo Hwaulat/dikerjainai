@@ -1,0 +1,5442 @@
+[
+  {
+    "id": 1,
+    "usage_id": 1,
+    "inv_code": "INV-D-260801-0001",
+    "product_id": 112,
+    "used": 1,
+    "value": 1129000
+  },
+  {
+    "id": 2,
+    "usage_id": 2,
+    "inv_code": "INV-P-260801-0002",
+    "product_id": 104,
+    "used": 1,
+    "value": 1433000
+  },
+  {
+    "id": 3,
+    "usage_id": 2,
+    "inv_code": "INV-P-260801-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 4,
+    "usage_id": 3,
+    "inv_code": "INV-D-260801-0003",
+    "product_id": 107,
+    "used": 1,
+    "value": 1444000
+  },
+  {
+    "id": 5,
+    "usage_id": 4,
+    "inv_code": "INV-D-260802-0001",
+    "product_id": 105,
+    "used": 1,
+    "value": 1418000
+  },
+  {
+    "id": 6,
+    "usage_id": 5,
+    "inv_code": "INV-P-260802-0002",
+    "product_id": 106,
+    "used": 1,
+    "value": 1418000
+  },
+  {
+    "id": 7,
+    "usage_id": 5,
+    "inv_code": "INV-P-260802-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 8,
+    "usage_id": 6,
+    "inv_code": "INV-D-260802-0003",
+    "product_id": 102,
+    "used": 1,
+    "value": 3023000
+  },
+  {
+    "id": 9,
+    "usage_id": 7,
+    "inv_code": "INV-P-260802-0004",
+    "product_id": 98,
+    "used": 1,
+    "value": 3959000
+  },
+  {
+    "id": 10,
+    "usage_id": 7,
+    "inv_code": "INV-P-260802-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 11,
+    "usage_id": 8,
+    "inv_code": "INV-D-260803-0001",
+    "product_id": 106,
+    "used": 1,
+    "value": 1418000
+  },
+  {
+    "id": 12,
+    "usage_id": 9,
+    "inv_code": "INV-P-260803-0002",
+    "product_id": 102,
+    "used": 1,
+    "value": 3023000
+  },
+  {
+    "id": 13,
+    "usage_id": 9,
+    "inv_code": "INV-P-260803-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 14,
+    "usage_id": 10,
+    "inv_code": "INV-D-260803-0003",
+    "product_id": 98,
+    "used": 1,
+    "value": 3959000
+  },
+  {
+    "id": 15,
+    "usage_id": 11,
+    "inv_code": "INV-P-260803-0004",
+    "product_id": 117,
+    "used": 1,
+    "value": 3770000
+  },
+  {
+    "id": 16,
+    "usage_id": 11,
+    "inv_code": "INV-P-260803-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 17,
+    "usage_id": 12,
+    "inv_code": "INV-D-260803-0005",
+    "product_id": 97,
+    "used": 1,
+    "value": 3822000
+  },
+  {
+    "id": 18,
+    "usage_id": 13,
+    "inv_code": "INV-D-260804-0001",
+    "product_id": 96,
+    "used": 1,
+    "value": 4778000
+  },
+  {
+    "id": 19,
+    "usage_id": 14,
+    "inv_code": "INV-P-260804-0002",
+    "product_id": 90,
+    "used": 1,
+    "value": 6011000
+  },
+  {
+    "id": 20,
+    "usage_id": 14,
+    "inv_code": "INV-P-260804-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 21,
+    "usage_id": 15,
+    "inv_code": "INV-D-260804-0003",
+    "product_id": 118,
+    "used": 1,
+    "value": 1775000
+  },
+  {
+    "id": 22,
+    "usage_id": 16,
+    "inv_code": "INV-P-260804-0004",
+    "product_id": 91,
+    "used": 1,
+    "value": 5733000
+  },
+  {
+    "id": 23,
+    "usage_id": 16,
+    "inv_code": "INV-P-260804-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 24,
+    "usage_id": 17,
+    "inv_code": "INV-D-260804-0005",
+    "product_id": 128,
+    "used": 1,
+    "value": 790000
+  },
+  {
+    "id": 25,
+    "usage_id": 18,
+    "inv_code": "INV-P-260804-0006",
+    "product_id": 54,
+    "used": 1,
+    "value": 65000
+  },
+  {
+    "id": 26,
+    "usage_id": 18,
+    "inv_code": "INV-P-260804-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 27,
+    "usage_id": 19,
+    "inv_code": "INV-D-260805-0001",
+    "product_id": 93,
+    "used": 1,
+    "value": 5324000
+  },
+  {
+    "id": 28,
+    "usage_id": 20,
+    "inv_code": "INV-P-260805-0002",
+    "product_id": 115,
+    "used": 1,
+    "value": 7235000
+  },
+  {
+    "id": 29,
+    "usage_id": 20,
+    "inv_code": "INV-P-260805-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 30,
+    "usage_id": 21,
+    "inv_code": "INV-D-260805-0003",
+    "product_id": 89,
+    "used": 1,
+    "value": 8600000
+  },
+  {
+    "id": 31,
+    "usage_id": 22,
+    "inv_code": "INV-D-260806-0001",
+    "product_id": 116,
+    "used": 1,
+    "value": 4838000
+  },
+  {
+    "id": 32,
+    "usage_id": 23,
+    "inv_code": "INV-P-260806-0002",
+    "product_id": 92,
+    "used": 1,
+    "value": 5187000
+  },
+  {
+    "id": 33,
+    "usage_id": 23,
+    "inv_code": "INV-P-260806-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 34,
+    "usage_id": 24,
+    "inv_code": "INV-D-260806-0003",
+    "product_id": 51,
+    "used": 1,
+    "value": 240000
+  },
+  {
+    "id": 35,
+    "usage_id": 25,
+    "inv_code": "INV-P-260806-0004",
+    "product_id": 125,
+    "used": 1,
+    "value": 1995000
+  },
+  {
+    "id": 36,
+    "usage_id": 25,
+    "inv_code": "INV-P-260806-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 37,
+    "usage_id": 26,
+    "inv_code": "INV-D-260807-0001",
+    "product_id": 92,
+    "used": 1,
+    "value": 5187000
+  },
+  {
+    "id": 38,
+    "usage_id": 27,
+    "inv_code": "INV-P-260807-0002",
+    "product_id": 51,
+    "used": 1,
+    "value": 240000
+  },
+  {
+    "id": 39,
+    "usage_id": 27,
+    "inv_code": "INV-P-260807-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 40,
+    "usage_id": 28,
+    "inv_code": "INV-D-260807-0003",
+    "product_id": 125,
+    "used": 1,
+    "value": 1995000
+  },
+  {
+    "id": 41,
+    "usage_id": 29,
+    "inv_code": "INV-P-260807-0004",
+    "product_id": 127,
+    "used": 1,
+    "value": 7180000
+  },
+  {
+    "id": 42,
+    "usage_id": 29,
+    "inv_code": "INV-P-260807-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 43,
+    "usage_id": 30,
+    "inv_code": "INV-D-260807-0005",
+    "product_id": 63,
+    "used": 1,
+    "value": 2655000
+  },
+  {
+    "id": 44,
+    "usage_id": 31,
+    "inv_code": "INV-D-260808-0001",
+    "product_id": 132,
+    "used": 1,
+    "value": 755000
+  },
+  {
+    "id": 45,
+    "usage_id": 32,
+    "inv_code": "INV-P-260808-0002",
+    "product_id": 126,
+    "used": 1,
+    "value": 3955000
+  },
+  {
+    "id": 46,
+    "usage_id": 32,
+    "inv_code": "INV-P-260808-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 47,
+    "usage_id": 33,
+    "inv_code": "INV-D-260808-0003",
+    "product_id": 60,
+    "used": 1,
+    "value": 345000
+  },
+  {
+    "id": 48,
+    "usage_id": 34,
+    "inv_code": "INV-P-260808-0004",
+    "product_id": 157,
+    "used": 1,
+    "value": 44500
+  },
+  {
+    "id": 49,
+    "usage_id": 34,
+    "inv_code": "INV-P-260808-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 50,
+    "usage_id": 35,
+    "inv_code": "INV-D-260808-0005",
+    "product_id": 158,
+    "used": 1,
+    "value": 85000
+  },
+  {
+    "id": 51,
+    "usage_id": 36,
+    "inv_code": "INV-P-260808-0006",
+    "product_id": 137,
+    "used": 1,
+    "value": 6500000
+  },
+  {
+    "id": 52,
+    "usage_id": 36,
+    "inv_code": "INV-P-260808-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 53,
+    "usage_id": 37,
+    "inv_code": "INV-D-260809-0001",
+    "product_id": 58,
+    "used": 1,
+    "value": 3920000
+  },
+  {
+    "id": 54,
+    "usage_id": 38,
+    "inv_code": "INV-P-260809-0002",
+    "product_id": 121,
+    "used": 1,
+    "value": 3600000
+  },
+  {
+    "id": 55,
+    "usage_id": 38,
+    "inv_code": "INV-P-260809-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 56,
+    "usage_id": 39,
+    "inv_code": "INV-D-260809-0003",
+    "product_id": 119,
+    "used": 1,
+    "value": 7500000
+  },
+  {
+    "id": 57,
+    "usage_id": 40,
+    "inv_code": "INV-D-260810-0001",
+    "product_id": 122,
+    "used": 1,
+    "value": 2100000
+  },
+  {
+    "id": 58,
+    "usage_id": 41,
+    "inv_code": "INV-P-260810-0002",
+    "product_id": 120,
+    "used": 1,
+    "value": 4000000
+  },
+  {
+    "id": 59,
+    "usage_id": 41,
+    "inv_code": "INV-P-260810-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 60,
+    "usage_id": 42,
+    "inv_code": "INV-D-260810-0003",
+    "product_id": 79,
+    "used": 1,
+    "value": 325000
+  },
+  {
+    "id": 61,
+    "usage_id": 43,
+    "inv_code": "INV-P-260810-0004",
+    "product_id": 138,
+    "used": 1,
+    "value": 5500000
+  },
+  {
+    "id": 62,
+    "usage_id": 43,
+    "inv_code": "INV-P-260810-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 63,
+    "usage_id": 44,
+    "inv_code": "INV-D-260811-0001",
+    "product_id": 120,
+    "used": 1,
+    "value": 4000000
+  },
+  {
+    "id": 64,
+    "usage_id": 45,
+    "inv_code": "INV-P-260811-0002",
+    "product_id": 79,
+    "used": 1,
+    "value": 325000
+  },
+  {
+    "id": 65,
+    "usage_id": 45,
+    "inv_code": "INV-P-260811-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 66,
+    "usage_id": 46,
+    "inv_code": "INV-D-260811-0003",
+    "product_id": 138,
+    "used": 1,
+    "value": 5500000
+  },
+  {
+    "id": 67,
+    "usage_id": 47,
+    "inv_code": "INV-P-260811-0004",
+    "product_id": 69,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 68,
+    "usage_id": 47,
+    "inv_code": "INV-P-260811-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 69,
+    "usage_id": 48,
+    "inv_code": "INV-D-260811-0005",
+    "product_id": 448,
+    "used": 1,
+    "value": 2200000
+  },
+  {
+    "id": 70,
+    "usage_id": 49,
+    "inv_code": "INV-D-260812-0001",
+    "product_id": 74,
+    "used": 1,
+    "value": 350000
+  },
+  {
+    "id": 71,
+    "usage_id": 50,
+    "inv_code": "INV-P-260812-0002",
+    "product_id": 74,
+    "used": 1,
+    "value": 3500000
+  },
+  {
+    "id": 72,
+    "usage_id": 50,
+    "inv_code": "INV-P-260812-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 73,
+    "usage_id": 51,
+    "inv_code": "INV-D-260812-0003",
+    "product_id": 78,
+    "used": 1,
+    "value": 2200000
+  },
+  {
+    "id": 74,
+    "usage_id": 52,
+    "inv_code": "INV-P-260812-0004",
+    "product_id": 124,
+    "used": 1,
+    "value": 650000
+  },
+  {
+    "id": 75,
+    "usage_id": 52,
+    "inv_code": "INV-P-260812-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 76,
+    "usage_id": 53,
+    "inv_code": "INV-D-260812-0005",
+    "product_id": 145,
+    "used": 1,
+    "value": 1800000
+  },
+  {
+    "id": 77,
+    "usage_id": 54,
+    "inv_code": "INV-P-260812-0006",
+    "product_id": 146,
+    "used": 1,
+    "value": 675000
+  },
+  {
+    "id": 78,
+    "usage_id": 54,
+    "inv_code": "INV-P-260812-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 79,
+    "usage_id": 55,
+    "inv_code": "INV-D-260813-0001",
+    "product_id": 135,
+    "used": 1,
+    "value": 5250000
+  },
+  {
+    "id": 80,
+    "usage_id": 56,
+    "inv_code": "INV-P-260813-0002",
+    "product_id": 80,
+    "used": 1,
+    "value": 2200000
+  },
+  {
+    "id": 81,
+    "usage_id": 56,
+    "inv_code": "INV-P-260813-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 82,
+    "usage_id": 57,
+    "inv_code": "INV-D-260813-0003",
+    "product_id": 140,
+    "used": 1,
+    "value": 5500000
+  },
+  {
+    "id": 83,
+    "usage_id": 58,
+    "inv_code": "INV-D-260814-0001",
+    "product_id": 79,
+    "used": 1,
+    "value": 2450000
+  },
+  {
+    "id": 84,
+    "usage_id": 59,
+    "inv_code": "INV-P-260814-0002",
+    "product_id": 141,
+    "used": 1,
+    "value": 3600000
+  },
+  {
+    "id": 85,
+    "usage_id": 59,
+    "inv_code": "INV-P-260814-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 86,
+    "usage_id": 60,
+    "inv_code": "INV-D-260814-0003",
+    "product_id": 147,
+    "used": 1,
+    "value": 500000
+  },
+  {
+    "id": 87,
+    "usage_id": 61,
+    "inv_code": "INV-P-260814-0004",
+    "product_id": 83,
+    "used": 1,
+    "value": 75000
+  },
+  {
+    "id": 88,
+    "usage_id": 61,
+    "inv_code": "INV-P-260814-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 89,
+    "usage_id": 62,
+    "inv_code": "INV-D-260815-0001",
+    "product_id": 141,
+    "used": 1,
+    "value": 3600000
+  },
+  {
+    "id": 90,
+    "usage_id": 63,
+    "inv_code": "INV-P-260815-0002",
+    "product_id": 147,
+    "used": 1,
+    "value": 500000
+  },
+  {
+    "id": 91,
+    "usage_id": 63,
+    "inv_code": "INV-P-260815-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 92,
+    "usage_id": 64,
+    "inv_code": "INV-D-260815-0003",
+    "product_id": 83,
+    "used": 1,
+    "value": 75000
+  },
+  {
+    "id": 93,
+    "usage_id": 65,
+    "inv_code": "INV-P-260815-0004",
+    "product_id": 56,
+    "used": 1,
+    "value": 749000
+  },
+  {
+    "id": 94,
+    "usage_id": 65,
+    "inv_code": "INV-P-260815-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 95,
+    "usage_id": 66,
+    "inv_code": "INV-D-260815-0005",
+    "product_id": 50,
+    "used": 1,
+    "value": 750000
+  },
+  {
+    "id": 96,
+    "usage_id": 67,
+    "inv_code": "INV-D-260816-0001",
+    "product_id": 143,
+    "used": 1,
+    "value": 3300000
+  },
+  {
+    "id": 97,
+    "usage_id": 68,
+    "inv_code": "INV-P-260816-0002",
+    "product_id": 86,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 98,
+    "usage_id": 68,
+    "inv_code": "INV-P-260816-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 99,
+    "usage_id": 69,
+    "inv_code": "INV-D-260816-0003",
+    "product_id": 55,
+    "used": 1,
+    "value": 1800000
+  },
+  {
+    "id": 100,
+    "usage_id": 70,
+    "inv_code": "INV-P-260816-0004",
+    "product_id": 110,
+    "used": 1,
+    "value": 1550000
+  },
+  {
+    "id": 101,
+    "usage_id": 70,
+    "inv_code": "INV-P-260816-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 102,
+    "usage_id": 71,
+    "inv_code": "INV-D-260816-0005",
+    "product_id": 44,
+    "used": 1,
+    "value": 500000
+  },
+  {
+    "id": 103,
+    "usage_id": 72,
+    "inv_code": "INV-P-260816-0006",
+    "product_id": 43,
+    "used": 1,
+    "value": 500000
+  },
+  {
+    "id": 104,
+    "usage_id": 72,
+    "inv_code": "INV-P-260816-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 105,
+    "usage_id": 73,
+    "inv_code": "INV-D-260817-0001",
+    "product_id": 445,
+    "used": 1,
+    "value": 649000
+  },
+  {
+    "id": 106,
+    "usage_id": 74,
+    "inv_code": "INV-P-260817-0002",
+    "product_id": 52,
+    "used": 1,
+    "value": 650000
+  },
+  {
+    "id": 107,
+    "usage_id": 74,
+    "inv_code": "INV-P-260817-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 108,
+    "usage_id": 75,
+    "inv_code": "INV-D-260817-0003",
+    "product_id": 59,
+    "used": 1,
+    "value": 75000
+  },
+  {
+    "id": 109,
+    "usage_id": 76,
+    "inv_code": "INV-D-260818-0001",
+    "product_id": 97,
+    "used": 1,
+    "value": 500000
+  },
+  {
+    "id": 110,
+    "usage_id": 77,
+    "inv_code": "INV-P-260818-0002",
+    "product_id": 57,
+    "used": 1,
+    "value": 850000
+  },
+  {
+    "id": 111,
+    "usage_id": 77,
+    "inv_code": "INV-P-260818-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 112,
+    "usage_id": 78,
+    "inv_code": "INV-D-260818-0003",
+    "product_id": 42,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 113,
+    "usage_id": 79,
+    "inv_code": "INV-P-260818-0004",
+    "product_id": 39,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 114,
+    "usage_id": 79,
+    "inv_code": "INV-P-260818-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 115,
+    "usage_id": 80,
+    "inv_code": "INV-D-260819-0001",
+    "product_id": 57,
+    "used": 1,
+    "value": 850000
+  },
+  {
+    "id": 116,
+    "usage_id": 81,
+    "inv_code": "INV-P-260819-0002",
+    "product_id": 42,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 117,
+    "usage_id": 81,
+    "inv_code": "INV-P-260819-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 118,
+    "usage_id": 82,
+    "inv_code": "INV-D-260819-0003",
+    "product_id": 39,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 119,
+    "usage_id": 83,
+    "inv_code": "INV-P-260819-0004",
+    "product_id": 37,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 120,
+    "usage_id": 83,
+    "inv_code": "INV-P-260819-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 121,
+    "usage_id": 84,
+    "inv_code": "INV-D-260819-0005",
+    "product_id": 76,
+    "used": 1,
+    "value": 295000
+  },
+  {
+    "id": 122,
+    "usage_id": 85,
+    "inv_code": "INV-D-260820-0001",
+    "product_id": 106,
+    "used": 1,
+    "value": 750000
+  },
+  {
+    "id": 123,
+    "usage_id": 86,
+    "inv_code": "INV-P-260820-0002",
+    "product_id": 110,
+    "used": 1,
+    "value": 750000
+  },
+  {
+    "id": 124,
+    "usage_id": 86,
+    "inv_code": "INV-P-260820-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 125,
+    "usage_id": 87,
+    "inv_code": "INV-D-260820-0003",
+    "product_id": 88,
+    "used": 1,
+    "value": 35000
+  },
+  {
+    "id": 126,
+    "usage_id": 88,
+    "inv_code": "INV-P-260820-0004",
+    "product_id": 75,
+    "used": 1,
+    "value": 299000
+  },
+  {
+    "id": 127,
+    "usage_id": 88,
+    "inv_code": "INV-P-260820-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 128,
+    "usage_id": 89,
+    "inv_code": "INV-D-260820-0005",
+    "product_id": 71,
+    "used": 1,
+    "value": 650000
+  },
+  {
+    "id": 129,
+    "usage_id": 90,
+    "inv_code": "INV-P-260820-0006",
+    "product_id": 160,
+    "used": 1,
+    "value": 600000
+  },
+  {
+    "id": 130,
+    "usage_id": 90,
+    "inv_code": "INV-P-260820-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 131,
+    "usage_id": 91,
+    "inv_code": "INV-D-260821-0001",
+    "product_id": 38,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 132,
+    "usage_id": 92,
+    "inv_code": "INV-P-260821-0002",
+    "product_id": 77,
+    "used": 1,
+    "value": 349000
+  },
+  {
+    "id": 133,
+    "usage_id": 92,
+    "inv_code": "INV-P-260821-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 134,
+    "usage_id": 93,
+    "inv_code": "INV-D-260821-0003",
+    "product_id": 81,
+    "used": 1,
+    "value": 300000
+  },
+  {
+    "id": 135,
+    "usage_id": 94,
+    "inv_code": "INV-D-260822-0001",
+    "product_id": 78,
+    "used": 1,
+    "value": 325000
+  },
+  {
+    "id": 136,
+    "usage_id": 95,
+    "inv_code": "INV-P-260822-0002",
+    "product_id": 73,
+    "used": 1,
+    "value": 550000
+  },
+  {
+    "id": 137,
+    "usage_id": 95,
+    "inv_code": "INV-P-260822-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 138,
+    "usage_id": 96,
+    "inv_code": "INV-D-260822-0003",
+    "product_id": 72,
+    "used": 1,
+    "value": 625000
+  },
+  {
+    "id": 139,
+    "usage_id": 97,
+    "inv_code": "INV-P-260822-0004",
+    "product_id": 33,
+    "used": 1,
+    "value": 199000
+  },
+  {
+    "id": 140,
+    "usage_id": 97,
+    "inv_code": "INV-P-260822-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 141,
+    "usage_id": 98,
+    "inv_code": "INV-D-260823-0001",
+    "product_id": 73,
+    "used": 1,
+    "value": 550000
+  },
+  {
+    "id": 142,
+    "usage_id": 99,
+    "inv_code": "INV-P-260823-0002",
+    "product_id": 72,
+    "used": 1,
+    "value": 625000
+  },
+  {
+    "id": 143,
+    "usage_id": 99,
+    "inv_code": "INV-P-260823-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 144,
+    "usage_id": 100,
+    "inv_code": "INV-D-260823-0003",
+    "product_id": 33,
+    "used": 1,
+    "value": 199000
+  },
+  {
+    "id": 145,
+    "usage_id": 101,
+    "inv_code": "INV-P-260823-0004",
+    "product_id": 53,
+    "used": 1,
+    "value": 550000
+  },
+  {
+    "id": 146,
+    "usage_id": 101,
+    "inv_code": "INV-P-260823-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 147,
+    "usage_id": 102,
+    "inv_code": "INV-D-260823-0005",
+    "product_id": 902,
+    "used": 1,
+    "value": 185000
+  },
+  {
+    "id": 148,
+    "usage_id": 103,
+    "inv_code": "INV-D-260824-0001",
+    "product_id": 67,
+    "used": 1,
+    "value": 250000
+  },
+  {
+    "id": 149,
+    "usage_id": 104,
+    "inv_code": "INV-P-260824-0002",
+    "product_id": 30,
+    "used": 1,
+    "value": 245000
+  },
+  {
+    "id": 150,
+    "usage_id": 104,
+    "inv_code": "INV-P-260824-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 151,
+    "usage_id": 105,
+    "inv_code": "INV-D-260824-0003",
+    "product_id": 51,
+    "used": 1,
+    "value": 600000
+  },
+  {
+    "id": 152,
+    "usage_id": 106,
+    "inv_code": "INV-P-260824-0004",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 153,
+    "usage_id": 106,
+    "inv_code": "INV-P-260824-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 154,
+    "usage_id": 107,
+    "inv_code": "INV-D-260824-0005",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 155,
+    "usage_id": 108,
+    "inv_code": "INV-P-260824-0006",
+    "product_id": 18,
+    "used": 1,
+    "value": 300000
+  },
+  {
+    "id": 156,
+    "usage_id": 108,
+    "inv_code": "INV-P-260824-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 157,
+    "usage_id": 109,
+    "inv_code": "INV-D-260825-0001",
+    "product_id": 32,
+    "used": 1,
+    "value": 399000
+  },
+  {
+    "id": 158,
+    "usage_id": 110,
+    "inv_code": "INV-P-260825-0002",
+    "product_id": 901,
+    "used": 1,
+    "value": 165000
+  },
+  {
+    "id": 159,
+    "usage_id": 110,
+    "inv_code": "INV-P-260825-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 160,
+    "usage_id": 111,
+    "inv_code": "INV-D-260825-0003",
+    "product_id": 905,
+    "used": 1,
+    "value": 285000
+  },
+  {
+    "id": 161,
+    "usage_id": 112,
+    "inv_code": "INV-D-260826-0001",
+    "product_id": 49,
+    "used": 1,
+    "value": 750000
+  },
+  {
+    "id": 162,
+    "usage_id": 113,
+    "inv_code": "INV-P-260826-0002",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 163,
+    "usage_id": 113,
+    "inv_code": "INV-P-260826-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 164,
+    "usage_id": 114,
+    "inv_code": "INV-D-260826-0003",
+    "product_id": 82,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 165,
+    "usage_id": 115,
+    "inv_code": "INV-P-260826-0004",
+    "product_id": 17,
+    "used": 1,
+    "value": 325000
+  },
+  {
+    "id": 166,
+    "usage_id": 115,
+    "inv_code": "INV-P-260826-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 167,
+    "usage_id": 116,
+    "inv_code": "INV-D-260827-0001",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 168,
+    "usage_id": 117,
+    "inv_code": "INV-P-260827-0002",
+    "product_id": 82,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 169,
+    "usage_id": 117,
+    "inv_code": "INV-P-260827-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 170,
+    "usage_id": 118,
+    "inv_code": "INV-D-260827-0003",
+    "product_id": 17,
+    "used": 1,
+    "value": 325000
+  },
+  {
+    "id": 171,
+    "usage_id": 119,
+    "inv_code": "INV-P-260827-0004",
+    "product_id": 457,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 172,
+    "usage_id": 119,
+    "inv_code": "INV-P-260827-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 173,
+    "usage_id": 120,
+    "inv_code": "INV-D-260827-0005",
+    "product_id": 162,
+    "used": 1,
+    "value": 445000
+  },
+  {
+    "id": 174,
+    "usage_id": 121,
+    "inv_code": "INV-D-260828-0001",
+    "product_id": 20,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 175,
+    "usage_id": 122,
+    "inv_code": "INV-P-260828-0002",
+    "product_id": 16,
+    "used": 1,
+    "value": 380000
+  },
+  {
+    "id": 176,
+    "usage_id": 122,
+    "inv_code": "INV-P-260828-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 177,
+    "usage_id": 123,
+    "inv_code": "INV-D-260828-0003",
+    "product_id": 85,
+    "used": 1,
+    "value": 60000
+  },
+  {
+    "id": 178,
+    "usage_id": 124,
+    "inv_code": "INV-P-260828-0004",
+    "product_id": 25,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 179,
+    "usage_id": 124,
+    "inv_code": "INV-P-260828-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 180,
+    "usage_id": 125,
+    "inv_code": "INV-D-260828-0005",
+    "product_id": 113,
+    "used": 1,
+    "value": 1045000
+  },
+  {
+    "id": 181,
+    "usage_id": 126,
+    "inv_code": "INV-P-260828-0006",
+    "product_id": 112,
+    "used": 1,
+    "value": 1129000
+  },
+  {
+    "id": 182,
+    "usage_id": 126,
+    "inv_code": "INV-P-260828-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 183,
+    "usage_id": 127,
+    "inv_code": "INV-D-260829-0001",
+    "product_id": 87,
+    "used": 1,
+    "value": 39000
+  },
+  {
+    "id": 184,
+    "usage_id": 128,
+    "inv_code": "INV-P-260829-0002",
+    "product_id": 24,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 185,
+    "usage_id": 128,
+    "inv_code": "INV-P-260829-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 186,
+    "usage_id": 129,
+    "inv_code": "INV-D-260829-0003",
+    "product_id": 164,
+    "used": 1,
+    "value": 385000
+  },
+  {
+    "id": 187,
+    "usage_id": 130,
+    "inv_code": "INV-D-260830-0001",
+    "product_id": 84,
+    "used": 1,
+    "value": 60000
+  },
+  {
+    "id": 188,
+    "usage_id": 131,
+    "inv_code": "INV-P-260830-0002",
+    "product_id": 26,
+    "used": 1,
+    "value": 250000
+  },
+  {
+    "id": 189,
+    "usage_id": 131,
+    "inv_code": "INV-P-260830-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 190,
+    "usage_id": 132,
+    "inv_code": "INV-D-260830-0003",
+    "product_id": 111,
+    "used": 1,
+    "value": 1575000
+  },
+  {
+    "id": 191,
+    "usage_id": 133,
+    "inv_code": "INV-P-260830-0004",
+    "product_id": 23,
+    "used": 1,
+    "value": 1649000
+  },
+  {
+    "id": 192,
+    "usage_id": 133,
+    "inv_code": "INV-P-260830-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 193,
+    "usage_id": 134,
+    "inv_code": "INV-D-260831-0001",
+    "product_id": 26,
+    "used": 1,
+    "value": 250000
+  },
+  {
+    "id": 194,
+    "usage_id": 135,
+    "inv_code": "INV-P-260831-0002",
+    "product_id": 111,
+    "used": 1,
+    "value": 1575000
+  },
+  {
+    "id": 195,
+    "usage_id": 135,
+    "inv_code": "INV-P-260831-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 196,
+    "usage_id": 136,
+    "inv_code": "INV-D-260831-0003",
+    "product_id": 23,
+    "used": 1,
+    "value": 1649000
+  },
+  {
+    "id": 197,
+    "usage_id": 137,
+    "inv_code": "INV-P-260831-0004",
+    "product_id": 109,
+    "used": 1,
+    "value": 1229000
+  },
+  {
+    "id": 198,
+    "usage_id": 137,
+    "inv_code": "INV-P-260831-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 199,
+    "usage_id": 138,
+    "inv_code": "INV-D-260831-0005",
+    "product_id": 100,
+    "used": 1,
+    "value": 2730000
+  },
+  {
+    "id": 200,
+    "usage_id": 139,
+    "inv_code": "INV-D-260901-0001",
+    "product_id": 114,
+    "used": 1,
+    "value": 1575000
+  },
+  {
+    "id": 201,
+    "usage_id": 140,
+    "inv_code": "INV-P-260901-0002",
+    "product_id": 103,
+    "used": 1,
+    "value": 2499000
+  },
+  {
+    "id": 202,
+    "usage_id": 140,
+    "inv_code": "INV-P-260901-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 203,
+    "usage_id": 141,
+    "inv_code": "INV-D-260901-0003",
+    "product_id": 108,
+    "used": 1,
+    "value": 1418000
+  },
+  {
+    "id": 204,
+    "usage_id": 142,
+    "inv_code": "INV-P-260901-0004",
+    "product_id": 94,
+    "used": 1,
+    "value": 4368000
+  },
+  {
+    "id": 205,
+    "usage_id": 142,
+    "inv_code": "INV-P-260901-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 206,
+    "usage_id": 143,
+    "inv_code": "INV-D-260901-0005",
+    "product_id": 95,
+    "used": 1,
+    "value": 4838000
+  },
+  {
+    "id": 207,
+    "usage_id": 144,
+    "inv_code": "INV-P-260901-0006",
+    "product_id": 93,
+    "used": 1,
+    "value": 5324000
+  },
+  {
+    "id": 208,
+    "usage_id": 144,
+    "inv_code": "INV-P-260901-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 209,
+    "usage_id": 145,
+    "inv_code": "INV-D-260902-0001",
+    "product_id": 104,
+    "used": 1,
+    "value": 1433000
+  },
+  {
+    "id": 210,
+    "usage_id": 146,
+    "inv_code": "INV-P-260902-0002",
+    "product_id": 107,
+    "used": 1,
+    "value": 1444000
+  },
+  {
+    "id": 211,
+    "usage_id": 146,
+    "inv_code": "INV-P-260902-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 212,
+    "usage_id": 147,
+    "inv_code": "INV-D-260902-0003",
+    "product_id": 96,
+    "used": 1,
+    "value": 4778000
+  },
+  {
+    "id": 213,
+    "usage_id": 148,
+    "inv_code": "INV-D-260903-0001",
+    "product_id": 106,
+    "used": 1,
+    "value": 1418000
+  },
+  {
+    "id": 214,
+    "usage_id": 149,
+    "inv_code": "INV-P-260903-0002",
+    "product_id": 102,
+    "used": 1,
+    "value": 3023000
+  },
+  {
+    "id": 215,
+    "usage_id": 149,
+    "inv_code": "INV-P-260903-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 216,
+    "usage_id": 150,
+    "inv_code": "INV-D-260903-0003",
+    "product_id": 98,
+    "used": 1,
+    "value": 3959000
+  },
+  {
+    "id": 217,
+    "usage_id": 151,
+    "inv_code": "INV-P-260903-0004",
+    "product_id": 117,
+    "used": 1,
+    "value": 3770000
+  },
+  {
+    "id": 218,
+    "usage_id": 151,
+    "inv_code": "INV-P-260903-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 219,
+    "usage_id": 152,
+    "inv_code": "INV-D-260904-0001",
+    "product_id": 102,
+    "used": 1,
+    "value": 3023000
+  },
+  {
+    "id": 220,
+    "usage_id": 153,
+    "inv_code": "INV-P-260904-0002",
+    "product_id": 98,
+    "used": 1,
+    "value": 3959000
+  },
+  {
+    "id": 221,
+    "usage_id": 153,
+    "inv_code": "INV-P-260904-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 222,
+    "usage_id": 154,
+    "inv_code": "INV-D-260904-0003",
+    "product_id": 117,
+    "used": 1,
+    "value": 3770000
+  },
+  {
+    "id": 223,
+    "usage_id": 155,
+    "inv_code": "INV-P-260904-0004",
+    "product_id": 97,
+    "used": 1,
+    "value": 3822000
+  },
+  {
+    "id": 224,
+    "usage_id": 155,
+    "inv_code": "INV-P-260904-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 225,
+    "usage_id": 156,
+    "inv_code": "INV-D-260904-0005",
+    "product_id": 129,
+    "used": 1,
+    "value": 585000
+  },
+  {
+    "id": 226,
+    "usage_id": 157,
+    "inv_code": "INV-D-260905-0001",
+    "product_id": 90,
+    "used": 1,
+    "value": 6011000
+  },
+  {
+    "id": 227,
+    "usage_id": 158,
+    "inv_code": "INV-P-260905-0002",
+    "product_id": 118,
+    "used": 1,
+    "value": 1775000
+  },
+  {
+    "id": 228,
+    "usage_id": 158,
+    "inv_code": "INV-P-260905-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 229,
+    "usage_id": 159,
+    "inv_code": "INV-D-260905-0003",
+    "product_id": 91,
+    "used": 1,
+    "value": 5733000
+  },
+  {
+    "id": 230,
+    "usage_id": 160,
+    "inv_code": "INV-P-260905-0004",
+    "product_id": 128,
+    "used": 1,
+    "value": 790000
+  },
+  {
+    "id": 231,
+    "usage_id": 160,
+    "inv_code": "INV-P-260905-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 232,
+    "usage_id": 161,
+    "inv_code": "INV-D-260905-0005",
+    "product_id": 54,
+    "used": 1,
+    "value": 65000
+  },
+  {
+    "id": 233,
+    "usage_id": 162,
+    "inv_code": "INV-P-260905-0006",
+    "product_id": 58,
+    "used": 1,
+    "value": 3920000
+  },
+  {
+    "id": 234,
+    "usage_id": 162,
+    "inv_code": "INV-P-260905-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 235,
+    "usage_id": 163,
+    "inv_code": "INV-D-260906-0001",
+    "product_id": 115,
+    "used": 1,
+    "value": 7235000
+  },
+  {
+    "id": 236,
+    "usage_id": 164,
+    "inv_code": "INV-P-260906-0002",
+    "product_id": 89,
+    "used": 1,
+    "value": 8600000
+  },
+  {
+    "id": 237,
+    "usage_id": 164,
+    "inv_code": "INV-P-260906-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 238,
+    "usage_id": 165,
+    "inv_code": "INV-D-260906-0003",
+    "product_id": 132,
+    "used": 1,
+    "value": 755000
+  },
+  {
+    "id": 239,
+    "usage_id": 166,
+    "inv_code": "INV-D-260907-0001",
+    "product_id": 92,
+    "used": 1,
+    "value": 5187000
+  },
+  {
+    "id": 240,
+    "usage_id": 167,
+    "inv_code": "INV-P-260907-0002",
+    "product_id": 51,
+    "used": 1,
+    "value": 240000
+  },
+  {
+    "id": 241,
+    "usage_id": 167,
+    "inv_code": "INV-P-260907-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 242,
+    "usage_id": 168,
+    "inv_code": "INV-D-260907-0003",
+    "product_id": 125,
+    "used": 1,
+    "value": 1995000
+  },
+  {
+    "id": 243,
+    "usage_id": 169,
+    "inv_code": "INV-P-260907-0004",
+    "product_id": 127,
+    "used": 1,
+    "value": 7180000
+  },
+  {
+    "id": 244,
+    "usage_id": 169,
+    "inv_code": "INV-P-260907-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 245,
+    "usage_id": 170,
+    "inv_code": "INV-D-260908-0001",
+    "product_id": 51,
+    "used": 1,
+    "value": 240000
+  },
+  {
+    "id": 246,
+    "usage_id": 171,
+    "inv_code": "INV-P-260908-0002",
+    "product_id": 125,
+    "used": 1,
+    "value": 1995000
+  },
+  {
+    "id": 247,
+    "usage_id": 171,
+    "inv_code": "INV-P-260908-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 248,
+    "usage_id": 172,
+    "inv_code": "INV-D-260908-0003",
+    "product_id": 127,
+    "used": 1,
+    "value": 7180000
+  },
+  {
+    "id": 249,
+    "usage_id": 173,
+    "inv_code": "INV-P-260908-0004",
+    "product_id": 63,
+    "used": 1,
+    "value": 2655000
+  },
+  {
+    "id": 250,
+    "usage_id": 173,
+    "inv_code": "INV-P-260908-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 251,
+    "usage_id": 174,
+    "inv_code": "INV-D-260908-0005",
+    "product_id": 67,
+    "used": 1,
+    "value": 7300000
+  },
+  {
+    "id": 252,
+    "usage_id": 175,
+    "inv_code": "INV-D-260909-0001",
+    "product_id": 126,
+    "used": 1,
+    "value": 3955000
+  },
+  {
+    "id": 253,
+    "usage_id": 176,
+    "inv_code": "INV-P-260909-0002",
+    "product_id": 60,
+    "used": 1,
+    "value": 345000
+  },
+  {
+    "id": 254,
+    "usage_id": 176,
+    "inv_code": "INV-P-260909-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 255,
+    "usage_id": 177,
+    "inv_code": "INV-D-260909-0003",
+    "product_id": 157,
+    "used": 1,
+    "value": 44500
+  },
+  {
+    "id": 256,
+    "usage_id": 178,
+    "inv_code": "INV-P-260909-0004",
+    "product_id": 158,
+    "used": 1,
+    "value": 85000
+  },
+  {
+    "id": 257,
+    "usage_id": 178,
+    "inv_code": "INV-P-260909-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 258,
+    "usage_id": 179,
+    "inv_code": "INV-D-260909-0005",
+    "product_id": 137,
+    "used": 1,
+    "value": 6500000
+  },
+  {
+    "id": 259,
+    "usage_id": 180,
+    "inv_code": "INV-P-260909-0006",
+    "product_id": 135,
+    "used": 1,
+    "value": 5250000
+  },
+  {
+    "id": 260,
+    "usage_id": 180,
+    "inv_code": "INV-P-260909-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 261,
+    "usage_id": 181,
+    "inv_code": "INV-D-260910-0001",
+    "product_id": 121,
+    "used": 1,
+    "value": 3600000
+  },
+  {
+    "id": 262,
+    "usage_id": 182,
+    "inv_code": "INV-P-260910-0002",
+    "product_id": 119,
+    "used": 1,
+    "value": 7500000
+  },
+  {
+    "id": 263,
+    "usage_id": 182,
+    "inv_code": "INV-P-260910-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 264,
+    "usage_id": 183,
+    "inv_code": "INV-D-260910-0003",
+    "product_id": 74,
+    "used": 1,
+    "value": 350000
+  },
+  {
+    "id": 265,
+    "usage_id": 184,
+    "inv_code": "INV-D-260911-0001",
+    "product_id": 120,
+    "used": 1,
+    "value": 4000000
+  },
+  {
+    "id": 266,
+    "usage_id": 185,
+    "inv_code": "INV-P-260911-0002",
+    "product_id": 79,
+    "used": 1,
+    "value": 325000
+  },
+  {
+    "id": 267,
+    "usage_id": 185,
+    "inv_code": "INV-P-260911-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 268,
+    "usage_id": 186,
+    "inv_code": "INV-D-260911-0003",
+    "product_id": 138,
+    "used": 1,
+    "value": 5500000
+  },
+  {
+    "id": 269,
+    "usage_id": 187,
+    "inv_code": "INV-P-260911-0004",
+    "product_id": 69,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 270,
+    "usage_id": 187,
+    "inv_code": "INV-P-260911-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 271,
+    "usage_id": 188,
+    "inv_code": "INV-D-260912-0001",
+    "product_id": 79,
+    "used": 1,
+    "value": 325000
+  },
+  {
+    "id": 272,
+    "usage_id": 189,
+    "inv_code": "INV-P-260912-0002",
+    "product_id": 138,
+    "used": 1,
+    "value": 5500000
+  },
+  {
+    "id": 273,
+    "usage_id": 189,
+    "inv_code": "INV-P-260912-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 274,
+    "usage_id": 190,
+    "inv_code": "INV-D-260912-0003",
+    "product_id": 69,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 275,
+    "usage_id": 191,
+    "inv_code": "INV-P-260912-0004",
+    "product_id": 448,
+    "used": 1,
+    "value": 2200000
+  },
+  {
+    "id": 276,
+    "usage_id": 191,
+    "inv_code": "INV-P-260912-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 277,
+    "usage_id": 192,
+    "inv_code": "INV-D-260912-0005",
+    "product_id": 142,
+    "used": 1,
+    "value": 3300000
+  },
+  {
+    "id": 278,
+    "usage_id": 193,
+    "inv_code": "INV-D-260913-0001",
+    "product_id": 74,
+    "used": 1,
+    "value": 3500000
+  },
+  {
+    "id": 279,
+    "usage_id": 194,
+    "inv_code": "INV-P-260913-0002",
+    "product_id": 78,
+    "used": 1,
+    "value": 2200000
+  },
+  {
+    "id": 280,
+    "usage_id": 194,
+    "inv_code": "INV-P-260913-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 281,
+    "usage_id": 195,
+    "inv_code": "INV-D-260913-0003",
+    "product_id": 124,
+    "used": 1,
+    "value": 650000
+  },
+  {
+    "id": 282,
+    "usage_id": 196,
+    "inv_code": "INV-P-260913-0004",
+    "product_id": 145,
+    "used": 1,
+    "value": 1800000
+  },
+  {
+    "id": 283,
+    "usage_id": 196,
+    "inv_code": "INV-P-260913-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 284,
+    "usage_id": 197,
+    "inv_code": "INV-D-260913-0005",
+    "product_id": 146,
+    "used": 1,
+    "value": 675000
+  },
+  {
+    "id": 285,
+    "usage_id": 198,
+    "inv_code": "INV-P-260913-0006",
+    "product_id": 445,
+    "used": 1,
+    "value": 649000
+  },
+  {
+    "id": 286,
+    "usage_id": 198,
+    "inv_code": "INV-P-260913-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 287,
+    "usage_id": 199,
+    "inv_code": "INV-D-260914-0001",
+    "product_id": 80,
+    "used": 1,
+    "value": 2200000
+  },
+  {
+    "id": 288,
+    "usage_id": 200,
+    "inv_code": "INV-P-260914-0002",
+    "product_id": 140,
+    "used": 1,
+    "value": 5500000
+  },
+  {
+    "id": 289,
+    "usage_id": 200,
+    "inv_code": "INV-P-260914-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 290,
+    "usage_id": 201,
+    "inv_code": "INV-D-260914-0003",
+    "product_id": 143,
+    "used": 1,
+    "value": 3300000
+  },
+  {
+    "id": 291,
+    "usage_id": 202,
+    "inv_code": "INV-D-260915-0001",
+    "product_id": 141,
+    "used": 1,
+    "value": 3600000
+  },
+  {
+    "id": 292,
+    "usage_id": 203,
+    "inv_code": "INV-P-260915-0002",
+    "product_id": 147,
+    "used": 1,
+    "value": 500000
+  },
+  {
+    "id": 293,
+    "usage_id": 203,
+    "inv_code": "INV-P-260915-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 294,
+    "usage_id": 204,
+    "inv_code": "INV-D-260915-0003",
+    "product_id": 83,
+    "used": 1,
+    "value": 75000
+  },
+  {
+    "id": 295,
+    "usage_id": 205,
+    "inv_code": "INV-P-260915-0004",
+    "product_id": 56,
+    "used": 1,
+    "value": 749000
+  },
+  {
+    "id": 296,
+    "usage_id": 205,
+    "inv_code": "INV-P-260915-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 297,
+    "usage_id": 206,
+    "inv_code": "INV-D-260916-0001",
+    "product_id": 147,
+    "used": 1,
+    "value": 500000
+  },
+  {
+    "id": 298,
+    "usage_id": 207,
+    "inv_code": "INV-P-260916-0002",
+    "product_id": 83,
+    "used": 1,
+    "value": 75000
+  },
+  {
+    "id": 299,
+    "usage_id": 207,
+    "inv_code": "INV-P-260916-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 300,
+    "usage_id": 208,
+    "inv_code": "INV-D-260916-0003",
+    "product_id": 56,
+    "used": 1,
+    "value": 749000
+  },
+  {
+    "id": 301,
+    "usage_id": 209,
+    "inv_code": "INV-P-260916-0004",
+    "product_id": 50,
+    "used": 1,
+    "value": 750000
+  },
+  {
+    "id": 302,
+    "usage_id": 209,
+    "inv_code": "INV-P-260916-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 303,
+    "usage_id": 210,
+    "inv_code": "INV-D-260916-0005",
+    "product_id": 46,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 304,
+    "usage_id": 211,
+    "inv_code": "INV-D-260917-0001",
+    "product_id": 86,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 305,
+    "usage_id": 212,
+    "inv_code": "INV-P-260917-0002",
+    "product_id": 55,
+    "used": 1,
+    "value": 1800000
+  },
+  {
+    "id": 306,
+    "usage_id": 212,
+    "inv_code": "INV-P-260917-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 307,
+    "usage_id": 213,
+    "inv_code": "INV-D-260917-0003",
+    "product_id": 110,
+    "used": 1,
+    "value": 1550000
+  },
+  {
+    "id": 308,
+    "usage_id": 214,
+    "inv_code": "INV-P-260917-0004",
+    "product_id": 44,
+    "used": 1,
+    "value": 500000
+  },
+  {
+    "id": 309,
+    "usage_id": 214,
+    "inv_code": "INV-P-260917-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 310,
+    "usage_id": 215,
+    "inv_code": "INV-D-260917-0005",
+    "product_id": 43,
+    "used": 1,
+    "value": 500000
+  },
+  {
+    "id": 311,
+    "usage_id": 216,
+    "inv_code": "INV-P-260917-0006",
+    "product_id": 38,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 312,
+    "usage_id": 216,
+    "inv_code": "INV-P-260917-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 313,
+    "usage_id": 217,
+    "inv_code": "INV-D-260918-0001",
+    "product_id": 52,
+    "used": 1,
+    "value": 650000
+  },
+  {
+    "id": 314,
+    "usage_id": 218,
+    "inv_code": "INV-P-260918-0002",
+    "product_id": 59,
+    "used": 1,
+    "value": 75000
+  },
+  {
+    "id": 315,
+    "usage_id": 218,
+    "inv_code": "INV-P-260918-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 316,
+    "usage_id": 219,
+    "inv_code": "INV-D-260918-0003",
+    "product_id": 106,
+    "used": 1,
+    "value": 750000
+  },
+  {
+    "id": 317,
+    "usage_id": 220,
+    "inv_code": "INV-D-260919-0001",
+    "product_id": 57,
+    "used": 1,
+    "value": 850000
+  },
+  {
+    "id": 318,
+    "usage_id": 221,
+    "inv_code": "INV-P-260919-0002",
+    "product_id": 42,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 319,
+    "usage_id": 221,
+    "inv_code": "INV-P-260919-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 320,
+    "usage_id": 222,
+    "inv_code": "INV-D-260919-0003",
+    "product_id": 39,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 321,
+    "usage_id": 223,
+    "inv_code": "INV-P-260919-0004",
+    "product_id": 37,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 322,
+    "usage_id": 223,
+    "inv_code": "INV-P-260919-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 323,
+    "usage_id": 224,
+    "inv_code": "INV-D-260920-0001",
+    "product_id": 42,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 324,
+    "usage_id": 225,
+    "inv_code": "INV-P-260920-0002",
+    "product_id": 39,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 325,
+    "usage_id": 225,
+    "inv_code": "INV-P-260920-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 326,
+    "usage_id": 226,
+    "inv_code": "INV-D-260920-0003",
+    "product_id": 37,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 327,
+    "usage_id": 227,
+    "inv_code": "INV-P-260920-0004",
+    "product_id": 76,
+    "used": 1,
+    "value": 295000
+  },
+  {
+    "id": 328,
+    "usage_id": 227,
+    "inv_code": "INV-P-260920-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 329,
+    "usage_id": 228,
+    "inv_code": "INV-D-260920-0005",
+    "product_id": 80,
+    "used": 1,
+    "value": 295000
+  },
+  {
+    "id": 330,
+    "usage_id": 229,
+    "inv_code": "INV-D-260921-0001",
+    "product_id": 110,
+    "used": 1,
+    "value": 750000
+  },
+  {
+    "id": 331,
+    "usage_id": 230,
+    "inv_code": "INV-P-260921-0002",
+    "product_id": 88,
+    "used": 1,
+    "value": 35000
+  },
+  {
+    "id": 332,
+    "usage_id": 230,
+    "inv_code": "INV-P-260921-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 333,
+    "usage_id": 231,
+    "inv_code": "INV-D-260921-0003",
+    "product_id": 75,
+    "used": 1,
+    "value": 299000
+  },
+  {
+    "id": 334,
+    "usage_id": 232,
+    "inv_code": "INV-P-260921-0004",
+    "product_id": 71,
+    "used": 1,
+    "value": 650000
+  },
+  {
+    "id": 335,
+    "usage_id": 232,
+    "inv_code": "INV-P-260921-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 336,
+    "usage_id": 233,
+    "inv_code": "INV-D-260921-0005",
+    "product_id": 160,
+    "used": 1,
+    "value": 600000
+  },
+  {
+    "id": 337,
+    "usage_id": 234,
+    "inv_code": "INV-P-260921-0006",
+    "product_id": 32,
+    "used": 1,
+    "value": 399000
+  },
+  {
+    "id": 338,
+    "usage_id": 234,
+    "inv_code": "INV-P-260921-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 339,
+    "usage_id": 235,
+    "inv_code": "INV-D-260922-0001",
+    "product_id": 77,
+    "used": 1,
+    "value": 349000
+  },
+  {
+    "id": 340,
+    "usage_id": 236,
+    "inv_code": "INV-P-260922-0002",
+    "product_id": 81,
+    "used": 1,
+    "value": 300000
+  },
+  {
+    "id": 341,
+    "usage_id": 236,
+    "inv_code": "INV-P-260922-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 342,
+    "usage_id": 237,
+    "inv_code": "INV-D-260922-0003",
+    "product_id": 67,
+    "used": 1,
+    "value": 250000
+  },
+  {
+    "id": 343,
+    "usage_id": 238,
+    "inv_code": "INV-D-260923-0001",
+    "product_id": 73,
+    "used": 1,
+    "value": 550000
+  },
+  {
+    "id": 344,
+    "usage_id": 239,
+    "inv_code": "INV-P-260923-0002",
+    "product_id": 72,
+    "used": 1,
+    "value": 625000
+  },
+  {
+    "id": 345,
+    "usage_id": 239,
+    "inv_code": "INV-P-260923-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 346,
+    "usage_id": 240,
+    "inv_code": "INV-D-260923-0003",
+    "product_id": 33,
+    "used": 1,
+    "value": 199000
+  },
+  {
+    "id": 347,
+    "usage_id": 241,
+    "inv_code": "INV-P-260923-0004",
+    "product_id": 53,
+    "used": 1,
+    "value": 550000
+  },
+  {
+    "id": 348,
+    "usage_id": 241,
+    "inv_code": "INV-P-260923-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 349,
+    "usage_id": 242,
+    "inv_code": "INV-D-260924-0001",
+    "product_id": 72,
+    "used": 1,
+    "value": 625000
+  },
+  {
+    "id": 350,
+    "usage_id": 243,
+    "inv_code": "INV-P-260924-0002",
+    "product_id": 33,
+    "used": 1,
+    "value": 199000
+  },
+  {
+    "id": 351,
+    "usage_id": 243,
+    "inv_code": "INV-P-260924-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 352,
+    "usage_id": 244,
+    "inv_code": "INV-D-260924-0003",
+    "product_id": 53,
+    "used": 1,
+    "value": 550000
+  },
+  {
+    "id": 353,
+    "usage_id": 245,
+    "inv_code": "INV-P-260924-0004",
+    "product_id": 902,
+    "used": 1,
+    "value": 185000
+  },
+  {
+    "id": 354,
+    "usage_id": 245,
+    "inv_code": "INV-P-260924-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 355,
+    "usage_id": 246,
+    "inv_code": "INV-D-260924-0005",
+    "product_id": 906,
+    "used": 1,
+    "value": 225000
+  },
+  {
+    "id": 356,
+    "usage_id": 247,
+    "inv_code": "INV-D-260925-0001",
+    "product_id": 30,
+    "used": 1,
+    "value": 245000
+  },
+  {
+    "id": 357,
+    "usage_id": 248,
+    "inv_code": "INV-P-260925-0002",
+    "product_id": 51,
+    "used": 1,
+    "value": 600000
+  },
+  {
+    "id": 358,
+    "usage_id": 248,
+    "inv_code": "INV-P-260925-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 359,
+    "usage_id": 249,
+    "inv_code": "INV-D-260925-0003",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 360,
+    "usage_id": 250,
+    "inv_code": "INV-P-260925-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 361,
+    "usage_id": 250,
+    "inv_code": "INV-P-260925-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 362,
+    "usage_id": 251,
+    "inv_code": "INV-D-260925-0005",
+    "product_id": 18,
+    "used": 1,
+    "value": 300000
+  },
+  {
+    "id": 363,
+    "usage_id": 252,
+    "inv_code": "INV-P-260925-0006",
+    "product_id": 87,
+    "used": 1,
+    "value": 39000
+  },
+  {
+    "id": 364,
+    "usage_id": 252,
+    "inv_code": "INV-P-260925-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 365,
+    "usage_id": 253,
+    "inv_code": "INV-D-260926-0001",
+    "product_id": 901,
+    "used": 1,
+    "value": 165000
+  },
+  {
+    "id": 366,
+    "usage_id": 254,
+    "inv_code": "INV-P-260926-0002",
+    "product_id": 905,
+    "used": 1,
+    "value": 285000
+  },
+  {
+    "id": 367,
+    "usage_id": 254,
+    "inv_code": "INV-P-260926-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 368,
+    "usage_id": 255,
+    "inv_code": "INV-D-260926-0003",
+    "product_id": 20,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 369,
+    "usage_id": 256,
+    "inv_code": "INV-D-260927-0001",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 370,
+    "usage_id": 257,
+    "inv_code": "INV-P-260927-0002",
+    "product_id": 82,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 371,
+    "usage_id": 257,
+    "inv_code": "INV-P-260927-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 372,
+    "usage_id": 258,
+    "inv_code": "INV-D-260927-0003",
+    "product_id": 17,
+    "used": 1,
+    "value": 325000
+  },
+  {
+    "id": 373,
+    "usage_id": 259,
+    "inv_code": "INV-P-260927-0004",
+    "product_id": 457,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 374,
+    "usage_id": 259,
+    "inv_code": "INV-P-260927-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 375,
+    "usage_id": 260,
+    "inv_code": "INV-D-260928-0001",
+    "product_id": 82,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 376,
+    "usage_id": 261,
+    "inv_code": "INV-P-260928-0002",
+    "product_id": 17,
+    "used": 1,
+    "value": 325000
+  },
+  {
+    "id": 377,
+    "usage_id": 261,
+    "inv_code": "INV-P-260928-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 378,
+    "usage_id": 262,
+    "inv_code": "INV-D-260928-0003",
+    "product_id": 457,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 379,
+    "usage_id": 263,
+    "inv_code": "INV-P-260928-0004",
+    "product_id": 162,
+    "used": 1,
+    "value": 445000
+  },
+  {
+    "id": 380,
+    "usage_id": 263,
+    "inv_code": "INV-P-260928-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 381,
+    "usage_id": 264,
+    "inv_code": "INV-D-260928-0005",
+    "product_id": 22,
+    "used": 1,
+    "value": 480000
+  },
+  {
+    "id": 382,
+    "usage_id": 265,
+    "inv_code": "INV-D-260929-0001",
+    "product_id": 16,
+    "used": 1,
+    "value": 380000
+  },
+  {
+    "id": 383,
+    "usage_id": 266,
+    "inv_code": "INV-P-260929-0002",
+    "product_id": 85,
+    "used": 1,
+    "value": 60000
+  },
+  {
+    "id": 384,
+    "usage_id": 266,
+    "inv_code": "INV-P-260929-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 385,
+    "usage_id": 267,
+    "inv_code": "INV-D-260929-0003",
+    "product_id": 25,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 386,
+    "usage_id": 268,
+    "inv_code": "INV-P-260929-0004",
+    "product_id": 113,
+    "used": 1,
+    "value": 1045000
+  },
+  {
+    "id": 387,
+    "usage_id": 268,
+    "inv_code": "INV-P-260929-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 388,
+    "usage_id": 269,
+    "inv_code": "INV-D-260929-0005",
+    "product_id": 112,
+    "used": 1,
+    "value": 1129000
+  },
+  {
+    "id": 389,
+    "usage_id": 270,
+    "inv_code": "INV-P-260929-0006",
+    "product_id": 104,
+    "used": 1,
+    "value": 1433000
+  },
+  {
+    "id": 390,
+    "usage_id": 270,
+    "inv_code": "INV-P-260929-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 391,
+    "usage_id": 271,
+    "inv_code": "INV-D-260930-0001",
+    "product_id": 24,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 392,
+    "usage_id": 272,
+    "inv_code": "INV-P-260930-0002",
+    "product_id": 164,
+    "used": 1,
+    "value": 385000
+  },
+  {
+    "id": 393,
+    "usage_id": 272,
+    "inv_code": "INV-P-260930-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 394,
+    "usage_id": 273,
+    "inv_code": "INV-D-260930-0003",
+    "product_id": 114,
+    "used": 1,
+    "value": 1575000
+  },
+  {
+    "id": 395,
+    "usage_id": 274,
+    "inv_code": "INV-D-261001-0001",
+    "product_id": 26,
+    "used": 1,
+    "value": 250000
+  },
+  {
+    "id": 396,
+    "usage_id": 275,
+    "inv_code": "INV-P-261001-0002",
+    "product_id": 111,
+    "used": 1,
+    "value": 1575000
+  },
+  {
+    "id": 397,
+    "usage_id": 275,
+    "inv_code": "INV-P-261001-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 398,
+    "usage_id": 276,
+    "inv_code": "INV-D-261001-0003",
+    "product_id": 23,
+    "used": 1,
+    "value": 1649000
+  },
+  {
+    "id": 399,
+    "usage_id": 277,
+    "inv_code": "INV-P-261001-0004",
+    "product_id": 109,
+    "used": 1,
+    "value": 1229000
+  },
+  {
+    "id": 400,
+    "usage_id": 277,
+    "inv_code": "INV-P-261001-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 401,
+    "usage_id": 278,
+    "inv_code": "INV-D-261002-0001",
+    "product_id": 111,
+    "used": 1,
+    "value": 1575000
+  },
+  {
+    "id": 402,
+    "usage_id": 279,
+    "inv_code": "INV-P-261002-0002",
+    "product_id": 23,
+    "used": 1,
+    "value": 1649000
+  },
+  {
+    "id": 403,
+    "usage_id": 279,
+    "inv_code": "INV-P-261002-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 404,
+    "usage_id": 280,
+    "inv_code": "INV-D-261002-0003",
+    "product_id": 109,
+    "used": 1,
+    "value": 1229000
+  },
+  {
+    "id": 405,
+    "usage_id": 281,
+    "inv_code": "INV-P-261002-0004",
+    "product_id": 100,
+    "used": 1,
+    "value": 2730000
+  },
+  {
+    "id": 406,
+    "usage_id": 281,
+    "inv_code": "INV-P-261002-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 407,
+    "usage_id": 282,
+    "inv_code": "INV-D-261002-0005",
+    "product_id": 101,
+    "used": 1,
+    "value": 2793000
+  },
+  {
+    "id": 408,
+    "usage_id": 283,
+    "inv_code": "INV-D-261003-0001",
+    "product_id": 103,
+    "used": 1,
+    "value": 2499000
+  },
+  {
+    "id": 409,
+    "usage_id": 284,
+    "inv_code": "INV-P-261003-0002",
+    "product_id": 108,
+    "used": 1,
+    "value": 1418000
+  },
+  {
+    "id": 410,
+    "usage_id": 284,
+    "inv_code": "INV-P-261003-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 411,
+    "usage_id": 285,
+    "inv_code": "INV-D-261003-0003",
+    "product_id": 94,
+    "used": 1,
+    "value": 4368000
+  },
+  {
+    "id": 412,
+    "usage_id": 286,
+    "inv_code": "INV-P-261003-0004",
+    "product_id": 95,
+    "used": 1,
+    "value": 4838000
+  },
+  {
+    "id": 413,
+    "usage_id": 286,
+    "inv_code": "INV-P-261003-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 414,
+    "usage_id": 287,
+    "inv_code": "INV-D-261003-0005",
+    "product_id": 93,
+    "used": 1,
+    "value": 5324000
+  },
+  {
+    "id": 415,
+    "usage_id": 288,
+    "inv_code": "INV-P-261003-0006",
+    "product_id": 115,
+    "used": 1,
+    "value": 7235000
+  },
+  {
+    "id": 416,
+    "usage_id": 288,
+    "inv_code": "INV-P-261003-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 417,
+    "usage_id": 289,
+    "inv_code": "INV-D-261004-0001",
+    "product_id": 107,
+    "used": 1,
+    "value": 1444000
+  },
+  {
+    "id": 418,
+    "usage_id": 290,
+    "inv_code": "INV-P-261004-0002",
+    "product_id": 96,
+    "used": 1,
+    "value": 4778000
+  },
+  {
+    "id": 419,
+    "usage_id": 290,
+    "inv_code": "INV-P-261004-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 420,
+    "usage_id": 291,
+    "inv_code": "INV-D-261004-0003",
+    "product_id": 90,
+    "used": 1,
+    "value": 6011000
+  },
+  {
+    "id": 421,
+    "usage_id": 292,
+    "inv_code": "INV-D-261005-0001",
+    "product_id": 102,
+    "used": 1,
+    "value": 3023000
+  },
+  {
+    "id": 422,
+    "usage_id": 293,
+    "inv_code": "INV-P-261005-0002",
+    "product_id": 98,
+    "used": 1,
+    "value": 3959000
+  },
+  {
+    "id": 423,
+    "usage_id": 293,
+    "inv_code": "INV-P-261005-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 424,
+    "usage_id": 294,
+    "inv_code": "INV-D-261005-0003",
+    "product_id": 117,
+    "used": 1,
+    "value": 3770000
+  },
+  {
+    "id": 425,
+    "usage_id": 295,
+    "inv_code": "INV-P-261005-0004",
+    "product_id": 97,
+    "used": 1,
+    "value": 3822000
+  },
+  {
+    "id": 426,
+    "usage_id": 295,
+    "inv_code": "INV-P-261005-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 427,
+    "usage_id": 296,
+    "inv_code": "INV-D-261006-0001",
+    "product_id": 98,
+    "used": 1,
+    "value": 3959000
+  },
+  {
+    "id": 428,
+    "usage_id": 297,
+    "inv_code": "INV-P-261006-0002",
+    "product_id": 117,
+    "used": 1,
+    "value": 3770000
+  },
+  {
+    "id": 429,
+    "usage_id": 297,
+    "inv_code": "INV-P-261006-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 430,
+    "usage_id": 298,
+    "inv_code": "INV-D-261006-0003",
+    "product_id": 97,
+    "used": 1,
+    "value": 3822000
+  },
+  {
+    "id": 431,
+    "usage_id": 299,
+    "inv_code": "INV-P-261006-0004",
+    "product_id": 129,
+    "used": 1,
+    "value": 585000
+  },
+  {
+    "id": 432,
+    "usage_id": 299,
+    "inv_code": "INV-P-261006-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 433,
+    "usage_id": 300,
+    "inv_code": "INV-D-261006-0005",
+    "product_id": 447,
+    "used": 1,
+    "value": 1340000
+  },
+  {
+    "id": 434,
+    "usage_id": 301,
+    "inv_code": "INV-D-261007-0001",
+    "product_id": 118,
+    "used": 1,
+    "value": 1775000
+  },
+  {
+    "id": 435,
+    "usage_id": 302,
+    "inv_code": "INV-P-261007-0002",
+    "product_id": 91,
+    "used": 1,
+    "value": 5733000
+  },
+  {
+    "id": 436,
+    "usage_id": 302,
+    "inv_code": "INV-P-261007-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 437,
+    "usage_id": 303,
+    "inv_code": "INV-D-261007-0003",
+    "product_id": 128,
+    "used": 1,
+    "value": 790000
+  },
+  {
+    "id": 438,
+    "usage_id": 304,
+    "inv_code": "INV-P-261007-0004",
+    "product_id": 54,
+    "used": 1,
+    "value": 65000
+  },
+  {
+    "id": 439,
+    "usage_id": 304,
+    "inv_code": "INV-P-261007-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 440,
+    "usage_id": 305,
+    "inv_code": "INV-D-261007-0005",
+    "product_id": 58,
+    "used": 1,
+    "value": 3920000
+  },
+  {
+    "id": 441,
+    "usage_id": 306,
+    "inv_code": "INV-P-261007-0006",
+    "product_id": 121,
+    "used": 1,
+    "value": 3600000
+  },
+  {
+    "id": 442,
+    "usage_id": 306,
+    "inv_code": "INV-P-261007-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 443,
+    "usage_id": 307,
+    "inv_code": "INV-D-261008-0001",
+    "product_id": 89,
+    "used": 1,
+    "value": 8600000
+  },
+  {
+    "id": 444,
+    "usage_id": 308,
+    "inv_code": "INV-P-261008-0002",
+    "product_id": 132,
+    "used": 1,
+    "value": 755000
+  },
+  {
+    "id": 445,
+    "usage_id": 308,
+    "inv_code": "INV-P-261008-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 446,
+    "usage_id": 309,
+    "inv_code": "INV-D-261008-0003",
+    "product_id": 126,
+    "used": 1,
+    "value": 3955000
+  },
+  {
+    "id": 447,
+    "usage_id": 310,
+    "inv_code": "INV-D-261009-0001",
+    "product_id": 51,
+    "used": 1,
+    "value": 240000
+  },
+  {
+    "id": 448,
+    "usage_id": 311,
+    "inv_code": "INV-P-261009-0002",
+    "product_id": 125,
+    "used": 1,
+    "value": 1995000
+  },
+  {
+    "id": 449,
+    "usage_id": 311,
+    "inv_code": "INV-P-261009-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 450,
+    "usage_id": 312,
+    "inv_code": "INV-D-261009-0003",
+    "product_id": 127,
+    "used": 1,
+    "value": 7180000
+  },
+  {
+    "id": 451,
+    "usage_id": 313,
+    "inv_code": "INV-P-261009-0004",
+    "product_id": 63,
+    "used": 1,
+    "value": 2655000
+  },
+  {
+    "id": 452,
+    "usage_id": 313,
+    "inv_code": "INV-P-261009-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 453,
+    "usage_id": 314,
+    "inv_code": "INV-D-261010-0001",
+    "product_id": 125,
+    "used": 1,
+    "value": 1995000
+  },
+  {
+    "id": 454,
+    "usage_id": 315,
+    "inv_code": "INV-P-261010-0002",
+    "product_id": 127,
+    "used": 1,
+    "value": 7180000
+  },
+  {
+    "id": 455,
+    "usage_id": 315,
+    "inv_code": "INV-P-261010-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 456,
+    "usage_id": 316,
+    "inv_code": "INV-D-261010-0003",
+    "product_id": 63,
+    "used": 1,
+    "value": 2655000
+  },
+  {
+    "id": 457,
+    "usage_id": 317,
+    "inv_code": "INV-P-261010-0004",
+    "product_id": 67,
+    "used": 1,
+    "value": 7300000
+  },
+  {
+    "id": 458,
+    "usage_id": 317,
+    "inv_code": "INV-P-261010-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 459,
+    "usage_id": 318,
+    "inv_code": "INV-D-261010-0005",
+    "product_id": 139,
+    "used": 1,
+    "value": 6000000
+  },
+  {
+    "id": 460,
+    "usage_id": 319,
+    "inv_code": "INV-D-261011-0001",
+    "product_id": 60,
+    "used": 1,
+    "value": 345000
+  },
+  {
+    "id": 461,
+    "usage_id": 320,
+    "inv_code": "INV-P-261011-0002",
+    "product_id": 157,
+    "used": 1,
+    "value": 44500
+  },
+  {
+    "id": 462,
+    "usage_id": 320,
+    "inv_code": "INV-P-261011-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 463,
+    "usage_id": 321,
+    "inv_code": "INV-D-261011-0003",
+    "product_id": 158,
+    "used": 1,
+    "value": 85000
+  },
+  {
+    "id": 464,
+    "usage_id": 322,
+    "inv_code": "INV-P-261011-0004",
+    "product_id": 137,
+    "used": 1,
+    "value": 6500000
+  },
+  {
+    "id": 465,
+    "usage_id": 322,
+    "inv_code": "INV-P-261011-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 466,
+    "usage_id": 323,
+    "inv_code": "INV-D-261011-0005",
+    "product_id": 135,
+    "used": 1,
+    "value": 5250000
+  },
+  {
+    "id": 467,
+    "usage_id": 324,
+    "inv_code": "INV-P-261011-0006",
+    "product_id": 80,
+    "used": 1,
+    "value": 2200000
+  },
+  {
+    "id": 468,
+    "usage_id": 324,
+    "inv_code": "INV-P-261011-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 469,
+    "usage_id": 325,
+    "inv_code": "INV-D-261012-0001",
+    "product_id": 119,
+    "used": 1,
+    "value": 7500000
+  },
+  {
+    "id": 470,
+    "usage_id": 326,
+    "inv_code": "INV-P-261012-0002",
+    "product_id": 74,
+    "used": 1,
+    "value": 350000
+  },
+  {
+    "id": 471,
+    "usage_id": 326,
+    "inv_code": "INV-P-261012-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 472,
+    "usage_id": 327,
+    "inv_code": "INV-D-261012-0003",
+    "product_id": 74,
+    "used": 1,
+    "value": 3500000
+  },
+  {
+    "id": 473,
+    "usage_id": 328,
+    "inv_code": "INV-D-261013-0001",
+    "product_id": 79,
+    "used": 1,
+    "value": 325000
+  },
+  {
+    "id": 474,
+    "usage_id": 329,
+    "inv_code": "INV-P-261013-0002",
+    "product_id": 138,
+    "used": 1,
+    "value": 5500000
+  },
+  {
+    "id": 475,
+    "usage_id": 329,
+    "inv_code": "INV-P-261013-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 476,
+    "usage_id": 330,
+    "inv_code": "INV-D-261013-0003",
+    "product_id": 69,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 477,
+    "usage_id": 331,
+    "inv_code": "INV-P-261013-0004",
+    "product_id": 448,
+    "used": 1,
+    "value": 2200000
+  },
+  {
+    "id": 478,
+    "usage_id": 331,
+    "inv_code": "INV-P-261013-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 479,
+    "usage_id": 332,
+    "inv_code": "INV-D-261014-0001",
+    "product_id": 138,
+    "used": 1,
+    "value": 5500000
+  },
+  {
+    "id": 480,
+    "usage_id": 333,
+    "inv_code": "INV-P-261014-0002",
+    "product_id": 69,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 481,
+    "usage_id": 333,
+    "inv_code": "INV-P-261014-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 482,
+    "usage_id": 334,
+    "inv_code": "INV-D-261014-0003",
+    "product_id": 448,
+    "used": 1,
+    "value": 2200000
+  },
+  {
+    "id": 483,
+    "usage_id": 335,
+    "inv_code": "INV-P-261014-0004",
+    "product_id": 142,
+    "used": 1,
+    "value": 3300000
+  },
+  {
+    "id": 484,
+    "usage_id": 335,
+    "inv_code": "INV-P-261014-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 485,
+    "usage_id": 336,
+    "inv_code": "INV-D-261014-0005",
+    "product_id": 144,
+    "used": 1,
+    "value": 2550000
+  },
+  {
+    "id": 486,
+    "usage_id": 337,
+    "inv_code": "INV-D-261015-0001",
+    "product_id": 78,
+    "used": 1,
+    "value": 2200000
+  },
+  {
+    "id": 487,
+    "usage_id": 338,
+    "inv_code": "INV-P-261015-0002",
+    "product_id": 124,
+    "used": 1,
+    "value": 650000
+  },
+  {
+    "id": 488,
+    "usage_id": 338,
+    "inv_code": "INV-P-261015-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 489,
+    "usage_id": 339,
+    "inv_code": "INV-D-261015-0003",
+    "product_id": 145,
+    "used": 1,
+    "value": 1800000
+  },
+  {
+    "id": 490,
+    "usage_id": 340,
+    "inv_code": "INV-P-261015-0004",
+    "product_id": 146,
+    "used": 1,
+    "value": 675000
+  },
+  {
+    "id": 491,
+    "usage_id": 340,
+    "inv_code": "INV-P-261015-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 492,
+    "usage_id": 341,
+    "inv_code": "INV-D-261015-0005",
+    "product_id": 445,
+    "used": 1,
+    "value": 649000
+  },
+  {
+    "id": 493,
+    "usage_id": 342,
+    "inv_code": "INV-P-261015-0006",
+    "product_id": 52,
+    "used": 1,
+    "value": 650000
+  },
+  {
+    "id": 494,
+    "usage_id": 342,
+    "inv_code": "INV-P-261015-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 495,
+    "usage_id": 343,
+    "inv_code": "INV-D-261016-0001",
+    "product_id": 140,
+    "used": 1,
+    "value": 5500000
+  },
+  {
+    "id": 496,
+    "usage_id": 344,
+    "inv_code": "INV-P-261016-0002",
+    "product_id": 143,
+    "used": 1,
+    "value": 3300000
+  },
+  {
+    "id": 497,
+    "usage_id": 344,
+    "inv_code": "INV-P-261016-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 498,
+    "usage_id": 345,
+    "inv_code": "INV-D-261016-0003",
+    "product_id": 86,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 499,
+    "usage_id": 346,
+    "inv_code": "INV-D-261017-0001",
+    "product_id": 147,
+    "used": 1,
+    "value": 500000
+  },
+  {
+    "id": 500,
+    "usage_id": 347,
+    "inv_code": "INV-P-261017-0002",
+    "product_id": 83,
+    "used": 1,
+    "value": 75000
+  },
+  {
+    "id": 501,
+    "usage_id": 347,
+    "inv_code": "INV-P-261017-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 502,
+    "usage_id": 348,
+    "inv_code": "INV-D-261017-0003",
+    "product_id": 56,
+    "used": 1,
+    "value": 749000
+  },
+  {
+    "id": 503,
+    "usage_id": 349,
+    "inv_code": "INV-P-261017-0004",
+    "product_id": 50,
+    "used": 1,
+    "value": 750000
+  },
+  {
+    "id": 504,
+    "usage_id": 349,
+    "inv_code": "INV-P-261017-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 505,
+    "usage_id": 350,
+    "inv_code": "INV-D-261018-0001",
+    "product_id": 83,
+    "used": 1,
+    "value": 75000
+  },
+  {
+    "id": 506,
+    "usage_id": 351,
+    "inv_code": "INV-P-261018-0002",
+    "product_id": 56,
+    "used": 1,
+    "value": 749000
+  },
+  {
+    "id": 507,
+    "usage_id": 351,
+    "inv_code": "INV-P-261018-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 508,
+    "usage_id": 352,
+    "inv_code": "INV-D-261018-0003",
+    "product_id": 50,
+    "used": 1,
+    "value": 750000
+  },
+  {
+    "id": 509,
+    "usage_id": 353,
+    "inv_code": "INV-P-261018-0004",
+    "product_id": 46,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 510,
+    "usage_id": 353,
+    "inv_code": "INV-P-261018-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 511,
+    "usage_id": 354,
+    "inv_code": "INV-D-261018-0005",
+    "product_id": 45,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 512,
+    "usage_id": 355,
+    "inv_code": "INV-D-261019-0001",
+    "product_id": 55,
+    "used": 1,
+    "value": 1800000
+  },
+  {
+    "id": 513,
+    "usage_id": 356,
+    "inv_code": "INV-P-261019-0002",
+    "product_id": 110,
+    "used": 1,
+    "value": 1550000
+  },
+  {
+    "id": 514,
+    "usage_id": 356,
+    "inv_code": "INV-P-261019-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 515,
+    "usage_id": 357,
+    "inv_code": "INV-D-261019-0003",
+    "product_id": 44,
+    "used": 1,
+    "value": 500000
+  },
+  {
+    "id": 516,
+    "usage_id": 358,
+    "inv_code": "INV-P-261019-0004",
+    "product_id": 43,
+    "used": 1,
+    "value": 500000
+  },
+  {
+    "id": 517,
+    "usage_id": 358,
+    "inv_code": "INV-P-261019-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 518,
+    "usage_id": 359,
+    "inv_code": "INV-D-261019-0005",
+    "product_id": 38,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 519,
+    "usage_id": 360,
+    "inv_code": "INV-P-261019-0006",
+    "product_id": 77,
+    "used": 1,
+    "value": 349000
+  },
+  {
+    "id": 520,
+    "usage_id": 360,
+    "inv_code": "INV-P-261019-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 521,
+    "usage_id": 361,
+    "inv_code": "INV-D-261020-0001",
+    "product_id": 59,
+    "used": 1,
+    "value": 75000
+  },
+  {
+    "id": 522,
+    "usage_id": 362,
+    "inv_code": "INV-P-261020-0002",
+    "product_id": 106,
+    "used": 1,
+    "value": 750000
+  },
+  {
+    "id": 523,
+    "usage_id": 362,
+    "inv_code": "INV-P-261020-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 524,
+    "usage_id": 363,
+    "inv_code": "INV-D-261020-0003",
+    "product_id": 110,
+    "used": 1,
+    "value": 750000
+  },
+  {
+    "id": 525,
+    "usage_id": 364,
+    "inv_code": "INV-D-261021-0001",
+    "product_id": 42,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 526,
+    "usage_id": 365,
+    "inv_code": "INV-P-261021-0002",
+    "product_id": 39,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 527,
+    "usage_id": 365,
+    "inv_code": "INV-P-261021-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 528,
+    "usage_id": 366,
+    "inv_code": "INV-D-261021-0003",
+    "product_id": 37,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 529,
+    "usage_id": 367,
+    "inv_code": "INV-P-261021-0004",
+    "product_id": 76,
+    "used": 1,
+    "value": 295000
+  },
+  {
+    "id": 530,
+    "usage_id": 367,
+    "inv_code": "INV-P-261021-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 531,
+    "usage_id": 368,
+    "inv_code": "INV-D-261022-0001",
+    "product_id": 39,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 532,
+    "usage_id": 369,
+    "inv_code": "INV-P-261022-0002",
+    "product_id": 37,
+    "used": 1,
+    "value": 450000
+  },
+  {
+    "id": 533,
+    "usage_id": 369,
+    "inv_code": "INV-P-261022-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 534,
+    "usage_id": 370,
+    "inv_code": "INV-D-261022-0003",
+    "product_id": 76,
+    "used": 1,
+    "value": 295000
+  },
+  {
+    "id": 535,
+    "usage_id": 371,
+    "inv_code": "INV-P-261022-0004",
+    "product_id": 80,
+    "used": 1,
+    "value": 295000
+  },
+  {
+    "id": 536,
+    "usage_id": 371,
+    "inv_code": "INV-P-261022-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 537,
+    "usage_id": 372,
+    "inv_code": "INV-D-261022-0005",
+    "product_id": 154,
+    "used": 1,
+    "value": 350000
+  },
+  {
+    "id": 538,
+    "usage_id": 373,
+    "inv_code": "INV-D-261023-0001",
+    "product_id": 88,
+    "used": 1,
+    "value": 35000
+  },
+  {
+    "id": 539,
+    "usage_id": 374,
+    "inv_code": "INV-P-261023-0002",
+    "product_id": 75,
+    "used": 1,
+    "value": 299000
+  },
+  {
+    "id": 540,
+    "usage_id": 374,
+    "inv_code": "INV-P-261023-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 541,
+    "usage_id": 375,
+    "inv_code": "INV-D-261023-0003",
+    "product_id": 71,
+    "used": 1,
+    "value": 650000
+  },
+  {
+    "id": 542,
+    "usage_id": 376,
+    "inv_code": "INV-P-261023-0004",
+    "product_id": 160,
+    "used": 1,
+    "value": 600000
+  },
+  {
+    "id": 543,
+    "usage_id": 376,
+    "inv_code": "INV-P-261023-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 544,
+    "usage_id": 377,
+    "inv_code": "INV-D-261023-0005",
+    "product_id": 32,
+    "used": 1,
+    "value": 399000
+  },
+  {
+    "id": 545,
+    "usage_id": 378,
+    "inv_code": "INV-P-261023-0006",
+    "product_id": 901,
+    "used": 1,
+    "value": 165000
+  },
+  {
+    "id": 546,
+    "usage_id": 378,
+    "inv_code": "INV-P-261023-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 547,
+    "usage_id": 379,
+    "inv_code": "INV-D-261024-0001",
+    "product_id": 81,
+    "used": 1,
+    "value": 300000
+  },
+  {
+    "id": 548,
+    "usage_id": 380,
+    "inv_code": "INV-P-261024-0002",
+    "product_id": 67,
+    "used": 1,
+    "value": 250000
+  },
+  {
+    "id": 549,
+    "usage_id": 380,
+    "inv_code": "INV-P-261024-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 550,
+    "usage_id": 381,
+    "inv_code": "INV-D-261024-0003",
+    "product_id": 30,
+    "used": 1,
+    "value": 245000
+  },
+  {
+    "id": 551,
+    "usage_id": 382,
+    "inv_code": "INV-D-261025-0001",
+    "product_id": 72,
+    "used": 1,
+    "value": 625000
+  },
+  {
+    "id": 552,
+    "usage_id": 383,
+    "inv_code": "INV-P-261025-0002",
+    "product_id": 33,
+    "used": 1,
+    "value": 199000
+  },
+  {
+    "id": 553,
+    "usage_id": 383,
+    "inv_code": "INV-P-261025-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 554,
+    "usage_id": 384,
+    "inv_code": "INV-D-261025-0003",
+    "product_id": 53,
+    "used": 1,
+    "value": 550000
+  },
+  {
+    "id": 555,
+    "usage_id": 385,
+    "inv_code": "INV-P-261025-0004",
+    "product_id": 902,
+    "used": 1,
+    "value": 185000
+  },
+  {
+    "id": 556,
+    "usage_id": 385,
+    "inv_code": "INV-P-261025-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 557,
+    "usage_id": 386,
+    "inv_code": "INV-D-261026-0001",
+    "product_id": 33,
+    "used": 1,
+    "value": 199000
+  },
+  {
+    "id": 558,
+    "usage_id": 387,
+    "inv_code": "INV-P-261026-0002",
+    "product_id": 53,
+    "used": 1,
+    "value": 550000
+  },
+  {
+    "id": 559,
+    "usage_id": 387,
+    "inv_code": "INV-P-261026-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 560,
+    "usage_id": 388,
+    "inv_code": "INV-D-261026-0003",
+    "product_id": 902,
+    "used": 1,
+    "value": 185000
+  },
+  {
+    "id": 561,
+    "usage_id": 389,
+    "inv_code": "INV-P-261026-0004",
+    "product_id": 906,
+    "used": 1,
+    "value": 225000
+  },
+  {
+    "id": 562,
+    "usage_id": 389,
+    "inv_code": "INV-P-261026-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 563,
+    "usage_id": 390,
+    "inv_code": "INV-D-261026-0005",
+    "product_id": 21,
+    "used": 1,
+    "value": 165000
+  },
+  {
+    "id": 564,
+    "usage_id": 391,
+    "inv_code": "INV-D-261027-0001",
+    "product_id": 51,
+    "used": 1,
+    "value": 600000
+  },
+  {
+    "id": 565,
+    "usage_id": 392,
+    "inv_code": "INV-P-261027-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 566,
+    "usage_id": 392,
+    "inv_code": "INV-P-261027-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 567,
+    "usage_id": 393,
+    "inv_code": "INV-D-261027-0003",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 568,
+    "usage_id": 394,
+    "inv_code": "INV-P-261027-0004",
+    "product_id": 18,
+    "used": 1,
+    "value": 300000
+  },
+  {
+    "id": 569,
+    "usage_id": 394,
+    "inv_code": "INV-P-261027-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 570,
+    "usage_id": 395,
+    "inv_code": "INV-D-261027-0005",
+    "product_id": 87,
+    "used": 1,
+    "value": 39000
+  },
+  {
+    "id": 571,
+    "usage_id": 396,
+    "inv_code": "INV-P-261027-0006",
+    "product_id": 24,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 572,
+    "usage_id": 396,
+    "inv_code": "INV-P-261027-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 573,
+    "usage_id": 397,
+    "inv_code": "INV-D-261028-0001",
+    "product_id": 905,
+    "used": 1,
+    "value": 285000
+  },
+  {
+    "id": 574,
+    "usage_id": 398,
+    "inv_code": "INV-P-261028-0002",
+    "product_id": 20,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 575,
+    "usage_id": 398,
+    "inv_code": "INV-P-261028-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 576,
+    "usage_id": 399,
+    "inv_code": "INV-D-261028-0003",
+    "product_id": 16,
+    "used": 1,
+    "value": 380000
+  },
+  {
+    "id": 577,
+    "usage_id": 400,
+    "inv_code": "INV-D-261029-0001",
+    "product_id": 82,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 578,
+    "usage_id": 401,
+    "inv_code": "INV-P-261029-0002",
+    "product_id": 17,
+    "used": 1,
+    "value": 325000
+  },
+  {
+    "id": 579,
+    "usage_id": 401,
+    "inv_code": "INV-P-261029-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 580,
+    "usage_id": 402,
+    "inv_code": "INV-D-261029-0003",
+    "product_id": 457,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 581,
+    "usage_id": 403,
+    "inv_code": "INV-P-261029-0004",
+    "product_id": 162,
+    "used": 1,
+    "value": 445000
+  },
+  {
+    "id": 582,
+    "usage_id": 403,
+    "inv_code": "INV-P-261029-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 583,
+    "usage_id": 404,
+    "inv_code": "INV-D-261030-0001",
+    "product_id": 17,
+    "used": 1,
+    "value": 325000
+  },
+  {
+    "id": 584,
+    "usage_id": 405,
+    "inv_code": "INV-P-261030-0002",
+    "product_id": 457,
+    "used": 1,
+    "value": 50000
+  },
+  {
+    "id": 585,
+    "usage_id": 405,
+    "inv_code": "INV-P-261030-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 586,
+    "usage_id": 406,
+    "inv_code": "INV-D-261030-0003",
+    "product_id": 162,
+    "used": 1,
+    "value": 445000
+  },
+  {
+    "id": 587,
+    "usage_id": 407,
+    "inv_code": "INV-P-261030-0004",
+    "product_id": 22,
+    "used": 1,
+    "value": 480000
+  },
+  {
+    "id": 588,
+    "usage_id": 407,
+    "inv_code": "INV-P-261030-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 589,
+    "usage_id": 408,
+    "inv_code": "INV-D-261030-0005",
+    "product_id": 58,
+    "used": 1,
+    "value": 1035000
+  },
+  {
+    "id": 590,
+    "usage_id": 409,
+    "inv_code": "INV-D-261031-0001",
+    "product_id": 85,
+    "used": 1,
+    "value": 60000
+  },
+  {
+    "id": 591,
+    "usage_id": 410,
+    "inv_code": "INV-P-261031-0002",
+    "product_id": 25,
+    "used": 1,
+    "value": 400000
+  },
+  {
+    "id": 592,
+    "usage_id": 410,
+    "inv_code": "INV-P-261031-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 593,
+    "usage_id": 411,
+    "inv_code": "INV-D-261031-0003",
+    "product_id": 113,
+    "used": 1,
+    "value": 1045000
+  },
+  {
+    "id": 594,
+    "usage_id": 412,
+    "inv_code": "INV-P-261031-0004",
+    "product_id": 112,
+    "used": 1,
+    "value": 1129000
+  },
+  {
+    "id": 595,
+    "usage_id": 412,
+    "inv_code": "INV-P-261031-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 596,
+    "usage_id": 413,
+    "inv_code": "INV-D-261031-0005",
+    "product_id": 104,
+    "used": 1,
+    "value": 1433000
+  },
+  {
+    "id": 597,
+    "usage_id": 414,
+    "inv_code": "INV-P-261031-0006",
+    "product_id": 107,
+    "used": 1,
+    "value": 1444000
+  },
+  {
+    "id": 598,
+    "usage_id": 414,
+    "inv_code": "INV-P-261031-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 599,
+    "usage_id": 415,
+    "inv_code": "INV-D-261101-0001",
+    "product_id": 164,
+    "used": 1,
+    "value": 385000
+  },
+  {
+    "id": 600,
+    "usage_id": 416,
+    "inv_code": "INV-P-261101-0002",
+    "product_id": 114,
+    "used": 1,
+    "value": 1575000
+  },
+  {
+    "id": 601,
+    "usage_id": 416,
+    "inv_code": "INV-P-261101-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 602,
+    "usage_id": 417,
+    "inv_code": "INV-D-261101-0003",
+    "product_id": 103,
+    "used": 1,
+    "value": 2499000
+  },
+  {
+    "id": 603,
+    "usage_id": 418,
+    "inv_code": "INV-D-261102-0001",
+    "product_id": 111,
+    "used": 1,
+    "value": 1575000
+  },
+  {
+    "id": 604,
+    "usage_id": 419,
+    "inv_code": "INV-P-261102-0002",
+    "product_id": 23,
+    "used": 1,
+    "value": 1649000
+  },
+  {
+    "id": 605,
+    "usage_id": 419,
+    "inv_code": "INV-P-261102-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 606,
+    "usage_id": 420,
+    "inv_code": "INV-D-261102-0003",
+    "product_id": 109,
+    "used": 1,
+    "value": 1229000
+  },
+  {
+    "id": 607,
+    "usage_id": 421,
+    "inv_code": "INV-P-261102-0004",
+    "product_id": 100,
+    "used": 1,
+    "value": 2730000
+  },
+  {
+    "id": 608,
+    "usage_id": 421,
+    "inv_code": "INV-P-261102-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 609,
+    "usage_id": 422,
+    "inv_code": "INV-D-261103-0001",
+    "product_id": 23,
+    "used": 1,
+    "value": 1649000
+  },
+  {
+    "id": 610,
+    "usage_id": 423,
+    "inv_code": "INV-P-261103-0002",
+    "product_id": 109,
+    "used": 1,
+    "value": 1229000
+  },
+  {
+    "id": 611,
+    "usage_id": 423,
+    "inv_code": "INV-P-261103-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 612,
+    "usage_id": 424,
+    "inv_code": "INV-D-261103-0003",
+    "product_id": 100,
+    "used": 1,
+    "value": 2730000
+  },
+  {
+    "id": 613,
+    "usage_id": 425,
+    "inv_code": "INV-P-261103-0004",
+    "product_id": 101,
+    "used": 1,
+    "value": 2793000
+  },
+  {
+    "id": 614,
+    "usage_id": 425,
+    "inv_code": "INV-P-261103-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 615,
+    "usage_id": 426,
+    "inv_code": "INV-D-261103-0005",
+    "product_id": 99,
+    "used": 1,
+    "value": 3549000
+  },
+  {
+    "id": 616,
+    "usage_id": 427,
+    "inv_code": "INV-D-261104-0001",
+    "product_id": 108,
+    "used": 1,
+    "value": 1418000
+  },
+  {
+    "id": 617,
+    "usage_id": 428,
+    "inv_code": "INV-P-261104-0002",
+    "product_id": 94,
+    "used": 1,
+    "value": 4368000
+  },
+  {
+    "id": 618,
+    "usage_id": 428,
+    "inv_code": "INV-P-261104-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 619,
+    "usage_id": 429,
+    "inv_code": "INV-D-261104-0003",
+    "product_id": 95,
+    "used": 1,
+    "value": 4838000
+  },
+  {
+    "id": 620,
+    "usage_id": 430,
+    "inv_code": "INV-P-261104-0004",
+    "product_id": 93,
+    "used": 1,
+    "value": 5324000
+  },
+  {
+    "id": 621,
+    "usage_id": 430,
+    "inv_code": "INV-P-261104-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 622,
+    "usage_id": 431,
+    "inv_code": "INV-D-261104-0005",
+    "product_id": 115,
+    "used": 1,
+    "value": 7235000
+  },
+  {
+    "id": 623,
+    "usage_id": 432,
+    "inv_code": "INV-P-261104-0006",
+    "product_id": 89,
+    "used": 1,
+    "value": 8600000
+  },
+  {
+    "id": 624,
+    "usage_id": 432,
+    "inv_code": "INV-P-261104-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 625,
+    "usage_id": 433,
+    "inv_code": "INV-D-261105-0001",
+    "product_id": 96,
+    "used": 1,
+    "value": 4778000
+  },
+  {
+    "id": 626,
+    "usage_id": 434,
+    "inv_code": "INV-P-261105-0002",
+    "product_id": 90,
+    "used": 1,
+    "value": 6011000
+  },
+  {
+    "id": 627,
+    "usage_id": 434,
+    "inv_code": "INV-P-261105-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 628,
+    "usage_id": 435,
+    "inv_code": "INV-D-261105-0003",
+    "product_id": 118,
+    "used": 1,
+    "value": 1775000
+  },
+  {
+    "id": 629,
+    "usage_id": 436,
+    "inv_code": "INV-D-261106-0001",
+    "product_id": 98,
+    "used": 1,
+    "value": 3959000
+  },
+  {
+    "id": 630,
+    "usage_id": 437,
+    "inv_code": "INV-P-261106-0002",
+    "product_id": 117,
+    "used": 1,
+    "value": 3770000
+  },
+  {
+    "id": 631,
+    "usage_id": 437,
+    "inv_code": "INV-P-261106-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 632,
+    "usage_id": 438,
+    "inv_code": "INV-D-261106-0003",
+    "product_id": 97,
+    "used": 1,
+    "value": 3822000
+  },
+  {
+    "id": 633,
+    "usage_id": 439,
+    "inv_code": "INV-P-261106-0004",
+    "product_id": 129,
+    "used": 1,
+    "value": 585000
+  },
+  {
+    "id": 634,
+    "usage_id": 439,
+    "inv_code": "INV-P-261106-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 635,
+    "usage_id": 440,
+    "inv_code": "INV-D-261107-0001",
+    "product_id": 117,
+    "used": 1,
+    "value": 3770000
+  },
+  {
+    "id": 636,
+    "usage_id": 441,
+    "inv_code": "INV-P-261107-0002",
+    "product_id": 97,
+    "used": 1,
+    "value": 3822000
+  },
+  {
+    "id": 637,
+    "usage_id": 441,
+    "inv_code": "INV-P-261107-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 638,
+    "usage_id": 442,
+    "inv_code": "INV-D-261107-0003",
+    "product_id": 129,
+    "used": 1,
+    "value": 585000
+  },
+  {
+    "id": 639,
+    "usage_id": 443,
+    "inv_code": "INV-P-261107-0004",
+    "product_id": 447,
+    "used": 1,
+    "value": 1340000
+  },
+  {
+    "id": 640,
+    "usage_id": 443,
+    "inv_code": "INV-P-261107-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 641,
+    "usage_id": 444,
+    "inv_code": "INV-D-261107-0005",
+    "product_id": 443,
+    "used": 1,
+    "value": 365000
+  },
+  {
+    "id": 642,
+    "usage_id": 445,
+    "inv_code": "INV-D-261108-0001",
+    "product_id": 91,
+    "used": 1,
+    "value": 5733000
+  },
+  {
+    "id": 643,
+    "usage_id": 446,
+    "inv_code": "INV-P-261108-0002",
+    "product_id": 128,
+    "used": 1,
+    "value": 790000
+  },
+  {
+    "id": 644,
+    "usage_id": 446,
+    "inv_code": "INV-P-261108-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 645,
+    "usage_id": 447,
+    "inv_code": "INV-D-261108-0003",
+    "product_id": 54,
+    "used": 1,
+    "value": 65000
+  },
+  {
+    "id": 646,
+    "usage_id": 448,
+    "inv_code": "INV-P-261108-0004",
+    "product_id": 58,
+    "used": 1,
+    "value": 3920000
+  },
+  {
+    "id": 647,
+    "usage_id": 448,
+    "inv_code": "INV-P-261108-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 648,
+    "usage_id": 449,
+    "inv_code": "INV-D-261108-0005",
+    "product_id": 121,
+    "used": 1,
+    "value": 3600000
+  },
+  {
+    "id": 649,
+    "usage_id": 450,
+    "inv_code": "INV-P-261108-0006",
+    "product_id": 119,
+    "used": 1,
+    "value": 7500000
+  },
+  {
+    "id": 650,
+    "usage_id": 450,
+    "inv_code": "INV-P-261108-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 651,
+    "usage_id": 451,
+    "inv_code": "INV-D-261109-0001",
+    "product_id": 132,
+    "used": 1,
+    "value": 755000
+  },
+  {
+    "id": 652,
+    "usage_id": 452,
+    "inv_code": "INV-P-261109-0002",
+    "product_id": 126,
+    "used": 1,
+    "value": 3955000
+  },
+  {
+    "id": 653,
+    "usage_id": 452,
+    "inv_code": "INV-P-261109-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 654,
+    "usage_id": 453,
+    "inv_code": "INV-D-261109-0003",
+    "product_id": 60,
+    "used": 1,
+    "value": 345000
+  },
+  {
+    "id": 655,
+    "usage_id": 454,
+    "inv_code": "INV-D-261110-0001",
+    "product_id": 125,
+    "used": 1,
+    "value": 1995000
+  },
+  {
+    "id": 656,
+    "usage_id": 455,
+    "inv_code": "INV-P-261110-0002",
+    "product_id": 127,
+    "used": 1,
+    "value": 7180000
+  },
+  {
+    "id": 657,
+    "usage_id": 455,
+    "inv_code": "INV-P-261110-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 658,
+    "usage_id": 456,
+    "inv_code": "INV-D-261110-0003",
+    "product_id": 63,
+    "used": 1,
+    "value": 2655000
+  },
+  {
+    "id": 659,
+    "usage_id": 457,
+    "inv_code": "INV-P-261110-0004",
+    "product_id": 67,
+    "used": 1,
+    "value": 7300000
+  },
+  {
+    "id": 660,
+    "usage_id": 457,
+    "inv_code": "INV-P-261110-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 661,
+    "usage_id": 458,
+    "inv_code": "INV-D-261111-0001",
+    "product_id": 127,
+    "used": 1,
+    "value": 7180000
+  },
+  {
+    "id": 662,
+    "usage_id": 459,
+    "inv_code": "INV-P-261111-0002",
+    "product_id": 63,
+    "used": 1,
+    "value": 2655000
+  },
+  {
+    "id": 663,
+    "usage_id": 459,
+    "inv_code": "INV-P-261111-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 664,
+    "usage_id": 460,
+    "inv_code": "INV-D-261111-0003",
+    "product_id": 67,
+    "used": 1,
+    "value": 7300000
+  },
+  {
+    "id": 665,
+    "usage_id": 461,
+    "inv_code": "INV-P-261111-0004",
+    "product_id": 139,
+    "used": 1,
+    "value": 6000000
+  },
+  {
+    "id": 666,
+    "usage_id": 461,
+    "inv_code": "INV-P-261111-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 667,
+    "usage_id": 462,
+    "inv_code": "INV-D-261111-0005",
+    "product_id": 136,
+    "used": 1,
+    "value": 5250000
+  },
+  {
+    "id": 668,
+    "usage_id": 463,
+    "inv_code": "INV-D-261112-0001",
+    "product_id": 157,
+    "used": 1,
+    "value": 44500
+  },
+  {
+    "id": 669,
+    "usage_id": 464,
+    "inv_code": "INV-P-261112-0002",
+    "product_id": 158,
+    "used": 1,
+    "value": 85000
+  },
+  {
+    "id": 670,
+    "usage_id": 464,
+    "inv_code": "INV-P-261112-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 671,
+    "usage_id": 465,
+    "inv_code": "INV-D-261112-0003",
+    "product_id": 137,
+    "used": 1,
+    "value": 6500000
+  },
+  {
+    "id": 672,
+    "usage_id": 466,
+    "inv_code": "INV-P-261112-0004",
+    "product_id": 135,
+    "used": 1,
+    "value": 5250000
+  },
+  {
+    "id": 673,
+    "usage_id": 466,
+    "inv_code": "INV-P-261112-0004",
+    "product_id": 907,
+    "used": 1,
+    "value": 195000
+  },
+  {
+    "id": 674,
+    "usage_id": 467,
+    "inv_code": "INV-D-261112-0005",
+    "product_id": 80,
+    "used": 1,
+    "value": 2200000
+  },
+  {
+    "id": 675,
+    "usage_id": 468,
+    "inv_code": "INV-P-261112-0006",
+    "product_id": 140,
+    "used": 1,
+    "value": 5500000
+  },
+  {
+    "id": 676,
+    "usage_id": 468,
+    "inv_code": "INV-P-261112-0006",
+    "product_id": 904,
+    "used": 1,
+    "value": 145000
+  },
+  {
+    "id": 677,
+    "usage_id": 469,
+    "inv_code": "INV-D-261113-0001",
+    "product_id": 74,
+    "used": 1,
+    "value": 350000
+  },
+  {
+    "id": 678,
+    "usage_id": 470,
+    "inv_code": "INV-P-261113-0002",
+    "product_id": 74,
+    "used": 1,
+    "value": 3500000
+  },
+  {
+    "id": 679,
+    "usage_id": 470,
+    "inv_code": "INV-P-261113-0002",
+    "product_id": 903,
+    "used": 1,
+    "value": 125000
+  },
+  {
+    "id": 680,
+    "usage_id": 471,
+    "inv_code": "INV-D-261113-0003",
+    "product_id": 78,
+    "used": 1,
+    "value": 2200000
+  }
+]

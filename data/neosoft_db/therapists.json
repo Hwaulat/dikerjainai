@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "therapist_name": "dr. Cindy Novita",
+    "therapist_type": 2,
+    "outlet_id": 1,
+    "phone": "628112233441",
+    "is_active": 1,
+    "status_therapist": true
+  },
+  {
+    "id": 2,
+    "therapist_name": "dr. Farah Diba Sp.D.V.E",
+    "therapist_type": 3,
+    "outlet_id": 1,
+    "phone": "628112233442",
+    "is_active": 1,
+    "status_therapist": true
+  },
+  {
+    "id": 3,
+    "therapist_name": "dr. Randy Wijaya",
+    "therapist_type": 2,
+    "outlet_id": 2,
+    "phone": "628112233443",
+    "is_active": 1,
+    "status_therapist": true
+  },
+  {
+    "id": 4,
+    "therapist_name": "dr. Amanda Putri",
+    "therapist_type": 2,
+    "outlet_id": 2,
+    "phone": "628112233444",
+    "is_active": 1,
+    "status_therapist": true
+  },
+  {
+    "id": 5,
+    "therapist_name": "Suster Maya Kusuma",
+    "therapist_type": 5,
+    "outlet_id": 1,
+    "phone": "628112233445",
+    "is_active": 1,
+    "status_therapist": true
+  },
+  {
+    "id": 6,
+    "therapist_name": "Suster Rina Anggraini",
+    "therapist_type": 5,
+    "outlet_id": 1,
+    "phone": "628112233446",
+    "is_active": 1,
+    "status_therapist": true
+  },
+  {
+    "id": 7,
+    "therapist_name": "Terapis Dewi Lestari",
+    "therapist_type": 5,
+    "outlet_id": 2,
+    "phone": "628112233447",
+    "is_active": 1,
+    "status_therapist": true
+  },
+  {
+    "id": 8,
+    "therapist_name": "Terapis Salsa Nabila",
+    "therapist_type": 5,
+    "outlet_id": 2,
+    "phone": "628112233448",
+    "is_active": 1,
+    "status_therapist": true
+  }
+]

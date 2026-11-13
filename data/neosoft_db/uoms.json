@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "display": "Pcs",
+    "smallest_unit": "Pcs"
+  },
+  {
+    "id": 2,
+    "display": "Box",
+    "smallest_unit": "Box"
+  },
+  {
+    "id": 3,
+    "display": "Pot",
+    "smallest_unit": "Pot"
+  },
+  {
+    "id": 4,
+    "display": "Ampul",
+    "smallest_unit": "Ampul"
+  },
+  {
+    "id": 5,
+    "display": "Vial",
+    "smallest_unit": "Vial"
+  }
+]

@@ -15,7 +15,12 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
-const ExcelJS = require('exceljs');
+let ExcelJS = null;
+try {
+  ExcelJS = require('exceljs');
+} catch (e) {
+  // Optional dependency if running in lean environment
+}
 
 const SOURCES_FILE = path.join(__dirname, 'data', 'price_sheet_sources.json');
 const OUT_FILE = path.join(__dirname, 'data', 'google_sheets_db', 'price_sheets.json');

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "BCA EDC - Depok",
+    "account_number": "8800112233"
+  },
+  {
+    "id": 2,
+    "name": "Mandiri QRIS - Depok",
+    "account_number": "15700998877"
+  },
+  {
+    "id": 3,
+    "name": "BCA EDC - Pondok Kopi",
+    "account_number": "8800445566"
+  },
+  {
+    "id": 4,
+    "name": "Mandiri QRIS - Pondok Kopi",
+    "account_number": "15700223344"
+  }
+]

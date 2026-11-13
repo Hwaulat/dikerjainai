@@ -1,0 +1,4241 @@
+[
+  {
+    "id": 1,
+    "usage_code": "USG-D-260801-0001",
+    "inv_code": "INV-D-260801-0001",
+    "customer_id": 78,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-01 10:00:00"
+  },
+  {
+    "id": 2,
+    "usage_code": "USG-P-260801-0002",
+    "inv_code": "INV-P-260801-0002",
+    "customer_id": 85,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-01 12:17:00"
+  },
+  {
+    "id": 3,
+    "usage_code": "USG-D-260801-0003",
+    "inv_code": "INV-D-260801-0003",
+    "customer_id": 2,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-01 14:34:00"
+  },
+  {
+    "id": 4,
+    "usage_code": "USG-D-260802-0001",
+    "inv_code": "INV-D-260802-0001",
+    "customer_id": 9,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-02 10:00:00"
+  },
+  {
+    "id": 5,
+    "usage_code": "USG-P-260802-0002",
+    "inv_code": "INV-P-260802-0002",
+    "customer_id": 16,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-02 12:17:00"
+  },
+  {
+    "id": 6,
+    "usage_code": "USG-D-260802-0003",
+    "inv_code": "INV-D-260802-0003",
+    "customer_id": 23,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-02 14:34:00"
+  },
+  {
+    "id": 7,
+    "usage_code": "USG-P-260802-0004",
+    "inv_code": "INV-P-260802-0004",
+    "customer_id": 30,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-02 16:51:00"
+  },
+  {
+    "id": 8,
+    "usage_code": "USG-D-260803-0001",
+    "inv_code": "INV-D-260803-0001",
+    "customer_id": 37,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-03 10:00:00"
+  },
+  {
+    "id": 9,
+    "usage_code": "USG-P-260803-0002",
+    "inv_code": "INV-P-260803-0002",
+    "customer_id": 44,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-03 12:17:00"
+  },
+  {
+    "id": 10,
+    "usage_code": "USG-D-260803-0003",
+    "inv_code": "INV-D-260803-0003",
+    "customer_id": 51,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-03 14:34:00"
+  },
+  {
+    "id": 11,
+    "usage_code": "USG-P-260803-0004",
+    "inv_code": "INV-P-260803-0004",
+    "customer_id": 58,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-03 16:51:00"
+  },
+  {
+    "id": 12,
+    "usage_code": "USG-D-260803-0005",
+    "inv_code": "INV-D-260803-0005",
+    "customer_id": 65,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-03 18:08:00"
+  },
+  {
+    "id": 13,
+    "usage_code": "USG-D-260804-0001",
+    "inv_code": "INV-D-260804-0001",
+    "customer_id": 72,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-04 10:00:00"
+  },
+  {
+    "id": 14,
+    "usage_code": "USG-P-260804-0002",
+    "inv_code": "INV-P-260804-0002",
+    "customer_id": 79,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-04 12:17:00"
+  },
+  {
+    "id": 15,
+    "usage_code": "USG-D-260804-0003",
+    "inv_code": "INV-D-260804-0003",
+    "customer_id": 86,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-04 14:34:00"
+  },
+  {
+    "id": 16,
+    "usage_code": "USG-P-260804-0004",
+    "inv_code": "INV-P-260804-0004",
+    "customer_id": 3,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-04 16:51:00"
+  },
+  {
+    "id": 17,
+    "usage_code": "USG-D-260804-0005",
+    "inv_code": "INV-D-260804-0005",
+    "customer_id": 10,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-04 18:08:00"
+  },
+  {
+    "id": 18,
+    "usage_code": "USG-P-260804-0006",
+    "inv_code": "INV-P-260804-0006",
+    "customer_id": 17,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-04 11:25:00"
+  },
+  {
+    "id": 19,
+    "usage_code": "USG-D-260805-0001",
+    "inv_code": "INV-D-260805-0001",
+    "customer_id": 24,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-05 10:00:00"
+  },
+  {
+    "id": 20,
+    "usage_code": "USG-P-260805-0002",
+    "inv_code": "INV-P-260805-0002",
+    "customer_id": 31,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-05 12:17:00"
+  },
+  {
+    "id": 21,
+    "usage_code": "USG-D-260805-0003",
+    "inv_code": "INV-D-260805-0003",
+    "customer_id": 38,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-05 14:34:00"
+  },
+  {
+    "id": 22,
+    "usage_code": "USG-D-260806-0001",
+    "inv_code": "INV-D-260806-0001",
+    "customer_id": 45,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-06 10:00:00"
+  },
+  {
+    "id": 23,
+    "usage_code": "USG-P-260806-0002",
+    "inv_code": "INV-P-260806-0002",
+    "customer_id": 52,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-06 12:17:00"
+  },
+  {
+    "id": 24,
+    "usage_code": "USG-D-260806-0003",
+    "inv_code": "INV-D-260806-0003",
+    "customer_id": 59,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-06 14:34:00"
+  },
+  {
+    "id": 25,
+    "usage_code": "USG-P-260806-0004",
+    "inv_code": "INV-P-260806-0004",
+    "customer_id": 66,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-06 16:51:00"
+  },
+  {
+    "id": 26,
+    "usage_code": "USG-D-260807-0001",
+    "inv_code": "INV-D-260807-0001",
+    "customer_id": 73,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-07 10:00:00"
+  },
+  {
+    "id": 27,
+    "usage_code": "USG-P-260807-0002",
+    "inv_code": "INV-P-260807-0002",
+    "customer_id": 80,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-07 12:17:00"
+  },
+  {
+    "id": 28,
+    "usage_code": "USG-D-260807-0003",
+    "inv_code": "INV-D-260807-0003",
+    "customer_id": 87,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-07 14:34:00"
+  },
+  {
+    "id": 29,
+    "usage_code": "USG-P-260807-0004",
+    "inv_code": "INV-P-260807-0004",
+    "customer_id": 4,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-07 16:51:00"
+  },
+  {
+    "id": 30,
+    "usage_code": "USG-D-260807-0005",
+    "inv_code": "INV-D-260807-0005",
+    "customer_id": 11,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-07 18:08:00"
+  },
+  {
+    "id": 31,
+    "usage_code": "USG-D-260808-0001",
+    "inv_code": "INV-D-260808-0001",
+    "customer_id": 18,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-08 10:00:00"
+  },
+  {
+    "id": 32,
+    "usage_code": "USG-P-260808-0002",
+    "inv_code": "INV-P-260808-0002",
+    "customer_id": 25,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-08 12:17:00"
+  },
+  {
+    "id": 33,
+    "usage_code": "USG-D-260808-0003",
+    "inv_code": "INV-D-260808-0003",
+    "customer_id": 32,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-08 14:34:00"
+  },
+  {
+    "id": 34,
+    "usage_code": "USG-P-260808-0004",
+    "inv_code": "INV-P-260808-0004",
+    "customer_id": 39,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-08 16:51:00"
+  },
+  {
+    "id": 35,
+    "usage_code": "USG-D-260808-0005",
+    "inv_code": "INV-D-260808-0005",
+    "customer_id": 46,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-08 18:08:00"
+  },
+  {
+    "id": 36,
+    "usage_code": "USG-P-260808-0006",
+    "inv_code": "INV-P-260808-0006",
+    "customer_id": 53,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-08 11:25:00"
+  },
+  {
+    "id": 37,
+    "usage_code": "USG-D-260809-0001",
+    "inv_code": "INV-D-260809-0001",
+    "customer_id": 60,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-09 10:00:00"
+  },
+  {
+    "id": 38,
+    "usage_code": "USG-P-260809-0002",
+    "inv_code": "INV-P-260809-0002",
+    "customer_id": 67,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-09 12:17:00"
+  },
+  {
+    "id": 39,
+    "usage_code": "USG-D-260809-0003",
+    "inv_code": "INV-D-260809-0003",
+    "customer_id": 74,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-09 14:34:00"
+  },
+  {
+    "id": 40,
+    "usage_code": "USG-D-260810-0001",
+    "inv_code": "INV-D-260810-0001",
+    "customer_id": 81,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-10 10:00:00"
+  },
+  {
+    "id": 41,
+    "usage_code": "USG-P-260810-0002",
+    "inv_code": "INV-P-260810-0002",
+    "customer_id": 88,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-10 12:17:00"
+  },
+  {
+    "id": 42,
+    "usage_code": "USG-D-260810-0003",
+    "inv_code": "INV-D-260810-0003",
+    "customer_id": 5,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-10 14:34:00"
+  },
+  {
+    "id": 43,
+    "usage_code": "USG-P-260810-0004",
+    "inv_code": "INV-P-260810-0004",
+    "customer_id": 12,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-10 16:51:00"
+  },
+  {
+    "id": 44,
+    "usage_code": "USG-D-260811-0001",
+    "inv_code": "INV-D-260811-0001",
+    "customer_id": 19,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-11 10:00:00"
+  },
+  {
+    "id": 45,
+    "usage_code": "USG-P-260811-0002",
+    "inv_code": "INV-P-260811-0002",
+    "customer_id": 26,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-11 12:17:00"
+  },
+  {
+    "id": 46,
+    "usage_code": "USG-D-260811-0003",
+    "inv_code": "INV-D-260811-0003",
+    "customer_id": 33,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-11 14:34:00"
+  },
+  {
+    "id": 47,
+    "usage_code": "USG-P-260811-0004",
+    "inv_code": "INV-P-260811-0004",
+    "customer_id": 40,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-11 16:51:00"
+  },
+  {
+    "id": 48,
+    "usage_code": "USG-D-260811-0005",
+    "inv_code": "INV-D-260811-0005",
+    "customer_id": 47,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-11 18:08:00"
+  },
+  {
+    "id": 49,
+    "usage_code": "USG-D-260812-0001",
+    "inv_code": "INV-D-260812-0001",
+    "customer_id": 54,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-12 10:00:00"
+  },
+  {
+    "id": 50,
+    "usage_code": "USG-P-260812-0002",
+    "inv_code": "INV-P-260812-0002",
+    "customer_id": 61,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-12 12:17:00"
+  },
+  {
+    "id": 51,
+    "usage_code": "USG-D-260812-0003",
+    "inv_code": "INV-D-260812-0003",
+    "customer_id": 68,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-12 14:34:00"
+  },
+  {
+    "id": 52,
+    "usage_code": "USG-P-260812-0004",
+    "inv_code": "INV-P-260812-0004",
+    "customer_id": 75,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-12 16:51:00"
+  },
+  {
+    "id": 53,
+    "usage_code": "USG-D-260812-0005",
+    "inv_code": "INV-D-260812-0005",
+    "customer_id": 82,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-12 18:08:00"
+  },
+  {
+    "id": 54,
+    "usage_code": "USG-P-260812-0006",
+    "inv_code": "INV-P-260812-0006",
+    "customer_id": 89,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-12 11:25:00"
+  },
+  {
+    "id": 55,
+    "usage_code": "USG-D-260813-0001",
+    "inv_code": "INV-D-260813-0001",
+    "customer_id": 6,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-13 10:00:00"
+  },
+  {
+    "id": 56,
+    "usage_code": "USG-P-260813-0002",
+    "inv_code": "INV-P-260813-0002",
+    "customer_id": 13,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-13 12:17:00"
+  },
+  {
+    "id": 57,
+    "usage_code": "USG-D-260813-0003",
+    "inv_code": "INV-D-260813-0003",
+    "customer_id": 20,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-13 14:34:00"
+  },
+  {
+    "id": 58,
+    "usage_code": "USG-D-260814-0001",
+    "inv_code": "INV-D-260814-0001",
+    "customer_id": 27,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-14 10:00:00"
+  },
+  {
+    "id": 59,
+    "usage_code": "USG-P-260814-0002",
+    "inv_code": "INV-P-260814-0002",
+    "customer_id": 34,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-14 12:17:00"
+  },
+  {
+    "id": 60,
+    "usage_code": "USG-D-260814-0003",
+    "inv_code": "INV-D-260814-0003",
+    "customer_id": 41,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-14 14:34:00"
+  },
+  {
+    "id": 61,
+    "usage_code": "USG-P-260814-0004",
+    "inv_code": "INV-P-260814-0004",
+    "customer_id": 48,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-14 16:51:00"
+  },
+  {
+    "id": 62,
+    "usage_code": "USG-D-260815-0001",
+    "inv_code": "INV-D-260815-0001",
+    "customer_id": 55,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-15 10:00:00"
+  },
+  {
+    "id": 63,
+    "usage_code": "USG-P-260815-0002",
+    "inv_code": "INV-P-260815-0002",
+    "customer_id": 62,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-15 12:17:00"
+  },
+  {
+    "id": 64,
+    "usage_code": "USG-D-260815-0003",
+    "inv_code": "INV-D-260815-0003",
+    "customer_id": 69,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-15 14:34:00"
+  },
+  {
+    "id": 65,
+    "usage_code": "USG-P-260815-0004",
+    "inv_code": "INV-P-260815-0004",
+    "customer_id": 76,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-15 16:51:00"
+  },
+  {
+    "id": 66,
+    "usage_code": "USG-D-260815-0005",
+    "inv_code": "INV-D-260815-0005",
+    "customer_id": 83,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-15 18:08:00"
+  },
+  {
+    "id": 67,
+    "usage_code": "USG-D-260816-0001",
+    "inv_code": "INV-D-260816-0001",
+    "customer_id": 90,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-16 10:00:00"
+  },
+  {
+    "id": 68,
+    "usage_code": "USG-P-260816-0002",
+    "inv_code": "INV-P-260816-0002",
+    "customer_id": 7,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-16 12:17:00"
+  },
+  {
+    "id": 69,
+    "usage_code": "USG-D-260816-0003",
+    "inv_code": "INV-D-260816-0003",
+    "customer_id": 14,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-16 14:34:00"
+  },
+  {
+    "id": 70,
+    "usage_code": "USG-P-260816-0004",
+    "inv_code": "INV-P-260816-0004",
+    "customer_id": 21,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-16 16:51:00"
+  },
+  {
+    "id": 71,
+    "usage_code": "USG-D-260816-0005",
+    "inv_code": "INV-D-260816-0005",
+    "customer_id": 28,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-16 18:08:00"
+  },
+  {
+    "id": 72,
+    "usage_code": "USG-P-260816-0006",
+    "inv_code": "INV-P-260816-0006",
+    "customer_id": 35,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-16 11:25:00"
+  },
+  {
+    "id": 73,
+    "usage_code": "USG-D-260817-0001",
+    "inv_code": "INV-D-260817-0001",
+    "customer_id": 42,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-17 10:00:00"
+  },
+  {
+    "id": 74,
+    "usage_code": "USG-P-260817-0002",
+    "inv_code": "INV-P-260817-0002",
+    "customer_id": 49,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-17 12:17:00"
+  },
+  {
+    "id": 75,
+    "usage_code": "USG-D-260817-0003",
+    "inv_code": "INV-D-260817-0003",
+    "customer_id": 56,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-17 14:34:00"
+  },
+  {
+    "id": 76,
+    "usage_code": "USG-D-260818-0001",
+    "inv_code": "INV-D-260818-0001",
+    "customer_id": 63,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-18 10:00:00"
+  },
+  {
+    "id": 77,
+    "usage_code": "USG-P-260818-0002",
+    "inv_code": "INV-P-260818-0002",
+    "customer_id": 70,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-18 12:17:00"
+  },
+  {
+    "id": 78,
+    "usage_code": "USG-D-260818-0003",
+    "inv_code": "INV-D-260818-0003",
+    "customer_id": 77,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-18 14:34:00"
+  },
+  {
+    "id": 79,
+    "usage_code": "USG-P-260818-0004",
+    "inv_code": "INV-P-260818-0004",
+    "customer_id": 84,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-18 16:51:00"
+  },
+  {
+    "id": 80,
+    "usage_code": "USG-D-260819-0001",
+    "inv_code": "INV-D-260819-0001",
+    "customer_id": 1,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-19 10:00:00"
+  },
+  {
+    "id": 81,
+    "usage_code": "USG-P-260819-0002",
+    "inv_code": "INV-P-260819-0002",
+    "customer_id": 8,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-19 12:17:00"
+  },
+  {
+    "id": 82,
+    "usage_code": "USG-D-260819-0003",
+    "inv_code": "INV-D-260819-0003",
+    "customer_id": 15,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-19 14:34:00"
+  },
+  {
+    "id": 83,
+    "usage_code": "USG-P-260819-0004",
+    "inv_code": "INV-P-260819-0004",
+    "customer_id": 22,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-19 16:51:00"
+  },
+  {
+    "id": 84,
+    "usage_code": "USG-D-260819-0005",
+    "inv_code": "INV-D-260819-0005",
+    "customer_id": 29,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-19 18:08:00"
+  },
+  {
+    "id": 85,
+    "usage_code": "USG-D-260820-0001",
+    "inv_code": "INV-D-260820-0001",
+    "customer_id": 36,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-20 10:00:00"
+  },
+  {
+    "id": 86,
+    "usage_code": "USG-P-260820-0002",
+    "inv_code": "INV-P-260820-0002",
+    "customer_id": 43,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-20 12:17:00"
+  },
+  {
+    "id": 87,
+    "usage_code": "USG-D-260820-0003",
+    "inv_code": "INV-D-260820-0003",
+    "customer_id": 50,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-20 14:34:00"
+  },
+  {
+    "id": 88,
+    "usage_code": "USG-P-260820-0004",
+    "inv_code": "INV-P-260820-0004",
+    "customer_id": 57,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-20 16:51:00"
+  },
+  {
+    "id": 89,
+    "usage_code": "USG-D-260820-0005",
+    "inv_code": "INV-D-260820-0005",
+    "customer_id": 64,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-20 18:08:00"
+  },
+  {
+    "id": 90,
+    "usage_code": "USG-P-260820-0006",
+    "inv_code": "INV-P-260820-0006",
+    "customer_id": 71,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-20 11:25:00"
+  },
+  {
+    "id": 91,
+    "usage_code": "USG-D-260821-0001",
+    "inv_code": "INV-D-260821-0001",
+    "customer_id": 78,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-21 10:00:00"
+  },
+  {
+    "id": 92,
+    "usage_code": "USG-P-260821-0002",
+    "inv_code": "INV-P-260821-0002",
+    "customer_id": 85,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-21 12:17:00"
+  },
+  {
+    "id": 93,
+    "usage_code": "USG-D-260821-0003",
+    "inv_code": "INV-D-260821-0003",
+    "customer_id": 2,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-21 14:34:00"
+  },
+  {
+    "id": 94,
+    "usage_code": "USG-D-260822-0001",
+    "inv_code": "INV-D-260822-0001",
+    "customer_id": 9,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-22 10:00:00"
+  },
+  {
+    "id": 95,
+    "usage_code": "USG-P-260822-0002",
+    "inv_code": "INV-P-260822-0002",
+    "customer_id": 16,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-22 12:17:00"
+  },
+  {
+    "id": 96,
+    "usage_code": "USG-D-260822-0003",
+    "inv_code": "INV-D-260822-0003",
+    "customer_id": 23,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-22 14:34:00"
+  },
+  {
+    "id": 97,
+    "usage_code": "USG-P-260822-0004",
+    "inv_code": "INV-P-260822-0004",
+    "customer_id": 30,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-22 16:51:00"
+  },
+  {
+    "id": 98,
+    "usage_code": "USG-D-260823-0001",
+    "inv_code": "INV-D-260823-0001",
+    "customer_id": 37,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-23 10:00:00"
+  },
+  {
+    "id": 99,
+    "usage_code": "USG-P-260823-0002",
+    "inv_code": "INV-P-260823-0002",
+    "customer_id": 44,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-23 12:17:00"
+  },
+  {
+    "id": 100,
+    "usage_code": "USG-D-260823-0003",
+    "inv_code": "INV-D-260823-0003",
+    "customer_id": 51,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-23 14:34:00"
+  },
+  {
+    "id": 101,
+    "usage_code": "USG-P-260823-0004",
+    "inv_code": "INV-P-260823-0004",
+    "customer_id": 58,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-23 16:51:00"
+  },
+  {
+    "id": 102,
+    "usage_code": "USG-D-260823-0005",
+    "inv_code": "INV-D-260823-0005",
+    "customer_id": 65,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-23 18:08:00"
+  },
+  {
+    "id": 103,
+    "usage_code": "USG-D-260824-0001",
+    "inv_code": "INV-D-260824-0001",
+    "customer_id": 72,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-24 10:00:00"
+  },
+  {
+    "id": 104,
+    "usage_code": "USG-P-260824-0002",
+    "inv_code": "INV-P-260824-0002",
+    "customer_id": 79,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-24 12:17:00"
+  },
+  {
+    "id": 105,
+    "usage_code": "USG-D-260824-0003",
+    "inv_code": "INV-D-260824-0003",
+    "customer_id": 86,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-24 14:34:00"
+  },
+  {
+    "id": 106,
+    "usage_code": "USG-P-260824-0004",
+    "inv_code": "INV-P-260824-0004",
+    "customer_id": 3,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-24 16:51:00"
+  },
+  {
+    "id": 107,
+    "usage_code": "USG-D-260824-0005",
+    "inv_code": "INV-D-260824-0005",
+    "customer_id": 10,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-24 18:08:00"
+  },
+  {
+    "id": 108,
+    "usage_code": "USG-P-260824-0006",
+    "inv_code": "INV-P-260824-0006",
+    "customer_id": 17,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-24 11:25:00"
+  },
+  {
+    "id": 109,
+    "usage_code": "USG-D-260825-0001",
+    "inv_code": "INV-D-260825-0001",
+    "customer_id": 24,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-25 10:00:00"
+  },
+  {
+    "id": 110,
+    "usage_code": "USG-P-260825-0002",
+    "inv_code": "INV-P-260825-0002",
+    "customer_id": 31,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-25 12:17:00"
+  },
+  {
+    "id": 111,
+    "usage_code": "USG-D-260825-0003",
+    "inv_code": "INV-D-260825-0003",
+    "customer_id": 38,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-25 14:34:00"
+  },
+  {
+    "id": 112,
+    "usage_code": "USG-D-260826-0001",
+    "inv_code": "INV-D-260826-0001",
+    "customer_id": 45,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-26 10:00:00"
+  },
+  {
+    "id": 113,
+    "usage_code": "USG-P-260826-0002",
+    "inv_code": "INV-P-260826-0002",
+    "customer_id": 52,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-26 12:17:00"
+  },
+  {
+    "id": 114,
+    "usage_code": "USG-D-260826-0003",
+    "inv_code": "INV-D-260826-0003",
+    "customer_id": 59,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-26 14:34:00"
+  },
+  {
+    "id": 115,
+    "usage_code": "USG-P-260826-0004",
+    "inv_code": "INV-P-260826-0004",
+    "customer_id": 66,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-26 16:51:00"
+  },
+  {
+    "id": 116,
+    "usage_code": "USG-D-260827-0001",
+    "inv_code": "INV-D-260827-0001",
+    "customer_id": 73,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-27 10:00:00"
+  },
+  {
+    "id": 117,
+    "usage_code": "USG-P-260827-0002",
+    "inv_code": "INV-P-260827-0002",
+    "customer_id": 80,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-27 12:17:00"
+  },
+  {
+    "id": 118,
+    "usage_code": "USG-D-260827-0003",
+    "inv_code": "INV-D-260827-0003",
+    "customer_id": 87,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-27 14:34:00"
+  },
+  {
+    "id": 119,
+    "usage_code": "USG-P-260827-0004",
+    "inv_code": "INV-P-260827-0004",
+    "customer_id": 4,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-27 16:51:00"
+  },
+  {
+    "id": 120,
+    "usage_code": "USG-D-260827-0005",
+    "inv_code": "INV-D-260827-0005",
+    "customer_id": 11,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-27 18:08:00"
+  },
+  {
+    "id": 121,
+    "usage_code": "USG-D-260828-0001",
+    "inv_code": "INV-D-260828-0001",
+    "customer_id": 18,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-28 10:00:00"
+  },
+  {
+    "id": 122,
+    "usage_code": "USG-P-260828-0002",
+    "inv_code": "INV-P-260828-0002",
+    "customer_id": 25,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-28 12:17:00"
+  },
+  {
+    "id": 123,
+    "usage_code": "USG-D-260828-0003",
+    "inv_code": "INV-D-260828-0003",
+    "customer_id": 32,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-28 14:34:00"
+  },
+  {
+    "id": 124,
+    "usage_code": "USG-P-260828-0004",
+    "inv_code": "INV-P-260828-0004",
+    "customer_id": 39,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-28 16:51:00"
+  },
+  {
+    "id": 125,
+    "usage_code": "USG-D-260828-0005",
+    "inv_code": "INV-D-260828-0005",
+    "customer_id": 46,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-28 18:08:00"
+  },
+  {
+    "id": 126,
+    "usage_code": "USG-P-260828-0006",
+    "inv_code": "INV-P-260828-0006",
+    "customer_id": 53,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-28 11:25:00"
+  },
+  {
+    "id": 127,
+    "usage_code": "USG-D-260829-0001",
+    "inv_code": "INV-D-260829-0001",
+    "customer_id": 60,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-29 10:00:00"
+  },
+  {
+    "id": 128,
+    "usage_code": "USG-P-260829-0002",
+    "inv_code": "INV-P-260829-0002",
+    "customer_id": 67,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-29 12:17:00"
+  },
+  {
+    "id": 129,
+    "usage_code": "USG-D-260829-0003",
+    "inv_code": "INV-D-260829-0003",
+    "customer_id": 74,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-29 14:34:00"
+  },
+  {
+    "id": 130,
+    "usage_code": "USG-D-260830-0001",
+    "inv_code": "INV-D-260830-0001",
+    "customer_id": 81,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-30 10:00:00"
+  },
+  {
+    "id": 131,
+    "usage_code": "USG-P-260830-0002",
+    "inv_code": "INV-P-260830-0002",
+    "customer_id": 88,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-30 12:17:00"
+  },
+  {
+    "id": 132,
+    "usage_code": "USG-D-260830-0003",
+    "inv_code": "INV-D-260830-0003",
+    "customer_id": 5,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-30 14:34:00"
+  },
+  {
+    "id": 133,
+    "usage_code": "USG-P-260830-0004",
+    "inv_code": "INV-P-260830-0004",
+    "customer_id": 12,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-30 16:51:00"
+  },
+  {
+    "id": 134,
+    "usage_code": "USG-D-260831-0001",
+    "inv_code": "INV-D-260831-0001",
+    "customer_id": 19,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-31 10:00:00"
+  },
+  {
+    "id": 135,
+    "usage_code": "USG-P-260831-0002",
+    "inv_code": "INV-P-260831-0002",
+    "customer_id": 26,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-31 12:17:00"
+  },
+  {
+    "id": 136,
+    "usage_code": "USG-D-260831-0003",
+    "inv_code": "INV-D-260831-0003",
+    "customer_id": 33,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-31 14:34:00"
+  },
+  {
+    "id": 137,
+    "usage_code": "USG-P-260831-0004",
+    "inv_code": "INV-P-260831-0004",
+    "customer_id": 40,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-08-31 16:51:00"
+  },
+  {
+    "id": 138,
+    "usage_code": "USG-D-260831-0005",
+    "inv_code": "INV-D-260831-0005",
+    "customer_id": 47,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-08-31 18:08:00"
+  },
+  {
+    "id": 139,
+    "usage_code": "USG-D-260901-0001",
+    "inv_code": "INV-D-260901-0001",
+    "customer_id": 54,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-01 10:00:00"
+  },
+  {
+    "id": 140,
+    "usage_code": "USG-P-260901-0002",
+    "inv_code": "INV-P-260901-0002",
+    "customer_id": 61,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-01 12:17:00"
+  },
+  {
+    "id": 141,
+    "usage_code": "USG-D-260901-0003",
+    "inv_code": "INV-D-260901-0003",
+    "customer_id": 68,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-01 14:34:00"
+  },
+  {
+    "id": 142,
+    "usage_code": "USG-P-260901-0004",
+    "inv_code": "INV-P-260901-0004",
+    "customer_id": 75,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-01 16:51:00"
+  },
+  {
+    "id": 143,
+    "usage_code": "USG-D-260901-0005",
+    "inv_code": "INV-D-260901-0005",
+    "customer_id": 82,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-01 18:08:00"
+  },
+  {
+    "id": 144,
+    "usage_code": "USG-P-260901-0006",
+    "inv_code": "INV-P-260901-0006",
+    "customer_id": 89,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-01 11:25:00"
+  },
+  {
+    "id": 145,
+    "usage_code": "USG-D-260902-0001",
+    "inv_code": "INV-D-260902-0001",
+    "customer_id": 6,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-02 10:00:00"
+  },
+  {
+    "id": 146,
+    "usage_code": "USG-P-260902-0002",
+    "inv_code": "INV-P-260902-0002",
+    "customer_id": 13,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-02 12:17:00"
+  },
+  {
+    "id": 147,
+    "usage_code": "USG-D-260902-0003",
+    "inv_code": "INV-D-260902-0003",
+    "customer_id": 20,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-02 14:34:00"
+  },
+  {
+    "id": 148,
+    "usage_code": "USG-D-260903-0001",
+    "inv_code": "INV-D-260903-0001",
+    "customer_id": 27,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-03 10:00:00"
+  },
+  {
+    "id": 149,
+    "usage_code": "USG-P-260903-0002",
+    "inv_code": "INV-P-260903-0002",
+    "customer_id": 34,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-03 12:17:00"
+  },
+  {
+    "id": 150,
+    "usage_code": "USG-D-260903-0003",
+    "inv_code": "INV-D-260903-0003",
+    "customer_id": 41,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-03 14:34:00"
+  },
+  {
+    "id": 151,
+    "usage_code": "USG-P-260903-0004",
+    "inv_code": "INV-P-260903-0004",
+    "customer_id": 48,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-03 16:51:00"
+  },
+  {
+    "id": 152,
+    "usage_code": "USG-D-260904-0001",
+    "inv_code": "INV-D-260904-0001",
+    "customer_id": 55,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-04 10:00:00"
+  },
+  {
+    "id": 153,
+    "usage_code": "USG-P-260904-0002",
+    "inv_code": "INV-P-260904-0002",
+    "customer_id": 62,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-04 12:17:00"
+  },
+  {
+    "id": 154,
+    "usage_code": "USG-D-260904-0003",
+    "inv_code": "INV-D-260904-0003",
+    "customer_id": 69,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-04 14:34:00"
+  },
+  {
+    "id": 155,
+    "usage_code": "USG-P-260904-0004",
+    "inv_code": "INV-P-260904-0004",
+    "customer_id": 76,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-04 16:51:00"
+  },
+  {
+    "id": 156,
+    "usage_code": "USG-D-260904-0005",
+    "inv_code": "INV-D-260904-0005",
+    "customer_id": 83,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-04 18:08:00"
+  },
+  {
+    "id": 157,
+    "usage_code": "USG-D-260905-0001",
+    "inv_code": "INV-D-260905-0001",
+    "customer_id": 90,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-05 10:00:00"
+  },
+  {
+    "id": 158,
+    "usage_code": "USG-P-260905-0002",
+    "inv_code": "INV-P-260905-0002",
+    "customer_id": 7,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-05 12:17:00"
+  },
+  {
+    "id": 159,
+    "usage_code": "USG-D-260905-0003",
+    "inv_code": "INV-D-260905-0003",
+    "customer_id": 14,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-05 14:34:00"
+  },
+  {
+    "id": 160,
+    "usage_code": "USG-P-260905-0004",
+    "inv_code": "INV-P-260905-0004",
+    "customer_id": 21,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-05 16:51:00"
+  },
+  {
+    "id": 161,
+    "usage_code": "USG-D-260905-0005",
+    "inv_code": "INV-D-260905-0005",
+    "customer_id": 28,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-05 18:08:00"
+  },
+  {
+    "id": 162,
+    "usage_code": "USG-P-260905-0006",
+    "inv_code": "INV-P-260905-0006",
+    "customer_id": 35,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-05 11:25:00"
+  },
+  {
+    "id": 163,
+    "usage_code": "USG-D-260906-0001",
+    "inv_code": "INV-D-260906-0001",
+    "customer_id": 42,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-06 10:00:00"
+  },
+  {
+    "id": 164,
+    "usage_code": "USG-P-260906-0002",
+    "inv_code": "INV-P-260906-0002",
+    "customer_id": 49,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-06 12:17:00"
+  },
+  {
+    "id": 165,
+    "usage_code": "USG-D-260906-0003",
+    "inv_code": "INV-D-260906-0003",
+    "customer_id": 56,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-06 14:34:00"
+  },
+  {
+    "id": 166,
+    "usage_code": "USG-D-260907-0001",
+    "inv_code": "INV-D-260907-0001",
+    "customer_id": 63,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-07 10:00:00"
+  },
+  {
+    "id": 167,
+    "usage_code": "USG-P-260907-0002",
+    "inv_code": "INV-P-260907-0002",
+    "customer_id": 70,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-07 12:17:00"
+  },
+  {
+    "id": 168,
+    "usage_code": "USG-D-260907-0003",
+    "inv_code": "INV-D-260907-0003",
+    "customer_id": 77,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-07 14:34:00"
+  },
+  {
+    "id": 169,
+    "usage_code": "USG-P-260907-0004",
+    "inv_code": "INV-P-260907-0004",
+    "customer_id": 84,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-07 16:51:00"
+  },
+  {
+    "id": 170,
+    "usage_code": "USG-D-260908-0001",
+    "inv_code": "INV-D-260908-0001",
+    "customer_id": 1,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-08 10:00:00"
+  },
+  {
+    "id": 171,
+    "usage_code": "USG-P-260908-0002",
+    "inv_code": "INV-P-260908-0002",
+    "customer_id": 8,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-08 12:17:00"
+  },
+  {
+    "id": 172,
+    "usage_code": "USG-D-260908-0003",
+    "inv_code": "INV-D-260908-0003",
+    "customer_id": 15,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-08 14:34:00"
+  },
+  {
+    "id": 173,
+    "usage_code": "USG-P-260908-0004",
+    "inv_code": "INV-P-260908-0004",
+    "customer_id": 22,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-08 16:51:00"
+  },
+  {
+    "id": 174,
+    "usage_code": "USG-D-260908-0005",
+    "inv_code": "INV-D-260908-0005",
+    "customer_id": 29,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-08 18:08:00"
+  },
+  {
+    "id": 175,
+    "usage_code": "USG-D-260909-0001",
+    "inv_code": "INV-D-260909-0001",
+    "customer_id": 36,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-09 10:00:00"
+  },
+  {
+    "id": 176,
+    "usage_code": "USG-P-260909-0002",
+    "inv_code": "INV-P-260909-0002",
+    "customer_id": 43,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-09 12:17:00"
+  },
+  {
+    "id": 177,
+    "usage_code": "USG-D-260909-0003",
+    "inv_code": "INV-D-260909-0003",
+    "customer_id": 50,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-09 14:34:00"
+  },
+  {
+    "id": 178,
+    "usage_code": "USG-P-260909-0004",
+    "inv_code": "INV-P-260909-0004",
+    "customer_id": 57,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-09 16:51:00"
+  },
+  {
+    "id": 179,
+    "usage_code": "USG-D-260909-0005",
+    "inv_code": "INV-D-260909-0005",
+    "customer_id": 64,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-09 18:08:00"
+  },
+  {
+    "id": 180,
+    "usage_code": "USG-P-260909-0006",
+    "inv_code": "INV-P-260909-0006",
+    "customer_id": 71,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-09 11:25:00"
+  },
+  {
+    "id": 181,
+    "usage_code": "USG-D-260910-0001",
+    "inv_code": "INV-D-260910-0001",
+    "customer_id": 78,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-10 10:00:00"
+  },
+  {
+    "id": 182,
+    "usage_code": "USG-P-260910-0002",
+    "inv_code": "INV-P-260910-0002",
+    "customer_id": 85,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-10 12:17:00"
+  },
+  {
+    "id": 183,
+    "usage_code": "USG-D-260910-0003",
+    "inv_code": "INV-D-260910-0003",
+    "customer_id": 2,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-10 14:34:00"
+  },
+  {
+    "id": 184,
+    "usage_code": "USG-D-260911-0001",
+    "inv_code": "INV-D-260911-0001",
+    "customer_id": 9,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-11 10:00:00"
+  },
+  {
+    "id": 185,
+    "usage_code": "USG-P-260911-0002",
+    "inv_code": "INV-P-260911-0002",
+    "customer_id": 16,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-11 12:17:00"
+  },
+  {
+    "id": 186,
+    "usage_code": "USG-D-260911-0003",
+    "inv_code": "INV-D-260911-0003",
+    "customer_id": 23,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-11 14:34:00"
+  },
+  {
+    "id": 187,
+    "usage_code": "USG-P-260911-0004",
+    "inv_code": "INV-P-260911-0004",
+    "customer_id": 30,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-11 16:51:00"
+  },
+  {
+    "id": 188,
+    "usage_code": "USG-D-260912-0001",
+    "inv_code": "INV-D-260912-0001",
+    "customer_id": 37,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-12 10:00:00"
+  },
+  {
+    "id": 189,
+    "usage_code": "USG-P-260912-0002",
+    "inv_code": "INV-P-260912-0002",
+    "customer_id": 44,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-12 12:17:00"
+  },
+  {
+    "id": 190,
+    "usage_code": "USG-D-260912-0003",
+    "inv_code": "INV-D-260912-0003",
+    "customer_id": 51,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-12 14:34:00"
+  },
+  {
+    "id": 191,
+    "usage_code": "USG-P-260912-0004",
+    "inv_code": "INV-P-260912-0004",
+    "customer_id": 58,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-12 16:51:00"
+  },
+  {
+    "id": 192,
+    "usage_code": "USG-D-260912-0005",
+    "inv_code": "INV-D-260912-0005",
+    "customer_id": 65,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-12 18:08:00"
+  },
+  {
+    "id": 193,
+    "usage_code": "USG-D-260913-0001",
+    "inv_code": "INV-D-260913-0001",
+    "customer_id": 72,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-13 10:00:00"
+  },
+  {
+    "id": 194,
+    "usage_code": "USG-P-260913-0002",
+    "inv_code": "INV-P-260913-0002",
+    "customer_id": 79,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-13 12:17:00"
+  },
+  {
+    "id": 195,
+    "usage_code": "USG-D-260913-0003",
+    "inv_code": "INV-D-260913-0003",
+    "customer_id": 86,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-13 14:34:00"
+  },
+  {
+    "id": 196,
+    "usage_code": "USG-P-260913-0004",
+    "inv_code": "INV-P-260913-0004",
+    "customer_id": 3,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-13 16:51:00"
+  },
+  {
+    "id": 197,
+    "usage_code": "USG-D-260913-0005",
+    "inv_code": "INV-D-260913-0005",
+    "customer_id": 10,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-13 18:08:00"
+  },
+  {
+    "id": 198,
+    "usage_code": "USG-P-260913-0006",
+    "inv_code": "INV-P-260913-0006",
+    "customer_id": 17,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-13 11:25:00"
+  },
+  {
+    "id": 199,
+    "usage_code": "USG-D-260914-0001",
+    "inv_code": "INV-D-260914-0001",
+    "customer_id": 24,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-14 10:00:00"
+  },
+  {
+    "id": 200,
+    "usage_code": "USG-P-260914-0002",
+    "inv_code": "INV-P-260914-0002",
+    "customer_id": 31,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-14 12:17:00"
+  },
+  {
+    "id": 201,
+    "usage_code": "USG-D-260914-0003",
+    "inv_code": "INV-D-260914-0003",
+    "customer_id": 38,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-14 14:34:00"
+  },
+  {
+    "id": 202,
+    "usage_code": "USG-D-260915-0001",
+    "inv_code": "INV-D-260915-0001",
+    "customer_id": 45,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-15 10:00:00"
+  },
+  {
+    "id": 203,
+    "usage_code": "USG-P-260915-0002",
+    "inv_code": "INV-P-260915-0002",
+    "customer_id": 52,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-15 12:17:00"
+  },
+  {
+    "id": 204,
+    "usage_code": "USG-D-260915-0003",
+    "inv_code": "INV-D-260915-0003",
+    "customer_id": 59,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-15 14:34:00"
+  },
+  {
+    "id": 205,
+    "usage_code": "USG-P-260915-0004",
+    "inv_code": "INV-P-260915-0004",
+    "customer_id": 66,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-15 16:51:00"
+  },
+  {
+    "id": 206,
+    "usage_code": "USG-D-260916-0001",
+    "inv_code": "INV-D-260916-0001",
+    "customer_id": 73,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-16 10:00:00"
+  },
+  {
+    "id": 207,
+    "usage_code": "USG-P-260916-0002",
+    "inv_code": "INV-P-260916-0002",
+    "customer_id": 80,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-16 12:17:00"
+  },
+  {
+    "id": 208,
+    "usage_code": "USG-D-260916-0003",
+    "inv_code": "INV-D-260916-0003",
+    "customer_id": 87,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-16 14:34:00"
+  },
+  {
+    "id": 209,
+    "usage_code": "USG-P-260916-0004",
+    "inv_code": "INV-P-260916-0004",
+    "customer_id": 4,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-16 16:51:00"
+  },
+  {
+    "id": 210,
+    "usage_code": "USG-D-260916-0005",
+    "inv_code": "INV-D-260916-0005",
+    "customer_id": 11,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-16 18:08:00"
+  },
+  {
+    "id": 211,
+    "usage_code": "USG-D-260917-0001",
+    "inv_code": "INV-D-260917-0001",
+    "customer_id": 18,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-17 10:00:00"
+  },
+  {
+    "id": 212,
+    "usage_code": "USG-P-260917-0002",
+    "inv_code": "INV-P-260917-0002",
+    "customer_id": 25,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-17 12:17:00"
+  },
+  {
+    "id": 213,
+    "usage_code": "USG-D-260917-0003",
+    "inv_code": "INV-D-260917-0003",
+    "customer_id": 32,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-17 14:34:00"
+  },
+  {
+    "id": 214,
+    "usage_code": "USG-P-260917-0004",
+    "inv_code": "INV-P-260917-0004",
+    "customer_id": 39,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-17 16:51:00"
+  },
+  {
+    "id": 215,
+    "usage_code": "USG-D-260917-0005",
+    "inv_code": "INV-D-260917-0005",
+    "customer_id": 46,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-17 18:08:00"
+  },
+  {
+    "id": 216,
+    "usage_code": "USG-P-260917-0006",
+    "inv_code": "INV-P-260917-0006",
+    "customer_id": 53,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-17 11:25:00"
+  },
+  {
+    "id": 217,
+    "usage_code": "USG-D-260918-0001",
+    "inv_code": "INV-D-260918-0001",
+    "customer_id": 60,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-18 10:00:00"
+  },
+  {
+    "id": 218,
+    "usage_code": "USG-P-260918-0002",
+    "inv_code": "INV-P-260918-0002",
+    "customer_id": 67,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-18 12:17:00"
+  },
+  {
+    "id": 219,
+    "usage_code": "USG-D-260918-0003",
+    "inv_code": "INV-D-260918-0003",
+    "customer_id": 74,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-18 14:34:00"
+  },
+  {
+    "id": 220,
+    "usage_code": "USG-D-260919-0001",
+    "inv_code": "INV-D-260919-0001",
+    "customer_id": 81,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-19 10:00:00"
+  },
+  {
+    "id": 221,
+    "usage_code": "USG-P-260919-0002",
+    "inv_code": "INV-P-260919-0002",
+    "customer_id": 88,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-19 12:17:00"
+  },
+  {
+    "id": 222,
+    "usage_code": "USG-D-260919-0003",
+    "inv_code": "INV-D-260919-0003",
+    "customer_id": 5,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-19 14:34:00"
+  },
+  {
+    "id": 223,
+    "usage_code": "USG-P-260919-0004",
+    "inv_code": "INV-P-260919-0004",
+    "customer_id": 12,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-19 16:51:00"
+  },
+  {
+    "id": 224,
+    "usage_code": "USG-D-260920-0001",
+    "inv_code": "INV-D-260920-0001",
+    "customer_id": 19,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-20 10:00:00"
+  },
+  {
+    "id": 225,
+    "usage_code": "USG-P-260920-0002",
+    "inv_code": "INV-P-260920-0002",
+    "customer_id": 26,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-20 12:17:00"
+  },
+  {
+    "id": 226,
+    "usage_code": "USG-D-260920-0003",
+    "inv_code": "INV-D-260920-0003",
+    "customer_id": 33,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-20 14:34:00"
+  },
+  {
+    "id": 227,
+    "usage_code": "USG-P-260920-0004",
+    "inv_code": "INV-P-260920-0004",
+    "customer_id": 40,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-20 16:51:00"
+  },
+  {
+    "id": 228,
+    "usage_code": "USG-D-260920-0005",
+    "inv_code": "INV-D-260920-0005",
+    "customer_id": 47,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-20 18:08:00"
+  },
+  {
+    "id": 229,
+    "usage_code": "USG-D-260921-0001",
+    "inv_code": "INV-D-260921-0001",
+    "customer_id": 54,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-21 10:00:00"
+  },
+  {
+    "id": 230,
+    "usage_code": "USG-P-260921-0002",
+    "inv_code": "INV-P-260921-0002",
+    "customer_id": 61,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-21 12:17:00"
+  },
+  {
+    "id": 231,
+    "usage_code": "USG-D-260921-0003",
+    "inv_code": "INV-D-260921-0003",
+    "customer_id": 68,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-21 14:34:00"
+  },
+  {
+    "id": 232,
+    "usage_code": "USG-P-260921-0004",
+    "inv_code": "INV-P-260921-0004",
+    "customer_id": 75,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-21 16:51:00"
+  },
+  {
+    "id": 233,
+    "usage_code": "USG-D-260921-0005",
+    "inv_code": "INV-D-260921-0005",
+    "customer_id": 82,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-21 18:08:00"
+  },
+  {
+    "id": 234,
+    "usage_code": "USG-P-260921-0006",
+    "inv_code": "INV-P-260921-0006",
+    "customer_id": 89,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-21 11:25:00"
+  },
+  {
+    "id": 235,
+    "usage_code": "USG-D-260922-0001",
+    "inv_code": "INV-D-260922-0001",
+    "customer_id": 6,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-22 10:00:00"
+  },
+  {
+    "id": 236,
+    "usage_code": "USG-P-260922-0002",
+    "inv_code": "INV-P-260922-0002",
+    "customer_id": 13,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-22 12:17:00"
+  },
+  {
+    "id": 237,
+    "usage_code": "USG-D-260922-0003",
+    "inv_code": "INV-D-260922-0003",
+    "customer_id": 20,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-22 14:34:00"
+  },
+  {
+    "id": 238,
+    "usage_code": "USG-D-260923-0001",
+    "inv_code": "INV-D-260923-0001",
+    "customer_id": 27,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-23 10:00:00"
+  },
+  {
+    "id": 239,
+    "usage_code": "USG-P-260923-0002",
+    "inv_code": "INV-P-260923-0002",
+    "customer_id": 34,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-23 12:17:00"
+  },
+  {
+    "id": 240,
+    "usage_code": "USG-D-260923-0003",
+    "inv_code": "INV-D-260923-0003",
+    "customer_id": 41,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-23 14:34:00"
+  },
+  {
+    "id": 241,
+    "usage_code": "USG-P-260923-0004",
+    "inv_code": "INV-P-260923-0004",
+    "customer_id": 48,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-23 16:51:00"
+  },
+  {
+    "id": 242,
+    "usage_code": "USG-D-260924-0001",
+    "inv_code": "INV-D-260924-0001",
+    "customer_id": 55,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-24 10:00:00"
+  },
+  {
+    "id": 243,
+    "usage_code": "USG-P-260924-0002",
+    "inv_code": "INV-P-260924-0002",
+    "customer_id": 62,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-24 12:17:00"
+  },
+  {
+    "id": 244,
+    "usage_code": "USG-D-260924-0003",
+    "inv_code": "INV-D-260924-0003",
+    "customer_id": 69,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-24 14:34:00"
+  },
+  {
+    "id": 245,
+    "usage_code": "USG-P-260924-0004",
+    "inv_code": "INV-P-260924-0004",
+    "customer_id": 76,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-24 16:51:00"
+  },
+  {
+    "id": 246,
+    "usage_code": "USG-D-260924-0005",
+    "inv_code": "INV-D-260924-0005",
+    "customer_id": 83,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-24 18:08:00"
+  },
+  {
+    "id": 247,
+    "usage_code": "USG-D-260925-0001",
+    "inv_code": "INV-D-260925-0001",
+    "customer_id": 90,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-25 10:00:00"
+  },
+  {
+    "id": 248,
+    "usage_code": "USG-P-260925-0002",
+    "inv_code": "INV-P-260925-0002",
+    "customer_id": 7,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-25 12:17:00"
+  },
+  {
+    "id": 249,
+    "usage_code": "USG-D-260925-0003",
+    "inv_code": "INV-D-260925-0003",
+    "customer_id": 14,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-25 14:34:00"
+  },
+  {
+    "id": 250,
+    "usage_code": "USG-P-260925-0004",
+    "inv_code": "INV-P-260925-0004",
+    "customer_id": 21,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-25 16:51:00"
+  },
+  {
+    "id": 251,
+    "usage_code": "USG-D-260925-0005",
+    "inv_code": "INV-D-260925-0005",
+    "customer_id": 28,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-25 18:08:00"
+  },
+  {
+    "id": 252,
+    "usage_code": "USG-P-260925-0006",
+    "inv_code": "INV-P-260925-0006",
+    "customer_id": 35,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-25 11:25:00"
+  },
+  {
+    "id": 253,
+    "usage_code": "USG-D-260926-0001",
+    "inv_code": "INV-D-260926-0001",
+    "customer_id": 42,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-26 10:00:00"
+  },
+  {
+    "id": 254,
+    "usage_code": "USG-P-260926-0002",
+    "inv_code": "INV-P-260926-0002",
+    "customer_id": 49,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-26 12:17:00"
+  },
+  {
+    "id": 255,
+    "usage_code": "USG-D-260926-0003",
+    "inv_code": "INV-D-260926-0003",
+    "customer_id": 56,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-26 14:34:00"
+  },
+  {
+    "id": 256,
+    "usage_code": "USG-D-260927-0001",
+    "inv_code": "INV-D-260927-0001",
+    "customer_id": 63,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-27 10:00:00"
+  },
+  {
+    "id": 257,
+    "usage_code": "USG-P-260927-0002",
+    "inv_code": "INV-P-260927-0002",
+    "customer_id": 70,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-27 12:17:00"
+  },
+  {
+    "id": 258,
+    "usage_code": "USG-D-260927-0003",
+    "inv_code": "INV-D-260927-0003",
+    "customer_id": 77,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-27 14:34:00"
+  },
+  {
+    "id": 259,
+    "usage_code": "USG-P-260927-0004",
+    "inv_code": "INV-P-260927-0004",
+    "customer_id": 84,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-27 16:51:00"
+  },
+  {
+    "id": 260,
+    "usage_code": "USG-D-260928-0001",
+    "inv_code": "INV-D-260928-0001",
+    "customer_id": 1,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-28 10:00:00"
+  },
+  {
+    "id": 261,
+    "usage_code": "USG-P-260928-0002",
+    "inv_code": "INV-P-260928-0002",
+    "customer_id": 8,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-28 12:17:00"
+  },
+  {
+    "id": 262,
+    "usage_code": "USG-D-260928-0003",
+    "inv_code": "INV-D-260928-0003",
+    "customer_id": 15,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-28 14:34:00"
+  },
+  {
+    "id": 263,
+    "usage_code": "USG-P-260928-0004",
+    "inv_code": "INV-P-260928-0004",
+    "customer_id": 22,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-28 16:51:00"
+  },
+  {
+    "id": 264,
+    "usage_code": "USG-D-260928-0005",
+    "inv_code": "INV-D-260928-0005",
+    "customer_id": 29,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-28 18:08:00"
+  },
+  {
+    "id": 265,
+    "usage_code": "USG-D-260929-0001",
+    "inv_code": "INV-D-260929-0001",
+    "customer_id": 36,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-29 10:00:00"
+  },
+  {
+    "id": 266,
+    "usage_code": "USG-P-260929-0002",
+    "inv_code": "INV-P-260929-0002",
+    "customer_id": 43,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-29 12:17:00"
+  },
+  {
+    "id": 267,
+    "usage_code": "USG-D-260929-0003",
+    "inv_code": "INV-D-260929-0003",
+    "customer_id": 50,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-29 14:34:00"
+  },
+  {
+    "id": 268,
+    "usage_code": "USG-P-260929-0004",
+    "inv_code": "INV-P-260929-0004",
+    "customer_id": 57,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-29 16:51:00"
+  },
+  {
+    "id": 269,
+    "usage_code": "USG-D-260929-0005",
+    "inv_code": "INV-D-260929-0005",
+    "customer_id": 64,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-29 18:08:00"
+  },
+  {
+    "id": 270,
+    "usage_code": "USG-P-260929-0006",
+    "inv_code": "INV-P-260929-0006",
+    "customer_id": 71,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-29 11:25:00"
+  },
+  {
+    "id": 271,
+    "usage_code": "USG-D-260930-0001",
+    "inv_code": "INV-D-260930-0001",
+    "customer_id": 78,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-30 10:00:00"
+  },
+  {
+    "id": 272,
+    "usage_code": "USG-P-260930-0002",
+    "inv_code": "INV-P-260930-0002",
+    "customer_id": 85,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-09-30 12:17:00"
+  },
+  {
+    "id": 273,
+    "usage_code": "USG-D-260930-0003",
+    "inv_code": "INV-D-260930-0003",
+    "customer_id": 2,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-09-30 14:34:00"
+  },
+  {
+    "id": 274,
+    "usage_code": "USG-D-261001-0001",
+    "inv_code": "INV-D-261001-0001",
+    "customer_id": 9,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-01 10:00:00"
+  },
+  {
+    "id": 275,
+    "usage_code": "USG-P-261001-0002",
+    "inv_code": "INV-P-261001-0002",
+    "customer_id": 16,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-01 12:17:00"
+  },
+  {
+    "id": 276,
+    "usage_code": "USG-D-261001-0003",
+    "inv_code": "INV-D-261001-0003",
+    "customer_id": 23,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-01 14:34:00"
+  },
+  {
+    "id": 277,
+    "usage_code": "USG-P-261001-0004",
+    "inv_code": "INV-P-261001-0004",
+    "customer_id": 30,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-01 16:51:00"
+  },
+  {
+    "id": 278,
+    "usage_code": "USG-D-261002-0001",
+    "inv_code": "INV-D-261002-0001",
+    "customer_id": 37,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-02 10:00:00"
+  },
+  {
+    "id": 279,
+    "usage_code": "USG-P-261002-0002",
+    "inv_code": "INV-P-261002-0002",
+    "customer_id": 44,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-02 12:17:00"
+  },
+  {
+    "id": 280,
+    "usage_code": "USG-D-261002-0003",
+    "inv_code": "INV-D-261002-0003",
+    "customer_id": 51,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-02 14:34:00"
+  },
+  {
+    "id": 281,
+    "usage_code": "USG-P-261002-0004",
+    "inv_code": "INV-P-261002-0004",
+    "customer_id": 58,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-02 16:51:00"
+  },
+  {
+    "id": 282,
+    "usage_code": "USG-D-261002-0005",
+    "inv_code": "INV-D-261002-0005",
+    "customer_id": 65,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-02 18:08:00"
+  },
+  {
+    "id": 283,
+    "usage_code": "USG-D-261003-0001",
+    "inv_code": "INV-D-261003-0001",
+    "customer_id": 72,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-03 10:00:00"
+  },
+  {
+    "id": 284,
+    "usage_code": "USG-P-261003-0002",
+    "inv_code": "INV-P-261003-0002",
+    "customer_id": 79,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-03 12:17:00"
+  },
+  {
+    "id": 285,
+    "usage_code": "USG-D-261003-0003",
+    "inv_code": "INV-D-261003-0003",
+    "customer_id": 86,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-03 14:34:00"
+  },
+  {
+    "id": 286,
+    "usage_code": "USG-P-261003-0004",
+    "inv_code": "INV-P-261003-0004",
+    "customer_id": 3,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-03 16:51:00"
+  },
+  {
+    "id": 287,
+    "usage_code": "USG-D-261003-0005",
+    "inv_code": "INV-D-261003-0005",
+    "customer_id": 10,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-03 18:08:00"
+  },
+  {
+    "id": 288,
+    "usage_code": "USG-P-261003-0006",
+    "inv_code": "INV-P-261003-0006",
+    "customer_id": 17,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-03 11:25:00"
+  },
+  {
+    "id": 289,
+    "usage_code": "USG-D-261004-0001",
+    "inv_code": "INV-D-261004-0001",
+    "customer_id": 24,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-04 10:00:00"
+  },
+  {
+    "id": 290,
+    "usage_code": "USG-P-261004-0002",
+    "inv_code": "INV-P-261004-0002",
+    "customer_id": 31,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-04 12:17:00"
+  },
+  {
+    "id": 291,
+    "usage_code": "USG-D-261004-0003",
+    "inv_code": "INV-D-261004-0003",
+    "customer_id": 38,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-04 14:34:00"
+  },
+  {
+    "id": 292,
+    "usage_code": "USG-D-261005-0001",
+    "inv_code": "INV-D-261005-0001",
+    "customer_id": 45,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-05 10:00:00"
+  },
+  {
+    "id": 293,
+    "usage_code": "USG-P-261005-0002",
+    "inv_code": "INV-P-261005-0002",
+    "customer_id": 52,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-05 12:17:00"
+  },
+  {
+    "id": 294,
+    "usage_code": "USG-D-261005-0003",
+    "inv_code": "INV-D-261005-0003",
+    "customer_id": 59,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-05 14:34:00"
+  },
+  {
+    "id": 295,
+    "usage_code": "USG-P-261005-0004",
+    "inv_code": "INV-P-261005-0004",
+    "customer_id": 66,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-05 16:51:00"
+  },
+  {
+    "id": 296,
+    "usage_code": "USG-D-261006-0001",
+    "inv_code": "INV-D-261006-0001",
+    "customer_id": 73,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-06 10:00:00"
+  },
+  {
+    "id": 297,
+    "usage_code": "USG-P-261006-0002",
+    "inv_code": "INV-P-261006-0002",
+    "customer_id": 80,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-06 12:17:00"
+  },
+  {
+    "id": 298,
+    "usage_code": "USG-D-261006-0003",
+    "inv_code": "INV-D-261006-0003",
+    "customer_id": 87,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-06 14:34:00"
+  },
+  {
+    "id": 299,
+    "usage_code": "USG-P-261006-0004",
+    "inv_code": "INV-P-261006-0004",
+    "customer_id": 4,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-06 16:51:00"
+  },
+  {
+    "id": 300,
+    "usage_code": "USG-D-261006-0005",
+    "inv_code": "INV-D-261006-0005",
+    "customer_id": 11,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-06 18:08:00"
+  },
+  {
+    "id": 301,
+    "usage_code": "USG-D-261007-0001",
+    "inv_code": "INV-D-261007-0001",
+    "customer_id": 18,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-07 10:00:00"
+  },
+  {
+    "id": 302,
+    "usage_code": "USG-P-261007-0002",
+    "inv_code": "INV-P-261007-0002",
+    "customer_id": 25,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-07 12:17:00"
+  },
+  {
+    "id": 303,
+    "usage_code": "USG-D-261007-0003",
+    "inv_code": "INV-D-261007-0003",
+    "customer_id": 32,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-07 14:34:00"
+  },
+  {
+    "id": 304,
+    "usage_code": "USG-P-261007-0004",
+    "inv_code": "INV-P-261007-0004",
+    "customer_id": 39,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-07 16:51:00"
+  },
+  {
+    "id": 305,
+    "usage_code": "USG-D-261007-0005",
+    "inv_code": "INV-D-261007-0005",
+    "customer_id": 46,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-07 18:08:00"
+  },
+  {
+    "id": 306,
+    "usage_code": "USG-P-261007-0006",
+    "inv_code": "INV-P-261007-0006",
+    "customer_id": 53,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-07 11:25:00"
+  },
+  {
+    "id": 307,
+    "usage_code": "USG-D-261008-0001",
+    "inv_code": "INV-D-261008-0001",
+    "customer_id": 60,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-08 10:00:00"
+  },
+  {
+    "id": 308,
+    "usage_code": "USG-P-261008-0002",
+    "inv_code": "INV-P-261008-0002",
+    "customer_id": 67,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-08 12:17:00"
+  },
+  {
+    "id": 309,
+    "usage_code": "USG-D-261008-0003",
+    "inv_code": "INV-D-261008-0003",
+    "customer_id": 74,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-08 14:34:00"
+  },
+  {
+    "id": 310,
+    "usage_code": "USG-D-261009-0001",
+    "inv_code": "INV-D-261009-0001",
+    "customer_id": 81,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-09 10:00:00"
+  },
+  {
+    "id": 311,
+    "usage_code": "USG-P-261009-0002",
+    "inv_code": "INV-P-261009-0002",
+    "customer_id": 88,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-09 12:17:00"
+  },
+  {
+    "id": 312,
+    "usage_code": "USG-D-261009-0003",
+    "inv_code": "INV-D-261009-0003",
+    "customer_id": 5,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-09 14:34:00"
+  },
+  {
+    "id": 313,
+    "usage_code": "USG-P-261009-0004",
+    "inv_code": "INV-P-261009-0004",
+    "customer_id": 12,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-09 16:51:00"
+  },
+  {
+    "id": 314,
+    "usage_code": "USG-D-261010-0001",
+    "inv_code": "INV-D-261010-0001",
+    "customer_id": 19,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-10 10:00:00"
+  },
+  {
+    "id": 315,
+    "usage_code": "USG-P-261010-0002",
+    "inv_code": "INV-P-261010-0002",
+    "customer_id": 26,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-10 12:17:00"
+  },
+  {
+    "id": 316,
+    "usage_code": "USG-D-261010-0003",
+    "inv_code": "INV-D-261010-0003",
+    "customer_id": 33,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-10 14:34:00"
+  },
+  {
+    "id": 317,
+    "usage_code": "USG-P-261010-0004",
+    "inv_code": "INV-P-261010-0004",
+    "customer_id": 40,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-10 16:51:00"
+  },
+  {
+    "id": 318,
+    "usage_code": "USG-D-261010-0005",
+    "inv_code": "INV-D-261010-0005",
+    "customer_id": 47,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-10 18:08:00"
+  },
+  {
+    "id": 319,
+    "usage_code": "USG-D-261011-0001",
+    "inv_code": "INV-D-261011-0001",
+    "customer_id": 54,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-11 10:00:00"
+  },
+  {
+    "id": 320,
+    "usage_code": "USG-P-261011-0002",
+    "inv_code": "INV-P-261011-0002",
+    "customer_id": 61,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-11 12:17:00"
+  },
+  {
+    "id": 321,
+    "usage_code": "USG-D-261011-0003",
+    "inv_code": "INV-D-261011-0003",
+    "customer_id": 68,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-11 14:34:00"
+  },
+  {
+    "id": 322,
+    "usage_code": "USG-P-261011-0004",
+    "inv_code": "INV-P-261011-0004",
+    "customer_id": 75,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-11 16:51:00"
+  },
+  {
+    "id": 323,
+    "usage_code": "USG-D-261011-0005",
+    "inv_code": "INV-D-261011-0005",
+    "customer_id": 82,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-11 18:08:00"
+  },
+  {
+    "id": 324,
+    "usage_code": "USG-P-261011-0006",
+    "inv_code": "INV-P-261011-0006",
+    "customer_id": 89,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-11 11:25:00"
+  },
+  {
+    "id": 325,
+    "usage_code": "USG-D-261012-0001",
+    "inv_code": "INV-D-261012-0001",
+    "customer_id": 6,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-12 10:00:00"
+  },
+  {
+    "id": 326,
+    "usage_code": "USG-P-261012-0002",
+    "inv_code": "INV-P-261012-0002",
+    "customer_id": 13,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-12 12:17:00"
+  },
+  {
+    "id": 327,
+    "usage_code": "USG-D-261012-0003",
+    "inv_code": "INV-D-261012-0003",
+    "customer_id": 20,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-12 14:34:00"
+  },
+  {
+    "id": 328,
+    "usage_code": "USG-D-261013-0001",
+    "inv_code": "INV-D-261013-0001",
+    "customer_id": 27,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-13 10:00:00"
+  },
+  {
+    "id": 329,
+    "usage_code": "USG-P-261013-0002",
+    "inv_code": "INV-P-261013-0002",
+    "customer_id": 34,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-13 12:17:00"
+  },
+  {
+    "id": 330,
+    "usage_code": "USG-D-261013-0003",
+    "inv_code": "INV-D-261013-0003",
+    "customer_id": 41,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-13 14:34:00"
+  },
+  {
+    "id": 331,
+    "usage_code": "USG-P-261013-0004",
+    "inv_code": "INV-P-261013-0004",
+    "customer_id": 48,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-13 16:51:00"
+  },
+  {
+    "id": 332,
+    "usage_code": "USG-D-261014-0001",
+    "inv_code": "INV-D-261014-0001",
+    "customer_id": 55,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-14 10:00:00"
+  },
+  {
+    "id": 333,
+    "usage_code": "USG-P-261014-0002",
+    "inv_code": "INV-P-261014-0002",
+    "customer_id": 62,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-14 12:17:00"
+  },
+  {
+    "id": 334,
+    "usage_code": "USG-D-261014-0003",
+    "inv_code": "INV-D-261014-0003",
+    "customer_id": 69,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-14 14:34:00"
+  },
+  {
+    "id": 335,
+    "usage_code": "USG-P-261014-0004",
+    "inv_code": "INV-P-261014-0004",
+    "customer_id": 76,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-14 16:51:00"
+  },
+  {
+    "id": 336,
+    "usage_code": "USG-D-261014-0005",
+    "inv_code": "INV-D-261014-0005",
+    "customer_id": 83,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-14 18:08:00"
+  },
+  {
+    "id": 337,
+    "usage_code": "USG-D-261015-0001",
+    "inv_code": "INV-D-261015-0001",
+    "customer_id": 90,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-15 10:00:00"
+  },
+  {
+    "id": 338,
+    "usage_code": "USG-P-261015-0002",
+    "inv_code": "INV-P-261015-0002",
+    "customer_id": 7,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-15 12:17:00"
+  },
+  {
+    "id": 339,
+    "usage_code": "USG-D-261015-0003",
+    "inv_code": "INV-D-261015-0003",
+    "customer_id": 14,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-15 14:34:00"
+  },
+  {
+    "id": 340,
+    "usage_code": "USG-P-261015-0004",
+    "inv_code": "INV-P-261015-0004",
+    "customer_id": 21,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-15 16:51:00"
+  },
+  {
+    "id": 341,
+    "usage_code": "USG-D-261015-0005",
+    "inv_code": "INV-D-261015-0005",
+    "customer_id": 28,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-15 18:08:00"
+  },
+  {
+    "id": 342,
+    "usage_code": "USG-P-261015-0006",
+    "inv_code": "INV-P-261015-0006",
+    "customer_id": 35,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-15 11:25:00"
+  },
+  {
+    "id": 343,
+    "usage_code": "USG-D-261016-0001",
+    "inv_code": "INV-D-261016-0001",
+    "customer_id": 42,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-16 10:00:00"
+  },
+  {
+    "id": 344,
+    "usage_code": "USG-P-261016-0002",
+    "inv_code": "INV-P-261016-0002",
+    "customer_id": 49,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-16 12:17:00"
+  },
+  {
+    "id": 345,
+    "usage_code": "USG-D-261016-0003",
+    "inv_code": "INV-D-261016-0003",
+    "customer_id": 56,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-16 14:34:00"
+  },
+  {
+    "id": 346,
+    "usage_code": "USG-D-261017-0001",
+    "inv_code": "INV-D-261017-0001",
+    "customer_id": 63,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-17 10:00:00"
+  },
+  {
+    "id": 347,
+    "usage_code": "USG-P-261017-0002",
+    "inv_code": "INV-P-261017-0002",
+    "customer_id": 70,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-17 12:17:00"
+  },
+  {
+    "id": 348,
+    "usage_code": "USG-D-261017-0003",
+    "inv_code": "INV-D-261017-0003",
+    "customer_id": 77,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-17 14:34:00"
+  },
+  {
+    "id": 349,
+    "usage_code": "USG-P-261017-0004",
+    "inv_code": "INV-P-261017-0004",
+    "customer_id": 84,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-17 16:51:00"
+  },
+  {
+    "id": 350,
+    "usage_code": "USG-D-261018-0001",
+    "inv_code": "INV-D-261018-0001",
+    "customer_id": 1,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-18 10:00:00"
+  },
+  {
+    "id": 351,
+    "usage_code": "USG-P-261018-0002",
+    "inv_code": "INV-P-261018-0002",
+    "customer_id": 8,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-18 12:17:00"
+  },
+  {
+    "id": 352,
+    "usage_code": "USG-D-261018-0003",
+    "inv_code": "INV-D-261018-0003",
+    "customer_id": 15,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-18 14:34:00"
+  },
+  {
+    "id": 353,
+    "usage_code": "USG-P-261018-0004",
+    "inv_code": "INV-P-261018-0004",
+    "customer_id": 22,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-18 16:51:00"
+  },
+  {
+    "id": 354,
+    "usage_code": "USG-D-261018-0005",
+    "inv_code": "INV-D-261018-0005",
+    "customer_id": 29,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-18 18:08:00"
+  },
+  {
+    "id": 355,
+    "usage_code": "USG-D-261019-0001",
+    "inv_code": "INV-D-261019-0001",
+    "customer_id": 36,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-19 10:00:00"
+  },
+  {
+    "id": 356,
+    "usage_code": "USG-P-261019-0002",
+    "inv_code": "INV-P-261019-0002",
+    "customer_id": 43,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-19 12:17:00"
+  },
+  {
+    "id": 357,
+    "usage_code": "USG-D-261019-0003",
+    "inv_code": "INV-D-261019-0003",
+    "customer_id": 50,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-19 14:34:00"
+  },
+  {
+    "id": 358,
+    "usage_code": "USG-P-261019-0004",
+    "inv_code": "INV-P-261019-0004",
+    "customer_id": 57,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-19 16:51:00"
+  },
+  {
+    "id": 359,
+    "usage_code": "USG-D-261019-0005",
+    "inv_code": "INV-D-261019-0005",
+    "customer_id": 64,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-19 18:08:00"
+  },
+  {
+    "id": 360,
+    "usage_code": "USG-P-261019-0006",
+    "inv_code": "INV-P-261019-0006",
+    "customer_id": 71,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-19 11:25:00"
+  },
+  {
+    "id": 361,
+    "usage_code": "USG-D-261020-0001",
+    "inv_code": "INV-D-261020-0001",
+    "customer_id": 78,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-20 10:00:00"
+  },
+  {
+    "id": 362,
+    "usage_code": "USG-P-261020-0002",
+    "inv_code": "INV-P-261020-0002",
+    "customer_id": 85,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-20 12:17:00"
+  },
+  {
+    "id": 363,
+    "usage_code": "USG-D-261020-0003",
+    "inv_code": "INV-D-261020-0003",
+    "customer_id": 2,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-20 14:34:00"
+  },
+  {
+    "id": 364,
+    "usage_code": "USG-D-261021-0001",
+    "inv_code": "INV-D-261021-0001",
+    "customer_id": 9,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-21 10:00:00"
+  },
+  {
+    "id": 365,
+    "usage_code": "USG-P-261021-0002",
+    "inv_code": "INV-P-261021-0002",
+    "customer_id": 16,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-21 12:17:00"
+  },
+  {
+    "id": 366,
+    "usage_code": "USG-D-261021-0003",
+    "inv_code": "INV-D-261021-0003",
+    "customer_id": 23,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-21 14:34:00"
+  },
+  {
+    "id": 367,
+    "usage_code": "USG-P-261021-0004",
+    "inv_code": "INV-P-261021-0004",
+    "customer_id": 30,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-21 16:51:00"
+  },
+  {
+    "id": 368,
+    "usage_code": "USG-D-261022-0001",
+    "inv_code": "INV-D-261022-0001",
+    "customer_id": 37,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-22 10:00:00"
+  },
+  {
+    "id": 369,
+    "usage_code": "USG-P-261022-0002",
+    "inv_code": "INV-P-261022-0002",
+    "customer_id": 44,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-22 12:17:00"
+  },
+  {
+    "id": 370,
+    "usage_code": "USG-D-261022-0003",
+    "inv_code": "INV-D-261022-0003",
+    "customer_id": 51,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-22 14:34:00"
+  },
+  {
+    "id": 371,
+    "usage_code": "USG-P-261022-0004",
+    "inv_code": "INV-P-261022-0004",
+    "customer_id": 58,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-22 16:51:00"
+  },
+  {
+    "id": 372,
+    "usage_code": "USG-D-261022-0005",
+    "inv_code": "INV-D-261022-0005",
+    "customer_id": 65,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-22 18:08:00"
+  },
+  {
+    "id": 373,
+    "usage_code": "USG-D-261023-0001",
+    "inv_code": "INV-D-261023-0001",
+    "customer_id": 72,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-23 10:00:00"
+  },
+  {
+    "id": 374,
+    "usage_code": "USG-P-261023-0002",
+    "inv_code": "INV-P-261023-0002",
+    "customer_id": 79,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-23 12:17:00"
+  },
+  {
+    "id": 375,
+    "usage_code": "USG-D-261023-0003",
+    "inv_code": "INV-D-261023-0003",
+    "customer_id": 86,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-23 14:34:00"
+  },
+  {
+    "id": 376,
+    "usage_code": "USG-P-261023-0004",
+    "inv_code": "INV-P-261023-0004",
+    "customer_id": 3,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-23 16:51:00"
+  },
+  {
+    "id": 377,
+    "usage_code": "USG-D-261023-0005",
+    "inv_code": "INV-D-261023-0005",
+    "customer_id": 10,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-23 18:08:00"
+  },
+  {
+    "id": 378,
+    "usage_code": "USG-P-261023-0006",
+    "inv_code": "INV-P-261023-0006",
+    "customer_id": 17,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-23 11:25:00"
+  },
+  {
+    "id": 379,
+    "usage_code": "USG-D-261024-0001",
+    "inv_code": "INV-D-261024-0001",
+    "customer_id": 24,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-24 10:00:00"
+  },
+  {
+    "id": 380,
+    "usage_code": "USG-P-261024-0002",
+    "inv_code": "INV-P-261024-0002",
+    "customer_id": 31,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-24 12:17:00"
+  },
+  {
+    "id": 381,
+    "usage_code": "USG-D-261024-0003",
+    "inv_code": "INV-D-261024-0003",
+    "customer_id": 38,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-24 14:34:00"
+  },
+  {
+    "id": 382,
+    "usage_code": "USG-D-261025-0001",
+    "inv_code": "INV-D-261025-0001",
+    "customer_id": 45,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-25 10:00:00"
+  },
+  {
+    "id": 383,
+    "usage_code": "USG-P-261025-0002",
+    "inv_code": "INV-P-261025-0002",
+    "customer_id": 52,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-25 12:17:00"
+  },
+  {
+    "id": 384,
+    "usage_code": "USG-D-261025-0003",
+    "inv_code": "INV-D-261025-0003",
+    "customer_id": 59,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-25 14:34:00"
+  },
+  {
+    "id": 385,
+    "usage_code": "USG-P-261025-0004",
+    "inv_code": "INV-P-261025-0004",
+    "customer_id": 66,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-25 16:51:00"
+  },
+  {
+    "id": 386,
+    "usage_code": "USG-D-261026-0001",
+    "inv_code": "INV-D-261026-0001",
+    "customer_id": 73,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-26 10:00:00"
+  },
+  {
+    "id": 387,
+    "usage_code": "USG-P-261026-0002",
+    "inv_code": "INV-P-261026-0002",
+    "customer_id": 80,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-26 12:17:00"
+  },
+  {
+    "id": 388,
+    "usage_code": "USG-D-261026-0003",
+    "inv_code": "INV-D-261026-0003",
+    "customer_id": 87,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-26 14:34:00"
+  },
+  {
+    "id": 389,
+    "usage_code": "USG-P-261026-0004",
+    "inv_code": "INV-P-261026-0004",
+    "customer_id": 4,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-26 16:51:00"
+  },
+  {
+    "id": 390,
+    "usage_code": "USG-D-261026-0005",
+    "inv_code": "INV-D-261026-0005",
+    "customer_id": 11,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-26 18:08:00"
+  },
+  {
+    "id": 391,
+    "usage_code": "USG-D-261027-0001",
+    "inv_code": "INV-D-261027-0001",
+    "customer_id": 18,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-27 10:00:00"
+  },
+  {
+    "id": 392,
+    "usage_code": "USG-P-261027-0002",
+    "inv_code": "INV-P-261027-0002",
+    "customer_id": 25,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-27 12:17:00"
+  },
+  {
+    "id": 393,
+    "usage_code": "USG-D-261027-0003",
+    "inv_code": "INV-D-261027-0003",
+    "customer_id": 32,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-27 14:34:00"
+  },
+  {
+    "id": 394,
+    "usage_code": "USG-P-261027-0004",
+    "inv_code": "INV-P-261027-0004",
+    "customer_id": 39,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-27 16:51:00"
+  },
+  {
+    "id": 395,
+    "usage_code": "USG-D-261027-0005",
+    "inv_code": "INV-D-261027-0005",
+    "customer_id": 46,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-27 18:08:00"
+  },
+  {
+    "id": 396,
+    "usage_code": "USG-P-261027-0006",
+    "inv_code": "INV-P-261027-0006",
+    "customer_id": 53,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-27 11:25:00"
+  },
+  {
+    "id": 397,
+    "usage_code": "USG-D-261028-0001",
+    "inv_code": "INV-D-261028-0001",
+    "customer_id": 60,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-28 10:00:00"
+  },
+  {
+    "id": 398,
+    "usage_code": "USG-P-261028-0002",
+    "inv_code": "INV-P-261028-0002",
+    "customer_id": 67,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-28 12:17:00"
+  },
+  {
+    "id": 399,
+    "usage_code": "USG-D-261028-0003",
+    "inv_code": "INV-D-261028-0003",
+    "customer_id": 74,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-28 14:34:00"
+  },
+  {
+    "id": 400,
+    "usage_code": "USG-D-261029-0001",
+    "inv_code": "INV-D-261029-0001",
+    "customer_id": 81,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-29 10:00:00"
+  },
+  {
+    "id": 401,
+    "usage_code": "USG-P-261029-0002",
+    "inv_code": "INV-P-261029-0002",
+    "customer_id": 88,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-29 12:17:00"
+  },
+  {
+    "id": 402,
+    "usage_code": "USG-D-261029-0003",
+    "inv_code": "INV-D-261029-0003",
+    "customer_id": 5,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-29 14:34:00"
+  },
+  {
+    "id": 403,
+    "usage_code": "USG-P-261029-0004",
+    "inv_code": "INV-P-261029-0004",
+    "customer_id": 12,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-29 16:51:00"
+  },
+  {
+    "id": 404,
+    "usage_code": "USG-D-261030-0001",
+    "inv_code": "INV-D-261030-0001",
+    "customer_id": 19,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-30 10:00:00"
+  },
+  {
+    "id": 405,
+    "usage_code": "USG-P-261030-0002",
+    "inv_code": "INV-P-261030-0002",
+    "customer_id": 26,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-30 12:17:00"
+  },
+  {
+    "id": 406,
+    "usage_code": "USG-D-261030-0003",
+    "inv_code": "INV-D-261030-0003",
+    "customer_id": 33,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-30 14:34:00"
+  },
+  {
+    "id": 407,
+    "usage_code": "USG-P-261030-0004",
+    "inv_code": "INV-P-261030-0004",
+    "customer_id": 40,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-30 16:51:00"
+  },
+  {
+    "id": 408,
+    "usage_code": "USG-D-261030-0005",
+    "inv_code": "INV-D-261030-0005",
+    "customer_id": 47,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-30 18:08:00"
+  },
+  {
+    "id": 409,
+    "usage_code": "USG-D-261031-0001",
+    "inv_code": "INV-D-261031-0001",
+    "customer_id": 54,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-31 10:00:00"
+  },
+  {
+    "id": 410,
+    "usage_code": "USG-P-261031-0002",
+    "inv_code": "INV-P-261031-0002",
+    "customer_id": 61,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-31 12:17:00"
+  },
+  {
+    "id": 411,
+    "usage_code": "USG-D-261031-0003",
+    "inv_code": "INV-D-261031-0003",
+    "customer_id": 68,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-31 14:34:00"
+  },
+  {
+    "id": 412,
+    "usage_code": "USG-P-261031-0004",
+    "inv_code": "INV-P-261031-0004",
+    "customer_id": 75,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-31 16:51:00"
+  },
+  {
+    "id": 413,
+    "usage_code": "USG-D-261031-0005",
+    "inv_code": "INV-D-261031-0005",
+    "customer_id": 82,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-10-31 18:08:00"
+  },
+  {
+    "id": 414,
+    "usage_code": "USG-P-261031-0006",
+    "inv_code": "INV-P-261031-0006",
+    "customer_id": 89,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-10-31 11:25:00"
+  },
+  {
+    "id": 415,
+    "usage_code": "USG-D-261101-0001",
+    "inv_code": "INV-D-261101-0001",
+    "customer_id": 6,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-01 10:00:00"
+  },
+  {
+    "id": 416,
+    "usage_code": "USG-P-261101-0002",
+    "inv_code": "INV-P-261101-0002",
+    "customer_id": 13,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-01 12:17:00"
+  },
+  {
+    "id": 417,
+    "usage_code": "USG-D-261101-0003",
+    "inv_code": "INV-D-261101-0003",
+    "customer_id": 20,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-01 14:34:00"
+  },
+  {
+    "id": 418,
+    "usage_code": "USG-D-261102-0001",
+    "inv_code": "INV-D-261102-0001",
+    "customer_id": 27,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-02 10:00:00"
+  },
+  {
+    "id": 419,
+    "usage_code": "USG-P-261102-0002",
+    "inv_code": "INV-P-261102-0002",
+    "customer_id": 34,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-02 12:17:00"
+  },
+  {
+    "id": 420,
+    "usage_code": "USG-D-261102-0003",
+    "inv_code": "INV-D-261102-0003",
+    "customer_id": 41,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-02 14:34:00"
+  },
+  {
+    "id": 421,
+    "usage_code": "USG-P-261102-0004",
+    "inv_code": "INV-P-261102-0004",
+    "customer_id": 48,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-02 16:51:00"
+  },
+  {
+    "id": 422,
+    "usage_code": "USG-D-261103-0001",
+    "inv_code": "INV-D-261103-0001",
+    "customer_id": 55,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-03 10:00:00"
+  },
+  {
+    "id": 423,
+    "usage_code": "USG-P-261103-0002",
+    "inv_code": "INV-P-261103-0002",
+    "customer_id": 62,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-03 12:17:00"
+  },
+  {
+    "id": 424,
+    "usage_code": "USG-D-261103-0003",
+    "inv_code": "INV-D-261103-0003",
+    "customer_id": 69,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-03 14:34:00"
+  },
+  {
+    "id": 425,
+    "usage_code": "USG-P-261103-0004",
+    "inv_code": "INV-P-261103-0004",
+    "customer_id": 76,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-03 16:51:00"
+  },
+  {
+    "id": 426,
+    "usage_code": "USG-D-261103-0005",
+    "inv_code": "INV-D-261103-0005",
+    "customer_id": 83,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-03 18:08:00"
+  },
+  {
+    "id": 427,
+    "usage_code": "USG-D-261104-0001",
+    "inv_code": "INV-D-261104-0001",
+    "customer_id": 90,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-04 10:00:00"
+  },
+  {
+    "id": 428,
+    "usage_code": "USG-P-261104-0002",
+    "inv_code": "INV-P-261104-0002",
+    "customer_id": 7,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-04 12:17:00"
+  },
+  {
+    "id": 429,
+    "usage_code": "USG-D-261104-0003",
+    "inv_code": "INV-D-261104-0003",
+    "customer_id": 14,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-04 14:34:00"
+  },
+  {
+    "id": 430,
+    "usage_code": "USG-P-261104-0004",
+    "inv_code": "INV-P-261104-0004",
+    "customer_id": 21,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-04 16:51:00"
+  },
+  {
+    "id": 431,
+    "usage_code": "USG-D-261104-0005",
+    "inv_code": "INV-D-261104-0005",
+    "customer_id": 28,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-04 18:08:00"
+  },
+  {
+    "id": 432,
+    "usage_code": "USG-P-261104-0006",
+    "inv_code": "INV-P-261104-0006",
+    "customer_id": 35,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-04 11:25:00"
+  },
+  {
+    "id": 433,
+    "usage_code": "USG-D-261105-0001",
+    "inv_code": "INV-D-261105-0001",
+    "customer_id": 42,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-05 10:00:00"
+  },
+  {
+    "id": 434,
+    "usage_code": "USG-P-261105-0002",
+    "inv_code": "INV-P-261105-0002",
+    "customer_id": 49,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-05 12:17:00"
+  },
+  {
+    "id": 435,
+    "usage_code": "USG-D-261105-0003",
+    "inv_code": "INV-D-261105-0003",
+    "customer_id": 56,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-05 14:34:00"
+  },
+  {
+    "id": 436,
+    "usage_code": "USG-D-261106-0001",
+    "inv_code": "INV-D-261106-0001",
+    "customer_id": 63,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-06 10:00:00"
+  },
+  {
+    "id": 437,
+    "usage_code": "USG-P-261106-0002",
+    "inv_code": "INV-P-261106-0002",
+    "customer_id": 70,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-06 12:17:00"
+  },
+  {
+    "id": 438,
+    "usage_code": "USG-D-261106-0003",
+    "inv_code": "INV-D-261106-0003",
+    "customer_id": 77,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-06 14:34:00"
+  },
+  {
+    "id": 439,
+    "usage_code": "USG-P-261106-0004",
+    "inv_code": "INV-P-261106-0004",
+    "customer_id": 84,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-06 16:51:00"
+  },
+  {
+    "id": 440,
+    "usage_code": "USG-D-261107-0001",
+    "inv_code": "INV-D-261107-0001",
+    "customer_id": 1,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-07 10:00:00"
+  },
+  {
+    "id": 441,
+    "usage_code": "USG-P-261107-0002",
+    "inv_code": "INV-P-261107-0002",
+    "customer_id": 8,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-07 12:17:00"
+  },
+  {
+    "id": 442,
+    "usage_code": "USG-D-261107-0003",
+    "inv_code": "INV-D-261107-0003",
+    "customer_id": 15,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-07 14:34:00"
+  },
+  {
+    "id": 443,
+    "usage_code": "USG-P-261107-0004",
+    "inv_code": "INV-P-261107-0004",
+    "customer_id": 22,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-07 16:51:00"
+  },
+  {
+    "id": 444,
+    "usage_code": "USG-D-261107-0005",
+    "inv_code": "INV-D-261107-0005",
+    "customer_id": 29,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-07 18:08:00"
+  },
+  {
+    "id": 445,
+    "usage_code": "USG-D-261108-0001",
+    "inv_code": "INV-D-261108-0001",
+    "customer_id": 36,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-08 10:00:00"
+  },
+  {
+    "id": 446,
+    "usage_code": "USG-P-261108-0002",
+    "inv_code": "INV-P-261108-0002",
+    "customer_id": 43,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-08 12:17:00"
+  },
+  {
+    "id": 447,
+    "usage_code": "USG-D-261108-0003",
+    "inv_code": "INV-D-261108-0003",
+    "customer_id": 50,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-08 14:34:00"
+  },
+  {
+    "id": 448,
+    "usage_code": "USG-P-261108-0004",
+    "inv_code": "INV-P-261108-0004",
+    "customer_id": 57,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-08 16:51:00"
+  },
+  {
+    "id": 449,
+    "usage_code": "USG-D-261108-0005",
+    "inv_code": "INV-D-261108-0005",
+    "customer_id": 64,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-08 18:08:00"
+  },
+  {
+    "id": 450,
+    "usage_code": "USG-P-261108-0006",
+    "inv_code": "INV-P-261108-0006",
+    "customer_id": 71,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-08 11:25:00"
+  },
+  {
+    "id": 451,
+    "usage_code": "USG-D-261109-0001",
+    "inv_code": "INV-D-261109-0001",
+    "customer_id": 78,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-09 10:00:00"
+  },
+  {
+    "id": 452,
+    "usage_code": "USG-P-261109-0002",
+    "inv_code": "INV-P-261109-0002",
+    "customer_id": 85,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-09 12:17:00"
+  },
+  {
+    "id": 453,
+    "usage_code": "USG-D-261109-0003",
+    "inv_code": "INV-D-261109-0003",
+    "customer_id": 2,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-09 14:34:00"
+  },
+  {
+    "id": 454,
+    "usage_code": "USG-D-261110-0001",
+    "inv_code": "INV-D-261110-0001",
+    "customer_id": 9,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-10 10:00:00"
+  },
+  {
+    "id": 455,
+    "usage_code": "USG-P-261110-0002",
+    "inv_code": "INV-P-261110-0002",
+    "customer_id": 16,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-10 12:17:00"
+  },
+  {
+    "id": 456,
+    "usage_code": "USG-D-261110-0003",
+    "inv_code": "INV-D-261110-0003",
+    "customer_id": 23,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-10 14:34:00"
+  },
+  {
+    "id": 457,
+    "usage_code": "USG-P-261110-0004",
+    "inv_code": "INV-P-261110-0004",
+    "customer_id": 30,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-10 16:51:00"
+  },
+  {
+    "id": 458,
+    "usage_code": "USG-D-261111-0001",
+    "inv_code": "INV-D-261111-0001",
+    "customer_id": 37,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-11 10:00:00"
+  },
+  {
+    "id": 459,
+    "usage_code": "USG-P-261111-0002",
+    "inv_code": "INV-P-261111-0002",
+    "customer_id": 44,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-11 12:17:00"
+  },
+  {
+    "id": 460,
+    "usage_code": "USG-D-261111-0003",
+    "inv_code": "INV-D-261111-0003",
+    "customer_id": 51,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-11 14:34:00"
+  },
+  {
+    "id": 461,
+    "usage_code": "USG-P-261111-0004",
+    "inv_code": "INV-P-261111-0004",
+    "customer_id": 58,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-11 16:51:00"
+  },
+  {
+    "id": 462,
+    "usage_code": "USG-D-261111-0005",
+    "inv_code": "INV-D-261111-0005",
+    "customer_id": 65,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-11 18:08:00"
+  },
+  {
+    "id": 463,
+    "usage_code": "USG-D-261112-0001",
+    "inv_code": "INV-D-261112-0001",
+    "customer_id": 72,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-12 10:00:00"
+  },
+  {
+    "id": 464,
+    "usage_code": "USG-P-261112-0002",
+    "inv_code": "INV-P-261112-0002",
+    "customer_id": 79,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-12 12:17:00"
+  },
+  {
+    "id": 465,
+    "usage_code": "USG-D-261112-0003",
+    "inv_code": "INV-D-261112-0003",
+    "customer_id": 86,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-12 14:34:00"
+  },
+  {
+    "id": 466,
+    "usage_code": "USG-P-261112-0004",
+    "inv_code": "INV-P-261112-0004",
+    "customer_id": 3,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-12 16:51:00"
+  },
+  {
+    "id": 467,
+    "usage_code": "USG-D-261112-0005",
+    "inv_code": "INV-D-261112-0005",
+    "customer_id": 10,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-12 18:08:00"
+  },
+  {
+    "id": 468,
+    "usage_code": "USG-P-261112-0006",
+    "inv_code": "INV-P-261112-0006",
+    "customer_id": 17,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-12 11:25:00"
+  },
+  {
+    "id": 469,
+    "usage_code": "USG-D-261113-0001",
+    "inv_code": "INV-D-261113-0001",
+    "customer_id": 24,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-13 10:00:00"
+  },
+  {
+    "id": 470,
+    "usage_code": "USG-P-261113-0002",
+    "inv_code": "INV-P-261113-0002",
+    "customer_id": 31,
+    "outlet_id": 2,
+    "is_void": 0,
+    "date": "2026-11-13 12:17:00"
+  },
+  {
+    "id": 471,
+    "usage_code": "USG-D-261113-0003",
+    "inv_code": "INV-D-261113-0003",
+    "customer_id": 38,
+    "outlet_id": 1,
+    "is_void": 0,
+    "date": "2026-11-13 14:34:00"
+  }
+]

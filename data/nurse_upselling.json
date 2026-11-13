@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "UPS-001",
+    "date": "2026-11-12",
+    "nurse_name": "Suster Maya Kusuma",
+    "patient_name": "Clarissa Valerie",
+    "product_name": "Kefir Daily UV Sunscreen SPF 50+",
+    "amount": 165000,
+    "status": "Success",
+    "commission": 16500
+  },
+  {
+    "id": "UPS-002",
+    "date": "2026-11-11",
+    "nurse_name": "Terapis Dewi Lestari",
+    "patient_name": "Nadia Salsabila",
+    "product_name": "Kefir Ceramide Deep Moisture Cream",
+    "amount": 195000,
+    "status": "Success",
+    "commission": 19500
+  },
+  {
+    "id": "UPS-003",
+    "date": "2026-11-10",
+    "nurse_name": "Suster Rina Anggraini",
+    "patient_name": "Bunga Citra",
+    "product_name": "Kefir Advanced Glow Serum Salmon DNA",
+    "amount": 285000,
+    "status": "Success",
+    "commission": 28500
+  }
+]

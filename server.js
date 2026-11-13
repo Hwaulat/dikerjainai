@@ -3938,7 +3938,9 @@ let manualSync = { running: false, started_at: null, finished_at: null, ok: null
 const syncState = { last_started_at: null, last_finished_at: null, last_ok: null, last_error: null, duration_s: null, killed: false, consecutive_failures: 0 };
 
 const HOST = process.env.HOST || '0.0.0.0';
-server.listen(PORT, HOST, () => {
+
+if (require.main === module && !process.env.VERCEL) {
+  server.listen(PORT, HOST, () => {
   // DISABLE_BACKGROUND_JOBS=1: hanya melayani HTTP (uji lokal) — tanpa WhatsApp, sync spreadsheet harga, dan sync Neosoft.
   if (process.env.DISABLE_BACKGROUND_JOBS === '1') {
     console.log(`✨ KEFIR Clinic Mission Control Hub running at http://${HOST}:${PORT} (job latar belakang & WhatsApp DIMATIKAN)`);
@@ -3987,4 +3989,7 @@ server.listen(PORT, HOST, () => {
       }
     });
   }, 10 * 60 * 1000); // 10 menit
-});
+  });
+}
+
+module.exports = server;

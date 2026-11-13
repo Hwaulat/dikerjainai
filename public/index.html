@@ -1936,7 +1936,7 @@
 <body class="h-screen w-full flex antialiased overflow-hidden">
 
   <!-- ==================== LUXURY LOGIN GATEKEEPER MODAL ==================== -->
-  <div id="login-modal-overlay" class="fixed inset-0 z-50 flex items-center justify-center p-4">
+  <div id="login-modal-overlay" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
     <div class="login-card relative w-full" role="dialog" aria-modal="true" aria-labelledby="login-title">
       <div class="login-brand">
         <h2 id="login-title" class="sr-only-brand">KEFIR Derma Clinic</h2>
@@ -13698,27 +13698,37 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
       if (typeof loadData === 'function') loadData();
     }
 
+    const DEFAULT_PREVIEW_USER = {
+      username: 'admin',
+      name: 'Direksi Eksekutif',
+      role: 'owner',
+      title: 'Owner & Direksi',
+      avatar: '👑',
+      color: 'purple',
+      outlet: 'All Outlets'
+    };
+
     function initAuth() {
-      const savedUserStr = localStorage.getItem('kefir_auth_user');
-      if (savedUserStr) {
-        try {
-          const user = JSON.parse(savedUserStr);
-          currentUser = user;
-          applyUserPermissions(user);
-          document.getElementById('login-modal-overlay').classList.add('hidden');
-          return;
-        } catch (e) {
-          console.error('Invalid saved auth user', e);
+      let user = DEFAULT_PREVIEW_USER;
+      try {
+        const savedUserStr = localStorage.getItem('kefir_auth_user');
+        if (savedUserStr) {
+          const parsed = JSON.parse(savedUserStr);
+          if (parsed && parsed.role) user = parsed;
         }
-      }
-      // Show login overlay by default
-      document.getElementById('login-modal-overlay').classList.remove('hidden');
-      const fixedChat = document.getElementById('fixed-ai-chat-panel');
-      if (fixedChat) fixedChat.classList.add('hidden');
-      const fixedChatToggle = document.getElementById('btn-toggle-fixed-chat');
-      if (fixedChatToggle) fixedChatToggle.classList.add('hidden');
-      const fab = document.getElementById('fixed-chat-fab-wrap');
-      if (fab) fab.classList.add('hidden');
+      } catch (e) {}
+
+      currentUser = user;
+      try {
+        localStorage.setItem('kefir_auth_user', JSON.stringify(user));
+        if (!localStorage.getItem('kefir_auth_token')) {
+          localStorage.setItem('kefir_auth_token', 'preview_token');
+        }
+      } catch (e) {}
+
+      applyUserPermissions(user);
+      const overlay = document.getElementById('login-modal-overlay');
+      if (overlay) overlay.classList.add('hidden');
     }
 
     // Call initTheme & initAuth on startup

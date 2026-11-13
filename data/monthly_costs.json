@@ -1,0 +1,18 @@
+{
+  "2026-11": {
+    "period": "2026-11",
+    "bhp_petty_cash": 685000,
+    "gaji_karyawan": 48500000,
+    "sewa_utilitas": 18000000,
+    "lain_lain": 6500000,
+    "filled": true
+  },
+  "2026-10": {
+    "period": "2026-10",
+    "bhp_petty_cash": 1250000,
+    "gaji_karyawan": 48500000,
+    "sewa_utilitas": 18000000,
+    "lain_lain": 7200000,
+    "filled": true
+  }
+}

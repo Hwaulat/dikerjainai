@@ -1,0 +1,41 @@
+[
+  {
+    "id": "SQ-001",
+    "item_id": 1,
+    "item_name": "Kasa Steril 7.5 x 7.5cm (Kotak)",
+    "supplier": "PT Kimia Farma Medika",
+    "price": 25000,
+    "moq": 10,
+    "payment_terms": "TOP 30 Hari",
+    "valid_until": "2027-01-01",
+    "notes": "Harga kontrak tahunan",
+    "added_by": "Finance Lead",
+    "added_at": "2026-11-01T08:00:00Z"
+  },
+  {
+    "id": "SQ-002",
+    "item_id": 2,
+    "item_name": "Jarum BD PrecisionGlide 30G x 1/2",
+    "supplier": "PT IDS Medical Systems",
+    "price": 85000,
+    "moq": 5,
+    "payment_terms": "TOP 14 Hari",
+    "valid_until": "2027-02-01",
+    "notes": "Kualitas terjamin steril",
+    "added_by": "Finance Lead",
+    "added_at": "2026-11-01T08:00:00Z"
+  },
+  {
+    "id": "SQ-003",
+    "item_id": 5,
+    "item_name": "Serum PDRN Salmon DNA Rejuran Healer 2ml",
+    "supplier": "PT Regen Prime Aesthetics",
+    "price": 1200000,
+    "moq": 10,
+    "payment_terms": "Cash Before Delivery",
+    "valid_until": "2027-06-01",
+    "notes": "Distributor resmi original BPOM",
+    "added_by": "Finance Lead",
+    "added_at": "2026-11-01T08:00:00Z"
+  }
+]

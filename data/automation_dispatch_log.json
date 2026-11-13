@@ -1,0 +1,23 @@
+[
+  {
+    "id": "DSP-001",
+    "type": "Morning Briefing Sync",
+    "status": "Success",
+    "items_count": 42,
+    "timestamp": "2026-11-13 08:00:00 WIB"
+  },
+  {
+    "id": "DSP-002",
+    "type": "Birthday Greetings Automation",
+    "status": "Success",
+    "items_count": 5,
+    "timestamp": "2026-11-13 09:00:00 WIB"
+  },
+  {
+    "id": "DSP-003",
+    "type": "FEFO Stock Expiry Radar Check",
+    "status": "Success",
+    "items_count": 2,
+    "timestamp": "2026-11-13 09:30:00 WIB"
+  }
+]

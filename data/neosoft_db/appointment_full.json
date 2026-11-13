@@ -123,6 +123,30 @@
     "id_appointment": 6,
     "id_room": 1,
     "room_name": "Ruang Laser Pico 1 (DPK)",
+    "outlet_id": 2,
+    "come_date": "2026-11-10 20:00:00",
+    "customer_id": 36,
+    "patient": {
+      "id": 36,
+      "name": "Maya Natasha",
+      "phone": "6281290399996",
+      "code": "EM-260500036"
+    },
+    "doctor_id": 2,
+    "doctor_name": "dr. Farah Diba Sp.D.V.E",
+    "treatment_name": "Kefir DNA Salmon Facial",
+    "status_appointment": 2,
+    "status": "Finished",
+    "status_name": "Attended (Selesai)",
+    "status_color": {
+      "name": "Finished"
+    },
+    "note": "Konsultasi & Tindakan Kefir DNA Salmon Facial"
+  },
+  {
+    "id_appointment": 7,
+    "id_room": 1,
+    "room_name": "Ruang Laser Pico 1 (DPK)",
     "outlet_id": 1,
     "come_date": "2026-11-11 10:00:00",
     "customer_id": 4,
@@ -144,7 +168,7 @@
     "note": "Konsultasi & Tindakan Kefir Phyto Derma"
   },
   {
-    "id_appointment": 7,
+    "id_appointment": 8,
     "id_room": 2,
     "room_name": "Ruang Facial & Estetika 1 (DPK)",
     "outlet_id": 1,
@@ -168,7 +192,7 @@
     "note": "Konsultasi & Tindakan Kefir DNA Salmon Facial"
   },
   {
-    "id_appointment": 8,
+    "id_appointment": 9,
     "id_room": 3,
     "room_name": "Ruang Konsultasi dr. Cindy (DPK)",
     "outlet_id": 1,
@@ -192,7 +216,7 @@
     "note": "Konsultasi & Tindakan Acne Injection / Spot"
   },
   {
-    "id_appointment": 9,
+    "id_appointment": 10,
     "id_room": 4,
     "room_name": "Ruang Laser Alma 1 (PDK)",
     "outlet_id": 2,
@@ -216,7 +240,7 @@
     "note": "Konsultasi & Tindakan Pico Neck Laser"
   },
   {
-    "id_appointment": 10,
+    "id_appointment": 11,
     "id_room": 5,
     "room_name": "Ruang Facial VIP (PDK)",
     "outlet_id": 2,
@@ -240,7 +264,31 @@
     "note": "Konsultasi & Tindakan Kefir Microdermabrasion"
   },
   {
-    "id_appointment": 11,
+    "id_appointment": 12,
+    "id_room": 1,
+    "room_name": "Ruang Laser Pico 1 (DPK)",
+    "outlet_id": 2,
+    "come_date": "2026-11-11 20:00:00",
+    "customer_id": 39,
+    "patient": {
+      "id": 39,
+      "name": "Aurelia Lubis",
+      "phone": "6281290433329",
+      "code": "EM-260500039"
+    },
+    "doctor_id": 2,
+    "doctor_name": "dr. Farah Diba Sp.D.V.E",
+    "treatment_name": "Instant Hollywood Glow",
+    "status_appointment": 2,
+    "status": "Finished",
+    "status_name": "Attended (Selesai)",
+    "status_color": {
+      "name": "Finished"
+    },
+    "note": "Konsultasi & Tindakan Instant Hollywood Glow"
+  },
+  {
+    "id_appointment": 13,
     "id_room": 1,
     "room_name": "Ruang Laser Pico 1 (DPK)",
     "outlet_id": 1,
@@ -264,7 +312,7 @@
     "note": "Konsultasi & Tindakan Kefir Microdermabrasion"
   },
   {
-    "id_appointment": 12,
+    "id_appointment": 14,
     "id_room": 2,
     "room_name": "Ruang Facial & Estetika 1 (DPK)",
     "outlet_id": 1,
@@ -288,7 +336,7 @@
     "note": "Konsultasi & Tindakan Instant Hollywood Glow"
   },
   {
-    "id_appointment": 13,
+    "id_appointment": 15,
     "id_room": 3,
     "room_name": "Ruang Konsultasi dr. Cindy (DPK)",
     "outlet_id": 1,
@@ -312,7 +360,7 @@
     "note": "Konsultasi & Tindakan PDT Face"
   },
   {
-    "id_appointment": 14,
+    "id_appointment": 16,
     "id_room": 4,
     "room_name": "Ruang Laser Alma 1 (PDK)",
     "outlet_id": 2,
@@ -336,7 +384,7 @@
     "note": "Konsultasi & Tindakan Pico Lip Laser"
   },
   {
-    "id_appointment": 15,
+    "id_appointment": 17,
     "id_room": 5,
     "room_name": "Ruang Facial VIP (PDK)",
     "outlet_id": 2,
@@ -360,7 +408,31 @@
     "note": "Konsultasi & Tindakan Kefir 14 in 1 Crystal Dew"
   },
   {
-    "id_appointment": 16,
+    "id_appointment": 18,
+    "id_room": 1,
+    "room_name": "Ruang Laser Pico 1 (DPK)",
+    "outlet_id": 2,
+    "come_date": "2026-11-12 20:00:00",
+    "customer_id": 42,
+    "patient": {
+      "id": 42,
+      "name": "Fitri Rahmawati",
+      "phone": "6281290466662",
+      "code": "EM-260500042"
+    },
+    "doctor_id": 2,
+    "doctor_name": "dr. Farah Diba Sp.D.V.E",
+    "treatment_name": "Luxury Yoga Face",
+    "status_appointment": 2,
+    "status": "Finished",
+    "status_name": "Attended (Selesai)",
+    "status_color": {
+      "name": "Finished"
+    },
+    "note": "Konsultasi & Tindakan Luxury Yoga Face"
+  },
+  {
+    "id_appointment": 19,
     "id_room": 1,
     "room_name": "Ruang Laser Pico 1 (DPK)",
     "outlet_id": 1,
@@ -384,7 +456,7 @@
     "note": "Konsultasi & Tindakan Kefir 14 in 1 Crystal Dew"
   },
   {
-    "id_appointment": 17,
+    "id_appointment": 20,
     "id_room": 2,
     "room_name": "Ruang Facial & Estetika 1 (DPK)",
     "outlet_id": 1,
@@ -408,7 +480,7 @@
     "note": "Konsultasi & Tindakan Luxury Yoga Face"
   },
   {
-    "id_appointment": 18,
+    "id_appointment": 21,
     "id_room": 3,
     "room_name": "Ruang Konsultasi dr. Cindy (DPK)",
     "outlet_id": 1,
@@ -423,16 +495,16 @@
     "doctor_id": 3,
     "doctor_name": "dr. Randy Wijaya",
     "treatment_name": "Pico Face Laser",
-    "status_appointment": 1,
-    "status": "Waiting",
-    "status_name": "Confirmed (Terjadwal)",
+    "status_appointment": 2,
+    "status": "Finished",
+    "status_name": "Attended (Selesai)",
     "status_color": {
-      "name": "Waiting"
+      "name": "Finished"
     },
     "note": "Konsultasi & Tindakan Pico Face Laser"
   },
   {
-    "id_appointment": 19,
+    "id_appointment": 22,
     "id_room": 4,
     "room_name": "Ruang Laser Alma 1 (PDK)",
     "outlet_id": 2,
@@ -456,7 +528,7 @@
     "note": "Konsultasi & Tindakan Kefir Skin Analyzer Pro"
   },
   {
-    "id_appointment": 20,
+    "id_appointment": 23,
     "id_room": 5,
     "room_name": "Ruang Facial VIP (PDK)",
     "outlet_id": 2,
@@ -480,7 +552,31 @@
     "note": "Konsultasi & Tindakan Kefir 14 in 1 Acne Renewal"
   },
   {
-    "id_appointment": 21,
+    "id_appointment": 24,
+    "id_room": 1,
+    "room_name": "Ruang Laser Pico 1 (DPK)",
+    "outlet_id": 2,
+    "come_date": "2026-11-13 20:00:00",
+    "customer_id": 45,
+    "patient": {
+      "id": 45,
+      "name": "Tania Tan",
+      "phone": "6281290499995",
+      "code": "EM-260500045"
+    },
+    "doctor_id": 2,
+    "doctor_name": "dr. Farah Diba Sp.D.V.E",
+    "treatment_name": "Gua Sha Glow Lift",
+    "status_appointment": 1,
+    "status": "Waiting",
+    "status_name": "Confirmed (Terjadwal)",
+    "status_color": {
+      "name": "Waiting"
+    },
+    "note": "Konsultasi & Tindakan Gua Sha Glow Lift"
+  },
+  {
+    "id_appointment": 25,
     "id_room": 1,
     "room_name": "Ruang Laser Pico 1 (DPK)",
     "outlet_id": 1,
@@ -504,7 +600,7 @@
     "note": "Konsultasi & Tindakan Kefir 14 in 1 Acne Renewal"
   },
   {
-    "id_appointment": 22,
+    "id_appointment": 26,
     "id_room": 2,
     "room_name": "Ruang Facial & Estetika 1 (DPK)",
     "outlet_id": 1,
@@ -528,7 +624,7 @@
     "note": "Konsultasi & Tindakan Gua Sha Glow Lift"
   },
   {
-    "id_appointment": 23,
+    "id_appointment": 27,
     "id_room": 3,
     "room_name": "Ruang Konsultasi dr. Cindy (DPK)",
     "outlet_id": 1,
@@ -552,7 +648,7 @@
     "note": "Konsultasi & Tindakan Pico Black Doll"
   },
   {
-    "id_appointment": 24,
+    "id_appointment": 28,
     "id_room": 4,
     "room_name": "Ruang Laser Alma 1 (PDK)",
     "outlet_id": 2,
@@ -576,7 +672,7 @@
     "note": "Konsultasi & Tindakan Kefir Phyto Derma"
   },
   {
-    "id_appointment": 25,
+    "id_appointment": 29,
     "id_room": 5,
     "room_name": "Ruang Facial VIP (PDK)",
     "outlet_id": 2,
@@ -600,7 +696,31 @@
     "note": "Konsultasi & Tindakan Kefir DNA Salmon Facial"
   },
   {
-    "id_appointment": 26,
+    "id_appointment": 30,
+    "id_room": 1,
+    "room_name": "Ruang Laser Pico 1 (DPK)",
+    "outlet_id": 2,
+    "come_date": "2026-11-14 20:00:00",
+    "customer_id": 48,
+    "patient": {
+      "id": 48,
+      "name": "Indah Santoso",
+      "phone": "6281290533328",
+      "code": "EM-260500048"
+    },
+    "doctor_id": 2,
+    "doctor_name": "dr. Farah Diba Sp.D.V.E",
+    "treatment_name": "Acne Injection / Spot",
+    "status_appointment": 1,
+    "status": "Confirmed",
+    "status_name": "Confirmed (Terjadwal)",
+    "status_color": {
+      "name": "Confirmed"
+    },
+    "note": "Konsultasi & Tindakan Acne Injection / Spot"
+  },
+  {
+    "id_appointment": 31,
     "id_room": 1,
     "room_name": "Ruang Laser Pico 1 (DPK)",
     "outlet_id": 1,
@@ -624,7 +744,7 @@
     "note": "Konsultasi & Tindakan Kefir DNA Salmon Facial"
   },
   {
-    "id_appointment": 27,
+    "id_appointment": 32,
     "id_room": 2,
     "room_name": "Ruang Facial & Estetika 1 (DPK)",
     "outlet_id": 1,
@@ -648,7 +768,7 @@
     "note": "Konsultasi & Tindakan Acne Injection / Spot"
   },
   {
-    "id_appointment": 28,
+    "id_appointment": 33,
     "id_room": 3,
     "room_name": "Ruang Konsultasi dr. Cindy (DPK)",
     "outlet_id": 1,
@@ -672,7 +792,7 @@
     "note": "Konsultasi & Tindakan Pico Neck Laser"
   },
   {
-    "id_appointment": 29,
+    "id_appointment": 34,
     "id_room": 4,
     "room_name": "Ruang Laser Alma 1 (PDK)",
     "outlet_id": 2,
@@ -696,7 +816,7 @@
     "note": "Konsultasi & Tindakan Kefir Microdermabrasion"
   },
   {
-    "id_appointment": 30,
+    "id_appointment": 35,
     "id_room": 5,
     "room_name": "Ruang Facial VIP (PDK)",
     "outlet_id": 2,
@@ -720,7 +840,31 @@
     "note": "Konsultasi & Tindakan Instant Hollywood Glow"
   },
   {
-    "id_appointment": 31,
+    "id_appointment": 36,
+    "id_room": 1,
+    "room_name": "Ruang Laser Pico 1 (DPK)",
+    "outlet_id": 2,
+    "come_date": "2026-11-15 20:00:00",
+    "customer_id": 51,
+    "patient": {
+      "id": 51,
+      "name": "Tiara Paramita",
+      "phone": "6281290566661",
+      "code": "EM-260500051"
+    },
+    "doctor_id": 2,
+    "doctor_name": "dr. Farah Diba Sp.D.V.E",
+    "treatment_name": "PDT Face",
+    "status_appointment": 1,
+    "status": "Confirmed",
+    "status_name": "Confirmed (Terjadwal)",
+    "status_color": {
+      "name": "Confirmed"
+    },
+    "note": "Konsultasi & Tindakan PDT Face"
+  },
+  {
+    "id_appointment": 37,
     "id_room": 1,
     "room_name": "Ruang Laser Pico 1 (DPK)",
     "outlet_id": 1,
@@ -744,7 +888,7 @@
     "note": "Konsultasi & Tindakan Instant Hollywood Glow"
   },
   {
-    "id_appointment": 32,
+    "id_appointment": 38,
     "id_room": 2,
     "room_name": "Ruang Facial & Estetika 1 (DPK)",
     "outlet_id": 1,
@@ -768,7 +912,7 @@
     "note": "Konsultasi & Tindakan PDT Face"
   },
   {
-    "id_appointment": 33,
+    "id_appointment": 39,
     "id_room": 3,
     "room_name": "Ruang Konsultasi dr. Cindy (DPK)",
     "outlet_id": 1,
@@ -792,7 +936,7 @@
     "note": "Konsultasi & Tindakan Pico Lip Laser"
   },
   {
-    "id_appointment": 34,
+    "id_appointment": 40,
     "id_room": 4,
     "room_name": "Ruang Laser Alma 1 (PDK)",
     "outlet_id": 2,
@@ -816,7 +960,7 @@
     "note": "Konsultasi & Tindakan Kefir 14 in 1 Crystal Dew"
   },
   {
-    "id_appointment": 35,
+    "id_appointment": 41,
     "id_room": 5,
     "room_name": "Ruang Facial VIP (PDK)",
     "outlet_id": 2,
@@ -838,5 +982,29 @@
       "name": "Confirmed"
     },
     "note": "Konsultasi & Tindakan Luxury Yoga Face"
+  },
+  {
+    "id_appointment": 42,
+    "id_room": 1,
+    "room_name": "Ruang Laser Pico 1 (DPK)",
+    "outlet_id": 2,
+    "come_date": "2026-11-16 20:00:00",
+    "customer_id": 54,
+    "patient": {
+      "id": 54,
+      "name": "Natasya Pratama",
+      "phone": "6281290599994",
+      "code": "EM-260500054"
+    },
+    "doctor_id": 2,
+    "doctor_name": "dr. Farah Diba Sp.D.V.E",
+    "treatment_name": "Pico Face Laser",
+    "status_appointment": 1,
+    "status": "Confirmed",
+    "status_name": "Confirmed (Terjadwal)",
+    "status_color": {
+      "name": "Confirmed"
+    },
+    "note": "Konsultasi & Tindakan Pico Face Laser"
   }
 ]

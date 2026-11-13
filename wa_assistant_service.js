@@ -3,9 +3,17 @@
  * Multi-device Baileys client yang otomatis mendeteksi peran staf dari nomor WhatsApp pengirim.
  */
 
-const { default: makeWASocket, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, downloadMediaMessage } = require('@whiskeysockets/baileys');
-const pino = require('pino');
-const QRCode = require('qrcode');
+let makeWASocket = null, useMultiFileAuthState = null, DisconnectReason = { loggedOut: 401 }, fetchLatestBaileysVersion = null, downloadMediaMessage = null;
+let pino = () => ({ level: 'silent', info() {}, error() {}, warn() {}, debug() {} });
+let QRCode = { toDataURL: async () => '' };
+
+try {
+  ({ default: makeWASocket, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, downloadMediaMessage } = require('@whiskeysockets/baileys'));
+} catch (e) {
+  makeWASocket = null;
+}
+try { pino = require('pino'); } catch (e) {}
+try { QRCode = require('qrcode'); } catch (e) {}
 const path = require('path');
 const fs = require('fs');
 const { processMultiRoleQueryDetailed, processMultiRoleQuery, callLLM } = require('./ai_executive_assistant');
@@ -564,6 +572,10 @@ function markdownToWhatsApp(text) {
 }
 
 async function initWhatsAppAssistant() {
+  if (!makeWASocket || !useMultiFileAuthState) {
+    connectionStatus = 'Preview Mode (WA Disabled)';
+    return;
+  }
   if (reconnectTimer) { clearTimeout(reconnectTimer); reconnectTimer = null; }
   teardownSocket();
   const myGen = socketGen;

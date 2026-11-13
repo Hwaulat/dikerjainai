@@ -1,0 +1,29 @@
+[
+  {
+    "item_code": "BHP-001",
+    "name": "Kasa Steril 7.5 x 7.5cm (Kotak)",
+    "warehouse": "Depok",
+    "system_stock": 26,
+    "physical_stock": 26,
+    "variance": 0,
+    "date": "2026-11-01"
+  },
+  {
+    "item_code": "BHP-003",
+    "name": "Spuit Syringe 1cc Terumo Ultra",
+    "warehouse": "Depok",
+    "system_stock": 66,
+    "physical_stock": 65,
+    "variance": -1,
+    "date": "2026-11-01"
+  },
+  {
+    "item_code": "BHP-006",
+    "name": "Handscoon Nitrile Non-Powder M (Sens)",
+    "warehouse": "Pondok Kopi",
+    "system_stock": 16,
+    "physical_stock": 16,
+    "variance": 0,
+    "date": "2026-11-01"
+  }
+]

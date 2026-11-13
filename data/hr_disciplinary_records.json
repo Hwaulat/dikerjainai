@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "id": "DISC-001",
+    "staff_name": "Budi Santoso",
+    "staff_role": "Staff Front Office",
+    "date": "2026-11-04",
+    "violation_type": "Keterlambatan Masuk Shift",
+    "sp_level": "Teguran Lisan",
+    "description": "Terlambat hadir shift pagi 25 menit sebanyak 2 kali dalam 1 minggu.",
+    "status": "Active",
+    "action_taken": "Konseling kedisiplinan dan penyesuaian jadwal komuter.",
+    "valid_until": "2027-02-04",
+    "created_by": "HR Management"
+  }
+]

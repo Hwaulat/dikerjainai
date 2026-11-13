@@ -1,0 +1,9 @@
+{
+  "status": "success",
+  "health": "healthy",
+  "endpoints_ok": 12,
+  "endpoints_total": 12,
+  "last_sync_timestamp": "2026-11-13T09:44:32.477Z",
+  "last_sync_formatted": "13 Nov 2026, 16:00 WIB",
+  "last_sync": "2026-11-13T09:44:32.478Z"
+}

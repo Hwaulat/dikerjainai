@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "id": "TC-2611-001",
+    "branch": "Depok",
+    "raw_text": "[Ulasan Rating Rendah: ⭐3/5 | NPS: 7] Waktu tunggu konsultasi agak lama sekitar 25 menit karena ada tindakan pasien sebelumnya yang mundur. Pelayanan dokter tetap ramah dan solutif.",
+    "status": "Resolved",
+    "ai_analysis": {
+      "category": "Waiting Time & Scheduling",
+      "priority": "P2 - HIGH",
+      "sla": "Maksimal 6 Jam",
+      "impact": "Kepuasan Pasien & Efisiensi Ruang Tunggu",
+      "action_recommendation": "Sesuaikan buffer time antar sesi laser dari 10 menit menjadi 15 menit pada jam sibuk (14:00 - 17:00)."
+    },
+    "rca": "Pasien sebelumnya memerlukan anestesi topikal tambahan 15 menit karena ambang nyeri rendah.",
+    "capa": "Briefing perawat untuk cek riwayat toleransi nyeri pasien saat pre-treatment assesment.",
+    "pic": "dr. Cindy Novita / Clinic Head Depok",
+    "resolution_notes": "Pasien sudah dihubungi via WA dan diberikan complimentary eye treatment pada kunjungan berikutnya.",
+    "created_at": "2026-11-08T14:30:00Z"
+  },
+  {
+    "id": "TC-2611-002",
+    "branch": "Pondok Kopi",
+    "raw_text": "[Ulasan Rating Rendah: ⭐3/5 | NPS: 8] Area parkir Pondok Kopi saat weekend agak padat. Fasilitas klinik di dalam sangat nyaman dan bersih.",
+    "status": "Open",
+    "ai_analysis": {
+      "category": "Facility & Parking Access",
+      "priority": "P3 - MEDIUM",
+      "sla": "Maksimal 24 Jam",
+      "impact": "Kenyamanan Akses Pasien",
+      "action_recommendation": "Koordinasikan dengan petugas keamanan gedung sebelah untuk opsi vallet/overflow parking weekend."
+    },
+    "rca": "Lonjakan kunjungan weekend Sabtu sore bersamaan dengan reservasi facial.",
+    "capa": "Pemasangan signage arahan parkir tambahan dan koordinasi sekuriti.",
+    "pic": "Operational Lead PDK",
+    "resolution_notes": "Sedang dalam penjajakan MoU slot parkir cadangan.",
+    "created_at": "2026-11-11T16:00:00Z"
+  }
+]

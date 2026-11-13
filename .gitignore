@@ -26,10 +26,10 @@ data/neosoft_db/.sync.lock
 # ── Data hasil sinkronisasi (bukan source code) ──────────────────────────
 # Diregenerasi oleh scripts/sync_neosoft.py & scripts/sync_google_sheets.py.
 # Tiap run menghasilkan puluhan ribu baris diff, jadi tidak layak masuk git.
-# Data dummy Neosoft agar terbawa ke deployment Vercel
+# Data dummy Neosoft & Google Sheets agar terbawa ke deployment Vercel
 # data/neosoft_db/*.json
 data/neosoft_db/.tmp_*
-data/google_sheets_db/*.json
+# data/google_sheets_db/*.json
 
 # Kredensial API Neosoft — JANGAN pernah di-commit
 data/neosoft_db/token.txt

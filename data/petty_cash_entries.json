@@ -1,0 +1,38 @@
+[
+  {
+    "id": "PC-001",
+    "period": "2026-11",
+    "date": "2026-11-02",
+    "description": "Beli Air Mineral Galon Aqua & Kopi Ruang Tunggu VIP",
+    "amount": 185000,
+    "category": "Konsumsi Pasien",
+    "added_by": "Front Office Depok"
+  },
+  {
+    "id": "PC-002",
+    "period": "2026-11",
+    "date": "2026-11-05",
+    "description": "Beli Kertas Thermal EDC 10 Roll & Kertas A4",
+    "amount": 165000,
+    "category": "ATK & Kasir",
+    "added_by": "Kasir Depok"
+  },
+  {
+    "id": "PC-003",
+    "period": "2026-11",
+    "date": "2026-11-07",
+    "description": "Isi Ulang Gas Desinfeksi Ruangan & Cairan Pembersih Lantai",
+    "amount": 240000,
+    "category": "Kebersihan & Sanitasi",
+    "added_by": "Housekeeping PDK"
+  },
+  {
+    "id": "PC-004",
+    "period": "2026-11",
+    "date": "2026-11-10",
+    "description": "Baterai Cadangan Oximeter & Tensimeter Digital",
+    "amount": 95000,
+    "category": "BHP Medis Kecil",
+    "added_by": "Suster Maya"
+  }
+]

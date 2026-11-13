@@ -1,0 +1,50 @@
+[
+  {
+    "id": "CL-2026-11-12-DPK",
+    "date": "2026-11-12",
+    "branch": "Depok",
+    "cash": 3200000,
+    "edc": 12500000,
+    "qris": 4800000,
+    "transfer": 2500000,
+    "notes": "Closing shift 2 selesai, setoran fisik klop.",
+    "entered_by": "Kasir Depok",
+    "entered_at": "2026-11-12T21:15:00Z"
+  },
+  {
+    "id": "CL-2026-11-12-PDK",
+    "date": "2026-11-12",
+    "branch": "Pondok Kopi",
+    "cash": 2100000,
+    "edc": 9800000,
+    "qris": 3900000,
+    "transfer": 1500000,
+    "notes": "Semua settlement batch EDC approved.",
+    "entered_by": "Kasir PDK",
+    "entered_at": "2026-11-12T21:10:00Z"
+  },
+  {
+    "id": "CL-2026-11-11-DPK",
+    "date": "2026-11-11",
+    "branch": "Depok",
+    "cash": 2800000,
+    "edc": 11200000,
+    "qris": 4200000,
+    "transfer": 1800000,
+    "notes": "Kliring harian sesuai.",
+    "entered_by": "Kasir Depok",
+    "entered_at": "2026-11-11T21:05:00Z"
+  },
+  {
+    "id": "CL-2026-11-11-PDK",
+    "date": "2026-11-11",
+    "branch": "Pondok Kopi",
+    "cash": 1950000,
+    "edc": 8900000,
+    "qris": 3100000,
+    "transfer": 1200000,
+    "notes": "Semua batch klop.",
+    "entered_by": "Kasir PDK",
+    "entered_at": "2026-11-11T21:00:00Z"
+  }
+]

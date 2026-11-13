@@ -1,0 +1,29 @@
+[
+  {
+    "id": "PO-2611-001",
+    "date": "2026-11-05",
+    "supplier": "PT IDS Medical Systems",
+    "branch": "Depok",
+    "total_items": 2,
+    "total_amount": 3250000,
+    "status": "Approved"
+  },
+  {
+    "id": "PO-2611-002",
+    "date": "2026-11-08",
+    "supplier": "PT Regen Prime Aesthetics",
+    "branch": "Pondok Kopi",
+    "total_items": 1,
+    "total_amount": 12000000,
+    "status": "Delivered"
+  },
+  {
+    "id": "PO-2611-003",
+    "date": "2026-11-11",
+    "supplier": "PT Kimia Farma Medika",
+    "branch": "Depok",
+    "total_items": 4,
+    "total_amount": 1850000,
+    "status": "Pending Approval"
+  }
+]

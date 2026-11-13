@@ -5,10 +5,10 @@
     "patient_name": "Clarissa Valerie",
     "doctor_name": "dr. Cindy Novita",
     "treatment_code": "T-001",
-    "treatment_name": "Pico Glow Laser (Sesi 2)",
+    "treatment_name": "Pico Glow Laser Treatment (Sesi 2)",
     "recommended_date": "2026-11-28",
     "status": "Pending Booking",
-    "notes": "Lanjutkan sesi 2 untuk optimalisasi pembersihan flek melanin."
+    "notes": "Lanjutkan sesi 2 untuk optimalisasi pembersihan flek melanin area pipi."
   },
   {
     "id": "REC-002",
@@ -20,5 +20,27 @@
     "recommended_date": "2026-12-05",
     "status": "Contacted",
     "notes": "Kombinasikan dengan Cica Barrier Soothing Toner di rumah."
+  },
+  {
+    "id": "REC-003",
+    "patient_id": 14,
+    "patient_name": "Bunga Citra",
+    "doctor_name": "dr. Farah Diba Sp.D.V.E",
+    "treatment_code": "T-002",
+    "treatment_name": "HydraFacial Deep Cleansing",
+    "recommended_date": "2026-11-25",
+    "status": "Follow Up Sent",
+    "notes": "Facial rutin bulanan untuk menjaga kebersihan komedo."
+  },
+  {
+    "id": "REC-004",
+    "patient_id": 31,
+    "patient_name": "Putri Wulandari",
+    "doctor_name": "dr. Amanda Putri",
+    "treatment_code": "T-006",
+    "treatment_name": "Alma Harmony Rejuvenation Laser",
+    "recommended_date": "2026-12-01",
+    "status": "Pending Booking",
+    "notes": "Toning laser untuk mengencangkan tekstur kulit wajah."
   }
 ]

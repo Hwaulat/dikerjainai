@@ -1,1 +1,84 @@
-[]
+[
+  {
+    "id": "SOP-CHK-DPK-01",
+    "branch": "Depok",
+    "shift": "Shift Pagi (09:00 - 15:00)",
+    "date": "2026-11-13",
+    "auditor": "Suster Maya Kusuma",
+    "compliance_score": 100,
+    "items": [
+      {
+        "item": "Sterilisasi handpiece laser Pico dengan alkohol 70% & optical wipe",
+        "status": "Pass"
+      },
+      {
+        "item": "Pengecekan suhu chiller mesin laser Alma (18-20°C)",
+        "status": "Pass"
+      },
+      {
+        "item": "Kalibrasi autoclave dan uji strip indikator steril",
+        "status": "Pass"
+      },
+      {
+        "item": "Kerapian & higienitas linen bed facial per pasien baru",
+        "status": "Pass"
+      },
+      {
+        "item": "Pemeriksaan expired date BHP di trolley tindakan",
+        "status": "Pass"
+      }
+    ]
+  },
+  {
+    "id": "SOP-CHK-PDK-01",
+    "branch": "Pondok Kopi",
+    "shift": "Shift Pagi (09:00 - 15:00)",
+    "date": "2026-11-13",
+    "auditor": "Terapis Dewi Lestari",
+    "compliance_score": 95,
+    "items": [
+      {
+        "item": "Pembersihan jarum suction HydraFacial & desinfeksi tabung",
+        "status": "Pass"
+      },
+      {
+        "item": "Kesiapan emergency kit & injeksi antihistamin di ruang dokter",
+        "status": "Pass"
+      },
+      {
+        "item": "Kelengkapan form informed consent sebelum tindakan invasive",
+        "status": "Pass"
+      },
+      {
+        "item": "Pengecekan stok krim anestesi topikal",
+        "status": "Pass"
+      },
+      {
+        "item": "Pembersihan filter udara HEPA ruang tindakan",
+        "status": "Pass"
+      }
+    ]
+  },
+  {
+    "id": "SOP-CHK-DPK-02",
+    "branch": "Depok",
+    "shift": "Shift Sore (15:00 - 21:00)",
+    "date": "2026-11-12",
+    "auditor": "Suster Rina Anggraini",
+    "compliance_score": 100,
+    "items": [
+      {
+        "item": "Disinfeksi seluruh ruangan tindakan & sinar UV 30 menit",
+        "status": "Pass"
+      },
+      {
+        "item": "Pencatatan sisa BHP & penutupan safety box jarum medis",
+        "status": "Pass"
+      },
+      {
+        "item": "Penguncian lemari obat keras & skinbooster kulkas 2-8°C",
+        "status": "Pass"
+      }
+    ]
+  }
+]

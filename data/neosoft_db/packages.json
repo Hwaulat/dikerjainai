@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Paket Pico Glow Laser (5x Sesi)",
+    "price": 5625000,
+    "sessions": 5,
+    "product_id": 1
+  },
+  {
+    "id": 2,
+    "name": "Paket HydraFacial Deep Cleansing (4x Sesi)",
+    "price": 2340000,
+    "sessions": 4,
+    "product_id": 2
+  },
+  {
+    "id": 3,
+    "name": "Paket Rejuran Healer Salmon DNA (3x Sesi)",
+    "price": 10395000,
+    "sessions": 3,
+    "product_id": 3
+  },
+  {
+    "id": 4,
+    "name": "Paket Alma Harmony Laser (5x Sesi)",
+    "price": 6525000,
+    "sessions": 5,
+    "product_id": 6
+  }
+]

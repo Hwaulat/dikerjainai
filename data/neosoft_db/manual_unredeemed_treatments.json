@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "patient_name": "Clarissa Valerie",
+    "phone": "6281298765408",
+    "branch": "Depok",
+    "treatment": "Pico Glow Laser Treatment",
+    "remaining": 3,
+    "total_sessions": 5,
+    "inv_code": "INV-D-261015-0001",
+    "last_visit": "2026-11-02",
+    "status": "Aktif"
+  },
+  {
+    "id": 2,
+    "patient_name": "Bunga Citra",
+    "phone": "6281298765414",
+    "branch": "Depok",
+    "treatment": "HydraFacial Deep Cleansing",
+    "remaining": 2,
+    "total_sessions": 4,
+    "inv_code": "INV-D-261010-0008",
+    "last_visit": "2026-10-28",
+    "status": "Aktif"
+  },
+  {
+    "id": 3,
+    "patient_name": "Nadia Salsabila",
+    "phone": "6281298765422",
+    "branch": "Pondok Kopi",
+    "treatment": "Rejuran Healer Salmon DNA",
+    "remaining": 2,
+    "total_sessions": 3,
+    "inv_code": "INV-P-261101-0007",
+    "last_visit": "2026-11-08",
+    "status": "Aktif"
+  },
+  {
+    "id": 4,
+    "patient_name": "Putri Wulandari",
+    "phone": "6281298765431",
+    "branch": "Depok",
+    "treatment": "Alma Harmony Rejuvenation Laser",
+    "remaining": 4,
+    "total_sessions": 5,
+    "inv_code": "INV-D-261025-0009",
+    "last_visit": "2026-11-01",
+    "status": "Aktif"
+  }
+]

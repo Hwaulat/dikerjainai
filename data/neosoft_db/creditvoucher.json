@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "customer_id": 1,
+    "voucher_code": "CV-2611-001",
+    "amount": 250000,
+    "balance": 250000,
+    "expired_date": "2027-12-31",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "customer_id": 5,
+    "voucher_code": "CV-2611-002",
+    "amount": 500000,
+    "balance": 500000,
+    "expired_date": "2027-12-31",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "customer_id": 8,
+    "voucher_code": "CV-2611-003",
+    "amount": 200000,
+    "balance": 200000,
+    "expired_date": "2027-06-30",
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "customer_id": 14,
+    "voucher_code": "CV-2611-004",
+    "amount": 300000,
+    "balance": 300000,
+    "expired_date": "2027-06-30",
+    "status": "Active"
+  }
+]

@@ -1,0 +1,722 @@
+[
+  {
+    "id": 1,
+    "customer_id": 3,
+    "outlet_id": 1,
+    "examination_date": "2026-11-02 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 2,
+    "created_at": "2026-11-02 10:15:00"
+  },
+  {
+    "id": 2,
+    "customer_id": 3,
+    "outlet_id": 1,
+    "examination_date": "2026-11-02 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 2,
+    "created_at": "2026-11-02 11:45:00"
+  },
+  {
+    "id": 3,
+    "customer_id": 5,
+    "outlet_id": 2,
+    "examination_date": "2026-11-03 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 3,
+    "created_at": "2026-11-03 10:15:00"
+  },
+  {
+    "id": 4,
+    "customer_id": 5,
+    "outlet_id": 2,
+    "examination_date": "2026-11-03 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 3,
+    "created_at": "2026-11-03 11:45:00"
+  },
+  {
+    "id": 5,
+    "customer_id": 7,
+    "outlet_id": 1,
+    "examination_date": "2026-11-04 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 4,
+    "created_at": "2026-11-04 10:15:00"
+  },
+  {
+    "id": 6,
+    "customer_id": 7,
+    "outlet_id": 1,
+    "examination_date": "2026-11-04 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 4,
+    "created_at": "2026-11-04 11:45:00"
+  },
+  {
+    "id": 7,
+    "customer_id": 9,
+    "outlet_id": 2,
+    "examination_date": "2026-11-05 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 1,
+    "created_at": "2026-11-05 10:15:00"
+  },
+  {
+    "id": 8,
+    "customer_id": 9,
+    "outlet_id": 2,
+    "examination_date": "2026-11-05 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 1,
+    "created_at": "2026-11-05 11:45:00"
+  },
+  {
+    "id": 9,
+    "customer_id": 11,
+    "outlet_id": 1,
+    "examination_date": "2026-11-06 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 2,
+    "created_at": "2026-11-06 10:15:00"
+  },
+  {
+    "id": 10,
+    "customer_id": 11,
+    "outlet_id": 1,
+    "examination_date": "2026-11-06 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 2,
+    "created_at": "2026-11-06 11:45:00"
+  },
+  {
+    "id": 11,
+    "customer_id": 13,
+    "outlet_id": 2,
+    "examination_date": "2026-11-07 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 3,
+    "created_at": "2026-11-07 10:15:00"
+  },
+  {
+    "id": 12,
+    "customer_id": 13,
+    "outlet_id": 2,
+    "examination_date": "2026-11-07 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 3,
+    "created_at": "2026-11-07 11:45:00"
+  },
+  {
+    "id": 13,
+    "customer_id": 15,
+    "outlet_id": 1,
+    "examination_date": "2026-11-08 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 4,
+    "created_at": "2026-11-08 10:15:00"
+  },
+  {
+    "id": 14,
+    "customer_id": 15,
+    "outlet_id": 1,
+    "examination_date": "2026-11-08 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 4,
+    "created_at": "2026-11-08 11:45:00"
+  },
+  {
+    "id": 15,
+    "customer_id": 17,
+    "outlet_id": 2,
+    "examination_date": "2026-11-09 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 1,
+    "created_at": "2026-11-09 10:15:00"
+  },
+  {
+    "id": 16,
+    "customer_id": 17,
+    "outlet_id": 2,
+    "examination_date": "2026-11-09 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 1,
+    "created_at": "2026-11-09 11:45:00"
+  },
+  {
+    "id": 17,
+    "customer_id": 19,
+    "outlet_id": 1,
+    "examination_date": "2026-11-01 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 2,
+    "created_at": "2026-11-01 10:15:00"
+  },
+  {
+    "id": 18,
+    "customer_id": 19,
+    "outlet_id": 1,
+    "examination_date": "2026-11-01 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 2,
+    "created_at": "2026-11-01 11:45:00"
+  },
+  {
+    "id": 19,
+    "customer_id": 21,
+    "outlet_id": 2,
+    "examination_date": "2026-11-02 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 3,
+    "created_at": "2026-11-02 10:15:00"
+  },
+  {
+    "id": 20,
+    "customer_id": 21,
+    "outlet_id": 2,
+    "examination_date": "2026-11-02 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 3,
+    "created_at": "2026-11-02 11:45:00"
+  },
+  {
+    "id": 21,
+    "customer_id": 23,
+    "outlet_id": 1,
+    "examination_date": "2026-11-03 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 4,
+    "created_at": "2026-11-03 10:15:00"
+  },
+  {
+    "id": 22,
+    "customer_id": 23,
+    "outlet_id": 1,
+    "examination_date": "2026-11-03 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 4,
+    "created_at": "2026-11-03 11:45:00"
+  },
+  {
+    "id": 23,
+    "customer_id": 25,
+    "outlet_id": 2,
+    "examination_date": "2026-11-04 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 1,
+    "created_at": "2026-11-04 10:15:00"
+  },
+  {
+    "id": 24,
+    "customer_id": 25,
+    "outlet_id": 2,
+    "examination_date": "2026-11-04 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 1,
+    "created_at": "2026-11-04 11:45:00"
+  },
+  {
+    "id": 25,
+    "customer_id": 27,
+    "outlet_id": 1,
+    "examination_date": "2026-11-05 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 2,
+    "created_at": "2026-11-05 10:15:00"
+  },
+  {
+    "id": 26,
+    "customer_id": 27,
+    "outlet_id": 1,
+    "examination_date": "2026-11-05 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 2,
+    "created_at": "2026-11-05 11:45:00"
+  },
+  {
+    "id": 27,
+    "customer_id": 29,
+    "outlet_id": 2,
+    "examination_date": "2026-11-06 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 3,
+    "created_at": "2026-11-06 10:15:00"
+  },
+  {
+    "id": 28,
+    "customer_id": 29,
+    "outlet_id": 2,
+    "examination_date": "2026-11-06 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 3,
+    "created_at": "2026-11-06 11:45:00"
+  },
+  {
+    "id": 29,
+    "customer_id": 31,
+    "outlet_id": 1,
+    "examination_date": "2026-11-07 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 4,
+    "created_at": "2026-11-07 10:15:00"
+  },
+  {
+    "id": 30,
+    "customer_id": 31,
+    "outlet_id": 1,
+    "examination_date": "2026-11-07 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 4,
+    "created_at": "2026-11-07 11:45:00"
+  },
+  {
+    "id": 31,
+    "customer_id": 33,
+    "outlet_id": 2,
+    "examination_date": "2026-11-08 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 1,
+    "created_at": "2026-11-08 10:15:00"
+  },
+  {
+    "id": 32,
+    "customer_id": 33,
+    "outlet_id": 2,
+    "examination_date": "2026-11-08 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 1,
+    "created_at": "2026-11-08 11:45:00"
+  },
+  {
+    "id": 33,
+    "customer_id": 35,
+    "outlet_id": 1,
+    "examination_date": "2026-11-09 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 2,
+    "created_at": "2026-11-09 10:15:00"
+  },
+  {
+    "id": 34,
+    "customer_id": 35,
+    "outlet_id": 1,
+    "examination_date": "2026-11-09 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 2,
+    "created_at": "2026-11-09 11:45:00"
+  },
+  {
+    "id": 35,
+    "customer_id": 37,
+    "outlet_id": 2,
+    "examination_date": "2026-11-01 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 3,
+    "created_at": "2026-11-01 10:15:00"
+  },
+  {
+    "id": 36,
+    "customer_id": 37,
+    "outlet_id": 2,
+    "examination_date": "2026-11-01 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 3,
+    "created_at": "2026-11-01 11:45:00"
+  },
+  {
+    "id": 37,
+    "customer_id": 39,
+    "outlet_id": 1,
+    "examination_date": "2026-11-02 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 4,
+    "created_at": "2026-11-02 10:15:00"
+  },
+  {
+    "id": 38,
+    "customer_id": 39,
+    "outlet_id": 1,
+    "examination_date": "2026-11-02 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 4,
+    "created_at": "2026-11-02 11:45:00"
+  },
+  {
+    "id": 39,
+    "customer_id": 41,
+    "outlet_id": 2,
+    "examination_date": "2026-11-03 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 1,
+    "created_at": "2026-11-03 10:15:00"
+  },
+  {
+    "id": 40,
+    "customer_id": 41,
+    "outlet_id": 2,
+    "examination_date": "2026-11-03 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 1,
+    "created_at": "2026-11-03 11:45:00"
+  },
+  {
+    "id": 41,
+    "customer_id": 43,
+    "outlet_id": 1,
+    "examination_date": "2026-11-04 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 2,
+    "created_at": "2026-11-04 10:15:00"
+  },
+  {
+    "id": 42,
+    "customer_id": 43,
+    "outlet_id": 1,
+    "examination_date": "2026-11-04 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 2,
+    "created_at": "2026-11-04 11:45:00"
+  },
+  {
+    "id": 43,
+    "customer_id": 45,
+    "outlet_id": 2,
+    "examination_date": "2026-11-05 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 3,
+    "created_at": "2026-11-05 10:15:00"
+  },
+  {
+    "id": 44,
+    "customer_id": 45,
+    "outlet_id": 2,
+    "examination_date": "2026-11-05 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 3,
+    "created_at": "2026-11-05 11:45:00"
+  },
+  {
+    "id": 45,
+    "customer_id": 47,
+    "outlet_id": 1,
+    "examination_date": "2026-11-06 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 4,
+    "created_at": "2026-11-06 10:15:00"
+  },
+  {
+    "id": 46,
+    "customer_id": 47,
+    "outlet_id": 1,
+    "examination_date": "2026-11-06 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 4,
+    "created_at": "2026-11-06 11:45:00"
+  },
+  {
+    "id": 47,
+    "customer_id": 49,
+    "outlet_id": 2,
+    "examination_date": "2026-11-07 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 1,
+    "created_at": "2026-11-07 10:15:00"
+  },
+  {
+    "id": 48,
+    "customer_id": 49,
+    "outlet_id": 2,
+    "examination_date": "2026-11-07 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 1,
+    "created_at": "2026-11-07 11:45:00"
+  },
+  {
+    "id": 49,
+    "customer_id": 51,
+    "outlet_id": 1,
+    "examination_date": "2026-11-08 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 2,
+    "created_at": "2026-11-08 10:15:00"
+  },
+  {
+    "id": 50,
+    "customer_id": 51,
+    "outlet_id": 1,
+    "examination_date": "2026-11-08 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 2,
+    "created_at": "2026-11-08 11:45:00"
+  },
+  {
+    "id": 51,
+    "customer_id": 53,
+    "outlet_id": 2,
+    "examination_date": "2026-11-09 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 3,
+    "created_at": "2026-11-09 10:15:00"
+  },
+  {
+    "id": 52,
+    "customer_id": 53,
+    "outlet_id": 2,
+    "examination_date": "2026-11-09 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 3,
+    "created_at": "2026-11-09 11:45:00"
+  },
+  {
+    "id": 53,
+    "customer_id": 55,
+    "outlet_id": 1,
+    "examination_date": "2026-11-01 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 4,
+    "created_at": "2026-11-01 10:15:00"
+  },
+  {
+    "id": 54,
+    "customer_id": 55,
+    "outlet_id": 1,
+    "examination_date": "2026-11-01 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 4,
+    "created_at": "2026-11-01 11:45:00"
+  },
+  {
+    "id": 55,
+    "customer_id": 57,
+    "outlet_id": 2,
+    "examination_date": "2026-11-02 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 1,
+    "created_at": "2026-11-02 10:15:00"
+  },
+  {
+    "id": 56,
+    "customer_id": 57,
+    "outlet_id": 2,
+    "examination_date": "2026-11-02 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 1,
+    "created_at": "2026-11-02 11:45:00"
+  },
+  {
+    "id": 57,
+    "customer_id": 59,
+    "outlet_id": 1,
+    "examination_date": "2026-11-03 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 2,
+    "created_at": "2026-11-03 10:15:00"
+  },
+  {
+    "id": 58,
+    "customer_id": 59,
+    "outlet_id": 1,
+    "examination_date": "2026-11-03 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 2,
+    "created_at": "2026-11-03 11:45:00"
+  },
+  {
+    "id": 59,
+    "customer_id": 61,
+    "outlet_id": 2,
+    "examination_date": "2026-11-04 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 3,
+    "created_at": "2026-11-04 10:15:00"
+  },
+  {
+    "id": 60,
+    "customer_id": 61,
+    "outlet_id": 2,
+    "examination_date": "2026-11-04 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 3,
+    "created_at": "2026-11-04 11:45:00"
+  },
+  {
+    "id": 61,
+    "customer_id": 63,
+    "outlet_id": 1,
+    "examination_date": "2026-11-05 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 4,
+    "created_at": "2026-11-05 10:15:00"
+  },
+  {
+    "id": 62,
+    "customer_id": 63,
+    "outlet_id": 1,
+    "examination_date": "2026-11-05 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 4,
+    "created_at": "2026-11-05 11:45:00"
+  },
+  {
+    "id": 63,
+    "customer_id": 65,
+    "outlet_id": 2,
+    "examination_date": "2026-11-06 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 1,
+    "created_at": "2026-11-06 10:15:00"
+  },
+  {
+    "id": 64,
+    "customer_id": 65,
+    "outlet_id": 2,
+    "examination_date": "2026-11-06 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 1,
+    "created_at": "2026-11-06 11:45:00"
+  },
+  {
+    "id": 65,
+    "customer_id": 67,
+    "outlet_id": 1,
+    "examination_date": "2026-11-07 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 2,
+    "created_at": "2026-11-07 10:15:00"
+  },
+  {
+    "id": 66,
+    "customer_id": 67,
+    "outlet_id": 1,
+    "examination_date": "2026-11-07 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 2,
+    "created_at": "2026-11-07 11:45:00"
+  },
+  {
+    "id": 67,
+    "customer_id": 69,
+    "outlet_id": 2,
+    "examination_date": "2026-11-08 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 3,
+    "created_at": "2026-11-08 10:15:00"
+  },
+  {
+    "id": 68,
+    "customer_id": 69,
+    "outlet_id": 2,
+    "examination_date": "2026-11-08 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 3,
+    "created_at": "2026-11-08 11:45:00"
+  },
+  {
+    "id": 69,
+    "customer_id": 71,
+    "outlet_id": 1,
+    "examination_date": "2026-11-09 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 4,
+    "created_at": "2026-11-09 10:15:00"
+  },
+  {
+    "id": 70,
+    "customer_id": 71,
+    "outlet_id": 1,
+    "examination_date": "2026-11-09 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 4,
+    "created_at": "2026-11-09 11:45:00"
+  },
+  {
+    "id": 71,
+    "customer_id": 73,
+    "outlet_id": 2,
+    "examination_date": "2026-11-01 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 1,
+    "created_at": "2026-11-01 10:15:00"
+  },
+  {
+    "id": 72,
+    "customer_id": 73,
+    "outlet_id": 2,
+    "examination_date": "2026-11-01 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 1,
+    "created_at": "2026-11-01 11:45:00"
+  },
+  {
+    "id": 73,
+    "customer_id": 75,
+    "outlet_id": 1,
+    "examination_date": "2026-11-02 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 2,
+    "created_at": "2026-11-02 10:15:00"
+  },
+  {
+    "id": 74,
+    "customer_id": 75,
+    "outlet_id": 1,
+    "examination_date": "2026-11-02 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 2,
+    "created_at": "2026-11-02 11:45:00"
+  },
+  {
+    "id": 75,
+    "customer_id": 77,
+    "outlet_id": 2,
+    "examination_date": "2026-11-03 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 3,
+    "created_at": "2026-11-03 10:15:00"
+  },
+  {
+    "id": 76,
+    "customer_id": 77,
+    "outlet_id": 2,
+    "examination_date": "2026-11-03 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 3,
+    "created_at": "2026-11-03 11:45:00"
+  },
+  {
+    "id": 77,
+    "customer_id": 79,
+    "outlet_id": 1,
+    "examination_date": "2026-11-04 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 4,
+    "created_at": "2026-11-04 10:15:00"
+  },
+  {
+    "id": 78,
+    "customer_id": 79,
+    "outlet_id": 1,
+    "examination_date": "2026-11-04 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 4,
+    "created_at": "2026-11-04 11:45:00"
+  },
+  {
+    "id": 79,
+    "customer_id": 81,
+    "outlet_id": 2,
+    "examination_date": "2026-11-05 10:15:00",
+    "description": "Foto Klinis Sebelum Tindakan (Before Photo) - Tampak Depan & Oblique Kanan",
+    "doctor_id": 1,
+    "created_at": "2026-11-05 10:15:00"
+  },
+  {
+    "id": 80,
+    "customer_id": 81,
+    "outlet_id": 2,
+    "examination_date": "2026-11-05 11:45:00",
+    "description": "Foto Klinis Selesai Tindakan (After Photo) - Post Pico Laser & Masker Calming",
+    "doctor_id": 1,
+    "created_at": "2026-11-05 11:45:00"
+  }
+]

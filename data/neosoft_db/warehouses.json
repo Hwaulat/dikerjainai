@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Gudang Farmasi Depok",
+    "outlet_id": 1
+  },
+  {
+    "id": 2,
+    "name": "Gudang Farmasi Pondok Kopi",
+    "outlet_id": 2
+  }
+]

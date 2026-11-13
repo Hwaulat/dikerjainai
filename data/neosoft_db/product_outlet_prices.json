@@ -1,0 +1,1682 @@
+[
+  {
+    "product_id": 82,
+    "outlet_id": 1,
+    "price": 50000,
+    "status": 1
+  },
+  {
+    "product_id": 82,
+    "outlet_id": 2,
+    "price": 50000,
+    "status": 1
+  },
+  {
+    "product_id": 20,
+    "outlet_id": 1,
+    "price": 195000,
+    "status": 1
+  },
+  {
+    "product_id": 20,
+    "outlet_id": 2,
+    "price": 195000,
+    "status": 1
+  },
+  {
+    "product_id": 21,
+    "outlet_id": 1,
+    "price": 165000,
+    "status": 1
+  },
+  {
+    "product_id": 21,
+    "outlet_id": 2,
+    "price": 165000,
+    "status": 1
+  },
+  {
+    "product_id": 18,
+    "outlet_id": 1,
+    "price": 300000,
+    "status": 1
+  },
+  {
+    "product_id": 18,
+    "outlet_id": 2,
+    "price": 300000,
+    "status": 1
+  },
+  {
+    "product_id": 17,
+    "outlet_id": 1,
+    "price": 325000,
+    "status": 1
+  },
+  {
+    "product_id": 17,
+    "outlet_id": 2,
+    "price": 325000,
+    "status": 1
+  },
+  {
+    "product_id": 16,
+    "outlet_id": 1,
+    "price": 380000,
+    "status": 1
+  },
+  {
+    "product_id": 16,
+    "outlet_id": 2,
+    "price": 380000,
+    "status": 1
+  },
+  {
+    "product_id": 15,
+    "outlet_id": 1,
+    "price": 550000,
+    "status": 1
+  },
+  {
+    "product_id": 15,
+    "outlet_id": 2,
+    "price": 550000,
+    "status": 1
+  },
+  {
+    "product_id": 87,
+    "outlet_id": 1,
+    "price": 39000,
+    "status": 1
+  },
+  {
+    "product_id": 87,
+    "outlet_id": 2,
+    "price": 39000,
+    "status": 1
+  },
+  {
+    "product_id": 457,
+    "outlet_id": 1,
+    "price": 50000,
+    "status": 1
+  },
+  {
+    "product_id": 457,
+    "outlet_id": 2,
+    "price": 50000,
+    "status": 1
+  },
+  {
+    "product_id": 85,
+    "outlet_id": 1,
+    "price": 60000,
+    "status": 1
+  },
+  {
+    "product_id": 85,
+    "outlet_id": 2,
+    "price": 60000,
+    "status": 1
+  },
+  {
+    "product_id": 84,
+    "outlet_id": 1,
+    "price": 60000,
+    "status": 1
+  },
+  {
+    "product_id": 84,
+    "outlet_id": 2,
+    "price": 60000,
+    "status": 1
+  },
+  {
+    "product_id": 24,
+    "outlet_id": 1,
+    "price": 400000,
+    "status": 1
+  },
+  {
+    "product_id": 24,
+    "outlet_id": 2,
+    "price": 400000,
+    "status": 1
+  },
+  {
+    "product_id": 162,
+    "outlet_id": 1,
+    "price": 445000,
+    "status": 1
+  },
+  {
+    "product_id": 162,
+    "outlet_id": 2,
+    "price": 445000,
+    "status": 1
+  },
+  {
+    "product_id": 25,
+    "outlet_id": 1,
+    "price": 400000,
+    "status": 1
+  },
+  {
+    "product_id": 25,
+    "outlet_id": 2,
+    "price": 400000,
+    "status": 1
+  },
+  {
+    "product_id": 26,
+    "outlet_id": 1,
+    "price": 250000,
+    "status": 1
+  },
+  {
+    "product_id": 26,
+    "outlet_id": 2,
+    "price": 250000,
+    "status": 1
+  },
+  {
+    "product_id": 164,
+    "outlet_id": 1,
+    "price": 385000,
+    "status": 1
+  },
+  {
+    "product_id": 164,
+    "outlet_id": 2,
+    "price": 385000,
+    "status": 1
+  },
+  {
+    "product_id": 22,
+    "outlet_id": 1,
+    "price": 480000,
+    "status": 1
+  },
+  {
+    "product_id": 22,
+    "outlet_id": 2,
+    "price": 480000,
+    "status": 1
+  },
+  {
+    "product_id": 113,
+    "outlet_id": 1,
+    "price": 1045000,
+    "status": 1
+  },
+  {
+    "product_id": 113,
+    "outlet_id": 2,
+    "price": 1045000,
+    "status": 1
+  },
+  {
+    "product_id": 111,
+    "outlet_id": 1,
+    "price": 1575000,
+    "status": 1
+  },
+  {
+    "product_id": 111,
+    "outlet_id": 2,
+    "price": 1575000,
+    "status": 1
+  },
+  {
+    "product_id": 114,
+    "outlet_id": 1,
+    "price": 1575000,
+    "status": 1
+  },
+  {
+    "product_id": 114,
+    "outlet_id": 2,
+    "price": 1575000,
+    "status": 1
+  },
+  {
+    "product_id": 58,
+    "outlet_id": 1,
+    "price": 1035000,
+    "status": 1
+  },
+  {
+    "product_id": 58,
+    "outlet_id": 2,
+    "price": 1035000,
+    "status": 1
+  },
+  {
+    "product_id": 112,
+    "outlet_id": 1,
+    "price": 1129000,
+    "status": 1
+  },
+  {
+    "product_id": 112,
+    "outlet_id": 2,
+    "price": 1129000,
+    "status": 1
+  },
+  {
+    "product_id": 23,
+    "outlet_id": 1,
+    "price": 1649000,
+    "status": 1
+  },
+  {
+    "product_id": 23,
+    "outlet_id": 2,
+    "price": 1649000,
+    "status": 1
+  },
+  {
+    "product_id": 103,
+    "outlet_id": 1,
+    "price": 2499000,
+    "status": 1
+  },
+  {
+    "product_id": 103,
+    "outlet_id": 2,
+    "price": 2499000,
+    "status": 1
+  },
+  {
+    "product_id": 105,
+    "outlet_id": 1,
+    "price": 1418000,
+    "status": 1
+  },
+  {
+    "product_id": 105,
+    "outlet_id": 2,
+    "price": 1418000,
+    "status": 1
+  },
+  {
+    "product_id": 104,
+    "outlet_id": 1,
+    "price": 1433000,
+    "status": 1
+  },
+  {
+    "product_id": 104,
+    "outlet_id": 2,
+    "price": 1433000,
+    "status": 1
+  },
+  {
+    "product_id": 109,
+    "outlet_id": 1,
+    "price": 1229000,
+    "status": 1
+  },
+  {
+    "product_id": 109,
+    "outlet_id": 2,
+    "price": 1229000,
+    "status": 1
+  },
+  {
+    "product_id": 108,
+    "outlet_id": 1,
+    "price": 1418000,
+    "status": 1
+  },
+  {
+    "product_id": 108,
+    "outlet_id": 2,
+    "price": 1418000,
+    "status": 1
+  },
+  {
+    "product_id": 106,
+    "outlet_id": 1,
+    "price": 1418000,
+    "status": 1
+  },
+  {
+    "product_id": 106,
+    "outlet_id": 2,
+    "price": 1418000,
+    "status": 1
+  },
+  {
+    "product_id": 107,
+    "outlet_id": 1,
+    "price": 1444000,
+    "status": 1
+  },
+  {
+    "product_id": 107,
+    "outlet_id": 2,
+    "price": 1444000,
+    "status": 1
+  },
+  {
+    "product_id": 100,
+    "outlet_id": 1,
+    "price": 2730000,
+    "status": 1
+  },
+  {
+    "product_id": 100,
+    "outlet_id": 2,
+    "price": 2730000,
+    "status": 1
+  },
+  {
+    "product_id": 94,
+    "outlet_id": 1,
+    "price": 4368000,
+    "status": 1
+  },
+  {
+    "product_id": 94,
+    "outlet_id": 2,
+    "price": 4368000,
+    "status": 1
+  },
+  {
+    "product_id": 102,
+    "outlet_id": 1,
+    "price": 3023000,
+    "status": 1
+  },
+  {
+    "product_id": 102,
+    "outlet_id": 2,
+    "price": 3023000,
+    "status": 1
+  },
+  {
+    "product_id": 96,
+    "outlet_id": 1,
+    "price": 4778000,
+    "status": 1
+  },
+  {
+    "product_id": 96,
+    "outlet_id": 2,
+    "price": 4778000,
+    "status": 1
+  },
+  {
+    "product_id": 101,
+    "outlet_id": 1,
+    "price": 2793000,
+    "status": 1
+  },
+  {
+    "product_id": 101,
+    "outlet_id": 2,
+    "price": 2793000,
+    "status": 1
+  },
+  {
+    "product_id": 95,
+    "outlet_id": 1,
+    "price": 4838000,
+    "status": 1
+  },
+  {
+    "product_id": 95,
+    "outlet_id": 2,
+    "price": 4838000,
+    "status": 1
+  },
+  {
+    "product_id": 98,
+    "outlet_id": 1,
+    "price": 3959000,
+    "status": 1
+  },
+  {
+    "product_id": 98,
+    "outlet_id": 2,
+    "price": 3959000,
+    "status": 1
+  },
+  {
+    "product_id": 90,
+    "outlet_id": 1,
+    "price": 6011000,
+    "status": 1
+  },
+  {
+    "product_id": 90,
+    "outlet_id": 2,
+    "price": 6011000,
+    "status": 1
+  },
+  {
+    "product_id": 99,
+    "outlet_id": 1,
+    "price": 3549000,
+    "status": 1
+  },
+  {
+    "product_id": 99,
+    "outlet_id": 2,
+    "price": 3549000,
+    "status": 1
+  },
+  {
+    "product_id": 93,
+    "outlet_id": 1,
+    "price": 5324000,
+    "status": 1
+  },
+  {
+    "product_id": 93,
+    "outlet_id": 2,
+    "price": 5324000,
+    "status": 1
+  },
+  {
+    "product_id": 117,
+    "outlet_id": 1,
+    "price": 3770000,
+    "status": 1
+  },
+  {
+    "product_id": 117,
+    "outlet_id": 2,
+    "price": 3770000,
+    "status": 1
+  },
+  {
+    "product_id": 118,
+    "outlet_id": 1,
+    "price": 1775000,
+    "status": 1
+  },
+  {
+    "product_id": 118,
+    "outlet_id": 2,
+    "price": 1775000,
+    "status": 1
+  },
+  {
+    "product_id": 116,
+    "outlet_id": 1,
+    "price": 4838000,
+    "status": 1
+  },
+  {
+    "product_id": 116,
+    "outlet_id": 2,
+    "price": 4838000,
+    "status": 1
+  },
+  {
+    "product_id": 115,
+    "outlet_id": 1,
+    "price": 7235000,
+    "status": 1
+  },
+  {
+    "product_id": 115,
+    "outlet_id": 2,
+    "price": 7235000,
+    "status": 1
+  },
+  {
+    "product_id": 97,
+    "outlet_id": 1,
+    "price": 3822000,
+    "status": 1
+  },
+  {
+    "product_id": 97,
+    "outlet_id": 2,
+    "price": 3822000,
+    "status": 1
+  },
+  {
+    "product_id": 91,
+    "outlet_id": 1,
+    "price": 5733000,
+    "status": 1
+  },
+  {
+    "product_id": 91,
+    "outlet_id": 2,
+    "price": 5733000,
+    "status": 1
+  },
+  {
+    "product_id": 92,
+    "outlet_id": 1,
+    "price": 5187000,
+    "status": 1
+  },
+  {
+    "product_id": 92,
+    "outlet_id": 2,
+    "price": 5187000,
+    "status": 1
+  },
+  {
+    "product_id": 89,
+    "outlet_id": 1,
+    "price": 8600000,
+    "status": 1
+  },
+  {
+    "product_id": 89,
+    "outlet_id": 2,
+    "price": 8600000,
+    "status": 1
+  },
+  {
+    "product_id": 129,
+    "outlet_id": 1,
+    "price": 585000,
+    "status": 1
+  },
+  {
+    "product_id": 129,
+    "outlet_id": 2,
+    "price": 585000,
+    "status": 1
+  },
+  {
+    "product_id": 128,
+    "outlet_id": 1,
+    "price": 790000,
+    "status": 1
+  },
+  {
+    "product_id": 128,
+    "outlet_id": 2,
+    "price": 790000,
+    "status": 1
+  },
+  {
+    "product_id": 51,
+    "outlet_id": 1,
+    "price": 240000,
+    "status": 1
+  },
+  {
+    "product_id": 51,
+    "outlet_id": 2,
+    "price": 240000,
+    "status": 1
+  },
+  {
+    "product_id": 132,
+    "outlet_id": 1,
+    "price": 755000,
+    "status": 1
+  },
+  {
+    "product_id": 132,
+    "outlet_id": 2,
+    "price": 755000,
+    "status": 1
+  },
+  {
+    "product_id": 447,
+    "outlet_id": 1,
+    "price": 1340000,
+    "status": 1
+  },
+  {
+    "product_id": 447,
+    "outlet_id": 2,
+    "price": 1340000,
+    "status": 1
+  },
+  {
+    "product_id": 54,
+    "outlet_id": 1,
+    "price": 65000,
+    "status": 1
+  },
+  {
+    "product_id": 54,
+    "outlet_id": 2,
+    "price": 65000,
+    "status": 1
+  },
+  {
+    "product_id": 125,
+    "outlet_id": 1,
+    "price": 1995000,
+    "status": 1
+  },
+  {
+    "product_id": 125,
+    "outlet_id": 2,
+    "price": 1995000,
+    "status": 1
+  },
+  {
+    "product_id": 126,
+    "outlet_id": 1,
+    "price": 3955000,
+    "status": 1
+  },
+  {
+    "product_id": 126,
+    "outlet_id": 2,
+    "price": 3955000,
+    "status": 1
+  },
+  {
+    "product_id": 443,
+    "outlet_id": 1,
+    "price": 365000,
+    "status": 1
+  },
+  {
+    "product_id": 443,
+    "outlet_id": 2,
+    "price": 365000,
+    "status": 1
+  },
+  {
+    "product_id": 58,
+    "outlet_id": 1,
+    "price": 3920000,
+    "status": 1
+  },
+  {
+    "product_id": 58,
+    "outlet_id": 2,
+    "price": 3920000,
+    "status": 1
+  },
+  {
+    "product_id": 127,
+    "outlet_id": 1,
+    "price": 7180000,
+    "status": 1
+  },
+  {
+    "product_id": 127,
+    "outlet_id": 2,
+    "price": 7180000,
+    "status": 1
+  },
+  {
+    "product_id": 60,
+    "outlet_id": 1,
+    "price": 345000,
+    "status": 1
+  },
+  {
+    "product_id": 60,
+    "outlet_id": 2,
+    "price": 345000,
+    "status": 1
+  },
+  {
+    "product_id": 122,
+    "outlet_id": 1,
+    "price": 2100000,
+    "status": 1
+  },
+  {
+    "product_id": 122,
+    "outlet_id": 2,
+    "price": 2100000,
+    "status": 1
+  },
+  {
+    "product_id": 121,
+    "outlet_id": 1,
+    "price": 3600000,
+    "status": 1
+  },
+  {
+    "product_id": 121,
+    "outlet_id": 2,
+    "price": 3600000,
+    "status": 1
+  },
+  {
+    "product_id": 63,
+    "outlet_id": 1,
+    "price": 2655000,
+    "status": 1
+  },
+  {
+    "product_id": 63,
+    "outlet_id": 2,
+    "price": 2655000,
+    "status": 1
+  },
+  {
+    "product_id": 157,
+    "outlet_id": 1,
+    "price": 44500,
+    "status": 1
+  },
+  {
+    "product_id": 157,
+    "outlet_id": 2,
+    "price": 44500,
+    "status": 1
+  },
+  {
+    "product_id": 120,
+    "outlet_id": 1,
+    "price": 4000000,
+    "status": 1
+  },
+  {
+    "product_id": 120,
+    "outlet_id": 2,
+    "price": 4000000,
+    "status": 1
+  },
+  {
+    "product_id": 119,
+    "outlet_id": 1,
+    "price": 7500000,
+    "status": 1
+  },
+  {
+    "product_id": 119,
+    "outlet_id": 2,
+    "price": 7500000,
+    "status": 1
+  },
+  {
+    "product_id": 67,
+    "outlet_id": 1,
+    "price": 7300000,
+    "status": 1
+  },
+  {
+    "product_id": 67,
+    "outlet_id": 2,
+    "price": 7300000,
+    "status": 1
+  },
+  {
+    "product_id": 158,
+    "outlet_id": 1,
+    "price": 85000,
+    "status": 1
+  },
+  {
+    "product_id": 158,
+    "outlet_id": 2,
+    "price": 85000,
+    "status": 1
+  },
+  {
+    "product_id": 79,
+    "outlet_id": 1,
+    "price": 325000,
+    "status": 1
+  },
+  {
+    "product_id": 79,
+    "outlet_id": 2,
+    "price": 325000,
+    "status": 1
+  },
+  {
+    "product_id": 74,
+    "outlet_id": 1,
+    "price": 350000,
+    "status": 1
+  },
+  {
+    "product_id": 74,
+    "outlet_id": 2,
+    "price": 350000,
+    "status": 1
+  },
+  {
+    "product_id": 139,
+    "outlet_id": 1,
+    "price": 6000000,
+    "status": 1
+  },
+  {
+    "product_id": 139,
+    "outlet_id": 2,
+    "price": 6000000,
+    "status": 1
+  },
+  {
+    "product_id": 137,
+    "outlet_id": 1,
+    "price": 6500000,
+    "status": 1
+  },
+  {
+    "product_id": 137,
+    "outlet_id": 2,
+    "price": 6500000,
+    "status": 1
+  },
+  {
+    "product_id": 138,
+    "outlet_id": 1,
+    "price": 5500000,
+    "status": 1
+  },
+  {
+    "product_id": 138,
+    "outlet_id": 2,
+    "price": 5500000,
+    "status": 1
+  },
+  {
+    "product_id": 74,
+    "outlet_id": 1,
+    "price": 3500000,
+    "status": 1
+  },
+  {
+    "product_id": 74,
+    "outlet_id": 2,
+    "price": 3500000,
+    "status": 1
+  },
+  {
+    "product_id": 136,
+    "outlet_id": 1,
+    "price": 5250000,
+    "status": 1
+  },
+  {
+    "product_id": 136,
+    "outlet_id": 2,
+    "price": 5250000,
+    "status": 1
+  },
+  {
+    "product_id": 135,
+    "outlet_id": 1,
+    "price": 5250000,
+    "status": 1
+  },
+  {
+    "product_id": 135,
+    "outlet_id": 2,
+    "price": 5250000,
+    "status": 1
+  },
+  {
+    "product_id": 69,
+    "outlet_id": 1,
+    "price": 450000,
+    "status": 1
+  },
+  {
+    "product_id": 69,
+    "outlet_id": 2,
+    "price": 450000,
+    "status": 1
+  },
+  {
+    "product_id": 78,
+    "outlet_id": 1,
+    "price": 2200000,
+    "status": 1
+  },
+  {
+    "product_id": 78,
+    "outlet_id": 2,
+    "price": 2200000,
+    "status": 1
+  },
+  {
+    "product_id": 79,
+    "outlet_id": 1,
+    "price": 2450000,
+    "status": 1
+  },
+  {
+    "product_id": 79,
+    "outlet_id": 2,
+    "price": 2450000,
+    "status": 1
+  },
+  {
+    "product_id": 80,
+    "outlet_id": 1,
+    "price": 2200000,
+    "status": 1
+  },
+  {
+    "product_id": 80,
+    "outlet_id": 2,
+    "price": 2200000,
+    "status": 1
+  },
+  {
+    "product_id": 448,
+    "outlet_id": 1,
+    "price": 2200000,
+    "status": 1
+  },
+  {
+    "product_id": 448,
+    "outlet_id": 2,
+    "price": 2200000,
+    "status": 1
+  },
+  {
+    "product_id": 124,
+    "outlet_id": 1,
+    "price": 650000,
+    "status": 1
+  },
+  {
+    "product_id": 124,
+    "outlet_id": 2,
+    "price": 650000,
+    "status": 1
+  },
+  {
+    "product_id": 141,
+    "outlet_id": 1,
+    "price": 3600000,
+    "status": 1
+  },
+  {
+    "product_id": 141,
+    "outlet_id": 2,
+    "price": 3600000,
+    "status": 1
+  },
+  {
+    "product_id": 140,
+    "outlet_id": 1,
+    "price": 5500000,
+    "status": 1
+  },
+  {
+    "product_id": 140,
+    "outlet_id": 2,
+    "price": 5500000,
+    "status": 1
+  },
+  {
+    "product_id": 142,
+    "outlet_id": 1,
+    "price": 3300000,
+    "status": 1
+  },
+  {
+    "product_id": 142,
+    "outlet_id": 2,
+    "price": 3300000,
+    "status": 1
+  },
+  {
+    "product_id": 145,
+    "outlet_id": 1,
+    "price": 1800000,
+    "status": 1
+  },
+  {
+    "product_id": 145,
+    "outlet_id": 2,
+    "price": 1800000,
+    "status": 1
+  },
+  {
+    "product_id": 147,
+    "outlet_id": 1,
+    "price": 500000,
+    "status": 1
+  },
+  {
+    "product_id": 147,
+    "outlet_id": 2,
+    "price": 500000,
+    "status": 1
+  },
+  {
+    "product_id": 143,
+    "outlet_id": 1,
+    "price": 3300000,
+    "status": 1
+  },
+  {
+    "product_id": 143,
+    "outlet_id": 2,
+    "price": 3300000,
+    "status": 1
+  },
+  {
+    "product_id": 144,
+    "outlet_id": 1,
+    "price": 2550000,
+    "status": 1
+  },
+  {
+    "product_id": 144,
+    "outlet_id": 2,
+    "price": 2550000,
+    "status": 1
+  },
+  {
+    "product_id": 146,
+    "outlet_id": 1,
+    "price": 675000,
+    "status": 1
+  },
+  {
+    "product_id": 146,
+    "outlet_id": 2,
+    "price": 675000,
+    "status": 1
+  },
+  {
+    "product_id": 83,
+    "outlet_id": 1,
+    "price": 75000,
+    "status": 1
+  },
+  {
+    "product_id": 83,
+    "outlet_id": 2,
+    "price": 75000,
+    "status": 1
+  },
+  {
+    "product_id": 86,
+    "outlet_id": 1,
+    "price": 50000,
+    "status": 1
+  },
+  {
+    "product_id": 86,
+    "outlet_id": 2,
+    "price": 50000,
+    "status": 1
+  },
+  {
+    "product_id": 28,
+    "outlet_id": 1,
+    "price": 699000,
+    "status": 1
+  },
+  {
+    "product_id": 28,
+    "outlet_id": 2,
+    "price": 699000,
+    "status": 1
+  },
+  {
+    "product_id": 445,
+    "outlet_id": 1,
+    "price": 649000,
+    "status": 1
+  },
+  {
+    "product_id": 445,
+    "outlet_id": 2,
+    "price": 649000,
+    "status": 1
+  },
+  {
+    "product_id": 56,
+    "outlet_id": 1,
+    "price": 749000,
+    "status": 1
+  },
+  {
+    "product_id": 56,
+    "outlet_id": 2,
+    "price": 749000,
+    "status": 1
+  },
+  {
+    "product_id": 55,
+    "outlet_id": 1,
+    "price": 1800000,
+    "status": 1
+  },
+  {
+    "product_id": 55,
+    "outlet_id": 2,
+    "price": 1800000,
+    "status": 1
+  },
+  {
+    "product_id": 97,
+    "outlet_id": 1,
+    "price": 500000,
+    "status": 1
+  },
+  {
+    "product_id": 97,
+    "outlet_id": 2,
+    "price": 500000,
+    "status": 1
+  },
+  {
+    "product_id": 52,
+    "outlet_id": 1,
+    "price": 650000,
+    "status": 1
+  },
+  {
+    "product_id": 52,
+    "outlet_id": 2,
+    "price": 650000,
+    "status": 1
+  },
+  {
+    "product_id": 50,
+    "outlet_id": 1,
+    "price": 750000,
+    "status": 1
+  },
+  {
+    "product_id": 50,
+    "outlet_id": 2,
+    "price": 750000,
+    "status": 1
+  },
+  {
+    "product_id": 110,
+    "outlet_id": 1,
+    "price": 1550000,
+    "status": 1
+  },
+  {
+    "product_id": 110,
+    "outlet_id": 2,
+    "price": 1550000,
+    "status": 1
+  },
+  {
+    "product_id": 57,
+    "outlet_id": 1,
+    "price": 850000,
+    "status": 1
+  },
+  {
+    "product_id": 57,
+    "outlet_id": 2,
+    "price": 850000,
+    "status": 1
+  },
+  {
+    "product_id": 59,
+    "outlet_id": 1,
+    "price": 75000,
+    "status": 1
+  },
+  {
+    "product_id": 59,
+    "outlet_id": 2,
+    "price": 75000,
+    "status": 1
+  },
+  {
+    "product_id": 46,
+    "outlet_id": 1,
+    "price": 400000,
+    "status": 1
+  },
+  {
+    "product_id": 46,
+    "outlet_id": 2,
+    "price": 400000,
+    "status": 1
+  },
+  {
+    "product_id": 44,
+    "outlet_id": 1,
+    "price": 500000,
+    "status": 1
+  },
+  {
+    "product_id": 44,
+    "outlet_id": 2,
+    "price": 500000,
+    "status": 1
+  },
+  {
+    "product_id": 42,
+    "outlet_id": 1,
+    "price": 400000,
+    "status": 1
+  },
+  {
+    "product_id": 42,
+    "outlet_id": 2,
+    "price": 400000,
+    "status": 1
+  },
+  {
+    "product_id": 106,
+    "outlet_id": 1,
+    "price": 750000,
+    "status": 1
+  },
+  {
+    "product_id": 106,
+    "outlet_id": 2,
+    "price": 750000,
+    "status": 1
+  },
+  {
+    "product_id": 45,
+    "outlet_id": 1,
+    "price": 400000,
+    "status": 1
+  },
+  {
+    "product_id": 45,
+    "outlet_id": 2,
+    "price": 400000,
+    "status": 1
+  },
+  {
+    "product_id": 43,
+    "outlet_id": 1,
+    "price": 500000,
+    "status": 1
+  },
+  {
+    "product_id": 43,
+    "outlet_id": 2,
+    "price": 500000,
+    "status": 1
+  },
+  {
+    "product_id": 39,
+    "outlet_id": 1,
+    "price": 400000,
+    "status": 1
+  },
+  {
+    "product_id": 39,
+    "outlet_id": 2,
+    "price": 400000,
+    "status": 1
+  },
+  {
+    "product_id": 110,
+    "outlet_id": 1,
+    "price": 750000,
+    "status": 1
+  },
+  {
+    "product_id": 110,
+    "outlet_id": 2,
+    "price": 750000,
+    "status": 1
+  },
+  {
+    "product_id": 35,
+    "outlet_id": 1,
+    "price": 750000,
+    "status": 1
+  },
+  {
+    "product_id": 35,
+    "outlet_id": 2,
+    "price": 750000,
+    "status": 1
+  },
+  {
+    "product_id": 38,
+    "outlet_id": 1,
+    "price": 450000,
+    "status": 1
+  },
+  {
+    "product_id": 38,
+    "outlet_id": 2,
+    "price": 450000,
+    "status": 1
+  },
+  {
+    "product_id": 37,
+    "outlet_id": 1,
+    "price": 450000,
+    "status": 1
+  },
+  {
+    "product_id": 37,
+    "outlet_id": 2,
+    "price": 450000,
+    "status": 1
+  },
+  {
+    "product_id": 88,
+    "outlet_id": 1,
+    "price": 35000,
+    "status": 1
+  },
+  {
+    "product_id": 88,
+    "outlet_id": 2,
+    "price": 35000,
+    "status": 1
+  },
+  {
+    "product_id": 78,
+    "outlet_id": 1,
+    "price": 325000,
+    "status": 1
+  },
+  {
+    "product_id": 78,
+    "outlet_id": 2,
+    "price": 325000,
+    "status": 1
+  },
+  {
+    "product_id": 77,
+    "outlet_id": 1,
+    "price": 349000,
+    "status": 1
+  },
+  {
+    "product_id": 77,
+    "outlet_id": 2,
+    "price": 349000,
+    "status": 1
+  },
+  {
+    "product_id": 76,
+    "outlet_id": 1,
+    "price": 295000,
+    "status": 1
+  },
+  {
+    "product_id": 76,
+    "outlet_id": 2,
+    "price": 295000,
+    "status": 1
+  },
+  {
+    "product_id": 75,
+    "outlet_id": 1,
+    "price": 299000,
+    "status": 1
+  },
+  {
+    "product_id": 75,
+    "outlet_id": 2,
+    "price": 299000,
+    "status": 1
+  },
+  {
+    "product_id": 73,
+    "outlet_id": 1,
+    "price": 550000,
+    "status": 1
+  },
+  {
+    "product_id": 73,
+    "outlet_id": 2,
+    "price": 550000,
+    "status": 1
+  },
+  {
+    "product_id": 81,
+    "outlet_id": 1,
+    "price": 300000,
+    "status": 1
+  },
+  {
+    "product_id": 81,
+    "outlet_id": 2,
+    "price": 300000,
+    "status": 1
+  },
+  {
+    "product_id": 80,
+    "outlet_id": 1,
+    "price": 295000,
+    "status": 1
+  },
+  {
+    "product_id": 80,
+    "outlet_id": 2,
+    "price": 295000,
+    "status": 1
+  },
+  {
+    "product_id": 71,
+    "outlet_id": 1,
+    "price": 650000,
+    "status": 1
+  },
+  {
+    "product_id": 71,
+    "outlet_id": 2,
+    "price": 650000,
+    "status": 1
+  },
+  {
+    "product_id": 72,
+    "outlet_id": 1,
+    "price": 625000,
+    "status": 1
+  },
+  {
+    "product_id": 72,
+    "outlet_id": 2,
+    "price": 625000,
+    "status": 1
+  },
+  {
+    "product_id": 67,
+    "outlet_id": 1,
+    "price": 250000,
+    "status": 1
+  },
+  {
+    "product_id": 67,
+    "outlet_id": 2,
+    "price": 250000,
+    "status": 1
+  },
+  {
+    "product_id": 154,
+    "outlet_id": 1,
+    "price": 350000,
+    "status": 1
+  },
+  {
+    "product_id": 154,
+    "outlet_id": 2,
+    "price": 350000,
+    "status": 1
+  },
+  {
+    "product_id": 160,
+    "outlet_id": 1,
+    "price": 600000,
+    "status": 1
+  },
+  {
+    "product_id": 160,
+    "outlet_id": 2,
+    "price": 600000,
+    "status": 1
+  },
+  {
+    "product_id": 33,
+    "outlet_id": 1,
+    "price": 199000,
+    "status": 1
+  },
+  {
+    "product_id": 33,
+    "outlet_id": 2,
+    "price": 199000,
+    "status": 1
+  },
+  {
+    "product_id": 30,
+    "outlet_id": 1,
+    "price": 245000,
+    "status": 1
+  },
+  {
+    "product_id": 30,
+    "outlet_id": 2,
+    "price": 245000,
+    "status": 1
+  },
+  {
+    "product_id": 31,
+    "outlet_id": 1,
+    "price": 245000,
+    "status": 1
+  },
+  {
+    "product_id": 31,
+    "outlet_id": 2,
+    "price": 245000,
+    "status": 1
+  },
+  {
+    "product_id": 32,
+    "outlet_id": 1,
+    "price": 399000,
+    "status": 1
+  },
+  {
+    "product_id": 32,
+    "outlet_id": 2,
+    "price": 399000,
+    "status": 1
+  },
+  {
+    "product_id": 53,
+    "outlet_id": 1,
+    "price": 550000,
+    "status": 1
+  },
+  {
+    "product_id": 53,
+    "outlet_id": 2,
+    "price": 550000,
+    "status": 1
+  },
+  {
+    "product_id": 51,
+    "outlet_id": 1,
+    "price": 600000,
+    "status": 1
+  },
+  {
+    "product_id": 51,
+    "outlet_id": 2,
+    "price": 600000,
+    "status": 1
+  },
+  {
+    "product_id": 49,
+    "outlet_id": 1,
+    "price": 750000,
+    "status": 1
+  },
+  {
+    "product_id": 49,
+    "outlet_id": 2,
+    "price": 750000,
+    "status": 1
+  },
+  {
+    "product_id": 901,
+    "outlet_id": 1,
+    "price": 165000,
+    "status": 1
+  },
+  {
+    "product_id": 901,
+    "outlet_id": 2,
+    "price": 165000,
+    "status": 1
+  },
+  {
+    "product_id": 902,
+    "outlet_id": 1,
+    "price": 185000,
+    "status": 1
+  },
+  {
+    "product_id": 902,
+    "outlet_id": 2,
+    "price": 185000,
+    "status": 1
+  },
+  {
+    "product_id": 903,
+    "outlet_id": 1,
+    "price": 125000,
+    "status": 1
+  },
+  {
+    "product_id": 903,
+    "outlet_id": 2,
+    "price": 125000,
+    "status": 1
+  },
+  {
+    "product_id": 904,
+    "outlet_id": 1,
+    "price": 145000,
+    "status": 1
+  },
+  {
+    "product_id": 904,
+    "outlet_id": 2,
+    "price": 145000,
+    "status": 1
+  },
+  {
+    "product_id": 905,
+    "outlet_id": 1,
+    "price": 285000,
+    "status": 1
+  },
+  {
+    "product_id": 905,
+    "outlet_id": 2,
+    "price": 285000,
+    "status": 1
+  },
+  {
+    "product_id": 906,
+    "outlet_id": 1,
+    "price": 225000,
+    "status": 1
+  },
+  {
+    "product_id": 906,
+    "outlet_id": 2,
+    "price": 225000,
+    "status": 1
+  },
+  {
+    "product_id": 907,
+    "outlet_id": 1,
+    "price": 195000,
+    "status": 1
+  },
+  {
+    "product_id": 907,
+    "outlet_id": 2,
+    "price": 195000,
+    "status": 1
+  }
+]

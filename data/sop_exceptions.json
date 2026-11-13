@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "id": "SOPE-001",
+    "date": "2026-11-10",
+    "doctor_name": "dr. Cindy Novita",
+    "patient_name": "Clarissa Valerie",
+    "treatment_name": "Pico Glow Laser Treatment",
+    "deviation_reason": "Penurunan fluence laser dari 1.8 J/cm² ke 1.4 J/cm² karena pasien baru kembali dari liburan pantai dengan paparan matahari intens.",
+    "supervisor_approved": true,
+    "supervisor_notes": "Disetujui untuk mencegah hiperpigmentasi reaktif."
+  },
+  {
+    "id": "SOPE-002",
+    "date": "2026-11-08",
+    "doctor_name": "dr. Randy Wijaya",
+    "patient_name": "Nadia Salsabila",
+    "treatment_name": "Rejuran Healer Salmon DNA",
+    "deviation_reason": "Aplikasi anestesi topikal diperpanjang dari 30 menit menjadi 45 menit atas permintaan pasien dengan riwayat sensitif nyeri.",
+    "supervisor_approved": true,
+    "supervisor_notes": "Disetujui, kondisi kulit dipantau tidak ada eritema berlebih."
+  }
+]

@@ -1,0 +1,1208 @@
+{
+  "recent_transactions_nov26": [],
+  "recent_transactions_okt26": [],
+  "recent_transactions_sep26": [],
+  "recent_transactions_agu26": [
+    {
+      "invoice": "INV-D-260801-0001",
+      "patient_name": "Kiki Santoso",
+      "phone": "6281290255553",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 1129000,
+      "date": "2026-08-01",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260801-0002",
+      "patient_name": "Reza Wijaya",
+      "phone": "6281290333330",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 1558000,
+      "date": "2026-08-01",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260801-0003",
+      "patient_name": "Nadia Handayani",
+      "phone": "6281290411107",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 1444000,
+      "date": "2026-08-01",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260802-0001",
+      "patient_name": "Wulan Valerie",
+      "phone": "6281290488884",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 1418000,
+      "date": "2026-08-02",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260802-0002",
+      "patient_name": "Tiara Paramita",
+      "phone": "6281290566661",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 1543000,
+      "date": "2026-08-02",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260802-0003",
+      "patient_name": "Rina Wulandari",
+      "phone": "6281290033333",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 3023000,
+      "date": "2026-08-02",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260802-0004",
+      "patient_name": "Putri Kartika",
+      "phone": "6281290111110",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 4154000,
+      "date": "2026-08-02",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260803-0001",
+      "patient_name": "Ratna Rahmawati",
+      "phone": "6281290188887",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 1418000,
+      "date": "2026-08-03",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260803-0002",
+      "patient_name": "Natasya Dewi",
+      "phone": "6281290266664",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 3148000,
+      "date": "2026-08-03",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260803-0003",
+      "patient_name": "Anisa Hidayat",
+      "phone": "6281290344441",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 3959000,
+      "date": "2026-08-03",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260803-0004",
+      "patient_name": "Clarissa Anggraini",
+      "phone": "6281290422218",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 3965000,
+      "date": "2026-08-03",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260803-0005",
+      "patient_name": "Tania Tan",
+      "phone": "6281290499995",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 3822000,
+      "date": "2026-08-03",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260804-0001",
+      "patient_name": "Lestari Salsabila",
+      "phone": "6281290577772",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 4778000,
+      "date": "2026-08-04",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260804-0002",
+      "patient_name": "Dian Pratama",
+      "phone": "6281290044444",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 6136000,
+      "date": "2026-08-04",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260804-0003",
+      "patient_name": "Jessica Natasha",
+      "phone": "6281290122221",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 1775000,
+      "date": "2026-08-04",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260804-0004",
+      "patient_name": "Indah Citra",
+      "phone": "6281290199998",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 5928000,
+      "date": "2026-08-04",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260804-0005",
+      "patient_name": "Rizky Safitri",
+      "phone": "6281290277775",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 790000,
+      "date": "2026-08-04",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260804-0006",
+      "patient_name": "Siti Utami",
+      "phone": "6281290355552",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 210000,
+      "date": "2026-08-04",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260805-0001",
+      "patient_name": "Aurelia Lubis",
+      "phone": "6281290433329",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 5324000,
+      "date": "2026-08-05",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260805-0002",
+      "patient_name": "Melati Kusuma",
+      "phone": "6281290511106",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 7360000,
+      "date": "2026-08-05",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260805-0003",
+      "patient_name": "Kiki Wulandari",
+      "phone": "6281290588883",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 8600000,
+      "date": "2026-08-05",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260806-0001",
+      "patient_name": "Bunga Wijaya",
+      "phone": "6281290055555",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 4838000,
+      "date": "2026-08-06",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260806-0002",
+      "patient_name": "Fitri Handayani",
+      "phone": "6281290133332",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 5312000,
+      "date": "2026-08-06",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260806-0003",
+      "patient_name": "Shinta Valerie",
+      "phone": "6281290211109",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 240000,
+      "date": "2026-08-06",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260806-0004",
+      "patient_name": "Kevin Paramita",
+      "phone": "6281290288886",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 2190000,
+      "date": "2026-08-06",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260807-0001",
+      "patient_name": "Rina Mulyani",
+      "phone": "6281290366663",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 5187000,
+      "date": "2026-08-07",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260807-0002",
+      "patient_name": "Putri Saputra",
+      "phone": "6281290444440",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 365000,
+      "date": "2026-08-07",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260807-0003",
+      "patient_name": "Ratna Siregar",
+      "phone": "6281290522217",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 1995000,
+      "date": "2026-08-07",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260807-0004",
+      "patient_name": "Natasya Pratama",
+      "phone": "6281290599994",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 7375000,
+      "date": "2026-08-07",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260807-0005",
+      "patient_name": "Maya Hidayat",
+      "phone": "6281290066666",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 2655000,
+      "date": "2026-08-07",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260808-0001",
+      "patient_name": "Desi Anggraini",
+      "phone": "6281290144443",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 755000,
+      "date": "2026-08-08",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260808-0002",
+      "patient_name": "Gita Tan",
+      "phone": "6281290222220",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 4080000,
+      "date": "2026-08-08",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260808-0003",
+      "patient_name": "Dimas Salsabila",
+      "phone": "6281290299997",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 345000,
+      "date": "2026-08-08",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260808-0004",
+      "patient_name": "Dian Nuraini",
+      "phone": "6281290377774",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 239500,
+      "date": "2026-08-08",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260808-0005",
+      "patient_name": "Jessica Pratiwi",
+      "phone": "6281290455551",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 85000,
+      "date": "2026-08-08",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260808-0006",
+      "patient_name": "Indah Santoso",
+      "phone": "6281290533328",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 6645000,
+      "date": "2026-08-08",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260809-0001",
+      "patient_name": "Rizky Wijaya",
+      "phone": "6281290611105",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 3920000,
+      "date": "2026-08-09",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260809-0002",
+      "patient_name": "Nadia Utami",
+      "phone": "6281290077777",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 3725000,
+      "date": "2026-08-09",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260809-0003",
+      "patient_name": "Wulan Lubis",
+      "phone": "6281290155554",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 7500000,
+      "date": "2026-08-09",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260810-0001",
+      "patient_name": "Tiara Kusuma",
+      "phone": "6281290233331",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 2100000,
+      "date": "2026-08-10",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260810-0002",
+      "patient_name": "Bagas Wulandari",
+      "phone": "6281290311108",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 4125000,
+      "date": "2026-08-10",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260810-0003",
+      "patient_name": "Bunga Kartika",
+      "phone": "6281290388885",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 325000,
+      "date": "2026-08-10",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260810-0004",
+      "patient_name": "Fitri Rahmawati",
+      "phone": "6281290466662",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 5695000,
+      "date": "2026-08-10",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260811-0001",
+      "patient_name": "Shinta Dewi",
+      "phone": "6281290544439",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 4000000,
+      "date": "2026-08-11",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260811-0002",
+      "patient_name": "Anisa Paramita",
+      "phone": "6281290011111",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 450000,
+      "date": "2026-08-11",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260811-0003",
+      "patient_name": "Clarissa Mulyani",
+      "phone": "6281290088888",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 5500000,
+      "date": "2026-08-11",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260811-0004",
+      "patient_name": "Tania Saputra",
+      "phone": "6281290166665",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 645000,
+      "date": "2026-08-11",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260811-0005",
+      "patient_name": "Lestari Siregar",
+      "phone": "6281290244442",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 2200000,
+      "date": "2026-08-11",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260812-0001",
+      "patient_name": "Aldo Pratama",
+      "phone": "6281290322219",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 350000,
+      "date": "2026-08-12",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260812-0002",
+      "patient_name": "Maya Natasha",
+      "phone": "6281290399996",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 3625000,
+      "date": "2026-08-12",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260812-0003",
+      "patient_name": "Desi Citra",
+      "phone": "6281290477773",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 2200000,
+      "date": "2026-08-12",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260812-0004",
+      "patient_name": "Gita Safitri",
+      "phone": "6281290555550",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 845000,
+      "date": "2026-08-12",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260812-0005",
+      "patient_name": "Siti Salsabila",
+      "phone": "6281290022222",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 1800000,
+      "date": "2026-08-12",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260812-0006",
+      "patient_name": "Aurelia Nuraini",
+      "phone": "6281290099999",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 820000,
+      "date": "2026-08-12",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260813-0001",
+      "patient_name": "Melati Pratiwi",
+      "phone": "6281290177776",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 5250000,
+      "date": "2026-08-13",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260813-0002",
+      "patient_name": "Kiki Santoso",
+      "phone": "6281290255553",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 2325000,
+      "date": "2026-08-13",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260813-0003",
+      "patient_name": "Reza Wijaya",
+      "phone": "6281290333330",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 5500000,
+      "date": "2026-08-13",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260814-0001",
+      "patient_name": "Nadia Handayani",
+      "phone": "6281290411107",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 2450000,
+      "date": "2026-08-14",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260814-0002",
+      "patient_name": "Wulan Valerie",
+      "phone": "6281290488884",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 3725000,
+      "date": "2026-08-14",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260814-0003",
+      "patient_name": "Tiara Paramita",
+      "phone": "6281290566661",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 500000,
+      "date": "2026-08-14",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260814-0004",
+      "patient_name": "Rina Wulandari",
+      "phone": "6281290033333",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 270000,
+      "date": "2026-08-14",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260815-0001",
+      "patient_name": "Putri Kartika",
+      "phone": "6281290111110",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 3600000,
+      "date": "2026-08-15",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260815-0002",
+      "patient_name": "Ratna Rahmawati",
+      "phone": "6281290188887",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 625000,
+      "date": "2026-08-15",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260815-0003",
+      "patient_name": "Natasya Dewi",
+      "phone": "6281290266664",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 75000,
+      "date": "2026-08-15",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260815-0004",
+      "patient_name": "Anisa Hidayat",
+      "phone": "6281290344441",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 944000,
+      "date": "2026-08-15",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260815-0005",
+      "patient_name": "Clarissa Anggraini",
+      "phone": "6281290422218",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 750000,
+      "date": "2026-08-15",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260816-0002",
+      "patient_name": "Lestari Salsabila",
+      "phone": "6281290577772",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 175000,
+      "date": "2026-08-16",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260816-0003",
+      "patient_name": "Dian Pratama",
+      "phone": "6281290044444",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 1800000,
+      "date": "2026-08-16",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260816-0004",
+      "patient_name": "Jessica Natasha",
+      "phone": "6281290122221",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 1745000,
+      "date": "2026-08-16",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260816-0005",
+      "patient_name": "Indah Citra",
+      "phone": "6281290199998",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 500000,
+      "date": "2026-08-16",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260816-0006",
+      "patient_name": "Rizky Safitri",
+      "phone": "6281290277775",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 645000,
+      "date": "2026-08-16",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260817-0001",
+      "patient_name": "Siti Utami",
+      "phone": "6281290355552",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 649000,
+      "date": "2026-08-17",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260817-0002",
+      "patient_name": "Aurelia Lubis",
+      "phone": "6281290433329",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 775000,
+      "date": "2026-08-17",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260817-0003",
+      "patient_name": "Melati Kusuma",
+      "phone": "6281290511106",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 75000,
+      "date": "2026-08-17",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260818-0001",
+      "patient_name": "Kiki Wulandari",
+      "phone": "6281290588883",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 500000,
+      "date": "2026-08-18",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260818-0002",
+      "patient_name": "Bunga Wijaya",
+      "phone": "6281290055555",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 975000,
+      "date": "2026-08-18",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260818-0003",
+      "patient_name": "Fitri Handayani",
+      "phone": "6281290133332",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 400000,
+      "date": "2026-08-18",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260818-0004",
+      "patient_name": "Shinta Valerie",
+      "phone": "6281290211109",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 595000,
+      "date": "2026-08-18",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260819-0001",
+      "patient_name": "Kevin Paramita",
+      "phone": "6281290288886",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 850000,
+      "date": "2026-08-19",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260819-0002",
+      "patient_name": "Rina Mulyani",
+      "phone": "6281290366663",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 525000,
+      "date": "2026-08-19",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260819-0003",
+      "patient_name": "Putri Saputra",
+      "phone": "6281290444440",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 400000,
+      "date": "2026-08-19",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260819-0004",
+      "patient_name": "Ratna Siregar",
+      "phone": "6281290522217",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 645000,
+      "date": "2026-08-19",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260819-0005",
+      "patient_name": "Natasya Pratama",
+      "phone": "6281290599994",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 295000,
+      "date": "2026-08-19",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260820-0001",
+      "patient_name": "Maya Hidayat",
+      "phone": "6281290066666",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 750000,
+      "date": "2026-08-20",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260820-0002",
+      "patient_name": "Desi Anggraini",
+      "phone": "6281290144443",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 875000,
+      "date": "2026-08-20",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260820-0003",
+      "patient_name": "Gita Tan",
+      "phone": "6281290222220",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 35000,
+      "date": "2026-08-20",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260820-0004",
+      "patient_name": "Dimas Salsabila",
+      "phone": "6281290299997",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 494000,
+      "date": "2026-08-20",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260820-0005",
+      "patient_name": "Dian Nuraini",
+      "phone": "6281290377774",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 650000,
+      "date": "2026-08-20",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260820-0006",
+      "patient_name": "Jessica Pratiwi",
+      "phone": "6281290455551",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 745000,
+      "date": "2026-08-20",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260821-0001",
+      "patient_name": "Indah Santoso",
+      "phone": "6281290533328",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 450000,
+      "date": "2026-08-21",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260821-0002",
+      "patient_name": "Rizky Wijaya",
+      "phone": "6281290611105",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 474000,
+      "date": "2026-08-21",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260821-0003",
+      "patient_name": "Nadia Utami",
+      "phone": "6281290077777",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 300000,
+      "date": "2026-08-21",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260822-0001",
+      "patient_name": "Wulan Lubis",
+      "phone": "6281290155554",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 325000,
+      "date": "2026-08-22",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260822-0002",
+      "patient_name": "Tiara Kusuma",
+      "phone": "6281290233331",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 675000,
+      "date": "2026-08-22",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260822-0003",
+      "patient_name": "Bagas Wulandari",
+      "phone": "6281290311108",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 625000,
+      "date": "2026-08-22",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260822-0004",
+      "patient_name": "Bunga Kartika",
+      "phone": "6281290388885",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 394000,
+      "date": "2026-08-22",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260823-0001",
+      "patient_name": "Fitri Rahmawati",
+      "phone": "6281290466662",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 550000,
+      "date": "2026-08-23",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260823-0002",
+      "patient_name": "Shinta Dewi",
+      "phone": "6281290544439",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 750000,
+      "date": "2026-08-23",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260823-0003",
+      "patient_name": "Anisa Paramita",
+      "phone": "6281290011111",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 199000,
+      "date": "2026-08-23",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260823-0004",
+      "patient_name": "Clarissa Mulyani",
+      "phone": "6281290088888",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 745000,
+      "date": "2026-08-23",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260823-0005",
+      "patient_name": "Tania Saputra",
+      "phone": "6281290166665",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 185000,
+      "date": "2026-08-23",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260824-0001",
+      "patient_name": "Lestari Siregar",
+      "phone": "6281290244442",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 250000,
+      "date": "2026-08-24",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260824-0002",
+      "patient_name": "Aldo Pratama",
+      "phone": "6281290322219",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 370000,
+      "date": "2026-08-24",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260824-0003",
+      "patient_name": "Maya Natasha",
+      "phone": "6281290399996",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 600000,
+      "date": "2026-08-24",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260824-0004",
+      "patient_name": "Desi Citra",
+      "phone": "6281290477773",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 320000,
+      "date": "2026-08-24",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260824-0005",
+      "patient_name": "Gita Safitri",
+      "phone": "6281290555550",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 195000,
+      "date": "2026-08-24",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260824-0006",
+      "patient_name": "Siti Salsabila",
+      "phone": "6281290022222",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 445000,
+      "date": "2026-08-24",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260825-0001",
+      "patient_name": "Aurelia Nuraini",
+      "phone": "6281290099999",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 399000,
+      "date": "2026-08-25",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260825-0002",
+      "patient_name": "Melati Pratiwi",
+      "phone": "6281290177776",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 290000,
+      "date": "2026-08-25",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260825-0003",
+      "patient_name": "Kiki Santoso",
+      "phone": "6281290255553",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 285000,
+      "date": "2026-08-25",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260826-0001",
+      "patient_name": "Reza Wijaya",
+      "phone": "6281290333330",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 750000,
+      "date": "2026-08-26",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260826-0002",
+      "patient_name": "Nadia Handayani",
+      "phone": "6281290411107",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 270000,
+      "date": "2026-08-26",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260826-0003",
+      "patient_name": "Wulan Valerie",
+      "phone": "6281290488884",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 50000,
+      "date": "2026-08-26",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260826-0004",
+      "patient_name": "Tiara Paramita",
+      "phone": "6281290566661",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 520000,
+      "date": "2026-08-26",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260827-0001",
+      "patient_name": "Rina Wulandari",
+      "phone": "6281290033333",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 145000,
+      "date": "2026-08-27",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260827-0002",
+      "patient_name": "Putri Kartika",
+      "phone": "6281290111110",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 175000,
+      "date": "2026-08-27",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260827-0003",
+      "patient_name": "Ratna Rahmawati",
+      "phone": "6281290188887",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 325000,
+      "date": "2026-08-27",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-P-260827-0004",
+      "patient_name": "Natasya Dewi",
+      "phone": "6281290266664",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 245000,
+      "date": "2026-08-27",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260827-0005",
+      "patient_name": "Anisa Hidayat",
+      "phone": "6281290344441",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 445000,
+      "date": "2026-08-27",
+      "is_unused": false
+    },
+    {
+      "invoice": "INV-D-260828-0001",
+      "patient_name": "Clarissa Anggraini",
+      "phone": "6281290422218",
+      "treatment": "Pico Glow Laser Treatment",
+      "branch": "Pondok Kopi",
+      "nominal": 195000,
+      "date": "2026-08-28",
+      "is_unused": false
+    }
+  ],
+  "unused_packages_deposits": []
+}

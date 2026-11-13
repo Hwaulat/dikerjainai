@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 2,
+    "item_code": "BHP-002",
+    "name": "Jarum BD PrecisionGlide 30G x 1/2",
+    "buffer_stock": 25,
+    "current_stock": 8,
+    "status": "LOW_STOCK"
+  },
+  {
+    "item_id": 5,
+    "item_code": "BHP-005",
+    "name": "Serum PDRN Salmon DNA Rejuran Healer 2ml",
+    "buffer_stock": 10,
+    "current_stock": 6,
+    "status": "LOW_STOCK"
+  }
+]

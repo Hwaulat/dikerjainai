@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "sales_information_id": 1,
     "item_code": "BHP-001",
     "name": "Kasa Steril 7.5 x 7.5cm (Kotak)",
     "stock": 48,
@@ -11,6 +12,7 @@
   },
   {
     "id": 2,
+    "sales_information_id": 2,
     "item_code": "BHP-002",
     "name": "Jarum BD PrecisionGlide 30G x 1/2",
     "stock": 8,
@@ -21,6 +23,7 @@
   },
   {
     "id": 3,
+    "sales_information_id": 3,
     "item_code": "BHP-003",
     "name": "Spuit Syringe 1cc Terumo Ultra",
     "stock": 120,
@@ -31,6 +34,7 @@
   },
   {
     "id": 4,
+    "sales_information_id": 4,
     "item_code": "BHP-004",
     "name": "Krim Anestesi Topikal Lidocaine 10.56% 500g",
     "stock": 3,
@@ -41,6 +45,7 @@
   },
   {
     "id": 5,
+    "sales_information_id": 5,
     "item_code": "BHP-005",
     "name": "Serum PDRN Salmon DNA Rejuran Healer 2ml",
     "stock": 6,
@@ -51,6 +56,7 @@
   },
   {
     "id": 6,
+    "sales_information_id": 6,
     "item_code": "BHP-006",
     "name": "Handscoon Nitrile Non-Powder M (Sens)",
     "stock": 35,
@@ -61,6 +67,7 @@
   },
   {
     "id": 7,
+    "sales_information_id": 7,
     "item_code": "BHP-007",
     "name": "Alcohol Swabs 70% BD",
     "stock": 18,
@@ -71,6 +78,7 @@
   },
   {
     "id": 8,
+    "sales_information_id": 8,
     "item_code": "BHP-008",
     "name": "Tip Laser Pico Toning Disposible",
     "stock": 14,

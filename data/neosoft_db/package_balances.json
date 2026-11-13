@@ -1,0 +1,196 @@
+{
+  "synced_at": "2026-11-13T10:00:00Z",
+  "packages": [
+    {
+      "customer_id": 1,
+      "product_id": 82,
+      "inv_code": "INV-D-261015-0001",
+      "inv_date": "2026-10-15",
+      "expired_date": "2027-10-15",
+      "remaining": 3,
+      "used": 2,
+      "outlet_id": 1
+    },
+    {
+      "customer_id": 2,
+      "product_id": 21,
+      "inv_code": "INV-D-260920-0002",
+      "inv_date": "2026-09-20",
+      "expired_date": "2027-09-20",
+      "remaining": 1,
+      "used": 2,
+      "outlet_id": 1
+    },
+    {
+      "customer_id": 5,
+      "product_id": 20,
+      "inv_code": "INV-P-261025-0003",
+      "inv_date": "2026-10-25",
+      "expired_date": "2027-10-25",
+      "remaining": 4,
+      "used": 1,
+      "outlet_id": 2
+    },
+    {
+      "customer_id": 8,
+      "product_id": 82,
+      "inv_code": "INV-D-261102-0004",
+      "inv_date": "2026-11-02",
+      "expired_date": "2027-11-02",
+      "remaining": 2,
+      "used": 3,
+      "outlet_id": 1
+    },
+    {
+      "customer_id": 12,
+      "product_id": 20,
+      "inv_code": "INV-P-261010-0005",
+      "inv_date": "2026-10-10",
+      "expired_date": "2027-10-10",
+      "remaining": 3,
+      "used": 1,
+      "outlet_id": 2
+    },
+    {
+      "customer_id": 18,
+      "product_id": 18,
+      "inv_code": "INV-D-261020-0006",
+      "inv_date": "2026-10-20",
+      "expired_date": "2027-10-20",
+      "remaining": 2,
+      "used": 2,
+      "outlet_id": 1
+    },
+    {
+      "customer_id": 24,
+      "product_id": 21,
+      "inv_code": "INV-P-261101-0007",
+      "inv_date": "2026-11-01",
+      "expired_date": "2027-11-01",
+      "remaining": 2,
+      "used": 1,
+      "outlet_id": 2
+    }
+  ],
+  "invoices": {
+    "INV-D-261015-0001": {
+      "customer_id": 1,
+      "inv_code": "INV-D-261015-0001",
+      "inv_date": "2026-10-15",
+      "expired_date": "2027-10-15",
+      "lines": [
+        {
+          "product_id": 82,
+          "item_code": "T-26050081",
+          "price": 50000,
+          "qty": 5,
+          "remaining": 3,
+          "used": 2,
+          "subtotal": 225000
+        }
+      ]
+    },
+    "INV-D-260920-0002": {
+      "customer_id": 2,
+      "inv_code": "INV-D-260920-0002",
+      "inv_date": "2026-09-20",
+      "expired_date": "2027-09-20",
+      "lines": [
+        {
+          "product_id": 21,
+          "item_code": "T-26050020",
+          "price": 165000,
+          "qty": 3,
+          "remaining": 1,
+          "used": 2,
+          "subtotal": 445500.00000000006
+        }
+      ]
+    },
+    "INV-P-261025-0003": {
+      "customer_id": 5,
+      "inv_code": "INV-P-261025-0003",
+      "inv_date": "2026-10-25",
+      "expired_date": "2027-10-25",
+      "lines": [
+        {
+          "product_id": 20,
+          "item_code": "T-26050019",
+          "price": 195000,
+          "qty": 5,
+          "remaining": 4,
+          "used": 1,
+          "subtotal": 877500
+        }
+      ]
+    },
+    "INV-D-261102-0004": {
+      "customer_id": 8,
+      "inv_code": "INV-D-261102-0004",
+      "inv_date": "2026-11-02",
+      "expired_date": "2027-11-02",
+      "lines": [
+        {
+          "product_id": 82,
+          "item_code": "T-26050081",
+          "price": 50000,
+          "qty": 5,
+          "remaining": 2,
+          "used": 3,
+          "subtotal": 225000
+        }
+      ]
+    },
+    "INV-P-261010-0005": {
+      "customer_id": 12,
+      "inv_code": "INV-P-261010-0005",
+      "inv_date": "2026-10-10",
+      "expired_date": "2027-10-10",
+      "lines": [
+        {
+          "product_id": 20,
+          "item_code": "T-26050019",
+          "price": 195000,
+          "qty": 4,
+          "remaining": 3,
+          "used": 1,
+          "subtotal": 702000
+        }
+      ]
+    },
+    "INV-D-261020-0006": {
+      "customer_id": 18,
+      "inv_code": "INV-D-261020-0006",
+      "inv_date": "2026-10-20",
+      "expired_date": "2027-10-20",
+      "lines": [
+        {
+          "product_id": 18,
+          "item_code": "T-26050017",
+          "price": 300000,
+          "qty": 4,
+          "remaining": 2,
+          "used": 2,
+          "subtotal": 1080000
+        }
+      ]
+    },
+    "INV-P-261101-0007": {
+      "customer_id": 24,
+      "inv_code": "INV-P-261101-0007",
+      "inv_date": "2026-11-01",
+      "expired_date": "2027-11-01",
+      "lines": [
+        {
+          "product_id": 21,
+          "item_code": "T-26050020",
+          "price": 165000,
+          "qty": 3,
+          "remaining": 2,
+          "used": 1,
+          "subtotal": 445500.00000000006
+        }
+      ]
+    }
+  }
+}

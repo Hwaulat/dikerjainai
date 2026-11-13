@@ -28,5 +28,25 @@
     "amount": 285000,
     "status": "Success",
     "commission": 28500
+  },
+  {
+    "id": "UPS-004",
+    "date": "2026-11-09",
+    "nurse_name": "Terapis Salsa Nabila",
+    "patient_name": "Putri Wulandari",
+    "product_name": "Kefir Brightening Night Cream 15g",
+    "amount": 185000,
+    "status": "Success",
+    "commission": 18500
+  },
+  {
+    "id": "UPS-005",
+    "date": "2026-11-08",
+    "nurse_name": "Suster Maya Kusuma",
+    "patient_name": "Jessica Tan",
+    "product_name": "Kefir Cica Barrier Soothing Toner 100ml",
+    "amount": 145000,
+    "status": "Success",
+    "commission": 14500
   }
 ]

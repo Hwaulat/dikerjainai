@@ -1,0 +1,92 @@
+{
+  "synced_at": "2026-11-13T10:00:00Z",
+  "preventive_maintenance": [
+    {
+      "asset_name": "Laser Pico Nd:YAG",
+      "branch": "Depok",
+      "vendor": "PT IDS Medical Systems",
+      "last_maintenance": "2026-09-10",
+      "next_due": "2026-12-10",
+      "frequency": "Triwulan (3 Bulan)",
+      "activity": "Kalibrasi handpiece laser & pembersihan optical lens"
+    },
+    {
+      "asset_name": "HydraFacial MD Elite",
+      "branch": "Depok",
+      "vendor": "PT Regen Prime",
+      "last_maintenance": "2026-10-05",
+      "next_due": "2026-11-20",
+      "frequency": "Bulanan",
+      "activity": "Deep flush sistem tube & desinfeksi vacuum motor"
+    },
+    {
+      "asset_name": "Alma Harmony XL Pro",
+      "branch": "Pondok Kopi",
+      "vendor": "PT IDS Medical Systems",
+      "last_maintenance": "2026-08-15",
+      "next_due": "2026-11-25",
+      "frequency": "Triwulan (3 Bulan)",
+      "activity": "Pengecekan cooling chiller & daya tembak flash lamp"
+    },
+    {
+      "asset_name": "Autoclave Sterilizer Kelas B",
+      "branch": "Depok",
+      "vendor": "PT Kalbe Farma",
+      "last_maintenance": "2026-10-12",
+      "next_due": "2026-11-18",
+      "frequency": "Bulanan",
+      "activity": "Uji Bowie-Dick test & penggantian gasket pintu"
+    },
+    {
+      "asset_name": "Cauter Radiofrequency Electrosurgical",
+      "branch": "Pondok Kopi",
+      "vendor": "PT Medika Jaya",
+      "last_maintenance": "2026-09-20",
+      "next_due": "2026-12-20",
+      "frequency": "Triwulan",
+      "activity": "Kalibrasi impedansi daya & kabel grounding"
+    }
+  ],
+  "assets_inventory": [
+    {
+      "name": "Laser Pico Nd:YAG 1064nm",
+      "brand_type": "Wontech Picocare 450",
+      "qty": 1,
+      "location": "Depok - Ruang Tindakan Medis 1",
+      "purchase_date": "2024-03-15",
+      "condition": "Prima / Beroperasi Baik"
+    },
+    {
+      "name": "Alma Harmony XL Pro Dye-VL",
+      "brand_type": "Alma Lasers Harmony",
+      "qty": 1,
+      "location": "Pondok Kopi - Ruang Laser",
+      "purchase_date": "2024-06-20",
+      "condition": "Prima / Beroperasi Baik"
+    },
+    {
+      "name": "HydraFacial MD Elite",
+      "brand_type": "Edge Systems HydraFacial",
+      "qty": 2,
+      "location": "Depok & Pondok Kopi",
+      "purchase_date": "2024-01-10",
+      "condition": "Baik"
+    },
+    {
+      "name": "Skin Analyzer 3D Magic Mirror",
+      "brand_type": "Visia 8th Gen",
+      "qty": 2,
+      "location": "Ruang Konsultasi Dokter",
+      "purchase_date": "2024-05-10",
+      "condition": "Baik"
+    },
+    {
+      "name": "Centrifuge PRP Zenith Medika",
+      "brand_type": "Hermle Z206A",
+      "qty": 2,
+      "location": "Laboratorium Mini",
+      "purchase_date": "2024-04-12",
+      "condition": "Baik"
+    }
+  ]
+}

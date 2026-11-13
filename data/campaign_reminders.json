@@ -1,0 +1,18 @@
+[
+  {
+    "id": "CR-001",
+    "title": "Follow-up Promo Glowing November Pasien Baru",
+    "target_count": 24,
+    "channel": "WhatsApp",
+    "status": "Sent",
+    "date": "2026-11-10"
+  },
+  {
+    "id": "CR-002",
+    "title": "Reminder Paket Ulang Tahun November Diskon 20%",
+    "target_count": 5,
+    "channel": "WhatsApp",
+    "status": "Sent",
+    "date": "2026-11-12"
+  }
+]

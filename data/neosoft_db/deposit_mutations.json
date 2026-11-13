@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "customer_id": 1,
+    "outlet_id": 1,
+    "date": "2026-11-01 10:00:00",
+    "mutation_type": "topup",
+    "amount": 2000000,
+    "counted": true,
+    "notes": "Topup Deposit Membership Platinum"
+  },
+  {
+    "id": 2,
+    "customer_id": 10,
+    "outlet_id": 2,
+    "date": "2026-11-03 14:00:00",
+    "mutation_type": "topup",
+    "amount": 1500000,
+    "counted": true,
+    "notes": "Topup Deposit Gold Member"
+  },
+  {
+    "id": 3,
+    "customer_id": 15,
+    "outlet_id": 1,
+    "date": "2026-11-06 16:30:00",
+    "mutation_type": "topup",
+    "amount": 3000000,
+    "counted": true,
+    "notes": "Topup Deposit Treatment Series"
+  },
+  {
+    "id": 4,
+    "customer_id": 22,
+    "outlet_id": 2,
+    "date": "2026-11-09 11:15:00",
+    "mutation_type": "topup",
+    "amount": 1000000,
+    "counted": true,
+    "notes": "Topup Deposit Reguler"
+  }
+]

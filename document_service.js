@@ -10,8 +10,10 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-const ExcelJS = require('exceljs');
-const PDFDocument = require('pdfkit');
+let ExcelJS = null;
+try { ExcelJS = require('exceljs'); } catch (e) { ExcelJS = null; }
+let PDFDocument = null;
+try { PDFDocument = require('pdfkit'); } catch (e) { PDFDocument = null; }
 
 const DOCS_DIR = path.join(__dirname, 'data', 'generated_docs');
 const MAX_ROWS_PER_TABLE = 5000;
@@ -156,6 +158,7 @@ function loadDocument(id) {
 // Excel
 // ---------------------------------------------------------------------------
 async function buildExcel(title, tables, subtitle) {
+  if (!ExcelJS) throw new Error('Modul exceljs tidak terpasang (preview mode).');
   const wb = new ExcelJS.Workbook();
   wb.creator = 'KEFIR AI';
   wb.created = new Date();
@@ -199,6 +202,7 @@ async function buildExcel(title, tables, subtitle) {
 const latin1 = s => String(s ?? '').replace(/[^\x09\x0A\x0D\x20-\x7E\xA0-\xFF]/g, '').trim();
 
 function buildPdf(title, tables, subtitle) {
+  if (!PDFDocument) return Promise.reject(new Error('Modul pdfkit tidak terpasang (preview mode).'));
   return new Promise((resolve) => {
     const wide = tables.some(t => t.columns.length > 5);
     const doc = new PDFDocument({ size: 'A4', layout: wide ? 'landscape' : 'portrait', margin: 36, bufferPages: true });

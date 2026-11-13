@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "sales_information_id": 1,
+    "code": "BHP-001",
+    "name": "Kasa Steril 7.5 x 7.5cm (Kotak)",
+    "warehouse": "Gudang Farmasi Depok",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Box",
+    "cogs": 25000,
+    "batch_number": "BCH-2610",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-08-30",
+    "expiry_date": "2027-08-30",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 26,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 2,
+    "sales_information_id": 1,
+    "code": "BHP-001",
+    "name": "Kasa Steril 7.5 x 7.5cm (Kotak)",
+    "warehouse": "Gudang Farmasi Pondok Kopi",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Box",
+    "cogs": 25000,
+    "batch_number": "BCH-2611",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-08-30",
+    "expiry_date": "2027-08-30",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 22,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 3,
+    "sales_information_id": 2,
+    "code": "BHP-002",
+    "name": "Jarum BD PrecisionGlide 30G x 1/2",
+    "warehouse": "Gudang Farmasi Depok",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Box",
+    "cogs": 85000,
+    "batch_number": "BCH-2620",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2026-12-15",
+    "expiry_date": "2026-12-15",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 4,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 4,
+    "sales_information_id": 2,
+    "code": "BHP-002",
+    "name": "Jarum BD PrecisionGlide 30G x 1/2",
+    "warehouse": "Gudang Farmasi Pondok Kopi",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Box",
+    "cogs": 85000,
+    "batch_number": "BCH-2621",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2026-12-15",
+    "expiry_date": "2026-12-15",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 4,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 5,
+    "sales_information_id": 3,
+    "code": "BHP-003",
+    "name": "Spuit Syringe 1cc Terumo Ultra",
+    "warehouse": "Gudang Farmasi Depok",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Pcs",
+    "cogs": 4500,
+    "batch_number": "BCH-2630",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-08-30",
+    "expiry_date": "2027-08-30",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 66,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 6,
+    "sales_information_id": 3,
+    "code": "BHP-003",
+    "name": "Spuit Syringe 1cc Terumo Ultra",
+    "warehouse": "Gudang Farmasi Pondok Kopi",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Pcs",
+    "cogs": 4500,
+    "batch_number": "BCH-2631",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-08-30",
+    "expiry_date": "2027-08-30",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 54,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 7,
+    "sales_information_id": 4,
+    "code": "BHP-004",
+    "name": "Krim Anestesi Topikal Lidocaine 10.56% 500g",
+    "warehouse": "Gudang Farmasi Depok",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Pot",
+    "cogs": 650000,
+    "batch_number": "BCH-2640",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-08-30",
+    "expiry_date": "2027-08-30",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 2,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 8,
+    "sales_information_id": 4,
+    "code": "BHP-004",
+    "name": "Krim Anestesi Topikal Lidocaine 10.56% 500g",
+    "warehouse": "Gudang Farmasi Pondok Kopi",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Pot",
+    "cogs": 650000,
+    "batch_number": "BCH-2641",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-08-30",
+    "expiry_date": "2027-08-30",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 1,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 9,
+    "sales_information_id": 5,
+    "code": "BHP-005",
+    "name": "Serum PDRN Salmon DNA Rejuran Healer 2ml",
+    "warehouse": "Gudang Farmasi Depok",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Ampul",
+    "cogs": 1200000,
+    "batch_number": "BCH-2650",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-01-20",
+    "expiry_date": "2027-01-20",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 3,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 10,
+    "sales_information_id": 5,
+    "code": "BHP-005",
+    "name": "Serum PDRN Salmon DNA Rejuran Healer 2ml",
+    "warehouse": "Gudang Farmasi Pondok Kopi",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Ampul",
+    "cogs": 1200000,
+    "batch_number": "BCH-2651",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-01-20",
+    "expiry_date": "2027-01-20",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 3,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 11,
+    "sales_information_id": 6,
+    "code": "BHP-006",
+    "name": "Handscoon Nitrile Non-Powder M (Sens)",
+    "warehouse": "Gudang Farmasi Depok",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Box",
+    "cogs": 48000,
+    "batch_number": "BCH-2660",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-08-30",
+    "expiry_date": "2027-08-30",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 19,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 12,
+    "sales_information_id": 6,
+    "code": "BHP-006",
+    "name": "Handscoon Nitrile Non-Powder M (Sens)",
+    "warehouse": "Gudang Farmasi Pondok Kopi",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Box",
+    "cogs": 48000,
+    "batch_number": "BCH-2661",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-08-30",
+    "expiry_date": "2027-08-30",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 16,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 13,
+    "sales_information_id": 7,
+    "code": "BHP-007",
+    "name": "Alcohol Swabs 70% BD",
+    "warehouse": "Gudang Farmasi Depok",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Box",
+    "cogs": 18000,
+    "batch_number": "BCH-2670",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-08-30",
+    "expiry_date": "2027-08-30",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 10,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 14,
+    "sales_information_id": 7,
+    "code": "BHP-007",
+    "name": "Alcohol Swabs 70% BD",
+    "warehouse": "Gudang Farmasi Pondok Kopi",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Box",
+    "cogs": 18000,
+    "batch_number": "BCH-2671",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-08-30",
+    "expiry_date": "2027-08-30",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 8,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 15,
+    "sales_information_id": 8,
+    "code": "BHP-008",
+    "name": "Tip Laser Pico Toning Disposible",
+    "warehouse": "Gudang Farmasi Depok",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Pcs",
+    "cogs": 175000,
+    "batch_number": "BCH-2680",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-08-30",
+    "expiry_date": "2027-08-30",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 8,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  },
+  {
+    "id": 16,
+    "sales_information_id": 8,
+    "code": "BHP-008",
+    "name": "Tip Laser Pico Toning Disposible",
+    "warehouse": "Gudang Farmasi Pondok Kopi",
+    "category": [
+      "BHP"
+    ],
+    "uom": "Pcs",
+    "cogs": 175000,
+    "batch_number": "BCH-2681",
+    "date": "2026-11-10 09:00:00",
+    "expired_at": "2027-08-30",
+    "expiry_date": "2027-08-30",
+    "stock_in": 20,
+    "stock_out": 5,
+    "current_stock": 6,
+    "transaction": "USAGE PEMAKAIAN KLINIK"
+  }
+]

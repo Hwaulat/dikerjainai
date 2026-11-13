@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": 1,
+    "patient_id": 12,
+    "full_name": "Jessica Tan",
+    "patient_code": "EM-260500012",
+    "code": "ANM-2611-0012",
+    "date": "2026-11-11 11:30:00"
+  },
+  {
+    "id": 2,
+    "patient_id": 25,
+    "full_name": "Rizky Hidayat",
+    "patient_code": "EM-260500025",
+    "code": "ANM-2611-0025",
+    "date": "2026-11-12 15:00:00"
+  },
+  {
+    "id": 3,
+    "patient_id": 38,
+    "full_name": "Tania Wijaya",
+    "patient_code": "EM-260500038",
+    "code": "ANM-2611-0038",
+    "date": "2026-11-13 09:45:00"
+  }
+]

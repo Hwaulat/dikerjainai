@@ -1,0 +1,62 @@
+{
+  "synced_at": "2026-11-13T10:00:00Z",
+  "sources": [
+    {
+      "key": "nov-2026",
+      "campaign": "Promo Glow November 2026",
+      "period": {
+        "start": "2026-11-01",
+        "end": "2026-11-30"
+      },
+      "audience": "all",
+      "terms": [
+        "Berlaku di Depok & Pondok Kopi",
+        "Wajib reservasi H-1 via WhatsApp",
+        "Tidak dapat digabung promo lain"
+      ],
+      "items": [
+        {
+          "name": "Pico Glow Laser Treatment",
+          "normal": 1250000,
+          "promo": 950000,
+          "bottom": 850000,
+          "bv": 280000,
+          "benefit": "Free Sheet Mask + Calming Cream"
+        },
+        {
+          "name": "HydraFacial Deep Cleansing",
+          "normal": 650000,
+          "promo": 499000,
+          "bottom": 450000,
+          "bv": 120000,
+          "benefit": "Free LED Therapy 15 Menit"
+        },
+        {
+          "name": "Rejuran Healer Salmon DNA 2cc",
+          "normal": 3850000,
+          "promo": 3200000,
+          "bottom": 2900000,
+          "bv": 1350000,
+          "benefit": "Free Recovery Meso Mask"
+        },
+        {
+          "name": "Kefir Phyto Derma Facial",
+          "normal": 195000,
+          "promo": 150000,
+          "bottom": 135000,
+          "bv": 45000,
+          "benefit": "Free Ekstraksi Komedo Ringan"
+        },
+        {
+          "name": "Alma Harmony Rejuvenation Laser",
+          "normal": 1450000,
+          "promo": 1100000,
+          "bottom": 990000,
+          "bv": 320000,
+          "benefit": "Free Antioksidan Serum Infusion"
+        }
+      ],
+      "issues": []
+    }
+  ]
+}

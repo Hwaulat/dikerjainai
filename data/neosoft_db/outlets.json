@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Kefir Derma Clinic Depok",
+    "code": "DPK",
+    "address": "Jl. Margonda No.333 A, Depok"
+  },
+  {
+    "id": 2,
+    "name": "Kefir Derma Clinic Pondok Kopi",
+    "code": "PDK",
+    "address": "Jl. I Gusti Ngurah Rai No.13, Jakarta Timur"
+  }
+]

@@ -4,7 +4,7 @@
  */
 
 let makeWASocket = null, useMultiFileAuthState = null, DisconnectReason = { loggedOut: 401 }, fetchLatestBaileysVersion = null, downloadMediaMessage = null;
-let pino = () => ({ level: 'silent', info() {}, error() {}, warn() {}, debug() {} });
+let pino = () => ({ level: 'silent', info() { }, error() { }, warn() { }, debug() { } });
 let QRCode = { toDataURL: async () => '' };
 
 try {
@@ -12,8 +12,8 @@ try {
 } catch (e) {
   makeWASocket = null;
 }
-try { pino = require('pino'); } catch (e) {}
-try { QRCode = require('qrcode'); } catch (e) {}
+try { pino = require('pino'); } catch (e) { }
+try { QRCode = require('qrcode'); } catch (e) { }
 const path = require('path');
 const fs = require('fs');
 const { processMultiRoleQueryDetailed, processMultiRoleQuery, callLLM } = require('./ai_executive_assistant');
@@ -76,8 +76,8 @@ function scheduleReconnect(delayMs) {
 function teardownSocket() {
   socketGen++; // event dari socket lama otomatis diabaikan
   if (sock) {
-    try { sock.ev.removeAllListeners(); } catch (e) {}
-    try { sock.end(undefined); } catch (e) {}
+    try { sock.ev.removeAllListeners(); } catch (e) { }
+    try { sock.end(undefined); } catch (e) { }
     sock = null;
   }
 }
@@ -87,10 +87,10 @@ function clearAuthExceptLidMapping() {
     if (!fs.existsSync(AUTH_FOLDER)) return;
     for (const f of fs.readdirSync(AUTH_FOLDER)) {
       if (!f.startsWith('lid-mapping')) {
-        try { fs.unlinkSync(path.join(AUTH_FOLDER, f)); } catch (e) {}
+        try { fs.unlinkSync(path.join(AUTH_FOLDER, f)); } catch (e) { }
       }
     }
-  } catch (e) {}
+  } catch (e) { }
 }
 
 // Multi-Role Whitelist Map
@@ -135,9 +135,9 @@ function latestWhitelistBackup() {
   try {
     const files = fs.readdirSync(WHITELIST_BACKUP_DIR).filter(f => f.endsWith('.json')).sort();
     for (let i = files.length - 1; i >= 0; i--) {
-      try { return readWhitelistFile(path.join(WHITELIST_BACKUP_DIR, files[i])); } catch (e) {}
+      try { return readWhitelistFile(path.join(WHITELIST_BACKUP_DIR, files[i])); } catch (e) { }
     }
-  } catch (e) {}
+  } catch (e) { }
   return null;
 }
 
@@ -181,7 +181,7 @@ function saveWhitelist() {
         const stamp = new Date().toISOString().replace(/[:.]/g, '-');
         fs.copyFileSync(WHITELIST_FILE, path.join(WHITELIST_BACKUP_DIR, `wa_whitelist-${stamp}.json`));
         const old = fs.readdirSync(WHITELIST_BACKUP_DIR).filter(f => f.endsWith('.json')).sort();
-        old.slice(0, Math.max(0, old.length - 30)).forEach(f => { try { fs.unlinkSync(path.join(WHITELIST_BACKUP_DIR, f)); } catch (e) {} });
+        old.slice(0, Math.max(0, old.length - 30)).forEach(f => { try { fs.unlinkSync(path.join(WHITELIST_BACKUP_DIR, f)); } catch (e) { } });
       } catch (e) { /* file lama rusak: jangan dibackup sebagai "valid" */ }
     }
     const tmp = WHITELIST_FILE + '.tmp-' + process.pid;
@@ -313,9 +313,9 @@ function findStaff(senderNumber, isLid) {
 }
 
 async function sendAiAnswer(thisSock, jid, question, role, sessionId, owner, quoted) {
-  try { await thisSock.sendPresenceUpdate('composing', jid); } catch (e) {}
+  try { await thisSock.sendPresenceUpdate('composing', jid); } catch (e) { }
   const { answer: replyText, documents } = await processMultiRoleQueryDetailed(question, role, sessionId, undefined, { owner });
-  try { await thisSock.sendPresenceUpdate('paused', jid); } catch (e) {}
+  try { await thisSock.sendPresenceUpdate('paused', jid); } catch (e) { }
   await thisSock.sendMessage(jid, { text: markdownToWhatsApp(replyText) }, quoted ? { quoted } : undefined);
   // Dokumen Excel/PDF yang dibuat AI dikirim sebagai lampiran.
   for (const d of (documents || [])) {
@@ -410,7 +410,7 @@ async function handleImageMessage({ thisSock, msg, remoteJid, assignedRoles, ass
     await thisSock.sendMessage(remoteJid, { text: '🔒 Maaf, pengiriman gambar hanya untuk role *Kasir* (bukti pembayaran). Gambar Anda tidak diproses.' });
     return;
   }
-  try { await thisSock.sendPresenceUpdate('composing', remoteJid); } catch (e) {}
+  try { await thisSock.sendPresenceUpdate('composing', remoteJid); } catch (e) { }
   let buffer;
   try {
     buffer = await downloadMediaMessage(msg, 'buffer', {}, { logger: pino({ level: 'silent' }), reuploadRequest: thisSock.updateMediaMessage });
@@ -424,7 +424,7 @@ async function handleImageMessage({ thisSock, msg, remoteJid, assignedRoles, ass
   // Caption tidak dipakai sebagai pertanyaan — kasir hanya mengirim bukti pembayaran.
   const a = await paymentProof.analyzeImage(buffer, mime, '', false, callLLM,
     { user: `wa:${normalizedPhone}`, role: 'kasir', question: 'bukti pembayaran' });
-  try { await thisSock.sendPresenceUpdate('paused', remoteJid); } catch (e) {}
+  try { await thisSock.sendPresenceUpdate('paused', remoteJid); } catch (e) { }
   if (!a) {
     await thisSock.sendMessage(remoteJid, { text: '⚠️ AI belum bisa membaca gambar ini saat ini. Coba kirim ulang sebentar lagi.' });
     return;
@@ -496,7 +496,7 @@ async function handlePendingReply({ thisSock, remoteJid, text, normalizedPhone }
   }
   paymentProof.removePending(normalizedPhone, saved);
   await thisSock.sendMessage(remoteJid, { text: out.join('\n') });
-  paymentProof.retryUnsynced().catch(() => {}); // kirim ulang catatan lama yang belum masuk spreadsheet
+  paymentProof.retryUnsynced().catch(() => { }); // kirim ulang catatan lama yang belum masuk spreadsheet
   return true;
 }
 
@@ -508,7 +508,7 @@ function resolveLidToPhone(lid) {
     try {
       const phone = JSON.parse(fs.readFileSync(reverseFile, 'utf8'));
       if (phone) return String(phone).replace(/[^0-9]/g, '');
-    } catch (e) {}
+    } catch (e) { }
   }
   return null;
 }
@@ -521,7 +521,7 @@ function resolvePhoneToLid(phone) {
     try {
       const lid = JSON.parse(fs.readFileSync(forwardFile, 'utf8'));
       if (lid) return String(lid).replace(/[^0-9]/g, '');
-    } catch (e) {}
+    } catch (e) { }
   }
   return null;
 }
@@ -655,7 +655,7 @@ async function initWhatsAppAssistant() {
         currentQrBase64 = null;
         botUser = thisSock.user;
         reconnectAttempts = 0;
-        refreshKnownGroups(thisSock).catch(() => {});
+        refreshKnownGroups(thisSock).catch(() => { });
         waLog(`✅ [WA] Terhubung sebagai ${String(thisSock.user?.id || '').split(':')[0].replace(/\d{4}$/, '****')}`);
       }
     });
@@ -673,10 +673,10 @@ async function initWhatsAppAssistant() {
           || msg.message.ephemeralMessage?.message?.imageMessage
           || msg.message.viewOnceMessage?.message?.imageMessage;
         const messageContent = msg.message.conversation ||
-                               msg.message.extendedTextMessage?.text ||
-                               msg.message.ephemeralMessage?.message?.conversation ||
-                               msg.message.ephemeralMessage?.message?.extendedTextMessage?.text ||
-                               imgMsg?.caption || '';
+          msg.message.extendedTextMessage?.text ||
+          msg.message.ephemeralMessage?.message?.conversation ||
+          msg.message.ephemeralMessage?.message?.extendedTextMessage?.text ||
+          imgMsg?.caption || '';
 
         if (!messageContent.trim() && !imgMsg) return;
 
@@ -734,7 +734,7 @@ async function initWhatsAppAssistant() {
         if (cancelM && !imgMsg) {
           const r = paymentProof.voidProof(cancelM[1], normalizedPhone);
           await thisSock.sendMessage(remoteJid, { text: r.error ? `⚠️ ${r.error}.` : `✅ Bukti ${r.record.id} dibatalkan.` });
-          if (!r.error) paymentProof.syncToSheet(r.record.id, 'BATAL').catch(() => {});
+          if (!r.error) paymentProof.syncToSheet(r.record.id, 'BATAL').catch(() => { });
           return;
         }
 

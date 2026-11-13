@@ -1,0 +1,14 @@
+{
+  "_cara_pakai": "Harga Promo & Bottom dibaca dari spreadsheet ini (bukan diubah di aplikasi). Tiap bulan, tambahkan spreadsheet Planning bulan itu: month = YYYY-MM, spreadsheet_id = bagian link di antara /d/ dan /edit. Spreadsheet harus dibagikan 'siapa saja yang punya link (Viewer)'. Kolom yang dibaca: Treatment/Menu, Harga Normal, Harga Terendah (= bottom), Harga Promo, Benefit, dan tabel paket (Nama Paket, Isi Paket, Harga Paket). Kolom BV (modal per tindakan versi marketing; Profit = Harga Promo − BV) dibaca untuk Rekomendasi Penjualan dari Stok (hanya dikirim ke owner/finance, tidak tampil di kartu); kolom Profit tidak dibaca. Tab campaign yang isinya hanya paket bundling (tabel harga satuannya tidak dipakai) dicantumkan di 'paket_saja'.",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1k4X_PntOcmvD3VBaUNPh1q-0JRB955sT",
+  "sources": [
+    {
+      "month": "2026-10",
+      "title": "Planning Oktober",
+      "spreadsheet_id": "1aRFqXz69MXlyFVmFeq-FjAdB-eeQmE6bF7fi_nEuDmc",
+      "paket_saja": [
+        "Promo Okt GLOW DEALS"
+      ]
+    }
+  ]
+}

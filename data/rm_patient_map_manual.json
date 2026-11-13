@@ -1,0 +1,12 @@
+{
+  "_petunjuk": [
+    "Berkas ini untuk KOREKSI MANUAL pemetaan nomor RM ke pasien Neosoft.",
+    "Isinya TIDAK PERNAH ditimpa oleh scripts/build_rm_map.js — aman diedit.",
+    "Entri di sini SELALU menang atas hasil otomatis (diberi label MANUAL).",
+    "Format: \"NOMOR_RM\": customer_id_neosoft  (angka, bukan teks).",
+    "Cari kandidat yang perlu dikerjakan di data/rm_patient_map.json bagian",
+    "\"needs_manual\" (diurutkan dari yang paling banyak barisnya) dan \"conflicts\".",
+    "Tidak ada data apa pun dari berkas ini yang dikirim ke Neosoft."
+  ],
+  "entries": {}
+}

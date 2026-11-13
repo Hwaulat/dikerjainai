@@ -1,0 +1,143 @@
+{
+  "branches": {
+    "tanggerang": [
+      {
+        "date": "2026-08-25",
+        "omset": 3850000,
+        "pasien_baru": 4,
+        "pasien_lama": 8,
+        "payment": "BCA Transfer Rp 2.5M, Cash Rp 1.35M",
+        "dokter": "dr. Amanda Putri",
+        "tindakan": 12,
+        "notes": "Ramai treatment acne"
+      },
+      {
+        "date": "2026-08-26",
+        "omset": 4200000,
+        "pasien_baru": 5,
+        "pasien_lama": 9,
+        "payment": "EDC Mandiri Rp 3.0M, Cash Rp 1.2M",
+        "dokter": "dr. Amanda Putri",
+        "tindakan": 14,
+        "notes": "Promo gajian lancar"
+      },
+      {
+        "date": "2026-08-27",
+        "omset": 3650000,
+        "pasien_baru": 3,
+        "pasien_lama": 8,
+        "payment": "BCA Transfer Rp 2.8M, Cash Rp 850k",
+        "dokter": "dr. Amanda Putri",
+        "tindakan": 11,
+        "notes": "Operasional normal"
+      }
+    ],
+    "karawang": [
+      {
+        "date": "2026-08-25",
+        "omset": 2900000,
+        "pasien_baru": 3,
+        "pasien_lama": 6,
+        "payment": "Cash Rp 1.9M, QRIS Rp 1.0M",
+        "dokter": "dr. Rian Pratama",
+        "tindakan": 9,
+        "notes": "Pasien facial padat"
+      },
+      {
+        "date": "2026-08-26",
+        "omset": 3150000,
+        "pasien_baru": 4,
+        "pasien_lama": 7,
+        "payment": "BCA Transfer Rp 2.0M, Cash Rp 1.15M",
+        "dokter": "dr. Rian Pratama",
+        "tindakan": 10,
+        "notes": "Skin booster 2 pasien"
+      },
+      {
+        "date": "2026-08-27",
+        "omset": 2750000,
+        "pasien_baru": 2,
+        "pasien_lama": 6,
+        "payment": "Cash Rp 1.5M, EDC Rp 1.25M",
+        "dokter": "dr. Rian Pratama",
+        "tindakan": 8,
+        "notes": "Tutup 20:00 WIB"
+      }
+    ]
+  },
+  "leads": {
+    "total_chat_august": 720,
+    "total_booking_august": 285,
+    "channels": [
+      {
+        "name": "WhatsApp Ads (IG/FB)",
+        "chats": 410,
+        "booking": 172,
+        "conversion": "42.0%"
+      },
+      {
+        "name": "TikTok Live & DM",
+        "chats": 195,
+        "booking": 68,
+        "conversion": "34.8%"
+      },
+      {
+        "name": "Organic Search / Maps",
+        "chats": 115,
+        "booking": 45,
+        "conversion": "39.1%"
+      }
+    ]
+  },
+  "staff_attendance": [
+    {
+      "name": "Siti Rahma (Klinik DPK)",
+      "role": "Front Office",
+      "check_in": "08:24",
+      "status": "Tepat Waktu",
+      "date": "2026-08-27"
+    },
+    {
+      "name": "dr. Sarah Nadira (DPK)",
+      "role": "Dokter Penanggung Jawab",
+      "check_in": "08:28",
+      "status": "Tepat Waktu",
+      "date": "2026-08-27"
+    },
+    {
+      "name": "Yunisari (DPK)",
+      "role": "Head Therapist",
+      "check_in": "08:29",
+      "status": "Tepat Waktu",
+      "date": "2026-08-27"
+    },
+    {
+      "name": "Budi Santoso (DPK)",
+      "role": "Security & Helper",
+      "check_in": "08:34",
+      "status": "Terlambat (4m)",
+      "date": "2026-08-27"
+    },
+    {
+      "name": "dr. Kevin Pratama (PDK)",
+      "role": "Dokter Pratama",
+      "check_in": "08:20",
+      "status": "Tepat Waktu",
+      "date": "2026-08-27"
+    },
+    {
+      "name": "Anisa Melati (PDK)",
+      "role": "Therapist",
+      "check_in": "08:37",
+      "status": "Terlambat (7m)",
+      "date": "2026-08-27"
+    },
+    {
+      "name": "Nurul Hidayah (PDK)",
+      "role": "Kasir",
+      "check_in": "08:15",
+      "status": "Tepat Waktu",
+      "date": "2026-08-27"
+    }
+  ]
+}

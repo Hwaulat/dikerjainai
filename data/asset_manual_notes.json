@@ -1,0 +1,73 @@
+{
+  "ac lt 2|pondok kopi": {
+    "name": "AC Lt 2",
+    "branch_or_location": "Pondok kopi",
+    "last_maintenance": "2026-09-09",
+    "next_due": "2026-11-09",
+    "vendor": "Solusi AC Indonesia",
+    "activity": "Cuci AC rutin, pembersihan filter & pipa drainase, cek freon",
+    "frequency_months": "2",
+    "condition_notes": "AC sudah bersih & dingin normal (suhu 18°C)",
+    "service_procedure": null,
+    "maintenance_type_override": "preventive",
+    "service_history": [
+      {
+        "id": "SRV-1788939285315",
+        "service_date": "2026-09-09",
+        "vendor": "Solusi AC Indonesia",
+        "action": "Cuci AC rutin, pembersihan filter & pipa drainase, cek freon",
+        "cost": "Rp 150.000",
+        "next_due": "2026-11-09",
+        "frequency_months": "2",
+        "maintenance_type": "preventive",
+        "performed_by": "Clinic Leader",
+        "condition_notes": "AC sudah bersih & dingin normal (suhu 18°C)",
+        "service_procedure": null,
+        "recorded_at": "2026-09-09T07:34:45.315Z"
+      }
+    ],
+    "updated_by": "Clinic Leader",
+    "updated_at": "2026-09-09T07:34:45.315Z"
+  },
+  "alat rf|pondok kopi": {
+    "name": "Alat RF",
+    "branch_or_location": "Pondok kopi",
+    "last_maintenance": "2026-09-09",
+    "next_due": "2027-03-09",
+    "vendor": "PT IDS Medical System",
+    "activity": "Penggantian modul resistor daya dan kalibrasi gelombang frekuensi radio RF",
+    "frequency_months": "6",
+    "condition_notes": "Kondisi RF normal 100%, emisi panas stabil pada probe mono & bipolar, tidak ada error kode",
+    "service_procedure": "1. Bongkar casing bawah. 2. Lepas resistor R45 yang hangus. 3. Solder resistor 10k 5W baru. 4. Kalibrasi RF meter. 5. Uji probe 15 menit.",
+    "maintenance_type_override": "corrective",
+    "service_history": [
+      {
+        "id": "SRV-1788939710720",
+        "service_date": "2026-09-09",
+        "vendor": "PT IDS Medical System",
+        "action": "Penggantian modul resistor daya dan kalibrasi gelombang frekuensi radio RF",
+        "cost": "Rp 1.850.000",
+        "next_due": "2027-03-09",
+        "frequency_months": "6",
+        "maintenance_type": "corrective",
+        "performed_by": "Clinic Leader PDK",
+        "condition_notes": "Kondisi RF normal 100%, emisi panas stabil pada probe mono & bipolar, tidak ada error kode",
+        "service_procedure": "1. Bongkar casing bawah. 2. Lepas resistor R45 yang hangus. 3. Solder resistor 10k 5W baru. 4. Kalibrasi RF meter. 5. Uji probe 15 menit.",
+        "recorded_at": "2026-09-09T07:41:50.720Z"
+      }
+    ],
+    "updated_by": "Clinic Leader PDK",
+    "updated_at": "2026-09-09T07:41:50.720Z"
+  },
+  "pico laser|depok": {
+    "name": "Pico Laser",
+    "branch_or_location": "Depok",
+    "condition_notes": "Kondisi optik dan kristal laser 100% prima, output energi 1064nm & 532nm akurat terkalibrasi",
+    "purchase_date": null,
+    "usage_instructions": null,
+    "service_procedure": "1. Cek chiller air pendingin. 2. Kalibrasi output joule laser probe. 3. Bersihkan lensa pelindung dengan optical paper. 4. Uji spot test.",
+    "maintenance_type_override": null,
+    "updated_by": "Dashboard User",
+    "updated_at": "2026-09-09T07:42:22.780Z"
+  }
+}

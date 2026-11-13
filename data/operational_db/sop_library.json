@@ -1,0 +1,131 @@
+[
+  {
+    "id": "SOP-01",
+    "category": "Medis & Konsultasi",
+    "title": "Prosedur Konsultasi & Rekam Medis Pasien (Dokter DPJP)",
+    "role": "Dokter Spesialis / Dokter Estetika",
+    "revision": "v2.1 - September 2026",
+    "objective": "Menjamin akurasi diagnosis klinis, riwayat alergi, keselamatan pasien, dan kepatuhan pengisian rekam medis digital (SOAP) di Neosoft Cube.",
+    "sla_duration": "15 - 20 Menit per Pasien",
+    "steps": [
+      "1. Verifikasi identitas pasien (Nama lengkap, tanggal lahir, dan rekam medis Neosoft ID).",
+      "2. Lakukan Anamnesa lengkap (Keluhan utama, riwayat penyakit penyerta, riwayat alergi obat/kosmetik, dan penggunaan krim malam/retinoid sebelumnya).",
+      "3. Lakukan pemeriksaan fisik kulit (Visualisasi lesi, tipe Fitzpatrick, kelembapan, elastisitas, dan analisis Wood's Lamp jika diperlukan).",
+      "4. Berikan edukasi diagnosis, pilihan modalitas tindakan (Treatment), potensi risiko/downtime, serta alternatif perawatan.",
+      "5. Wajibkan penandatanganan Lembar Informed Consent sebelum tindakan medis/injeksi/laser dilakukan.",
+      "6. Input rekam medis digital SOAP (Subjective, Objective, Assessment, Plan) dan resep homecare di Neosoft Cube maksimal 15 menit pasca konsultasi."
+    ],
+    "mandatory_items": [
+      "Digital Tablet Neosoft Cube",
+      "Informed Consent Form",
+      "Wood's Lamp / Dermatoskop",
+      "Hand Sanitizer berbasis alkohol 70%"
+    ],
+    "compliance_kpi": "100% Pasien tindakan medis memiliki SOAP & Informed Consent digital.",
+    "warning": "DILARANG melakukan tindakan medis invasif atau laser tanpa Informed Consent yang ditandatangani pasien/wali!"
+  },
+  {
+    "id": "SOP-02",
+    "category": "Tindakan Laser & Energi",
+    "title": "Protokol Keselamatan Laser Medis & Light Devices (Pico / Alma / Nd:YAG)",
+    "role": "Dokter Operator & Perawat Pendamping",
+    "revision": "v3.0 - September 2026",
+    "objective": "Mencegah cedera okular (mata), luka bakar termal (PIH), dan memastikan hasil terapi maksimal serta kepatuhan dokumentasi visual.",
+    "sla_duration": "30 - 45 Menit",
+    "steps": [
+      "1. Periksa riwayat paparan matahari 48 jam terakhir & penggunaan eksfoliator kimiawi.",
+      "2. Pasang kacamata pelindung laser (Eye Goggles) dengan Optical Density (OD) sesuai panjang gelombang: Pasien (pelindung logam/opaque), Dokter & Perawat (goggles filter spesifik).",
+      "3. Bersihkan area wajah dari makeup dan minyak, pastikan kulit kering sempurna.",
+      "4. Lakukan test shot pada area retroauricular/rahang bawah untuk mengevaluasi respons jaringan (Immediate Whitening / Erythema).",
+      "5. Jalankan protokol tindakan laser sesuai fluence dan spot size yang direkomendasikan dokter DPJP.",
+      "6. Ambil dokumentasi foto fisik klinis 3 sudut (Depan, Serong Kiri 45°, Serong Kanan 45°) dan pastikan terunggah ke Neosoft Physical Examination.",
+      "7. Aplikasikan soothing cream (Anti Iritasi / Cooling Gel) dan Sunscreen SPF 30+ PA+++ segera setelah tindakan.",
+      "8. Berikan lembar edukasi Do & Don'ts pasca-laser kepada pasien."
+    ],
+    "mandatory_items": [
+      "Laser Protective Goggles (OD 5+)",
+      "Smoke Evacuator / Hepa Filter",
+      "Cooling Device / Cryo Air Cooler",
+      "Anti Iritasi Cream & Sunscreen Medis"
+    ],
+    "compliance_kpi": "100% Kepatuhan Eye Goggles & Dokumentasi Foto 3 Sudut.",
+    "warning": "JANGAN PERNAH menembakkan laser sebelum seluruh orang di ruangan mengenakan kacamata pelindung!"
+  },
+  {
+    "id": "SOP-03",
+    "category": "Sterilisasi & PPI",
+    "title": "Prosedur Sterilisasi Alat, Desinfeksi Tingkat Tinggi (DTT) & Pengelolaan Limbah B3",
+    "role": "Perawat / Beautician / Tim CSSD",
+    "revision": "v2.0 - September 2026",
+    "objective": "Menghilangkan seluruh mikroorganisme patogen dan spora bakteri untuk mencegah infeksi nosokomial silang antar pasien.",
+    "sla_duration": "Siklus Autoclave: 60 Menit",
+    "steps": [
+      "1. Dekontaminasi: Rendam instrumen bekas pakai (sendok unna, komedo extractor, forceps) dalam larutan enzimatik selama 10-15 menit.",
+      "2. Pencucian & Penyikatan: Bersihkan instrumen dengan sikat halus di bawah air mengalir, bilas hingga bersih, dan keringkan sempurna.",
+      "3. Pengemasan: Masukkan instrumen ke dalam sterilization pouch dengan indikator kimia internal/eksternal, rekatkan rapat (Heat Sealer).",
+      "4. Autoclaving: Masukkan pouch ke dalam Autoclave. Jalankan siklus sterilisasi standar: 121°C selama 30 menit (tekanan 1.1 bar) atau 134°C selama 15 menit.",
+      "5. Penyimpanan: Simpan pouch steril di lemari UV tertutup dengan suhu 20-25°C dan kelembapan <60%. Maksimal masa simpan 30 hari.",
+      "6. Limbah B3: Buang jarum suntik, bisturi, dan ampul kaca langsung ke Safety Box Kuning (Sharps Bin) tanpa ditekuk/ditutup ulang (No Recapping).",
+      "7. Kasa terkontaminasi darah dimasukkan ke kantong plastik kuning limbah infeksius."
+    ],
+    "mandatory_items": [
+      "Autoclave Medis Terkalibrasi",
+      "Sterilization Pouches & Heat Sealer",
+      "Larutan Pembersih Enzimatik",
+      "Safety Box B3 Kuning Terakreditasi"
+    ],
+    "compliance_kpi": "0% Insiden Infeksi Silang; 100% Penggunaan Indikator Steril Pouch.",
+    "warning": "Ganti cairan desinfektan enzimatik setiap hari atau jika sudah tampak keruh!"
+  },
+  {
+    "id": "SOP-04",
+    "category": "Frontdesk & Service",
+    "title": "Standar Pelayanan Frontdesk, Registrasi & Verifikasi Pasien Datang",
+    "role": "Frontdesk / Customer Service Resepsionis",
+    "revision": "v2.0 - September 2026",
+    "objective": "Memberikan impresi pertama yang hangat (Sultan Experience), validasi identitas akurat di Neosoft, dan meminimalkan waktu tunggu pasien.",
+    "sla_duration": "< 3 Menit Waktu Registrasi",
+    "steps": [
+      "1. Sambut pasien dengan 3S (Senyum, Salam, Sapa) dan sebut nama pasien jika sudah memiliki appointment reservasi.",
+      "2. Tanyakan keperluan kunjungan: Konsultasi Dokter Baru, Pasien Lama/Follow-up, atau Treatment Rutin.",
+      "3. Cari data pasien di Neosoft Cube melalui No. WhatsApp / Nama / Nomor Rekam Medis (MRN).",
+      "4. Untuk pasien baru: Pandu pengisian form registrasi digital (Nama lengkap sesuai KTP, No WhatsApp aktif, Tanggal Lahir, Alamat, dan Pekerjaan).",
+      "5. Informasikan urutan antrean dokter DPJP dan estimasi waktu tunggu secara transparan.",
+      "6. Tawarkan welcome drink dan persilakan pasien menunggu di lounge eksekutif.",
+      "7. Notifikasikan kedatangan pasien kepada perawat/dokter melalui sistem internal."
+    ],
+    "mandatory_items": [
+      "Komputer Frontdesk & Koneksi Neosoft Cube",
+      "Barcode/QR Reader & Kartu Member",
+      "Daftar Jadwal Dokter DPJP Harian"
+    ],
+    "compliance_kpi": "Waktu tunggu registrasi < 3 menit; 100% No. WA pasien tervalidasi.",
+    "warning": "Pastikan ejaan nama dan nomor HP pasien tidak ada kesalahan ketik untuk kelancaran WA blast/reminder!"
+  },
+  {
+    "id": "SOP-05",
+    "category": "Kasir & Finance",
+    "title": "Standar Kasir, Verifikasi Bukti Pembayaran (Anti-Fraud) & Tutup Shift",
+    "role": "Kasir / Finance Cabang",
+    "revision": "v2.2 - September 2026",
+    "objective": "Menjamin 100% kecocokan omset fisik/bank dengan transaksi Neosoft, mencegah fraud bukti bayar palsu, dan rekonsiliasi EDC harian.",
+    "sla_duration": "< 5 Menit per Transaksi Kasir",
+    "steps": [
+      "1. Terima instruksi tagihan dari rekam medis dokter/perawat dan input seluruh SKU tindakan & produk ke Neosoft Kasir.",
+      "2. Tanyakan kepemilikan Voucher Promo / Birthday Voucher / Deposit Member sebelum mencetak invoice final.",
+      "3. Pembayaran Transfer Bank / QRIS: Kasir WAJIB memverifikasi masuknya mutasi rekening di mutasi bank/m-banking sebelum menyatakan invoice lunas (DILARANG hanya percaya screenshot resi WhatsApp pasien).",
+      "4. Pembayaran Kartu Debit/Kredit EDC: Cocokkan nominal di mesin EDC dengan nilai invoice, pastikan struk 'APPROVAL SUCCESS' tercetak 2 rangkap (1 untuk klinik, 1 untuk pasien).",
+      "5. Serahkan invoice resmi Neosoft beserta produk yang sudah dicek tanggal kedaluwarsanya (FEFO) dalam paper bag klinik.",
+      "6. Tutup Shift (Settlement): Lakukan Batch Settlement pada seluruh mesin EDC pada pukul 20:30 WIB (Depok) atau 21:00 WIB (Pondok Kopi).",
+      "7. Hitung fisik uang tunai (Petty Cash + Cash Invoices) dan cocokkan dengan laporan Sales Summary Neosoft. Selisih kas wajib dilaporkan detik itu juga ke Finance Pusat."
+    ],
+    "mandatory_items": [
+      "Mesin EDC Perbankan (BCA / Mandiri)",
+      "Akses Mutasi Rekening Bank / QRIS Merchant Portal",
+      "Printer Thermal Kasir & Kertas Roll Cadangan",
+      "Brankas Kasir / Cash Drawer Kunci Ganda"
+    ],
+    "compliance_kpi": "0% Selisih Kasir; 100% Bukti Transfer Terverifikasi Rekening Koran.",
+    "warning": "DILARANG KERAS merilis produk atau mengizinkan pasien pulang sebelum status pembayaran TERKONFIRMASI LUNAS di mutasi rekening!"
+  }
+]

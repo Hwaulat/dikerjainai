@@ -1,0 +1,199 @@
+{
+  "unredeemed": {
+    "key": "unredeemed",
+    "title": "Sisa Treatment & Deposit Recall",
+    "category": "Sales & Front Office",
+    "badge_color": "amber",
+    "icon": "fa-solid fa-clock-rotate-left",
+    "description": "Pesan recall untuk pasien yang masih memiliki sisa saldo deposit, DP 50%, atau kuota treatment belum terpakai.",
+    "variables": [
+      "{NAMA_PASIEN}",
+      "{CABANG}",
+      "{TREATMENT}",
+      "{SISA_SALDO}",
+      "{KATEGORI}",
+      "{DOKTER}"
+    ],
+    "template": "Halo Kak {NAMA_PASIEN} ✨ Salam hangat dari KEFIR Derma Clinic {CABANG}! 💖\n\nKami menginfokan bahwa Kakak masih memiliki benefit perawatan *{TREATMENT}* dengan sisa saldo *{SISA_SALDO}* yang tersimpan aktif di sistem kami dan siap untuk Kakak reservasi kapan saja.\n\nApakah berkenan kami bantu atur jadwal perawatannya minggu ini Kak? Agar hasil kulit glowingnya tetap optimal ya Kak~ 💆‍♀️✨\n\nBisa langsung balas pesan ini untuk booking jadwal ya Kak. Terima kasih banyak! 🙏💕",
+    "updated_at": "2026-09-21T03:29:36.866Z"
+  },
+  "vip": {
+    "key": "vip",
+    "title": "VIP Royalty (Tier Very High > Rp 4 Juta)",
+    "category": "CRM & Marketing",
+    "badge_color": "purple",
+    "icon": "fa-solid fa-crown",
+    "description": "Penawaran eksklusif khusus pasien loyalitas tertinggi / sultan.",
+    "variables": [
+      "{NAMA_PASIEN}",
+      "{CABANG}",
+      "{KODE_VOUCHER}",
+      "{BENEFIT_1}",
+      "{BENEFIT_2}"
+    ],
+    "code": "VIP-KEFIR-ROSE",
+    "benefit1": "Diskon 35% Pico Laser / DNA Salmon Booster",
+    "benefit2": "FREE 1x Crystal Dew Facial Ampoule",
+    "template": "Halo Kak {NAMA_PASIEN} tercinta ✨,\n\nTerima kasih telah menjadi bagian dari *VIP Royalty Member KEFIR Derma Clinic* ({CABANG}) 💖.\n\nSpesial untuk Kakak, kami siapkan *Exclusive VIP Treatment Voucher*:\n💎 *{BENEFIT_1}*\n🎁 *{BENEFIT_2}*\nKode Voucher: *{KODE_VOUCHER}*\n\nIngin reservasi ruang privat dokter besok/lusa, Kak? Tim dokter kami siap menyambut Kakak ✨."
+  },
+  "tier_high": {
+    "key": "tier_high",
+    "title": "Tier High (Rp 1.5 Juta - Rp 4 Juta)",
+    "category": "CRM & Marketing",
+    "badge_color": "blue",
+    "icon": "fa-solid fa-gem",
+    "description": "Broadcast promosi untuk pasien pembelanjaan tinggi.",
+    "variables": [
+      "{NAMA_PASIEN}",
+      "{CABANG}",
+      "{KODE_VOUCHER}",
+      "{BENEFIT_1}"
+    ],
+    "code": "HIGH-GLOW-25",
+    "benefit1": "Diskon 25% Seluruh Treatment Laser & Glowing Facial",
+    "template": "Halo Kak {NAMA_PASIEN} ✨,\n\nSaatnya refreshing kulit wajah Kakak di *KEFIR Derma Clinic* ({CABANG}) 💖!\n\nSpesial untuk Kakak, kami ada penawaran eksklusif:\n✨ *{BENEFIT_1}*\nKode Voucher: *{KODE_VOUCHER}*\n\nMau kami bantu amankan jadwal konsultasi dokter hari ini/besok Kak? 💆‍♀️✨"
+  },
+  "tier_middle": {
+    "key": "tier_middle",
+    "title": "Tier Middle (Rp 800 Ribu - Rp 1.5 Juta)",
+    "category": "CRM & Marketing",
+    "badge_color": "cyan",
+    "icon": "fa-solid fa-leaf",
+    "description": "Broadcast promosi untuk pasien pembelanjaan menengah.",
+    "variables": [
+      "{NAMA_PASIEN}",
+      "{CABANG}",
+      "{KODE_VOUCHER}",
+      "{BENEFIT_1}"
+    ],
+    "code": "MID-REFRESH-20",
+    "benefit1": "Diskon 20% Treatment Refreshing Facial & Peeling",
+    "template": "Halo Kak {NAMA_PASIEN} ✨,\n\nKabar gembira dari *KEFIR Derma Clinic* ({CABANG})! 🌸\nKulit wajah yang sehat butuh perawatan rutin berkala. Khusus untuk Kakak:\n🎁 *{BENEFIT_1}*\nKode Voucher: *{KODE_VOUCHER}*\n\nYuk reservasi perawatan glowing favorit Kakak minggu ini! Hubungi kami untuk amankan jam slot ya Kak. 💖"
+  },
+  "tier_low": {
+    "key": "tier_low",
+    "title": "Tier Low / Regular (< Rp 800 Ribu)",
+    "category": "CRM & Marketing",
+    "badge_color": "emerald",
+    "icon": "fa-solid fa-star",
+    "description": "Broadcast promosi untuk pasien entry-level / kunjungan reguler.",
+    "variables": [
+      "{NAMA_PASIEN}",
+      "{CABANG}",
+      "{KODE_VOUCHER}",
+      "{BENEFIT_1}"
+    ],
+    "code": "GLOW-STARTER-15",
+    "benefit1": "Diskon 15% Treatment Wajah Glowing Pertama / Lanjutan",
+    "template": "Halo Kak {NAMA_PASIEN} ✨,\n\nTerima kasih atas kunjungan Kakak di *KEFIR Derma Clinic* ({CABANG})! 💕\nIngin hasil perawatan kemarin bertahan lebih lama? Yuk lanjutkan perawatan kulit Kakak:\n🌟 *{BENEFIT_1}*\nKode Voucher: *{KODE_VOUCHER}*\n\nKonsultasikan kebutuhan kulit Kakak bersama skin expert kami hari ini ya Kak! ✨"
+  },
+  "churn": {
+    "key": "churn",
+    "title": "Reaktivasi Pasien (Winback > 90 Hari)",
+    "category": "CRM & Sales",
+    "badge_color": "rose",
+    "icon": "fa-solid fa-user-plus",
+    "description": "Pesan kangen dan voucher reaktivasi untuk pasien yang sudah lama tidak berkunjung.",
+    "variables": [
+      "{NAMA_PASIEN}",
+      "{CABANG}",
+      "{TOTAL_SPENT}",
+      "{KODE_VOUCHER}",
+      "{BENEFIT_1}"
+    ],
+    "code": "COMEBACK-KEFIR",
+    "benefit1": "Free Konsultasi Dokter + Diskon 20% Perawatan",
+    "template": "Halo Kak *{NAMA_PASIEN}*! 🌸✨\n\nKami rindu kehadiran Kakak di *KEFIR Derma Clinic* ({CABANG})! 💖\n\nSebagai pasien setia kami (total perawatan sebelumnya *{TOTAL_SPENT}*), yuk kembali glowing bersama kami:\n🎁 *{BENEFIT_1}*\nKode Voucher: *{KODE_VOUCHER}*\n\nYuk sempatkan relaksasi kulit minggu ini Kak! Balas pesan ini untuk klaim voucher & booking jadwal ya Kak 💕"
+  },
+  "birthday": {
+    "key": "birthday",
+    "title": "Promo Ulang Tahun Pasien",
+    "category": "CRM & Loyalty",
+    "badge_color": "pink",
+    "icon": "fa-solid fa-cake-candles",
+    "description": "Ucapan ulang tahun spesial dan voucher hadiah personal.",
+    "variables": [
+      "{NAMA_PASIEN}",
+      "{CABANG}",
+      "{KODE_VOUCHER}",
+      "{BENEFIT_1}",
+      "{BENEFIT_2}"
+    ],
+    "code": "HBD-KEFIR-GLOW",
+    "benefit1": "FREE 1x Treatment Facial Glow Refresh",
+    "benefit2": "Diskon 25% Seluruh Treatment Dokter & Laser",
+    "template": "Selamat Ulang Tahun Kak {NAMA_PASIEN}! 🎂🎉✨\n\nSemoga selalu sehat, bahagia, dan semakin bercahaya 💖!\n\nSpesial di hari bahagia Kakak, *KEFIR Derma Clinic* ({CABANG}) memberikan kado istimewa:\n🎁 *{BENEFIT_1}*\n💎 *{BENEFIT_2}*\nKode Voucher Spesial: *{KODE_VOUCHER}*\n\nVoucher berlaku sepanjang bulan ini ya Kak. Yuk sempatkan reservasi hari spesial Kakak bersama kami! Bisa langsung balas chat ini ya Kak ✨."
+  },
+  "unpaid": {
+    "key": "unpaid",
+    "title": "Pengingat Tagihan Invoice (Unpaid Reminder)",
+    "category": "Finance & Kasir",
+    "badge_color": "amber",
+    "icon": "fa-solid fa-file-invoice-dollar",
+    "description": "Pesan konfirmasi rincian tagihan kasir yang berstatus pending / belum lunas.",
+    "variables": [
+      "{NAMA_PASIEN}",
+      "{NO_INVOICE}",
+      "{TOTAL_TAGIHAN}",
+      "{REK_BCA}",
+      "{REK_MANDIRI}",
+      "{CABANG}"
+    ],
+    "bca": "541-098-7722 (a.n Kefir Derma Clinic)",
+    "mandiri": "157-00-8899-2211 (a.n PT Kefir House)",
+    "template": "Halo Kak {NAMA_PASIEN} ✨,\n\nTerima kasih telah melakukan perawatan di *KEFIR Derma Clinic* ({CABANG}) 💖.\n\nKami menginformasikan status invoice perawatan Kakak:\n📄 No. Invoice: *{NO_INVOICE}*\n💰 Total Tagihan: *{TOTAL_TAGIHAN}*\n📌 Status: *Menunggu Pembayaran (Pending)*\n\nPembayaran dapat ditransfer via:\n🏦 *BCA: {REK_BCA}*\n🏦 *Mandiri: {REK_MANDIRI}*\nAtau scan QRIS kasir klinik.\n\nJika sudah transfer, mohon kirimkan bukti pembayarannya ya Kak. Terima kasih banyak Kak ✨!"
+  },
+  "doctor_roadmap": {
+    "key": "doctor_roadmap",
+    "title": "Clinical Treatment Roadmap (Rekomendasi Dokter)",
+    "category": "Medis & Clinical",
+    "badge_color": "indigo",
+    "icon": "fa-solid fa-stethoscope",
+    "description": "Rencana tahapan perawatan medis lanjutan yang diresepkan dokter kepada pasien.",
+    "variables": [
+      "{NAMA_PASIEN}",
+      "{DOKTER}",
+      "{CABANG}",
+      "{TREATMENT_LANJUTAN}",
+      "{INTERVAL}",
+      "{TANGGAL_KONTROL}",
+      "{ANALISIS_KULIT}",
+      "{CATATAN_DOKTER}"
+    ],
+    "template": "🏥 *KEFIR DERMA CLINIC — CLINICAL ROADMAP PERAWATAN DOKTER*\n\nHalo Kak *{NAMA_PASIEN}* tercinta ✨ Salam hangat dari KEFIR Derma Clinic {CABANG} 💖\n\nBerikut kami sampaikan tahapan rencana perawatan kulit (*Clinical Treatment Roadmap*) yang telah disusun secara personal oleh *{DOKTER}*:\n\n🔬 *Analisis / Diagnosa Kulit:* {ANALISIS_KULIT}\n🌸 *Tahapan Tindakan Lanjutan:* *{TREATMENT_LANJUTAN}*{INTERVAL}\n🗓️ *Saran Jadwal Kontrol Kembali:* {TANGGAL_KONTROL}\n\n💡 *Catatan Dokter:* {CATATAN_DOKTER}\n\nJika ada pertanyaan mengenai tindakan atau resep produk, Kakak dapat langsung chat kami ya. Terima kasih banyak! 🙏✨",
+    "updated_at": "2026-09-21T05:00:05.330Z"
+  },
+  "sales_followup": {
+    "key": "sales_followup",
+    "title": "Follow-Up Sales Roadmap Dokter",
+    "category": "Sales & CS",
+    "badge_color": "indigo",
+    "icon": "fa-solid fa-headset",
+    "description": "Pesan follow-up tim Sales/CS ke pasien untuk konfirmasi jadwal tindakan lanjutan rekomendasi dokter.",
+    "variables": [
+      "{NAMA_PASIEN}",
+      "{CABANG}",
+      "{DOKTER}",
+      "{TREATMENT_LANJUTAN}",
+      "{INTERVAL}",
+      "{TANGGAL_KONTROL}"
+    ],
+    "template": "Halo Kak *{NAMA_PASIEN}* tercinta ✨ Salam hangat dari *KEFIR Derma Clinic {CABANG}* 💖\n\nSemoga kondisi kulit Kakak semakin membaik pasca kunjungan bersama *{DOKTER}* ya Kak.\n\nBerdasarkan catatan rekam medis dokter, untuk menjaga hasil perawatan optimal, tahapan berikutnya Kakak sudah masuk jadwal untuk:\n🌸 *{TREATMENT_LANJUTAN}*{INTERVAL}\n🗓️ Jadwal yang disarankan dokter: *{TANGGAL_KONTROL}*\n\nApakah kami bantu amankan slot jadwal konsultasi dokter & treatment di *KEFIR {CABANG}* untuk hari ini / akhir pekan ini Kak? 💆‍♀️✨\n\n_Kami siap bantu reservasikan jam terbaik untuk Kakak ya_ 🙏💖"
+  },
+  "post_treatment": {
+    "key": "post_treatment",
+    "title": "Follow-Up Pasca Tindakan (H+3 / H+7 Post-Care)",
+    "category": "Operasional & CX",
+    "badge_color": "teal",
+    "icon": "fa-solid fa-comments",
+    "description": "Penyapaan kondisi kulit pasca tindakan dan survei kepuasan pasien.",
+    "variables": [
+      "{NAMA_PASIEN}",
+      "{CABANG}",
+      "{TREATMENT}",
+      "{H_PLUS}",
+      "{LINK_SURVEI}"
+    ],
+    "template": "Selamat siang Kak *{NAMA_PASIEN}*! ✨\n\nSudah H+{H_PLUS} pasca perawatan *{TREATMENT}* di KEFIR Derma Clinic {CABANG} 💖. Apakah hasilnya sudah mulai terasa lebih segar & glowing?\n\nKenyamanan dan kepuasan Kakak adalah prioritas utama kami. Kami sangat senang jika Kakak berkenan meluangkan waktu sejenak untuk membagikan pengalaman di tautan berikut:\n👉 {LINK_SURVEI}\n\nSemoga hari Kakak menyenangkan dan kami tunggu kedatangannya kembali ya Kak! 🥰✨"
+  }
+}

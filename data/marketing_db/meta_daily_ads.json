@@ -1,0 +1,119 @@
+{
+  "account_id": "act_884920194821",
+  "account_name": "KEFIR Derma Clinic — Official Ads",
+  "currency": "IDR",
+  "date_range": "2026-08-01 s/d 2026-08-31",
+  "kpi_summary": {
+    "total_spend": 21000000,
+    "total_spend_fmt": "Rp 21.000.000",
+    "total_impressions": 482000,
+    "total_clicks": 28400,
+    "avg_ctr": "5.89%",
+    "avg_cpc": 739,
+    "avg_cpc_fmt": "Rp 739",
+    "leads_generated": 540,
+    "cost_per_lead": 38888,
+    "cost_per_lead_fmt": "Rp 38.888",
+    "total_omset_generated": 164700000,
+    "total_omset_generated_fmt": "Rp 164.700.000",
+    "blended_roas": "7.84x"
+  },
+  "campaigns": [
+    {
+      "id": "CAMP-META-001",
+      "name": "[PROMO] Pico Laser Margonda & PDK — Lead Gen WA",
+      "objective": "MESSAGES (WhatsApp Inbound)",
+      "budget_daily": 350000,
+      "budget_daily_fmt": "Rp 350.000 / hari",
+      "spend": 8450000,
+      "spend_fmt": "Rp 8.450.000",
+      "impressions": 198000,
+      "clicks": 12400,
+      "ctr": "6.26%",
+      "cpc": 681,
+      "cpc_fmt": "Rp 681",
+      "leads": 268,
+      "cpl": 31529,
+      "cpl_fmt": "Rp 31.529",
+      "roas": "9.2x",
+      "health_status": "WINNING CAMPAIGN 🔥",
+      "ai_verdict": {
+        "recommendation": "SCALE UP AGGRESSIVE (+30% Budget)",
+        "color": "emerald",
+        "reason": "ROAS sangat tinggi 9.2x dengan CPL termurah Rp 31.529. Frekuensi masih 1.8x (belum jenuh). Tambah budget ke Rp 500.000/hari untuk dominasi market Depok & Jaktim."
+      }
+    },
+    {
+      "id": "CAMP-META-002",
+      "name": "[RETARGETING] DNA Salmon Booster — Custom Audience Pasien Lama",
+      "objective": "CONVERSIONS / SALES",
+      "budget_daily": 200000,
+      "budget_daily_fmt": "Rp 200.000 / hari",
+      "spend": 5200000,
+      "spend_fmt": "Rp 5.200.000",
+      "impressions": 84000,
+      "clicks": 6100,
+      "ctr": "7.26%",
+      "cpc": 852,
+      "cpc_fmt": "Rp 852",
+      "leads": 142,
+      "cpl": 36619,
+      "cpl_fmt": "Rp 36.619",
+      "roas": "8.5x",
+      "health_status": "HIGH PERFORMER ⭐",
+      "ai_verdict": {
+        "recommendation": "MAINTAIN & REFRESH CREATIVE",
+        "color": "cyan",
+        "reason": "Konversi tinggi ke VIP treatments. Namun frekuensi mulai naik ke 3.4x. Segera masukkan 2 variasi video testimoni dokter baru agar audiens tidak fatigue."
+      }
+    },
+    {
+      "id": "CAMP-META-003",
+      "name": "[TOFU] Brand Awareness Video — Facial Crystal Dew 14in1",
+      "objective": "VIDEO VIEWS / TRAFFIC",
+      "budget_daily": 250000,
+      "budget_daily_fmt": "Rp 250.000 / hari",
+      "spend": 4850000,
+      "spend_fmt": "Rp 4.850.000",
+      "impressions": 142000,
+      "clicks": 6800,
+      "ctr": "4.78%",
+      "cpc": 713,
+      "cpc_fmt": "Rp 713",
+      "leads": 88,
+      "cpl": 55113,
+      "cpl_fmt": "Rp 55.113",
+      "roas": "4.1x",
+      "health_status": "AVERAGE PERFORMANCE ⚠️",
+      "ai_verdict": {
+        "recommendation": "GANTI ADSET / TARGETING AUDIENCE",
+        "color": "amber",
+        "reason": "Cost per Lead mahal (Rp 55.113) dan ROAS di bawah target klinik (4.1x vs KPI 7.0x). Rekomendasi AI: Matikan Adset Interest Umum, persempit ke Lookalike Audience 1% dari database pasien Neosoft."
+      }
+    },
+    {
+      "id": "CAMP-META-004",
+      "name": "[TESTING] Skincare Acne Night Cream Flash Sale",
+      "objective": "CATALOG SALES (E-Commerce/WA)",
+      "budget_daily": 150000,
+      "budget_daily_fmt": "Rp 150.000 / hari",
+      "spend": 2500000,
+      "spend_fmt": "Rp 2.500.000",
+      "impressions": 58000,
+      "clicks": 3100,
+      "ctr": "5.34%",
+      "cpc": 806,
+      "cpc_fmt": "Rp 806",
+      "leads": 42,
+      "cpl": 59523,
+      "cpl_fmt": "Rp 59.523",
+      "roas": "2.8x",
+      "health_status": "BLEEDING / FATIGUE 🚨",
+      "ai_verdict": {
+        "recommendation": "PAUSE / MATIKAN CAMPAIGN SEGERA",
+        "color": "rose",
+        "reason": "ROAS 2.8x tidak menutupi COGS & operasional klinik. Offer harga ecer kurang menarik dibanding bundle treatment. Alihkan sisa budget Rp 150.000/hari ke Camp 001 (Pico Laser)."
+      }
+    }
+  ]
+}

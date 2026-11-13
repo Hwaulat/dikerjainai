@@ -1,0 +1,291 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model bhp_standard_items {
+  standard_id   String
+  line_no       Int
+  item_code     String
+  name          String?
+  standard_qty  Decimal       @default(0) @db.Decimal
+  uom           String?
+  extra         Json?
+  bhp_standards bhp_standards @relation(fields: [standard_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([standard_id, line_no])
+  @@index([item_code], map: "bhp_standard_items_item_idx")
+}
+
+model bhp_standards {
+  id                        String               @id
+  position                  Int
+  treatment_code            String?
+  treatment_name            String
+  version                   String?
+  is_promo_version          Boolean              @default(false)
+  standard_duration_minutes Int?
+  updated_at                String?
+  updated_by                String?
+  extra                     Json?
+  db_updated_at             DateTime             @default(now()) @db.Timestamptz(6)
+  bhp_standard_items        bhp_standard_items[]
+
+  @@index([treatment_code], map: "bhp_standards_code_idx")
+}
+
+model bhp_unit_overrides {
+  item_code     String   @id
+  usage_uom     String?
+  per_pack      Decimal? @db.Decimal
+  updated_by    String?
+  updated_at    String?
+  extra         Json?
+  db_updated_at DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model doctor_followup_status {
+  rec_id            String   @id
+  status            String?
+  last_contacted_at String?
+  contacted_by      String?
+  notes             String?
+  booking_date      String?
+  updated_at        String?
+  null_props        String[]
+  extra             Json?
+  db_updated_at     DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model doctor_recommendations {
+  position                Int      @id
+  id                      String?
+  invoice_code            String?
+  customer_id             Json?
+  customer_name           String?
+  doctor_name             String?
+  doctor_id               Json?
+  consultation_date       String?
+  skin_analysis           String?
+  return_interval_days    Decimal? @db.Decimal
+  recommended_return_date String?
+  roadmap_steps           Json?
+  roadmap_months          Json?
+  homecare_skincare       Json?
+  doctor_notes            String?
+  recommendation          String?
+  updated_by              String?
+  created_at              String?
+  updated_at              String?
+  null_props              String[]
+  extra                   Json?
+  db_updated_at           DateTime @default(now()) @db.Timestamptz(6)
+
+  @@index([id])
+}
+
+model document_history {
+  id         BigInt   @id @default(autoincrement())
+  path       String
+  body_json  Json?
+  body_text  String?
+  changed_at DateTime @default(now()) @db.Timestamptz(6)
+
+  @@index([path, changed_at(sort: Desc)], map: "document_history_path_idx")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+/// This model contains an expression index which requires additional setup for migrations. Visit https://pris.ly/d/expression-indexes for more info.
+model documents {
+  path       String   @id
+  kind       String
+  body_json  Json?
+  body_text  String?
+  size_bytes Int      @default(0)
+  updated_at DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model marketing_promos {
+  position         Int      @id
+  id               String?
+  name             String?
+  period_start     String?
+  period_end       String?
+  branch           String?
+  target_item      String?
+  target_type      String?
+  normal_price     Decimal? @db.Decimal
+  promo_price      Decimal? @db.Decimal
+  bottom_price     Decimal? @db.Decimal
+  quota_total      Decimal? @db.Decimal
+  quota_used       Decimal? @db.Decimal
+  target_patient   String?
+  terms_conditions String?
+  status           String?
+  created_at       String?
+  created_by       String?
+  null_props       String[]
+  extra            Json?
+  db_updated_at    DateTime @default(now()) @db.Timestamptz(6)
+
+  @@index([id])
+}
+
+model monthly_costs {
+  period_key     String   @id
+  period         String?
+  bhp_petty_cash Decimal? @db.Decimal
+  gaji_karyawan  Decimal? @db.Decimal
+  sewa_utilitas  Decimal? @db.Decimal
+  lain_lain      Decimal? @db.Decimal
+  filled         Boolean?
+  updated_by     String?
+  updated_at     String?
+  null_props     String[]
+  extra          Json?
+  db_updated_at  DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model monthly_targets {
+  month              String   @id
+  total_target       Decimal? @db.Decimal
+  depok_target       Decimal? @db.Decimal
+  pondok_kopi_target Decimal? @db.Decimal
+  notes              String?
+  updated_at         String?
+  updated_by         String?
+  null_props         String[]
+  extra              Json?
+  db_updated_at      DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model patient_feedbacks {
+  position            Int      @id
+  id                  String?
+  date                String?
+  submitted_at        String?
+  customer_name       String?
+  patient_name        String?
+  phone               String?
+  branch              String?
+  treatment           String?
+  doctor_name         String?
+  nurse_name          String?
+  rating              Decimal? @db.Decimal
+  rating_overall      Decimal? @db.Decimal
+  rating_doctor       Decimal? @db.Decimal
+  rating_nurse        Decimal? @db.Decimal
+  rating_facility     Decimal? @db.Decimal
+  rating_treatment    Decimal? @db.Decimal
+  nps_score           Decimal? @db.Decimal
+  review_text         String?
+  comments            String?
+  source              String?
+  routing_action      String?
+  google_maps_url     String?
+  complaint_ticket_id String?
+  auto_ticket_id      String?
+  null_props          String[]
+  extra               Json?
+  db_updated_at       DateTime @default(now()) @db.Timestamptz(6)
+
+  @@index([id])
+}
+
+model petty_cash_entries {
+  position      Int      @id
+  id            String?
+  period        String?
+  date          String?
+  description   String?
+  amount        Decimal? @db.Decimal
+  category      String?
+  added_by      String?
+  added_at      String?
+  null_props    String[]
+  extra         Json?
+  db_updated_at DateTime @default(now()) @db.Timestamptz(6)
+
+  @@index([period])
+}
+
+model price_campaigns {
+  position      Int      @id
+  id            String?
+  name          String?
+  memo_no       String?
+  start_date    String?
+  end_date      String?
+  offer         String?
+  terms         String?
+  source_url    String?
+  items         Json?
+  bundles       Json?
+  null_props    String[]
+  extra         Json?
+  db_updated_at DateTime @default(now()) @db.Timestamptz(6)
+
+  @@index([id])
+}
+
+model price_items {
+  position         Int      @id
+  key              String?
+  name             String?
+  category         String?
+  product_id       Decimal? @db.Decimal
+  product_code     String?
+  product_name     String?
+  match            String?
+  list_price       Decimal? @db.Decimal
+  bottom_price     Decimal? @db.Decimal
+  pkg3_per_session Decimal? @db.Decimal
+  pkg6_per_session Decimal? @db.Decimal
+  pkg3_total       Decimal? @db.Decimal
+  pkg6_total       Decimal? @db.Decimal
+  note             String?
+  null_props       String[]
+  extra            Json?
+  db_updated_at    DateTime @default(now()) @db.Timestamptz(6)
+
+  @@index([key])
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model price_master_meta {
+  id               Int      @id
+  version          Decimal? @db.Decimal
+  updated_at       String?
+  updated_by       String?
+  drive_folder_url String?
+  currency_note    String?
+  arrays_present   String[]
+  null_props       String[]
+  extra            Json?
+  db_updated_at    DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model sales_bottom_prices {
+  code_key         String   @id
+  code             String?
+  name             String?
+  normal_price     Decimal? @db.Decimal
+  bottom_price     Decimal? @db.Decimal
+  max_discount_pct Decimal? @db.Decimal
+  allowed_roles    Json?
+  notes            String?
+  updated_at       String?
+  null_props       String[]
+  extra            Json?
+  db_updated_at    DateTime @default(now()) @db.Timestamptz(6)
+}
+
+model schema_info {
+  key        String   @id
+  value      String
+  updated_at DateTime @default(now()) @db.Timestamptz(6)
+}

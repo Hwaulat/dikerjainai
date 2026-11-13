@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Version Control & IDE
+.git/
+.gitignore
+.gitlab-ci.yml
+.claude/
+.gemini/
+
+# Sensitive Local Secrets & Environment
+.env
+.env.*
+*.env
+
+# WhatsApp Auth Session & Credentials
+wa_assistant_auth/
+*.log
+logs/
+
+# Temporary and generated runtime files
+.chrome_tmp/
+/tmp/
+data/ai_chat_history/
+data/generated_docs/
+data/neosoft_db/.sync.lock
+data/neosoft_db/token.txt
+data/.session_secret
+data/wa_whitelist.json
+data/ai_feedback_log.json
+data/crm_tier_chat_log.json
+data/patient_grade_state.json
+
+# Large Raw Data Binaries and Synced Cache
+data/google_sheets_db/*.xlsx
+data/neosoft_db/*.json
+data/google_sheets_db/*.json
+
+# Heavy Documentation & Deployment artifacts
+deploy/
+docs/
+*.pdf
+gap_analysis_rai_mvp.html

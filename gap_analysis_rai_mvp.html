@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gap Analysis — RAI for Clinic MVP vs Kefir Dashboard</title>
+<style>
+  :root { --bg: #0a0e1a; --card: #111827; --border: #1e293b; --text: #e2e8f0; --muted: #64748b; --green: #10b981; --yellow: #f59e0b; --red: #ef4444; --cyan: #06b6d4; --amber: #f59e0b; --indigo: #818cf8; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, sans-serif; padding: 2rem; line-height: 1.5; }
+  .header { text-align: center; margin-bottom: 3rem; }
+  .header h1 { font-size: 1.8rem; font-weight: 900; background: linear-gradient(135deg, var(--cyan), var(--indigo)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.5rem; }
+  .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
+  .summary-card { background: var(--card); border: 1px solid var(--border); border-radius: 1rem; padding: 1.2rem; text-align: center; }
+  .summary-card .num { font-size: 2.2rem; font-weight: 900; font-family: 'JetBrains Mono', monospace; }
+  .summary-card .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; margin-top: 0.3rem; }
+  .green { color: var(--green); } .yellow { color: var(--yellow); } .red { color: var(--red); } .cyan { color: var(--cyan); }
+  .progress-bar { width: 100%; height: 12px; background: var(--border); border-radius: 6px; overflow: hidden; margin: 1.5rem 0; }
+  .progress-fill { height: 100%; border-radius: 6px; background: linear-gradient(90deg, var(--green), var(--cyan)); transition: width 0.5s; }
+  .module { background: var(--card); border: 1px solid var(--border); border-radius: 1rem; margin-bottom: 1.5rem; overflow: hidden; }
+  .module-header { padding: 1rem 1.5rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); cursor: pointer; }
+  .module-header h2 { font-size: 1rem; font-weight: 800; }
+  .module-header .badge { font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 9999px; }
+  .badge-green { background: rgba(16,185,129,0.15); color: var(--green); border: 1px solid rgba(16,185,129,0.3); }
+  .badge-yellow { background: rgba(245,158,11,0.15); color: var(--yellow); border: 1px solid rgba(245,158,11,0.3); }
+  .badge-red { background: rgba(239,68,68,0.15); color: var(--red); border: 1px solid rgba(239,68,68,0.3); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  th { text-align: left; padding: 0.6rem 1rem; background: rgba(30,41,59,0.5); color: var(--muted); font-size: 0.7rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.03em; }
+  td { padding: 0.7rem 1rem; border-top: 1px solid var(--border); vertical-align: top; }
+  tr:hover { background: rgba(6,182,212,0.03); }
+  .status { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 9999px; }
+  .status-done { background: rgba(16,185,129,0.15); color: var(--green); }
+  .status-partial { background: rgba(245,158,11,0.15); color: var(--yellow); }
+  .status-not { background: rgba(239,68,68,0.1); color: var(--red); }
+  .fid { font-family: 'JetBrains Mono', monospace; font-weight: 700; color: var(--cyan); font-size: 0.75rem; }
+  .evidence { font-size: 0.7rem; color: var(--muted); font-style: italic; }
+  .phase-tag { font-size: 0.6rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 4px; background: rgba(129,140,248,0.15); color: var(--indigo); border: 1px solid rgba(129,140,248,0.2); }
+  .footer { text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+  .footer p { color: var(--muted); font-size: 0.75rem; }
+  @media (max-width: 768px) { body { padding: 1rem; } .summary-grid { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📊 Gap Analysis — RAI for Clinic MVP</h1>
+  <p>Kefir Derma Clinic Mission Control Dashboard vs Dokumen Spesifikasi RAI</p>
+  <p style="margin-top:0.3rem; font-size:0.75rem; color:#475569;">Generated: 7 September 2026 • Source: RAI for Clinic MVP.pdf (20 halaman, 73 fitur)</p>
+</div>
+
+<div class="summary-grid">
+  <div class="summary-card">
+    <div class="num cyan">73</div>
+    <div class="label">Total Fitur RAI</div>
+  </div>
+  <div class="summary-card">
+    <div class="num green">15</div>
+    <div class="label">✅ Done / Sudah Jadi</div>
+  </div>
+  <div class="summary-card">
+    <div class="num yellow">29</div>
+    <div class="label">⚠️ Partial / Sebagian</div>
+  </div>
+  <div class="summary-card">
+    <div class="num red">29</div>
+    <div class="label">❌ Belum Dimulai</div>
+  </div>
+  <div class="summary-card">
+    <div class="num green">60%</div>
+    <div class="label">Coverage (Done+Partial)</div>
+  </div>
+</div>
+
+<div class="progress-bar">
+  <div class="progress-fill" style="width: 60%"></div>
+</div>
+<p style="text-align:center; font-size:0.75rem; color:var(--muted); margin-bottom:2rem;">44 dari 73 fitur sudah diimplementasikan (penuh atau sebagian) • 29 fitur belum dimulai</p>
+
+<!-- ===================== MODULE A: EXECUTIVE ===================== -->
+<div class="module">
+  <div class="module-header">
+    <h2>A. Executive & Owner Dashboard</h2>
+    <div><span class="badge badge-green">5/5 Covered</span> <span class="phase-tag">Fase 1</span></div>
+  </div>
+  <table>
+    <tr><th>ID</th><th>Fitur</th><th>Status</th><th>Evidence di Dashboard</th></tr>
+    <tr><td class="fid">EX-01</td><td>Executive Dashboard</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Section Executive Analytics, ringkasan omzet, transaksi, KPI per cabang, filter periode</td></tr>
+    <tr><td class="fid">EX-02</td><td>Branch Performance</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Tab Depok & Pondok Kopi, perbandingan omzet, invoice, filter cabang reaktif</td></tr>
+    <tr><td class="fid">EX-03</td><td>Executive Complaint Summary</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Section keluhan, komplain, Quick Action Alerts</td></tr>
+    <tr><td class="fid">EX-04</td><td>Forecast & Early Warning</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Weekend Stock Radar, Safety Stock, prediksi lonjakan demand 250%</td></tr>
+    <tr><td class="fid">EX-05</td><td>Owner AI Assistant</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">AI Assistant Owner (/api/assistant/ask), zero-hallucination guardrails, temp 0.1</td></tr>
+  </table>
+</div>
+
+<!-- ===================== MODULE B: KPI DOKTER & PERAWAT ===================== -->
+<div class="module">
+  <div class="module-header">
+    <h2>B. Performa Dokter & Perawat</h2>
+    <div><span class="badge badge-yellow">3/5 Covered</span> <span class="phase-tag">Fase 1</span></div>
+  </div>
+  <table>
+    <tr><th>ID</th><th>Fitur</th><th>Status</th><th>Evidence di Dashboard</th></tr>
+    <tr><td class="fid">CL-01</td><td>KPI Dokter</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Rekam medis ter-link di Patient 360°, belum ada dashboard KPI scoring spesifik dokter</td></tr>
+    <tr><td class="fid">CL-02</td><td>Doctor Recommendation Monitoring</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">CL-03</td><td>KPI Perawat</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Modul Kepatuhan Foto Perawat, compliance foto before/after, 2689 foto S3 terverifikasi</td></tr>
+    <tr><td class="fid">CL-04</td><td>Upselling Performance</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Upsell recommendation di Patient 360°, belum ada tracking konversi upsell</td></tr>
+    <tr><td class="fid">CL-05</td><td>AI KPI Scoring</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+  </table>
+</div>
+
+<!-- ===================== MODULE C: PATIENT 360 ===================== -->
+<div class="module">
+  <div class="module-header">
+    <h2>C. Patient 360°, Sales & Follow-Up</h2>
+    <div><span class="badge badge-yellow">10/14 Covered</span> <span class="phase-tag">Fase 1</span></div>
+  </div>
+  <table>
+    <tr><th>ID</th><th>Fitur</th><th>Status</th><th>Evidence di Dashboard</th></tr>
+    <tr><td class="fid">PT-01</td><td>Patient 360</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Full Patient 360° profil, histori transaksi, spending, foto S3, sesi klinis, rekomendasi</td></tr>
+    <tr><td class="fid">PT-02</td><td>Treatment Plan History</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Treatment history kronologis ada, belum ada plan management/roadmap dokter</td></tr>
+    <tr><td class="fid">PT-03</td><td>Follow-Up Hari H</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Template WA Hari H tersedia, belum otomatis kirim</td></tr>
+    <tr><td class="fid">PT-04</td><td>Follow-Up H+3</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Template WA H+3 tersedia, belum otomatis trigger</td></tr>
+    <tr><td class="fid">PT-05</td><td>Follow-Up H+7</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Template WA H+7 tersedia, belum otomatis trigger</td></tr>
+    <tr><td class="fid">PT-06</td><td>Appointment Monitoring</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Jadwal kunjungan ada, belum ada appointment tracking real-time</td></tr>
+    <tr><td class="fid">PT-07</td><td>Patient Grading (X/Y/Z)</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">Belum ada grading berbasis frekuensi kunjungan X/Y/Z</td></tr>
+    <tr><td class="fid">PT-08</td><td>Spending Segmentation</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">5-Tier (Very Low → Very High), donut chart dinamis, 8025 pasien tersegmentasi</td></tr>
+    <tr><td class="fid">PT-09</td><td>Upselling Recommendation</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Rekomendasi Comfort/Upsell/VIP/Luxury di Patient 360°, belum terkirim ke SC via WA</td></tr>
+    <tr><td class="fid">PT-10</td><td>Price Recommendation</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Harga normal & promo terlihat, belum ada batas harga terendah configurable</td></tr>
+    <tr><td class="fid">PT-11</td><td>Feedback Reminder</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">PT-12</td><td>Customer Blasting</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">WhatsApp Blast per tier, template editable, approval, 8k pasien</td></tr>
+    <tr><td class="fid">PT-13</td><td>Follow-Up & Chat Tracking</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">PT-14</td><td>Lost Patient / Reactivation</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+  </table>
+</div>
+
+<!-- ===================== MODULE D: FARMASI & STOK ===================== -->
+<div class="module">
+  <div class="module-header">
+    <h2>D. Farmasi, Stok & Purchasing</h2>
+    <div><span class="badge badge-yellow">8/12 Covered</span> <span class="phase-tag">Fase 2</span></div>
+  </div>
+  <table>
+    <tr><th>ID</th><th>Fitur</th><th>Status</th><th>Evidence di Dashboard</th></tr>
+    <tr><td class="fid">ST-01</td><td>Stock Management</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Section Farmasi & Stok, 448 SKU resmi sinkronisasi Neosoft</td></tr>
+    <tr><td class="fid">ST-02</td><td>Expiry Monitoring</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Data expiry tersedia di master, belum ada alert H-180/H-90/H-30</td></tr>
+    <tr><td class="fid">ST-03</td><td>Slow-Moving & Dead Stock</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Deteksi dasar ada, belum ada alert otomatis ke farmasi</td></tr>
+    <tr><td class="fid">ST-04</td><td>Top Product & Treatment</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Top 5 Skincare & Top 5 Treatment terpisah, data riil Neosoft</td></tr>
+    <tr><td class="fid">ST-05</td><td>Usage Analysis</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Data pemakaian tersedia via usages_details.json, belum ada UI analisis mendalam</td></tr>
+    <tr><td class="fid">ST-06</td><td>Usage vs Revenue</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Data revenue & usage tersedia, belum ada perbandingan visual</td></tr>
+    <tr><td class="fid">ST-07</td><td>Supplier & Price Analysis</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Data supplier tersedia di master, belum ada perbandingan harga antar supplier</td></tr>
+    <tr><td class="fid">ST-08</td><td>AI Purchase Recommendation</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Weekend Stock Radar/demand forecasting, belum ada draft PO otomatis</td></tr>
+    <tr><td class="fid">ST-09</td><td>PO Comparison</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">ST-10</td><td>Campaign Inventory Alignment</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">ST-11</td><td>Pharmacy Sales Reminder</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">ST-12</td><td>Treatment Sales Reminder</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+  </table>
+</div>
+
+<!-- ===================== MODULE E: FINANCE ===================== -->
+<div class="module">
+  <div class="module-header">
+    <h2>E. Finance</h2>
+    <div><span class="badge badge-yellow">5/6 Covered</span> <span class="phase-tag">Fase 2</span></div>
+  </div>
+  <table>
+    <tr><th>ID</th><th>Fitur</th><th>Status</th><th>Evidence di Dashboard</th></tr>
+    <tr><td class="fid">FN-01</td><td>Commission Calculation</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Kalkulator Komisi Live, formula dokter medis/skincare per cabang</td></tr>
+    <tr><td class="fid">FN-02</td><td>Payment Photo Recognition (OCR)</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Infrastruktur OCR siap, belum terintegrasi ke pipeline bukti bayar</td></tr>
+    <tr><td class="fid">FN-03</td><td>Settlement Reconciliation</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Auto-Settlement 98.2%, section nav-settlement, reconciliation data</td></tr>
+    <tr><td class="fid">FN-04</td><td>Collection Monitoring</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Data collection/deposit tersedia, belum ada monitoring terpisah</td></tr>
+    <tr><td class="fid">FN-05</td><td>Patient Invoice Analysis</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Modal detail invoices ada, belum ada analisis anomali</td></tr>
+    <tr><td class="fid">FN-06</td><td>Deposit vs Treatment Analysis</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+  </table>
+</div>
+
+<!-- ===================== MODULE F: HR ===================== -->
+<div class="module">
+  <div class="module-header">
+    <h2>F. HR & Attendance</h2>
+    <div><span class="badge badge-yellow">2/4 Covered</span> <span class="phase-tag">Fase 4</span></div>
+  </div>
+  <table>
+    <tr><th>ID</th><th>Fitur</th><th>Status</th><th>Evidence di Dashboard</th></tr>
+    <tr><td class="fid">HR-01</td><td>Daily Attendance per Cut-Off</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Modul HRD & Absensi, tabel harian cut-off 26-25, sinkronisasi Gaji.id, 38 staf</td></tr>
+    <tr><td class="fid">HR-02</td><td>Nurse Shift Analysis</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Shift workload analytics, distribusi Depok/PKopi, fatigue risk, beban shift</td></tr>
+    <tr><td class="fid">HR-03</td><td>Employee Treatment Benefit</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">HR-04</td><td>Workforce Performance</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+  </table>
+</div>
+
+<!-- ===================== MODULE G: MARKETING ===================== -->
+<div class="module">
+  <div class="module-header">
+    <h2>G. Marketing & Content Management</h2>
+    <div><span class="badge badge-yellow">6/12 Covered</span> <span class="phase-tag">Fase 3</span></div>
+  </div>
+  <table>
+    <tr><th>ID</th><th>Fitur</th><th>Status</th><th>Evidence di Dashboard</th></tr>
+    <tr><td class="fid">MK-01</td><td>Patient Arrival Trend</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Data kedatangan tersedia, belum ada visualisasi tren jam/hari</td></tr>
+    <tr><td class="fid">MK-02</td><td>Patient Age Trend</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">MK-03</td><td>Treatment Trend</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">MK-04</td><td>Spending Trend</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">MK-05</td><td>Meta Ads Dashboard</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Data Meta Ads ada di marketing_db, belum ada dashboard konsolidasi</td></tr>
+    <tr><td class="fid">MK-06</td><td>Campaign Analysis</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">MK-07</td><td>Content Plan Monitoring</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Content plan data tersedia, belum ada kalender visual</td></tr>
+    <tr><td class="fid">MK-08</td><td>Script Development</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">AI Script Generator aktif, bisa generate draft konten</td></tr>
+    <tr><td class="fid">MK-09</td><td>Content Creation Assistance</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Caption & copy generation ada, brief visual belum</td></tr>
+    <tr><td class="fid">MK-10</td><td>DM Monitoring</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">MK-11</td><td>Google Drive Documentation</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Dokumentasi ada, belum otomatis sinkronisasi ke GDrive</td></tr>
+    <tr><td class="fid">MK-12</td><td>Local Branch Analysis</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+  </table>
+</div>
+
+<!-- ===================== MODULE H: CX ===================== -->
+<div class="module">
+  <div class="module-header">
+    <h2>H. Review, Complaint & Omnichannel</h2>
+    <div><span class="badge badge-red">0/5 Covered</span> <span class="phase-tag">Fase 3</span></div>
+  </div>
+  <table>
+    <tr><th>ID</th><th>Fitur</th><th>Status</th><th>Evidence di Dashboard</th></tr>
+    <tr><td class="fid">CX-01</td><td>Google Review Monitoring</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">CX-02</td><td>Complaint Management</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">CX-03</td><td>Omnichannel KPI</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">CX-04</td><td>AI Complaint Summary</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">CX-05</td><td>Feedback Sentiment Analysis</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+  </table>
+</div>
+
+<!-- ===================== MODULE I: OPERATION ===================== -->
+<div class="module">
+  <div class="module-header">
+    <h2>I. Operation, Tools & Asset</h2>
+    <div><span class="badge badge-yellow">4/6 Covered</span> <span class="phase-tag">Fase 4</span></div>
+  </div>
+  <table>
+    <tr><th>ID</th><th>Fitur</th><th>Status</th><th>Evidence di Dashboard</th></tr>
+    <tr><td class="fid">OP-01</td><td>Preventive Maintenance Tools</td><td><span class="status status-done">✅ Done</span></td><td class="evidence">Maintenance Laser 6 Mesin, jadwal preventive, checklist, PIC</td></tr>
+    <tr><td class="fid">OP-02</td><td>Asset Register</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Data aset ada di assets_master.json, belum ada UI register lengkap</td></tr>
+    <tr><td class="fid">OP-03</td><td>Service History</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Catatan servis ada, belum ada histori timeline lengkap</td></tr>
+    <tr><td class="fid">OP-04</td><td>Calibration Reminder</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">Data kalibrasi ada, belum ada reminder H-30/H-14/H-7</td></tr>
+    <tr><td class="fid">OP-05</td><td>Vendor Monitoring</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">OP-06</td><td>Tool Downtime / Repair Log</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+  </table>
+</div>
+
+<!-- ===================== MODULE J: KB & SOP ===================== -->
+<div class="module">
+  <div class="module-header">
+    <h2>J. Knowledge Base & SOP</h2>
+    <div><span class="badge badge-red">1/4 Covered</span> <span class="phase-tag">Fase 1</span></div>
+  </div>
+  <table>
+    <tr><th>ID</th><th>Fitur</th><th>Status</th><th>Evidence di Dashboard</th></tr>
+    <tr><td class="fid">KB-01</td><td>Onboarding & Training Module</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">KB-02</td><td>Internal AI Assistant (SOP Q&A)</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">KB-03</td><td>Master Data Guidance</td><td><span class="status status-not">❌ Belum</span></td><td class="evidence">—</td></tr>
+    <tr><td class="fid">KB-04</td><td>SOP Compliance Monitoring</td><td><span class="status status-partial">⚠️ Partial</span></td><td class="evidence">SOP checklist ada di operational_db, belum ada monitoring compliance real-time</td></tr>
+  </table>
+</div>
+
+<!-- ===================== FASE SUMMARY ===================== -->
+<div class="module" style="margin-top: 2.5rem;">
+  <div class="module-header">
+    <h2>📋 Ringkasan per Fase Implementasi</h2>
+    <div></div>
+  </div>
+  <table>
+    <tr><th>Fase</th><th>Fokus</th><th>Total Fitur</th><th>Done</th><th>Partial</th><th>Belum</th><th>Coverage</th></tr>
+    <tr>
+      <td><span class="phase-tag">Fase 1</span></td>
+      <td>Executive, Patient 360, Sales, KPI, SOP</td>
+      <td style="text-align:center">28</td>
+      <td style="text-align:center" class="green">10</td>
+      <td style="text-align:center" class="yellow">12</td>
+      <td style="text-align:center" class="red">6</td>
+      <td style="text-align:center"><strong class="green">79%</strong></td>
+    </tr>
+    <tr>
+      <td><span class="phase-tag">Fase 2</span></td>
+      <td>Stok, Purchasing, Finance</td>
+      <td style="text-align:center">18</td>
+      <td style="text-align:center" class="green">4</td>
+      <td style="text-align:center" class="yellow">8</td>
+      <td style="text-align:center" class="red">6</td>
+      <td style="text-align:center"><strong class="yellow">67%</strong></td>
+    </tr>
+    <tr>
+      <td><span class="phase-tag">Fase 3</span></td>
+      <td>Marketing, Content, CX, Complaint</td>
+      <td style="text-align:center">17</td>
+      <td style="text-align:center" class="green">0</td>
+      <td style="text-align:center" class="yellow">6</td>
+      <td style="text-align:center" class="red">11</td>
+      <td style="text-align:center"><strong class="red">35%</strong></td>
+    </tr>
+    <tr>
+      <td><span class="phase-tag">Fase 4</span></td>
+      <td>HR, Asset, Forecast Advanced</td>
+      <td style="text-align:center">10</td>
+      <td style="text-align:center" class="green">3</td>
+      <td style="text-align:center" class="yellow">3</td>
+      <td style="text-align:center" class="red">4</td>
+      <td style="text-align:center"><strong class="yellow">60%</strong></td>
+    </tr>
+  </table>
+</div>
+
+<div class="footer">
+  <p><strong>KEFIR Derma Clinic — Mission Control Dashboard</strong></p>
+  <p>Gap Analysis Report • RAI for Clinic MVP.pdf vs Live Dashboard</p>
+  <p style="margin-top:0.5rem;">Generated by Hermes AI Agent • 7 September 2026</p>
+</div>
+
+</body>
+</html>

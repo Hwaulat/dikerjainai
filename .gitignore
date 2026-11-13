@@ -1,0 +1,84 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# WhatsApp Baileys Auth Session & Credentials (Strictly Local)
+wa_assistant_auth/
+*.log
+
+# Temporary Chrome/PDF generation files
+.chrome_tmp/
+/tmp/
+data/ai_chat_history/
+
+.env
+.env.local
+
+# Temp Spreadsheet Binaries
+data/google_sheets_db/*.xlsx
+
+# Log sync (dihasilkan launchd)
+logs/
+
+# Lock file sync
+data/neosoft_db/.sync.lock
+
+# ── Data hasil sinkronisasi (bukan source code) ──────────────────────────
+# Diregenerasi oleh scripts/sync_neosoft.py & scripts/sync_google_sheets.py.
+# Tiap run menghasilkan puluhan ribu baris diff, jadi tidak layak masuk git.
+data/neosoft_db/*.json
+data/google_sheets_db/*.json
+
+# Kredensial API Neosoft — JANGAN pernah di-commit
+data/neosoft_db/token.txt
+
+# CATATAN: data/marketing_db & data/operational_db SENGAJA tetap ter-track.
+# Isinya (content plan, komplain tim, checklist SOP) dibuat lewat aplikasi,
+# bukan hasil sync, jadi tidak bisa diregenerasi kalau hilang.
+
+# Tabel pemetaan RM->pasien hasil generate (dibangun ulang oleh
+# scripts/build_rm_map.js). Koreksi manusia ada di berkas _manual
+# yang SENGAJA tetap dilacak git — isinya tidak bisa diregenerasi.
+data/rm_patient_map.json
+!data/rm_patient_map_manual.json
+
+# Potret grade pasien untuk mendeteksi perpindahan (dihasilkan
+# scripts/track_grade_changes.js, dibangun ulang tiap dijalankan)
+data/patient_grade_state.json
+
+# Kunci penandatangan sesi login (HMAC). Dibuat otomatis server.js saat
+# pertama jalan. JANGAN di-commit — bocornya kunci ini berarti token
+# sesi bisa dipalsukan siapa pun.
+data/.session_secret
+
+# Whitelist nomor WhatsApp staf (nomor pribadi = data pribadi/PII).
+# Dibuat otomatis wa_assistant_service.js begitu Owner menambah nomor
+# pertama lewat dashboard. JANGAN di-commit.
+data/wa_whitelist.json
+data/wa_whitelist_backups/
+data/wa_whitelist.json.tmp-*
+# Grup WA yang dilayani bot (ID & nama grup internal)
+data/wa_groups.json
+data/wa_groups.json.tmp-*
+data/payment_proofs.json
+data/payment_sheet_config.json
+
+# Log runtime berisi data pasien (pertanyaan/jawaban AI & chat CRM per tier)
+data/ai_feedback_log.json
+data/crm_tier_chat_log.json
+# Dokumen Excel/PDF buatan AI (berisi data pasien & keuangan)
+data/generated_docs/
+
+# Status pemeriksaan Audit Invoice (catatan finance)
+data/invoice_audit_status.json
+
+# Log pemakaian token AI & pengaturan harga
+data/ai_usage_log*.jsonl
+data/ai_usage_settings.json
+
+# Foto before/after pasien (unduhan dari Neosoft) — data medis, jangan di-commit
+data/pe_photos/
+
+# Token & data Gaji.id (jangan pernah di-commit)
+data/gaji_id_settings.json
+data/gaji_id_db.json

@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ekosistem Fitur AI untuk Klinik — KEFIR Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy-bg: #0b132b;
+    --navy-card: rgba(26, 38, 74, 0.55);
+    --navy-border: rgba(148, 163, 184, 0.15);
+    --teal: #06b6d4;
+    --teal-dark: #0891b2;
+    --teal-light: #22d3ee;
+    --green-dot: #10b981;
+    --amber-dot: #f59e0b;
+    --gray-dot: #94a3b8;
+    --light-bg: #f8fafc;
+    --light-card: #ffffff;
+    --light-border: #e2e8f0;
+    --text-dark: #0f172a;
+    --text-muted: #64748b;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page {
+    size: 297mm 167mm;
+    margin: 0;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background: #0b132b;
+  }
+
+  .slide {
+    width: 297mm;
+    height: 167mm;
+    max-height: 167mm;
+    page-break-after: always;
+    break-after: page;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ================= SLIDE 1: COVER ================= */
+  .slide-cover {
+    background: #0b132b;
+    color: #ffffff;
+    padding: 38mm 24mm 22mm 24mm;
+    justify-content: space-between;
+  }
+
+  .cover-decor-1 {
+    position: absolute;
+    top: -50mm;
+    right: 40mm;
+    width: 140mm;
+    height: 140mm;
+    border: 1.5px solid rgba(56, 189, 248, 0.35);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .cover-decor-2 {
+    position: absolute;
+    top: -30mm;
+    right: 0mm;
+    width: 130mm;
+    height: 130mm;
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .cover-decor-corner {
+    position: absolute;
+    bottom: -25mm;
+    right: -25mm;
+    width: 85mm;
+    height: 85mm;
+    background: #0d9488;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.9;
+  }
+
+  .tagline-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5pt;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 5mm;
+    font-weight: 700;
+  }
+
+  .cover-title {
+    font-size: 34pt;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin-bottom: 5mm;
+  }
+
+  .cover-subtitle {
+    font-size: 11pt;
+    color: #94a3b8;
+    max-width: 170mm;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  .cover-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(148, 163, 184, 0.2);
+    margin-bottom: 7mm;
+  }
+
+  .cover-stats {
+    display: flex;
+    gap: 25mm;
+  }
+
+  .cover-stat-item .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26pt;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 2mm;
+  }
+
+  .cover-stat-item .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #64748b;
+  }
+
+  /* ================= SLIDE 2: RINGKASAN PORTOFOLIO ================= */
+  .slide-summary {
+    background: #0b132b;
+    color: #ffffff;
+    padding: 16mm 22mm;
+  }
+
+  .summary-header {
+    margin-bottom: 8mm;
+  }
+
+  .summary-title {
+    font-size: 22pt;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+    margin-top: 1.5mm;
+  }
+
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12mm;
+    flex: 1;
+  }
+
+  .summary-card {
+    background: rgba(26, 38, 74, 0.45);
+    border: 1px solid rgba(148, 163, 184, 0.16);
+    border-radius: 12px;
+    padding: 7mm 8mm;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .summary-card h3 {
+    font-size: 11.5pt;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 5mm;
+  }
+
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.5pt;
+  }
+
+  .summary-table tr {
+    border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+  }
+
+  .summary-table tr:last-child {
+    border-bottom: none;
+  }
+
+  .summary-table td {
+    padding: 2.8mm 0;
+    color: #cbd5e1;
+  }
+
+  .summary-table td.count {
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .summary-table tr.total-row {
+    border-top: 1.5px solid rgba(56, 189, 248, 0.4);
+    font-weight: 800;
+  }
+
+  .summary-table tr.total-row td {
+    padding-top: 3.5mm;
+    color: #ffffff;
+    font-size: 10.5pt;
+  }
+
+  .summary-table tr.total-row td.count {
+    color: #38bdf8;
+  }
+
+  /* ================= SLIDES 3-7: SEKTOR MATRIKS ================= */
+  .slide-sector {
+    background: #f8fafc;
+    color: #0f172a;
+    padding: 12mm 18mm 12mm 18mm;
+  }
+
+  .sector-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5mm;
+  }
+
+  .sector-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #0284c7;
+    margin-bottom: 1mm;
+  }
+
+  .sector-name {
+    font-size: 22pt;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.1;
+  }
+
+  .sector-badge-right {
+    display: flex;
+    align-items: baseline;
+    gap: 2.5mm;
+  }
+
+  .sector-badge-right .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26pt;
+    font-weight: 800;
+    color: #0891b2;
+    line-height: 1;
+  }
+
+  .sector-badge-right .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748b;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .matrix-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5mm;
+    flex: 1;
+  }
+
+  .matrix-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 3.5mm 4.5mm;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  }
+
+  .box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 1.8mm;
+    margin-bottom: 2mm;
+  }
+
+  .box-title {
+    font-size: 9.8pt;
+    font-weight: 800;
+    color: #0f172a;
+  }
+
+  .box-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.8pt;
+    font-weight: 700;
+    color: #0284c7;
+    background: #f0f9ff;
+    padding: 0.6mm 2mm;
+    border-radius: 4px;
+    border: 1px solid #bae6fd;
+  }
+
+  .feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4mm;
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3mm;
+    font-size: 7.6pt;
+    line-height: 1.2;
+  }
+
+  .feature-left {
+    display: flex;
+    align-items: center;
+    gap: 2.2mm;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .feature-code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.3pt;
+    font-weight: 700;
+    color: #0284c7;
+    flex-shrink: 0;
+    min-width: 9.5mm;
+  }
+
+  .feature-text {
+    color: #334155;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .dot-green {
+    background: #10b981;
+    box-shadow: 0 0 3px rgba(16, 185, 129, 0.4);
+  }
+
+  .dot-amber {
+    background: #f59e0b;
+    box-shadow: 0 0 3px rgba(245, 158, 11, 0.4);
+  }
+
+  .dot-gray {
+    background: #94a3b8;
+  }
+
+  /* No-print bar for browser viewing */
+  .no-print-bar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    display: flex;
+    gap: 10px;
+  }
+  .print-btn {
+    background: #0f172a;
+    color: white;
+    border: 1px solid #334155;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  @media print {
+    .no-print-bar { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="no-print-bar">
+  <button onclick="window.print()" class="print-btn">🖨️ Cetak / Simpan PDF (16:9 Landscape)</button>
+</div>
+
+<!-- ================= SLIDE 1: COVER ================= -->
+<div class="slide slide-cover">
+  <div class="cover-decor-1"></div>
+  <div class="cover-decor-2"></div>
+  <div class="cover-decor-corner"></div>
+
+  <div>
+    <div class="tagline-pill">H A S I L &nbsp; K U R A S I &nbsp; F I N A L</div>
+    <div class="cover-title">
+      Ekosistem Fitur AI<br>
+      untuk Klinik
+    </div>
+    <div class="cover-subtitle">
+      Struktur fitur proaktif dalam empat lapisan: Notifikasi, Rekomendasi, Otomasi, dan Asisten Owner.
+    </div>
+  </div>
+
+  <div>
+    <div class="cover-divider"></div>
+    <div class="cover-stats">
+      <div class="cover-stat-item">
+        <div class="num">103</div>
+        <div class="label">FITUR UTAMA</div>
+      </div>
+      <div class="cover-stat-item">
+        <div class="num">5</div>
+        <div class="label">SEKTOR BISNIS</div>
+      </div>
+      <div class="cover-stat-item">
+        <div class="num">4</div>
+        <div class="label">LAPISAN FUNGSI</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SLIDE 2: RINGKASAN PORTOFOLIO ================= -->
+<div class="slide slide-summary">
+  <div class="summary-header">
+    <div class="tagline-pill">R I N G K A S A N &nbsp; P O R T O F O L I O</div>
+    <div class="summary-title">103 fitur dalam satu arsitektur</div>
+  </div>
+
+  <div class="summary-grid">
+    <!-- Distribusi Sektor -->
+    <div class="summary-card">
+      <h3>Distribusi per sektor</h3>
+      <table class="summary-table">
+        <tr><td>Operasional</td><td class="count">20</td></tr>
+        <tr><td>HR</td><td class="count">16</td></tr>
+        <tr><td>Finance</td><td class="count">20</td></tr>
+        <tr><td>Sales</td><td class="count">22</td></tr>
+        <tr><td>Marketing</td><td class="count">25</td></tr>
+        <tr class="total-row"><td>Total</td><td class="count">103</td></tr>
+      </table>
+    </div>
+
+    <!-- Distribusi Lapisan -->
+    <div class="summary-card">
+      <h3>Distribusi per lapisan</h3>
+      <table class="summary-table">
+        <tr><td>Notifikasi</td><td class="count">30</td></tr>
+        <tr><td>Rekomendasi</td><td class="count">28</td></tr>
+        <tr><td>Otomasi</td><td class="count">34</td></tr>
+        <tr><td>Asisten Owner</td><td class="count">11</td></tr>
+        <tr class="total-row"><td>Total</td><td class="count">103</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SLIDE 3: SEKTOR 01 OPERASIONAL ================= -->
+<div class="slide slide-sector">
+  <div class="sector-top">
+    <div>
+      <div class="sector-tag">S E K T O R &nbsp; 0 1</div>
+      <div class="sector-name">Operasional</div>
+    </div>
+    <div class="sector-badge-right">
+      <div class="num">20</div>
+      <div class="label">FITUR<br>UTAMA</div>
+    </div>
+  </div>
+
+  <div class="matrix-grid">
+    <!-- Notifikasi 07 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Notifikasi</span>
+        <span class="box-count">07</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-N1</span><span class="feature-text">Pusat Pemberitahuan Operasional</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-N2</span><span class="feature-text">Peringatan Stok Menipis</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-N3</span><span class="feature-text">Pengingat & Saran Perawatan Alat</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-N4</span><span class="feature-text">Pengingat Data Aset Belum Lengkap</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-N5</span><span class="feature-text">Pemeriksaan Selisih Stok</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-N6</span><span class="feature-text">Barang Lama Tidak Terpakai</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-N7</span><span class="feature-text">Peringatan Pemakaian Bahan di Luar SOP</span></div><span class="status-dot dot-gray"></span></div>
+      </div>
+    </div>
+
+    <!-- Rekomendasi 05 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Rekomendasi</span>
+        <span class="box-count">05</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-R1</span><span class="feature-text">Saran Penyelesaian Keluhan</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-R2</span><span class="feature-text">Saran Pembelian Stok</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-R3</span><span class="feature-text">Perkiraan Kebutuhan Stok Akhir Pekan</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-R5</span><span class="feature-text">Panduan SOP Klinik</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-R6</span><span class="feature-text">Analisis Jam Ramai</span></div><span class="status-dot dot-green"></span></div>
+      </div>
+    </div>
+
+    <!-- Otomasi 07 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Otomasi</span>
+        <span class="box-count">07</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-O2</span><span class="feature-text">Pengelola Jadwal Otomatis</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-O4</span><span class="feature-text">Jadwal Perawatan Alat Otomatis</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-O5</span><span class="feature-text">Ringkasan Operasional Pagi</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-O8</span><span class="feature-text">Pengelolaan Keluhan & Tiket</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-O9</span><span class="feature-text">Pengelolaan Data Aset</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-O10</span><span class="feature-text">Pemeriksaan Kepatuhan SOP</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-O11</span><span class="feature-text">Dispatcher Laporan Operasional</span></div><span class="status-dot dot-amber"></span></div>
+      </div>
+    </div>
+
+    <!-- Asisten Owner 02 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Asisten Owner</span>
+        <span class="box-count">02</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-A1</span><span class="feature-text">Tanya Jawab Data & Pilihan Topik Operasional</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">O-A2</span><span class="feature-text">Asisten Owner via WhatsApp + Riwayat Percakapan</span></div><span class="status-dot dot-amber"></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SLIDE 4: SEKTOR 02 HR ================= -->
+<div class="slide slide-sector">
+  <div class="sector-top">
+    <div>
+      <div class="sector-tag">S E K T O R &nbsp; 0 2</div>
+      <div class="sector-name">HR</div>
+    </div>
+    <div class="sector-badge-right">
+      <div class="num">16</div>
+      <div class="label">FITUR<br>UTAMA</div>
+    </div>
+  </div>
+
+  <div class="matrix-grid">
+    <!-- Notifikasi 04 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Notifikasi</span>
+        <span class="box-count">04</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-N1</span><span class="feature-text">Peringatan Kehadiran/Keterlambatan</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-N2</span><span class="feature-text">Pengingat Kontrak Akan Berakhir</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-N3</span><span class="feature-text">Pengingat Jadwal Bermasalah</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-N4</span><span class="feature-text">Pengingat Dokumentasi Klinis</span></div><span class="status-dot dot-amber"></span></div>
+      </div>
+    </div>
+
+    <!-- Rekomendasi 05 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Rekomendasi</span>
+        <span class="box-count">05</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-R1</span><span class="feature-text">Penilaian Kinerja Dokter</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-R2</span><span class="feature-text">Staf/Klinik Terbaik Bulanan</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-R3</span><span class="feature-text">Penilaian Kelengkapan Dokumentasi</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-R5</span><span class="feature-text">Penilaian Disiplin Staf</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-R6</span><span class="feature-text">Penilaian Kepatuhan Foto Klinis</span></div><span class="status-dot dot-gray"></span></div>
+      </div>
+    </div>
+
+    <!-- Otomasi 05 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Otomasi</span>
+        <span class="box-count">05</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-O1</span><span class="feature-text">Pembaruan Daftar Staf Aktif</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-O2</span><span class="feature-text">Pemantauan Shift Otomatis</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-O3</span><span class="feature-text">Rekap Kehadiran Otomatis</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-O4</span><span class="feature-text">Pemantauan Kontrak Staf</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-O5</span><span class="feature-text">Rekap Kepatuhan Dokumentasi</span></div><span class="status-dot dot-amber"></span></div>
+      </div>
+    </div>
+
+    <!-- Asisten Owner 02 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Asisten Owner</span>
+        <span class="box-count">02</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-A1</span><span class="feature-text">Tanya Jawab Data, Kehadiran, Shift & Kinerja Staf</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">H-A4</span><span class="feature-text">Riwayat Percakapan HR</span></div><span class="status-dot dot-amber"></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SLIDE 5: SEKTOR 03 FINANCE ================= -->
+<div class="slide slide-sector">
+  <div class="sector-top">
+    <div>
+      <div class="sector-tag">S E K T O R &nbsp; 0 3</div>
+      <div class="sector-name">Finance</div>
+    </div>
+    <div class="sector-badge-right">
+      <div class="num">20</div>
+      <div class="label">FITUR<br>UTAMA</div>
+    </div>
+  </div>
+
+  <div class="matrix-grid">
+    <!-- Notifikasi 07 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Notifikasi</span>
+        <span class="box-count">07</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-N1</span><span class="feature-text">Pengingat Tagihan + Saran Penagihan</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-N2</span><span class="feature-text">Peringatan Transaksi Dibatalkan</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-N3</span><span class="feature-text">Peringatan Selisih Pembayaran</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-N4</span><span class="feature-text">Bukti Pembayaran Belum Terverifikasi</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-N5</span><span class="feature-text">Peringatan & Pemantauan Target Pendapatan</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-N6</span><span class="feature-text">Deposit/Voucher Belum Terpakai</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-N7</span><span class="feature-text">Pengeluaran Tidak Biasa</span></div><span class="status-dot dot-gray"></span></div>
+      </div>
+    </div>
+
+    <!-- Rekomendasi 04 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Rekomendasi</span>
+        <span class="box-count">04</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-R1</span><span class="feature-text">Perkiraan Pendapatan & Deteksi Perubahan</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-R2</span><span class="feature-text">Saran Tindak Lanjut Penutupan Harian</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-R6</span><span class="feature-text">Analisis Perbandingan Cabang</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-R7</span><span class="feature-text">Evaluasi Komisi Tenaga Medis</span></div><span class="status-dot dot-green"></span></div>
+      </div>
+    </div>
+
+    <!-- Otomasi 07 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Otomasi</span>
+        <span class="box-count">07</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-O1</span><span class="feature-text">Pemeriksaan Keuangan Harian</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-O2</span><span class="feature-text">Pencocokan Transaksi Otomatis</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-O3</span><span class="feature-text">Perkiraan Laba Bersih</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-O4</span><span class="feature-text">Pencatatan Kas Kecil</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-O5</span><span class="feature-text">Perhitungan Komisi Otomatis</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-O6</span><span class="feature-text">Pemeriksaan Bukti Transfer Otomatis</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-O7</span><span class="feature-text">Rekap Pendapatan Otomatis</span></div><span class="status-dot dot-green"></span></div>
+      </div>
+    </div>
+
+    <!-- Asisten Owner 02 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Asisten Owner</span>
+        <span class="box-count">02</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-A1</span><span class="feature-text">Tanya Jawab Keuangan, Omzet, Biaya, Rekonsiliasi & Komisi</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">F-A5</span><span class="feature-text">Riwayat Percakapan Finance</span></div><span class="status-dot dot-amber"></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SLIDE 6: SEKTOR 04 SALES ================= -->
+<div class="slide slide-sector">
+  <div class="sector-top">
+    <div>
+      <div class="sector-tag">S E K T O R &nbsp; 0 4</div>
+      <div class="sector-name">Sales</div>
+    </div>
+    <div class="sector-badge-right">
+      <div class="num">22</div>
+      <div class="label">FITUR<br>UTAMA</div>
+    </div>
+  </div>
+
+  <div class="matrix-grid">
+    <!-- Notifikasi 08 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Notifikasi</span>
+        <span class="box-count">08</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-N1</span><span class="feature-text">Pengingat Ulang Tahun Pasien</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-N2</span><span class="feature-text">Perubahan Tingkat Pasien</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-N3</span><span class="feature-text">Pusat Pengingat Pasien</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-N4</span><span class="feature-text">Pasien Tidak Aktif + Aktivasi Kembali</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-N5</span><span class="feature-text">Rekomendasi Dokter Belum Diisi</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-N6</span><span class="feature-text">Harga di Bawah Batas</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-N7</span><span class="feature-text">Pengingat Deposit/Membership</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-N8</span><span class="feature-text">Pengingat Balas WhatsApp</span></div><span class="status-dot dot-gray"></span></div>
+      </div>
+    </div>
+
+    <!-- Rekomendasi 06 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Rekomendasi</span>
+        <span class="box-count">06</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-R1</span><span class="feature-text">Saran Treatment Lanjutan</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-R2</span><span class="feature-text">Saran Produk Perawatan di Rumah</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-R3</span><span class="feature-text">Pemantauan Rekomendasi Dokter</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-R5</span><span class="feature-text">Penawaran Berdasarkan Tingkat Pasien</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-R6</span><span class="feature-text">Peluang Penjualan Tambahan</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-R7</span><span class="feature-text">Akuisisi vs Penjualan Tambahan</span></div><span class="status-dot dot-green"></span></div>
+      </div>
+    </div>
+
+    <!-- Otomasi 06 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Otomasi</span>
+        <span class="box-count">06</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-O1</span><span class="feature-text">Follow-Up H/H+3/H+7/H+14 + Permintaan Ulasan</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-O3</span><span class="feature-text">Promo Berdasarkan Kelompok Pasien</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-O4</span><span class="feature-text">Pengiriman Promo per Pasien</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-O5</span><span class="feature-text">Pencatatan Tindak Lanjut</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-O6</span><span class="feature-text">Voucher Ulang Tahun</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-O8</span><span class="feature-text">Pencatatan Sumber Pasien</span></div><span class="status-dot dot-gray"></span></div>
+      </div>
+    </div>
+
+    <!-- Asisten Owner 02 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Asisten Owner</span>
+        <span class="box-count">02</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-A1</span><span class="feature-text">Tanya Jawab Pasien, Sales, Peluang & Kinerja</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">S-A5</span><span class="feature-text">Riwayat Percakapan Sales</span></div><span class="status-dot dot-amber"></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SLIDE 7: SEKTOR 05 MARKETING ================= -->
+<div class="slide slide-sector">
+  <div class="sector-top">
+    <div>
+      <div class="sector-tag">S E K T O R &nbsp; 0 5</div>
+      <div class="sector-name">Marketing</div>
+    </div>
+    <div class="sector-badge-right">
+      <div class="num">25</div>
+      <div class="label">FITUR<br>UTAMA</div>
+    </div>
+  </div>
+
+  <div class="matrix-grid">
+    <!-- Notifikasi 05 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Notifikasi</span>
+        <span class="box-count">05</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-N1</span><span class="feature-text">Foto Testimoni Menunggu Persetujuan</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-N2</span><span class="feature-text">Konten Belum Dipublikasikan</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-N3</span><span class="feature-text">Pesan Masuk Belum Dibalas</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-N4</span><span class="feature-text">Performa Iklan Menurun</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-N5</span><span class="feature-text">Peringatan Ulasan Negatif</span></div><span class="status-dot dot-amber"></span></div>
+      </div>
+    </div>
+
+    <!-- Rekomendasi 08 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Rekomendasi</span>
+        <span class="box-count">08</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-R1</span><span class="feature-text">Generator Ide & Naskah Konten AI</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-R2</span><span class="feature-text">Saran Respons Ulasan Google</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-R3</span><span class="feature-text">Saran Respons Feedback Pasien</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-R4</span><span class="feature-text">Saran Peningkatan Kampanye Iklan</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-R5</span><span class="feature-text">Saran Program Promo & Voucher</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-R6</span><span class="feature-text">Saran Waktu Publikasi Konten</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-R7</span><span class="feature-text">Analisis Konten Kompetitor</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-R8</span><span class="feature-text">Analisis Sentimen & Kepuasan Pasien</span></div><span class="status-dot dot-amber"></span></div>
+      </div>
+    </div>
+
+    <!-- Otomasi 09 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Otomasi</span>
+        <span class="box-count">09</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-O1</span><span class="feature-text">Simpan Naskah ke Kalender Konten</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-O2</span><span class="feature-text">Sinkronisasi Data Instagram</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-O3</span><span class="feature-text">Pusat Integrasi Meta Ads</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-O5</span><span class="feature-text">Pemantauan Promo & Voucher</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-O6</span><span class="feature-text">Alur Produksi Konten</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-O7</span><span class="feature-text">Laporan Iklan Harian Otomatis</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-O8</span><span class="feature-text">Pemantauan Media Sosial Real-Time</span></div><span class="status-dot dot-amber"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-O9</span><span class="feature-text">Pencatatan Sumber Pasien</span></div><span class="status-dot dot-gray"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-O10</span><span class="feature-text">Pengiriman Konten Otomatis</span></div><span class="status-dot dot-gray"></span></div>
+      </div>
+    </div>
+
+    <!-- Asisten Owner 03 -->
+    <div class="matrix-box">
+      <div class="box-header">
+        <span class="box-title">Asisten Owner</span>
+        <span class="box-count">03</span>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-A1</span><span class="feature-text">Tanya Jawab Marketing, Iklan, Ulasan & Kepuasan</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-A2</span><span class="feature-text">Asisten Pembuatan Konten</span></div><span class="status-dot dot-green"></span></div>
+        <div class="feature-item"><div class="feature-left"><span class="feature-code">M-A5</span><span class="feature-text">Riwayat Percakapan Marketing</span></div><span class="status-dot dot-green"></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

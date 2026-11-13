@@ -1,0 +1,18 @@
+{
+  "DREC-1789017424861": {
+    "status": "contacted",
+    "last_contacted_at": "2026-09-10T06:18:48.499Z",
+    "contacted_by": "CS Sarah Depok",
+    "notes": "Pasien dikonfirmasi tertarik tindakan lanjutan",
+    "booking_date": "2026-09-24",
+    "updated_at": "2026-09-10T06:18:48.499Z"
+  },
+  "DREC-1789013785685": {
+    "status": "pending",
+    "last_contacted_at": "2026-09-10T06:23:45.988Z",
+    "contacted_by": "Sales & CS KEFIR",
+    "notes": "",
+    "booking_date": "2026-09-23",
+    "updated_at": "2026-09-10T06:23:45.988Z"
+  }
+}

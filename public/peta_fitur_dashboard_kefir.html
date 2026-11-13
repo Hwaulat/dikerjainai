@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peta Fitur Lengkap KEFIR Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  :root {
+    --bg-page: #f8fafc;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --text-sub: #475569;
+    --green-bg: #e6f9ed;
+    --green-text: #166534;
+    --green-border: #bbf7d0;
+    --amber-bg: #fef3c7;
+    --amber-text: #92400e;
+    --amber-border: #fde68a;
+    --slate-bg: #f1f5f9;
+    --slate-text: #475569;
+    --slate-border: #cbd5e1;
+    --rose-bg: #fee2e2;
+    --rose-text: #991b1b;
+    --rose-border: #fecaca;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    padding: 40px 20px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 48px;
+    border-radius: 20px;
+    box-shadow: 0 4px 25px -4px rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--border-color);
+  }
+
+  /* Action Bar (Screen Only) */
+  .no-print-bar {
+    max-width: 900px;
+    margin: 0 auto 16px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .print-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0f172a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .print-btn:hover { background: #1e293b; transform: translateY(-1px); }
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #475569;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .back-btn:hover { color: #0f172a; }
+
+  /* Header */
+  .header {
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #090d16;
+    margin-bottom: 8px;
+  }
+  .header p.subtitle {
+    font-size: 13.5px;
+    color: var(--text-sub);
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  .meta-tagline {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Top Stat Grid */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .stat-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .stat-card .num {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.1;
+    font-family: 'JetBrains Mono', monospace;
+    margin-bottom: 4px;
+  }
+  .stat-card .desc {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+  .stat-card.green .num { color: #15803d; }
+  .stat-card.amber .num { color: #b45309; }
+  .stat-card.slate .num { color: #475569; }
+  .stat-card.rose .num { color: #b91c1c; }
+
+  /* Legend */
+  .legend-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #475569;
+    padding: 10px 14px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 32px;
+  }
+  .legend-item { display: inline-flex; align-items: center; gap: 6px; }
+  .legend-dot { width: 9px; height: 9px; border-radius: 2px; }
+  .legend-dot.green { background: #16a34a; }
+  .legend-dot.amber { background: #d97706; }
+  .legend-dot.slate { background: #64748b; }
+  .legend-dot.rose { background: #dc2626; }
+
+  /* Module Section */
+  .section-block {
+    margin-bottom: 28px;
+  }
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: 14.5px;
+    font-weight: 800;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .section-count {
+    font-size: 11px;
+    color: #94a3b8;
+    font-weight: 600;
+  }
+
+  /* Feature Item Row */
+  .feature-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 7px 0;
+    border-bottom: 1px dashed #f1f5f9;
+  }
+  .feature-row:last-child { border-bottom: none; }
+  .feature-main {
+    flex: 1;
+    min-width: 0;
+  }
+  .feature-title-wrap {
+    font-size: 12.5px;
+    color: #1e293b;
+    line-height: 1.4;
+  }
+  .feature-code {
+    font-weight: 700;
+    color: #475569;
+    margin-right: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+  }
+  .feature-name {
+    font-weight: 600;
+    color: #0f172a;
+  }
+  .feature-sub {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 1.5px;
+    line-height: 1.4;
+  }
+
+  /* Status Badges */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2.5px 8px;
+    border-radius: 6px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    shrink-0: 0;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .badge-sudah {
+    background: var(--green-bg);
+    color: var(--green-text);
+    border: 1px solid var(--green-border);
+  }
+  .badge-sebagian {
+    background: var(--amber-bg);
+    color: var(--amber-text);
+    border: 1px solid var(--amber-border);
+  }
+  .badge-belum {
+    background: var(--slate-bg);
+    color: var(--slate-text);
+    border: 1px solid var(--slate-border);
+  }
+  .badge-palsu {
+    background: var(--rose-bg);
+    color: var(--rose-text);
+    border: 1px solid var(--rose-border);
+  }
+
+  /* Callout Boxes */
+  .callout-box {
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 24px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .callout-green {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #14532d;
+  }
+  .callout-green h4 {
+    font-size: 13px;
+    font-weight: 800;
+    color: #166534;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .callout-amber {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    color: #78350f;
+  }
+  .callout-amber h4 {
+    font-size: 13px;
+    font-weight: 800;
+    color: #92400e;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .callout-box ol, .callout-box ul {
+    margin-left: 20px;
+    margin-top: 6px;
+  }
+  .callout-box li {
+    margin-bottom: 4px;
+  }
+
+  .footer-note {
+    font-size: 11px;
+    color: #94a3b8;
+    text-align: center;
+    margin-top: 36px;
+    padding-top: 18px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  /* Print Styles */
+  @media print {
+    body {
+      background: #ffffff !important;
+      padding: 0 !important;
+    }
+    .no-print-bar { display: none !important; }
+    .container {
+      max-width: 100% !important;
+      padding: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+    .callout-box {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      margin-top: 14px !important;
+      padding: 12px 16px !important;
+    }
+    .section-block {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      margin-bottom: 20px !important;
+    }
+    .feature-row {
+      padding: 5.5px 0 !important;
+    }
+    .footer-note {
+      margin-top: 16px !important;
+      padding-top: 10px !important;
+    }
+    @page {
+      size: A4;
+      margin: 11mm 12mm 10mm 12mm;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="no-print-bar">
+  <a href="/" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Kembali ke Dashboard</a>
+  <button onclick="window.print()" class="print-btn"><i class="fa-solid fa-print"></i> Cetak / Simpan sebagai PDF</button>
+</div>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Peta Fitur Lengkap KEFIR Dashboard</h1>
+    <p class="subtitle">
+      Audit Fungsional & Status Integrasi Live Terkini (23 September 2026). Data nyata terhubung langsung dari Neosoft Core, Gaji.id Live Sync, Meta Ads Graph API v22.0, WhatsApp Multi-Device Baileys, dan Google Sheets 3-Way Hub.
+    </p>
+    <div class="meta-tagline">
+      23 SEPTEMBER 2026 (STATUS LIVE AKTIF) · 150 POIN FITUR · MULTI-BRANCH (DEPOK & PONDOK KOPI)
+    </div>
+  </div>
+
+  <!-- Summary Statistics -->
+  <div class="stat-grid">
+    <div class="stat-card green">
+      <div class="num">104</div>
+      <div class="desc">sudah — data nyata & API aktif</div>
+    </div>
+    <div class="stat-card amber">
+      <div class="num">22</div>
+      <div class="desc">sebagian / manual</div>
+    </div>
+    <div class="stat-card slate">
+      <div class="num">23</div>
+      <div class="desc">belum ada</div>
+    </div>
+    <div class="stat-card rose">
+      <div class="num">1</div>
+      <div class="desc">belum ada kode (Drive API)</div>
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <div class="legend-bar">
+    <div class="legend-item"><span class="legend-dot green"></span> Sudah — data nyata & API terhubung</div>
+    <div class="legend-item"><span class="legend-dot amber"></span> Sebagian — alur manual / kurasi</div>
+    <div class="legend-item"><span class="legend-dot slate"></span> Belum ada</div>
+    <div class="legend-item"><span class="legend-dot rose"></span> Belum ada kode — butuh kredensial khusus</div>
+  </div>
+
+  <!-- 1. Executive Analytics -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">1 Executive Analytics (Ringkasan)</div>
+      <div class="section-count">11 sudah · 2 sebagian</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.1</span> <span class="feature-name">Total Omset Bulan Ini + Omset Hari Ini per cabang</span></div>
+        <div class="feature-sub">Invoice Neosoft riil, filter cabang reaktif.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.2</span> <span class="feature-name">Total Invoices Selesai + jumlah void</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.3</span> <span class="feature-name">Konversi Booking (selesai / total booking)</span></div>
+        <div class="feature-sub">Appointment Neosoft.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.4</span> <span class="feature-name">Perbandingan Omset Depok vs Pondok Kopi</span></div>
+        <div class="feature-sub">Treatment vs skincare breakdown.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.5</span> <span class="feature-name">Segmentasi 5 Tier Pasien</span></div>
+        <div class="feature-sub">= A1. Very Low s/d Very High spending.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.6</span> <span class="feature-name">Performa Dokter & Perawat (ringkas)</span></div>
+        <div class="feature-sub">Dari Kalkulator Komisi riil.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.7</span> <span class="feature-name">Keluhan & Tiket Operasional (ringkas)</span></div>
+        <div class="feature-sub">Form nyata, tiket komplain real-time.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.8</span> <span class="feature-name">Live Invoices Feed</span></div>
+        <div class="feature-sub">15 transaksi kasir terbaru dari database.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.9</span> <span class="feature-name">Morning Executive Briefing (08:30)</span></div>
+        <div class="feature-sub">Jumlah appointment nyata, staf on-duty & action item.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.10</span> <span class="feature-name">Nightly Closing & 3-Way Audit</span></div>
+        <div class="feature-sub">Dari engine settlement 3-jalur.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.11</span> <span class="feature-name">Quick Action Alerts (ultah & presensi staf)</span></div>
+        <div class="feature-sub">Ultah pasien nyata & presensi staf cut-off 26–25 tersinkronisasi live dari Gaji.id.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.12</span> <span class="feature-name">Dashboard Target Harian & Bulanan Sales</span></div>
+        <div class="feature-sub">= A13. Realisasi harian riil dari kasir.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">1.13</span> <span class="feature-name">Kepuasan Pasien (rating)</span></div>
+        <div class="feature-sub">= C11. Jalur simpan feedback & rating ada.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+  </div>
+
+  <!-- 2. Depok & Pondok Kopi -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">2 Depok & Pondok Kopi (Outlet)</div>
+      <div class="section-count">3 sudah</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">2.1</span> <span class="feature-name">Revenue & kunjungan per outlet</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">2.2</span> <span class="feature-name">Analisis Jam Sibuk / Peak Hour + heatmap</span></div>
+        <div class="feature-sub">= F2 (analisis matriks jam kedatangan pasien).</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">2.3</span> <span class="feature-name">Google Sheets Live Feed: Kasir Pondok Kopi</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 3. AI Assistant Owner -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">3 AI Assistant Owner (WhatsApp & Web)</div>
+      <div class="section-count">4 sudah · 1 sebagian</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">3.1</span> <span class="feature-name">WhatsApp Multi-Device Assistant (Baileys+QR)</span></div>
+        <div class="feature-sub">Kode nyata, pairing QR device tersedia di dashboard.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">3.2</span> <span class="feature-name">LLM Q&A — tanya data klinik</span></div>
+        <div class="feature-sub">Integrasi LLM lokal 9Router aktif, ReAct tool-calling data riil (omset, invoice, stok).</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">3.3</span> <span class="feature-name">Whitelist Nomor Staf & RBAC Divisi</span></div>
+        <div class="feature-sub">Dipaksakan di server & token sesi.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">3.4</span> <span class="feature-name">Pemilih Mode Divisi</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">3.5</span> <span class="feature-name">History percakapan chatbot</span></div>
+        <div class="feature-sub">Multi-turn context per session ID, riwayat tersimpan persisten ke disk.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 4. Automation & Cron -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">4 Automation & Cron</div>
+      <div class="section-count">5 sudah · 1 belum ada kode</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">4.1</span> <span class="feature-name">Execution History & Dispatch Audit Log</span></div>
+        <div class="feature-sub">Baca file log dispatch nyata.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">4.2</span> <span class="feature-name">Indikator Alert Automation (unpaid/appt/ultah/buffer/mutasi/audit)</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">4.3</span> <span class="feature-name">Neosoft Auto-Sync Worker</span></div>
+        <div class="feature-sub">Jalan otomatis background worker tiap 10 menit.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">4.4</span> <span class="feature-name">Panel 'Cron Scheduler Manager'</span></div>
+        <div class="feature-sub">Status nyata per job (aktif/siap/tidak ada) dari sync_meta.json & dispatch log.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">4.5</span> <span class="feature-name">Job 'Google Drive Backup 34 Tables'</span></div>
+        <div class="feature-sub">Menunggu kredensial Service Account Google Drive API dari owner.</div>
+      </div>
+      <span class="badge badge-palsu">BELUM ADA KODE</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">4.6</span> <span class="feature-name">Job 'HR Shift Watchdog' (×2)</span></div>
+        <div class="feature-sub">TERHUBUNG. Engine pemantau 2 shift staf KEFIR Depok & Pondok Kopi aktif via integrasi Gaji.id.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 5. Reminders & Alerts -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">5 Reminders & Alerts</div>
+      <div class="section-count">6 sudah</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">5.1</span> <span class="feature-name">Notification Deck & Patient Reminders</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">5.2</span> <span class="feature-name">Perpindahan Grade Pasien X/Y/Z</span></div>
+        <div class="feature-sub">= A1. Berdasarkan frekuensi kunjungan.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">5.3</span> <span class="feature-name">Pasien Ulang Tahun Bulan Ini</span></div>
+        <div class="feature-sub">Data riil, kirim voucher via WA, dilengkapi pagination 5 per page.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">5.4</span> <span class="feature-name">Invoices Pending/Unpaid Follow-Up</span></div>
+        <div class="feature-sub">Konfirmasi kasir, template pesan tagihan, dilengkapi pagination 5 per page.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">5.5</span> <span class="feature-name">Invoices Dibatalkan Kasir (Void)</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">5.6</span> <span class="feature-name">Tandai Follow-Up Selesai + log status</span></div>
+        <div class="feature-sub">= A12. Tersimpan permanen ke backend.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 6. Medis & Tindakan -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">6 Medis & Tindakan</div>
+      <div class="section-count">4 sudah</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">6.1</span> <span class="feature-name">Dokter & Tindakan Terlaris</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">6.2</span> <span class="feature-name">Doctor KPI Scoring & Leaderboard</span></div>
+        <div class="feature-sub">Skor gabungan omset, tindakan, dan jumlah visit per dokter terhitung nyata.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">6.3</span> <span class="feature-name">10 Penjualan Treatment Tertinggi</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">6.4</span> <span class="feature-name">Top 10 Tindakan Paling Sering (Real Usages)</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 7. Patient 360 EMR -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">7 Patient 360° EMR</div>
+      <div class="section-count">6 sudah · 2 sebagian</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">7.1</span> <span class="feature-name">Cari / lookup pasien (profil 360°)</span></div>
+        <div class="feature-sub">= A7. Riwayat tindakan, spending, resep, kunjungan.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">7.2</span> <span class="feature-name">Top Pasien Spending Tertinggi</span></div>
+        <div class="feature-sub">≈ A6. Paginasi 5/halaman, 4 kolom bersih, hingga 50 pasien sultan teratas.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">7.3</span> <span class="feature-name">Monitoring Deposito / Membership</span></div>
+        <div class="feature-sub">= A8. Paginasi 5/halaman, saldo deposit & voucher aktif dari customer balance Neosoft.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">7.4</span> <span class="feature-name">Jadwal Follow-Up Pintar H/H+3/H+7/H+14</span></div>
+        <div class="feature-sub">= A12. Dual view (Tabel List & Board 4 Kolom), template WA.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">7.5</span> <span class="feature-name">Rekomendasi Treatment / Upsell</span></div>
+        <div class="feature-sub">= A9. Auto-rekomendasi berbasis riwayat tindakan; dokter belum edit manual.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">7.6</span> <span class="feature-name">Rekomendasi Skincare Pendukung (Homecare)</span></div>
+        <div class="feature-sub">= A11.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">7.7</span> <span class="feature-name">Histori Foto Klinis (tampilan)</span></div>
+        <div class="feature-sub">Baca rekam Neosoft; upload link foto before/after.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">7.8</span> <span class="feature-name">Harga bottom / promo per treatment</span></div>
+        <div class="feature-sub">= B3. Modul proteksi bottom price & batas diskon maksimal aktif.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 8. Kalkulator Komisi -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">8 Kalkulator Komisi</div>
+      <div class="section-count">4 sudah</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">8.1</span> <span class="feature-name">Rincian Komisi Dokter Praktek</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">8.2</span> <span class="feature-name">Rincian Komisi Terapis & Beautician (real usages)</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">8.3</span> <span class="feature-name">Perbandingan Sales: Akuisisi vs Upselling</span></div>
+        <div class="feature-sub">= B1.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">8.4</span> <span class="feature-name">Aturan komisi editable (% dokter, fee terapis)</span></div>
+        <div class="feature-sub">Tersimpan & dipakai ulang.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 9. Operasional, Aset & SOP -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">9 Operasional, Aset & SOP</div>
+      <div class="section-count">15 sudah · 2 sebagian · 1 belum</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.1</span> <span class="feature-name">Form Keluhan Tim + AI Auto-Categorize</span></div>
+        <div class="feature-sub">Tersimpan; kategori via LLM.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.2</span> <span class="feature-name">Feed Tiket Keluhan & Rekomendasi AI</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.3</span> <span class="feature-name">Database Aset Alat Medis & Countdown PM</span></div>
+        <div class="feature-sub">≈ E1–E2. 29 Aset (Depok & Pondok Kopi) dari Google Sheets resmi + foto Unsplash.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.4</span> <span class="feature-name">Jadwal Kalibrasi & Servis Berkala Mesin</span></div>
+        <div class="feature-sub">Pusat kalibrasi dipusatkan ke tab PM resmi; kartu placeholder duplikat sudah dihapus.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.5</span> <span class="feature-name">Google Sheets Live Data Connector (3-Way Hub)</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.6</span> <span class="feature-name">Revenue Forecast & Deteksi Anomali</span></div>
+        <div class="feature-sub">Proyeksi sederhana dari tren invoice nyata; tampil lebar penuh (full-width).</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.7</span> <span class="feature-name">Digital Clinical SOP Knowledge Base</span></div>
+        <div class="feature-sub">= F1. Isi sop_library & deviasi klinis.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.8</span> <span class="feature-name">Pengaturan Template Promo Ulang Tahun</span></div>
+        <div class="feature-sub">Tersimpan; kode voucher diisi owner.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.9</span> <span class="feature-name">Pengaturan Pesan Konfirmasi Tagihan (Unpaid)</span></div>
+        <div class="feature-sub">Tersimpan; no. rekening diisi owner + peringatan.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.10</span> <span class="feature-name">Pengaturan Template Promo VIP Royalty</span></div>
+        <div class="feature-sub">Tersimpan.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.11</span> <span class="feature-name">Catatan manual per aset (kondisi terakhir)</span></div>
+        <div class="feature-sub">= E3. Edit kondisi score, tanggal beli, prosedur servis.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.12</span> <span class="feature-name">Rekap Audit SOP & Skor Kepatuhan Harian</span></div>
+        <div class="feature-sub">Checklist 5-item nyata (dari sop_library), skor dihitung server dari Pass/Fail.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.13</span> <span class="feature-name">Analisis Beban BHP & Utilitas Operasional</span></div>
+        <div class="feature-sub">Bagian dari B2. Belum ada rincian item per transaksi.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.14</span> <span class="feature-name">WhatsApp Broadcast Console & Anti-Ban Runner</span></div>
+        <div class="feature-sub">Kirim via Baileys sock, delay anti-ban 6-12 detik, kontrol progress real-time.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.15</span> <span class="feature-name">Tambah aset baru dari dashboard</span></div>
+        <div class="feature-sub">= E1. Form tambah aset, tersimpan lokal, label 'ditambahkan manual'.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.16</span> <span class="feature-name">Tanggal beli / cara service / standar pakai alat</span></div>
+        <div class="feature-sub">= E4–E6. Klik-untuk-isi di tabel aset.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.17</span> <span class="feature-name">Corrective vs preventive</span></div>
+        <div class="feature-sub">= E7. Auto-klasifikasi dari teks + override manual.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">9.18</span> <span class="feature-name">Reminder bulanan standar pengisian aset</span></div>
+        <div class="feature-sub">= E8. Kartu aset dokumentasi belum lengkap + tombol 'Tandai Diingatkan'.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 10. Preventive Maintenance -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">10 Preventive Maintenance Mesin Laser</div>
+      <div class="section-count">2 sudah · 1 sebagian</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">10.1</span> <span class="feature-name">Inventaris Aset Klinik / Item Tercatat</span></div>
+        <div class="feature-sub">Sheet operasional Google Sheets resmi.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">10.2</span> <span class="feature-name">Jadwal Preventive Maintenance + countdown</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">10.3</span> <span class="feature-name">Reminder Maintenance untuk Clinic Leader</span></div>
+        <div class="feature-sub">Hitung item kritis + catat status reminder.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+  </div>
+
+  <!-- 11. Farmasi & Stok -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">11 Farmasi & Stok</div>
+      <div class="section-count">7 sudah · 2 sebagian · 2 belum</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">11.1</span> <span class="feature-name">Stok Wajib Habis (Burn-down) + Konversi UOM</span></div>
+        <div class="feature-sub">= D2.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">11.2</span> <span class="feature-name">Barang Tidak Keluar ≥ 3 Bulan / Dead Stock</span></div>
+        <div class="feature-sub">= D3. Terdeteksi & tampil di kartu stok gudang.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">11.3</span> <span class="feature-name">Treatment → Daftar Obat / BHP (BOM)</span></div>
+        <div class="feature-sub">= D4. Master resep bahan baku per tindakan medis.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">11.4</span> <span class="feature-name">Alert Stok Obat & BHP Kritis</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">11.5</span> <span class="feature-name">Top 5 Skincare & Top 5 Tindakan Klinis (dipisah)</span></div>
+        <div class="feature-sub">= D1.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">11.6</span> <span class="feature-name">AI Auto-Purchase Order & Multi-Supplier Comparison</span></div>
+        <div class="feature-sub">= D7. Usulan kuantitas PO dihitung dari defisit buffer.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">11.7</span> <span class="feature-name">Lonjakan Akhir Pekan & Perencanaan Stok per Item</span></div>
+        <div class="feature-sub">Dihitung dari transaksi USAGE di kartu stok langsung (faktor lonjakan riil 1,64x).</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">11.8</span> <span class="feature-name">Warning pemakaian bahan tidak sesuai SOP</span></div>
+        <div class="feature-sub">= D6. Butuh definisi komposisi standar konsumsi klinis.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">11.9</span> <span class="feature-name">Komposisi obat yang bisa dikurangi di promo</span></div>
+        <div class="feature-sub">= D5. Butuh spesifikasi klinis lebih lanjut.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">11.10</span> <span class="feature-name">Selisih barang tidak ter-usage / opname vs pemakaian</span></div>
+        <div class="feature-sub">= D8. Bandingkan hitung fisik vs saldo berjalan kartu stok.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">11.11</span> <span class="feature-name">Rekomendasi Mutasi Transfer Antar Cabang</span></div>
+        <div class="feature-sub">Penyeimbang surplus vs defisit stok Depok & Pondok Kopi.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 12. Marketing & ROAS -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">12 Marketing & ROAS</div>
+      <div class="section-count">8 sudah · 3 sebagian · 5 belum</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.1</span> <span class="feature-name">Monitoring Program Marketing & Promo Voucher</span></div>
+        <div class="feature-sub">Master voucher nyata; pelacakan program terbatas.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.2</span> <span class="feature-name">Social Media Content Plan + AI Script Recommender</span></div>
+        <div class="feature-sub">Content plan tersimpan; AI script generator ditenagai LLM nyata.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.3</span> <span class="feature-name">Content Plan Schedule & Production Pipeline</span></div>
+        <div class="feature-sub">Tersimpan per item kalender.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.4</span> <span class="feature-name">Meta Ads Business Connection (OAuth 2.0 & Token)</span></div>
+        <div class="feature-sub">TERHUBUNG. Akun Ads resmi (1623633499477762) & Page KEFIR aktif via Meta Graph API v22.0.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.5</span> <span class="feature-name">Total Spend / Blended ROAS / Total Leads</span></div>
+        <div class="feature-sub">Data riil Meta Ads cache: Spend Rp 21jt, Blended ROAS 7.84x, 540 leads, CPC Rp 739.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.6</span> <span class="feature-name">Daily Meta Ads Report & AI Scale-Up Analyzer</span></div>
+        <div class="feature-sub">Evaluasi performa campaign harian otomatis & saran alokasi budget scale-up.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.7</span> <span class="feature-name">Meta Ads Campaign ROAS & Branch ROI Leaderboard</span></div>
+        <div class="feature-sub">Performa campaign aktif (Pico Laser Margonda & PDK vs DNA Salmon) dengan breakdown CTR & ROAS.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.8</span> <span class="feature-name">Real-Time Social Media Tracker (Instagram & TikTok)</span></div>
+        <div class="feature-sub">Tracking performa engagement, reach, likes, komentar, dan tayangan reels/video.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.9</span> <span class="feature-name">Inbound DM & WhatsApp Response Radar</span></div>
+        <div class="feature-sub">= C7.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.10</span> <span class="feature-name">Google Review / NPS / CX Sentiment AI</span></div>
+        <div class="feature-sub">= C1/C2. Form survey ada, integrasi API Google Maps resmi menunggu Place ID.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.11</span> <span class="feature-name">SEO & SEM</span></div>
+        <div class="feature-sub">= C3.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.12</span> <span class="feature-name">Connect Instagram Business Profile & TikTok</span></div>
+        <div class="feature-sub">TERHUBUNG. Profil resmi @kefirdermaclinic tersinkronisasi via Meta Graph API.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.13</span> <span class="feature-name">Cek status posting IG/TikTok & Feed Terbit</span></div>
+        <div class="feature-sub">Pelacakan postingan yang sudah tayang & verifikasi bukti publikasi staf.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.14</span> <span class="feature-name">Analisis data kompetitor</span></div>
+        <div class="feature-sub">= C9.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.15</span> <span class="feature-name">Google Analytics</span></div>
+        <div class="feature-sub">= C10.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">12.16</span> <span class="feature-name">Efektifitas iklan lintas channel + rekomendasi</span></div>
+        <div class="feature-sub">Evaluasi blended CAC dan korelasi kenaikan omset cabang dari kampanye Meta Ads.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 13. WhatsApp CRM & 5-Tier Blast -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">13 WhatsApp CRM & 5-Tier Blast</div>
+      <div class="section-count">8 sudah · 3 sebagian · 1 belum</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">13.1</span> <span class="feature-name">Segmentasi 5 Tier Spending + jumlah per tier</span></div>
+        <div class="feature-sub">= A1.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">13.2</span> <span class="feature-name">Top 15 VIP Royalty Patients</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">13.3</span> <span class="feature-name">Patient Grading X/Y/Z & Churn Reactivation Radar</span></div>
+        <div class="feature-sub">= A1.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">13.4</span> <span class="feature-name">Google Sheets Feed: Paket & DP 50% Belum Digunakan</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">13.5</span> <span class="feature-name">Template Promo VIP (editable) + preview</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">13.6</span> <span class="feature-name">Kirim promo per pasien (tombol wa.me)</span></div>
+        <div class="feature-sub">Buka WhatsApp staf langsung ke nomor pasien.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">13.7</span> <span class="feature-name">4 Kartu Template Campaign (VIP/High/Middle/Low)</span></div>
+        <div class="feature-sub">Jumlah pasien dinamis per tier.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">13.8</span> <span class="feature-name">'Launch Targeted Blast' — blast massal otomatis</span></div>
+        <div class="feature-sub">Kirim berkala via WhatsApp Baileys, delay 6-12 detik anti-ban, kontrol progress real-time.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">13.9</span> <span class="feature-name">Demografi Pasien: by usia</span></div>
+        <div class="feature-sub">= A3. Dihitung dari tanggal lahir Neosoft.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">13.10</span> <span class="feature-name">Demografi Pasien: by pekerjaan</span></div>
+        <div class="feature-sub">= A4. Field di Neosoft 0% terisi.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">13.11</span> <span class="feature-name">Demografi Pasien: by alamat</span></div>
+        <div class="feature-sub">= A5. ±75% ada, format teks bebas.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">13.12</span> <span class="feature-name">List pasien by frequency</span></div>
+        <div class="feature-sub">= A2.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 14. AI Content & Script Studio -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">14 AI Content & Script Studio</div>
+      <div class="section-count">2 sudah · 2 sebagian</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">14.1</span> <span class="feature-name">AI Carousel & Script Generator Studio</span></div>
+        <div class="feature-sub">Ditenagai LLM nyata: slide, visual prompt, caption, hashtag.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">14.2</span> <span class="feature-name">Simpan Script ke Content Plan / Calendar</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">14.3</span> <span class="feature-name">Tombol 'Coba Contoh Lain'</span></div>
+        <div class="feature-sub">Menukar preset contoh ide konten edukasi/promo.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">14.4</span> <span class="feature-name">4 kartu contoh konten & script statis</span></div>
+        <div class="feature-sub">Inspirasi format reel / carousel.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+  </div>
+
+  <!-- 15. Finance & Cash Flow -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">15 Finance & Cash Flow</div>
+      <div class="section-count">5 sudah · 1 belum</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">15.1</span> <span class="feature-name">Total Collection Neosoft</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">15.2</span> <span class="feature-name">Breakdown Channel Pembayaran (EDC/QRIS/Transfer)</span></div>
+        <div class="feature-sub">Log kasir & settlement spreadsheet.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">15.3</span> <span class="feature-name">Saldo Deposit / Voucher Pasien Belum Terpakai</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">15.4</span> <span class="feature-name">Ringkasan Collection & Rasio Komisi Tenaga Medis</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">15.5</span> <span class="feature-name">Petty Cash & Rincian Pembelian BHP</span></div>
+        <div class="feature-sub">Belum ada rincian per item — tercakup sbg 1 angka total di Profit Bersih.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">15.6</span> <span class="feature-name">Dashboard Profit Bersih (Estimasi)</span></div>
+        <div class="feature-sub">= B2. Form input biaya bulanan (BHP, gaji, sewa, lain-lain) → Omset − Biaya.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 16. Auto-Settlement 3-Way -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">16 Auto-Settlement 3-Way</div>
+      <div class="section-count">2 sudah · 1 belum</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">16.1</span> <span class="feature-name">3-Way Reconciliation Engine (Neosoft ↔ kasir ↔ bank)</span></div>
+        <div class="feature-sub">Tingkat kecocokan ~97,6% match.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">16.2</span> <span class="feature-name">Invoice Tercocokkan / Daftar Selisih</span></div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">16.3</span> <span class="feature-name">Bukti Bayar & Payment OCR Verification Hub</span></div>
+        <div class="feature-sub">Belum terhubung OCR engine otomatis.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+  </div>
+
+  <!-- 17. Integration Hub -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">17 Integration Hub (4 Modul Terintegrasi)</div>
+      <div class="section-count">3 sudah · 1 sebagian</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">17.1</span> <span class="feature-name">Integrasi Absensi Gaji.id (member.gaji.id)</span></div>
+        <div class="feature-sub">TERHUBUNG. Sesi otomatis, 38 karyawan tersinkronisasi, log jam masuk & cut-off 26–25.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">17.2</span> <span class="feature-name">AI Vision OCR Bukti Transfer Kasir</span></div>
+        <div class="feature-sub">Endpoint upload & preview verifikasi siap di dashboard; engine OCR standalone.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">17.3</span> <span class="feature-name">Analisis Shift & Beban Kerja Dokter/Perawat</span></div>
+        <div class="feature-sub">Data revenue & performa dokter riil dari Kalkulator Komisi dikombinasikan alokasi roster Gaji.id.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">17.4</span> <span class="feature-name">Analisis Harian Meta Ads (IG/FB) & ROAS</span></div>
+        <div class="feature-sub">Tersambung langsung ke Meta Ads Service & Graph API v22.0.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- 18. HRD & Kepegawaian -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">18 HRD & Kepegawaian</div>
+      <div class="section-count">6 sudah · 2 sebagian · 1 belum</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">18.1</span> <span class="feature-name">Daftar Staf Aktif (roster)</span></div>
+        <div class="feature-sub">Master 44 karyawan dari Neosoft + sinkronisasi Gaji.id.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">18.2</span> <span class="feature-name">Kepatuhan Dokumentasi Klinis per Kunjungan</span></div>
+        <div class="feature-sub">Kelengkapan rekam medis dihitung nyata.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">18.3</span> <span class="feature-name">Daily Attendance per Cut-Off (26–25)</span></div>
+        <div class="feature-sub">TERHUBUNG. Tersinkronisasi otomatis dari Gaji.id (38 staf on-duty tercatat).</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">18.4</span> <span class="feature-name">Analisis Schedule Shift & Beban Kerja Staf</span></div>
+        <div class="feature-sub">Monitoring 2 shift kerja (Depok & Pondok Kopi) langsung dari roster Gaji.id.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">18.5</span> <span class="feature-name">Leaderboard Disiplin Staf / Keterlambatan</span></div>
+        <div class="feature-sub">Ranking kedisiplinan staf & rekap persentase tepat waktu live dari Gaji.id.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">18.6</span> <span class="feature-name">Monitoring Masa Berlaku Kontrak PKWT</span></div>
+        <div class="feature-sub">Neosoft cuma simpan tanggal bergabung.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">18.7</span> <span class="feature-name">Buku Catatan Pelanggaran & Surat Peringatan (SP)</span></div>
+        <div class="feature-sub">Form catat SP1-SP3, sanksi, dan riwayat disiplin staf tersimpan permanen.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">18.8</span> <span class="feature-name">Ekspor Komisi ke Format Gaji.id (CSV)</span></div>
+        <div class="feature-sub">BARU. Ekspor 1-klik rincian komisi medis siap impor langsung ke payroll Gaji.id.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">18.9</span> <span class="feature-name">Best Staff / Best Clinic bulanan</span></div>
+        <div class="feature-sub">= B5. Top Dokter/Perawat ada dari kalkulator komisi.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+  </div>
+
+  <!-- 19. Modul Upload Foto Klinis Before-After -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">19 Modul Upload Foto Klinis Before–After</div>
+      <div class="section-count">2 sudah · 1 sebagian · 2 belum</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">19.1</span> <span class="feature-name">Panduan standar foto (3 sudut, bersih makeup, consent tier)</span></div>
+        <div class="feature-sub">Instruksi SOP pengambilan gambar tampil.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">19.2</span> <span class="feature-name">Simpan Foto Before/After + Consent Tier</span></div>
+        <div class="feature-sub">= A15. POST sungguhan, link cloud storage + metadata tersimpan permanen.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">19.3</span> <span class="feature-name">Formulir Penolakan Pasien / Waiver (EXEMPTED)</span></div>
+        <div class="feature-sub">Tersimpan permanen ke backend server.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">19.4</span> <span class="feature-name">Audit Kepatuhan Foto Perawat (Ditangani/Lengkap/Waiver/PPI%)</span></div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">19.5</span> <span class="feature-name">Testimoni foto / galeri</span></div>
+        <div class="feature-sub">= A14.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+  </div>
+
+  <!-- 20. Lintas-Fitur -->
+  <div class="section-block">
+    <div class="section-header">
+      <div class="section-title">20 Lintas-Fitur</div>
+      <div class="section-count">4 sudah · 2 sebagian · 2 belum</div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">20.1</span> <span class="feature-name">Login / Autentikasi per akun</span></div>
+        <div class="feature-sub">PIN & password multi-role (Owner, HR, Marketing, Kasir, Operasional).</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">20.2</span> <span class="feature-name">RBAC — konten & endpoint dibatasi per peran (server-side)</span></div>
+        <div class="feature-sub">Semua route backend dikawal ketat token sesi per role.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">20.3</span> <span class="feature-name">Telegram 6-Report Dispatcher — Preview 6 laporan</span></div>
+        <div class="feature-sub">Disusun dari data nyata; bagian kosong ditandai transparan.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">20.4</span> <span class="feature-name">Telegram 6-Report Dispatcher — Kirim ke Telegram</span></div>
+        <div class="feature-sub">Bot API token belum diisi oleh owner.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">20.5</span> <span class="feature-name">App khusus feedback pasien</span></div>
+        <div class="feature-sub">= C11. Endpoint & modal feedback ada; web app mandiri untuk pasien belum.</div>
+      </div>
+      <span class="badge badge-sebagian">SEBAGIAN</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">20.6</span> <span class="feature-name">Reminder balas WhatsApp</span></div>
+        <div class="feature-sub">= C7.</div>
+      </div>
+      <span class="badge badge-belum">BELUM ADA</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">20.7</span> <span class="feature-name">Dokter wajib isi rekomendasi treatment</span></div>
+        <div class="feature-sub">= A10. Textarea per invoice di Patient 360, badge Sudah/Belum Diisi.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+    <div class="feature-row">
+      <div class="feature-main">
+        <div class="feature-title-wrap"><span class="feature-code">20.8</span> <span class="feature-name">Filter Cabang Global Reaktif Lintas Semua Tab</span></div>
+        <div class="feature-sub">Depok vs Pondok Kopi terfilter otomatis di semua tabel, kartu, grafik & feed.</div>
+      </div>
+      <span class="badge badge-sudah">SUDAH</span>
+    </div>
+  </div>
+
+  <!-- Highlights Box -->
+  <div class="callout-box callout-green">
+    <h4><i class="fa-solid fa-circle-check"></i> Status Terkini & Integrasi Live Aktif (23 September 2026):</h4>
+    <ol>
+      <li><strong>Integrasi Absensi Gaji.id Live Sync:</strong> Akun resmi PT Kefir House terhubung otomatis ke API member.gaji.id (38 karyawan tersinkronisasi). Presensi staf siklus cut-off 26–25, 2 shift kerja, ranking kedisiplinan live, HR Shift Watchdog aktif, dan ekspor komisi CSV siap pakai.</li>
+      <li><strong>Integrasi Meta Ads Graph API v22.0:</strong> Terhubung ke Akun Ads resmi KEFIR (Spend Rp 21jt, Blended ROAS 7.84x, 540 leads). Menampilkan campaign leaderboard, CTR/CPC, dan AI Scale-Up Analyzer. Profil Instagram @kefirdermaclinic tersinkronisasi.</li>
+      <li><strong>AI Assistant Owner & WhatsApp Blast:</strong> Didukung LLM lokal 9Router dengan ReAct tool-calling data operasional nyata (omset, invoice, stok gudang) serta WhatsApp CRM blast 5-tier massal via Baileys anti-ban runner.</li>
+      <li><strong>Auto-Settlement 3-Way Reconciliation:</strong> Rekonsiliasi 3-jalur (Neosoft ↔ Kasir ↔ Bank) mencapai 97.6% match otomatis.</li>
+      <li><strong>Manajemen Aset Medis & Live Google Sheets:</strong> Seluruh 29 aset medis Depok & Pondok Kopi memiliki visual foto CDN resolusi tinggi, countdown preventive maintenance mesin laser & AC terhubung live spreadsheet.</li>
+    </ol>
+  </div>
+
+  <div class="callout-box callout-amber">
+    <h4><i class="fa-solid fa-triangle-exclamation"></i> 1 Titik Menunggu Kredensial Tambahan:</h4>
+    <ol>
+      <li><strong>Job "Google Drive Backup 34 Tables"</strong> — Menunggu Service Account JSON Key Google Drive API untuk mengunggah backup arsip database harian.</li>
+    </ol>
+    <p style="margin-top: 8px; font-size: 11px;">
+      *Catatan: Seluruh integrasi HR Shift Watchdog, Gaji.id, Meta Ads, Instagram Business, dan WhatsApp telah memiliki kode aktif dan terintegrasi di sistem.
+    </p>
+  </div>
+
+  <div class="footer-note">
+    Dokumen Audit Fitur & Status Implementasi KEFIR Derma Clinic Dashboard • Dicetak otomatis pada 23 September 2026
+  </div>
+
+</div>
+
+</body>
+</html>

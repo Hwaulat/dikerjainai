@@ -1,0 +1,42 @@
+[
+  {
+    "id": "CTR-001",
+    "treatment_keyword": "Laser",
+    "contraindication_condition": "Kehamilan & Menyusui Eksklusif (< 6 bulan)",
+    "severity": "CRITICAL",
+    "warning_message": "Tindakan Laser berenergi tinggi dikontraindikasikan pada ibu hamil untuk mencegah stres sistemik dan hiperpigmentasi pasca-inflamasi (PIH) akibat ketidakseimbangan hormonal.",
+    "action_required": "Tunda tindakan laser, alihkan ke Facial Calming Hidrasi atau Silk Glow non-laser."
+  },
+  {
+    "id": "CTR-002",
+    "treatment_keyword": "Laser",
+    "contraindication_condition": "Penggunaan Isotretinoin / Roaccutane dalam 6 bulan terakhir",
+    "severity": "CRITICAL",
+    "warning_message": "Risiko luka atrofik, pembentukan keloid berat, dan gangguan re-epitelisasi jaringan kulit pasca-ablasi.",
+    "action_required": "Wajib tunda laser ablatif/semi-ablatif hingga 6 bulan bebas obat isotretinoin sistemik."
+  },
+  {
+    "id": "CTR-003",
+    "treatment_keyword": "Peel",
+    "contraindication_condition": "Luka terbuka, dermatitis aktif, atau herpes simplex fase erupsi",
+    "severity": "HIGH",
+    "warning_message": "Pemberian cairan peeling kimiawi pada lesi terbuka berisiko chemical burn derajat 2 dan penyebaran infeksi viral sekunder.",
+    "action_required": "Obati lesi aktif hingga sembuh total sebelum dilakukan tindakan peeling."
+  },
+  {
+    "id": "CTR-004",
+    "treatment_keyword": "Booster",
+    "contraindication_condition": "Alergi berat terhadap protein ikan / DNA Salmon / Seafood",
+    "severity": "HIGH",
+    "warning_message": "Pasien memiliki riwayat anafilaksis terhadap produk laut berisiko reaksi hipersensitivitas tipe 1 terhadap injeksi PN/PDRN Salmon.",
+    "action_required": "Skin prick test wajib dilakukan atau ganti modalitas ke Hyaluronic Acid non-animal derived."
+  },
+  {
+    "id": "CTR-005",
+    "treatment_keyword": "RF",
+    "contraindication_condition": "Penggunaan alat pacu jantung (Pacemaker) atau implan logam di area wajah",
+    "severity": "CRITICAL",
+    "warning_message": "Gelombang Radio Frequency dapat mengganggu frekuensi pacemaker dan menyebabkan luka bakar internal di sekitar plat logam implan.",
+    "action_required": "Dilarang keras melakukan monopolar/bipolar RF di area tubuh dengan implan aktif."
+  }
+]

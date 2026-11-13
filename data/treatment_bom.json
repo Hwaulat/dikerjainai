@@ -1,0 +1,5252 @@
+[
+  {
+    "id": "BOM-001",
+    "treatment_code": "T-26050017",
+    "treatment_name": "Kefir 14 in 1 Crystal Dew Facial",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050219",
+        "name": "Toner Peptaronic",
+        "standard_qty": 3,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050146",
+        "name": "Scrub wajah",
+        "standard_qty": 5,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050161",
+        "name": "Soderta gold",
+        "standard_qty": 1,
+        "uom": "pack"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-002",
+    "treatment_code": "T-26050023",
+    "treatment_name": "Pico Face Laser",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 45,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-003",
+    "treatment_code": "T-26090010",
+    "treatment_name": "Meso Body 5cc",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050081",
+        "name": "DR. LIPO+",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-004",
+    "treatment_code": "T-26090004",
+    "treatment_name": "ADD ON GOCAP DEALS PDT",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-005",
+    "treatment_code": "T-26090002",
+    "treatment_name": "GOCAP DEALS - KEFIR MICRODERMABRATION",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050168",
+        "name": "Sheetmask",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050220",
+        "name": "Serum Peptaronic",
+        "standard_qty": 1,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-006",
+    "treatment_code": "T-26090001",
+    "treatment_name": "GOCAP DEALS - KEFIR PHYTO",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050219",
+        "name": "Toner Peptaronic",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050146",
+        "name": "Scrub wajah",
+        "standard_qty": 5,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050166",
+        "name": "Masker Greentea Larasanti",
+        "standard_qty": 1,
+        "uom": "pack"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-007",
+    "treatment_code": "T-26080001",
+    "treatment_name": "Vita C Injection",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050137",
+        "name": "Larce 1000mg",
+        "standard_qty": 1,
+        "uom": "ampul"
+      },
+      {
+        "item_code": "P-26050181",
+        "name": "NACL 100ml",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050247",
+        "name": "Spuit 5cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050211",
+        "name": "Isopore",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050212",
+        "name": "Oke plast",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050230",
+        "name": "Wing Needle 27 x 3/4",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-008",
+    "treatment_code": "T-26070005",
+    "treatment_name": "Filler Dagu / Hidung",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050099",
+        "name": "Atiere Volume",
+        "standard_qty": 1,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-009",
+    "treatment_code": "T-26070004",
+    "treatment_name": "Meso Lipo Perut / Paha",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050081",
+        "name": "DR. LIPO+",
+        "standard_qty": 20,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050247",
+        "name": "Spuit 5cc",
+        "standard_qty": 4,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-010",
+    "treatment_code": "T-26050130",
+    "treatment_name": "Meso Lipo Perut / Paha",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050081",
+        "name": "DR. LIPO+",
+        "standard_qty": 20,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050247",
+        "name": "Spuit 5cc",
+        "standard_qty": 4,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-011",
+    "treatment_code": "T-26070003",
+    "treatment_name": "Hifu V-line",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-012",
+    "treatment_code": "T-26070001",
+    "treatment_name": "Add On Fat Apoptosis Wajah",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050108",
+        "name": "FA-XL",
+        "standard_qty": 1,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-013",
+    "treatment_code": "T-26050163",
+    "treatment_name": "ND-YAG Laser",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-014",
+    "treatment_code": "T-26050161",
+    "treatment_name": "Pico Black Doll Laser",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-015",
+    "treatment_code": "T-26050159",
+    "treatment_name": "Vita C Glow Infusion",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050137",
+        "name": "Larce 1000mg",
+        "standard_qty": 1,
+        "uom": "ampul"
+      },
+      {
+        "item_code": "P-26050181",
+        "name": "NACL 100ml",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050247",
+        "name": "Spuit 5cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050211",
+        "name": "Isopore",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050212",
+        "name": "Oke plast",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050230",
+        "name": "Wing Needle 27 x 3/4",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-016",
+    "treatment_code": "T-26050157",
+    "treatment_name": "Botox Allergan / unit",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050097",
+        "name": "Allergan",
+        "standard_qty": 1,
+        "uom": "unit"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-017",
+    "treatment_code": "T-26050156",
+    "treatment_name": "Botox per unit Korean",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050096",
+        "name": "Nabota",
+        "standard_qty": 1,
+        "uom": "unit"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-018",
+    "treatment_code": "T-26050155",
+    "treatment_name": "Mono Under Eye Threadlift",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050196",
+        "name": "Minerva 29Gx38MM",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050140",
+        "name": "Lidocain",
+        "standard_qty": 1,
+        "uom": "ampul"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050213",
+        "name": "Kassa",
+        "standard_qty": 10,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050212",
+        "name": "Oke plast",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-019",
+    "treatment_code": "T-26050146",
+    "treatment_name": "Mono / thread",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050196",
+        "name": "Minerva 29Gx38MM",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-020",
+    "treatment_code": "T-26050145",
+    "treatment_name": "Add On COG Threadlift / Benang",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050192",
+        "name": "Minerva 19G x 100mm",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-021",
+    "treatment_code": "T-26050144",
+    "treatment_name": "Mono Undereye Threadlift",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050196",
+        "name": "Minerva 29Gx38MM",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050140",
+        "name": "Lidocain",
+        "standard_qty": 1,
+        "uom": "ampul"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050213",
+        "name": "Kassa",
+        "standard_qty": 10,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050212",
+        "name": "Oke plast",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-022",
+    "treatment_code": "T-26050143",
+    "treatment_name": "Cat Eyes Threadlift",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050189",
+        "name": "Minerva 19g x 38mm",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050140",
+        "name": "Lidocain",
+        "standard_qty": 1,
+        "uom": "ampul"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050213",
+        "name": "Kassa",
+        "standard_qty": 10,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050212",
+        "name": "Oke plast",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-023",
+    "treatment_code": "T-26050142",
+    "treatment_name": "Foxy Eyes Threadlift",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050192",
+        "name": "Minerva 19G x 100mm",
+        "standard_qty": 4,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050140",
+        "name": "Lidocain",
+        "standard_qty": 1,
+        "uom": "ampul"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050213",
+        "name": "Kassa",
+        "standard_qty": 10,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050212",
+        "name": "Oke plast",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-024",
+    "treatment_code": "T-26050141",
+    "treatment_name": "Threadlift V-Line",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050192",
+        "name": "Minerva 19G x 100mm",
+        "standard_qty": 4,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050140",
+        "name": "Lidocain",
+        "standard_qty": 2,
+        "uom": "ampul"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050213",
+        "name": "Kassa",
+        "standard_qty": 10,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050212",
+        "name": "Oke plast",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-025",
+    "treatment_code": "T-26050140",
+    "treatment_name": "Threadlift Hidung",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050190",
+        "name": "Minerva 19G x 50mm",
+        "standard_qty": 4,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050189",
+        "name": "Minerva 19g x 38mm",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050140",
+        "name": "Lidocain",
+        "standard_qty": 1,
+        "uom": "ampul"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050213",
+        "name": "Kassa",
+        "standard_qty": 10,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050212",
+        "name": "Oke plast",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-026",
+    "treatment_code": "T-26050139",
+    "treatment_name": "Threadlift Pipi",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050192",
+        "name": "Minerva 19G x 100mm",
+        "standard_qty": 10,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050140",
+        "name": "Lidocain",
+        "standard_qty": 2,
+        "uom": "ampul"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050213",
+        "name": "Kassa",
+        "standard_qty": 10,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050212",
+        "name": "Oke plast",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-027",
+    "treatment_code": "T-26050135",
+    "treatment_name": "Bright Secret Lutut",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-028",
+    "treatment_code": "T-26050134",
+    "treatment_name": "Bright Secret Siku",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-029",
+    "treatment_code": "T-26050133",
+    "treatment_name": "Meso Lipo Perut/Paha 20cc",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050081",
+        "name": "DR. LIPO+",
+        "standard_qty": 20,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050247",
+        "name": "Spuit 5cc",
+        "standard_qty": 4,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-030",
+    "treatment_code": "T-26050131",
+    "treatment_name": "Meso Lipo Perut / Bra Line / Pinggang 10cc",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050081",
+        "name": "DR. LIPO+",
+        "standard_qty": 10,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050247",
+        "name": "Spuit 5cc",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-031",
+    "treatment_code": "BARU-MESO-LIPO-PERUT-BRA-LINE-PINGGANG-10CC",
+    "treatment_name": "Meso Lipo Perut / Bra Line / Pinggang 10cc",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050081",
+        "name": "DR. LIPO+",
+        "standard_qty": 10,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050247",
+        "name": "Spuit 5cc",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-032",
+    "treatment_code": "T-26050128",
+    "treatment_name": "Meso Intralipo V-Line",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050098",
+        "name": "Lipo lab v-line",
+        "standard_qty": 2,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050246",
+        "name": "Spuit 3cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-033",
+    "treatment_code": "T-26050127",
+    "treatment_name": "Meso Intralipo Cheek",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050098",
+        "name": "Lipo lab v-line",
+        "standard_qty": 3,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-034",
+    "treatment_code": "T-26050126",
+    "treatment_name": "Fat Apoptosis Paha / Perut",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050108",
+        "name": "FA-XL",
+        "standard_qty": 20,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050248",
+        "name": "Spuit 10cc",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-035",
+    "treatment_code": "T-26050125",
+    "treatment_name": "Fat Apoptosis Cheek",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050108",
+        "name": "FA-XL",
+        "standard_qty": 10,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050246",
+        "name": "Spuit 3cc",
+        "standard_qty": 3,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-036",
+    "treatment_code": "T-26050124",
+    "treatment_name": "Fat Apoptosis V-Line",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050108",
+        "name": "FA-XL",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050246",
+        "name": "Spuit 3cc",
+        "standard_qty": 2,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-037",
+    "treatment_code": "T-26050123",
+    "treatment_name": "Anti Filler",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050213",
+        "name": "Kassa",
+        "standard_qty": 10,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050212",
+        "name": "Oke plast",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-038",
+    "treatment_code": "T-26050121",
+    "treatment_name": "Korean Botox / 50 ui",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050096",
+        "name": "Nabota",
+        "standard_qty": 50,
+        "uom": "unit"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-039",
+    "treatment_code": "T-26050120",
+    "treatment_name": "Premium Korean Botox / 100 unit",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050096",
+        "name": "Nabota",
+        "standard_qty": 100,
+        "uom": "unit"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-040",
+    "treatment_code": "T-26050119",
+    "treatment_name": "Botox Allergan / 50 unit",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050097",
+        "name": "Allergan",
+        "standard_qty": 50,
+        "uom": "unit"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-041",
+    "treatment_code": "T-26050118",
+    "treatment_name": "Botox Allergan / 100 unit",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050097",
+        "name": "Allergan",
+        "standard_qty": 100,
+        "uom": "unit"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-042",
+    "treatment_code": "T-26050117",
+    "treatment_name": "Juvelook / cc",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050115",
+        "name": "Juvelook",
+        "standard_qty": 1,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 20,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-043",
+    "treatment_code": "T-26050116",
+    "treatment_name": "Collagen Stimulator By Luwen Italy",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050105",
+        "name": "Luwen Collagen +",
+        "standard_qty": 1,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 20,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-044",
+    "treatment_code": "T-26050115",
+    "treatment_name": "Juvelook Half Face (3cc)",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050115",
+        "name": "Juvelook",
+        "standard_qty": 3,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 20,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050246",
+        "name": "Spuit 3cc",
+        "standard_qty": 2,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-045",
+    "treatment_code": "T-26050114",
+    "treatment_name": "Juvelook Collagen Stimulator (6 cc)",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050115",
+        "name": "Juvelook",
+        "standard_qty": 6,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 20,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-046",
+    "treatment_code": "T-26050113",
+    "treatment_name": "Exosome Skin Booster",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 20,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-047",
+    "treatment_code": "T-26050112",
+    "treatment_name": "DNA Salmon Skin Booster",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050088",
+        "name": "PDRN",
+        "standard_qty": 1,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-048",
+    "treatment_code": "T-26050111",
+    "treatment_name": "Acne Clarity Booster",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050265",
+        "name": "Curenex Snowpeel",
+        "standard_qty": 2,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-049",
+    "treatment_code": "T-26050110",
+    "treatment_name": "White Mochi Skin Booster",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050107",
+        "name": "Staris Aquarius Hydro",
+        "standard_qty": 2,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-050",
+    "treatment_code": "T-26050109",
+    "treatment_name": "DNA Salmon Cell Activator",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 20,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050088",
+        "name": "PDRN",
+        "standard_qty": 2,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-051",
+    "treatment_code": "T-26050108",
+    "treatment_name": "Add on NCTF / cc",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050087",
+        "name": "NCTF 135 HA",
+        "standard_qty": 1,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-052",
+    "treatment_code": "T-26050107",
+    "treatment_name": "Pluryal Shine Skin Booster",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050093",
+        "name": "Pluryal Shine",
+        "standard_qty": 2,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 20,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050246",
+        "name": "Spuit 3cc",
+        "standard_qty": 2,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-053",
+    "treatment_code": "T-26050106",
+    "treatment_name": "Pluryal Acne Skin Booster",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050092",
+        "name": "Pluryal Balance",
+        "standard_qty": 2,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 20,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-054",
+    "treatment_code": "T-26050105",
+    "treatment_name": "Pluryal Radiance Skin Booster",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050090",
+        "name": "Pluryal Radiance",
+        "standard_qty": 2,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 20,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-055",
+    "treatment_code": "T-26050104",
+    "treatment_name": "NCTF - Pink Lips",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050087",
+        "name": "NCTF 135 HA",
+        "standard_qty": 1,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 2,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-056",
+    "treatment_code": "T-26050103",
+    "treatment_name": "NCTF - Bright Undereye",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050087",
+        "name": "NCTF 135 HA",
+        "standard_qty": 1,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 2,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-057",
+    "treatment_code": "T-26050102",
+    "treatment_name": "NCTF - Full Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050087",
+        "name": "NCTF 135 HA",
+        "standard_qty": 2,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 2,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-058",
+    "treatment_code": "T-26050101",
+    "treatment_name": "Vitaran Polybooster Skin Booster Half Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050262",
+        "name": "Vitaran Poly Booster",
+        "standard_qty": 1,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-059",
+    "treatment_code": "T-26050100",
+    "treatment_name": "Vitaran PN Skin Booster Half Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050261",
+        "name": "Vitaran Polynucleotides",
+        "standard_qty": 1,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-060",
+    "treatment_code": "T-26050099",
+    "treatment_name": "Evehilo Skin Booster Half Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050259",
+        "name": "Evehilo",
+        "standard_qty": 0.5,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-061",
+    "treatment_code": "T-26050098",
+    "treatment_name": "Rejuran HB Skin Booster Half Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050103",
+        "name": "Rejuran HB",
+        "standard_qty": 0.5,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-062",
+    "treatment_code": "T-26050097",
+    "treatment_name": "Rejuran Healer Skin Booster Half Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050102",
+        "name": "Rejuran Healer",
+        "standard_qty": 0.5,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-063",
+    "treatment_code": "T-26050096",
+    "treatment_name": "Nucleofill DNA Salmon Half Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-064",
+    "treatment_code": "T-26050095",
+    "treatment_name": "Vitaran Polybooster Skin Booster Full Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050262",
+        "name": "Vitaran Poly Booster",
+        "standard_qty": 2,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-065",
+    "treatment_code": "T-26050094",
+    "treatment_name": "Vitaran PN Skin Booster Full Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050261",
+        "name": "Vitaran Polynucleotides",
+        "standard_qty": 2,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-066",
+    "treatment_code": "T-26050093",
+    "treatment_name": "Evehilo Skin Booster Full Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050259",
+        "name": "Evehilo",
+        "standard_qty": 1,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-067",
+    "treatment_code": "T-26050092",
+    "treatment_name": "Rejuran HB Skin Booster Full Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050103",
+        "name": "Rejuran HB",
+        "standard_qty": 1,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-068",
+    "treatment_code": "T-26050091",
+    "treatment_name": "Profhilo Skin Booster Half Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050089",
+        "name": "Profhilo",
+        "standard_qty": 0.5,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-069",
+    "treatment_code": "T-26050090",
+    "treatment_name": "Nucleofill DNA Salmon Full Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-070",
+    "treatment_code": "T-26050089",
+    "treatment_name": "Rejuran Healer Skin Booster Full Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050102",
+        "name": "Rejuran Healer",
+        "standard_qty": 1,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-071",
+    "treatment_code": "T-26050088",
+    "treatment_name": "Profhilo Skin Booster Full Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050089",
+        "name": "Profhilo",
+        "standard_qty": 1,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-072",
+    "treatment_code": "T-26050087",
+    "treatment_name": "Body Shave",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050254",
+        "name": "Pisau cukur",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-073",
+    "treatment_code": "T-26050085",
+    "treatment_name": "Add On Anastesi Inject / Ampul",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050140",
+        "name": "Lidocain",
+        "standard_qty": 1,
+        "uom": "ampul"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-074",
+    "treatment_code": "T-26050084",
+    "treatment_name": "Acne Spot Injection",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050117",
+        "name": "Trilac 10mg",
+        "standard_qty": 0.3,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-075",
+    "treatment_code": "T-26050083",
+    "treatment_name": "PDT Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-076",
+    "treatment_code": "T-26050082",
+    "treatment_name": "Add On Anastesi Cream / Pot",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-077",
+    "treatment_code": "T-26050081",
+    "treatment_name": "Skin Analyzer",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 2,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-078",
+    "treatment_code": "T-26050080",
+    "treatment_name": "Underarm Glow Peel",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050267",
+        "name": "Mesopeel Glycolic 40%",
+        "standard_qty": 1,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050180",
+        "name": "Neutralizer",
+        "standard_qty": 3,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-079",
+    "treatment_code": "T-26050079",
+    "treatment_name": "Neck Glow Peel",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050267",
+        "name": "Mesopeel Glycolic 40%",
+        "standard_qty": 2,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050180",
+        "name": "Neutralizer",
+        "standard_qty": 3,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-080",
+    "treatment_code": "T-26050078",
+    "treatment_name": "Miss V Peel",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050180",
+        "name": "Neutralizer",
+        "standard_qty": 3,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050266",
+        "name": "Mesopeel Glycolic 35%",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-081",
+    "treatment_code": "T-26050077",
+    "treatment_name": "Kefir Retinol Peel",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050180",
+        "name": "Neutralizer",
+        "standard_qty": 3,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050266",
+        "name": "Mesopeel Glycolic 35%",
+        "standard_qty": 1,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050265",
+        "name": "Curenex Snowpeel",
+        "standard_qty": 1,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-082",
+    "treatment_code": "T-26050076",
+    "treatment_name": "Kefir Melasma Peel",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050180",
+        "name": "Neutralizer",
+        "standard_qty": 3,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050265",
+        "name": "Curenex Snowpeel",
+        "standard_qty": 1,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-083",
+    "treatment_code": "T-26050075",
+    "treatment_name": "Kefir Glow Peel",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050180",
+        "name": "Neutralizer",
+        "standard_qty": 3,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050266",
+        "name": "Mesopeel Glycolic 35%",
+        "standard_qty": 1,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-084",
+    "treatment_code": "T-26050074",
+    "treatment_name": "Kefir Acne Clear Peel",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050180",
+        "name": "Neutralizer",
+        "standard_qty": 3,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050267",
+        "name": "Mesopeel Glycolic 40%",
+        "standard_qty": 1,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-085",
+    "treatment_code": "T-26050073",
+    "treatment_name": "Ass Peel",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050180",
+        "name": "Neutralizer",
+        "standard_qty": 3,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050266",
+        "name": "Mesopeel Glycolic 35%",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-086",
+    "treatment_code": "T-26050072",
+    "treatment_name": "Upper Body Glow Peel",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050267",
+        "name": "Mesopeel Glycolic 40%",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050180",
+        "name": "Neutralizer",
+        "standard_qty": 15,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-087",
+    "treatment_code": "T-26050071",
+    "treatment_name": "Acne Back Peel",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050267",
+        "name": "Mesopeel Glycolic 40%",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050180",
+        "name": "Neutralizer",
+        "standard_qty": 15,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-088",
+    "treatment_code": "T-26050070",
+    "treatment_name": "Lower Body Glow Peel",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050267",
+        "name": "Mesopeel Glycolic 40%",
+        "standard_qty": 10,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050180",
+        "name": "Neutralizer",
+        "standard_qty": 25,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-089",
+    "treatment_code": "T-26050068",
+    "treatment_name": "Hormon Therapy Injection",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050211",
+        "name": "Isopore",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-090",
+    "treatment_code": "T-26050067",
+    "treatment_name": "C Glow Injection",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050137",
+        "name": "Larce 1000mg",
+        "standard_qty": 1,
+        "uom": "ampul"
+      },
+      {
+        "item_code": "P-26050181",
+        "name": "NACL 100ml",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050247",
+        "name": "Spuit 5cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050211",
+        "name": "Isopore",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050212",
+        "name": "Oke plast",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050230",
+        "name": "Wing Needle 27 x 3/4",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-091",
+    "treatment_code": "T-26050066",
+    "treatment_name": "Keloid Injection",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050118",
+        "name": "Trilac 40mg",
+        "standard_qty": 1,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050242",
+        "name": "Needle 27G x 1/2",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-092",
+    "treatment_code": "T-26050058",
+    "treatment_name": "PDT Hair",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-093",
+    "treatment_code": "T-26050057",
+    "treatment_name": "Hair Growth",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050247",
+        "name": "Spuit 5cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-094",
+    "treatment_code": "T-26050056",
+    "treatment_name": "PRP Hair",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050247",
+        "name": "Spuit 5cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050250",
+        "name": "Tabung PRP (kuning)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-095",
+    "treatment_code": "T-26050055",
+    "treatment_name": "Cool Plus Lite",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050219",
+        "name": "Toner Peptaronic",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050160",
+        "name": "Membran cryo",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-096",
+    "treatment_code": "T-26050054",
+    "treatment_name": "Cool Plus Complete",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050219",
+        "name": "Toner Peptaronic",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050160",
+        "name": "Membran cryo",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-097",
+    "treatment_code": "T-26050052",
+    "treatment_name": "Cauter Small",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-098",
+    "treatment_code": "T-26050051",
+    "treatment_name": "Subcision",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050232",
+        "name": "Canula 25g x 50mm (Time Machine)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050250",
+        "name": "Tabung PRP (kuning)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-099",
+    "treatment_code": "T-26050050",
+    "treatment_name": "Cauter Medium",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 15,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-100",
+    "treatment_code": "T-26050049",
+    "treatment_name": "PRP Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 5,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050250",
+        "name": "Tabung PRP (kuning)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-101",
+    "treatment_code": "T-26050048",
+    "treatment_name": "Cauter Large",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 20,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-102",
+    "treatment_code": "T-26050045",
+    "treatment_name": "IPL Hair Removal Bokong",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050254",
+        "name": "Pisau cukur",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-103",
+    "treatment_code": "T-26050044",
+    "treatment_name": "IPL Bright and Rejuve Bokong",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-104",
+    "treatment_code": "T-26050043",
+    "treatment_name": "IPL Hair Removal Brazilian",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050254",
+        "name": "Pisau cukur",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-105",
+    "treatment_code": "T-26050042",
+    "treatment_name": "IPL Bright and Rejuve Brazilian",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-106",
+    "treatment_code": "T-26050041",
+    "treatment_name": "IPL Hair Removal Ketiak",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050254",
+        "name": "Pisau cukur",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-107",
+    "treatment_code": "T-26050040",
+    "treatment_name": "IPL Hair Removal Upper",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050254",
+        "name": "Pisau cukur",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-108",
+    "treatment_code": "T-26050038",
+    "treatment_name": "IPL Bright and Rejuve Underarm",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-109",
+    "treatment_code": "T-26050037",
+    "treatment_name": "IPL Bright & Rejuve Wajah",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-110",
+    "treatment_code": "T-26050036",
+    "treatment_name": "IPL Anti Acne Wajah",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-111",
+    "treatment_code": "T-26050035",
+    "treatment_name": "IPL Bright And Rejuve Upper",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-112",
+    "treatment_code": "T-26050034",
+    "treatment_name": "IPL Anti Jerawat Punggung",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-113",
+    "treatment_code": "T-26050032",
+    "treatment_name": "RF Undereye",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-114",
+    "treatment_code": "T-26050031",
+    "treatment_name": "RF Perut / Paha / Lengan",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-115",
+    "treatment_code": "T-26050030",
+    "treatment_name": "RF Pipi",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-116",
+    "treatment_code": "T-26050029",
+    "treatment_name": "RF V-Line",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-117",
+    "treatment_code": "T-26050027",
+    "treatment_name": "HIFU Face",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-118",
+    "treatment_code": "T-26050025",
+    "treatment_name": "Pico Lip Laser",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-119",
+    "treatment_code": "T-26050024",
+    "treatment_name": "Pico Neck Laser",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-120",
+    "treatment_code": "T-26050021",
+    "treatment_name": "CO2 Laser",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-121",
+    "treatment_code": "T-26050020",
+    "treatment_name": "Kefir Microdermabrasion",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050168",
+        "name": "Sheetmask",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050220",
+        "name": "Serum Peptaronic",
+        "standard_qty": 1,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-122",
+    "treatment_code": "T-26050019",
+    "treatment_name": "Kefir Phyto Derma Facial",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050219",
+        "name": "Toner Peptaronic",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050146",
+        "name": "Scrub wajah",
+        "standard_qty": 5,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050166",
+        "name": "Masker Greentea Larasanti",
+        "standard_qty": 1,
+        "uom": "pack"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-123",
+    "treatment_code": "T-26050016",
+    "treatment_name": "Kefir 14 in 1 Acne Renewal Facial",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 3,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050219",
+        "name": "Toner Peptaronic",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050146",
+        "name": "Scrub wajah",
+        "standard_qty": 5,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050162",
+        "name": "Soderta peppermint tea tree",
+        "standard_qty": 1,
+        "uom": "pack"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-124",
+    "treatment_code": "T-26050015",
+    "treatment_name": "Kefir DNA Salmon Facial",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050219",
+        "name": "Toner Peptaronic",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050146",
+        "name": "Scrub wajah",
+        "standard_qty": 5,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050223",
+        "name": "Serum DNA Salmon Biosource",
+        "standard_qty": 3,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050164",
+        "name": "Soderta Silver",
+        "standard_qty": 1,
+        "uom": "pack"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-125",
+    "treatment_code": "T-26050014",
+    "treatment_name": "Instant Hollywood Glow",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050219",
+        "name": "Toner Peptaronic",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050146",
+        "name": "Scrub wajah",
+        "standard_qty": 5,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050163",
+        "name": "Soderta With Petals Oatmeal",
+        "standard_qty": 1,
+        "uom": "pack"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-126",
+    "treatment_code": "BARU-MICRO-GLOWTOX-BOOSTER",
+    "treatment_name": "Micro Glowtox Booster",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050144",
+        "name": "Thera Skin Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050096",
+        "name": "Nabota",
+        "standard_qty": 20,
+        "uom": "unit"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 25,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050244",
+        "name": "Needle 36 (micro)",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-127",
+    "treatment_code": "T-26100001",
+    "treatment_name": "Add On Meso Intralipo /cc",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050098",
+        "name": "Lipo lab v-line",
+        "standard_qty": 1,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-128",
+    "treatment_code": "BARU-ADD-ON-MESO-LIPO-CC",
+    "treatment_name": "Add On Meso Lipo /cc",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050081",
+        "name": "DR. LIPO+",
+        "standard_qty": 1,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-129",
+    "treatment_code": "BARU-FAT-APOPTOSIS-BRA-LINE-PINGGANG-10CC",
+    "treatment_name": "Fat Apoptosis Bra Line / Pinggang 10cc",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050108",
+        "name": "FA-XL",
+        "standard_qty": 10,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050248",
+        "name": "Spuit 10cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-130",
+    "treatment_code": "BARU-ADD-ON-FAT-APOPTOSIS-TUBUH-CC",
+    "treatment_name": "Add On Fat Apoptosis Tubuh /cc",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050108",
+        "name": "FA-XL",
+        "standard_qty": 1,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-131",
+    "treatment_code": "BARU-BOTOX-KETIAK-KOREAN-PREMIUM-KOREAN-BRAND",
+    "treatment_name": "Botox Ketiak Korean (Premium Korean Brand)",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050096",
+        "name": "Nabota",
+        "standard_qty": 60,
+        "uom": "unit"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-132",
+    "treatment_code": "BARU-BOTOX-KETIAK-ALLERGAN-USA",
+    "treatment_name": "Botox Ketiak Allergan (USA)",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050097",
+        "name": "Allergan",
+        "standard_qty": 60,
+        "uom": "unit"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050245",
+        "name": "Spuit 1cc",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-133",
+    "treatment_code": "BARU-PINK-SECRET-NIPPLE",
+    "treatment_name": "Pink Secret Nipple",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-134",
+    "treatment_code": "BARU-PINK-SECRET-MISS-V",
+    "treatment_name": "Pink Secret Miss V",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-135",
+    "treatment_code": "BARU-PINK-SECRET-LIPS",
+    "treatment_name": "Pink Secret Lips",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-136",
+    "treatment_code": "BARU-FILLER-UNDER-EYE",
+    "treatment_name": "Filler Under Eye",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050100",
+        "name": "Atiere Intensive Medium",
+        "standard_qty": 1,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-137",
+    "treatment_code": "BARU-FILLER-PELIPIS-PIPI",
+    "treatment_name": "Filler Pelipis / Pipi",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050099",
+        "name": "Atiere Volume",
+        "standard_qty": 1,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-138",
+    "treatment_code": "BARU-FILLER-BIBIR",
+    "treatment_name": "Filler Bibir",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050100",
+        "name": "Atiere Intensive Medium",
+        "standard_qty": 1,
+        "uom": "syringe"
+      },
+      {
+        "item_code": "P-26050243",
+        "name": "Needle 30G",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050156",
+        "name": "Jcain Anastesi cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050147",
+        "name": "Alcohol swab",
+        "standard_qty": 5,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-139",
+    "treatment_code": "BARU-ADD-ON-COOL-PLUS-1-HANDLE",
+    "treatment_name": "Add On Cool Plus 1 Handle",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050160",
+        "name": "Membran cryo",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-140",
+    "treatment_code": "BARU-IPL-HAIR-REMOVAL-TANGAN-KAKI",
+    "treatment_name": "IPL Hair Removal Tangan / Kaki",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050254",
+        "name": "Pisau cukur",
+        "standard_qty": 1,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  },
+  {
+    "id": "BOM-141",
+    "treatment_code": "BARU-IPL-BRIGHT-REJUVE-TANGAN-KAKI",
+    "treatment_name": "IPL Bright & Rejuve Tangan / Kaki",
+    "version": "Daftar BHP RDL",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050204",
+        "name": "Hair cap",
+        "standard_qty": 1,
+        "uom": "pcs"
+      },
+      {
+        "item_code": "P-26050145",
+        "name": "Cleansing Milk",
+        "standard_qty": 5,
+        "uom": "ml"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-10-15T02:56:44.000Z",
+    "updated_by": "Import List BHP RDL"
+  }
+]

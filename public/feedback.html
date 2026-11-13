@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beri Penilaian & Ulasan Pasien — KEFIR Derma Clinic</title>
+  <link rel="icon" href="data:,">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50:'#f0fdf9',100:'#ccfbf1',500:'#14b8a6',600:'#0d9488',700:'#0f766e',800:'#115e59',900:'#134e4a' },
+            accent: { 400:'#fbbf24',500:'#f59e0b',600:'#d97706' }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .star-btn { transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
+    .star-btn:active { transform: scale(0.85); }
+    .star-btn:hover { transform: scale(1.15); }
+    .nps-pill.active { background-color: #0d9488; color: white; border-color: #0d9488; font-weight: bold; transform: scale(1.08); }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex items-start justify-center p-3 sm:p-5">
+  <div class="w-full max-w-lg mt-2 mb-12 space-y-4">
+
+    <!-- Header Brand -->
+    <div class="text-center space-y-2">
+      <div class="w-16 h-16 mx-auto rounded-3xl bg-gradient-to-tr from-teal-600 to-emerald-400 text-white flex items-center justify-center text-3xl font-black shadow-xl shadow-teal-500/20 border border-teal-300/30">
+        🌿
+      </div>
+      <h1 class="text-xl font-extrabold text-white tracking-tight">KEFIR Derma Clinic</h1>
+      <p class="text-xs text-slate-400 max-w-sm mx-auto">Bantu kami menjaga standar pelayanan medis dan kenyamanan perawatan terbaik untuk Kakak.</p>
+    </div>
+
+    <!-- Main Feedback Form Card -->
+    <div id="feedback-form-card" class="bg-slate-950/90 rounded-3xl shadow-2xl border border-slate-800 p-5 sm:p-7 space-y-6 backdrop-blur-xl">
+
+      <!-- Cabang Kunjungan -->
+      <div>
+        <label class="text-xs font-bold text-slate-300 block mb-2 flex items-center gap-1.5">
+          <i class="fa-solid fa-location-dot text-teal-400"></i> Cabang Kunjungan Kakak <span class="text-rose-400">*</span>
+        </label>
+        <div class="grid grid-cols-2 gap-2.5" id="branch-buttons">
+          <button type="button" onclick="selectBranch('Depok')" id="btn-branch-depok" class="branch-btn py-2.5 px-3 rounded-2xl border border-slate-800 bg-slate-900/90 text-xs font-bold text-slate-300 hover:border-teal-500/60 transition flex items-center justify-center gap-2">
+            <span>📍 Depok (Margonda)</span>
+          </button>
+          <button type="button" onclick="selectBranch('Pondok Kopi')" id="btn-branch-pdk" class="branch-btn py-2.5 px-3 rounded-2xl border border-slate-800 bg-slate-900/90 text-xs font-bold text-slate-300 hover:border-teal-500/60 transition flex items-center justify-center gap-2">
+            <span>📍 Pondok Kopi</span>
+          </button>
+        </div>
+        <input type="hidden" id="branch-input" value="Depok">
+      </div>
+
+      <!-- Rating Bintang Keseluruhan (Primary) -->
+      <div class="text-center bg-slate-900/80 p-4.5 rounded-2xl border border-slate-800 space-y-2">
+        <span class="text-xs font-bold text-slate-300 uppercase tracking-wider block">Kepuasan Keseluruhan</span>
+        <div class="flex items-center justify-center gap-2.5" id="star-row-overall">
+          <button type="button" class="star-btn text-4xl text-slate-700 hover:text-amber-400" data-group="overall" data-star="1">★</button>
+          <button type="button" class="star-btn text-4xl text-slate-700 hover:text-amber-400" data-group="overall" data-star="2">★</button>
+          <button type="button" class="star-btn text-4xl text-slate-700 hover:text-amber-400" data-group="overall" data-star="3">★</button>
+          <button type="button" class="star-btn text-4xl text-slate-700 hover:text-amber-400" data-group="overall" data-star="4">★</button>
+          <button type="button" class="star-btn text-4xl text-slate-700 hover:text-amber-400" data-group="overall" data-star="5">★</button>
+        </div>
+        <p id="star-label-overall" class="text-xs text-amber-400 font-semibold h-4">Ketuk bintang untuk menilai</p>
+      </div>
+
+      <!-- Multi-Aspect Detailed Ratings Accordion / Group -->
+      <div class="space-y-3 pt-1 border-t border-slate-900">
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+          <i class="fa-solid fa-list-check text-teal-400"></i> Penilaian Spesifik Pelayanan
+        </div>
+
+        <!-- 1. Pelayanan Dokter DPJP -->
+        <div class="flex items-center justify-between p-3 rounded-2xl bg-slate-900/50 border border-slate-800/80 text-xs">
+          <div>
+            <div class="font-bold text-white flex items-center gap-1">
+              <span>👨‍⚕️ Dokter DPJP</span>
+            </div>
+            <div class="text-[10.5px] text-slate-400">Penjelasan diagnosa & kehati-hatian</div>
+          </div>
+          <div class="flex items-center gap-1" id="star-row-doctor">
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="doctor" data-star="1">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="doctor" data-star="2">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="doctor" data-star="3">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="doctor" data-star="4">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="doctor" data-star="5">★</button>
+          </div>
+        </div>
+
+        <!-- 2. Perawat & Terapis -->
+        <div class="flex items-center justify-between p-3 rounded-2xl bg-slate-900/50 border border-slate-800/80 text-xs">
+          <div>
+            <div class="font-bold text-white flex items-center gap-1">
+              <span>👩‍⚕️ Perawat & Terapis</span>
+            </div>
+            <div class="text-[10.5px] text-slate-400">Keramahan, kelembutan & kesigapan</div>
+          </div>
+          <div class="flex items-center gap-1" id="star-row-nurse">
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="nurse" data-star="1">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="nurse" data-star="2">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="nurse" data-star="3">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="nurse" data-star="4">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="nurse" data-star="5">★</button>
+          </div>
+        </div>
+
+        <!-- 3. Fasilitas & Kebersihan Klinik -->
+        <div class="flex items-center justify-between p-3 rounded-2xl bg-slate-900/50 border border-slate-800/80 text-xs">
+          <div>
+            <div class="font-bold text-white flex items-center gap-1">
+              <span>✨ Fasilitas & Kebersihan</span>
+            </div>
+            <div class="text-[10.5px] text-slate-400">Suhu ruangan, wangi & kenyamanan</div>
+          </div>
+          <div class="flex items-center gap-1" id="star-row-facility">
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="facility" data-star="1">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="facility" data-star="2">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="facility" data-star="3">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="facility" data-star="4">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="facility" data-star="5">★</button>
+          </div>
+        </div>
+
+        <!-- 4. Hasil & Efektivitas Treatment -->
+        <div class="flex items-center justify-between p-3 rounded-2xl bg-slate-900/50 border border-slate-800/80 text-xs">
+          <div>
+            <div class="font-bold text-white flex items-center gap-1">
+              <span>🎯 Hasil Tindakan</span>
+            </div>
+            <div class="text-[10.5px] text-slate-400">Kesesuaian hasil dengan ekspektasi</div>
+          </div>
+          <div class="flex items-center gap-1" id="star-row-treatment">
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="treatment" data-star="1">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="treatment" data-star="2">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="treatment" data-star="3">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="treatment" data-star="4">★</button>
+            <button type="button" class="star-sub text-xl text-slate-700" data-group="treatment" data-star="5">★</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Net Promoter Score (NPS 0 - 10) -->
+      <div class="space-y-2 pt-1 border-t border-slate-900">
+        <label class="text-xs font-bold text-slate-300 block">
+          Seberapa besar kemungkinan Kakak merekomendasikan KEFIR Clinic ke teman/keluarga?
+        </label>
+        <div class="grid grid-cols-11 gap-1" id="nps-container">
+          <!-- Generated pills 0 to 10 -->
+        </div>
+        <div class="flex justify-between text-[10px] text-slate-500 font-medium px-1">
+          <span>0 (Tidak Mungkin)</span>
+          <span>10 (Pasti Direkomendasikan)</span>
+        </div>
+        <input type="hidden" id="nps-input" value="10">
+      </div>
+
+      <!-- Ulasan & Cerita Pengalaman Pasien -->
+      <div>
+        <label class="text-xs font-bold text-slate-300 block mb-1.5">
+          Ceritakan pengalaman Kakak (saran, pujian, atau keluhan):
+        </label>
+        <textarea id="review-text" rows="3" maxlength="1000" placeholder="Apa yang Kakak rasakan selama treatment? Saran apa yang bisa kami tingkatkan?..." class="w-full bg-slate-900 border border-slate-800 rounded-2xl p-3 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 resize-none"></textarea>
+      </div>
+
+      <!-- Identitas Pasien (Opsional) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 border-t border-slate-900">
+        <div>
+          <label class="text-xs font-semibold text-slate-400 block mb-1">Nama Kakak (Opsional)</label>
+          <input type="text" id="patient-name" maxlength="100" placeholder="Contoh: Kak Shinta" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-teal-500">
+        </div>
+        <div>
+          <label class="text-xs font-semibold text-slate-400 block mb-1">No. WhatsApp (Opsional)</label>
+          <input type="text" id="patient-phone" maxlength="30" placeholder="0812xxxx (untuk follow-up CS)" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-teal-500">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label class="text-xs font-semibold text-slate-400 block mb-1">Treatment yang Dijalani (Opsional)</label>
+          <input type="text" id="treatment-input" maxlength="150" placeholder="Contoh: Pico Laser / Peeling" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-teal-500">
+        </div>
+        <div>
+          <label class="text-xs font-semibold text-slate-400 block mb-1">Dokter DPJP (Opsional)</label>
+          <input type="text" id="doctor-input" maxlength="100" placeholder="Nama dokter yang menangani" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-2.5 text-xs text-white placeholder-slate-600 focus:outline-none focus:border-teal-500">
+        </div>
+      </div>
+
+      <!-- Tombol Kirim -->
+      <button type="button" id="submit-btn" onclick="submitFeedbackForm()" class="w-full py-3.5 bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 active:scale-[0.99] text-slate-950 font-extrabold rounded-2xl text-sm shadow-xl shadow-teal-500/20 transition flex items-center justify-center gap-2">
+        <span>Kirim Ulasan & Penilaian</span>
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+      <p id="error-note" class="hidden text-xs text-rose-400 text-center font-medium"></p>
+    </div>
+
+    <!-- State Positif: Arahkan ke Google Maps Review -->
+    <div id="thank-you-positive" class="hidden bg-slate-950/90 rounded-3xl shadow-2xl border border-teal-500/40 p-6 sm:p-8 text-center space-y-4 backdrop-blur-xl animate-fade-in">
+      <div class="text-5xl animate-bounce">🌟</div>
+      <h2 class="text-lg font-black text-white">Terima Kasih Banyak, Kakak!</h2>
+      <p class="text-xs text-slate-300 leading-relaxed max-w-sm mx-auto">
+        Kami sangat gembira mendengar pengalaman perawatan Kakak hari ini memuaskan. Ulasan bintang 5 Kakak sangat berarti bagi perkembangan klinik kami.
+      </p>
+
+      <div class="p-4 rounded-2xl bg-teal-950/40 border border-teal-500/30 space-y-2">
+        <div class="text-xs font-bold text-teal-300 flex items-center justify-center gap-1.5">
+          <i class="fa-brands fa-google text-teal-400"></i> Bagikan Ulasan di Google Maps
+        </div>
+        <p class="text-[11px] text-slate-400">Bantu teman-teman lain menemukan perawatan kulit terbaik di Kefir Derma Clinic.</p>
+        <a id="google-maps-cta" href="#" target="_blank" rel="noopener noreferrer" class="mt-2 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-extrabold text-xs shadow-lg shadow-teal-500/20 transition w-full">
+          <span>Beri Ulasan di Google Maps Sekarang ⭐⭐⭐⭐⭐</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <button type="button" onclick="resetForm()" class="text-xs text-slate-500 hover:text-slate-300 underline pt-2 block mx-auto">
+        Isi penilaian baru
+      </button>
+    </div>
+
+    <!-- State Negatif / Keluhan: Service Recovery & Auto Ticket -->
+    <div id="thank-you-negative" class="hidden bg-slate-950/90 rounded-3xl shadow-2xl border border-amber-500/40 p-6 sm:p-8 text-center space-y-4 backdrop-blur-xl animate-fade-in">
+      <div class="text-5xl">🙏</div>
+      <h2 class="text-lg font-black text-white">Terima Kasih & Mohon Maaf yang Sebesar-besarnya</h2>
+      <p class="text-xs text-slate-300 leading-relaxed max-w-sm mx-auto">
+        Kami mohon maaf atas ketidaknyamanan yang Kakak alami. Masukan Kakak adalah prioritas tertinggi bagi kami untuk segera memperbaiki mutu pelayanan.
+      </p>
+
+      <div class="p-4 rounded-2xl bg-amber-950/40 border border-amber-500/30 text-left space-y-2">
+        <div class="flex items-center justify-between text-xs">
+          <span class="font-bold text-amber-300 flex items-center gap-1">
+            <i class="fa-solid fa-shield-halved text-amber-400"></i> Tiket Service Recovery Dibuat
+          </span>
+          <span id="ticket-number-badge" class="font-mono font-bold text-[10px] px-2 py-0.5 bg-amber-500/20 text-amber-200 rounded">TKT-...</span>
+        </div>
+        <p class="text-[11px] text-slate-300">
+          Laporan ini telah otomatis masuk ke meja Clinic Leader & tim Customer Care kami untuk segera ditindaklanjuti. Tim kami akan menghubungi Kakak untuk memberikan solusi terbaik.
+        </p>
+      </div>
+
+      <a id="wa-direct-cs" href="https://wa.me/6281288880000?text=Halo%20Customer%20Care%20Kefir%20Clinic,%20saya%20ingin%20menyampaikan%20masukan%20terkait%20kunjungan%20saya" target="_blank" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg shadow-emerald-600/20 transition w-full">
+        <i class="fa-brands fa-whatsapp text-sm"></i> Hubungi Tim Customer Care Langsung
+      </a>
+
+      <button type="button" onclick="resetForm()" class="text-xs text-slate-500 hover:text-slate-300 underline pt-2 block mx-auto">
+        Kembali ke form
+      </button>
+    </div>
+
+    <!-- Footer Note -->
+    <p class="text-center text-[10.5px] text-slate-500">
+      🔒 Terenkripsi aman • Sistem Pemantauan Mutu Klinis KEFIR Derma Clinic.
+    </p>
+
+  </div>
+
+  <script>
+    const ratings = {
+      overall: 5,
+      doctor: 5,
+      nurse: 5,
+      facility: 5,
+      treatment: 5
+    };
+
+    const RATING_LABELS = {
+      1: '😞 Sangat Kurang',
+      2: '😕 Perlu Perbaikan',
+      3: '🙂 Cukup Baik',
+      4: '😊 Memuaskan!',
+      5: '🤩 Sangat Memuaskan & Sempurna!'
+    };
+
+    // Render NPS Pills (0 to 10)
+    const npsContainer = document.getElementById('nps-container');
+    for (let i = 0; i <= 10; i++) {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'nps-pill py-2 rounded-xl text-xs font-semibold border transition ' + 
+        (i === 10 ? 'bg-teal-500 text-slate-950 font-bold border-teal-400' : 'bg-slate-900 border-slate-800 text-slate-300 hover:border-slate-700');
+      btn.textContent = i;
+      btn.onclick = () => selectNps(i);
+      npsContainer.appendChild(btn);
+    }
+
+    function selectNps(val) {
+      document.getElementById('nps-input').value = val;
+      const pills = npsContainer.querySelectorAll('.nps-pill');
+      pills.forEach((p, idx) => {
+        if (idx === val) {
+          p.className = 'nps-pill py-2 rounded-xl text-xs font-bold border transition bg-teal-500 text-slate-950 border-teal-400 scale-105 shadow-md';
+        } else {
+          p.className = 'nps-pill py-2 rounded-xl text-xs font-semibold border transition bg-slate-900 border-slate-800 text-slate-300 hover:border-slate-700';
+        }
+      });
+    }
+
+    function selectBranch(br) {
+      document.getElementById('branch-input').value = br;
+      const btnDpk = document.getElementById('btn-branch-depok');
+      const btnPdk = document.getElementById('btn-branch-pdk');
+      if (br === 'Depok') {
+        btnDpk.className = 'branch-btn py-2.5 px-3 rounded-2xl border border-teal-500 bg-teal-500/20 text-xs font-bold text-teal-300 shadow-sm flex items-center justify-center gap-2';
+        btnPdk.className = 'branch-btn py-2.5 px-3 rounded-2xl border border-slate-800 bg-slate-900/90 text-xs font-bold text-slate-400 hover:border-teal-500/60 transition flex items-center justify-center gap-2';
+      } else {
+        btnPdk.className = 'branch-btn py-2.5 px-3 rounded-2xl border border-teal-500 bg-teal-500/20 text-xs font-bold text-teal-300 shadow-sm flex items-center justify-center gap-2';
+        btnDpk.className = 'branch-btn py-2.5 px-3 rounded-2xl border border-slate-800 bg-slate-900/90 text-xs font-bold text-slate-400 hover:border-teal-500/60 transition flex items-center justify-center gap-2';
+      }
+    }
+
+    function setupStarGroup(groupName, isMain = false) {
+      const btns = document.querySelectorAll('[data-group="' + groupName + '"]');
+      const labelEl = isMain ? document.getElementById('star-label-' + groupName) : null;
+
+      function paint(val) {
+        btns.forEach(b => {
+          const s = Number(b.dataset.star);
+          if (s <= val) {
+            b.classList.add('text-amber-400');
+            b.classList.remove('text-slate-700');
+          } else {
+            b.classList.remove('text-amber-400');
+            b.classList.add('text-slate-700');
+          }
+        });
+        if (labelEl) {
+          labelEl.textContent = RATING_LABELS[val] || '';
+        }
+      }
+
+      paint(ratings[groupName]);
+
+      btns.forEach(b => {
+        b.addEventListener('click', () => {
+          ratings[groupName] = Number(b.dataset.star);
+          paint(ratings[groupName]);
+        });
+        b.addEventListener('mouseenter', () => paint(Number(b.dataset.star)));
+        b.addEventListener('mouseleave', () => paint(ratings[groupName]));
+      });
+    }
+
+    setupStarGroup('overall', true);
+    setupStarGroup('doctor');
+    setupStarGroup('nurse');
+    setupStarGroup('facility');
+    setupStarGroup('treatment');
+
+    // Default select Depok
+    selectBranch('Depok');
+
+    // Pre-fill query params
+    const qParams = new URLSearchParams(window.location.search);
+    if (qParams.get('branch')) selectBranch(qParams.get('branch'));
+    if (qParams.get('treatment')) document.getElementById('treatment-input').value = qParams.get('treatment');
+    if (qParams.get('doctor')) document.getElementById('doctor-input').value = qParams.get('doctor');
+    if (qParams.get('name')) document.getElementById('patient-name').value = qParams.get('name');
+    if (qParams.get('phone')) document.getElementById('patient-phone').value = qParams.get('phone');
+
+    async function submitFeedbackForm() {
+      const submitBtn = document.getElementById('submit-btn');
+      const errorNote = document.getElementById('error-note');
+      errorNote.classList.add('hidden');
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Mengirim Penilaian...';
+
+      const payload = {
+        branch: document.getElementById('branch-input').value,
+        rating_overall: ratings.overall,
+        rating_doctor: ratings.doctor,
+        rating_nurse: ratings.nurse,
+        rating_facility: ratings.facility,
+        rating_treatment: ratings.treatment,
+        nps_score: Number(document.getElementById('nps-input').value),
+        review_text: document.getElementById('review-text').value.trim(),
+        patient_name: document.getElementById('patient-name').value.trim() || 'Pasien',
+        phone: document.getElementById('patient-phone').value.trim() || null,
+        treatment: document.getElementById('treatment-input').value.trim() || null,
+        doctor_name: document.getElementById('doctor-input').value.trim() || null,
+        source: 'Web QR Feedback'
+      };
+
+      try {
+        const res = await fetch('/api/feedback/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const result = await res.json();
+
+        if (result.success) {
+          document.getElementById('feedback-form-card').classList.add('hidden');
+
+          // Check Smart Auto-Routing
+          if (result.routing_action === 'google_maps') {
+            const posCard = document.getElementById('thank-you-positive');
+            const mapsCta = document.getElementById('google-maps-cta');
+            if (result.google_maps_url) {
+              mapsCta.href = result.google_maps_url;
+            }
+            posCard.classList.remove('hidden');
+          } else {
+            const negCard = document.getElementById('thank-you-negative');
+            const badge = document.getElementById('ticket-number-badge');
+            if (result.complaint_ticket_id) {
+              badge.textContent = '#' + result.complaint_ticket_id;
+            } else {
+              badge.textContent = '#TKT-LOGGED';
+            }
+            negCard.classList.remove('hidden');
+          }
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          errorNote.textContent = 'Gagal mengirim: ' + (result.error || 'Terjadi kesalahan sistem.');
+          errorNote.classList.remove('hidden');
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<span>Kirim Ulasan & Penilaian</span> <i class="fa-solid fa-paper-plane"></i>';
+        }
+      } catch (err) {
+        errorNote.textContent = 'Gagal mengirim: ' + err.message;
+        errorNote.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span>Kirim Ulasan & Penilaian</span> <i class="fa-solid fa-paper-plane"></i>';
+      }
+    }
+
+    function resetForm() {
+      document.getElementById('thank-you-positive').classList.add('hidden');
+      document.getElementById('thank-you-negative').classList.add('hidden');
+      document.getElementById('feedback-form-card').classList.remove('hidden');
+      document.getElementById('review-text').value = '';
+      const submitBtn = document.getElementById('submit-btn');
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<span>Kirim Ulasan & Penilaian</span> <i class="fa-solid fa-paper-plane"></i>';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "kefir-dashboard",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "server.js"
+      ],
+      "port": 3344,
+      "url": "http://127.0.0.1:3344"
+    },
+    {
+      "name": "kefir-dashboard-pg-local",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "STORAGE_BACKEND=postgres",
+        "DATABASE_URL=postgres://localhost/kefir_clinic_dev",
+        "DISABLE_BACKGROUND_JOBS=1",
+        "HOST=127.0.0.1",
+        "PORT=3477",
+        "node",
+        "server.js"
+      ],
+      "port": 3477,
+      "url": "http://127.0.0.1:3477"
+    }
+  ]
+}

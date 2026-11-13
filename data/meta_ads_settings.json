@@ -1,0 +1,13 @@
+{
+  "app_id": "1623633499477762",
+  "app_secret": "sample_secret_key_abcdef",
+  "ad_account_id": null,
+  "access_token": null,
+  "user_name": null,
+  "user_id": null,
+  "connected_ad_accounts": [],
+  "connected_pages": [],
+  "token_expires_at": null,
+  "connected": false,
+  "updated_at": "2026-09-24T16:29:45.134Z"
+}

@@ -1,0 +1,330 @@
+{
+  "divisions": {
+    "finance": {
+      "petty_cash": [
+        {
+          "branch": "Depok",
+          "balance": 3500000,
+          "last_updated": "2026-08-27",
+          "status": "Healthy"
+        },
+        {
+          "branch": "Pondok Kopi",
+          "balance": 2800000,
+          "last_updated": "2026-08-27",
+          "status": "Healthy"
+        },
+        {
+          "branch": "Tanggerang",
+          "balance": 1950000,
+          "last_updated": "2026-08-27",
+          "status": "Healthy"
+        },
+        {
+          "branch": "Karawang",
+          "balance": 1650000,
+          "last_updated": "2026-08-27",
+          "status": "Needs Topup"
+        }
+      ],
+      "expense_categories": [
+        {
+          "category": "Bahan Habis Pakai Medis (Jarum/Kasa/Spuit)",
+          "amount": 48500000,
+          "pct": 32
+        },
+        {
+          "category": "Sewa Gedung & Utilitas (Listrik/Air/Wifi)",
+          "amount": 36200000,
+          "pct": 24
+        },
+        {
+          "category": "Marketing & Digital Ads Spend",
+          "amount": 32000000,
+          "pct": 21
+        },
+        {
+          "category": "Operasional Kasir & Admin",
+          "amount": 18500000,
+          "pct": 12
+        },
+        {
+          "category": "Maintenance Alat & Kalibrasi Laser",
+          "amount": 16400000,
+          "pct": 11
+        }
+      ],
+      "cash_flow_monthly": [
+        {
+          "month": "Mei 2026",
+          "revenue": 780000000,
+          "expense": 510000000,
+          "net": 270000000
+        },
+        {
+          "month": "Juni 2026",
+          "revenue": 865000000,
+          "expense": 542000000,
+          "net": 323000000
+        },
+        {
+          "month": "Juli 2026",
+          "revenue": 924000000,
+          "expense": 578000000,
+          "net": 346000000
+        },
+        {
+          "month": "Agustus 2026",
+          "revenue": 1038422667,
+          "expense": 612000000,
+          "net": 426422667
+        }
+      ]
+    },
+    "pharmacy_inventory": {
+      "stock_alerts": [
+        {
+          "code": "PRD-KF-001",
+          "name": "Kefir Day Cream Glowing SPF 50",
+          "stock": 14,
+          "min_stock": 30,
+          "unit": "Pot 15g",
+          "status": "Low Stock",
+          "supplier": "PT. Cosme Indo"
+        },
+        {
+          "code": "PRD-KF-004",
+          "name": "Kefir Acne Clarity Serum",
+          "stock": 8,
+          "min_stock": 25,
+          "unit": "Bottle 20ml",
+          "status": "Critical",
+          "supplier": "PT. Derma Lab"
+        },
+        {
+          "code": "MED-BTOX-01",
+          "name": "Botox Allergan 100u Vials",
+          "stock": 5,
+          "min_stock": 10,
+          "unit": "Vial",
+          "status": "Low Stock",
+          "supplier": "PT. Medika Farma"
+        },
+        {
+          "code": "MED-LIDO-02",
+          "name": "Lidocaine Cream 30g (Anestesi)",
+          "stock": 42,
+          "min_stock": 20,
+          "unit": "Tube",
+          "status": "In Stock",
+          "supplier": "PT. Kimia Farma"
+        },
+        {
+          "code": "MED-REJ-01",
+          "name": "Rejuran Healer Skin Booster",
+          "stock": 12,
+          "min_stock": 15,
+          "unit": "Syringe 2ml",
+          "status": "Reorder Soon",
+          "supplier": "PT. Regen Korea"
+        }
+      ],
+      "top_skincare_products": [
+        {
+          "rank": 1,
+          "name": "Kefir Ultimate Night Glow Cream",
+          "units_sold": 428,
+          "revenue": 64200000,
+          "price": 150000
+        },
+        {
+          "rank": 2,
+          "name": "Kefir Gentle Barrier Facial Wash",
+          "units_sold": 385,
+          "revenue": 36575000,
+          "price": 95000
+        },
+        {
+          "rank": 3,
+          "name": "Kefir Acne Recovery Toner",
+          "units_sold": 310,
+          "revenue": 34100000,
+          "price": 110000
+        },
+        {
+          "rank": 4,
+          "name": "Kefir Sunscreen Glowing Tint",
+          "units_sold": 295,
+          "revenue": 41300000,
+          "price": 140000
+        },
+        {
+          "rank": 5,
+          "name": "Kefir Serum Dark Spot Eraser",
+          "units_sold": 240,
+          "revenue": 44400000,
+          "price": 185000
+        }
+      ]
+    },
+    "marketing_crm": {
+      "funnel": {
+        "impressions": 480000,
+        "clicks": 28400,
+        "chats_inbound": 720,
+        "consultations": 412,
+        "paid_transactions": 285,
+        "overall_conversion": "39.58%"
+      },
+      "promo_campaigns": [
+        {
+          "name": "Promo Merdeka Glowing (Diskon 45% Laser)",
+          "revenue": 148500000,
+          "redemptions": 112,
+          "status": "Active"
+        },
+        {
+          "name": "Bundle Acne Fighter 3x Peeling + Cream",
+          "revenue": 94200000,
+          "redemptions": 84,
+          "status": "Active"
+        },
+        {
+          "name": "Flash Sale Payday (25-30 Agustus)",
+          "revenue": 112000000,
+          "redemptions": 96,
+          "status": "Active"
+        },
+        {
+          "name": "Member Get Member Skin Booster Voucher",
+          "revenue": 38400000,
+          "redemptions": 32,
+          "status": "Active"
+        }
+      ]
+    },
+    "hr_payroll": {
+      "staff_roster": [
+        {
+          "id": "STF-01",
+          "name": "dr. Sarah Nadira, Sp.KK",
+          "division": "Medical",
+          "branch": "Depok",
+          "role": "Dokter Spesialis / PJ",
+          "join": "2023-02-10",
+          "status": "Hadir 08:28",
+          "score": 98
+        },
+        {
+          "id": "STF-02",
+          "name": "dr. Kevin Pratama",
+          "division": "Medical",
+          "branch": "Pondok Kopi",
+          "role": "Dokter Estetika",
+          "join": "2023-06-15",
+          "status": "Hadir 08:20",
+          "score": 96
+        },
+        {
+          "id": "STF-03",
+          "name": "dr. Amanda Putri",
+          "division": "Medical",
+          "branch": "Tanggerang",
+          "role": "Dokter Estetika",
+          "join": "2024-01-10",
+          "status": "Hadir 08:25",
+          "score": 95
+        },
+        {
+          "id": "STF-04",
+          "name": "dr. Rian Pratama",
+          "division": "Medical",
+          "branch": "Karawang",
+          "role": "Dokter Estetika",
+          "join": "2024-03-20",
+          "status": "Hadir 08:30",
+          "score": 94
+        },
+        {
+          "id": "STF-05",
+          "name": "Yunisari",
+          "division": "Therapy & Ops",
+          "branch": "Depok",
+          "role": "Head Therapist",
+          "join": "2022-11-01",
+          "status": "Hadir 08:29",
+          "score": 99
+        },
+        {
+          "id": "STF-06",
+          "name": "Destiyani Retno Ningrum",
+          "division": "Therapy",
+          "branch": "Depok",
+          "role": "Senior Beautician",
+          "join": "2023-04-12",
+          "status": "Hadir 08:26",
+          "score": 97
+        },
+        {
+          "id": "STF-07",
+          "name": "Apt. Ashifa",
+          "division": "Pharmacy",
+          "branch": "Depok",
+          "role": "Apoteker Penanggung Jawab",
+          "join": "2023-01-15",
+          "status": "Hadir 08:18",
+          "score": 99
+        },
+        {
+          "id": "STF-08",
+          "name": "Siti Rahma",
+          "division": "Front Office",
+          "branch": "Depok",
+          "role": "Customer Service / Kasir",
+          "join": "2023-08-01",
+          "status": "Hadir 08:24",
+          "score": 95
+        },
+        {
+          "id": "STF-09",
+          "name": "Budi Santoso",
+          "division": "General Affairs",
+          "branch": "Depok",
+          "role": "Security & General Helper",
+          "join": "2023-09-10",
+          "status": "Terlambat 08:34 (+4m)",
+          "score": 88
+        },
+        {
+          "id": "STF-10",
+          "name": "Anisa Melati",
+          "division": "Therapy",
+          "branch": "Pondok Kopi",
+          "role": "Senior Beautician",
+          "join": "2023-07-20",
+          "status": "Terlambat 08:37 (+7m)",
+          "score": 89
+        },
+        {
+          "id": "STF-11",
+          "name": "Nurul Hidayah",
+          "division": "Front Office",
+          "branch": "Pondok Kopi",
+          "role": "Kasir & Admin",
+          "join": "2024-02-01",
+          "status": "Hadir 08:15",
+          "score": 97
+        }
+      ],
+      "attendance_stats": {
+        "total_staff": 27,
+        "on_time_today": 25,
+        "late_today": 2,
+        "alpha": 0,
+        "sick_leave": 0,
+        "annual_leave": 0,
+        "overall_punctuality": "96.4%"
+      }
+    }
+  }
+}

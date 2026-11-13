@@ -1,0 +1,242 @@
+[
+  {
+    "timestamp": "14/10/2026, 10.46.16 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1579,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "9/10/2026, 14.39.19 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1509,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "9/10/2026, 14.37.13 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1509,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "8/10/2026, 09.08.09 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1489,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "7/10/2026, 10.06.51 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1481,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "7/10/2026, 10.05.30 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1481,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "24/9/2026, 17.39.50 WIB",
+    "type": "Google Sheets 3-Way Sync Triggered",
+    "status": "Success (All 3 Synced)",
+    "items_sent": 184,
+    "recipient": "Mission Control Data Lake",
+    "delay": "Live"
+  },
+  {
+    "timestamp": "23/9/2026, 07.26.20 WIB",
+    "type": "Google Maps Reviews Synced",
+    "status": "Success ⭐ 4.8",
+    "items_sent": 422,
+    "recipient": "Depok & Pondok Kopi",
+    "delay": "0.4s"
+  },
+  {
+    "timestamp": "23/9/2026, 06.58.09 WIB",
+    "type": "Marketing Content Plan Created",
+    "status": "Scheduled",
+    "items_sent": 1,
+    "recipient": "2026-09-22 - IG Reels / TikTok (30s)",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "22/9/2026, 17.35.14 WIB",
+    "type": "Google Sheets 3-Way Sync Triggered",
+    "status": "Success (All 3 Synced)",
+    "items_sent": 177,
+    "recipient": "Mission Control Data Lake",
+    "delay": "Live"
+  },
+  {
+    "timestamp": "22/9/2026, 17.24.47 WIB",
+    "type": "Google Sheets 3-Way Sync Triggered",
+    "status": "Success (All 3 Synced)",
+    "items_sent": 177,
+    "recipient": "Mission Control Data Lake",
+    "delay": "Live"
+  },
+  {
+    "timestamp": "22/9/2026, 16.31.53 WIB",
+    "type": "AI Assistant LLM [OWNER]",
+    "status": "Answered (LLM)",
+    "items_sent": 1,
+    "recipient": "Superadmin Neosoft (OWNER)",
+    "delay": "0.4s"
+  },
+  {
+    "timestamp": "22/9/2026, 15.39.50 WIB",
+    "type": "AI Assistant LLM [OWNER]",
+    "status": "Answered (LLM)",
+    "items_sent": 1,
+    "recipient": "Superadmin Neosoft (OWNER)",
+    "delay": "0.4s"
+  },
+  {
+    "timestamp": "22/9/2026, 12.13.04 WIB",
+    "type": "AI Assistant LLM [OWNER]",
+    "status": "Answered (LLM)",
+    "items_sent": 1,
+    "recipient": "Superadmin Neosoft (OWNER)",
+    "delay": "0.4s"
+  },
+  {
+    "timestamp": "21/9/2026, 13.55.24 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1246,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "21/9/2026, 10.59.07 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1246,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "21/9/2026, 10.22.50 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1246,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "21/9/2026, 08.45.38 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1246,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "21/9/2026, 08.40.14 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1246,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "21/9/2026, 04.51.37 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1246,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "21/9/2026, 04.48.36 WIB",
+    "type": "AI Ticket [P2 - MEDIUM]",
+    "status": "Categorized",
+    "items_sent": 1,
+    "recipient": "Depok - Fasilitas & Operasional Umum",
+    "delay": "0.2s"
+  },
+  {
+    "timestamp": "21/9/2026, 00.44.38 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1246,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "21/9/2026, 00.37.53 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Failed",
+    "items_sent": 1225,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "21/9/2026, 00.28.55 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Failed",
+    "items_sent": 1225,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "21/9/2026, 00.27.55 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Failed",
+    "items_sent": 1225,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "15/9/2026, 20.01.13 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Failed",
+    "items_sent": 1195,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "14/9/2026, 18.15.20 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1188,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "14/9/2026, 18.12.09 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1188,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "14/9/2026, 18.11.50 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Failed",
+    "items_sent": 1188,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  },
+  {
+    "timestamp": "14/9/2026, 09.36.31 WIB",
+    "type": "Neosoft Live Sync (Manual Trigger)",
+    "status": "Success",
+    "items_sent": 1170,
+    "recipient": "Live Neosoft Cube Cloud API",
+    "delay": "0s"
+  }
+]

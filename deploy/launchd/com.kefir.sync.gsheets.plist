@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kefir.sync.gsheets</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/mymac/kefir-clinic-dashboard/scripts/sync_google_sheets.py</string>
+    </array>
+
+    <!-- Repo utama, BUKAN worktree — supaya sync tetap hidup
+         walau worktree audit dihapus -->
+    <key>WorkingDirectory</key>
+    <string>/Users/mymac/kefir-clinic-dashboard</string>
+
+    <key>StartInterval</key>
+    <integer>1800</integer>
+
+    <!-- Kejar jadwal yang terlewat saat Mac tidur / baru menyala -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/mymac/kefir-clinic-dashboard/logs/sync-gsheets.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/mymac/kefir-clinic-dashboard/logs/sync-gsheets.err.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin</string>
+    </dict>
+
+    <!-- Sync gagal TIDAK di-restart membabi buta; interval berikutnya
+         yang mencoba lagi, supaya API Neosoft tidak dihujani permintaan -->
+    <key>KeepAlive</key>
+    <false/>
+</dict>
+</plist>

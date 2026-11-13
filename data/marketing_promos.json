@@ -1,0 +1,21 @@
+[
+  {
+    "id": "PRM-2026-0901",
+    "name": "Promo Glowing Merdeka (Pico Glow Diskon 30%)",
+    "period_start": "2026-09-01",
+    "period_end": "2026-09-30",
+    "branch": "Semua Cabang",
+    "target_item": "Pico Face Laser",
+    "target_type": "treatment",
+    "normal_price": 650000,
+    "promo_price": 450000,
+    "bottom_price": 400000,
+    "quota_total": 100,
+    "quota_used": 34,
+    "target_patient": "Pasien Baru & Member Low Spender",
+    "terms_conditions": "Wajib appointment H-1. Tidak dapat digabung dengan voucher ulang tahun.",
+    "status": "Active",
+    "created_at": "2026-09-01T08:00:00.000Z",
+    "created_by": "Marketing Team"
+  }
+]

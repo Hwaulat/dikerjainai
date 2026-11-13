@@ -1,0 +1,68 @@
+[
+  {
+    "id": "BOM-001",
+    "treatment_code": "T-26050017",
+    "treatment_name": "Kefir 14 in 1 Crystal Dew Facial",
+    "version": "Standard v1.0",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050016",
+        "name": "Derma Acne Facial Wash",
+        "standard_qty": 5,
+        "uom": "ml"
+      },
+      {
+        "item_code": "P-26050082",
+        "name": "Add On Anastesi Cream",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050002",
+        "name": "ANTI IRITASI",
+        "standard_qty": 5,
+        "uom": "gram"
+      },
+      {
+        "item_code": "BHP-SPU-01",
+        "name": "Spuit Terumo 3cc & Jarum Ekstraksi 30G",
+        "standard_qty": 2,
+        "uom": "pcs"
+      }
+    ],
+    "standard_duration_minutes": 60,
+    "updated_at": "2026-09-21T00:00:00.000Z",
+    "updated_by": "Apoteker & Tim Medis"
+  },
+  {
+    "id": "BOM-002",
+    "treatment_code": "T-26050023",
+    "treatment_name": "Pico Face Laser",
+    "version": "Standard v1.0",
+    "is_promo_version": false,
+    "materials": [
+      {
+        "item_code": "P-26050082",
+        "name": "Add On Anastesi Cream",
+        "standard_qty": 15,
+        "uom": "gram"
+      },
+      {
+        "item_code": "P-26050002",
+        "name": "ANTI IRITASI",
+        "standard_qty": 10,
+        "uom": "gram"
+      },
+      {
+        "item_code": "BHP-KAS-01",
+        "name": "Kasa Steril & Soothing Sheet Mask",
+        "standard_qty": 1,
+        "uom": "set"
+      }
+    ],
+    "standard_duration_minutes": 45,
+    "updated_at": "2026-09-21T00:00:00.000Z",
+    "updated_by": "Apoteker & Tim Medis"
+  }
+]

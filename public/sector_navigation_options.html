@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilihan Desain Tampilan Menu Per Sektor — Kefir Derma Clinic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #0b0f19;
+      color: #f1f5f9;
+    }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card-active {
+      background: rgba(30, 41, 59, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="p-4 md:p-8 min-h-screen">
+
+  <!-- TOP HERO HEADER -->
+  <div class="max-w-7xl mx-auto mb-8">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6">
+      <div>
+        <div class="flex items-center gap-2 text-xs font-bold font-mono text-cyan-400 uppercase tracking-widest mb-1.5">
+          <i class="fa-solid fa-compass-drafting"></i> UI/UX Architecture Review
+        </div>
+        <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+          Pilihan Model Tampilan Menu Per Sektor
+        </h1>
+        <p class="text-sm text-slate-400 mt-1">
+          Pilih salah satu dari 4 model navigasi modern di bawah untuk diterapkan ke Dashboard Kefir Derma Clinic.
+        </p>
+      </div>
+
+      <!-- Quick Option Switcher Tabs -->
+      <div class="flex items-center gap-1.5 p-1.5 bg-slate-900 border border-slate-800 rounded-2xl">
+        <button onclick="setConcept(1)" id="btn-c1" class="px-3 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
+          <span>1. Two-Tier Rail</span>
+          <span class="text-[10px] px-1.5 py-0.2 rounded bg-cyan-500/30 text-cyan-200">Rekomendasi</span>
+        </button>
+        <button onclick="setConcept(2)" id="btn-c2" class="px-3 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 text-slate-400 hover:text-white">
+          <span>2. Top Sector Bar</span>
+        </button>
+        <button onclick="setConcept(3)" id="btn-c3" class="px-3 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 text-slate-400 hover:text-white">
+          <span>3. Accordion Tree</span>
+        </button>
+        <button onclick="setConcept(4)" id="btn-c4" class="px-3 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 text-slate-400 hover:text-white">
+          <span>4. App Switcher</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE PREVIEW CONTAINER -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+    <!-- CONCEPT DETAILS & EXPLANATION (LEFT/TOP) -->
+    <div class="lg:col-span-4 space-y-6">
+      
+      <div class="glass-card p-6 rounded-3xl space-y-4 border border-slate-800">
+        <div class="flex items-center justify-between">
+          <span class="px-2.5 py-1 rounded-full text-[11px] font-bold font-mono uppercase tracking-wider" id="concept-badge">
+            Model 1
+          </span>
+          <span class="text-xs text-slate-400" id="concept-style">Gaya Slack / Discord / Linear</span>
+        </div>
+
+        <h2 class="text-xl font-bold text-white" id="concept-title">
+          Two-Tier Double Rail (Icon Strip + Dynamic Panel)
+        </h2>
+
+        <p class="text-xs leading-relaxed text-slate-300" id="concept-desc">
+          Sidebar dibagi menjadi 2 layer: strip icon tipis (64px) di sisi paling kiri untuk memilih sektor (Doctor, HR, Ops, dll), dan panel kedua (220px) yang hanya menampilkan modul-modul milik sektor tersebut.
+        </p>
+
+        <div class="space-y-2.5 pt-2 border-t border-slate-800/80">
+          <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Kelebihan Model Ini:</div>
+          <ul class="text-xs text-slate-300 space-y-2" id="concept-pros">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+              <span><strong>Fokus Penuh:</strong> Layar bersih, staf dokter hanya melihat menu medis tanpa terdistraksi HR/Finance.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+              <span><strong>Akses 1 Klik:</strong> Pindah sektor instan cukup klik icon di rail kiri.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+              <span><strong>Standar SaaS Modern:</strong> Digunakan oleh aplikasi kelas enterprise seperti Slack, Notion Workspace, dan Discord.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800">
+          <div class="text-[11px] text-slate-400 mb-3">Mau pilih model ini untuk diterapkan ke dashboard?</div>
+          <button onclick="applyChoice()" class="w-full py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs flex items-center justify-center gap-2 transition shadow-lg shadow-cyan-600/30">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span id="btn-apply-label">Terapkan Model 1 ke Dashboard</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Comparison Cards -->
+      <div class="glass-card p-5 rounded-3xl border border-slate-800/80 space-y-3">
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Ringkasan 4 Pilihan:</div>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <div onclick="setConcept(1)" class="p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-cyan-500/50 cursor-pointer transition">
+            <div class="font-bold text-cyan-300">1. Two-Tier</div>
+            <div class="text-[10px] text-slate-400 mt-0.5">Double rail icon + sub-panel</div>
+          </div>
+          <div onclick="setConcept(2)" class="p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-indigo-500/50 cursor-pointer transition">
+            <div class="font-bold text-indigo-300">2. Top Bar</div>
+            <div class="text-[10px] text-slate-400 mt-0.5">Tab sektor di atas, isi di samping</div>
+          </div>
+          <div onclick="setConcept(3)" class="p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-amber-500/50 cursor-pointer transition">
+            <div class="font-bold text-amber-300">3. Accordion</div>
+            <div class="text-[10px] text-slate-400 mt-0.5">Bisa expand/collapse per sektor</div>
+          </div>
+          <div onclick="setConcept(4)" class="p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-emerald-500/50 cursor-pointer transition">
+            <div class="font-bold text-emerald-300">4. App Switcher</div>
+            <div class="text-[10px] text-slate-400 mt-0.5">Dropdown workspace di pojok</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- INTERACTIVE SIMULATION CONTAINER (RIGHT) -->
+    <div class="lg:col-span-8">
+      <div class="glass-card rounded-3xl border border-slate-800 overflow-hidden shadow-2xl">
+        
+        <!-- Simulation Window Header Bar -->
+        <div class="px-5 py-3.5 bg-slate-950/90 border-b border-slate-800 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+            <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+            <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+            <span class="text-xs font-mono text-slate-400 ml-3" id="sim-url">kefir-dashboard://preview/concept-1-two-tier-rail</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-[10px] font-mono text-cyan-400 font-bold bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20">
+              Interactive Live Simulation
+            </span>
+          </div>
+        </div>
+
+        <!-- SIMULATION CANVAS -->
+        <div class="min-h-[560px] bg-slate-950/50 relative flex overflow-hidden" id="sim-canvas">
+          
+          <!-- ==================== CONCEPT 1: TWO-TIER DOUBLE RAIL ==================== -->
+          <div id="demo-concept-1" class="w-full flex h-[560px]">
+            <!-- Rail 1: Slim Icon Strip (68px) -->
+            <div class="w-16 bg-slate-950 border-r border-slate-800/80 flex flex-col items-center py-4 space-y-4 shrink-0">
+              <div class="w-10 h-10 rounded-2xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-extrabold text-sm border border-cyan-500/30">
+                KD
+              </div>
+              <div class="w-8 h-px bg-slate-800"></div>
+
+              <!-- Sector Icon Buttons -->
+              <div class="flex flex-col gap-2.5">
+                <button onclick="c1SelectSector('executive')" id="c1-btn-executive" class="w-11 h-11 rounded-2xl flex items-center justify-center text-amber-400 bg-amber-500/20 border border-amber-500/40 relative group transition" title="Executive & Control">
+                  <i class="fa-solid fa-crown text-base"></i>
+                  <span class="absolute left-14 bg-slate-900 text-white text-[11px] font-bold px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none transition whitespace-nowrap z-30">Executive</span>
+                </button>
+                <button onclick="c1SelectSector('doctor')" id="c1-btn-doctor" class="w-11 h-11 rounded-2xl flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:bg-indigo-500/10 border border-transparent hover:border-indigo-500/30 relative group transition" title="Doctor & Klinis">
+                  <i class="fa-solid fa-user-doctor text-base"></i>
+                  <span class="absolute left-14 bg-slate-900 text-white text-[11px] font-bold px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none transition whitespace-nowrap z-30">Doctor &amp; Klinis</span>
+                </button>
+                <button onclick="c1SelectSector('operational')" id="c1-btn-operational" class="w-11 h-11 rounded-2xl flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:bg-cyan-500/10 border border-transparent hover:border-cyan-500/30 relative group transition" title="Operasional">
+                  <i class="fa-solid fa-gears text-base"></i>
+                  <span class="absolute left-14 bg-slate-900 text-white text-[11px] font-bold px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none transition whitespace-nowrap z-30">Operasional</span>
+                </button>
+                <button onclick="c1SelectSector('hr')" id="c1-btn-hr" class="w-11 h-11 rounded-2xl flex items-center justify-center text-slate-400 hover:text-rose-400 hover:bg-rose-500/10 border border-transparent hover:border-rose-500/30 relative group transition" title="Human Resources">
+                  <i class="fa-solid fa-id-card-clip text-base"></i>
+                  <span class="absolute left-14 bg-slate-900 text-white text-[11px] font-bold px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none transition whitespace-nowrap z-30">HRD &amp; Tim</span>
+                </button>
+                <button onclick="c1SelectSector('marketing')" id="c1-btn-marketing" class="w-11 h-11 rounded-2xl flex items-center justify-center text-slate-400 hover:text-purple-400 hover:bg-purple-500/10 border border-transparent hover:border-purple-500/30 relative group transition" title="Marketing">
+                  <i class="fa-solid fa-bullhorn text-base"></i>
+                  <span class="absolute left-14 bg-slate-900 text-white text-[11px] font-bold px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none transition whitespace-nowrap z-30">Marketing</span>
+                </button>
+                <button onclick="c1SelectSector('finance')" id="c1-btn-finance" class="w-11 h-11 rounded-2xl flex items-center justify-center text-slate-400 hover:text-teal-400 hover:bg-teal-500/10 border border-transparent hover:border-teal-500/30 relative group transition" title="Finance & Kasir">
+                  <i class="fa-solid fa-wallet text-base"></i>
+                  <span class="absolute left-14 bg-slate-900 text-white text-[11px] font-bold px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none transition whitespace-nowrap z-30">Finance</span>
+                </button>
+              </div>
+
+              <div class="mt-auto">
+                <button class="w-10 h-10 rounded-2xl bg-slate-900 text-slate-400 hover:text-white flex items-center justify-center text-xs">
+                  <i class="fa-solid fa-gear"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Rail 2: Dynamic Sub-Panel (220px) -->
+            <div class="w-56 bg-slate-900/90 border-r border-slate-800 p-4 flex flex-col justify-between shrink-0">
+              <div class="space-y-4">
+                <div>
+                  <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest font-mono" id="c1-panel-category">SEKTOR</div>
+                  <h3 class="text-sm font-extrabold text-white mt-0.5 flex items-center gap-1.5" id="c1-panel-title">
+                    <span>👑 Executive &amp; Control</span>
+                  </h3>
+                </div>
+
+                <!-- Sub-items list -->
+                <div class="space-y-1" id="c1-subitems">
+                  <!-- Injected via JS -->
+                </div>
+              </div>
+
+              <div class="p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 text-[11px] text-slate-400 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Role: Owner / Direksi</span>
+              </div>
+            </div>
+
+            <!-- Workspace Content Simulation Area -->
+            <div class="flex-1 p-6 overflow-y-auto bg-slate-950/30 space-y-4">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <div>
+                  <div class="text-xs font-mono text-cyan-400" id="c1-workspace-breadcrumb">Executive / Executive Analytics</div>
+                  <h2 class="text-lg font-bold text-white mt-0.5" id="c1-workspace-title">Executive Analytics Dashboard</h2>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg text-xs bg-emerald-500/10 text-emerald-300 font-mono font-bold">🟢 Live Telemetry</span>
+              </div>
+
+              <div class="grid grid-cols-3 gap-3">
+                <div class="glass-card p-4 rounded-2xl space-y-1">
+                  <div class="text-[11px] text-slate-400">Total Omset Bulan Ini</div>
+                  <div class="text-lg font-extrabold text-emerald-400">Rp 281.450.000</div>
+                  <div class="text-[10px] text-emerald-300">↑ 12.4% vs bulan lalu</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl space-y-1">
+                  <div class="text-[11px] text-slate-400">Total Pasien Bulan Ini</div>
+                  <div class="text-lg font-extrabold text-white">489 Pasien</div>
+                  <div class="text-[10px] text-cyan-300">Depok: 275 • PDK: 214</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl space-y-1">
+                  <div class="text-[11px] text-slate-400">Meta Ads ROAS</div>
+                  <div class="text-lg font-extrabold text-purple-400">7.84x</div>
+                  <div class="text-[10px] text-purple-300">Target minimal: 3.5x</div>
+                </div>
+              </div>
+
+              <div class="glass-card p-4 rounded-2xl space-y-2 text-xs text-slate-300">
+                <div class="font-bold text-white">Pratinjau Model Two-Tier:</div>
+                <p>Klik icon di kolom kiri (Doctor, Ops, HR, dll) untuk melihat perubahan daftar sub-menu secara dinamis. Navigasi jadi sangat fokus dan tidak memanjang ke bawah.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== CONCEPT 2: TOP SECTOR BAR ==================== -->
+          <div id="demo-concept-2" class="w-full flex-col h-[560px] hidden">
+            <!-- Top Sector Bar (Segmented Control) -->
+            <div class="px-5 py-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="font-extrabold text-sm text-white tracking-tight">KEFIR DERMA</div>
+                <div class="h-4 w-px bg-slate-700"></div>
+                <div class="flex items-center gap-1 bg-slate-950 p-1 rounded-xl border border-slate-800">
+                  <button onclick="c2SelectSector('executive')" id="c2-btn-executive" class="px-3 py-1 rounded-lg text-xs font-bold transition bg-amber-500/20 text-amber-300 border border-amber-500/30 flex items-center gap-1.5">
+                    <i class="fa-solid fa-crown text-[10px]"></i> Executive
+                  </button>
+                  <button onclick="c2SelectSector('doctor')" id="c2-btn-doctor" class="px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white flex items-center gap-1.5">
+                    <i class="fa-solid fa-user-doctor text-[10px]"></i> Doctor
+                  </button>
+                  <button onclick="c2SelectSector('operational')" id="c2-btn-operational" class="px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white flex items-center gap-1.5">
+                    <i class="fa-solid fa-gears text-[10px]"></i> Operasional
+                  </button>
+                  <button onclick="c2SelectSector('hr')" id="c2-btn-hr" class="px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white flex items-center gap-1.5">
+                    <i class="fa-solid fa-id-card-clip text-[10px]"></i> HRD
+                  </button>
+                  <button onclick="c2SelectSector('marketing')" id="c2-btn-marketing" class="px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white flex items-center gap-1.5">
+                    <i class="fa-solid fa-bullhorn text-[10px]"></i> Marketing
+                  </button>
+                  <button onclick="c2SelectSector('finance')" id="c2-btn-finance" class="px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white flex items-center gap-1.5">
+                    <i class="fa-solid fa-wallet text-[10px]"></i> Finance
+                  </button>
+                </div>
+              </div>
+
+              <div class="text-xs text-slate-400 font-mono">
+                Model: Linear / Stripe Style
+              </div>
+            </div>
+
+            <!-- Body: Single Sidebar + Content -->
+            <div class="flex-1 flex overflow-hidden">
+              <div class="w-60 bg-slate-950 border-r border-slate-800 p-4 space-y-2 shrink-0">
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest font-mono mb-2" id="c2-sidebar-title">
+                  EXECUTIVE MENU
+                </div>
+                <div class="space-y-1" id="c2-subitems">
+                  <!-- Injected via JS -->
+                </div>
+              </div>
+              <div class="flex-1 p-6 space-y-4 bg-slate-950/40">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                  <h3 class="text-base font-bold text-white" id="c2-workspace-title">Tampilan Menu Sektor di Atas Layar</h3>
+                  <span class="text-xs text-cyan-400">Horizontal Sector Switching</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Pada model ini, sektor berpindah secara horizontal di bilah atas (top navbar), mirip seperti berpindah divisi di dashboard Linear atau Google Cloud Console. Sidebar kiri hanya memuat modul dari sektor yang sedang aktif.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== CONCEPT 3: ACCORDION COLLAPSIBLE TREE ==================== -->
+          <div id="demo-concept-3" class="w-full flex h-[560px] hidden">
+            <!-- Accordion Sidebar (260px) -->
+            <div class="w-64 bg-slate-950 border-r border-slate-800 p-3 overflow-y-auto space-y-2 shrink-0 custom-scrollbar">
+              <div class="px-2 py-2 mb-1">
+                <h1 class="font-extrabold text-sm text-white leading-none">KEFIR DERMA</h1>
+                <p class="text-[9px] text-cyan-400 font-bold tracking-widest uppercase mt-1">COLLAPSIBLE TREE</p>
+              </div>
+
+              <!-- Accordion Group 1: Executive -->
+              <div class="rounded-xl border border-slate-800/80 bg-slate-900/50 overflow-hidden">
+                <button onclick="c3ToggleSector('executive')" class="w-full p-2.5 flex items-center justify-between text-xs font-bold text-amber-400 hover:bg-slate-800/60 transition">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-crown"></i>
+                    <span>Executive &amp; Control</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-down text-[10px] transition" id="c3-icon-executive"></i>
+                </button>
+                <div id="c3-list-executive" class="p-1.5 space-y-0.5 bg-slate-950/60 border-t border-slate-800/60">
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] font-semibold text-cyan-300 bg-cyan-500/10 flex items-center gap-2">
+                    <i class="fa-solid fa-gauge-high text-xs"></i> Executive Analytics
+                  </button>
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-hospital text-xs"></i> Depok &amp; Pondok Kopi
+                  </button>
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-robot text-xs"></i> AI Assistant Owner
+                  </button>
+                </div>
+              </div>
+
+              <!-- Accordion Group 2: Doctor -->
+              <div class="rounded-xl border border-slate-800/80 bg-slate-900/50 overflow-hidden">
+                <button onclick="c3ToggleSector('doctor')" class="w-full p-2.5 flex items-center justify-between text-xs font-bold text-indigo-400 hover:bg-slate-800/60 transition">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <span>Doctor &amp; Klinis</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right text-[10px] transition" id="c3-icon-doctor"></i>
+                </button>
+                <div id="c3-list-doctor" class="p-1.5 space-y-0.5 bg-slate-950/60 border-t border-slate-800/60 hidden">
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-user-doctor text-xs"></i> Medis &amp; Tindakan
+                  </button>
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-user-check text-xs"></i> Patient 360° EMR
+                  </button>
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-calculator text-xs"></i> Komisi Dokter
+                  </button>
+                </div>
+              </div>
+
+              <!-- Accordion Group 3: Operasional -->
+              <div class="rounded-xl border border-slate-800/80 bg-slate-900/50 overflow-hidden">
+                <button onclick="c3ToggleSector('operational')" class="w-full p-2.5 flex items-center justify-between text-xs font-bold text-cyan-400 hover:bg-slate-800/60 transition">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-gears"></i>
+                    <span>Operasional &amp; Supply</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right text-[10px] transition" id="c3-icon-operational"></i>
+                </button>
+                <div id="c3-list-operational" class="p-1.5 space-y-0.5 bg-slate-950/60 border-t border-slate-800/60 hidden">
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-wrench text-xs"></i> Operasional &amp; Aset
+                  </button>
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-wand-magic text-xs"></i> Maintenance Laser
+                  </button>
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-pills text-xs"></i> Farmasi &amp; Stok
+                  </button>
+                </div>
+              </div>
+
+              <!-- Accordion Group 4: HR -->
+              <div class="rounded-xl border border-slate-800/80 bg-slate-900/50 overflow-hidden">
+                <button onclick="c3ToggleSector('hr')" class="w-full p-2.5 flex items-center justify-between text-xs font-bold text-rose-400 hover:bg-slate-800/60 transition">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-id-card-clip"></i>
+                    <span>Human Resources</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right text-[10px] transition" id="c3-icon-hr"></i>
+                </button>
+                <div id="c3-list-hr" class="p-1.5 space-y-0.5 bg-slate-950/60 border-t border-slate-800/60 hidden">
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-users text-xs"></i> HRD &amp; Absensi Shift
+                  </button>
+                </div>
+              </div>
+
+              <!-- Accordion Group 5: Marketing -->
+              <div class="rounded-xl border border-slate-800/80 bg-slate-900/50 overflow-hidden">
+                <button onclick="c3ToggleSector('marketing')" class="w-full p-2.5 flex items-center justify-between text-xs font-bold text-purple-400 hover:bg-slate-800/60 transition">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Marketing &amp; Growth</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right text-[10px] transition" id="c3-icon-marketing"></i>
+                </button>
+                <div id="c3-list-marketing" class="p-1.5 space-y-0.5 bg-slate-950/60 border-t border-slate-800/60 hidden">
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-bullhorn text-xs"></i> Marketing &amp; ROAS
+                  </button>
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xs"></i> WhatsApp CRM
+                  </button>
+                </div>
+              </div>
+
+              <!-- Accordion Group 6: Finance -->
+              <div class="rounded-xl border border-slate-800/80 bg-slate-900/50 overflow-hidden">
+                <button onclick="c3ToggleSector('finance')" class="w-full p-2.5 flex items-center justify-between text-xs font-bold text-teal-400 hover:bg-slate-800/60 transition">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Finance &amp; Kasir</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right text-[10px] transition" id="c3-icon-finance"></i>
+                </button>
+                <div id="c3-list-finance" class="p-1.5 space-y-0.5 bg-slate-950/60 border-t border-slate-800/60 hidden">
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-wallet text-xs"></i> Finance &amp; Cash Flow
+                  </button>
+                  <button class="w-full text-left px-2.5 py-1.5 rounded-lg text-[11px] text-slate-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-scale-balanced text-xs"></i> Auto-Settlement
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="flex-1 p-6 space-y-4 bg-slate-950/40">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h3 class="text-base font-bold text-white">Tampilan Accordion / Collapsible Tree</h3>
+                <span class="text-xs text-amber-400">Expandable Sidebar</span>
+              </div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Di model ini, semua sektor berada di sidebar tunggal namun dalam bentuk accordion (bisa diklik untuk buka/tutup). Secara default, hanya 1 sektor yang terbuka sehingga sidebar tidak memanjang ke bawah dan terlihat rapi seperti folder tree.
+              </p>
+            </div>
+          </div>
+
+          <!-- ==================== CONCEPT 4: APP SWITCHER ==================== -->
+          <div id="demo-concept-4" class="w-full flex-col h-[560px] hidden">
+            <!-- Top bar with App Switcher Dropdown -->
+            <div class="px-5 py-3.5 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+              <div class="relative">
+                <button onclick="c4ToggleDropdown()" class="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-slate-700 flex items-center gap-3 transition">
+                  <div class="w-6 h-6 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs">
+                    <i class="fa-solid fa-user-doctor"></i>
+                  </div>
+                  <div class="text-left">
+                    <div class="text-[9px] text-slate-500 uppercase font-mono">Workspace Aktif:</div>
+                    <div class="text-xs font-extrabold text-white flex items-center gap-1.5">
+                      <span id="c4-current-name">Doctor &amp; Medis</span>
+                      <i class="fa-solid fa-chevron-down text-[10px] text-slate-400"></i>
+                    </div>
+                  </div>
+                </button>
+
+                <!-- Dropdown Menu -->
+                <div id="c4-dropdown" class="absolute left-0 mt-2 w-64 bg-slate-900 border border-slate-800 rounded-2xl p-2 shadow-2xl space-y-1 z-50 hidden">
+                  <div class="text-[10px] font-bold text-slate-400 px-2 py-1 uppercase font-mono">Pilih Sektor / Workspace</div>
+                  <button onclick="c4SelectSector('executive', '👑 Executive & Control', 'amber')" class="w-full text-left p-2 rounded-xl text-xs hover:bg-slate-800 flex items-center gap-2.5 text-amber-300">
+                    <i class="fa-solid fa-crown w-4"></i> Executive &amp; Control
+                  </button>
+                  <button onclick="c4SelectSector('doctor', '🩺 Doctor & Medis', 'indigo')" class="w-full text-left p-2 rounded-xl text-xs hover:bg-slate-800 flex items-center gap-2.5 text-indigo-300">
+                    <i class="fa-solid fa-user-doctor w-4"></i> Doctor &amp; Medis
+                  </button>
+                  <button onclick="c4SelectSector('operational', '🏢 Operasional & Aset', 'cyan')" class="w-full text-left p-2 rounded-xl text-xs hover:bg-slate-800 flex items-center gap-2.5 text-cyan-300">
+                    <i class="fa-solid fa-gears w-4"></i> Operasional &amp; Aset
+                  </button>
+                  <button onclick="c4SelectSector('hr', '👥 HRD & Tim', 'rose')" class="w-full text-left p-2 rounded-xl text-xs hover:bg-slate-800 flex items-center gap-2.5 text-rose-300">
+                    <i class="fa-solid fa-id-card-clip w-4"></i> HRD &amp; Tim
+                  </button>
+                  <button onclick="c4SelectSector('marketing', '📢 Marketing & Growth', 'purple')" class="w-full text-left p-2 rounded-xl text-xs hover:bg-slate-800 flex items-center gap-2.5 text-purple-300">
+                    <i class="fa-solid fa-bullhorn w-4"></i> Marketing &amp; Growth
+                  </button>
+                  <button onclick="c4SelectSector('finance', '💰 Finance & Kasir', 'teal')" class="w-full text-left p-2 rounded-xl text-xs hover:bg-slate-800 flex items-center gap-2.5 text-teal-300">
+                    <i class="fa-solid fa-wallet w-4"></i> Finance &amp; Kasir
+                  </button>
+                </div>
+              </div>
+
+              <div class="text-xs text-slate-400 font-mono">
+                Model: Jira / Linear Workspace Switcher
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="flex-1 flex overflow-hidden">
+              <div class="w-56 bg-slate-950 border-r border-slate-800 p-4 space-y-2 shrink-0">
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest font-mono mb-2" id="c4-sidebar-title">
+                  DOCTOR &amp; MEDIS
+                </div>
+                <div class="space-y-1" id="c4-subitems">
+                  <!-- Injected via JS -->
+                </div>
+              </div>
+              <div class="flex-1 p-6 space-y-4 bg-slate-950/40">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                  <h3 class="text-base font-bold text-white">Tampilan Workspace Switcher Dropdown</h3>
+                  <span class="text-xs text-indigo-400">Contextual Workspace</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Pada model ini, dashboard diperlakukan seperti memiliki beberapa ruang kerja (Workspace). Di pojok kiri atas terdapat dropdown untuk beralih antar sektor. Sidebar hanya menampilkan modul khusus dari workspace yang sedang aktif.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    const sectorData = {
+      executive: {
+        title: 'Executive & Control',
+        icon: 'fa-crown',
+        color: 'amber',
+        tabs: [
+          { name: 'Executive Analytics', icon: 'fa-gauge-high', active: true },
+          { name: 'Depok & Pondok Kopi', icon: 'fa-hospital' },
+          { name: 'AI Assistant Owner', icon: 'fa-robot' },
+          { name: 'Automation & Cron', icon: 'fa-bolt', badge: '4 Aktif' },
+          { name: 'Reminders & Alerts', icon: 'fa-bell', badge: '18 Bday' }
+        ]
+      },
+      doctor: {
+        title: 'Doctor & Klinis',
+        icon: 'fa-user-doctor',
+        color: 'indigo',
+        tabs: [
+          { name: 'Medis & Tindakan', icon: 'fa-user-doctor', active: true },
+          { name: 'Patient 360° EMR', icon: 'fa-user-check', badge: 'Upsell' },
+          { name: 'Kalkulator Komisi Dokter', icon: 'fa-calculator', badge: 'Live' }
+        ]
+      },
+      operational: {
+        title: 'Operasional & Supply',
+        icon: 'fa-gears',
+        color: 'cyan',
+        tabs: [
+          { name: 'Operasional & Aset', icon: 'fa-screwdriver-wrench', badge: 'GSheets', active: true },
+          { name: 'Maintenance Laser', icon: 'fa-wand-magic-sparkles', badge: 'Kalibrasi' },
+          { name: 'Farmasi & Stok FEFO', icon: 'fa-prescription-bottle-medical' }
+        ]
+      },
+      hr: {
+        title: 'Human Resources (HRD)',
+        icon: 'fa-id-card-clip',
+        color: 'rose',
+        tabs: [
+          { name: 'HRD & Absensi Shift', icon: 'fa-id-card-clip', badge: 'Gaji.id', active: true }
+        ]
+      },
+      marketing: {
+        title: 'Marketing & Growth',
+        icon: 'fa-bullhorn',
+        color: 'purple',
+        tabs: [
+          { name: 'Marketing & Ads ROAS', icon: 'fa-bullhorn', active: true },
+          { name: 'WhatsApp CRM Blast', icon: 'fa-brands fa-whatsapp', badge: '8k Pasien' },
+          { name: 'AI Content Studio', icon: 'fa-feather-pointed', badge: 'Copy' }
+        ]
+      },
+      finance: {
+        title: 'Finance & Kasir',
+        icon: 'fa-wallet',
+        color: 'teal',
+        tabs: [
+          { name: 'Finance & Cash Flow', icon: 'fa-wallet', active: true },
+          { name: 'Auto-Settlement Rekonsiliasi', icon: 'fa-scale-balanced', badge: '3-Way' },
+          { name: 'Integration Hub & GSheets', icon: 'fa-network-wired' }
+        ]
+      }
+    };
+
+    let activeConcept = 1;
+    let c1ActiveSector = 'executive';
+    let c2ActiveSector = 'executive';
+    let c4ActiveSector = 'doctor';
+
+    const conceptsMeta = {
+      1: {
+        badge: 'Model 1 (Paling Direkomendasikan)',
+        style: 'Gaya Slack / Discord / Linear',
+        title: 'Two-Tier Double Rail (Icon Strip + Dynamic Panel)',
+        desc: 'Sidebar dibagi menjadi 2 layer: strip icon tipis (64px) di sisi paling kiri untuk memilih sektor (Doctor, HR, Ops, dll), dan panel kedua (220px) yang hanya menampilkan modul-modul milik sektor tersebut.',
+        pros: [
+          '<strong>Fokus Penuh:</strong> Layar bersih, dokter hanya melihat menu medis tanpa terdistraksi HR/Finance.',
+          '<strong>Akses 1 Klik:</strong> Pindah sektor instan cukup klik icon di rail kiri.',
+          '<strong>Standar SaaS Modern:</strong> Digunakan oleh aplikasi kelas enterprise seperti Slack, Notion Workspace, dan Discord.'
+        ],
+        btnLabel: 'Terapkan Model 1 (Two-Tier Double Rail)'
+      },
+      2: {
+        badge: 'Model 2',
+        style: 'Gaya Linear / Stripe / macOS Banner',
+        title: 'Top Sector Bar (Segmented Control Horizontal)',
+        desc: 'Pilihan sektor ditempatkan di bilah atas (top navbar). Saat memilih sektor (misal: DOCTOR), sidebar kiri otomatis berubah hanya menampilkan modul-modul dokter.',
+        pros: [
+          '<strong>Sangat Familiar:</strong> Mirip tab browser atau segmented control macOS.',
+          '<strong>Sidebar Sangat Ramping:</strong> Hanya satu kolom sidebar biasa yang langsung to the point.',
+          '<strong>Visual Luas:</strong> Area kerja utama tetap lebar dan tidak terpotong dua kolom sidebar.'
+        ],
+        btnLabel: 'Terapkan Model 2 (Top Sector Bar)'
+      },
+      3: {
+        badge: 'Model 3',
+        style: 'Gaya Notion / ERP Folders',
+        title: 'Collapsible Accordion Tree (Expand / Collapse)',
+        desc: 'Semua sektor tetap dalam satu sidebar vertikal, tetapi setiap sektor bisa dibuka/tutup (accordion). Hanya sektor aktif yang terbuka, sehingga sidebar tidak memanjang.',
+        pros: [
+          '<strong>Tetap 1 Kolom:</strong> Tidak mengubah struktur dasar layout dashboard.',
+          '<strong>Rapi & Terorganisir:</strong> Jika hanya membuka sektor Operasional, sektor lainnya bisa di-collapse rapi.',
+          '<strong>Cocok untuk Tim Kecil:</strong> Tetap bisa melihat gambaran semua divisi sekilas.'
+        ],
+        btnLabel: 'Terapkan Model 3 (Accordion Tree)'
+      },
+      4: {
+        badge: 'Model 4',
+        style: 'Gaya Jira / Multi-Workspace Switcher',
+        title: 'Workspace Switcher Dropdown',
+        desc: 'Sektor diperlakukan sebagai "Ruang Kerja" independen. Terdapat tombol dropdown elegan di pojok kiri atas (misal: "Dokter & Medis") untuk beralih ruang kerja.',
+        pros: [
+          '<strong>Paling Minimalis:</strong> Sidebar hanya memiliki 3–4 tombol sesuai divisi yang aktif.',
+          '<strong>Pemisahan Ketat:</strong> Setiap divisi merasa memiliki dashboard mandiri.',
+          '<strong>Efisien Ruang:</strong> Tidak memakan pixel horizontal sama sekali.'
+        ],
+        btnLabel: 'Terapkan Model 4 (Workspace Switcher)'
+      }
+    };
+
+    function setConcept(num) {
+      activeConcept = num;
+      for (let i = 1; i <= 4; i++) {
+        const demo = document.getElementById('demo-concept-' + i);
+        const btn = document.getElementById('btn-c' + i);
+        if (i === num) {
+          demo.classList.remove('hidden');
+          demo.classList.add('flex');
+          btn.className = 'px-3 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 bg-cyan-500/20 text-cyan-300 border border-cyan-500/40';
+        } else {
+          demo.classList.add('hidden');
+          demo.classList.remove('flex');
+          btn.className = 'px-3 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 text-slate-400 hover:text-white';
+        }
+      }
+
+      const meta = conceptsMeta[num];
+      document.getElementById('concept-badge').innerText = meta.badge;
+      document.getElementById('concept-style').innerText = meta.style;
+      document.getElementById('concept-title').innerText = meta.title;
+      document.getElementById('concept-desc').innerText = meta.desc;
+      document.getElementById('btn-apply-label').innerText = meta.btnLabel;
+      document.getElementById('concept-pros').innerHTML = meta.pros.map(p => `
+        <li class="flex items-start gap-2">
+          <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+          <span>${p}</span>
+        </li>
+      `).join('');
+
+      document.getElementById('sim-url').innerText = `kefir-dashboard://preview/concept-${num}`;
+
+      if (num === 1) renderC1Subitems();
+      if (num === 2) renderC2Subitems();
+      if (num === 4) renderC4Subitems();
+    }
+
+    // Concept 1 Logic
+    function c1SelectSector(sec) {
+      c1ActiveSector = sec;
+      const sectors = ['executive', 'doctor', 'operational', 'hr', 'marketing', 'finance'];
+      sectors.forEach(s => {
+        const b = document.getElementById('c1-btn-' + s);
+        if (s === sec) {
+          b.className = `w-11 h-11 rounded-2xl flex items-center justify-center text-${sectorData[s].color}-400 bg-${sectorData[s].color}-500/20 border border-${sectorData[s].color}-500/40 relative group transition`;
+        } else {
+          b.className = `w-11 h-11 rounded-2xl flex items-center justify-center text-slate-400 hover:text-${sectorData[s].color}-400 hover:bg-${sectorData[s].color}-500/10 border border-transparent hover:border-${sectorData[s].color}-500/30 relative group transition`;
+        }
+      });
+      renderC1Subitems();
+    }
+
+    function renderC1Subitems() {
+      const data = sectorData[c1ActiveSector];
+      document.getElementById('c1-panel-title').innerHTML = `<span>${data.title}</span>`;
+      const container = document.getElementById('c1-subitems');
+      container.innerHTML = data.tabs.map((t, idx) => `
+        <button class="w-full text-left px-3 py-2 rounded-xl text-xs flex items-center justify-between transition ${idx === 0 ? 'bg-cyan-500/20 text-cyan-300 font-bold border border-cyan-500/30' : 'text-slate-300 hover:text-white hover:bg-slate-800/60'}">
+          <div class="flex items-center gap-2.5">
+            <i class="fa-solid ${t.icon} text-xs"></i>
+            <span>${t.name}</span>
+          </div>
+          ${t.badge ? `<span class="px-1.5 py-0.2 rounded text-[9px] font-mono bg-slate-800 text-slate-300">${t.badge}</span>` : ''}
+        </button>
+      `).join('');
+
+      document.getElementById('c1-workspace-breadcrumb').innerText = `${data.title} / ${data.tabs[0].name}`;
+      document.getElementById('c1-workspace-title').innerText = `${data.tabs[0].name} View`;
+    }
+
+    // Concept 2 Logic
+    function c2SelectSector(sec) {
+      c2ActiveSector = sec;
+      const sectors = ['executive', 'doctor', 'operational', 'hr', 'marketing', 'finance'];
+      sectors.forEach(s => {
+        const b = document.getElementById('c2-btn-' + s);
+        if (s === sec) {
+          b.className = `px-3 py-1 rounded-lg text-xs font-bold transition bg-${sectorData[s].color}-500/20 text-${sectorData[s].color}-300 border border-${sectorData[s].color}-500/30 flex items-center gap-1.5`;
+        } else {
+          b.className = 'px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white flex items-center gap-1.5';
+        }
+      });
+      renderC2Subitems();
+    }
+
+    function renderC2Subitems() {
+      const data = sectorData[c2ActiveSector];
+      document.getElementById('c2-sidebar-title').innerText = `${data.title.toUpperCase()} MENU`;
+      const container = document.getElementById('c2-subitems');
+      container.innerHTML = data.tabs.map((t, idx) => `
+        <button class="w-full text-left px-3 py-2 rounded-xl text-xs flex items-center justify-between transition ${idx === 0 ? 'bg-indigo-500/20 text-indigo-300 font-bold border border-indigo-500/30' : 'text-slate-300 hover:text-white hover:bg-slate-800/60'}">
+          <div class="flex items-center gap-2.5">
+            <i class="fa-solid ${t.icon} text-xs"></i>
+            <span>${t.name}</span>
+          </div>
+          ${t.badge ? `<span class="px-1.5 py-0.2 rounded text-[9px] font-mono bg-slate-800 text-slate-300">${t.badge}</span>` : ''}
+        </button>
+      `).join('');
+      document.getElementById('c2-workspace-title').innerText = `${data.tabs[0].name} (Aktif Sektor: ${data.title})`;
+    }
+
+    // Concept 3 Logic
+    function c3ToggleSector(sec) {
+      const el = document.getElementById('c3-list-' + sec);
+      const icon = document.getElementById('c3-icon-' + sec);
+      if (el.classList.contains('hidden')) {
+        el.classList.remove('hidden');
+        icon.className = 'fa-solid fa-chevron-down text-[10px] transition';
+      } else {
+        el.classList.add('hidden');
+        icon.className = 'fa-solid fa-chevron-right text-[10px] transition';
+      }
+    }
+
+    // Concept 4 Logic
+    function c4ToggleDropdown() {
+      const d = document.getElementById('c4-dropdown');
+      d.classList.toggle('hidden');
+    }
+
+    function c4SelectSector(sec, name, color) {
+      c4ActiveSector = sec;
+      document.getElementById('c4-current-name').innerText = name;
+      document.getElementById('c4-dropdown').classList.add('hidden');
+      renderC4Subitems();
+    }
+
+    function renderC4Subitems() {
+      const data = sectorData[c4ActiveSector];
+      document.getElementById('c4-sidebar-title').innerText = `${data.title.toUpperCase()}`;
+      const container = document.getElementById('c4-subitems');
+      container.innerHTML = data.tabs.map((t, idx) => `
+        <button class="w-full text-left px-3 py-2 rounded-xl text-xs flex items-center justify-between transition ${idx === 0 ? 'bg-indigo-500/20 text-indigo-300 font-bold border border-indigo-500/30' : 'text-slate-300 hover:text-white hover:bg-slate-800/60'}">
+          <div class="flex items-center gap-2.5">
+            <i class="fa-solid ${t.icon} text-xs"></i>
+            <span>${t.name}</span>
+          </div>
+          ${t.badge ? `<span class="px-1.5 py-0.2 rounded text-[9px] font-mono bg-slate-800 text-slate-300">${t.badge}</span>` : ''}
+        </button>
+      `).join('');
+    }
+
+    function applyChoice() {
+      const names = {
+        1: "Model 1: Two-Tier Double Rail (Slack / Discord Style)",
+        2: "Model 2: Top Sector Bar (Segmented Control Horizontal)",
+        3: "Model 3: Collapsible Accordion Tree",
+        4: "Model 4: Workspace Switcher Dropdown"
+      };
+      if (window.hermes && window.hermes.send) {
+        window.hermes.send(`saya pilih ${names[activeConcept]}`);
+      } else {
+        alert(`Pilihan terpilih: ${names[activeConcept]}\nKirim pesan ke asisten: "saya pilih Model ${activeConcept}"`);
+      }
+    }
+
+    // Initialize
+    setConcept(1);
+  </script>
+</body>
+</html>

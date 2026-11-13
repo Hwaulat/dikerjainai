@@ -1,0 +1,33 @@
+{
+  "name": "kefir-clinic-dashboard",
+  "version": "1.0.0",
+  "description": "KEFIR Derma Clinic - Executive Analytics & Multi-Branch Management Portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "start:local": "node --env-file=.env server.js",
+    "sync": "python3 scripts/sync_neosoft.py",
+    "db:deploy": "prisma migrate deploy",
+    "db:status": "prisma migrate status",
+    "db:migrate": "node scripts/pg_migrate.js --verify"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
+    "exceljs": "^4.4.0",
+    "pdfkit": "^0.15.2",
+    "pg": "^8.13.1",
+    "pino": "^10.3.1",
+    "prisma": "^6.19.0",
+    "qrcode": "^1.5.4"
+  },
+  "keywords": [
+    "kefir",
+    "clinic",
+    "dashboard",
+    "neosoft",
+    "analytics"
+  ],
+  "author": "KEFIR Derma Clinic IT & Automation Team",
+  "license": "MIT"
+}

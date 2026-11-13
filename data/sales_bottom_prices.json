@@ -1,0 +1,15 @@
+{
+  "TRT-TEST-01": {
+    "code": "TRT-TEST-01",
+    "name": "Paket Glowing Express Test",
+    "normal_price": 600000,
+    "bottom_price": 450000,
+    "max_discount_pct": 25,
+    "allowed_roles": [
+      "Dokter",
+      "Manager"
+    ],
+    "notes": "Margin minimal Rp 270.000 wajib dijaga",
+    "updated_at": "2026-09-20T21:48:20.247Z"
+  }
+}

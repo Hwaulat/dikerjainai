@@ -470,6 +470,7 @@ function stripCost(v) {
 }
 
 function sendJson(res, status, body) {
+  if (res.headersSent || res.writableEnded) return;
   res.writeHead(status, { 'Content-Type': 'application/json' });
   res.end(JSON.stringify(body));
 }
@@ -683,6 +684,7 @@ const server = http.createServer(async (req, res) => {
   // --- AUTH & LOGIN ENDPOINT ---
   if (pathname === '/api/auth/login' && req.method === 'POST') {
     const processLogin = (payload) => {
+      if (res.headersSent || res.writableEnded) return;
       try {
         const usernameInput = (payload.username || '').trim().toLowerCase();
         const passInput = (payload.pin || payload.password || '').trim();
@@ -710,8 +712,10 @@ const server = http.createServer(async (req, res) => {
           res.end(JSON.stringify({ success: false, error: 'Username/Email atau Password Neosoft salah.' }));
         }
       } catch (err) {
-        res.writeHead(400, { 'Content-Type': 'application/json' });
-        res.end(JSON.stringify({ error: err.message }));
+        if (!res.headersSent && !res.writableEnded) {
+          res.writeHead(400, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ error: err.message }));
+        }
       }
     };
 

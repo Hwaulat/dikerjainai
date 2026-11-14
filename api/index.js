@@ -35,10 +35,12 @@ module.exports = (req, res) => {
       process.nextTick(() => {
         if (res.headersSent || res.writableEnded) return;
         if (bodyStr.length > 0) {
+          dataListeners.forEach(fn => fn(bodyStr));
           dataListeners.forEach(fn => {
             if (!res.headersSent && !res.writableEnded) fn(bodyStr);
           });
         }
+        endListeners.forEach(fn => fn());
         if (!res.headersSent && !res.writableEnded) {
           endListeners.forEach(fn => fn());
         }

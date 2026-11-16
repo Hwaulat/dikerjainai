@@ -2545,530 +2545,428 @@
       <!-- ================= SECTION 1: EXECUTIVE SUMMARY ================= -->
       <div id="section-summary" class="space-y-6">
         
-        <!-- 6 EXECUTIVE KPI CARDS (CLEAN & PROFESSIONAL ENTERPRISE GRID) -->
-        <div id="sub-exec-kpi" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 scroll-mt-20">
+        <!-- ZONE A: STATUS BAR (Konteks Eksekutif & Health) -->
+        <div id="exec-zone-a-statusbar" class="p-3 sm:p-3.5 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs shadow-xs">
+          <div class="flex items-center gap-2.5 flex-wrap">
+            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-800/80 border border-slate-700/60 font-semibold text-slate-200">
+              <i class="fa-solid fa-calendar text-cyan-400 text-[11px]"></i>
+              <span id="exec-status-period">September 2026 (Bulan Berjalan)</span>
+            </div>
+            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-800/80 border border-slate-700/60 font-semibold text-slate-200">
+              <i class="fa-solid fa-location-dot text-indigo-400 text-[11px]"></i>
+              <span id="exec-status-branch">2 Cabang: Depok &amp; Pondok Kopi</span>
+            </div>
+            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 font-semibold">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span id="exec-status-sync">Live sync Neosoft OK</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 text-slate-400 font-mono text-[11px] ml-auto">
+            <span>YTD 2026: <strong class="text-white font-bold" id="exec-status-ytd-rev">Rp 1.02 Miliar</strong></span>
+            <span class="text-slate-600">•</span>
+            <span id="exec-status-ytd-tx">1,182 transaksi</span>
+          </div>
+        </div>
+
+        <!-- ZONE B: 3 METRIK KOMANDO (ABOVE THE FOLD) -->
+        <div id="sub-exec-kpi" class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 scroll-mt-20">
           
-          <!-- KPI 1: TOTAL OMSET BULAN INI -->
+          <!-- METRIK 1: TOTAL OMSET BULAN INI -->
           <div class="glass-card rounded-2xl p-5 shadow-sm hover:border-cyan-500/40 transition-all duration-200 flex flex-col justify-between relative overflow-hidden group">
             <div class="absolute -right-6 -bottom-6 w-28 h-28 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-cyan-500/15 transition-all"></div>
             <div class="relative z-10">
               <div class="flex justify-between items-start mb-2">
                 <div class="flex items-center gap-2 flex-wrap">
-                  <span class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Total Omset Bulan Ini</span>
-                  <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25 flex items-center gap-1"><i class="fa-solid fa-arrow-trend-up text-[9px]"></i> +12.4% vs target</span>
+                  <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Omset Bulan Ini</span>
+                  <span id="kpi-target-pct-badge" class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 flex items-center gap-1">
+                    <i class="fa-solid fa-arrow-trend-up text-[9px]"></i> On-Track
+                  </span>
                 </div>
-                <div class="w-9 h-9 rounded-xl bg-cyan-500/10 dark:bg-cyan-500/15 border border-cyan-500/25 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-sm shadow-xs group-hover:scale-105 transition-transform shrink-0">
+                <div class="w-9 h-9 rounded-xl bg-cyan-500/15 border border-cyan-500/25 text-cyan-400 flex items-center justify-center text-sm shadow-xs group-hover:scale-105 transition-transform shrink-0">
                   <i class="fa-solid fa-coins"></i>
                 </div>
               </div>
-              <div id="kpi-omset" class="stat-value text-2xl sm:text-[28px] font-extrabold text-slate-900 dark:text-white tracking-tight tabular-nums whitespace-nowrap my-1">Rp 0</div>
+              <div id="kpi-omset" class="stat-value text-2xl sm:text-[30px] font-extrabold text-white tracking-tight tabular-nums whitespace-nowrap my-1">Rp 0</div>
             </div>
-            <div class="mt-3 pt-2.5 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between text-xs relative z-10">
-              <span class="text-cyan-600 dark:text-cyan-400 font-semibold text-xs flex items-center gap-1.5">
-                <i class="fa-solid fa-building-circle-check text-[11px]"></i> 2 Cabang Aktif
-              </span>
-              <button type="button" onclick="openNeosoftReportModal('daily_omset')" class="cursor-pointer text-xs text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-300 font-medium hover:underline flex items-center gap-1 transition" title="Buka Rekap Omset Harian">
+            <div class="mt-3 pt-2.5 border-t border-slate-800/60 flex items-center justify-between text-xs relative z-10">
+              <div id="kpi-visits" class="text-slate-400 font-semibold text-xs tabular-nums">
+                0 <span class="text-slate-500">Invoices</span>
+              </div>
+              <button type="button" onclick="openNeosoftReportModal('daily_omset')" class="cursor-pointer text-xs text-cyan-400 hover:text-cyan-300 font-medium hover:underline flex items-center gap-1 transition" title="Buka Rekap Omset Harian">
                 Rekap Harian <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
               </button>
             </div>
           </div>
 
-          <!-- KPI 2: OMSET HARI INI (REALTIME) -->
+          <!-- METRIK 2: OMSET HARI INI (REALTIME) -->
           <div class="glass-card rounded-2xl p-5 shadow-sm hover:border-emerald-500/40 transition-all duration-200 flex flex-col justify-between relative overflow-hidden group">
             <div class="absolute -right-6 -bottom-6 w-28 h-28 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-emerald-500/15 transition-all"></div>
             <div class="relative z-10">
               <div class="flex justify-between items-start mb-2">
                 <div class="flex items-center gap-2 flex-wrap">
-                  <span class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Omset Hari Ini (Live)
+                  <span class="text-[11px] font-semibold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Omset Hari Ini
                   </span>
-                  <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25">Live Pacing</span>
+                  <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-400 border border-emerald-500/25">Live</span>
                 </div>
-                <div class="w-9 h-9 rounded-xl bg-emerald-500/10 dark:bg-emerald-500/15 border border-emerald-500/25 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-sm shadow-xs group-hover:scale-105 transition-transform shrink-0">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/15 border border-emerald-500/25 text-emerald-400 flex items-center justify-center text-sm shadow-xs group-hover:scale-105 transition-transform shrink-0">
                   <i class="fa-solid fa-cash-register"></i>
                 </div>
               </div>
-              <div id="kpi-omset-today" class="stat-value text-2xl sm:text-[28px] font-extrabold text-emerald-600 dark:text-emerald-400 tracking-tight tabular-nums whitespace-nowrap my-1">Rp 0</div>
+              <div id="kpi-omset-today" class="stat-value text-2xl sm:text-[30px] font-extrabold text-emerald-400 tracking-tight tabular-nums whitespace-nowrap my-1">Rp 0</div>
             </div>
-            <div class="mt-3 pt-2.5 border-t border-slate-200/60 dark:border-slate-800/60 text-xs relative z-10">
-              <div id="kpi-omset-today-breakdown" class="text-slate-600 dark:text-slate-300 text-xs flex items-center gap-2 flex-wrap tabular-nums">
-                <span><strong class="text-cyan-600 dark:text-cyan-400">DPK:</strong> Rp 0</span>
-                <span class="text-slate-400 dark:text-slate-600">•</span>
-                <span><strong class="text-indigo-600 dark:text-indigo-400">PDK:</strong> Rp 0</span>
+            <div class="mt-3 pt-2.5 border-t border-slate-800/60 text-xs relative z-10">
+              <div id="kpi-omset-today-breakdown" class="text-slate-300 text-xs flex items-center gap-2 flex-wrap tabular-nums">
+                <span><strong class="text-cyan-400">DPK:</strong> Rp 0</span>
+                <span class="text-slate-600">•</span>
+                <span><strong class="text-indigo-400">PDK:</strong> Rp 0</span>
               </div>
             </div>
           </div>
 
-          <!-- KPI 3: TOTAL INVOICES SELESAI -->
-          <div class="glass-card rounded-2xl p-5 shadow-sm hover:border-blue-500/40 transition-all duration-200 flex flex-col justify-between relative overflow-hidden group">
-            <div class="absolute -right-6 -bottom-6 w-28 h-28 bg-blue-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-blue-500/15 transition-all"></div>
-            <div class="relative z-10">
-              <div class="flex justify-between items-start mb-2">
-                <div class="flex items-center gap-2 flex-wrap">
-                  <span class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Invoices Selesai</span>
-                  <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/25">100% Lunas</span>
-                </div>
-                <div class="w-9 h-9 rounded-xl bg-blue-500/10 dark:bg-blue-500/15 border border-blue-500/25 text-blue-600 dark:text-blue-400 flex items-center justify-center text-sm shadow-xs group-hover:scale-105 transition-transform shrink-0">
-                  <i class="fa-solid fa-receipt"></i>
-                </div>
-              </div>
-              <div id="kpi-visits" class="stat-value text-2xl sm:text-[28px] font-extrabold text-slate-900 dark:text-white tracking-tight tabular-nums whitespace-nowrap my-1">0 <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">Invoices</span></div>
-            </div>
-            <div class="mt-3 pt-2.5 border-t border-slate-200/60 dark:border-slate-800/60 text-xs flex items-center gap-2 flex-wrap relative z-10" id="kpi-invoices-breakdown">
-              <span class="text-cyan-600 dark:text-cyan-400 font-bold text-xs">0 DPK</span>
-              <span class="text-slate-400 dark:text-slate-600">•</span>
-              <span class="text-indigo-600 dark:text-indigo-400 font-bold text-xs">0 PDK</span>
-            </div>
-          </div>
-
-          <!-- KPI 4: STAF AKTIF KLINIK -->
-          <div class="glass-card rounded-2xl p-5 shadow-sm hover:border-indigo-500/40 transition-all duration-200 flex flex-col justify-between relative overflow-hidden group">
-            <div class="absolute -right-6 -bottom-6 w-28 h-28 bg-indigo-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-indigo-500/15 transition-all"></div>
-            <div class="relative z-10">
-              <div class="flex justify-between items-start mb-2">
-                <span class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Staf Aktif Klinik</span>
-                <div class="w-9 h-9 rounded-xl bg-indigo-500/10 dark:bg-indigo-500/15 border border-indigo-500/25 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-sm shadow-xs group-hover:scale-105 transition-transform shrink-0">
-                  <i class="fa-solid fa-users"></i>
-                </div>
-              </div>
-              <div class="stat-value text-2xl sm:text-[28px] font-extrabold text-slate-900 dark:text-white tracking-tight tabular-nums flex items-baseline gap-2 my-1" id="kpi-attendance-val">
-                <span>-</span>
-                <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">Staf</span>
-              </div>
-            </div>
-            <div class="mt-3 pt-2.5 border-t border-slate-200/60 dark:border-slate-800/60 text-xs flex items-center gap-2 flex-wrap relative z-10" id="kpi-attendance-sub">
-              <span class="text-slate-500 dark:text-slate-400 text-xs">Memuat data staf aktif...</span>
-            </div>
-          </div>
-
-          <!-- KPI 5: KONVERSI BOOKING -->
+          <!-- METRIK 3: PROYEKSI AKHIR BULAN (FORECAST) -->
           <div class="glass-card rounded-2xl p-5 shadow-sm hover:border-purple-500/40 transition-all duration-200 flex flex-col justify-between relative overflow-hidden group">
             <div class="absolute -right-6 -bottom-6 w-28 h-28 bg-purple-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-purple-500/15 transition-all"></div>
             <div class="relative z-10">
               <div class="flex justify-between items-start mb-2">
-                <span class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Konversi Booking Pasien</span>
-                <div class="w-9 h-9 rounded-xl bg-purple-500/10 dark:bg-purple-500/15 border border-purple-500/25 text-purple-600 dark:text-purple-400 flex items-center justify-center text-sm shadow-xs group-hover:scale-105 transition-transform shrink-0">
-                  <i class="fa-solid fa-calendar-check"></i>
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Proyeksi Akhir Bulan</span>
+                  <span id="rf-forecast-badge" class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-purple-500/15 text-purple-300 border border-purple-500/25">
+                    Memuat...
+                  </span>
+                </div>
+                <div class="w-9 h-9 rounded-xl bg-purple-500/15 border border-purple-500/25 text-purple-400 flex items-center justify-center text-sm shadow-xs group-hover:scale-105 transition-transform shrink-0">
+                  <i class="fa-solid fa-chart-line-up"></i>
                 </div>
               </div>
-              <div id="kpi-booking-conversion" class="stat-value text-2xl sm:text-[28px] font-extrabold text-slate-900 dark:text-white tracking-tight tabular-nums whitespace-nowrap my-1">- <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">Selesai</span></div>
+              <div id="rf-forecast-next" class="stat-value text-2xl sm:text-[30px] font-extrabold text-purple-300 tracking-tight font-mono whitespace-nowrap my-1">-</div>
             </div>
-            <div class="mt-3 pt-2.5 border-t border-slate-200/60 dark:border-slate-800/60 text-xs relative z-10" id="kpi-booking-conversion-sub">
-              <span class="text-slate-500 dark:text-slate-400 text-xs">Memuat...</span>
-            </div>
-          </div>
-
-          <!-- KPI 6: KEPUASAN PASIEN -->
-          <div class="glass-card rounded-2xl p-5 shadow-sm hover:border-amber-500/40 transition-all duration-200 flex flex-col justify-between relative overflow-hidden group cursor-pointer" onclick="switchTab('marketing')">
-            <div class="absolute -right-6 -bottom-6 w-28 h-28 bg-amber-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-amber-500/15 transition-all"></div>
-            <div class="relative z-10">
-              <div class="flex justify-between items-start mb-2">
-                <span class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Kepuasan Pasien</span>
-                <div class="w-9 h-9 rounded-xl bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/25 text-amber-600 dark:text-amber-400 flex items-center justify-center text-sm shadow-xs group-hover:scale-105 transition-transform shrink-0">
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-              <div id="kpi-patient-rating" class="stat-value text-2xl sm:text-[28px] font-extrabold text-slate-900 dark:text-white tracking-tight tabular-nums whitespace-nowrap my-1">- <span class="text-sm font-semibold text-slate-500 dark:text-slate-400">/ 5.0</span></div>
-            </div>
-            <div class="mt-3 pt-2.5 border-t border-slate-200/60 dark:border-slate-800/60 text-xs relative z-10" id="kpi-patient-rating-sub">
-              <span class="text-slate-500 dark:text-slate-400 text-xs">Belum ada review</span>
+            <div class="mt-3 pt-2.5 border-t border-slate-800/60 flex items-center justify-between text-xs relative z-10">
+              <span class="text-slate-400 text-xs flex items-center gap-1">
+                Dasar: <strong id="rf-growth-pct" class="text-cyan-400">-</strong>
+              </span>
+              <span id="exec-days-left-chip" class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-slate-800/80 text-slate-300 border border-slate-700">
+                Sisa hari bulan ini
+              </span>
             </div>
           </div>
 
         </div>
 
-        <!-- Ringkasan sisa treatment & deposit (detail di Reminders) -->
-        <button type="button" id="unused-kpi-card" onclick="openUnusedPackages()" class="glass-card w-full text-left p-4 rounded-2xl border border-amber-500/25 hover:border-amber-500/50 transition flex items-center justify-between gap-4 flex-wrap cursor-pointer">
-          <div class="flex items-center gap-3 min-w-0">
-            <span class="rm-head-icon rm-tone-amber"><i class="fa-solid fa-ticket-simple"></i></span>
-            <div class="min-w-0">
-              <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Sisa treatment / paket belum terpakai</div>
-              <div class="flex items-baseline gap-3 flex-wrap mt-0.5">
-                <span id="unused-kpi-total" class="text-xl font-black text-amber-400 tabular-nums">—</span>
-                <span id="unused-kpi-patients" class="text-xs text-slate-400"></span>
+        <!-- ZONE C: PACE KE TARGET (GABUNGAN SATU KOMPONEN TERPADU) -->
+        <div id="sub-exec-targets" class="glass-card p-6 rounded-3xl border border-amber-500/30 bg-gradient-to-r from-amber-950/20 via-slate-900/90 to-slate-900/90 space-y-5 scroll-mt-20">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm">
+                <i class="fa-solid fa-bullseye"></i>
               </div>
-            </div>
-          </div>
-          <span class="text-xs font-bold text-slate-300 whitespace-nowrap flex items-center gap-1.5">Lihat daftar recall <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
-        </button>
-
-        <!-- 10 PENJUALAN TREATMENT TERTINGGI (dipindah dari tab Medis & Tindakan) -->
-        <div class="glass-card p-6 rounded-3xl border border-amber-500/30 bg-gradient-to-b from-slate-900/90 to-slate-950 space-y-4">
-          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-            <div>
-              <div class="flex items-center gap-2">
-                <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-500/20 text-amber-300 border border-amber-500/30 uppercase">Best Sellers</span>
-                <span class="text-xs text-slate-400">Harga Promo &amp; Terendah</span>
-              </div>
-              <h3 class="text-base font-bold text-white flex items-center gap-2 mt-1">
-                <i class="fa-solid fa-trophy text-amber-400"></i> 10 Penjualan Treatment Tertinggi
-              </h3>
-            </div>
-            <span class="text-xs text-amber-400 font-mono font-bold bg-amber-500/10 px-2.5 py-1 rounded-lg border border-amber-500/20">
-              Penyumbang Omset Utama
-            </span>
-          </div>
-
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-xs">
-              <thead class="bg-slate-900/80 text-slate-400 font-semibold border-b border-slate-800">
-                <tr>
-                  <th class="p-2.5">#</th>
-                  <th class="p-2.5">Nama Treatment</th>
-                  <th class="p-2.5 text-center">Tindakan</th>
-                  <th class="p-2.5">Harga Promo</th>
-                  <th class="p-2.5">Mulai Dari</th>
-                  <th class="p-2.5 text-right">Total Omset</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-800/60" id="top-treatments-table-body">
-                <!-- Injected via JS -->
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-
-        <!-- ================= SUB-SECTION: TARGET OMZET & LIVE PACE METER ================= -->
-        <div id="sub-exec-targets" class="space-y-6 scroll-mt-20">
-          <!-- TARGET OMZET BULANAN EKSEKUTIF (OWNER) -->
-          <div class="glass-card p-6 rounded-3xl border border-amber-500/30 bg-gradient-to-r from-amber-950/20 via-slate-900/90 to-slate-900/90 space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
-              <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm">
-                  <i class="fa-solid fa-bullseye"></i>
-                </div>
-                <div>
-                  <h3 class="text-sm font-extrabold text-white flex items-center gap-2">
-                    Target Omzet Eksekutif Bulanan (Owner &amp; Manajemen)
-                    <span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">Target vs Real</span>
-                  </h3>
-                  <p class="text-xs text-slate-400">Monitoring pencapaian revenue gabungan dan per cabang (Depok &amp; Pondok Kopi) terhadap target.</p>
-                </div>
-              </div>
-              <button onclick="openEditMonthlyTargetModal()" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs flex items-center gap-1.5 shadow-lg shadow-amber-600/30 transition">
-                <i class="fa-solid fa-pen-to-square"></i> Edit Target Bulan Ini
-              </button>
-            </div>
-
-            <!-- Target Progress Bars -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="target-progress-cards">
-              <div class="p-4 rounded-2xl bg-slate-950/70 border border-slate-800 space-y-2">
-                <div class="flex justify-between items-center text-xs">
-                  <span class="text-slate-400 font-bold uppercase">Total Gabungan</span>
-                  <span id="target-pct-total" class="font-mono font-bold text-amber-400">0%</span>
-                </div>
-                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
-                  <div id="target-bar-total" class="bg-gradient-to-r from-amber-500 to-emerald-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
-                </div>
-                <div class="flex justify-between items-center text-[11px] font-mono">
-                  <span id="target-real-total" class="text-white font-bold">Rp 0</span>
-                  <span id="target-goal-total" class="text-slate-500">/ Rp 0</span>
-                </div>
-              </div>
-
-              <div class="p-4 rounded-2xl bg-slate-950/70 border border-slate-800 space-y-2">
-                <div class="flex justify-between items-center text-xs">
-                  <span class="text-cyan-400 font-bold uppercase">Cabang Depok</span>
-                  <span id="target-pct-depok" class="font-mono font-bold text-cyan-400">0%</span>
-                </div>
-                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
-                  <div id="target-bar-depok" class="bg-cyan-500 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
-                </div>
-                <div class="flex justify-between items-center text-[11px] font-mono">
-                  <span id="target-real-depok" class="text-white font-bold">Rp 0</span>
-                  <span id="target-goal-depok" class="text-slate-500">/ Rp 0</span>
-                </div>
-              </div>
-
-              <div class="p-4 rounded-2xl bg-slate-950/70 border border-slate-800 space-y-2">
-                <div class="flex justify-between items-center text-xs">
-                  <span class="text-indigo-400 font-bold uppercase">Pondok Kopi</span>
-                  <span id="target-pct-pdk" class="font-mono font-bold text-indigo-400">0%</span>
-                </div>
-                <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
-                  <div id="target-bar-pdk" class="bg-indigo-500 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
-                </div>
-                <div class="flex justify-between items-center text-[11px] font-mono">
-                  <span id="target-real-pdk" class="text-white font-bold">Rp 0</span>
-                  <span id="target-goal-pdk" class="text-slate-500">/ Rp 0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- DASHBOARD TARGET HARIAN: DEPOK & PONDOK KOPI (LIVE PACE METER) -->
-          <div class="glass-card p-6 rounded-2xl space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200/60 dark:border-slate-800/60 pb-3">
               <div>
-                <div class="flex items-center gap-2">
-                  <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-cyan-500/10 text-cyan-700 dark:text-cyan-300 border border-cyan-500/20 tracking-wide uppercase">Live Pace Meter</span>
-                  <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Target Harian &amp; Bulanan Tim Sales</span>
-                </div>
-                <h3 class="text-base font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2 mt-1">
-                  <i class="fa-solid fa-bullseye text-cyan-600 dark:text-cyan-400"></i>
-                  Dashboard Target Harian: Depok &amp; Pondok Kopi
+                <h3 class="text-sm sm:text-base font-extrabold text-white flex items-center gap-2">
+                  Pace ke Target Omzet
+                  <span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">Target vs Real</span>
                 </h3>
+                <p class="text-xs text-slate-400">Monitoring pencapaian bulanan gabungan &amp; ritme penjualan harian sales tim.</p>
               </div>
-              <div class="text-xs text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800/80 px-3 py-1.5 rounded-xl border border-slate-200/80 dark:border-slate-700/70 font-semibold self-start sm:self-auto">
-                Target Bulanan: <strong class="text-cyan-700 dark:text-cyan-300">Rp 150 Juta / Cabang</strong>
+            </div>
+            <button onclick="openEditMonthlyTargetModal()" class="px-3.5 py-1.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs flex items-center gap-1.5 shadow-md shadow-amber-600/30 transition self-start sm:self-auto cursor-pointer">
+              <i class="fa-solid fa-pen-to-square"></i> Edit Target
+            </button>
+          </div>
+
+          <!-- Progress Bars: Total Gabungan, Depok, Pondok Kopi -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="target-progress-cards">
+            <!-- Total Gabungan -->
+            <div class="p-4 rounded-2xl bg-slate-950/70 border border-slate-800 space-y-2">
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-400 font-bold uppercase tracking-wider">Total Gabungan</span>
+                <span id="target-pct-total" class="font-mono font-bold text-amber-400">0%</span>
+              </div>
+              <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                <div id="target-bar-total" class="bg-gradient-to-r from-amber-500 to-emerald-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+              </div>
+              <div class="flex justify-between items-center text-[11px] font-mono">
+                <span id="target-real-total" class="text-white font-bold">Rp 0</span>
+                <span id="target-goal-total" class="text-slate-500">/ Rp 0</span>
               </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5" id="daily-sales-target-cards">
+            <!-- Cabang Depok -->
+            <div class="p-4 rounded-2xl bg-slate-950/70 border border-slate-800 space-y-2">
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-cyan-400 font-bold uppercase tracking-wider">Cabang Depok</span>
+                <span id="target-pct-depok" class="font-mono font-bold text-cyan-400">0%</span>
+              </div>
+              <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                <div id="target-bar-depok" class="bg-cyan-500 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+              </div>
+              <div class="flex justify-between items-center text-[11px] font-mono">
+                <span id="target-real-depok" class="text-white font-bold">Rp 0</span>
+                <span id="target-goal-depok" class="text-slate-500">/ Rp 0</span>
+              </div>
+            </div>
+
+            <!-- Pondok Kopi -->
+            <div class="p-4 rounded-2xl bg-slate-950/70 border border-slate-800 space-y-2">
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-indigo-400 font-bold uppercase tracking-wider">Pondok Kopi</span>
+                <span id="target-pct-pdk" class="font-mono font-bold text-indigo-400">0%</span>
+              </div>
+              <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                <div id="target-bar-pdk" class="bg-indigo-500 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+              </div>
+              <div class="flex justify-between items-center text-[11px] font-mono">
+                <span id="target-real-pdk" class="text-white font-bold">Rp 0</span>
+                <span id="target-goal-pdk" class="text-slate-500">/ Rp 0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pace Harian Tim Sales per Cabang -->
+          <div class="pt-2">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-gauge-high text-cyan-400"></i> Pace Harian Tim Sales per Cabang
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4" id="daily-sales-target-cards">
               <!-- Injected via JS -->
             </div>
           </div>
         </div>
 
-        <!-- ================= SUB-SECTION: KOMPARASI CABANG ================= -->
-        <div id="sub-exec-branches" class="space-y-6 scroll-mt-20">
-          <!-- PERBANDINGAN OMSET: DEPOK VS PONDOK KOPI -->
-          <div class="glass-card p-6 rounded-2xl space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-200/60 dark:border-slate-800/60 pb-3 gap-3">
-              <div>
-                <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                  <i class="fa-solid fa-chart-column text-cyan-600 dark:text-cyan-400"></i> Perbandingan Omset: Depok vs Pondok Kopi
-                </h3>
-                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5" id="exec-period-caption"></p>
-              </div>
-              <div class="flex flex-wrap items-center gap-3">
-                <!-- Toggle Mode: Bulan Berjalan vs 1 Tahun Berjalan -->
-                <div class="flex items-center gap-1 bg-slate-100 dark:bg-slate-900/90 p-1 rounded-xl border border-slate-200/80 dark:border-slate-800 text-xs">
-                  <button type="button" id="btn-branch-view-month" onclick="switchBranchComparisonView('month')" class="px-3 py-1 rounded-lg font-bold transition shadow-xs bg-white dark:bg-slate-800 text-cyan-600 dark:text-cyan-400 border border-slate-200/60 dark:border-slate-700/60 cursor-pointer">
-                    Bulan Berjalan
-                  </button>
-                  <button type="button" id="btn-branch-view-year" onclick="switchBranchComparisonView('year')" class="px-3 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
-                    1 Tahun Berjalan (YTD)
-                  </button>
-                </div>
-
-                <div id="branch-chart-legend" class="flex items-center gap-3">
-                  <span class="flex items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400 font-medium"><span class="w-2.5 h-2.5 rounded-sm bg-cyan-500"></span> Treatment</span>
-                  <span class="flex items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400 font-medium"><span class="w-2.5 h-2.5 rounded-sm bg-emerald-500"></span> Skincare / Produk</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="h-64 relative">
-              <canvas id="branchComparisonChart"></canvas>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2" id="branch-cards-grid"></div>
-
-            <!-- Akumulasi 1 Tahun Berjalan Summary Banner -->
-            <div id="branch-annual-summary-banner" class="hidden mt-2 p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
-              <div class="flex items-center gap-2.5">
-                <span class="w-8 h-8 rounded-lg bg-teal-500/15 border border-teal-500/30 text-teal-600 dark:text-teal-400 flex items-center justify-center font-bold text-sm shrink-0">
-                  <i class="fa-solid fa-calendar-check"></i>
-                </span>
-                <div>
-                  <div class="font-bold text-slate-900 dark:text-white">Akumulasi Omset 1 Tahun Berjalan (2026)</div>
-                  <div class="text-[11px] text-slate-500 dark:text-slate-400" id="branch-annual-overall-text">Mei – September 2026 • Total 1,182 Transaksi Invoices</div>
-                </div>
-              </div>
-              <div class="text-left sm:text-right">
-                <div class="text-base font-extrabold text-teal-600 dark:text-teal-400 font-mono tracking-tight" id="branch-annual-overall-rev">Rp 1.02 Miliar</div>
-                <div class="text-[10.5px] text-slate-500 dark:text-slate-400">Total Gabungan Depok + Pondok Kopi</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ================= SUB-SECTION: REVENUE FORECAST & ANOMALI (dipindah dari Operasional & Aset) ================= -->
-        <div class="grid grid-cols-1 gap-6">
-          <!-- EX-06~07: Cross-Division Revenue Forecast & Anomaly Detection -->
-          <div class="glass-card p-6 rounded-2xl space-y-4">
-            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-              <div>
-                <h3 class="text-sm font-bold text-white flex items-center gap-2">
-                  <i class="fa-solid fa-chart-line-up text-cyan-400"></i> Revenue Forecast &amp; Deteksi Anomali
-                </h3>
-              </div>
-              <span id="rf-forecast-badge" class="text-xs font-mono text-emerald-400 font-bold bg-emerald-500/10 px-2.5 py-1 rounded-lg">Memuat...</span>
-            </div>
-
-            <!-- Forecast Summary Cards -->
-            <div class="grid grid-cols-3 gap-3 text-center font-mono">
-              <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
-                <div class="text-[10px] text-slate-400">Bulan Ini (sejauh ini)</div>
-                <div class="text-sm font-bold text-slate-200 mt-0.5" id="rf-current-month">-</div>
-              </div>
-              <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
-                <div class="text-[10px] text-slate-400">Proyeksi Bulan Depan</div>
-                <div class="text-sm font-bold text-emerald-400 mt-0.5" id="rf-forecast-next">-</div>
-              </div>
-              <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
-                <div class="text-[10px] text-slate-400">Dasar Pertumbuhan</div>
-                <div class="text-sm font-bold text-cyan-400 mt-0.5" id="rf-growth-pct">-</div>
-              </div>
-            </div>
-            <p id="rf-forecast-basis-note" class="text-[10px] text-slate-500 italic"></p>
-
-            <!-- Monthly Trend (data asli, bukan chart palsu) -->
-            <div class="grid grid-cols-3 sm:grid-cols-6 gap-2" id="rf-monthly-trend-grid"></div>
-
-            <!-- Anomalies List -->
-            <div class="space-y-3" id="anomaly-alerts-list">
-              <!-- Populated via JS -->
-            </div>
-            <p id="rf-anomaly-note" class="text-[10px] text-slate-500 italic"></p>
-          </div>
-        </div>
-
-        <!-- ================= SUB-SECTION: JAM SIBUK & HEATMAP ================= -->
-        <!-- ================= SUB-SECTION: ANALISIS JAM SIBUK & HEATMAP KEDATANGAN ================= -->
-        <div id="sub-exec-peakhour" class="scroll-mt-20">
-          <div class="glass-card p-6 rounded-3xl space-y-6 border border-indigo-500/30 bg-slate-900/90 shadow-sm">
-            
-            <!-- 1. Header with Title, Badge, Direct Filter Buttons, and Peak Summary -->
-            <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4 border-b border-slate-200/80 dark:border-slate-800 pb-4">
-              <div>
-                <div class="flex items-center gap-2 flex-wrap">
-                  <div class="w-8 h-8 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm shrink-0">
-                    <i class="fa-solid fa-chart-column"></i>
-                  </div>
-                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
-                    Analisis Jam Sibuk (Peak Hour) &amp; Matriks Heatmap
-                  </h3>
-                  <span id="peak-hour-active-badge" class="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-indigo-500/15 text-indigo-700 dark:text-indigo-300 font-bold border border-indigo-500/30">Seluruh Data</span>
-                </div>
-              </div>
-
-              <!-- Quick Direct Filter Buttons for All Periods -->
-              <div class="flex flex-col sm:flex-row sm:items-center gap-2.5 flex-wrap">
-                <div class="inline-flex items-center gap-1 p-1 bg-slate-100 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 rounded-xl text-xs flex-wrap" id="peakhour-filter-container">
-                  <button type="button" onclick="setPeakHourFilter('all')" id="btn-peakhour-all" class="px-2.5 py-1 rounded-lg font-bold transition shadow-xs bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 border border-slate-200/60 dark:border-slate-700/60 cursor-pointer">
-                    Semua Data
-                  </button>
-                  <button type="button" onclick="setPeakHourFilter('2026')" id="btn-peakhour-year" class="px-2.5 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
-                    1 Thn (2026)
-                  </button>
-                  <span class="text-slate-700 px-0.5">•</span>
-                  <button type="button" onclick="setPeakHourFilter('2026-09')" id="btn-peakhour-2026-09" class="px-2.5 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
-                    Sep 2026
-                  </button>
-                  <button type="button" onclick="setPeakHourFilter('2026-08')" id="btn-peakhour-2026-08" class="px-2.5 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
-                    Agu 2026
-                  </button>
-                  <button type="button" onclick="setPeakHourFilter('2026-07')" id="btn-peakhour-2026-07" class="px-2.5 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
-                    Jul 2026
-                  </button>
-                  <button type="button" onclick="setPeakHourFilter('2026-06')" id="btn-peakhour-2026-06" class="px-2.5 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
-                    Jun 2026
-                  </button>
-                  <button type="button" onclick="setPeakHourFilter('2026-05')" id="btn-peakhour-2026-05" class="px-2.5 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
-                    Mei 2026
-                  </button>
-                </div>
-
-                <span id="peak-hour-summary" class="text-xs font-mono text-indigo-700 dark:text-indigo-300 font-bold bg-indigo-500/15 px-3 py-1.5 rounded-lg border border-indigo-500/30 shrink-0 shadow-2xs text-center">-</span>
-              </div>
-            </div>
-
-            <!-- 2. Top Half: Bar Chart & Hari Tersibuk -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
-              <!-- Bar chart jam -->
-              <div class="lg:col-span-2">
-                <h4 class="text-[11px] font-bold text-slate-400 uppercase mb-2 flex items-center gap-1.5">
-                  <i class="fa-solid fa-clock text-indigo-400"></i> Distribusi Kedatangan per Jam (WIB)
-                </h4>
-                <div id="peak-hour-chart" class="space-y-1.5"></div>
-              </div>
-
-              <!-- Ranking hari -->
-              <div>
-                <h4 class="text-[11px] font-bold text-slate-400 uppercase mb-2 flex items-center gap-1.5">
-                  <i class="fa-solid fa-calendar-days text-indigo-400"></i> Hari Tersibuk
-                </h4>
-                <div id="peak-day-list" class="space-y-1.5"></div>
-              </div>
-            </div>
-
-            <!-- Divider -->
-            <div class="border-t border-slate-200/60 dark:border-slate-800/80 pt-5 space-y-3">
-              <!-- 3. Bottom Half: 2D Heatmap Matrix -->
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <div class="flex items-center gap-2">
-                  <div class="w-6 h-6 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs">
-                    <i class="fa-solid fa-fire text-amber-400"></i>
-                  </div>
-                  <div>
-                    <h4 class="text-xs sm:text-sm font-extrabold text-white flex items-center gap-2">
-                      Matriks Heatmap Jam Ramai (Hari × Jam Praktik)
-                      <span class="px-2 py-0.5 rounded-full text-[9px] font-mono font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Visual Traffic</span>
-                    </h4>
-                  </div>
-                </div>
-                <div class="flex items-center gap-2 text-[10px] font-mono text-slate-400">
-                  <span>Rendah</span>
-                  <span class="w-2.5 h-2.5 rounded bg-slate-800 border border-slate-700"></span>
-                  <span class="w-2.5 h-2.5 rounded bg-indigo-900/60"></span>
-                  <span class="w-2.5 h-2.5 rounded bg-indigo-600"></span>
-                  <span class="w-2.5 h-2.5 rounded bg-amber-500"></span>
-                  <span class="w-2.5 h-2.5 rounded bg-rose-500"></span>
-                  <span>Padat</span>
-                </div>
-              </div>
-
-              <div class="overflow-x-auto rounded-2xl border border-slate-200/60 dark:border-slate-800 p-2 bg-slate-950/60">
-                <div id="peak-hour-2d-grid" class="min-w-[650px]">
-                  <!-- Injected dynamically via JS -->
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-
-        <!-- ==================== EXECUTIVE: PERFORMA DOKTER & PERAWAT ==================== -->
-        <div class="glass-card p-6 rounded-2xl space-y-4">
+        <!-- ZONE D: PERLU TINDAKAN (ACTION ITEMS - MAX 3) -->
+        <div id="exec-zone-d-actions" class="glass-card p-5 sm:p-6 rounded-3xl border border-rose-500/20 bg-gradient-to-b from-rose-950/15 via-slate-900/90 to-slate-900/90 space-y-4">
           <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-            <div>
-              <h2 class="text-sm font-bold text-white flex items-center gap-2">
-                <i class="fa-solid fa-user-doctor text-cyan-400"></i> Performa Dokter &amp; Perawat
-              </h2>
-            </div>
-            <button onclick="switchTab('commissions')" class="text-[11px] text-cyan-400 hover:underline font-semibold">Lihat Detail Lengkap →</button>
-          </div>
-
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
-              <div class="text-xl font-black text-white font-mono" id="staff-perf-total-doctors">-</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Dokter Aktif</div>
-            </div>
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
-              <div class="text-xl font-black text-white font-mono" id="staff-perf-total-therapists">-</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Perawat/Terapis Aktif</div>
-            </div>
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
-              <div class="text-xl font-black text-cyan-400 font-mono" id="staff-perf-avg-kpi">-</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Rata-Rata Skor KPI Dokter</div>
-            </div>
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
-              <div class="text-xl font-black text-emerald-400 font-mono" id="staff-perf-total-commission">-</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Total Komisi Bulan Ini</div>
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-xl bg-rose-500/20 text-rose-400 flex items-center justify-center font-bold text-sm">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </div>
+              <div>
+                <h3 class="text-sm sm:text-base font-extrabold text-white flex items-center gap-2">
+                  Perlu Tindakan Eksekutif
+                  <span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-rose-500/20 text-rose-300 border border-rose-500/30">Prioritas Hari Ini</span>
+                </h3>
+                <p class="text-xs text-slate-400">Anomali, paket belum terpakai, dan pengecekan invoice yang memerlukan perhatian segera.</p>
+              </div>
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-amber-500/20" id="staff-perf-top-doctor-card">
-              <!-- Injected via JS -->
-            </div>
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-purple-500/20" id="staff-perf-top-therapist-card">
-              <!-- Injected via JS -->
-            </div>
-          </div>
+            <!-- Left: Paket Belum Terpakai (Recall Pasien) -->
+            <button type="button" id="unused-kpi-card" onclick="openUnusedPackages()" class="text-left p-4 rounded-2xl bg-slate-950/70 border border-amber-500/25 hover:border-amber-500/50 transition flex flex-col justify-between gap-3 cursor-pointer group">
+              <div class="flex items-start justify-between gap-2">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-sm"><i class="fa-solid fa-ticket-simple"></i></span>
+                  <div>
+                    <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Sisa Treatment / Paket Belum Terpakai</div>
+                    <div class="text-xs text-slate-500">Potensi revenue &amp; recall pasien tertunda</div>
+                  </div>
+                </div>
+                <span class="text-[11px] text-amber-400 group-hover:translate-x-0.5 transition-transform"><i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+              <div class="flex items-baseline gap-3 flex-wrap pt-1 border-t border-slate-800/60">
+                <span id="unused-kpi-total" class="text-xl font-black text-amber-400 tabular-nums">—</span>
+                <span id="unused-kpi-patients" class="text-xs text-slate-400"></span>
+              </div>
+            </button>
 
-          <!-- Cabang Terbaik Bulan Ini — skor gabungan omset+kunjungan+KPI dokter -->
-          <div class="p-4 rounded-xl bg-gradient-to-r from-amber-950/30 via-slate-900/80 to-slate-900/80 border border-amber-500/20" id="branch-comparison-card">
-            <!-- Injected via JS -->
+            <!-- Right: Anomali & Rekonsiliasi (Max 3) -->
+            <div class="space-y-2.5" id="anomaly-alerts-list">
+              <!-- Populated via JS -->
+            </div>
           </div>
         </div>
 
+        <!-- ZONE E: KINERJA PER CABANG (HEAD-TO-HEAD) -->
+        <div id="sub-exec-branches" class="glass-card p-6 rounded-3xl border border-slate-800/80 bg-slate-900/90 space-y-5 scroll-mt-20">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-800 pb-3 gap-3">
+            <div>
+              <h3 class="text-base font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-chart-column text-cyan-400"></i> Kinerja per Cabang: Depok vs Pondok Kopi
+              </h3>
+              <p class="text-xs text-slate-400 mt-0.5" id="exec-period-caption"></p>
+            </div>
+            <div class="flex flex-wrap items-center gap-3">
+              <!-- Toggle Mode: Bulan Berjalan vs 1 Tahun Berjalan -->
+              <div class="flex items-center gap-1 bg-slate-950 p-1 rounded-xl border border-slate-800 text-xs">
+                <button type="button" id="btn-branch-view-month" onclick="switchBranchComparisonView('month')" class="px-3 py-1 rounded-lg font-bold transition shadow-xs bg-slate-800 text-cyan-400 border border-slate-700/60 cursor-pointer">
+                  Bulan Berjalan
+                </button>
+                <button type="button" id="btn-branch-view-year" onclick="switchBranchComparisonView('year')" class="px-3 py-1 rounded-lg font-semibold text-slate-400 hover:text-white transition cursor-pointer border border-transparent">
+                  1 Tahun Berjalan (YTD)
+                </button>
+              </div>
 
+              <div id="branch-chart-legend" class="flex items-center gap-3">
+                <span class="flex items-center gap-1.5 text-xs text-slate-400 font-medium"><span class="w-2.5 h-2.5 rounded-sm bg-cyan-500"></span> Treatment</span>
+                <span class="flex items-center gap-1.5 text-xs text-slate-400 font-medium"><span class="w-2.5 h-2.5 rounded-sm bg-emerald-500"></span> Skincare / Produk</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-64 relative">
+            <canvas id="branchComparisonChart"></canvas>
+          </div>
+
+          <!-- Branch Cards Grid (Omset, Invoices, Produk) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1" id="branch-cards-grid"></div>
+
+          <!-- Cabang Unggul Bulan Ini (Composite Winner Card) -->
+          <div class="p-4 rounded-2xl bg-gradient-to-r from-amber-950/30 via-slate-900/80 to-slate-900/80 border border-amber-500/20" id="branch-comparison-card">
+            <!-- Injected via JS -->
+          </div>
+
+          <!-- Akumulasi 1 Tahun Berjalan Summary Banner (Mini 1-line) -->
+          <div id="branch-annual-summary-banner" class="hidden p-3.5 rounded-xl bg-slate-950/70 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <div class="flex items-center gap-2.5">
+              <span class="w-7 h-7 rounded-lg bg-teal-500/15 border border-teal-500/30 text-teal-400 flex items-center justify-center font-bold text-xs shrink-0">
+                <i class="fa-solid fa-calendar-check"></i>
+              </span>
+              <div>
+                <div class="font-bold text-white">Akumulasi Omset 1 Tahun Berjalan (2026)</div>
+                <div class="text-[11px] text-slate-400" id="branch-annual-overall-text">Mei – September 2026 • Total 1,182 Transaksi Invoices</div>
+              </div>
+            </div>
+            <div class="text-left sm:text-right">
+              <div class="text-base font-extrabold text-teal-400 font-mono tracking-tight" id="branch-annual-overall-rev">Rp 1.02 Miliar</div>
+              <div class="text-[10px] text-slate-500">Total Gabungan Depok + Pondok Kopi</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZONE F: TREN & PENYUMBANG OMSET -->
+        <div id="exec-zone-f-trends" class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <!-- Tren Omset 6 Bulan (Lg: col-span-5) -->
+          <div class="lg:col-span-5 glass-card p-6 rounded-3xl border border-slate-800/80 bg-slate-900/90 space-y-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <div class="flex items-center gap-2">
+                  <span class="w-7 h-7 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xs"><i class="fa-solid fa-chart-line"></i></span>
+                  <h3 class="text-sm font-bold text-white">Tren Pendapatan 6 Bulan</h3>
+                </div>
+                <span class="text-[10px] font-mono text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700/60">Historis</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-3 mb-4">Konsistensi omset dari bulan ke bulan.</p>
+              <div class="grid grid-cols-3 sm:grid-cols-3 gap-2.5" id="rf-monthly-trend-grid">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-800/80 text-[11px] text-slate-400 flex items-center justify-between">
+              <span>Basis: Data invoices Neosoft</span>
+              <span class="text-cyan-400 font-semibold cursor-pointer hover:underline" onclick="switchTab('finance')">Keuangan Selengkapnya →</span>
+            </div>
+          </div>
+
+          <!-- Top 5 Treatments (Lg: col-span-7) -->
+          <div class="lg:col-span-7 glass-card p-6 rounded-3xl border border-amber-500/25 bg-slate-900/90 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs"><i class="fa-solid fa-trophy"></i></span>
+                <div>
+                  <h3 class="text-sm font-bold text-white">Top 5 Treatment Penyumbang Omset</h3>
+                  <p class="text-[11px] text-slate-400">Treatment terlaris penentu pencapaian bulan ini</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono font-bold text-amber-300 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">Best Sellers</span>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs">
+                <thead class="bg-slate-950/70 text-slate-400 font-semibold border-b border-slate-800">
+                  <tr>
+                    <th class="p-2.5 w-8">#</th>
+                    <th class="p-2.5">Nama Treatment</th>
+                    <th class="p-2.5 text-center">Tindakan</th>
+                    <th class="p-2.5 text-right">Total Omset</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800/60" id="top-treatments-table-body">
+                  <!-- Injected via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZONE G: TAUTAN MENDALAM (DEEP LINKS KE OPERASIONAL) -->
+        <div id="exec-zone-g-links" class="p-5 rounded-3xl bg-slate-900/50 border border-slate-800/80 space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-2">
+              <i class="fa-solid fa-compass text-indigo-400"></i> Eksplorasi Detail Modul Spesialis
+            </div>
+            <span class="text-[11px] text-slate-500">Pintasan sekali klik</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <!-- Link 1: Jam Sibuk & Heatmap -> Operational -->
+            <div onclick="switchTab('operational'); setTimeout(() => document.getElementById('sub-exec-peakhour')?.scrollIntoView({behavior: 'smooth'}), 150);" class="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-indigo-500/50 hover:bg-slate-900 transition cursor-pointer group flex items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-indigo-500/15 text-indigo-400 flex items-center justify-center text-sm group-hover:scale-105 transition-transform">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-white group-hover:text-indigo-300 transition-colors">Jam Sibuk &amp; Heatmap</div>
+                  <div class="text-[10px] text-slate-400">Modul Operasional</div>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-right text-xs text-slate-500 group-hover:text-indigo-400 group-hover:translate-x-0.5 transition"></i>
+            </div>
+
+            <!-- Link 2: Performa Dokter & Perawat -> HR -->
+            <div onclick="switchTab('hr'); setTimeout(() => document.getElementById('sub-hr-staff-performance')?.scrollIntoView({behavior: 'smooth'}), 150);" class="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-900 transition cursor-pointer group flex items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-cyan-500/15 text-cyan-400 flex items-center justify-center text-sm group-hover:scale-105 transition-transform">
+                  <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-white group-hover:text-cyan-300 transition-colors">Performa Tim Medis</div>
+                  <div class="text-[10px] text-slate-400">Modul HR &amp; Staf</div>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-right text-xs text-slate-500 group-hover:text-cyan-400 group-hover:translate-x-0.5 transition"></i>
+            </div>
+
+            <!-- Link 3: Kalkulator Komisi -> Finance -->
+            <div onclick="switchTab('commissions')" class="p-3.5 rounded-2xl bg-slate-950/80 border border-emerald-500/50 hover:bg-slate-900 transition cursor-pointer group flex items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-sm group-hover:scale-105 transition-transform">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-white group-hover:text-emerald-300 transition-colors">Kalkulator Komisi</div>
+                  <div class="text-[10px] text-slate-400">Modul Finance</div>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-right text-xs text-slate-500 group-hover:text-emerald-400 group-hover:translate-x-0.5 transition"></i>
+            </div>
+
+            <!-- Link 4: Kepuasan & Feedback Pasien -> Marketing -->
+            <div onclick="switchTab('marketing')" class="p-3.5 rounded-2xl bg-slate-950/80 border border-amber-500/50 hover:bg-slate-900 transition cursor-pointer group flex items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center text-sm group-hover:scale-105 transition-transform">
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-white group-hover:text-amber-300 transition-colors">Feedback &amp; CSAT</div>
+                  <div class="text-[10px] text-slate-400">Modul Marketing &amp; CX</div>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-right text-xs text-slate-500 group-hover:text-amber-400 group-hover:translate-x-0.5 transition"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compatibility Container for Legacy IDs (Kept hidden so JS queries run safely) -->
+        <div class="hidden" aria-hidden="true">
+          <div id="kpi-invoices-breakdown"></div>
+          <div id="kpi-attendance-val"></div>
+          <div id="kpi-attendance-sub"></div>
+          <div id="kpi-booking-conversion"></div>
+          <div id="kpi-booking-conversion-sub"></div>
+          <div id="kpi-patient-rating"></div>
+          <div id="kpi-patient-rating-sub"></div>
+          <div id="rf-current-month"></div>
+          <div id="rf-forecast-basis-note"></div>
+          <div id="rf-anomaly-note"></div>
+        </div>
       </div>
 
       <!-- ================= SECTION 2: AUTOMATION & CRON HUB ================= -->
@@ -5231,7 +5129,7 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
         <!-- Commission Payout KPI Cards — payroll klinik, owner & finance saja -->
         <div id="commission-payout-kpi-row" class="grid grid-cols-1 md:grid-cols-3 gap-5">
           <div class="glass-card p-5 rounded-2xl glow-emerald">
-            <div class="text-xs font-bold text-slate-400 uppercase">Total Komisi Dokter &amp; Terapis (Agustus)</div>
+            <div class="text-xs font-bold text-slate-400 uppercase">Total Komisi Dokter &amp; Terapis (Bulan Berjalan)</div>
             <div id="kpi-total-comm" class="text-2xl font-extrabold text-emerald-400 font-mono mt-1">Rp 44.595.000</div>
             <div class="text-[11px] text-slate-400 mt-1">Dari Total Omset: <span class="text-white font-bold" id="kpi-comm-omset-pct">18.6%</span></div>
           </div>
@@ -7179,6 +7077,47 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
           <div class="grid grid-cols-1 lg:grid-cols-4 gap-5" id="doctors-full-cards"></div>
         </div>
 
+        <!-- ==================== PERFORMA DOKTER & PERAWAT (Dipindah dari Summary) ==================== -->
+        <div id="sub-hr-staff-performance" class="glass-card p-6 rounded-2xl space-y-4 border border-rose-500/20">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <div>
+              <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-user-doctor text-rose-400"></i> Performa Dokter &amp; Perawat
+              </h3>
+              <p class="text-xs text-slate-400 mt-0.5">Leaderboard pencapaian dokter, skor KPI, dan produktivitas perawat/terapis.</p>
+            </div>
+            <button onclick="switchTab('commissions')" class="text-xs text-cyan-400 hover:underline font-semibold cursor-pointer">Lihat Rincian Komisi →</button>
+          </div>
+
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+              <div class="text-xl font-black text-white font-mono" id="staff-perf-total-doctors">-</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Dokter Aktif</div>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+              <div class="text-xl font-black text-white font-mono" id="staff-perf-total-therapists">-</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Perawat/Terapis Aktif</div>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+              <div class="text-xl font-black text-cyan-400 font-mono" id="staff-perf-avg-kpi">-</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Rata-Rata Skor KPI Dokter</div>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+              <div class="text-xl font-black text-emerald-400 font-mono" id="staff-perf-total-commission">-</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Total Komisi Bulan Ini</div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-amber-500/20" id="staff-perf-top-doctor-card">
+              <!-- Injected via JS -->
+            </div>
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-purple-500/20" id="staff-perf-top-therapist-card">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+        </div>
+
         <!-- ==================== ABSENSI HARIAN (diisi HR, tanpa Gaji.id) ==================== -->
         <div id="hr-att-card" class="glass-card p-6 rounded-3xl border border-cyan-500/30 bg-gradient-to-b from-slate-900/90 to-slate-950 space-y-4">
           <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 border-b border-slate-800 pb-3">
@@ -8377,6 +8316,110 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
 
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-5" id="ops-sop-grid">
             <!-- Injected via JS -->
+          </div>
+        </div>
+
+        <!-- ==================== ANALISIS JAM SIBUK & HEATMAP KEDATANGAN (Dipindah dari Summary) ==================== -->
+        <div id="sub-exec-peakhour" class="scroll-mt-20">
+          <div class="glass-card p-6 rounded-3xl space-y-6 border border-indigo-500/30 bg-slate-900/90 shadow-sm">
+            
+            <!-- 1. Header with Title, Badge, Direct Filter Buttons, and Peak Summary -->
+            <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4 border-b border-slate-200/80 dark:border-slate-800 pb-4">
+              <div>
+                <div class="flex items-center gap-2 flex-wrap">
+                  <div class="w-8 h-8 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm shrink-0">
+                    <i class="fa-solid fa-chart-column"></i>
+                  </div>
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+                    Analisis Jam Sibuk (Peak Hour) &amp; Matriks Heatmap
+                  </h3>
+                  <span id="peak-hour-active-badge" class="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-indigo-500/15 text-indigo-700 dark:text-indigo-300 font-bold border border-indigo-500/30">Seluruh Data</span>
+                </div>
+              </div>
+
+              <!-- Quick Direct Filter Buttons for All Periods -->
+              <div class="flex flex-col sm:flex-row sm:items-center gap-2.5 flex-wrap">
+                <div class="inline-flex items-center gap-1 p-1 bg-slate-100 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 rounded-xl text-xs flex-wrap" id="peakhour-filter-container">
+                  <button type="button" onclick="setPeakHourFilter('all')" id="btn-peakhour-all" class="px-2.5 py-1 rounded-lg font-bold transition shadow-xs bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 border border-slate-200/60 dark:border-slate-700/60 cursor-pointer">
+                    Semua Data
+                  </button>
+                  <button type="button" onclick="setPeakHourFilter('2026')" id="btn-peakhour-year" class="px-2.5 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
+                    1 Thn (2026)
+                  </button>
+                  <span class="text-slate-700 px-0.5">•</span>
+                  <button type="button" onclick="setPeakHourFilter('2026-09')" id="btn-peakhour-2026-09" class="px-2.5 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
+                    Sep 2026
+                  </button>
+                  <button type="button" onclick="setPeakHourFilter('2026-08')" id="btn-peakhour-2026-08" class="px-2.5 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
+                    Agu 2026
+                  </button>
+                  <button type="button" onclick="setPeakHourFilter('2026-07')" id="btn-peakhour-2026-07" class="px-2.5 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
+                    Jul 2026
+                  </button>
+                  <button type="button" onclick="setPeakHourFilter('2026-06')" id="btn-peakhour-2026-06" class="px-2.5 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
+                    Jun 2026
+                  </button>
+                  <button type="button" onclick="setPeakHourFilter('2026-05')" id="btn-peakhour-2026-05" class="px-2.5 py-1 rounded-lg font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition cursor-pointer border border-transparent">
+                    Mei 2026
+                  </button>
+                </div>
+
+                <span id="peak-hour-summary" class="text-xs font-mono text-indigo-700 dark:text-indigo-300 font-bold bg-indigo-500/15 px-3 py-1.5 rounded-lg border border-indigo-500/30 shrink-0 shadow-2xs text-center">-</span>
+              </div>
+            </div>
+
+            <!-- 2. Top Half: Bar Chart & Hari Tersibuk -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+              <!-- Bar chart jam -->
+              <div class="lg:col-span-2">
+                <h4 class="text-[11px] font-bold text-slate-400 uppercase mb-2 flex items-center gap-1.5">
+                  <i class="fa-solid fa-clock text-indigo-400"></i> Distribusi Kedatangan per Jam (WIB)
+                </h4>
+                <div id="peak-hour-chart" class="space-y-1.5"></div>
+              </div>
+
+              <!-- Ranking hari -->
+              <div>
+                <h4 class="text-[11px] font-bold text-slate-400 uppercase mb-2 flex items-center gap-1.5">
+                  <i class="fa-solid fa-calendar-days text-indigo-400"></i> Hari Tersibuk
+                </h4>
+                <div id="peak-day-list" class="space-y-1.5"></div>
+              </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-slate-200/60 dark:border-slate-800/80 pt-5 space-y-3">
+              <!-- 3. Bottom Half: 2D Heatmap Matrix -->
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs">
+                    <i class="fa-solid fa-fire text-amber-400"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xs sm:text-sm font-extrabold text-white flex items-center gap-2">
+                      Matriks Heatmap Jam Ramai (Hari × Jam Praktik)
+                      <span class="px-2 py-0.5 rounded-full text-[9px] font-mono font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Visual Traffic</span>
+                    </h4>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 text-[10px] font-mono text-slate-400">
+                  <span>Rendah</span>
+                  <span class="w-2.5 h-2.5 rounded bg-slate-800 border border-slate-700"></span>
+                  <span class="w-2.5 h-2.5 rounded bg-indigo-900/60"></span>
+                  <span class="w-2.5 h-2.5 rounded bg-indigo-600"></span>
+                  <span class="w-2.5 h-2.5 rounded bg-amber-500"></span>
+                  <span class="w-2.5 h-2.5 rounded bg-rose-500"></span>
+                  <span>Padat</span>
+                </div>
+              </div>
+
+              <div class="overflow-x-auto rounded-2xl border border-slate-200/60 dark:border-slate-800 p-2 bg-slate-950/60">
+                <div id="peak-hour-2d-grid" class="min-w-[650px]">
+                  <!-- Injected dynamically via JS -->
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -13301,6 +13344,20 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
           const pctDepok = t.depok_target > 0 ? Math.min(100, Math.round((realDepok / t.depok_target) * 100)) : 0;
           const pctPdk = t.pondok_kopi_target > 0 ? Math.min(100, Math.round((realPdk / t.pondok_kopi_target) * 100)) : 0;
 
+          const elTargetPctBadge = document.getElementById('kpi-target-pct-badge');
+          if (elTargetPctBadge) {
+            const isGood = pctTotal >= 80;
+            elTargetPctBadge.className = `px-2 py-0.5 rounded-full text-[10px] font-bold ${isGood ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/25' : 'bg-amber-500/15 text-amber-400 border border-amber-500/25'} flex items-center gap-1`;
+            elTargetPctBadge.innerHTML = `<i class="fa-solid fa-${isGood ? 'arrow-trend-up' : 'gauge-high'} text-[9px]"></i> ${pctTotal}% vs target`;
+          }
+          const daysLeftChip = document.getElementById('exec-days-left-chip');
+          if (daysLeftChip) {
+            const now = new Date();
+            const lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+            const remaining = Math.max(0, lastDay - now.getDate());
+            daysLeftChip.textContent = `Sisa ${remaining} hari`;
+          }
+
           const elPctTot = document.getElementById('target-pct-total');
           const elBarTot = document.getElementById('target-bar-total');
           const elRealTot = document.getElementById('target-real-total');
@@ -14212,9 +14269,10 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
         if (tabId === 'hr' && clinicData && typeof renderAllDivisions === 'function') renderAllDivisions(clinicData);
       }
 
-      // Auto-load Executive Owner Targets & Peak Hour Heatmap saat tab branches dibuka
-      if (tabId === 'branches' || tabId === 'summary') {
+      // Auto-load Executive Owner Targets & Peak Hour Heatmap saat tab branches, summary, atau operational dibuka
+      if (tabId === 'branches' || tabId === 'summary' || tabId === 'operational') {
         if (typeof loadMonthlyTargetDashboard === 'function') loadMonthlyTargetDashboard();
+        if (typeof loadPeakHourAnalysis === 'function') loadPeakHourAnalysis();
         if (typeof loadPeakHour2DHeatmap === 'function') loadPeakHour2DHeatmap();
       }
 
@@ -16730,6 +16788,28 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
       const kpiInvBdEl = document.getElementById('kpi-invoices-breakdown');
       if (kpiInvBdEl) kpiInvBdEl.innerHTML = invoicesBreakdown;
 
+      // Executive Summary Zone A: Status Bar Updates
+      const statusPeriod = document.getElementById('exec-status-period');
+      if (statusPeriod) {
+        statusPeriod.textContent = (typeof selectedPeriod !== 'undefined' && selectedPeriod) ? `${selectedPeriod} (Bulan Berjalan)` : 'September 2026 (Bulan Berjalan)';
+      }
+      const statusBranch = document.getElementById('exec-status-branch');
+      if (statusBranch) {
+        statusBranch.textContent = selectedBranch === 'dpk' ? 'Cabang Depok Margonda' : (selectedBranch === 'pdk' ? 'Cabang Pondok Kopi' : '2 Cabang: Depok & Pondok Kopi');
+      }
+      const statusSync = document.getElementById('exec-status-sync');
+      if (statusSync && data.sync_status) {
+        statusSync.textContent = data.sync_status.health_label || 'Live sync Neosoft OK';
+      }
+      const statusYtdRev = document.getElementById('exec-status-ytd-rev');
+      const statusYtdTx = document.getElementById('exec-status-ytd-tx');
+      if (statusYtdRev && data.branch_comparison_hub?.ytd_summary?.total_revenue_fmt) {
+        statusYtdRev.textContent = data.branch_comparison_hub.ytd_summary.total_revenue_fmt;
+      }
+      if (statusYtdTx && data.branch_comparison_hub?.ytd_summary?.total_invoices) {
+        statusYtdTx.textContent = `${Number(data.branch_comparison_hub.ytd_summary.total_invoices).toLocaleString('id-ID')} transaksi`;
+      }
+
       // Kartu staf aktif klinik Neosoft
       const attValEl = document.getElementById('kpi-attendance-val');
       const attSubEl = document.getElementById('kpi-attendance-sub');
@@ -17037,10 +17117,10 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
         `).join('');
       }
 
-      // B. Top 10 Treatments Leaderboard
+      // B. Top 5 Treatments Leaderboard (Executive Summary Zone F)
       const topTreatBody = document.getElementById('top-treatments-table-body');
       if (topTreatBody && data.top_treatments_ranking) {
-        topTreatBody.innerHTML = data.top_treatments_ranking.map(t => `
+        topTreatBody.innerHTML = data.top_treatments_ranking.slice(0, 5).map(t => `
           <tr class="hover:bg-slate-800/40 transition">
             <td class="p-2.5 font-mono text-slate-400 font-bold">${t.rank <= 3 ? ['🥇','🥈','🥉'][t.rank-1] : t.rank}</td>
             <td class="p-2.5">
@@ -17048,19 +17128,6 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
               <div class="text-[10px] text-slate-400 font-mono">${t.code} • ${t.duration}</div>
             </td>
             <td class="p-2.5 text-center font-mono font-bold text-cyan-400">${t.performed_count}x</td>
-            <td class="p-2.5 font-mono">
-              ${t.is_on_promo
-                ? `<span class="${t.promo_is_default ? 'text-amber-300' : 'text-rose-300'} font-bold">${t.promo_price_fmt}</span>
-                   <span class="line-through text-slate-500 text-[10px] block">${t.price_fmt}</span>${t.promo_is_default ? '<span class="text-amber-400/80 text-[10px] block">diskon default 5%</span>' : ''}`
-                : `<span class="text-white font-bold">${t.price_fmt}</span>
-                   <span class="text-slate-600 text-[10px] block italic">tanpa promo</span>`}
-            </td>
-            <td class="p-2.5 font-mono" title="${t.lowest_price_fmt ? 'Harga terendah dari spreadsheet harga' : 'Belum ada harga terendah di spreadsheet harga'}">
-              ${t.lowest_price_fmt
-                ? `<span class="text-amber-300 font-bold">${t.lowest_price_fmt}</span>
-                   <span class="text-[9px] block text-emerald-400">&#10003; Spreadsheet</span>`
-                : '<span class="text-slate-600 italic text-[10px]">belum ada di spreadsheet</span>'}
-            </td>
             <td class="p-2.5 text-right font-mono font-black text-white">${t.total_revenue_fmt}</td>
           </tr>
         `).join('');
@@ -19242,9 +19309,11 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
         const rf = data.revenue_forecast_hub;
         const badge = document.getElementById('rf-forecast-badge');
         if (badge) {
+          const isWarning = (rf.growth_pct || '').includes('-') || (rf.anomalies && rf.anomalies.length > 0);
+          badge.className = `px-2 py-0.5 rounded-full text-[10px] font-bold ${isWarning ? 'bg-amber-500/15 text-amber-300 border border-amber-500/25' : 'bg-purple-500/15 text-purple-300 border border-purple-500/25'}`;
           badge.textContent = rf.forecast_available
-            ? `Proyeksi: ${rf.forecast_next_fmt} (${rf.growth_pct})`
-            : 'Belum cukup data untuk proyeksi';
+            ? (isWarning ? 'Waspada' : 'On-Track')
+            : 'Belum cukup data';
         }
         const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
         setText('rf-current-month', rf.current_month_fmt || '-');
@@ -19264,14 +19333,28 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
 
         const anomContainer = document.getElementById('anomaly-alerts-list');
         if (anomContainer) {
-          anomContainer.innerHTML = (rf.anomalies || []).map(a => {
-            const sevColor = a.severity === 'Warning' ? 'amber' : 'cyan';
-            return `
-            <div class="p-3 rounded-xl bg-${sevColor}-950/20 border border-${sevColor}-500/20 space-y-1.5">
-              <span class="text-xs font-bold text-white flex items-center gap-1.5"><i class="fa-solid fa-${a.severity === 'Warning' ? 'triangle-exclamation text-amber-400' : 'circle-info text-cyan-400'}"></i> ${a.type}</span>
-              <p class="text-[11px] text-slate-300">${a.description}</p>
-            </div>`;
-          }).join('');
+          const anomalies = (rf.anomalies || []).slice(0, 3);
+          if (anomalies.length > 0) {
+            anomContainer.innerHTML = anomalies.map(a => {
+              const isWarn = a.severity === 'Warning';
+              return `
+              <div class="p-3.5 rounded-2xl bg-slate-950/70 border ${isWarn ? 'border-amber-500/30' : 'border-cyan-500/30'} space-y-1">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-white flex items-center gap-1.5">
+                    <i class="fa-solid fa-${isWarn ? 'triangle-exclamation text-amber-400' : 'circle-info text-cyan-400'}"></i> ${a.type}
+                  </span>
+                  <span class="text-[9px] font-mono px-1.5 py-0.5 rounded font-bold ${isWarn ? 'bg-amber-500/15 text-amber-300 border border-amber-500/25' : 'bg-cyan-500/15 text-cyan-300 border border-cyan-500/25'}">${a.severity}</span>
+                </div>
+                <p class="text-[11px] text-slate-300 leading-snug">${a.description}</p>
+              </div>`;
+            }).join('');
+          } else {
+            anomContainer.innerHTML = `
+              <div class="p-3.5 rounded-2xl bg-slate-950/70 border border-emerald-500/25 flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+                <div class="text-xs text-slate-300">Tidak ada anomali terdeteksi. Seluruh metrik operasional &amp; omset dalam batas normal.</div>
+              </div>`;
+          }
         }
         setText('rf-anomaly-note', rf.anomaly_note || '');
       }

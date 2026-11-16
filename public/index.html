@@ -3023,28 +3023,241 @@
         </div>
       </div>
 
-      <!-- ================= SECTION 3: REMINDERS & ALERTS DECK ================= -->
+      <!-- ================= SECTION 3: SALES WORK QUEUE & REMINDERS (STREAMLINED 6 ZONES) ================= -->
       <div id="section-reminders" class="hidden space-y-6">
-        <div>
-          <h2 class="text-lg font-extrabold text-white flex items-center gap-2">
-            <i class="fa-solid fa-comments-dollar text-rose-400"></i> Sales Follow-Up &amp; Patient Reminders
-          </h2>
-          <p class="text-xs text-slate-400 mt-0.5">Daftar follow-up ulang tahun pasien, invoice pending/tertunda, dan konfirmasi jadwal kontrol dokter (Depok &amp; Pondok Kopi).</p>
+        <!-- ZONE A · HEADER KERJA & BEBAN KERJA HARI INI -->
+        <div id="rem-work-header-card" class="glass-card p-6 rounded-3xl border border-indigo-500/30 bg-gradient-to-r from-indigo-950/40 via-slate-900/80 to-slate-900/80 shadow-xl space-y-4">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800/80 pb-4">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                  <i class="fa-solid fa-headset"></i>
+                </span>
+                <h2 class="text-lg font-black text-white tracking-tight">Antrian Kerja Follow-Up &amp; Reminders</h2>
+              </div>
+              <p id="rem-work-context" class="text-xs text-indigo-300/80 mt-1 flex items-center gap-2">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span id="rem-header-date-branch">Hari ini · Memuat cabang...</span>
+              </p>
+            </div>
+            <div class="flex items-center gap-2 flex-wrap">
+              <button onclick="openWaTemplateEditor('post_treatment')" class="cursor-pointer px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 rounded-xl text-xs font-semibold transition flex items-center gap-1.5 shadow-sm" title="Edit Template Pesan WhatsApp Post-Care &amp; Evaluasi">
+                <i class="fa-solid fa-pen-to-square text-xs text-indigo-400"></i>
+                <span>Template WA</span>
+              </button>
+              <button onclick="refreshSalesRemindersData()" class="cursor-pointer px-3 py-1.5 bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 border border-indigo-500/30 rounded-xl text-xs font-bold transition flex items-center gap-1.5 active:scale-95 shadow-sm" title="Segarkan data antrian follow-up">
+                <i class="fa-solid fa-rotate text-xs"></i>
+                <span>Segarkan Antrian</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Summary Beban Hari Ini & 4 Urgency Buckets -->
+          <div class="grid grid-cols-2 lg:grid-cols-5 gap-3 pt-1">
+            <!-- Big Priority Metric (Beban Kerja Hari Ini) -->
+            <div class="col-span-2 lg:col-span-1 p-3.5 rounded-2xl bg-indigo-950/60 border border-indigo-500/30 flex flex-col justify-between shadow-inner">
+              <div class="text-[11px] font-bold text-indigo-300 uppercase tracking-wider">Perlu Dihubungi</div>
+              <div class="flex items-baseline gap-2 my-1">
+                <span id="rem-work-total-count" class="text-3xl font-black text-white tabular-nums">0</span>
+                <span class="text-xs text-slate-400 font-medium">pasien</span>
+              </div>
+              <div class="text-[10px] text-slate-400 flex items-center gap-1">
+                <i class="fa-solid fa-bullseye text-indigo-400"></i> Total beban antrian aktif
+              </div>
+            </div>
+
+            <!-- Bucket 1: Overdue -->
+            <div onclick="setUnifiedUrgencyFilter('overdue')" class="p-3.5 rounded-2xl bg-rose-950/30 border border-rose-500/30 hover:border-rose-400/60 cursor-pointer transition flex flex-col justify-between group">
+              <div class="flex items-center justify-between text-[11px] font-bold text-rose-400">
+                <span>🚨 Overdue</span>
+                <i class="fa-solid fa-triangle-exclamation text-xs group-hover:scale-110 transition"></i>
+              </div>
+              <div class="my-1">
+                <span id="rem-stat-overdue" class="text-2xl font-black text-white tabular-nums">0</span>
+              </div>
+              <div class="text-[10px] text-rose-300/80">Lewat jatuh tempo</div>
+            </div>
+
+            <!-- Bucket 2: Hari Ini -->
+            <div onclick="setUnifiedUrgencyFilter('today')" class="p-3.5 rounded-2xl bg-amber-950/30 border border-amber-500/30 hover:border-amber-400/60 cursor-pointer transition flex flex-col justify-between group">
+              <div class="flex items-center justify-between text-[11px] font-bold text-amber-400">
+                <span>⚡ Hari Ini</span>
+                <i class="fa-solid fa-bolt text-xs group-hover:scale-110 transition"></i>
+              </div>
+              <div class="my-1">
+                <span id="rem-stat-today" class="text-2xl font-black text-white tabular-nums">0</span>
+              </div>
+              <div class="text-[10px] text-amber-300/80">Jadwal hari ini</div>
+            </div>
+
+            <!-- Bucket 3: 1-3 Hari -->
+            <div onclick="setUnifiedUrgencyFilter('h3')" class="p-3.5 rounded-2xl bg-sky-950/30 border border-sky-500/30 hover:border-sky-400/60 cursor-pointer transition flex flex-col justify-between group">
+              <div class="flex items-center justify-between text-[11px] font-bold text-sky-400">
+                <span>⏳ 1–3 Hari</span>
+                <i class="fa-solid fa-hourglass-half text-xs group-hover:scale-110 transition"></i>
+              </div>
+              <div class="my-1">
+                <span id="rem-stat-h3" class="text-2xl font-black text-white tabular-nums">0</span>
+              </div>
+              <div class="text-[10px] text-sky-300/80">Mendekati kontrol / H+3</div>
+            </div>
+
+            <!-- Bucket 4: 4-7 Hari -->
+            <div onclick="setUnifiedUrgencyFilter('h7')" class="p-3.5 rounded-2xl bg-slate-900/60 border border-slate-700/60 hover:border-slate-500 cursor-pointer transition flex flex-col justify-between group">
+              <div class="flex items-center justify-between text-[11px] font-bold text-slate-300">
+                <span>🗓️ 4–7 Hari</span>
+                <i class="fa-solid fa-calendar-week text-xs group-hover:scale-110 transition"></i>
+              </div>
+              <div class="my-1">
+                <span id="rem-stat-h7" class="text-2xl font-black text-white tabular-nums">0</span>
+              </div>
+              <div class="text-[10px] text-slate-400">Jadwal minggu ini</div>
+            </div>
+          </div>
+
+          <!-- Progress Bar Beban Kerja Hari Ini -->
+          <div class="p-3 rounded-2xl bg-slate-950/60 border border-slate-800/80 space-y-1.5">
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400 flex items-center gap-1.5">
+                <i class="fa-solid fa-list-check text-emerald-400"></i> Progres follow-up hari ini:
+                <strong id="rem-work-progress-text" class="text-white font-mono">0 / 0 (0%)</strong>
+              </span>
+              <span class="text-[11px] text-slate-500">Mencegah kontak ganda &amp; pantau kepuasan</span>
+            </div>
+            <div class="w-full bg-slate-900 rounded-full h-2 overflow-hidden border border-slate-800">
+              <div id="rem-work-progress-bar" class="h-full bg-gradient-to-r from-emerald-500 via-teal-400 to-indigo-500 rounded-full transition-all duration-500" style="width: 0%"></div>
+            </div>
+          </div>
         </div>
 
+        <!-- ZONE B · SATU ANTRIAN FOLLOW-UP TERPADU (UNIFIED WORK QUEUE) -->
+        <div id="unified-followup-card" class="glass-card p-6 rounded-3xl border border-indigo-500/30 bg-slate-900/50 shadow-xl space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
+            <div class="min-w-0">
+              <h3 class="text-base font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-list-ol text-indigo-400"></i> Antrian Pasien Follow-Up Terpadu
+              </h3>
+              <p class="text-xs text-slate-400 mt-0.5">Gabungan kontrol dokter Neosoft dan pemantauan retensi pasca tindakan (H+3, H+7, Recall), terurut otomatis berdasarkan kedekatan jatuh tempo.</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <span id="fu-queue-count-badge" class="px-3 py-1 rounded-xl bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 text-xs font-mono font-bold">
+                0 Antrian Pasien
+              </span>
+            </div>
+          </div>
 
-        <!-- APPOINTMENT PASIEN HARIAN (fitur #33) -->
+          <!-- Filter & Search Controls Bar -->
+          <div class="space-y-3 p-3.5 rounded-2xl bg-slate-950/60 border border-slate-800/80">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+              <!-- Search Input -->
+              <div class="relative flex-1 md:max-w-md">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-xs pointer-events-none"></i>
+                <input type="text" id="fu-search-input" oninput="handleUnifiedFollowUpSearch(this.value)" placeholder="Cari nama pasien, no telp, treatment, dokter..." class="w-full pl-9 pr-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 font-sans">
+              </div>
+
+              <!-- Status Filter Buttons -->
+              <div id="fu-status-filter" class="rem-seg" role="tablist" aria-label="Status follow-up">
+                <button type="button" role="tab" data-status="pending" onclick="handleUnifiedStatusFilter('pending')" class="rem-seg-btn active" aria-selected="true">
+                  <i class="fa-regular fa-circle"></i><span>Belum Dihubungi</span><b id="fu-count-pending">0</b>
+                </button>
+                <button type="button" role="tab" data-status="done" onclick="handleUnifiedStatusFilter('done')" class="rem-seg-btn tone-amber" aria-selected="false">
+                  <i class="fa-solid fa-circle-check"></i><span>Sudah Selesai</span><b id="fu-count-done">0</b>
+                </button>
+                <button type="button" role="tab" data-status="all" onclick="handleUnifiedStatusFilter('all')" class="rem-seg-btn" aria-selected="false">
+                  <i class="fa-solid fa-layer-group"></i><span>Semua</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Urgency Bucket Filter Pills & Source Select -->
+            <div class="flex items-center gap-2 flex-wrap pt-1 border-t border-slate-800/60">
+              <span class="text-[11px] text-slate-400 font-semibold mr-1">Urutan Urgensi:</span>
+              <div class="rem-seg" id="rem-seg-urgency" role="tablist" aria-label="Filter urgensi waktu">
+                <button type="button" role="tab" onclick="setUnifiedUrgencyFilter('all')" id="rem-pill-all" class="rem-seg-btn active" aria-selected="true">
+                  <i class="fa-solid fa-layer-group"></i><span>Semua (±30 hari)</span><b id="rem-count-all">0</b>
+                </button>
+                <button type="button" role="tab" onclick="setUnifiedUrgencyFilter('overdue')" id="rem-pill-overdue" class="rem-seg-btn tone-rose" aria-selected="false" title="Sudah lewat jatuh tempo">
+                  <i class="fa-solid fa-triangle-exclamation"></i><span>Overdue</span><b id="rem-count-overdue">0</b>
+                </button>
+                <button type="button" role="tab" onclick="setUnifiedUrgencyFilter('today')" id="rem-pill-today" class="rem-seg-btn tone-amber" aria-selected="false">
+                  <i class="fa-solid fa-bolt"></i><span>Hari Ini</span><b id="rem-count-today">0</b>
+                </button>
+                <button type="button" role="tab" onclick="setUnifiedUrgencyFilter('h3')" id="rem-pill-h3" title="1–3 hari lagi" class="rem-seg-btn tone-sky" aria-selected="false">
+                  <i class="fa-solid fa-hourglass-half"></i><span>1–3 Hari</span><b id="rem-count-h3">0</b>
+                </button>
+                <button type="button" role="tab" onclick="setUnifiedUrgencyFilter('h7')" id="rem-pill-h7" title="4–7 hari lagi" class="rem-seg-btn tone-sky" aria-selected="false">
+                  <i class="fa-solid fa-calendar-week"></i><span>4–7 Hari</span><b id="rem-count-h7">0</b>
+                </button>
+                <button type="button" role="tab" onclick="setUnifiedUrgencyFilter('h14')" id="rem-pill-h14" title="Recall &gt;7 hari" class="rem-seg-btn" aria-selected="false">
+                  <i class="fa-solid fa-rotate text-purple-400"></i><span>Recall &gt;7 hari</span>
+                </button>
+              </div>
+
+              <!-- Source Filter Dropdown -->
+              <label class="flex items-center gap-1.5 text-xs text-slate-400 ml-auto">
+                <span class="text-[11px]">Sumber:</span>
+                <select id="rem-source-filter" onchange="setUnifiedSourceFilter(this.value)" class="bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1 text-xs text-slate-200 focus:outline-none">
+                  <option value="all">Semua Sumber</option>
+                  <option value="doctor">🩺 Kontrol Dokter Neosoft</option>
+                  <option value="retention">🌿 Pasca Tindakan (H+3/H+7/H+14)</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <!-- Unified Follow-Up Table Container -->
+          <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/60 shadow-sm">
+            <table class="w-full text-left text-xs border-collapse">
+              <thead>
+                <tr class="border-b border-slate-800 bg-slate-950/90 text-slate-400 font-bold uppercase tracking-wider text-[10px]">
+                  <th class="px-3 py-3 w-12 text-center whitespace-nowrap">No</th>
+                  <th class="px-3 py-3 min-w-[200px] whitespace-nowrap">Pasien</th>
+                  <th class="px-3 py-3 whitespace-nowrap">Kapan (Urgensi)</th>
+                  <th class="px-3 py-3 min-w-[200px] whitespace-nowrap">Alasan &amp; Tahap</th>
+                  <th class="px-3 py-3 text-right whitespace-nowrap">Tindakan</th>
+                </tr>
+              </thead>
+              <tbody id="smart-followup-table-tbody" class="divide-y divide-slate-800/60 font-sans">
+                <!-- Populated dynamically via JS -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Unified Follow-Up Pagination Bar -->
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-1 text-xs">
+            <div id="smart-followup-pagination-info" class="text-slate-400 text-xs">
+              Menampilkan <span class="font-bold text-white tabular-nums">0</span> - <span class="font-bold text-white tabular-nums">0</span> dari <span class="font-bold text-white tabular-nums">0</span> antrian
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="flex items-center gap-1.5 text-xs text-slate-400">
+                <span>Baris per halaman:</span>
+                <select id="smart-followup-page-size" onchange="changeFollowUpPageSize(this.value)" class="bg-slate-900 border border-slate-700 rounded-lg px-2 py-1 text-slate-300 font-semibold cursor-pointer">
+                  <option value="10" selected>10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                </select>
+              </div>
+              <div id="smart-followup-pagination-controls" class="flex items-center gap-1">
+                <!-- Page numbers injected via JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZONE C · DATANG HARI INI (APPOINTMENT PASIEN HARIAN) -->
         <div id="daily-appt-card" class="glass-card p-6 rounded-2xl border border-sky-500/30 space-y-4">
           <div class="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <div class="text-sm font-bold text-white flex items-center gap-2"><i class="fa-solid fa-calendar-day text-sky-400"></i> Appointment Pasien Harian</div>
+              <div class="text-sm font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-calendar-day text-sky-400"></i> Datang Hari Ini (Appointment Pasien)
+              </div>
               <p class="text-xs text-slate-400 mt-0.5" id="appt-sub">Janji temu Neosoft per tanggal.</p>
             </div>
             <div class="flex items-center gap-1.5 text-xs">
-              <button onclick="shiftApptDate(-1)" class="px-2.5 py-1.5 rounded-lg border border-slate-700 hover:bg-slate-800 text-slate-300"><i class="fa-solid fa-chevron-left"></i></button>
-              <select id="appt-branch" onchange="loadDailyAppointments(_apptDate)" title="Filter cabang" class="bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-slate-200"><option value="all">Semua cabang</option><option value="Depok">Depok</option><option value="Pondok Kopi">Pondok Kopi</option></select>
+              <input type="hidden" id="appt-branch" value="all">
+              <button onclick="shiftApptDate(-1)" class="px-2.5 py-1.5 rounded-lg border border-slate-700 hover:bg-slate-800 text-slate-300" title="Hari sebelumnya"><i class="fa-solid fa-chevron-left"></i></button>
               <input type="date" id="appt-date" onchange="loadDailyAppointments(this.value)" class="bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-slate-200">
-              <button onclick="shiftApptDate(1)" class="px-2.5 py-1.5 rounded-lg border border-slate-700 hover:bg-slate-800 text-slate-300"><i class="fa-solid fa-chevron-right"></i></button>
+              <button onclick="shiftApptDate(1)" class="px-2.5 py-1.5 rounded-lg border border-slate-700 hover:bg-slate-800 text-slate-300" title="Hari berikutnya"><i class="fa-solid fa-chevron-right"></i></button>
               <button onclick="loadDailyAppointments()" class="px-2.5 py-1.5 rounded-lg border border-slate-700 hover:bg-slate-800 text-slate-300 font-semibold">Hari ini</button>
             </div>
           </div>
@@ -3052,214 +3265,42 @@
           <div class="overflow-x-auto rounded-xl border border-slate-800">
             <table class="w-full text-left text-xs text-slate-300">
               <thead class="bg-slate-900/90 text-slate-400 text-[10px] uppercase border-b border-slate-800">
-                <tr><th class="p-2.5">Jam</th><th class="p-2.5">Pasien</th><th class="p-2.5">Cabang</th><th class="p-2.5">Ruang</th><th class="p-2.5">Treatment</th><th class="p-2.5">Dokter / terapis</th><th class="p-2.5 text-center">Status</th></tr>
+                <tr>
+                  <th class="p-2.5 whitespace-nowrap">Jam</th>
+                  <th class="p-2.5 whitespace-nowrap">Pasien</th>
+                  <th class="p-2.5">Layanan &amp; Treatment</th>
+                  <th class="p-2.5 whitespace-nowrap">Dokter / Terapis</th>
+                  <th class="p-2.5 text-center whitespace-nowrap">Status</th>
+                </tr>
               </thead>
-              <tbody id="appt-tbody" class="divide-y divide-slate-800/60"><tr><td colspan="7" class="p-6 text-center text-slate-500">Memuat…</td></tr></tbody>
+              <tbody id="appt-tbody" class="divide-y divide-slate-800/60">
+                <tr><td colspan="5" class="p-6 text-center text-slate-500">Memuat…</td></tr>
+              </tbody>
             </table>
           </div>
         </div>
 
-                <!-- Doctor Recommendation Return Due Radar -->
-        <div class="glass-card p-6 rounded-2xl space-y-4 border border-indigo-500/30">
-          <div class="flex flex-col 2xl:flex-row 2xl:items-center justify-between gap-2 border-b border-slate-800 pb-3">
-            <div class="min-w-0">
-              <h3 class="text-sm font-bold text-indigo-400 flex items-center gap-2">
-                <i class="fa-solid fa-calendar-check"></i> 🩺 Follow-Up Jadwal Kontrol Pasien (Neosoft Appointments)
-              </h3>
-            </div>
-          </div>
-
-          <!-- Quick Filter Timing (segmented control) in Reminders -->
-          <div class="flex items-center gap-3 flex-wrap pb-1">
-            <div class="rem-seg" role="tablist" aria-label="Filter jadwal kontrol">
-              <button type="button" role="tab" onclick="setRemindersTimingFilter('all')" id="rem-pill-all" class="rem-seg-btn active" aria-selected="true">
-                <i class="fa-solid fa-layer-group"></i><span>Semua <em>≤ 30h</em></span><b id="rem-count-all">0</b>
-              </button>
-              <button type="button" role="tab" onclick="setRemindersTimingFilter('today')" id="rem-pill-today" class="rem-seg-btn tone-amber" aria-selected="false">
-                <i class="fa-solid fa-bolt"></i><span>Hari H</span><b id="rem-count-today">0</b>
-              </button>
-              <button type="button" role="tab" onclick="setRemindersTimingFilter('h3')" id="rem-pill-h3" title="1–3 hari lagi" class="rem-seg-btn tone-sky" aria-selected="false">
-                <i class="fa-solid fa-hourglass-half"></i><span>H-3</span><b id="rem-count-h3">0</b>
-              </button>
-              <button type="button" role="tab" onclick="setRemindersTimingFilter('h7')" id="rem-pill-h7" title="4–7 hari lagi" class="rem-seg-btn tone-sky" aria-selected="false">
-                <i class="fa-solid fa-calendar-week"></i><span>H-7</span><b id="rem-count-h7">0</b>
-              </button>
-              <button type="button" role="tab" onclick="setRemindersTimingFilter('overdue')" id="rem-pill-overdue" title="Sudah lewat jadwal" class="rem-seg-btn tone-rose" aria-selected="false">
-                <i class="fa-solid fa-triangle-exclamation"></i><span>Overdue</span><b id="rem-count-overdue">0</b>
-              </button>
-            </div>
-            <label class="flex items-center gap-2 text-xs text-slate-400">Sumber
-              <select id="rem-source-filter" onchange="setRemindersSourceFilter(this.value)" class="bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-slate-200">
-                <option value="all">Semua sumber</option>
-                <option value="neosoft_soap">Plan Dokter (Neosoft)</option>
-                <option value="auto_recommendation">Rekomendasi Otomatis</option>
-                <option value="neosoft_appointment">Reservasi Neosoft</option>
-                <option value="doctor_recommendation">Rekomendasi Dokter</option>
-              </select>
-            </label>
-          </div>
-
-          <div id="reminders-docrec-list" class="space-y-2">
-            <p class="text-xs text-slate-500 italic">Memuat data...</p>
-          </div>
-          <div id="reminders-docrec-pager" class="flex flex-wrap items-center justify-between gap-2 pt-1 text-xs"></div>
-        </div>
-
-        <!-- ==================== SMART 4-STAGE FOLLOW-UP JOURNEY (RETENTION ROADMAP) ==================== -->
-        <div id="reminders-smart-followup-card" class="glass-card p-6 rounded-3xl border border-indigo-500/30 bg-gradient-to-r from-indigo-950/20 via-slate-900/60 to-slate-900/60 shadow-xl space-y-4">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
-            <div>
-              <h2 class="text-lg font-black text-white tracking-tight flex items-center gap-2">
-                <i class="fa-solid fa-route text-indigo-400"></i>
-                Jadwal Follow-Up (Hari H • H+3 • H+7 • H+14/Recall)
-              </h2>
-            </div>
-            <div class="flex items-center gap-2.5 flex-wrap">
-              <p class="text-xs text-slate-300 hidden xl:block">Pantau kepuasan kulit, cegah komplain, dan panggil kembali pasien secara terjadwal.</p>
-              
-              <button onclick="openWaTemplateEditor('post_treatment')" class="cursor-pointer px-3 py-1.5 bg-teal-600/20 hover:bg-teal-600/30 text-teal-300 border border-teal-500/30 rounded-xl text-xs font-bold transition flex items-center gap-1.5 active:scale-95 shadow-sm" title="Kustomisasi Template WhatsApp Post-Care &amp; Evaluasi H+3/H+7">
-                <i class="fa-solid fa-pen-to-square text-xs"></i>
-                <span class="hidden sm:inline">Edit Template WA</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- View 1: List / Table View (Default) -->
-          <div id="smart-followup-list-container" class="space-y-3.5">
-            <!-- Filter & Search Controls Bar -->
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3 rounded-2xl bg-slate-950/60 border border-slate-800/80">
-              <div class="flex items-center gap-2 flex-wrap flex-1">
-                <div class="relative min-w-[200px] flex-1 sm:max-w-xs">
-                  <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-xs pointer-events-none"></i>
-                  <input type="text" id="fu-search-input" oninput="handleFollowUpSearch(this.value)" placeholder="Cari nama pasien / treatment..." class="w-full pl-9 pr-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 font-sans">
-                </div>
-                <div id="fu-status-filter" class="rem-seg" role="tablist" aria-label="Status follow-up">
-                  <button type="button" role="tab" data-status="pending" onclick="handleFollowUpStatusFilter('pending')" class="rem-seg-btn active" aria-selected="true"><i class="fa-regular fa-circle"></i><span>Belum</span><b id="fu-count-pending">0</b></button>
-                  <button type="button" role="tab" data-status="missed" onclick="handleFollowUpStatusFilter('missed')" class="rem-seg-btn tone-rose" aria-selected="false" title="Tahap yang sudah lewat tanpa pernah ditandai selesai"><i class="fa-solid fa-triangle-exclamation"></i><span>Terlewat</span><b id="fu-count-missed">0</b></button>
-                  <button type="button" role="tab" data-status="done" onclick="handleFollowUpStatusFilter('done')" class="rem-seg-btn tone-amber" aria-selected="false"><i class="fa-solid fa-circle-check"></i><span>Sudah</span><b id="fu-count-done">0</b></button>
-                </div>
-                <div class="flex items-center gap-1.5">
-                  <div id="fu-stage-filter" class="rem-seg" role="tablist" aria-label="Filter tahap follow-up">
-                    <button type="button" role="tab" data-stage="all" onclick="handleFollowUpStageFilter('all')" class="rem-seg-btn active" aria-selected="true"><i class="fa-solid fa-layer-group"></i><span>Semua Tahap</span></button>
-                    <button type="button" role="tab" data-stage="day_h" onclick="handleFollowUpStageFilter('day_h')" class="rem-seg-btn" aria-selected="false"><i class="rem-dot" style="background:#22c55e"></i><span>Hari H</span></button>
-                    <button type="button" role="tab" data-stage="day_h3" onclick="handleFollowUpStageFilter('day_h3')" class="rem-seg-btn" aria-selected="false"><i class="rem-dot" style="background:#eab308"></i><span>H+3 <em>Cek Keluhan</em></span></button>
-                    <button type="button" role="tab" data-stage="day_h7" onclick="handleFollowUpStageFilter('day_h7')" class="rem-seg-btn" aria-selected="false"><i class="rem-dot" style="background:#3b82f6"></i><span>H+7 <em>Evaluasi</em></span></button>
-                    <button type="button" role="tab" data-stage="day_h14_recall" onclick="handleFollowUpStageFilter('day_h14_recall')" class="rem-seg-btn" aria-selected="false"><i class="rem-dot" style="background:#a855f7"></i><span>H+14 / Recall</span></button>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center gap-2 shrink-0">
-                <span id="fu-queue-count-badge" class="px-2.5 py-1 rounded-xl bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 text-xs font-mono font-bold">
-                  0 Antrian Pasien
-                </span>
-              </div>
-            </div>
-
-            <!-- Follow-Up Table Container (no internal scroll, paginated) -->
-            <div class="overflow-x-auto rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-white/70 dark:bg-slate-950/60 shadow-sm">
-              <table class="w-full text-left text-xs border-collapse">
-                <thead>
-                  <tr class="border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/90 text-slate-600 dark:text-slate-400 font-bold uppercase tracking-wider text-[10px]">
-                    <th class="px-3 py-3 w-12 text-center whitespace-nowrap">No</th>
-                    <th class="px-3 py-3 min-w-[200px] whitespace-nowrap">Pasien</th>
-                    <th class="px-3 py-3 whitespace-nowrap">Tahap</th>
-                    <th class="px-3 py-3 min-w-[180px] whitespace-nowrap">Treatment &amp; Tugas</th>
-                    <th class="px-3 py-3 text-right whitespace-nowrap">Aksi</th>
-                  </tr>
-                </thead>
-                <tbody id="smart-followup-table-tbody" class="divide-y divide-slate-100 dark:divide-slate-800/60 font-sans">
-                  <!-- Populated dynamically via JS -->
-                </tbody>
-              </table>
-            </div>
-
-            <!-- Follow-Up Pagination Bar -->
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-1 text-xs">
-              <div id="smart-followup-pagination-info" class="text-slate-500 dark:text-slate-400 text-xs">
-                Menampilkan <span class="font-bold text-slate-800 dark:text-white tabular-nums">0</span> - <span class="font-bold text-slate-800 dark:text-white tabular-nums">0</span> dari <span class="font-bold text-slate-800 dark:text-white tabular-nums">0</span> antrian
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
-                  <span>Baris per halaman:</span>
-                  <select id="smart-followup-page-size" onchange="changeFollowUpPageSize(this.value)" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-slate-700 dark:text-slate-300 font-semibold cursor-pointer">
-                    <option value="10" selected>10</option>
-                    <option value="25">25</option>
-                    <option value="50">50</option>
-                  </select>
-                </div>
-                <div id="smart-followup-pagination-controls" class="flex items-center gap-1">
-                  <!-- Page numbers injected via JS -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
+        <!-- ZONE D & F: DUA BLOK PENDUKUNG (PERLU DITAGIH & ULANG TAHUN HARI INI) -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
           
-          <!-- Birthday Reminders Deck -->
-          <div class="glass-card p-6 rounded-2xl space-y-4 border border-purple-500/30">
-            <div class="flex items-start justify-between gap-3 border-b border-slate-800 pb-3">
-              <div class="min-w-0">
-                <h3 class="text-sm font-bold text-purple-400 flex items-center gap-2 flex-wrap">
-                  <span class="rm-head-icon rm-tone-purple"><i class="fa-solid fa-cake-candles"></i></span>
-                  <span>Ulang Tahun Bulan Ini</span>
-                  <span id="birthday-count-badge" class="rm-count rm-tone-purple">0 Pasien</span>
-                </h3>
-                <p class="text-xs text-slate-400 mt-1">Kirim voucher ucapan ultah via WhatsApp · data Neosoft</p>
-              </div>
-              <button onclick="openEditBdayTemplateModal()" class="rm-icon-btn shrink-0" title="Edit template promo ultah" aria-label="Edit template promo ultah">
-                <i class="fa-solid fa-pen-to-square"></i>
-              </button>
-            </div>
-
-            <!-- Quick Action: Kirim Voucher Pasien Ultah Hari Ini -->
-            <div class="rm-promo-card" id="qa-bday-card">
-              <div class="flex items-center gap-3 min-w-0">
-                <span class="rm-promo-icon"><i class="fa-solid fa-gift"></i></span>
-                <div class="min-w-0">
-                  <div class="font-bold text-white text-xs" id="qa-bday-title">Pasien Ultah Hari Ini</div>
-                  <p class="text-slate-400 text-[11px] mt-0.5 leading-snug">Free Facial + Diskon 25% Treatment Dokter &amp; Laser</p>
-                </div>
-              </div>
-              <button onclick="openEditBdayTemplateModal()" class="rm-promo-btn shrink-0">
-                <i class="fa-brands fa-whatsapp"></i><span>Kirim Promo</span>
-              </button>
-            </div>
-
-            <div class="rm-list min-h-[260px]" id="birthday-reminders-list">
-              <!-- Populated by JS -->
-            </div>
-
-            <!-- Birthday Pagination Controls -->
-            <div id="birthday-pagination-wrapper" class="flex flex-col sm:flex-row items-center justify-between gap-2 pt-3 border-t border-slate-800 text-xs text-slate-400">
-              <span id="birthday-pagination-info">Menampilkan 0 pasien</span>
-              <div id="birthday-pagination-controls" class="flex items-center gap-1 flex-wrap"></div>
-            </div>
-          </div>
-
-          <!-- Unpaid & Overdue Followup -->
+          <!-- ZONE D · PERLU DITAGIH (INVOICE BELUM LUNAS & PIUTANG) -->
           <div class="glass-card p-6 rounded-2xl space-y-4 border border-amber-500/30">
             <div class="flex items-start justify-between gap-3 border-b border-slate-800 pb-3">
               <div class="min-w-0">
                 <h3 class="text-sm font-bold text-amber-400 flex items-center gap-2 flex-wrap">
                   <span class="rm-head-icon rm-tone-amber"><i class="fa-solid fa-file-invoice-dollar"></i></span>
-                  <span>Invoice Belum Lunas</span>
+                  <span>Perlu Ditagih (Invoice Belum Lunas)</span>
                   <span id="unpaid-count-badge" class="rm-count rm-tone-amber">0 Invoices</span>
                 </h3>
-                <p class="text-xs text-slate-400 mt-1">Invoice Neosoft yang masih punya sisa tagihan — untuk dikonfirmasi kasir ke pasien</p>
-                <p id="unpaid-total-line" class="text-[11px] text-amber-300/90 mt-0.5"></p>
+                <p class="text-xs text-slate-400 mt-1">Invoice Neosoft dengan sisa tagihan aktif untuk dikonfirmasi dan ditagih oleh frontliner.</p>
+                <p id="unpaid-total-line" class="text-[11px] text-amber-300/90 mt-0.5 font-mono"></p>
               </div>
               <button onclick="openEditUnpaidTemplateModal()" class="rm-icon-btn shrink-0" title="Edit pesan tagihan" aria-label="Edit pesan tagihan">
                 <i class="fa-solid fa-pen-to-square"></i>
               </button>
             </div>
 
-            <div class="rm-list min-h-[260px]" id="unpaid-invoices-list">
+            <div class="rm-list min-h-[220px]" id="unpaid-invoices-list">
               <!-- Populated by JS -->
             </div>
 
@@ -3269,120 +3310,154 @@
               <div id="unpaid-pagination-controls" class="flex items-center gap-1 flex-wrap"></div>
             </div>
 
-            <!-- Rekam medis dari notifikasi "Unpaid" Neosoft yang belum ditagihkan (bukan invoice) -->
+            <!-- Rekam medis belum ditagihkan (1 baris ringkas) -->
             <details id="pending-mr-wrap" class="hidden rounded-xl border border-slate-800 bg-slate-950/40 px-3 py-2 text-xs">
               <summary class="cursor-pointer font-bold text-slate-300"><i class="fa-solid fa-notes-medical text-amber-400 mr-1"></i>Rekam medis belum ditagihkan <span id="pending-mr-count" class="rm-count rm-tone-amber ml-1">0</span></summary>
-              <p class="text-[11px] text-slate-500 mt-1.5">Dari notifikasi "Unpaid" Neosoft: pemeriksaan (kode ANM-) yang belum tertaut invoice dan tidak ada invoice pasien itu di hari &amp; cabang yang sama. Perlu dicek kasir — belum tentu ada tagihan.</p>
-              <div id="pending-mr-list" class="mt-2 space-y-1 max-h-64 overflow-y-auto"></div>
+              <p class="text-[11px] text-slate-500 mt-1.5">Dari notifikasi "Unpaid" Neosoft: pemeriksaan (kode ANM-) yang belum tertaut invoice. Perlu dicek kasir — belum tentu ada tagihan.</p>
+              <div id="pending-mr-list" class="mt-2 space-y-1 max-h-48 overflow-y-auto"></div>
             </details>
-          </div>
 
-          <!-- ==================== TOP PASIEN SPENDING TERTINGGI (VIP RETENTION) ==================== -->
-          <div id="reminders-top-spenders-card" class="glass-card p-6 rounded-2xl space-y-4 border border-purple-500/30 bg-gradient-to-b from-slate-900/90 to-slate-950 lg:col-span-2">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-lg border border-purple-500/30">
-                  <i class="fa-solid fa-crown text-purple-400"></i>
-                </div>
-                <div>
-                  <h3 class="text-sm font-bold text-white flex items-center gap-2">
-                    Top Pasien Spending Tertinggi (VIP Spenders)
-                    <span id="top-spenders-count-badge" class="text-xs font-mono font-bold text-purple-400 bg-purple-500/10 px-2.5 py-0.5 rounded-lg border border-purple-500/20">
-                      50 Pasien
-                    </span>
-                  </h3>
-                  <p class="text-xs text-slate-400 mt-0.5">Peringkat belanja pasien di periode &amp; cabang yang dipilih (Neosoft POS) untuk prioritas pelayanan VIP, follow-up retention, &amp; hampers apresiasi.</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-2">
-                <button onclick="openSegmentBlasting()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-xl text-xs font-semibold transition inline-flex items-center gap-1.5 border border-slate-700 cursor-pointer">
-                  <i class="fa-solid fa-paper-plane text-purple-400"></i> Buka Targeted Promo CRM ➔
-                </button>
-              </div>
-            </div>
-
-            <div class="overflow-x-auto min-h-[290px]">
-              <table class="w-full text-left text-xs">
-                <thead class="bg-slate-900/80 text-slate-400 font-semibold border-b border-slate-800">
-                  <tr>
-                    <th class="p-2.5 w-12 text-center">#</th>
-                    <th class="p-2.5">Nama Pasien</th>
-                    <th class="p-2.5">Cabang</th>
-                    <th class="p-2.5 text-right">Total Belanja</th>
-                  </tr>
-                </thead>
-                <tbody class="divide-y divide-slate-800/60" id="top-spenders-table-body">
-                  <!-- Injected via JS -->
-                </tbody>
-              </table>
-            </div>
-
-            <!-- Top Spenders Pagination Controls -->
-            <div id="top-spenders-pagination-wrapper" class="flex flex-col sm:flex-row items-center justify-between gap-2 pt-3 border-t border-slate-800 text-xs text-slate-400">
-              <span id="top-spenders-pagination-info">Menampilkan 0 pasien</span>
-              <div id="top-spenders-pagination-controls" class="flex items-center gap-1 flex-wrap"></div>
-            </div>
-          </div>
-
-  <!-- Top 15 VIP Royalty Patients (dipindah dari Segmentasi Blasting) -->
-          <div id="reminders-vip-royalty-card" class="glass-card p-5 rounded-2xl border border-slate-800 lg:col-span-2">
-            <div class="flex items-center justify-between mb-4">
-              <div>
-                <h3 class="text-sm font-bold text-white flex items-center gap-2">
-                  <i class="fa-solid fa-crown text-amber-400"></i> Top 15 VIP Royalty Patients
-                </h3>
-                <p class="text-xs text-slate-400">Pasien VIP (belanja seumur hidup &gt; Rp 4 jt) dengan belanja tertinggi di periode &amp; cabang yang dipilih.</p>
-              </div>
-              <div class="flex items-center gap-2">
-                <button onclick="openEditVipTemplateModal()" class="px-2.5 py-1 bg-purple-500/10 hover:bg-purple-500/20 text-purple-300 border border-purple-500/30 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition">
-                  <i class="fa-solid fa-pen-to-square"></i> Edit Template Promo VIP
-                </button>
-                <span class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                  VIP Tier (&gt;Rp 4.000.000)
+            <!-- Arsip Void Invoices Tautan Langsung ke Finance -->
+            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800 flex items-center justify-between gap-3 text-xs">
+              <div class="flex items-center gap-2.5 text-slate-400">
+                <span class="w-7 h-7 rounded-lg bg-rose-500/15 text-rose-400 flex items-center justify-center font-bold text-xs shrink-0">
+                  <i class="fa-solid fa-ban"></i>
                 </span>
+                <span>Arsip Void Invoices (<strong id="void-count-badge" class="text-rose-400 font-mono">0 Invoices</strong>) dikelola di modul Finance.</span>
               </div>
-            </div>
-
-            <div class="overflow-x-auto">
-              <table class="w-full text-left text-xs">
-                <thead class="bg-slate-900/60 text-slate-400 font-semibold border-b border-slate-800">
-                  <tr>
-                    <th class="p-3">#</th>
-                    <th class="p-3">Nama Pasien</th>
-                    <th class="p-3">No. WhatsApp / HP</th>
-                    <th class="p-3">Cabang Berobat</th>
-                    <th class="p-3 text-right">Kunjungan</th>
-                    <th class="p-3 text-right">Total Belanja Real</th>
-                    <th class="p-3">Kunjungan Terakhir</th>
-                    <th class="p-3 text-center">Aksi Direct WA</th>
-                  </tr>
-                </thead>
-                <tbody id="crm-vip-table-body" class="divide-y divide-slate-800/60">
-                  <!-- Injected via JS -->
-                </tbody>
-              </table>
+              <button onclick="switchTab('finance')" class="cursor-pointer px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-rose-300 border border-rose-500/30 rounded-lg text-xs font-semibold transition shrink-0 flex items-center gap-1">
+                <span>Ke Finance</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
             </div>
           </div>
 
-          <!-- Void Invoices Archive Deck -->
-          <div class="glass-card p-6 rounded-2xl space-y-4 border border-rose-500/30 lg:col-span-2">
-            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-              <div>
-                <h3 class="text-sm font-bold text-rose-400 flex items-center gap-2">
-                  <i class="fa-solid fa-ban"></i> 🚫 Invoices Dibatalkan Kasir (Void Invoices)
-                </h3>
-                <p class="text-xs text-slate-400 mt-0.5">Daftar transaksi yang dibatalkan kasir</p>
+          <!-- ZONE F · ULANG TAHUN HARI INI (KONDISIONAL & RINGKAS) -->
+          <div id="qa-bday-card" class="glass-card p-6 rounded-2xl border border-purple-500/30 space-y-4 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-start justify-between gap-3 border-b border-slate-800 pb-3">
+                <div class="min-w-0">
+                  <h3 class="text-sm font-bold text-purple-400 flex items-center gap-2 flex-wrap">
+                    <span class="rm-head-icon rm-tone-purple"><i class="fa-solid fa-cake-candles"></i></span>
+                    <span id="qa-bday-title">Pasien Ultah Hari Ini</span>
+                    <span id="birthday-count-badge" class="rm-count rm-tone-purple">0 Pasien</span>
+                  </h3>
+                  <p class="text-xs text-slate-400 mt-1">Free Facial + Diskon 25% Treatment Dokter &amp; Laser · Data Neosoft</p>
+                </div>
+                <div class="flex items-center gap-1.5 shrink-0">
+                  <button onclick="openEditBdayTemplateModal()" class="rm-icon-btn" title="Edit template promo ultah" aria-label="Edit template promo ultah">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+                  <button onclick="toggleBirthdayDetails()" class="rm-icon-btn" title="Buka / tutup daftar ultah bulan ini" aria-label="Toggle daftar ultah">
+                    <i class="fa-solid fa-chevron-down" id="bday-chevron"></i>
+                  </button>
+                </div>
               </div>
-              <span id="void-count-badge" class="text-xs font-mono font-bold text-rose-400 bg-rose-950/80 px-2.5 py-1 rounded-lg border border-rose-800">0 Invoices</span>
-            </div>
 
-            <div class="space-y-3 overflow-y-auto max-h-64 pr-1" id="void-invoices-list">
-              <!-- Populated by JS -->
+              <!-- Quick Action Card -->
+              <div class="rm-promo-card">
+                <div class="flex items-center gap-3 min-w-0">
+                  <span class="rm-promo-icon"><i class="fa-solid fa-gift"></i></span>
+                  <div class="min-w-0">
+                    <div class="font-bold text-white text-xs">Voucher Spesial Ulang Tahun</div>
+                    <p class="text-slate-400 text-[11px] mt-0.5 leading-snug">Kirim ucapan &amp; voucher apresiasi via WhatsApp</p>
+                  </div>
+                </div>
+                <button onclick="openEditBdayTemplateModal()" class="rm-promo-btn shrink-0">
+                  <i class="fa-brands fa-whatsapp"></i><span>Kirim Promo</span>
+                </button>
+              </div>
+
+              <!-- Collapsible Birthday List (Bulan Ini) -->
+              <div id="bday-details-wrap" class="hidden space-y-3">
+                <div class="rm-list min-h-[140px]" id="birthday-reminders-list">
+                  <!-- Populated by JS -->
+                </div>
+                <div id="birthday-pagination-wrapper" class="flex flex-col sm:flex-row items-center justify-between gap-2 pt-2 border-t border-slate-800 text-xs text-slate-400">
+                  <span id="birthday-pagination-info">Menampilkan 0 pasien</span>
+                  <div id="birthday-pagination-controls" class="flex items-center gap-1 flex-wrap"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="pt-2 border-t border-slate-800/60 text-[11px] text-slate-500 flex items-center justify-between">
+              <span>Status: <span id="bday-status-indicator" class="text-purple-300 font-semibold">Tersinkron otomatis</span></span>
+              <button onclick="toggleBirthdayDetails()" class="text-purple-400 hover:text-purple-300 underline font-medium">Lihat jadwal bulan ini</button>
             </div>
           </div>
 
         </div>
+
+        <!-- ZONE E · PELANGGAN BERNILAI (VIP & TOP SPENDERS TERKONSOLIDASI) -->
+        <div id="reminders-top-spenders-card" class="glass-card p-6 rounded-2xl space-y-4 border border-purple-500/30 bg-gradient-to-b from-slate-900/90 to-slate-950">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-lg border border-purple-500/30">
+                <i class="fa-solid fa-crown text-purple-400"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                  Pelanggan Bernilai (VIP &amp; Top Spenders)
+                  <span id="top-spenders-count-badge" class="text-xs font-mono font-bold text-purple-400 bg-purple-500/10 px-2.5 py-0.5 rounded-lg border border-purple-500/20">
+                    0 Pasien
+                  </span>
+                </h3>
+                <p class="text-xs text-slate-400 mt-0.5">Daftar pasien dengan kontribusi belanja tertinggi untuk prioritas layanan, follow-up retensi berkala, dan hampers apresiasi.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 flex-wrap">
+              <button onclick="openEditVipTemplateModal()" class="px-2.5 py-1.5 bg-purple-500/10 hover:bg-purple-500/20 text-purple-300 border border-purple-500/30 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer">
+                <i class="fa-solid fa-pen-to-square"></i> Template VIP
+              </button>
+              <button onclick="openSegmentBlasting()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-xl text-xs font-semibold transition inline-flex items-center gap-1.5 border border-slate-700 cursor-pointer">
+                <i class="fa-solid fa-paper-plane text-purple-400"></i> Buka Targeted Promo CRM ➔
+              </button>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto min-h-[260px] rounded-xl border border-slate-800">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-900/90 text-slate-400 font-semibold border-b border-slate-800 text-[10px] uppercase">
+                <tr>
+                  <th class="p-2.5 w-12 text-center">#</th>
+                  <th class="p-2.5">Nama Pasien</th>
+                  <th class="p-2.5 text-center">Tier</th>
+                  <th class="p-2.5 text-right">Total Belanja &amp; Kunjungan</th>
+                  <th class="p-2.5 text-center">Aksi Direct WA</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800/60" id="top-spenders-table-body">
+                <!-- Injected via JS -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Top Spenders Pagination Controls -->
+          <div id="top-spenders-pagination-wrapper" class="flex flex-col sm:flex-row items-center justify-between gap-2 pt-3 border-t border-slate-800 text-xs text-slate-400">
+            <span id="top-spenders-pagination-info">Menampilkan 0 pasien</span>
+            <div id="top-spenders-pagination-controls" class="flex items-center gap-1 flex-wrap"></div>
+          </div>
+        </div>
+
+        <!-- Hidden compatibility container for legacy IDs referenced in scripts -->
+        <div class="hidden" aria-hidden="true">
+          <div id="reminders-vip-royalty-card">
+            <table><tbody id="crm-vip-table-body"></tbody></table>
+          </div>
+          <div id="void-invoices-list"></div>
+          <div id="reminders-docrec-list"></div>
+          <div id="reminders-docrec-pager"></div>
+          <span id="reminders-docrec-count-badge"></span>
+          <span id="fu-count-missed">0</span>
+          <div id="fu-stage-filter">
+            <button data-stage="all"></button>
+            <button data-stage="day_h"></button>
+            <button data-stage="day_h3"></button>
+            <button data-stage="day_h7"></button>
+            <button data-stage="day_h14_recall"></button>
+          </div>
+        </div>
       </div>
+
 
       <!-- ================= SECTION 4: OUTLET DEPOK & PDK (MERGED KE ANALISIS EKSEKUTIF) ================= -->
       <div id="section-branches" class="hidden"></div>
@@ -14349,6 +14424,7 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
       if (typeof renderDocRecRegistryTable === 'function') renderDocRecRegistryTable();
       if (typeof renderSalesDoctorFollowupsTable === 'function') renderSalesDoctorFollowupsTable();
       if (typeof renderRemindersDoctorFollowupList === 'function') renderRemindersDoctorFollowupList();
+      if (typeof loadDailyAppointments === 'function' && !document.getElementById('section-reminders')?.classList.contains('hidden')) loadDailyAppointments();
       if (typeof renderFrequencyList === 'function') renderFrequencyList();
       if (typeof filterExecUnredeemedTable === 'function') filterExecUnredeemedTable();
       if (typeof renderPmItems === 'function') renderPmItems();
@@ -16210,6 +16286,14 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
         : allBdays.filter(b => matchesActiveBranch(b.outlet || b.branch || ''));
 
       if (bdayBadge) bdayBadge.innerText = `${filteredBdays.length} Pasien`;
+      const qTitle = document.getElementById('qa-bday-title');
+      if (qTitle) {
+        qTitle.textContent = filteredBdays.length > 0 ? `${filteredBdays.length} Pasien Ultah Bulan Ini` : 'Pasien Ultah Hari Ini';
+      }
+      const bdayStatus = document.getElementById('bday-status-indicator');
+      if (bdayStatus) {
+        bdayStatus.textContent = filteredBdays.length > 0 ? `${filteredBdays.length} pasien terdata` : 'Tidak ada ultah';
+      }
 
       const totalItems = filteredBdays.length;
       const totalPages = Math.max(1, Math.ceil(totalItems / bdayPageSize));
@@ -16480,7 +16564,50 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
       const endIndex = Math.min(startIndex + topSpendersPageSize, totalItems);
       const pageItems = filtered.slice(startIndex, endIndex);
 
-      const rowsHtml = pageItems.length === 0
+      const rowsHtml5 = pageItems.length === 0
+        ? '<tr><td colspan="5" class="p-8 text-center text-xs text-slate-500 italic">Tidak ada belanja pasien pada periode/cabang ini.</td></tr>'
+        : pageItems.map(s => {
+            const spentNum = Number(s.total_spent || 0);
+            let tierBadge = '';
+            if (spentNum >= 4000000) {
+              tierBadge = '<span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 whitespace-nowrap">👑 VIP Royalty</span>';
+            } else if (spentNum >= 2000000) {
+              tierBadge = '<span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30 whitespace-nowrap">💎 High Spender</span>';
+            } else {
+              tierBadge = '<span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-slate-800 text-slate-300 border border-slate-700 whitespace-nowrap">⭐ Active</span>';
+            }
+            return `
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-2.5 text-center font-mono font-bold text-slate-300">
+                ${s.rank <= 3 ? ['👑','💎','⭐'][s.rank-1] : `<span class="w-5 h-5 rounded-full bg-slate-800 text-slate-400 inline-flex items-center justify-center text-[10px]">${s.rank}</span>`}
+              </td>
+              <td class="p-2.5">
+                <button onclick="quickSearchSample('${(s.name || '').replace(/'/g, "\\'")}')" class="font-bold text-white hover:text-purple-300 flex items-center gap-1.5 text-left cursor-pointer">
+                  <span>${escapeHtml(s.name)}</span> <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-amber-400/80"></i>
+                </button>
+                <div class="text-[10px] text-slate-400 font-mono mt-0.5 flex items-center gap-1.5">
+                  <span class="text-cyan-400">📱 ${escapeHtml(s.phone || '-')}</span>
+                  <span class="opacity-40">•</span>
+                  <span class="px-1.5 py-0.2 rounded text-[9px] font-bold ${String(s.outlets).includes('Pondok') ? 'bg-purple-500/20 text-purple-300 border border-purple-500/30' : 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30'}">${escapeHtml(s.outlets)}</span>
+                </div>
+              </td>
+              <td class="p-2.5 text-center">
+                ${tierBadge}
+              </td>
+              <td class="p-2.5 text-right font-mono">
+                <div class="font-black text-amber-300 text-xs">${escapeHtml(s.total_spent_fmt)}</div>
+                <div class="text-[10px] text-slate-400">${s.invoices_count || 1}x kunjungan</div>
+              </td>
+              <td class="p-2.5 text-center">
+                <button onclick="sendVipDirectWa('${(s.name || '').replace(/'/g, "\\'")}', '${s.phone || ''}', '${s.outlets || ''}')" class="px-2.5 py-1 bg-emerald-600/20 hover:bg-emerald-600/40 text-emerald-300 border border-emerald-500/30 rounded-lg text-xs font-semibold inline-flex items-center gap-1.5 transition cursor-pointer">
+                  <i class="fa-brands fa-whatsapp text-emerald-400"></i> Direct WA
+                </button>
+              </td>
+            </tr>
+          `;
+        }).join('');
+
+      const rowsHtml4 = pageItems.length === 0
         ? '<tr><td colspan="4" class="p-8 text-center text-xs text-slate-500 italic">Tidak ada belanja pasien pada periode/cabang ini.</td></tr>'
         : pageItems.map(s => `
             <tr class="hover:bg-slate-800/40 transition cursor-pointer" onclick="quickSearchSample('${(s.name || '').replace(/'/g, "\\'")}')" title="Klik untuk lihat Profil ${s.name}">
@@ -16488,19 +16615,19 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
                 ${s.rank <= 3 ? ['👑','💎','⭐'][s.rank-1] : `<span class="w-5 h-5 rounded-full bg-slate-800 text-slate-400 inline-flex items-center justify-center text-[10px]">${s.rank}</span>`}
               </td>
               <td class="p-2.5">
-                <div class="font-bold text-white flex items-center gap-1.5">${s.name} <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-amber-400/80"></i></div>
-                <div class="text-[10px] text-slate-400 font-mono">📱 ${s.phone || '-'} • ${s.invoices_count || 1} Kunjungan</div>
+                <div class="font-bold text-white flex items-center gap-1.5">${escapeHtml(s.name)} <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-amber-400/80"></i></div>
+                <div class="text-[10px] text-slate-400 font-mono">📱 ${escapeHtml(s.phone || '-')} • ${s.invoices_count || 1} Kunjungan</div>
               </td>
               <td class="p-2.5">
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold ${String(s.outlets).includes('Pondok') ? 'bg-purple-500/20 text-purple-300 border border-purple-500/30' : 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30'}">${s.outlets}</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold ${String(s.outlets).includes('Pondok') ? 'bg-purple-500/20 text-purple-300 border border-purple-500/30' : 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30'}">${escapeHtml(s.outlets)}</span>
               </td>
-              <td class="p-2.5 text-right font-mono font-black text-amber-300">${s.total_spent_fmt}</td>
+              <td class="p-2.5 text-right font-mono font-black text-amber-300">${escapeHtml(s.total_spent_fmt)}</td>
             </tr>
           `).join('');
 
       ['top-spenders-table-body', 'crm-top-spenders-table-body'].forEach(id => {
         const el = document.getElementById(id);
-        if (el) el.innerHTML = rowsHtml;
+        if (el) el.innerHTML = (id === 'crm-top-spenders-table-body') ? rowsHtml4 : rowsHtml5;
       });
 
       const infoText = totalItems === 0
@@ -17276,175 +17403,520 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
       }
       window.changeFollowUpPageSize = changeFollowUpPageSize;
 
-      function renderSmartFollowUpTableView() {
-        const tbody = document.getElementById('smart-followup-table-tbody');
-        const queueBadge = document.getElementById('fu-queue-count-badge');
-        const infoEl = document.getElementById('smart-followup-pagination-info');
-        const pagControls = document.getElementById('smart-followup-pagination-controls');
-        if (!tbody) return;
 
-        const pendingItems = window._smartFollowUpAllItems || [];
-        const doneItems = window._smartFollowUpDoneItems || [];
-        const missedItems = window._smartFollowUpMissedItems || [];
-        const allItems = followUpFilterStatus === 'done' ? doneItems : followUpFilterStatus === 'missed' ? missedItems : pendingItems;
-        const cm = document.getElementById('fu-count-missed');
-        if (cm) cm.textContent = missedItems.length;
-        const cp = document.getElementById('fu-count-pending'), cd = document.getElementById('fu-count-done');
-        if (cp) cp.textContent = pendingItems.length;
-        if (cd) cd.textContent = doneItems.length;
+    // ================= UNIFIED SALES WORK QUEUE & FOLLOW-UP ENGINE =================
+    let _unifiedUrgencyFilter = 'all'; // 'all', 'overdue', 'today', 'h3', 'h7', 'h14'
+    let _unifiedStatusFilter = 'pending'; // 'pending', 'done', 'all'
+    let _unifiedSearchQuery = '';
+    let _unifiedSourceFilter = 'all'; // 'all', 'doctor', 'retention'
+    let _unifiedPage = 1;
+    let _unifiedPageSize = 10;
 
-        // Apply filters
-        let filtered = allItems.filter(item => {
-          if (followUpFilterStage !== 'all' && item.stageKey !== followUpFilterStage) {
-            return false;
-          }
-          if (followUpSearchQuery) {
-            const matchName = (item.patient || '').toLowerCase().includes(followUpSearchQuery);
-            const matchTreatment = (item.treatment || '').toLowerCase().includes(followUpSearchQuery);
-            const matchOutlet = (item.outlet || '').toLowerCase().includes(followUpSearchQuery);
-            if (!matchName && !matchTreatment && !matchOutlet) return false;
-          }
-          return true;
+    function handleUnifiedStatusFilter(val) {
+      _unifiedStatusFilter = val || 'pending';
+      _unifiedPage = 1;
+      document.querySelectorAll('#fu-status-filter .rem-seg-btn').forEach(b => {
+        const on = b.dataset.status === _unifiedStatusFilter;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      renderUnifiedFollowUpQueue();
+    }
+    window.handleUnifiedStatusFilter = handleUnifiedStatusFilter;
+
+    function setUnifiedUrgencyFilter(val) {
+      _unifiedUrgencyFilter = val || 'all';
+      _unifiedPage = 1;
+      ['all', 'overdue', 'today', 'h3', 'h7', 'h14'].forEach(k => {
+        const p = document.getElementById('rem-pill-' + k);
+        if (p) {
+          p.classList.toggle('active', k === _unifiedUrgencyFilter);
+          p.setAttribute('aria-selected', k === _unifiedUrgencyFilter ? 'true' : 'false');
+        }
+      });
+      renderUnifiedFollowUpQueue();
+    }
+    window.setUnifiedUrgencyFilter = setUnifiedUrgencyFilter;
+
+    function setUnifiedSourceFilter(val) {
+      _unifiedSourceFilter = val || 'all';
+      _unifiedPage = 1;
+      const sel = document.getElementById('rem-source-filter');
+      if (sel) sel.value = _unifiedSourceFilter;
+      renderUnifiedFollowUpQueue();
+    }
+    window.setUnifiedSourceFilter = setUnifiedSourceFilter;
+
+    function handleUnifiedFollowUpSearch(val) {
+      _unifiedSearchQuery = (val || '').trim().toLowerCase();
+      _unifiedPage = 1;
+      renderUnifiedFollowUpQueue();
+    }
+    window.handleUnifiedFollowUpSearch = handleUnifiedFollowUpSearch;
+
+    function changeFollowUpPage(p) {
+      _unifiedPage = p;
+      renderUnifiedFollowUpQueue();
+    }
+    window.changeFollowUpPage = changeFollowUpPage;
+
+    function changeFollowUpPageSize(size) {
+      _unifiedPageSize = parseInt(size, 10) || 10;
+      _unifiedPage = 1;
+      renderUnifiedFollowUpQueue();
+    }
+    window.changeFollowUpPageSize = changeFollowUpPageSize;
+
+    // Backward-compatibility bridges for old handlers
+    function setRemindersTimingFilter(t) { setUnifiedUrgencyFilter(t); }
+    window.setRemindersTimingFilter = setRemindersTimingFilter;
+    function setRemindersSourceFilter(s) { setUnifiedSourceFilter(s); }
+    window.setRemindersSourceFilter = setRemindersSourceFilter;
+    function handleFollowUpStatusFilter(s) { handleUnifiedStatusFilter(s); }
+    window.handleFollowUpStatusFilter = handleFollowUpStatusFilter;
+    function handleFollowUpSearch(q) { handleUnifiedFollowUpSearch(q); }
+    window.handleFollowUpSearch = handleFollowUpSearch;
+    function handleFollowUpStageFilter(stage) {
+      if (stage === 'day_h') setUnifiedUrgencyFilter('today');
+      else if (stage === 'day_h3') setUnifiedUrgencyFilter('h3');
+      else if (stage === 'day_h7') setUnifiedUrgencyFilter('h7');
+      else if (stage === 'day_h14_recall') setUnifiedUrgencyFilter('h14');
+      else setUnifiedUrgencyFilter('all');
+    }
+    window.handleFollowUpStageFilter = handleFollowUpStageFilter;
+
+    async function quickMarkDoctorFollowupDone(recId) {
+      try {
+        const item = (_allSalesDoctorFollowups || []).find(r => String(r.id) === String(recId));
+        if (item) {
+          item.followup_status = 'contacted';
+        }
+        renderUnifiedFollowUpQueue();
+        await fetch('/api/sales/doctor-followups/status', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            recommendation_id: recId,
+            status: 'contacted',
+            notes: 'Ditandai selesai via Antrian Follow-Up Terpadu',
+            contacted_by: 'Dashboard Frontliner'
+          })
         });
+      } catch (err) {
+        console.error('[quickMarkDoctorFollowupDone] Error:', err);
+      }
+    }
+    window.quickMarkDoctorFollowupDone = quickMarkDoctorFollowupDone;
 
-        if (queueBadge) {
-          queueBadge.textContent = followUpFilterStatus === 'done' ? `${filtered.length} Sudah Di-follow-up` : followUpFilterStatus === 'missed' ? `${filtered.length} Terlewat` : `${filtered.length} Antrian Pasien`;
+    async function quickMarkRetentionDone(id, stage, patient, phone, outlet, treatment) {
+      try {
+        const res = await fetch('/api/followup/mark-done', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id, stage, patient, phone, outlet, treatment, marked_by: 'Dashboard Frontliner' })
+        });
+        const result = await res.json();
+        if (result.success) {
+          const sameItem = x => String(x.id) === String(id) && String(x.stageKey) === String(stage);
+          const moved = (window._smartFollowUpAllItems || []).find(sameItem) || (window._smartFollowUpMissedItems || []).find(sameItem);
+          window._smartFollowUpAllItems = (window._smartFollowUpAllItems || []).filter(x => !sameItem(x));
+          window._smartFollowUpMissedItems = (window._smartFollowUpMissedItems || []).filter(x => !sameItem(x));
+          if (moved) {
+            window._smartFollowUpDoneItems = [{ ...moved, missed_days: undefined, followed_up: { by: result.marked_by || 'Frontliner', at: new Date().toISOString() } }, ...(window._smartFollowUpDoneItems || [])];
+          }
+          renderUnifiedFollowUpQueue();
+        } else {
+          alert('Gagal menandai follow-up: ' + (result.error || 'Unknown error'));
+        }
+      } catch (err) {
+        alert('Gagal menandai follow-up: ' + err.message);
+      }
+    }
+    window.quickMarkRetentionDone = quickMarkRetentionDone;
+
+    function toggleBirthdayDetails() {
+      const wrap = document.getElementById('bday-details-wrap');
+      const chev = document.getElementById('bday-chevron');
+      if (!wrap) return;
+      const isHidden = wrap.classList.contains('hidden');
+      wrap.classList.toggle('hidden', !isHidden);
+      if (chev) {
+        chev.className = isHidden ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down';
+      }
+    }
+    window.toggleBirthdayDetails = toggleBirthdayDetails;
+
+    async function refreshSalesRemindersData() {
+      const btn = event?.currentTarget;
+      let origHtml = '';
+      if (btn) {
+        origHtml = btn.innerHTML;
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-xs"></i> <span>Menyegarkan...</span>';
+        btn.disabled = true;
+      }
+      try {
+        if (typeof loadDailyAppointments === 'function') await loadDailyAppointments();
+        if (typeof loadSalesDoctorFollowups === 'function') await loadSalesDoctorFollowups();
+        if (typeof renderTopSpenders === 'function') renderTopSpenders();
+        if (typeof renderUnifiedFollowUpQueue === 'function') renderUnifiedFollowUpQueue();
+      } catch (err) {
+        console.error('refreshSalesRemindersData error:', err);
+      } finally {
+        if (btn) {
+          btn.innerHTML = origHtml;
+          btn.disabled = false;
+        }
+      }
+    }
+    window.refreshSalesRemindersData = refreshSalesRemindersData;
+
+    function renderUnifiedFollowUpQueue() {
+      const tbody = document.getElementById('smart-followup-table-tbody');
+      if (!tbody) return;
+
+      const activeBranch = typeof getActiveBranchName === 'function' ? getActiveBranchName() : 'all';
+      const branchLabel = activeBranch === 'Depok' ? 'Cabang Depok' : (activeBranch === 'Pondok Kopi' ? 'Cabang Pondok Kopi' : 'Semua Cabang');
+      const now = new Date();
+      const dateLabel = now.toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'short', year: 'numeric' });
+      
+      const ctxEl = document.getElementById('rem-header-date-branch');
+      if (ctxEl) ctxEl.textContent = `Hari ini, ${dateLabel} · ${branchLabel}`;
+
+      // 1. Gather Doctor Follow-Up Items
+      const docItems = (_allSalesDoctorFollowups || []).filter(r => {
+        if (selectedBranch !== 'all' && r.branch && !matchesActiveBranch(r.branch)) return false;
+        return true;
+      }).map(r => {
+        const isDone = r.followup_status === 'contacted' || r.followup_status === 'booked';
+        const d = (r.days_until_due !== null && r.days_until_due !== undefined) ? Number(r.days_until_due) : 999;
+        
+        // Timing Badge (Correct units: hari, NOT h!)
+        let timingBadge = '';
+        if (d < 0) {
+          timingBadge = `<span class="px-2 py-0.5 rounded-md text-[10.5px] font-bold font-mono bg-rose-500/20 text-rose-300 border border-rose-500/30">🚨 Overdue ${Math.abs(d)} hari</span>`;
+        } else if (d === 0) {
+          timingBadge = `<span class="px-2 py-0.5 rounded-md text-[10.5px] font-bold font-mono bg-amber-500/20 text-amber-300 border border-amber-500/30 animate-pulse">⚡ Hari ini</span>`;
+        } else if (d === 1) {
+          timingBadge = `<span class="px-2 py-0.5 rounded-md text-[10.5px] font-bold font-mono bg-sky-500/20 text-sky-300 border border-sky-500/30">1 hari lagi (Besok)</span>`;
+        } else if (d <= 7) {
+          timingBadge = `<span class="px-2 py-0.5 rounded-md text-[10.5px] font-bold font-mono bg-sky-500/20 text-sky-300 border border-sky-500/30">${d} hari lagi</span>`;
+        } else {
+          timingBadge = `<span class="px-2 py-0.5 rounded-md text-[10.5px] font-bold font-mono bg-purple-500/20 text-purple-300 border border-purple-500/30">${d > 30 ? '&gt;30 hari' : d + ' hari lagi'}</span>`;
         }
 
-        const totalItems = filtered.length;
-        const totalPages = Math.max(1, Math.ceil(totalItems / followUpPageSize));
-        if (followUpCurrentPage > totalPages) followUpCurrentPage = totalPages;
-        if (followUpCurrentPage < 1) followUpCurrentPage = 1;
+        const reasonSrc = r.source === 'neosoft_soap' ? 'Plan Dokter' : r.source === 'auto_recommendation' ? 'Rekomendasi Otomatis' : r.source === 'neosoft_appointment' ? 'Reservasi Neosoft' : 'Kontrol Rutin';
+        const reasonChip = `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30"><i class="fa-solid fa-stethoscope"></i> Kontrol (${reasonSrc})</span>`;
 
-        const startIndex = (followUpCurrentPage - 1) * followUpPageSize;
-        const endIndex = Math.min(startIndex + followUpPageSize, totalItems);
-        const pagedItems = filtered.slice(startIndex, endIndex);
+        return {
+          id: 'doc_' + r.id,
+          rawId: r.id,
+          type: 'doctor',
+          patient: r.customer_name || 'Pasien',
+          phone: r.customer_phone || '',
+          branch: r.branch || 'Klinik',
+          urgency_days: d,
+          timingBadge: timingBadge,
+          reasonChip: reasonChip,
+          treatment: r.next_treatment || 'Treatment Lanjutan',
+          doctor: r.doctor_name || '',
+          date_target: r.recommended_return_date ? fmtIdDate(r.recommended_return_date) : '',
+          time_target: r.appointment_time || '',
+          is_done: isDone,
+          status_label: r.followup_status,
+          waHref: `javascript:sendSalesFollowupWhatsApp('${r.id}')`,
+          markDoneAction: `quickMarkDoctorFollowupDone('${r.id}')`,
+          detailAction: `openSalesFollowupModal('${r.id}')`,
+          raw: r
+        };
+      });
 
-        if (pagedItems.length === 0) {
-          tbody.innerHTML = `
-            <tr>
-              <td colspan="5" class="p-8 text-center text-slate-500 italic">
-                <i class="fa-regular fa-folder-open text-2xl mb-2 block opacity-40"></i>
-                Tidak ada data follow-up yang sesuai dengan filter/pencarian.
+      // 2. Gather Retention Stage Follow-Up Items
+      const smartPending = window._smartFollowUpAllItems || [];
+      const smartDone = window._smartFollowUpDoneItems || [];
+      const smartMissed = window._smartFollowUpMissedItems || [];
+      const smartCombined = [...smartPending, ...smartMissed, ...smartDone];
+      const seenSmart = new Set();
+      const smartUnique = [];
+      smartCombined.forEach(p => {
+        const key = String(p.id) + '_' + String(p.stageKey);
+        if (!seenSmart.has(key)) {
+          seenSmart.add(key);
+          smartUnique.push(p);
+        }
+      });
+
+      const retentionItems = smartUnique.filter(p => {
+        if (selectedBranch !== 'all' && p.outlet && !matchesActiveBranch(p.outlet)) return false;
+        return true;
+      }).map(p => {
+        const isDone = !!p.followed_up;
+        let d = 0;
+        if (p.missed_days) {
+          d = -Number(p.missed_days);
+        } else if (p.stageKey === 'day_h') {
+          d = 0;
+        } else if (p.stageKey === 'day_h3') {
+          d = 3;
+        } else if (p.stageKey === 'day_h7') {
+          d = 7;
+        } else if (p.stageKey === 'day_h14_recall') {
+          d = 14;
+        }
+
+        let timingBadge = '';
+        if (d < 0) {
+          timingBadge = `<span class="px-2 py-0.5 rounded-md text-[10.5px] font-bold font-mono bg-rose-500/20 text-rose-300 border border-rose-500/30">🚨 Overdue ${Math.abs(d)} hari</span>`;
+        } else if (d === 0) {
+          timingBadge = `<span class="px-2 py-0.5 rounded-md text-[10.5px] font-bold font-mono bg-amber-500/20 text-amber-300 border border-amber-500/30 animate-pulse">⚡ Hari ini</span>`;
+        } else if (d === 1) {
+          timingBadge = `<span class="px-2 py-0.5 rounded-md text-[10.5px] font-bold font-mono bg-sky-500/20 text-sky-300 border border-sky-500/30">1 hari lagi (Besok)</span>`;
+        } else if (d <= 7) {
+          timingBadge = `<span class="px-2 py-0.5 rounded-md text-[10.5px] font-bold font-mono bg-sky-500/20 text-sky-300 border border-sky-500/30">${d} hari lagi</span>`;
+        } else {
+          timingBadge = `<span class="px-2 py-0.5 rounded-md text-[10.5px] font-bold font-mono bg-purple-500/20 text-purple-300 border border-purple-500/30">${d > 30 ? '&gt;30 hari' : d + ' hari lagi'}</span>`;
+        }
+
+        const badgeColors = {
+          day_h: 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30',
+          day_h3: 'bg-amber-500/20 text-amber-300 border border-amber-500/30',
+          day_h7: 'bg-sky-500/20 text-sky-300 border border-sky-500/30',
+          day_h14_recall: 'bg-purple-500/20 text-purple-300 border border-purple-500/30'
+        };
+        const reasonChip = `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold ${badgeColors[p.stageKey] || 'bg-slate-800 text-slate-300'}"><i class="fa-solid fa-route"></i> ${escapeHtml(p.stageBadge || p.stageLabel || 'Follow-Up')}</span>`;
+
+        const feedbackUrl = window.location.origin + '/feedback.html' + (p.feedback_query || '');
+        const finalMessage = (p.message || '').replace('{{FEEDBACK_URL}}', feedbackUrl);
+        const waHref = `https://wa.me/${(p.phone || '').replace(/[^0-9]/g,'')}?text=${encodeURIComponent(finalMessage)}`;
+
+        return {
+          id: 'ret_' + p.id + '_' + (p.stageKey || ''),
+          rawId: p.id,
+          type: 'retention',
+          patient: p.patient || 'Pasien',
+          phone: p.phone || '',
+          branch: p.outlet || 'Klinik',
+          urgency_days: d,
+          timingBadge: timingBadge,
+          reasonChip: reasonChip,
+          treatment: p.treatment || 'Treatment',
+          doctor: '',
+          date_target: '',
+          time_target: '',
+          is_done: isDone,
+          status_label: isDone ? 'done' : (d < 0 ? 'missed' : 'pending'),
+          waHref: waHref,
+          markDoneAction: `quickMarkRetentionDone('${p.id}', '${p.stageKey}', '${escapeHtml(p.patient || '').replace(/'/g, "\\'")}', '${escapeHtml(p.phone || '')}', '${escapeHtml(p.outlet || '')}', '${escapeHtml(p.treatment || '').replace(/'/g, "\\'")}')`,
+          detailAction: `openInPatient360('${escapeHtml(p.patient || '').replace(/'/g, "\\'")}')`,
+          raw: p
+        };
+      });
+
+      const combined = [...docItems, ...retentionItems];
+
+      // Calculate ZONE A Metrics & Pills
+      const activePending = combined.filter(item => !item.is_done && item.urgency_days >= -30 && item.urgency_days <= 30);
+      const overdueCount = combined.filter(item => !item.is_done && item.urgency_days < 0).length;
+      const todayCount = combined.filter(item => !item.is_done && item.urgency_days === 0).length;
+      const h3Count = combined.filter(item => !item.is_done && item.urgency_days >= 1 && item.urgency_days <= 3).length;
+      const h7Count = combined.filter(item => !item.is_done && item.urgency_days >= 4 && item.urgency_days <= 7).length;
+      const doneCount = combined.filter(item => item.is_done).length;
+      const totalWorkload = activePending.length;
+
+      // Update Zone A Header Counters
+      const totalCountEl = document.getElementById('rem-work-total-count');
+      if (totalCountEl) totalCountEl.textContent = totalWorkload;
+      const stOverdue = document.getElementById('rem-stat-overdue'); if (stOverdue) stOverdue.textContent = overdueCount;
+      const stToday = document.getElementById('rem-stat-today'); if (stToday) stToday.textContent = todayCount;
+      const stH3 = document.getElementById('rem-stat-h3'); if (stH3) stH3.textContent = h3Count;
+      const stH7 = document.getElementById('rem-stat-h7'); if (stH7) stH7.textContent = h7Count;
+
+      // Update Urgency Pills
+      const cAll = document.getElementById('rem-count-all'); if (cAll) cAll.textContent = totalWorkload;
+      const cOverdue = document.getElementById('rem-count-overdue'); if (cOverdue) cOverdue.textContent = overdueCount;
+      const cToday = document.getElementById('rem-count-today'); if (cToday) cToday.textContent = todayCount;
+      const cH3 = document.getElementById('rem-count-h3'); if (cH3) cH3.textContent = h3Count;
+      const cH7 = document.getElementById('rem-count-h7'); if (cH7) cH7.textContent = h7Count;
+
+      // Update Status Counters
+      const fuPend = document.getElementById('fu-count-pending'); if (fuPend) fuPend.textContent = totalWorkload;
+      const fuDn = document.getElementById('fu-count-done'); if (fuDn) fuDn.textContent = doneCount;
+
+      // Update Progress Bar
+      const totalAll = totalWorkload + doneCount;
+      const pct = totalAll > 0 ? Math.round((doneCount / totalAll) * 100) : 0;
+      const progText = document.getElementById('rem-work-progress-text');
+      if (progText) progText.textContent = `${doneCount} / ${totalAll} (${pct}%)`;
+      const progBar = document.getElementById('rem-work-progress-bar');
+      if (progBar) progBar.style.width = pct + '%';
+
+      // 3. Filter Queue Items for Display
+      let queueItems = combined.filter(item => {
+        // Status filter
+        if (_unifiedStatusFilter === 'pending' && item.is_done) return false;
+        if (_unifiedStatusFilter === 'done' && !item.is_done) return false;
+
+        // Urgency filter
+        if (_unifiedUrgencyFilter === 'overdue' && item.urgency_days >= 0) return false;
+        if (_unifiedUrgencyFilter === 'today' && item.urgency_days !== 0) return false;
+        if (_unifiedUrgencyFilter === 'h3' && (item.urgency_days < 1 || item.urgency_days > 3)) return false;
+        if (_unifiedUrgencyFilter === 'h7' && (item.urgency_days < 4 || item.urgency_days > 7)) return false;
+        if (_unifiedUrgencyFilter === 'h14' && (item.urgency_days < 8 || item.urgency_days > 30)) return false;
+        if (_unifiedUrgencyFilter === 'all') {
+          if (item.urgency_days < -30 || item.urgency_days > 30) return false;
+        }
+
+        // Source filter
+        if (_unifiedSourceFilter === 'doctor' && item.type !== 'doctor') return false;
+        if (_unifiedSourceFilter === 'retention' && item.type !== 'retention') return false;
+
+        // Search query
+        if (_unifiedSearchQuery) {
+          const q = _unifiedSearchQuery;
+          const matchName = (item.patient || '').toLowerCase().includes(q);
+          const matchPhone = (item.phone || '').toLowerCase().includes(q);
+          const matchTreat = (item.treatment || '').toLowerCase().includes(q);
+          const matchDoc = (item.doctor || '').toLowerCase().includes(q);
+          const matchBranch = (item.branch || '').toLowerCase().includes(q);
+          if (!matchName && !matchPhone && !matchTreat && !matchDoc && !matchBranch) return false;
+        }
+
+        return true;
+      });
+
+      // 4. STRICT SORT BY URGENCY ASCENDING (Overdue first, then today, then upcoming)
+      queueItems.sort((a, b) => a.urgency_days - b.urgency_days);
+
+      // 5. Pagination
+      const totalQueue = queueItems.length;
+      const queueBadge = document.getElementById('fu-queue-count-badge');
+      if (queueBadge) queueBadge.textContent = `${totalQueue} Antrian Pasien`;
+
+      const totalPages = Math.max(1, Math.ceil(totalQueue / _unifiedPageSize));
+      if (_unifiedPage > totalPages) _unifiedPage = totalPages;
+      if (_unifiedPage < 1) _unifiedPage = 1;
+
+      const startIndex = (_unifiedPage - 1) * _unifiedPageSize;
+      const endIndex = Math.min(startIndex + _unifiedPageSize, totalQueue);
+      const paged = queueItems.slice(startIndex, endIndex);
+
+      if (paged.length === 0) {
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="5" class="p-8 text-center text-slate-500 italic">
+              <i class="fa-solid fa-clipboard-check text-2xl mb-2 block text-emerald-400 opacity-60"></i>
+              Tidak ada pasien follow-up pada filter/pencarian ini.
+            </td>
+          </tr>
+        `;
+      } else {
+        tbody.innerHTML = paged.map((item, idx) => {
+          const globalNo = startIndex + idx + 1;
+          const initials = (item.patient || '?').trim().split(/\s+/).slice(0, 2).map(w => w[0] || '').join('').toUpperCase();
+
+          return `
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="px-3 py-3 text-center text-slate-400 font-mono text-[11px] tabular-nums">${globalNo}</td>
+              <td class="px-3 py-3">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <div class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-300 font-bold flex items-center justify-center text-xs shrink-0">${escapeHtml(initials)}</div>
+                  <div class="min-w-0">
+                    <button onclick="openInPatient360('${escapeHtml(item.patient).replace(/'/g, "\\'")}')" class="font-bold text-white hover:text-indigo-300 text-left text-xs truncate block" title="Buka profil 360°">${escapeHtml(rmNiceName(item.patient))}</button>
+                    <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-slate-400 flex-wrap">
+                      <span class="font-mono text-cyan-400">${escapeHtml(item.phone || '-')}</span>
+                      <span class="opacity-40">·</span>
+                      <span class="px-1.5 py-0.2 rounded bg-slate-800 text-slate-300 font-mono text-[9.5px] font-semibold">${escapeHtml(item.branch)}</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="px-3 py-3 whitespace-nowrap">
+                ${item.timingBadge}
+                ${item.date_target ? `<div class="text-[10px] text-slate-400 mt-0.5"><i class="fa-regular fa-clock"></i> ${escapeHtml(item.date_target)}</div>` : ''}
+              </td>
+              <td class="px-3 py-3 max-w-[240px]">
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  ${item.reasonChip}
+                </div>
+                <div class="text-xs font-semibold text-white mt-1 truncate" title="${escapeHtml(item.treatment)}">${escapeHtml(item.treatment)}</div>
+                ${item.doctor ? `<div class="text-[10.5px] text-slate-400 truncate">DPJP: ${escapeHtml(item.doctor)}</div>` : ''}
+              </td>
+              <td class="px-3 py-3 text-right">
+                <div class="flex items-center justify-end gap-1.5 whitespace-nowrap">
+                  <a href="${item.waHref}" target="${item.type === 'doctor' ? '_self' : '_blank'}" rel="noopener" class="px-2.5 py-1 bg-emerald-600/20 hover:bg-emerald-600/40 text-emerald-300 border border-emerald-500/30 rounded-lg text-xs font-bold transition inline-flex items-center gap-1 cursor-pointer" title="Kirim Pesan WhatsApp">
+                    <i class="fa-brands fa-whatsapp text-emerald-400"></i> <span>${item.is_done ? 'Kirim Ulang' : 'Kirim WA'}</span>
+                  </a>
+                  ${item.is_done ? `
+                    <span class="px-2 py-1 text-emerald-400 text-xs font-semibold inline-flex items-center gap-1" title="Sudah selesai">
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                  ` : `
+                    <button onclick="${item.markDoneAction}" class="px-2 py-1 bg-slate-800 hover:bg-emerald-600/30 text-slate-300 hover:text-emerald-300 border border-slate-700 hover:border-emerald-500/30 rounded-lg text-xs font-bold transition cursor-pointer" title="Tandai Sudah Dihubungi">
+                      <i class="fa-solid fa-check"></i>
+                    </button>
+                  `}
+                  ${item.detailAction ? `
+                    <button onclick="${item.detailAction}" class="px-2 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg text-xs transition cursor-pointer" title="Catatan &amp; Detail">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                  ` : ''}
+                </div>
               </td>
             </tr>
           `;
+        }).join('');
+      }
+
+      // 6. Pagination Controls
+      const infoEl = document.getElementById('smart-followup-pagination-info');
+      if (infoEl) {
+        const displayStart = totalQueue === 0 ? 0 : startIndex + 1;
+        const displayEnd = endIndex;
+        infoEl.innerHTML = `Menampilkan <span class="font-bold text-white tabular-nums">${displayStart}</span> - <span class="font-bold text-white tabular-nums">${displayEnd}</span> dari <span class="font-bold text-white tabular-nums">${totalQueue}</span> antrian`;
+      }
+
+      const pagControls = document.getElementById('smart-followup-pagination-controls');
+      if (pagControls) {
+        if (totalPages <= 1) {
+          pagControls.innerHTML = '';
         } else {
-          const stageBadgeStyles = {
-            day_h: 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30',
-            day_h3: 'bg-amber-500/15 text-amber-400 border border-amber-500/30',
-            day_h7: 'bg-blue-500/15 text-blue-400 border border-blue-500/30',
-            day_h14_recall: 'bg-purple-500/15 text-purple-400 border border-purple-500/30'
+          let btns = [];
+          btns.push(`
+            <button onclick="changeFollowUpPage(${_unifiedPage - 1})" ${_unifiedPage === 1 ? 'disabled class="px-2 py-1 rounded border border-slate-800 text-slate-600 cursor-not-allowed text-xs"' : 'class="px-2 py-1 rounded border border-slate-700 text-slate-300 hover:bg-slate-800 text-xs cursor-pointer"'} title="Sebelumnya">
+              <i class="fa-solid fa-chevron-left text-[10px]"></i>
+            </button>
+          `);
+
+          const getPageRange = (current, total) => {
+            if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
+            if (current <= 4) return [1, 2, 3, 4, 5, '...', total];
+            if (current >= total - 3) return [1, '...', total - 4, total - 3, total - 2, total - 1, total];
+            return [1, '...', current - 1, current, current + 1, '...', total];
           };
-          const stageDotStyles = {
-            day_h: 'bg-emerald-400',
-            day_h3: 'bg-amber-400',
-            day_h7: 'bg-blue-400',
-            day_h14_recall: 'bg-purple-400'
-          };
 
-          tbody.innerHTML = pagedItems.map((p, idx) => {
-            const globalNo = startIndex + idx + 1;
-            const feedbackUrl = window.location.origin + '/feedback.html' + (p.feedback_query || '');
-            const finalMessage = (p.message || '').replace('{{FEEDBACK_URL}}', feedbackUrl);
-            const badgeClass = stageBadgeStyles[p.stageKey] || 'bg-slate-700/50 text-slate-300 border border-slate-600/50';
-            const dotClass = stageDotStyles[p.stageKey] || 'bg-slate-400';
+          const pageRange = getPageRange(_unifiedPage, totalPages);
+          pageRange.forEach(p => {
+            if (p === '...') {
+              btns.push(`<span class="px-2 py-1 text-slate-500 text-xs">...</span>`);
+            } else if (p === _unifiedPage) {
+              btns.push(`<button class="px-2.5 py-1 rounded bg-indigo-600 text-white font-bold text-xs shadow-xs">${p}</button>`);
+            } else {
+              btns.push(`<button onclick="changeFollowUpPage(${p})" class="px-2.5 py-1 rounded border border-slate-700 text-slate-300 hover:bg-slate-800 text-xs cursor-pointer">${p}</button>`);
+            }
+          });
 
-            const initials = (p.patient || '?').trim().split(/\s+/).slice(0, 2).map(w => w[0] || '').join('').toUpperCase();
-            const waHref = `https://wa.me/${(p.phone || '').replace(/[^0-9]/g,'')}?text=${encodeURIComponent(finalMessage)}`;
+          btns.push(`
+            <button onclick="changeFollowUpPage(${_unifiedPage + 1})" ${_unifiedPage === totalPages ? 'disabled class="px-2 py-1 rounded border border-slate-800 text-slate-600 cursor-not-allowed text-xs"' : 'class="px-2 py-1 rounded border border-slate-700 text-slate-300 hover:bg-slate-800 text-xs cursor-pointer"'} title="Berikutnya">
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+          `);
 
-            return `
-              <tr class="fu-row group transition">
-                <td class="px-3 py-3 text-center text-slate-400 font-mono text-[11px] tabular-nums">${globalNo}</td>
-                <td class="px-3 py-3">
-                  <div class="flex items-center gap-3 min-w-0">
-                    <div class="fu-avatar shrink-0">${escapeHtml(initials)}</div>
-                    <div class="min-w-0">
-                      <div class="font-bold text-slate-800 dark:text-white text-[13px] leading-tight truncate capitalize">${escapeHtml((p.patient || '-').toLowerCase())}</div>
-                      <div class="flex items-center gap-2 mt-0.5 text-[11px] text-slate-400 whitespace-nowrap">
-                        <span class="font-mono">${escapeHtml(p.phone || '-')}</span>
-                        <span class="opacity-40">•</span>
-                        <span class="inline-flex items-center gap-1"><i class="fa-solid fa-location-dot text-[9px]"></i>${escapeHtml(p.outlet || 'All')}</span>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td class="px-3 py-3">
-                  <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold whitespace-nowrap ${badgeClass}">
-                    <span class="w-1.5 h-1.5 rounded-full ${dotClass}"></span>
-                    ${escapeHtml(p.stageBadge || p.stageLabel || p.stageKey || 'Follow-Up')}
-                  </span>
-                </td>
-                <td class="px-3 py-3 max-w-[220px]">
-                  <div class="text-xs font-semibold text-slate-700 dark:text-slate-200 truncate" title="${escapeHtml(p.treatment || '')}">${escapeHtml(p.treatment || '-')}</div>
-                  <div class="text-[11px] text-slate-400 mt-0.5 truncate flex items-center gap-1" title="${escapeHtml(p.action || '')}">
-                    <i class="fa-solid fa-clipboard-check text-[9px] opacity-70"></i>${escapeHtml(p.action || p.stageLabel || 'Follow-up pasien')}
-                  </div>
-                </td>
-                <td class="px-3 py-3">
-                  ${p.missed_days ? `<div class="text-right text-[11px] mb-1 text-rose-500 font-semibold"><i class="fa-solid fa-triangle-exclamation"></i> Terlewat ${p.missed_days} hari</div>` : ''}
-                  ${p.followed_up ? `<div class="text-right text-[11px] mb-1 text-emerald-500 font-semibold"><i class="fa-solid fa-circle-check"></i> Sudah di-follow-up${p.followed_up.by ? ' oleh ' + escapeHtml(p.followed_up.by) : ''}<div class="text-slate-400 font-normal">${escapeHtml(fuFmtDateTime(p.followed_up.at))}</div></div>` : ''}
-                  <div class="flex items-center justify-end gap-2 whitespace-nowrap">
-                    <a href="${waHref}" target="_blank" rel="noopener" class="fu-wa-btn" title="${escapeHtml(p.action || 'Kirim WA')}">
-                      <i class="fa-brands fa-whatsapp text-sm"></i><span>${p.followed_up ? 'Kirim ulang' : p.missed_days ? 'Kirim sekarang' : 'Kirim WA'}</span>
-                    </a>
-                    ${p.followed_up ? '' : `<button class="fu-mark-done-btn fu-done-btn" data-fu-id="${escapeHtml(p.id || '')}" data-fu-stage="${escapeHtml(p.stageKey || p.stage || '')}" data-fu-patient="${escapeHtml(p.patient || '')}" data-fu-phone="${escapeHtml(p.phone || '')}" data-fu-outlet="${escapeHtml(p.outlet || '')}" data-fu-treatment="${escapeHtml(p.treatment || '')}" title="Tandai selesai (sudah di-follow up)" aria-label="Tandai selesai">
-                      <i class="fa-solid fa-check"></i>
-                    </button>`}
-                  </div>
-                </td>
-              </tr>
-            `;
-          }).join('');
-        }
-
-        // Pagination info
-        if (infoEl) {
-          const displayStart = totalItems === 0 ? 0 : startIndex + 1;
-          const displayEnd = endIndex;
-          infoEl.innerHTML = `Menampilkan <span class="font-bold text-slate-800 dark:text-white tabular-nums">${displayStart}</span> - <span class="font-bold text-slate-800 dark:text-white tabular-nums">${displayEnd}</span> dari <span class="font-bold text-slate-800 dark:text-white tabular-nums">${totalItems}</span> antrian`;
-        }
-
-        // Pagination buttons with smart ellipsis
-        if (pagControls) {
-          if (totalPages <= 1) {
-            pagControls.innerHTML = '';
-          } else {
-            let btns = [];
-            btns.push(`
-              <button onclick="changeFollowUpPage(${followUpCurrentPage - 1})" ${followUpCurrentPage === 1 ? 'disabled class="px-2 py-1 rounded border border-slate-200 dark:border-slate-800 text-slate-300 dark:text-slate-700 cursor-not-allowed text-xs"' : 'class="px-2 py-1 rounded border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs cursor-pointer"'} title="Sebelumnya">
-                <i class="fa-solid fa-chevron-left text-[10px]"></i>
-              </button>
-            `);
-
-            const getPageRange = (current, total) => {
-              if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
-              if (current <= 4) return [1, 2, 3, 4, 5, '...', total];
-              if (current >= total - 3) return [1, '...', total - 4, total - 3, total - 2, total - 1, total];
-              return [1, '...', current - 1, current, current + 1, '...', total];
-            };
-
-            const pageRange = getPageRange(followUpCurrentPage, totalPages);
-            pageRange.forEach(p => {
-              if (p === '...') {
-                btns.push(`<span class="px-2 py-1 text-slate-400 text-xs">...</span>`);
-              } else if (p === followUpCurrentPage) {
-                btns.push(`<button class="px-2.5 py-1 rounded bg-indigo-600 text-white font-bold text-xs shadow-xs">${p}</button>`);
-              } else {
-                btns.push(`<button onclick="changeFollowUpPage(${p})" class="px-2.5 py-1 rounded border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs cursor-pointer">${p}</button>`);
-              }
-            });
-
-            btns.push(`
-              <button onclick="changeFollowUpPage(${followUpCurrentPage + 1})" ${followUpCurrentPage === totalPages ? 'disabled class="px-2 py-1 rounded border border-slate-200 dark:border-slate-800 text-slate-300 dark:text-slate-700 cursor-not-allowed text-xs"' : 'class="px-2 py-1 rounded border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs cursor-pointer"'} title="Berikutnya">
-                <i class="fa-solid fa-chevron-right text-[10px]"></i>
-              </button>
-            `);
-
-            pagControls.innerHTML = btns.join('');
-          }
+          pagControls.innerHTML = btns.join('');
         }
       }
+    }
+    window.renderUnifiedFollowUpQueue = renderUnifiedFollowUpQueue;
+
+      function renderSmartFollowUpTableView() { renderUnifiedFollowUpQueue(); }
       window.renderSmartFollowUpTableView = renderSmartFollowUpTableView;
 
       // Input manual kondisi terakhir & tanggal beli aset (pelengkap kolom
@@ -23293,7 +23765,7 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
     async function loadDailyAppointments(date) {
       const body = document.getElementById('appt-tbody');
       if (!body) return;
-      body.innerHTML = '<tr><td colspan="7" class="p-6 text-center text-slate-500"><i class="fa-solid fa-circle-notch fa-spin mr-1"></i> Memuat…</td></tr>';
+      body.innerHTML = '<tr><td colspan="5" class="p-6 text-center text-slate-500"><i class="fa-solid fa-circle-notch fa-spin mr-1"></i> Memuat…</td></tr>';
       try {
         const r = await fetch('/api/sales/appointments' + (date ? '?date=' + encodeURIComponent(date) : ''));
         if (r.status === 403) { document.getElementById('daily-appt-card')?.classList.add('hidden'); return; }
@@ -23317,15 +23789,26 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
           const st = x.cancelled ? 'bg-rose-500/15 text-rose-300' : /finish/i.test(x.status) ? 'bg-emerald-500/15 text-emerald-300' : /confirm|arriv/i.test(x.status) ? 'bg-sky-500/15 text-sky-300' : /treatment|consult/i.test(x.status) ? 'bg-violet-500/15 text-violet-300' : 'bg-amber-500/15 text-amber-300';
           return `<tr class="hover:bg-slate-800/40 cursor-pointer" onclick="if (!event.target.closest('button')) openAppointmentDetail(${Number(x.id)})" title="Lihat detail">
             <td class="p-2.5 font-mono text-slate-200 whitespace-nowrap">${esc(x.start)}${x.end ? `<span class="text-slate-500">–${esc(x.end)}</span>` : ''}</td>
-            <td class="p-2.5"><button onclick="openInPatient360('${esc(x.patient).replace(/&#39;/g, "\\'")}')" class="font-semibold text-white hover:text-indigo-300 text-left">${esc(x.patient)}</button><div class="text-[10px] text-slate-500">${esc(x.patient_type || '')}${x.phone ? ' · ' + esc(x.phone) : ''}</div></td>
-            <td class="p-2.5 text-slate-400">${esc(x.branch)}</td>
-            <td class="p-2.5 text-slate-400 whitespace-nowrap">${esc(x.room || '-')}${x.checkin ? `<div class="text-[10px] text-slate-500">check-in lobi ${esc(x.checkin)}</div>` : ''}</td>
-            <td class="p-2.5 text-slate-300">${x.treatments.length ? esc(x.treatments.join(', ')) : x.lobby_only ? '<span class="text-slate-500 italic">Check-in lobi · treatment belum dijadwalkan</span>' : '<span class="text-slate-500 italic">treatment belum dipilih</span>'}${x.remarks ? `<div class="text-[10px] text-slate-500">${esc(x.remarks)}</div>` : ''}</td>
+            <td class="p-2.5">
+              <button onclick="openInPatient360('${esc(x.patient).replace(/&#39;/g, "\\'")}')" class="font-semibold text-white hover:text-indigo-300 text-left">${esc(x.patient)}</button>
+              <div class="text-[10px] text-slate-400 flex items-center gap-1.5 flex-wrap mt-0.5">
+                <span class="px-1.5 py-0.2 rounded bg-slate-800 text-slate-300 font-mono text-[9px] font-semibold">${esc(x.branch)}</span>
+                ${x.room ? `<span class="text-slate-400">Ruang ${esc(x.room)}</span>` : ''}
+                ${x.phone ? `<span class="font-mono text-slate-400">· ${esc(x.phone)}</span>` : ''}
+              </div>
+            </td>
+            <td class="p-2.5 text-slate-300">
+              ${x.treatments.length ? esc(x.treatments.join(', ')) : x.lobby_only ? '<span class="text-slate-500 italic">Check-in lobi · treatment belum dijadwalkan</span>' : '<span class="text-slate-500 italic">treatment belum dipilih</span>'}
+              ${x.remarks ? `<div class="text-[10px] text-slate-500 mt-0.5">${esc(x.remarks)}</div>` : ''}
+            </td>
             <td class="p-2.5 text-slate-400">${esc([x.doctor, ...x.staff].filter(Boolean).join(', ') || '-')}</td>
-            <td class="p-2.5 text-center"><span class="px-2 py-0.5 rounded text-[10px] font-bold ${st}">${x.cancelled ? 'Batal' : esc(x.status)}</span>${x.has_invoice && !x.cancelled ? '<div class="text-[10px] text-emerald-400 mt-0.5">sudah invoice</div>' : ''}</td>
+            <td class="p-2.5 text-center">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold ${st}">${x.cancelled ? 'Batal' : esc(x.status)}</span>
+              ${x.has_invoice && !x.cancelled ? '<div class="text-[10px] text-emerald-400 mt-0.5 font-medium">sudah invoice</div>' : ''}
+            </td>
           </tr>`;
-        }).join('') : `<tr><td colspan="7" class="p-6 text-center text-slate-500">Tidak ada appointment di tanggal ini.</td></tr>`;
-      } catch (e) { body.innerHTML = `<tr><td colspan="7" class="p-6 text-center text-rose-300">${mrEsc(e.message)}</td></tr>`; }
+        }).join('') : `<tr><td colspan="5" class="p-6 text-center text-slate-500">Tidak ada appointment di tanggal ini.</td></tr>`;
+      } catch (e) { body.innerHTML = `<tr><td colspan="5" class="p-6 text-center text-rose-300">${mrEsc(e.message)}</td></tr>`; }
     }
 
 
@@ -27329,124 +27812,9 @@ Ketik **"AMBIL PROMO"** sekarang untuk klaim voucher Kakak ya 🥰.
     }
 
     function renderRemindersDoctorFollowupList() {
-      const container = document.getElementById('reminders-docrec-list');
-      if (!container) return;
-
-      const dueItems = _allSalesDoctorFollowups.filter(r => {
-        if (!(r.followup_status === 'pending' || r.followup_status === 'rescheduled')) return false;
-        if (selectedBranch !== 'all' && r.branch && !matchesActiveBranch(r.branch)) return false;
-        if (_remindersSourceFilter !== 'all' && r.source !== _remindersSourceFilter) return false;
-
-        const d = r.days_until_due;
-        if (_remindersTimingFilter === 'today') {
-          if (d !== 0) return false;
-        } else if (_remindersTimingFilter === 'h3') {
-          if (d === null || d < 1 || d > 3) return false;
-        } else if (_remindersTimingFilter === 'h7') {
-          if (d === null || d < 4 || d > 7) return false;
-        } else if (_remindersTimingFilter === 'overdue') {
-          if (d === null || d >= 0) return false;
-        } else {
-          // 'all': show within recent month (up to 30 days overdue or future)
-          if (d === null || d < -30 || d > 30) return false;
-        }
-        return true;
-      });
-
-      const _remBase = _allSalesDoctorFollowups.filter(r =>
-        (r.followup_status === 'pending' || r.followup_status === 'rescheduled') &&
-        !(selectedBranch !== 'all' && r.branch && !matchesActiveBranch(r.branch)) &&
-        (_remindersSourceFilter === 'all' || r.source === _remindersSourceFilter));
-      const _remCounts = {
-        all: _remBase.filter(r => r.days_until_due !== null && r.days_until_due >= -30 && r.days_until_due <= 30).length,
-        today: _remBase.filter(r => r.days_until_due === 0).length,
-        h3: _remBase.filter(r => r.days_until_due !== null && r.days_until_due >= 1 && r.days_until_due <= 3).length,
-        h7: _remBase.filter(r => r.days_until_due !== null && r.days_until_due >= 4 && r.days_until_due <= 7).length,
-        overdue: _remBase.filter(r => r.days_until_due !== null && r.days_until_due < 0).length
-      };
-      Object.keys(_remCounts).forEach(k => {
-        const c = document.getElementById('rem-count-' + k);
-        if (c) c.textContent = _remCounts[k];
-      });
-
-      const reminderBadge = document.getElementById('reminders-docrec-count-badge');
-      if (reminderBadge) reminderBadge.textContent = `${dueItems.length} Pasien`;
-
-      const pager = document.getElementById('reminders-docrec-pager');
-      if (dueItems.length === 0) {
-        container.innerHTML = `
-          <div class="p-6 text-center text-slate-500 text-xs">
-            <i class="fa-solid fa-check-double text-emerald-400 text-lg block mb-1"></i>
-            Tidak ada pasien follow-up pada filter jadwal ini.
-          </div>
-        `;
-        if (pager) pager.innerHTML = '';
-        return;
+      if (typeof renderUnifiedFollowUpQueue === 'function') {
+        renderUnifiedFollowUpQueue();
       }
-
-      const totalPages = Math.ceil(dueItems.length / REMINDERS_PAGE_SIZE);
-      _remindersPage = Math.min(Math.max(1, _remindersPage), totalPages);
-      const pageStart = (_remindersPage - 1) * REMINDERS_PAGE_SIZE;
-      const pageItems = dueItems.slice(pageStart, pageStart + REMINDERS_PAGE_SIZE);
-      if (pager) {
-        const btn = (label, page, disabled, active) => `<button type="button" onclick="setRemindersPage(${page})" ${disabled ? 'disabled' : ''} class="min-w-[2rem] px-2.5 py-1.5 rounded-lg border text-xs font-semibold transition ${active ? 'bg-indigo-600 border-indigo-500 text-white' : 'border-slate-700 text-slate-300 hover:bg-slate-800'} ${disabled ? 'opacity-40 cursor-not-allowed' : 'cursor-pointer'}">${label}</button>`;
-        const pages = [];
-        for (let i = 1; i <= totalPages; i++) {
-          if (i === 1 || i === totalPages || Math.abs(i - _remindersPage) <= 1) pages.push(i);
-          else if (pages[pages.length - 1] !== '…') pages.push('…');
-        }
-        pager.innerHTML = `<span class="text-slate-400">Menampilkan ${pageStart + 1}–${pageStart + pageItems.length} dari ${dueItems.length} pasien</span>` +
-          (totalPages > 1 ? `<div class="flex items-center gap-1">${btn('<i class="fa-solid fa-chevron-left"></i>', _remindersPage - 1, _remindersPage === 1, false)}${pages.map(n => n === '…' ? '<span class="px-1 text-slate-500">…</span>' : btn(n, n, false, n === _remindersPage)).join('')}${btn('<i class="fa-solid fa-chevron-right"></i>', _remindersPage + 1, _remindersPage === totalPages, false)}</div>` : '');
-      }
-
-      container.innerHTML = pageItems.map(r => {
-        let timingBadge = '';
-        if (r.days_until_due !== null && r.days_until_due < 0) {
-          timingBadge = `<span class="text-[9px] px-1.5 py-0.2 rounded bg-rose-500/20 text-rose-300 font-bold font-mono">🚨 Overdue ${Math.abs(r.days_until_due)}h</span>`;
-        } else if (r.days_until_due === 0) {
-          timingBadge = `<span class="text-[9px] px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300 font-bold font-mono animate-pulse">⚡ Hari H!</span>`;
-        } else if (r.days_until_due !== null && r.days_until_due <= 3) {
-          timingBadge = `<span class="text-[9px] px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300 font-bold font-mono">⚡ H-3 (${r.days_until_due}h)</span>`;
-        } else if (r.days_until_due !== null && r.days_until_due <= 7) {
-          timingBadge = `<span class="text-[9px] px-1.5 py-0.2 rounded bg-cyan-500/20 text-cyan-300 font-bold font-mono">📅 H-7 (${r.days_until_due}h)</span>`;
-        } else if (r.days_until_due !== null && r.days_until_due <= 14) {
-          timingBadge = `<span class="text-[9px] px-1.5 py-0.2 rounded bg-purple-500/20 text-purple-300 font-bold font-mono">🗓️ H-14 (${r.days_until_due}h)</span>`;
-        }
-
-        return `
-        <div class="p-3 rounded-xl bg-slate-950/80 border border-slate-800 hover:border-indigo-500/30 flex items-center justify-between gap-3 text-xs transition">
-          <div class="min-w-0">
-            <div class="font-bold text-white flex items-center gap-1.5 flex-wrap">
-              <span>${r.customer_name}</span>
-              <span class="text-[9.5px] px-1.5 py-0.2 rounded bg-indigo-500/20 text-indigo-300 font-mono font-bold">${r.branch}</span>
-              <span class="text-[9.5px] text-slate-400">(${r.doctor_name})</span>
-              ${timingBadge}
-              <span class="text-[9px] px-1.5 py-0.2 rounded bg-purple-500/20 text-purple-300 font-mono font-bold">${r.neosoft_status || 'Booked'}</span>
-            </div>
-            <div class="text-[10.5px] text-slate-300 truncate mt-0.5">
-              🎯 Rencana: <strong class="text-white">${r.next_treatment || 'Treatment Lanjutan'}</strong> | Jadwal: <span class="text-emerald-400 font-mono font-bold">${fmtIdDate(r.recommended_return_date)}${r.appointment_time ? ' (' + r.appointment_time + ' WIB)' : ''}</span>
-            </div>
-            <div class="text-[10.5px] text-slate-400 mt-0.5 flex flex-wrap items-center gap-x-3 gap-y-0.5">
-              <span title="Nomor HP">${r.phone_valid === false ? '<span class="text-rose-300"><i class="fa-solid fa-phone-slash"></i> HP tidak valid</span>' : `<i class="fa-solid fa-phone"></i> ${escapeHtml(r.customer_phone || '-')}`}</span>
-              ${r.consultation_date ? `<span title="Kunjungan / konsultasi terakhir"><i class="fa-regular fa-clock"></i> terakhir datang ${escapeHtml(fmtIdDate(r.consultation_date))}</span>` : ''}
-              ${r.next_interval ? `<span><i class="fa-solid fa-rotate"></i> ${escapeHtml(r.next_interval)}</span>` : ''}
-              ${r.date_estimated ? '<span class="text-slate-500">jadwal perkiraan</span>' : ''}
-            </div>
-          </div>
-          <div class="flex items-center gap-2 shrink-0">
-            <button onclick="showDocRecDetail('${r.id}')" class="px-2 py-1 bg-slate-800 hover:bg-slate-700 text-sky-400 rounded-lg transition cursor-pointer" title="Lihat detail janji temu Neosoft">
-              <i class="fa-solid fa-eye"></i>
-            </button>
-            <button onclick="sendSalesFollowupWhatsApp('${r.id}')" ${r.phone_valid === false ? 'disabled style="opacity:.4;cursor:not-allowed" title="Nomor HP pasien tidak valid"' : ''} class="px-2.5 py-1 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-lg text-xs font-bold transition flex items-center gap-1 cursor-pointer">
-              <i class="fa-brands fa-whatsapp text-emerald-400"></i> Follow-Up
-            </button>
-            <button onclick="openSalesFollowupModal('${r.id}')" class="px-2 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg transition cursor-pointer" title="Update status respon follow-up">
-              <i class="fa-solid fa-pen"></i>
-            </button>
-          </div>
-        </div>
-      `;
-      }).join('');
     }
 
     function openSalesFollowupModal(recId) {
